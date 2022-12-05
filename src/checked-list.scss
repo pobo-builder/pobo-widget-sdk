@@ -1,0 +1,31 @@
+.checked-list {
+  padding: 0;
+  margin: 0;
+  max-width: 500px;
+
+  .li {
+    padding: 5px 0 5px 35px;
+    position: relative;
+    margin: 0;
+    list-style: none;
+    line-height: 24px;
+    font-size: 16px;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 20px;
+      content: "";
+      height: 20px;
+      background: url("https://image.pobo.cz/assets/checked.svg") no-repeat
+        center center;
+    }
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}

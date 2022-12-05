@@ -1,0 +1,65 @@
+.rc-rating-two {
+  padding: 20px 0;
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0 0 0 5px;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    padding: 5px 0 5px 30px !important;
+    position: relative !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 6px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:before {
+      display: none !important;
+    }
+  }
+
+  &__list-item--plus {
+    &:after {
+      background: url("https://image.pobo.cz/assets/plus.svg") no-repeat center
+        center;
+    }
+  }
+
+  &__list-item--minus {
+    &:after {
+      background: url("https://image.pobo.cz/assets/minus.svg") no-repeat center
+        center;
+    }
+  }
+
+  &__pros {
+    @include media-breakpoint-down(sm) {
+      margin: 50px 0 0 0;
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+  }
+
+  &__const {
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+  }
+}

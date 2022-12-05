@@ -1,0 +1,49 @@
+.rc-success-one {
+  padding: 20px 0;
+
+  &__wrap {
+    display: flex;
+    box-shadow: 0 0 4px #93d8a6;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  &__ico {
+    background: url("https://pobo-cdn.b-cdn.net/widget/like.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+  }
+
+  &__icon {
+    background: #90e24a;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+  }
+
+  &__content {
+    padding: 15px;
+    background-color: #c8f9d2;
+    align-self: stretch;
+    border: 1px solid #a5ea85;
+    border-left: 0;
+    width: calc(100% - 80px);
+  }
+
+  &__content-title {
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 10px 0;
+    color: #046c00;
+  }
+
+  &__content-text {
+    font-size: 15px;
+    line-height: 20px;
+    color: #046c00;
+    display: block;
+  }
+}

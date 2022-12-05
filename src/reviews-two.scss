@@ -1,0 +1,95 @@
+.rc-reviews-two {
+  width: 100%;
+  display: grid;
+  padding: 20px 0;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
+  }
+
+  &__box {
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    transition: 0.5s ease translate;
+  }
+  &__client-text {
+    font-size: 18px;
+    color: #4b4b4b;
+    display: block;
+  }
+
+  &__box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__box-profile {
+    display: flex;
+    align-items: center;
+  }
+
+  &__box-name {
+    color: #3d3d3d;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
+  }
+
+  &__box-smallname {
+    color: #979797;
+    font-size: 17px;
+  }
+
+  &__box-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+
+  &__box-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__box-user {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__reviews {
+    display: flex;
+    justify-content: flex-end;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 10px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__star {
+    background-image: url("https://pobo-cdn.b-cdn.net/static/iconmonstr-star-filled%20(1).svg");
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+  }
+}

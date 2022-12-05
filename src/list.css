@@ -1,0 +1,19 @@
+.rc-list__container {
+  padding: 20px 0;
+}
+
+.rc-list__header {
+  font-size: 25px;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.rc-list__ul {
+  padding: 0 0 0 40px;
+  margin: 0;
+}
+
+.rc-list__li {
+  padding: 2px 0;
+}
+/*# sourceMappingURL=list.css.map */

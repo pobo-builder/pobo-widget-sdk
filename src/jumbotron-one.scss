@@ -1,0 +1,55 @@
+.rc-jumbotron-one {
+  width: 100%;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+
+  &__wrap {
+    width: 100%;
+    position: relative;
+    height: auto;
+    z-index: 1;
+    background: black;
+  }
+
+  &__wrap-img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: relative;
+    background: rgba(0, 0, 0, 0.527);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 20px 10px;
+    }
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__content-title {
+    color: white;
+    font-size: 42px;
+    padding: 20px 0px;
+  }
+  &__content-text {
+    color: white;
+    font-size: 20px;
+    padding: 20px 0px;
+  }
+}

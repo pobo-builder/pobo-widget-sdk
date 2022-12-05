@@ -1,0 +1,80 @@
+.rc-reviews-threerow {
+  width: 100%;
+  display: flex;
+  padding: 20px 0px;
+  align-items: center;
+  justify-content: center;
+
+  &__wrap {
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__photo-img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__single-image {
+    position: relative;
+  }
+
+  &__single {
+    -webkit-box-shadow: -1px -1px 15px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px -1px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px -1px 15px -10px rgba(0, 0, 0, 0.75);
+    display: flex;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__stars {
+    width: 80px;
+    height: 20px;
+    background-image: url("https://pobo-cdn.b-cdn.net/widget/five-stars.png");
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__reviews {
+    padding: 0 25px;
+    margin: 0;
+    font-size: 16px;
+
+    @include media-breakpoint-down(lg) {
+      padding: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 0 10px;
+    }
+  }
+
+  &__name {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    margin: 0;
+  }
+
+  &__date {
+    font-size: 13px;
+    color: rgb(173, 173, 173);
+    margin: 0;
+    padding: 0;
+  }
+}

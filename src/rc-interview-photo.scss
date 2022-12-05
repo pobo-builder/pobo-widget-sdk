@@ -1,0 +1,78 @@
+.rc-interview-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__wrap {
+    width: 100%;
+    max-width: 999px;
+    display: flex;
+    gap: 20px;
+    padding: 35px;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(17, 17, 26, 0.1) 0 1px 0;
+  }
+
+  &__text {
+    position: relative;
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    display: flex;
+    //background: purple;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 55px;
+      background-image: url("https://pobo-cdn.b-cdn.net/widget/quotation_ico_transparent-2.svg");
+      top: -26px;
+    }
+
+    &--left {
+      &::before {
+        left: -10px;
+      }
+    }
+
+    &--right {
+      &::before {
+        margin-left: 25px;
+        background-image: url("https://pobo-cdn.b-cdn.net/widget/question-mark-2.svg");
+        width: 55px;
+        height: 95px;
+        background-size: 55px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 100%;
+
+        @include media-breakpoint-down(sm) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &__person {
+    position: relative;
+  }
+
+  &__person-img {
+    max-width: 150px;
+    border-radius: 50%;
+    clip-path: circle();
+
+    @include media-breakpoint-down(md) {
+      max-width: 50px;
+    }
+  }
+
+  &__text-content {
+    font-size: 22px;
+  }
+}

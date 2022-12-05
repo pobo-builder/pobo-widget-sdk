@@ -1,0 +1,39 @@
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_mixins.scss";
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .pb-justify-content#{$infix}-start {
+      justify-content: flex-start !important;
+    }
+    .pb-justify-content#{$infix}-end {
+      justify-content: flex-end !important;
+    }
+    .pb-justify-content#{$infix}-center {
+      justify-content: center !important;
+    }
+    .pb-justify-content#{$infix}-between {
+      justify-content: space-between !important;
+    }
+    .pb-justify-content#{$infix}-around {
+      justify-content: space-around !important;
+    }
+
+    .pb-align-items#{$infix}-start {
+      align-items: flex-start !important;
+    }
+    .pb-align-items#{$infix}-end {
+      align-items: flex-end !important;
+    }
+    .pb-align-items#{$infix}-center {
+      align-items: center !important;
+    }
+    .pb-align-items#{$infix}-baseline {
+      align-items: baseline !important;
+    }
+    .pb-align-items#{$infix}-stretch {
+      align-items: stretch !important;
+    }
+  }
+}

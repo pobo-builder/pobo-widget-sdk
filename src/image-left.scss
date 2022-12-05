@@ -1,0 +1,51 @@
+.rc-image-left {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+  }
+
+  &__image {
+    width: 35%;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 2;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__header {
+    font-size: 25px;
+    padding: 0;
+    margin: 0 0 25px;
+  }
+
+  &__p {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  &__text {
+    width: calc(100% - 35%);
+    padding: 0 0 0 30px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 10px 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+    }
+  }
+}

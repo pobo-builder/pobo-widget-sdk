@@ -1,0 +1,20 @@
+.rc-text {
+  &__normal {
+  }
+}
+
+.rc-gallery {
+  &__image-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 0;
+    color: #6c6c6c;
+  }
+}
+
+.pb-gallery-trigger {
+  display: block;
+}

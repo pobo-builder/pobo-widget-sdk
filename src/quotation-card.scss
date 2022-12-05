@@ -1,0 +1,67 @@
+.rc-quotation-card {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+  color: red;
+
+  &__wrap {
+    padding: 20px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(black, 0.12);
+    position: relative;
+    overflow: hidden;
+    min-height: 120px;
+
+    &:before {
+      font-family: Georgia, serif;
+      content: "“";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 5em;
+      color: rgba(#e6e6e6, 0.8);
+      font-weight: normal;
+    }
+
+    &:after {
+      font-family: Georgia, serif;
+      content: "”";
+      position: absolute;
+      bottom: -110px;
+      line-height: 100px;
+      right: -32px;
+      font-size: 25em;
+      color: rgba(#e6e6e6, 0.8);
+      font-weight: normal;
+    }
+
+    @include media-breakpoint-down(sm) {
+      &:after {
+        font-size: 22em;
+        right: -25px;
+      }
+    }
+  }
+
+  &__content-text {
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 80%;
+    color: black;
+    display: block;
+  }
+
+  &__content-name {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    font-weight: 200;
+    opacity: 0.8;
+    font-style: italic;
+    color: black;
+  }
+}
