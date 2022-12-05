@@ -18,8 +18,8 @@
     "url": "git+https://github.com/pobo-builder/widget-asset.git"
   },
   "contributors": [
-    { "name": "Tomas Smetka", "email": "tomas@pobo.cz" },
-    { "name": "Vojta Vanek", "email": "vojta@pobo.cz" }
+    { "name": "Tomas Smetka", "email": "tomas@pobo.cz", "url": "https://github.com/smety" },
+    { "name": "Vojta Vanek", "email": "vojta@pobo.cz", "url": "https://github.com/votechv" }
   ],
   "license": "ISC",
   "bugs": {
