@@ -1,0 +1,4 @@
+root = true
+[{*.html,*.scss}]
+indent_style = space
+indent_size = 2

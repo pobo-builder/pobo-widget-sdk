@@ -2,16 +2,12 @@
   "name": "pobo-widget-asset",
   "version": "1.0.0",
   "description": "",
+  "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "watch": "npx parcel src/*.js src/editor.scss -p 8088",
-    "build": "npx parcel build src/*.js src/*.scss --no-source-maps",
+    "watch": "npx parcel index.html -p 8088 --dist-dir dist",
+    "build": "npx parcel build src/editor.scss --no-source-maps --dist-dir build",
     "proxy": "ngrok http 8088"
-  },
-  "targets": {
-    "default": {
-      "distDir": "dist"
-    }
   },
   "engines": {
     "node": ">=10.19",
@@ -28,10 +24,10 @@
   },
   "homepage": "https://github.com/pobo-builder/shoptet-boilerplate-addon#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "2.7.0",
+    "@parcel/package-manager": "2.8.0",
+    "@parcel/transformer-sass": "2.8.0",
     "ngrok": "4.3.3",
-    "parcel": "2.7.0",
-    "sass": "^1.56.1",
+    "parcel": "2.8.0",
     "bootstrap": "4.3.1"
   }
 }

@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/mixins/_grid.scss";
+@import "node_modules/bootstrap/scss/mixins/_grid.scss";
 
 .pb-row {
   @include make-row();

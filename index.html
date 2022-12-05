@@ -1,399 +1,406 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet" href="dist/sass/app.css">
-	<script src="dist/javascript/app.js"></script>
-    <title>Widget pobo</title>
-  </head>
-  <body>
-
-    <nav> 
-      <a href="/index2.html" style="padding: 0px 10px;"> Widgety druhá várka </a>
-
-      <a href="/interview.html" style="padding: 0px 10px;"> Widgety interview </a>
-
-      <a href="/customWidget.html"> Custom Widget </a>
-    </nav>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="src/editor.scss">
+  <title>Widget pobo</title>
   
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 980px;
+      padding: 20px 0;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
 
-    <!-- TEAM WIDGET -->
-    <div class="rc-team-three">
-      <div class="rc-team-three__single">
-        <img
-          class="rc-team-three__single--size"
-          src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-1.webp"
-          alt=""
-        />
-        <div class="rc-team-three__single-content">
-          <h3 class="rc-team-three__single-name">Tomáš Smetka</h3>
-          <span class="rc-team-three__single-position">Developer</span>
-        </div>
-      </div>
-      <div class="rc-team-three__single">
-        <img
-          class="rc-team-three__single--size"
-          src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-2.webp"
-          alt=""
-        />
-        <div class="rc-team-three__single-content">
-          <h3 class="rc-team-three__single-name">Michal Štikar</h3>
-          <span class="rc-team-three__single-position">Product</span>
-        </div>
-      </div>
-      <div class="rc-team-three__single">
-        <img
-          class="rc-team-three__single--size"
-          src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-3.webp"
-          alt=""
-        />
-        <div class="rc-team-three__single-content">
-          <h3 class="rc-team-three__single-name">Vojtěch Vaněk</h3>
-          <span class="rc-team-three__single-position">Frontend-dev</span>
-        </div>
-      </div>
 
+<!-- TEAM WIDGET -->
+<div class="rc-team-three">
+  <div class="rc-team-three__single">
+    <img
+      class="rc-team-three__single--size"
+      src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-1.webp"
+      alt=""
+    />
+    <div class="rc-team-three__single-content">
+      <h3 class="rc-team-three__single-name">Tomáš Smetka</h3>
+      <span class="rc-team-three__single-position">Developer</span>
     </div>
+  </div>
+  <div class="rc-team-three__single">
+    <img
+      class="rc-team-three__single--size"
+      src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-2.webp"
+      alt=""
+    />
+    <div class="rc-team-three__single-content">
+      <h3 class="rc-team-three__single-name">Michal Štikar</h3>
+      <span class="rc-team-three__single-position">Product</span>
+    </div>
+  </div>
+  <div class="rc-team-three__single">
+    <img
+      class="rc-team-three__single--size"
+      src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-3.webp"
+      alt=""
+    />
+    <div class="rc-team-three__single-content">
+      <h3 class="rc-team-three__single-name">Vojtěch Vaněk</h3>
+      <span class="rc-team-three__single-position">Frontend-dev</span>
+    </div>
+  </div>
+
+</div>
 
 
+<!-- REVIEWS -->
 
-    <!-- REVIEWS -->
-
-    <div class="rc-reviews-two">
-      <div class="rc-reviews-two__box">
-        <div class="rc-reviews-two__box-top">
-          <div class="rc-reviews-two__box-profile">
-            <div class="rc-reviews-two__box-photo">
-              <img class="rc-reviews-two__box-img" src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-1.webp" />
-            </div>
-            <div class="rc-reviews-two__box-user">
-              <h4 class="rc-reviews-two__box-name">Mike Wazowski</h4>
-              <span class="rc-reviews-two__box-smallname">Věrný zákazník</span>
-            </div>
-          </div>
-
-          <div class="rc-reviews-two__reviews">
-            <div class="rc-reviews-two__star"></div>
-            <div class="rc-reviews-two__star"></div>
-            <div class="rc-reviews-two__star"></div>
-            <div class="rc-reviews-two__star"></div>
-            <div class="rc-reviews-two__star"></div>
-          </div>
+<div class="rc-reviews-two">
+  <div class="rc-reviews-two__box">
+    <div class="rc-reviews-two__box-top">
+      <div class="rc-reviews-two__box-profile">
+        <div class="rc-reviews-two__box-photo">
+          <img class="rc-reviews-two__box-img"
+               src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-1.webp"/>
         </div>
-
-        <div class="rc-reviews-two__client-comment">
+        <div class="rc-reviews-two__box-user">
+          <h4 class="rc-reviews-two__box-name">Mike Wazowski</h4>
+          <span class="rc-reviews-two__box-smallname">Věrný zákazník</span>
+        </div>
+      </div>
+      
+      <div class="rc-reviews-two__reviews">
+        <div class="rc-reviews-two__star"></div>
+        <div class="rc-reviews-two__star"></div>
+        <div class="rc-reviews-two__star"></div>
+        <div class="rc-reviews-two__star"></div>
+        <div class="rc-reviews-two__star"></div>
+      </div>
+    </div>
+    
+    <div class="rc-reviews-two__client-comment">
           <span class="rc-reviews-two__client-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem, quaerat quis? Provident temporibus architecto
             asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
             tenetur voluptates incidunt blanditiis sed atque cumque.
           </span>
+    </div>
+  </div>
+  <div class="rc-reviews-two__box">
+    <div class="rc-reviews-two__box-top">
+      <div class="rc-reviews-two__box-profile">
+        <div class="rc-reviews-two__box-photo">
+          <img class="rc-reviews-two__box-img"
+               src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-1.webp"/>
+        </div>
+        <div class="rc-reviews-two__box-user">
+          <h4 class="rc-reviews-two__box-name">Mike Wazowski</h4>
+          <span class="rc-reviews-two__box-smallname">Věrný zákazník</span>
         </div>
       </div>
-      <div class="rc-reviews-two__box">
-        <div class="rc-reviews-two__box-top">
-          <div class="rc-reviews-two__box-profile">
-            <div class="rc-reviews-two__box-photo">
-              <img class="rc-reviews-two__box-img" src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-1.webp" />
-            </div>
-            <div class="rc-reviews-two__box-user">
-              <h4 class="rc-reviews-two__box-name">Mike Wazowski</h4>
-              <span class="rc-reviews-two__box-smallname">Věrný zákazník</span>
-            </div>
-          </div>
-
-          <div class="rc-reviews-two__reviews">
-            <div class="rc-reviews-two__star"></div>
-            <div class="rc-reviews-two__star"></div>
-            <div class="rc-reviews-two__star"></div>
-            <div class="rc-reviews-two__star"></div>
-            <div class="rc-reviews-two__star"></div>
-          </div>
-        </div>
-
-        <div class="rc-reviews-two__client-comment">
+      
+      <div class="rc-reviews-two__reviews">
+        <div class="rc-reviews-two__star"></div>
+        <div class="rc-reviews-two__star"></div>
+        <div class="rc-reviews-two__star"></div>
+        <div class="rc-reviews-two__star"></div>
+        <div class="rc-reviews-two__star"></div>
+      </div>
+    </div>
+    
+    <div class="rc-reviews-two__client-comment">
           <span class="rc-reviews-two__client-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Exercitationem, quaerat quis? Provident temporibus architecto
             asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
             tenetur voluptates incidunt blanditiis sed atque cumque.
           </span>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
 
-    <!-- Information BOX -->
+<!-- Information BOX -->
 
-    <div class="rc-information-two">
-      <div class="rc-information-two__wrap">
-        <div class="rc-information-two__icon">
-           <div class="rc-information-two__ico"></div>
-        </div>
-        <div class="rc-information-two__content">
-          <h2 class="rc-information-two__content-title">Potvrzení objednávky</h2>
-          <span class="rc-information-two__content-text">
+<div class="rc-information-two">
+  <div class="rc-information-two__wrap">
+    <div class="rc-information-two__icon">
+      <div class="rc-information-two__ico"></div>
+    </div>
+    <div class="rc-information-two__content">
+      <h2 class="rc-information-two__content-title">Potvrzení objednávky</h2>
+      <span class="rc-information-two__content-text">
             Vyrábíme zboží na míru a tak je potřeba pro dokončení objednávky nám
             ji potvrdit telefonicky. Do 24 hodin se vám ozve jeden z našich
             pracovníků.
           </span>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
 
-    <!-- Warning box -->
+<!-- Warning box -->
 
-    <div class="rc-warning-two">
-      <div class="rc-warning-two__wrap">
-        <div class="rc-warning-two__icon">
-          <div class="rc-warning-two__ico"></div>
-        </div>
-        <div class="rc-warning-two__content">
-          <h2 class="rc-warning-two__content-title">Nelze objednat</h2>
-          <span class="rc-warning-two__content-text">
+<div class="rc-warning-two">
+  <div class="rc-warning-two__wrap">
+    <div class="rc-warning-two__icon">
+      <div class="rc-warning-two__ico"></div>
+    </div>
+    <div class="rc-warning-two__content">
+      <h2 class="rc-warning-two__content-title">Nelze objednat</h2>
+      <span class="rc-warning-two__content-text">
             Objednávky momentálně nepřijímáme. Máte-li o tento produkt zájem,
             kontaktujte nás na našem emailu nebo nám zavolejte.
           </span>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
 
-    <!-- Quotation Card-->
+<!-- Quotation Card-->
 
-    <div class="rc-quotation-card">
-      <div class="rc-quotation-card__wrap">
+<div class="rc-quotation-card">
+  <div class="rc-quotation-card__wrap">
         <span class="rc-quotation-card__content-text">
           Velmi oceňuji ochotu a rychlé jednání. S doplňkem Pobo jsme velmi
           spokojení. Tvorba popisků je intuitivní a při problémech vždy
           nacházíme řešení.
         </span>
-        <h4 class="rc-quotation-card__content-name"> Veronika Vitoulova </h4>
-      </div>
-    </div>
+    <h4 class="rc-quotation-card__content-name"> Veronika Vitoulova </h4>
+  </div>
+</div>
 
-    <!-- JUMBOTRON-->
-    <div class="rc-jumbotron-one">
-      <div class="rc-jumbotron-one__wrap">
-        <img
-          class="rc-jumbotron-one__wrap-img"
-          src="https://pobo-cdn.b-cdn.net/widget/jumbowidget-2.png"
-          alt="pobo-jumbotron"
-        />
-        <div class="rc-jumbotron-one__content">
-            <h2 class="rc-jumbotron-one__content-title">Pijete protein a výsledky nikde?</h2>
-
-            <span class="rc-jumbotron-one__content-text">
+<!-- JUMBOTRON-->
+<div class="rc-jumbotron-one">
+  <div class="rc-jumbotron-one__wrap">
+    <img
+      class="rc-jumbotron-one__wrap-img"
+      src="https://pobo-cdn.b-cdn.net/widget/jumbowidget-2.png"
+      alt="pobo-jumbotron"
+    />
+    <div class="rc-jumbotron-one__content">
+      <h2 class="rc-jumbotron-one__content-title">Pijete protein a výsledky nikde?</h2>
+      
+      <span class="rc-jumbotron-one__content-text">
               Pít protein nestačí! Pokud chcete vidět opravdové výsledky, musíte
               začít pořádně cvičit. Že nevíte jak? Mrkněte na náš blog, kam
               každý den přidáváme užitečné články ohledně cvičení!
             </span>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
 
-    <!-- SUCCESS WIDGET -->
+<!-- SUCCESS WIDGET -->
 
-    <div class="rc-success-one">
-      <div class="rc-success-one__wrap">
-        <div class="rc-success-one__icon">
-          <div class="rc-success-one__ico"></div>
-        </div>
-        <div class="rc-success-one__content">
-          <h2 class="rc-success-one__content-title">Doručíme ještě dnes!</h2>
-          <span class="rc-success-one__content-text">
+<div class="rc-success-one">
+  <div class="rc-success-one__wrap">
+    <div class="rc-success-one__icon">
+      <div class="rc-success-one__ico"></div>
+    </div>
+    <div class="rc-success-one__content">
+      <h2 class="rc-success-one__content-title">Doručíme ještě dnes!</h2>
+      <span class="rc-success-one__content-text">
             Pokud objednáte do 10:00 doručíme vám v Praze vaši objednávku ješte
             dnes a to s dopravou zdarma!
           </span>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
 
-    !-- AUTOR FOTKA Z LEVA -->
-    <div class="rc-author-left">
-        <div class="rc-author-left__wrap">
-          <div class="rc-author-left__img-wrap">
-
-            <img 
-            class="rc-author-left__photo-img"
-            src="https://pobo-cdn.b-cdn.net/widget/author-content-left.jpg">
-   
-          </div>
-
-            <div class="rc-author-left__content">
-                <h2 class="rc-author-left__content-title">John Doyle</h2>
-
-                <span class="rc-author-left__content-text">
+<!-- AUTOR FOTKA Z LEVA -->
+<div class="rc-author-left">
+  <div class="rc-author-left__wrap">
+    <div class="rc-author-left__img-wrap">
+      
+      <img
+        class="rc-author-left__photo-img"
+        src="https://pobo-cdn.b-cdn.net/widget/author-content-left.jpg">
+    
+    </div>
+    
+    <div class="rc-author-left__content">
+      <h2 class="rc-author-left__content-title">John Doyle</h2>
+      
+      <span class="rc-author-left__content-text">
                     Komentátor a editor názorové rubriky, člen redakce nejsledovanějšího časopisu Pobo od roku 2021. Novinařinou se zabývá již od roku 2002. Věnuje se psaní o eshopech, o jazyce a zajímavostech 21. století. Získal několik novinářských cen.
-                </span> 
-            </div>
-        </div>
+                </span>
     </div>
+  </div>
+</div>
 
 <!-- CITACE S ROZDĚLENÍM -->
-    <div class="rc-quotation-split">
-      <div class="rc-quotation-split__wrap">
-       
-         <h3 class="rc-quotation-split__text">Nesnáším, když o sobě mluví jako o podnikatelích lidé, kterým nejde ani tak o to, něco podnikat, jako v první řadě o to, rychle začít vydělávat peníze...</h3>
-       
-        <span class="rc-quotation-split__line"> </span>
-        <h2 class="rc-quotation-split__author"> Steve Jobs</h2>
-      </div>
-    </div>
+<div class="rc-quotation-split">
+  <div class="rc-quotation-split__wrap">
+    
+    <h3 class="rc-quotation-split__text">Nesnáším, když o sobě mluví jako o podnikatelích lidé, kterým nejde ani tak
+      o to, něco podnikat, jako v první řadě o to, rychle začít vydělávat peníze...</h3>
+    
+    <span class="rc-quotation-split__line"> </span>
+    <h2 class="rc-quotation-split__author"> Steve Jobs</h2>
+  </div>
+</div>
 
 <!-- AUTOR FOTKA NAHOŘE -->
-    <div class="rc-author-top">
-        <div class="rc-author-top__wrap">
-          <div class="rc-author-top__info">
-            <div class="rc-author-top__info-img">
-              <img 
-              class="rc-author-top__info-photo"
-              src="https://pobo-cdn.b-cdn.net/widget/author-content-left.jpg">
-            </div>
-            <div class="rc-author-top__info-content">
-              <h2 class="rc-author-top__info-content-name">Jonathan Doyle</h2>
-              <p class="rc-author-top__info-content-position"> Zakladatel & novinář</p>
-            </div>
-          </div>
-
-          <div class="rc-author-top__text">
-            <div class="rc-author-top__text-wrap">
-              <p class="rc-author-top__text-content"> Ahoj, moje jméno je Jonathan Doyle a jsem komentátor a editor názorové rubriky, člen redakce nejsledovanějšího časopisu Pobo od roku 2021. Novinařinou se zabývám již od roku 2002. Věnuji se psaní o eshopech, o jazyce a zajímavostech 21. století. Získal jsem i pár novinářských cen.</p>
-            </div>
-          </div>
-
-          <a href="#" class="rc-author-top__button"> Zobrazit všechny články</a>
-        </div>
-    </div>
-
-
-        <!--RECENZE -->
-
-        <div class="rc-reviews-threerow">
-          <div class="rc-reviews-threerow__wrap">
-            <div class="rc-reviews-threerow__single">
-              <div class="rc-reviews-threerow__single-image">
-                <img 
-                  class="rc-reviews-threerow__photo-img"
-                  src="https://pobo-cdn.b-cdn.net/widget/reviews-threerow--2.jpg">
-              </div>
-               
-                <span class="rc-reviews-threerow__stars"></span>
-    
-                <span class="rc-reviews-threerow__reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis autem illum, quo, reprehenderit in laboriosam ut, eum itaque hic earum nam error quasi adipisci exercitationem impedit! Modi, quaerat corporis.</span>
-    
-                <h3 class="rc-reviews-threerow__name">Mary Johnson</h3>
-    
-                <span class="rc-reviews-threerow__date"> 11.6.2022</span>
-            </div>
-            <div class="rc-reviews-threerow__single">
-              <div class="rc-reviews-threerow__single-image">
-                <img 
-                class="rc-reviews-threerow__photo-img"
-                src="https://pobo-cdn.b-cdn.net/widget/reviews-threerow-1.jpg">
-            
-              </div>
-               
-                <span class="rc-reviews-threerow__stars"></span>
-    
-                <span class="rc-reviews-threerow__reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis autem illum, quo, reprehenderit in laboriosam ut, eum itaque hic earum nam error quasi adipisci exercitationem impedit! Modi, quaerat corporis.</span>
-    
-                <h3 class="rc-reviews-threerow__name">Robert Smith</h3>
-    
-                <span class="rc-reviews-threerow__date"> 10.6.2022</span>
-            </div>
-    
-            <div class="rc-reviews-threerow__single">
-              <div class="rc-reviews-threerow__single-image">
-                <img 
-                  class="rc-reviews-threerow__photo-img"
-                  src="https://pobo-cdn.b-cdn.net/widget/reviews-threerow-3.jpg">
-               </div>
-                <span class="rc-reviews-threerow__stars"></span>
-    
-                <span class="rc-reviews-threerow__reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis autem illum, quo, reprehenderit in laboriosam ut, eum itaque hic earum nam error quasi adipisci exercitationem impedit! Modi, quaerat corporis.</span>
-    
-                <h3 class="rc-reviews-threerow__name">Jennifer Williams</h3>
-    
-                <span class="rc-reviews-threerow__date"> 9.6.2022</span>
-    
-            </div>
-          </div>
-        </div>
-
-    <!-- AUTOR FOTKA NAD DIVEM -->
-
-    <div class="rc-author-above">
-      <div class="rc-author-above__wrap">
-          <div class="rc-author-above__wrap-img">
-            <img 
-              class="rc-author-above__photo-img"
-              src="https://pobo-cdn.b-cdn.net/widget/author-content-left.jpg">
-          </div>
-          
-
-          <div class="rc-author-above__content">
-            <h2 class="rc-author-above__content-name"> Jonathan Doyle </h2>
-            <p class="rc-author-above__content-text">  Komentátor a editor názorové rubriky, člen redakce nejsledovanějšího časopisu Pobo od roku 2021. Novinařinou se zabývá již od roku 2002. Věnuje se psaní o eshopech, o jazyce a zajímavostech 21. století. Získal několik novinářských cen. </p>
-  
-            <a href="#" class="rc-author-above__content-link"> Zobrazit všechny články</a>
-       
-        </div>
+<div class="rc-author-top">
+  <div class="rc-author-top__wrap">
+    <div class="rc-author-top__info">
+      <div class="rc-author-top__info-img">
+        <img
+          class="rc-author-top__info-photo"
+          src="https://pobo-cdn.b-cdn.net/widget/author-content-left.jpg">
+      </div>
+      <div class="rc-author-top__info-content">
+        <h2 class="rc-author-top__info-content-name">Jonathan Doyle</h2>
+        <p class="rc-author-top__info-content-position"> Zakladatel & novinář</p>
       </div>
     </div>
-
-    <!-- BIKE MAX WIDGET -->
-    <div class="pb-bike-max">
-        <div class="pb-bike-max__wrap"> 
-            <div class="pb-bike-max__left">
-                <img src="https://pobo-cdn.b-cdn.net/widget/bike-max/9241-6_4ever-exstream-elite--kobalt-cerna--2021--prumer-kol-29-vyska-ramu-xl-53-cm-20-8.jpeg">
-            </div>
-            <div class="pb-bike-max__right">
-                <h2 class="pb-bike-max__title"> <span class="underline">  Základní vlastnosti </span></h2>
-
-                <div class="pb-bike-max__item">
-                    <div class="pb-bike-max__icon">     
-                        <span class="pb-bike-max__icon-single pb-bike-max__icon--engin"></span>
-                    </div>
-                    <h2 class="pb-bike-max__name">Motor: Bafang M400 </h2>
-                </div>
-                <div class="pb-bike-max__item">
-                    <div class="pb-bike-max__icon">     
-                        <span class="pb-bike-max__icon-single pb-bike-max__icon--battery"></span>
-                    </div>
-                    <h2 class="pb-bike-max__name"> Baterie: 522 Wh </h2>
-                </div>
-
-                <div class="pb-bike-max__item">
-                    <div class="pb-bike-max__icon">     
-                        <span class="pb-bike-max__icon-single pb-bike-max__icon--vidlice"></span>
-                    </div>
-                    <h2 class="pb-bike-max__name"> MTB 29" </h2>
-                </div>
-                <div class="pb-bike-max__item">
-                    <div class="pb-bike-max__icon">     
-                        <span class="pb-bike-max__icon-single pb-bike-max__icon--wheel"></span>
-                    </div>
-                    <h2 class="pb-bike-max__name"> Velikost kol: 29" </h2>
-                </div>
-                <div class="pb-bike-max__item">
-                    <div class="pb-bike-max__icon">     
-                        <span class="pb-bike-max__icon-single pb-bike-max__icon--gearbox"></span>
-                    </div>
-                    <h2 class="pb-bike-max__name"> Počet převodů: 6 převodů</h2>
-                </div>
-                <div class="pb-bike-max__item">
-                    <div class="pb-bike-max__icon">     
-                        <span class="pb-bike-max__icon-single pb-bike-max__icon--reach"></span>
-                    </div>
-                    <h2 class="pb-bike-max__name"> Dojezd: 300 km </h2>
-                </div>
-
-            </div>
-        </div>
+    
+    <div class="rc-author-top__text">
+      <div class="rc-author-top__text-wrap">
+        <p class="rc-author-top__text-content"> Ahoj, moje jméno je Jonathan Doyle a jsem komentátor a editor
+          názorové rubriky, člen redakce nejsledovanějšího časopisu Pobo od roku 2021. Novinařinou se zabývám
+          již od roku 2002. Věnuji se psaní o eshopech, o jazyce a zajímavostech 21. století. Získal jsem i
+          pár novinářských cen.</p>
+      </div>
     </div>
+    
+    <a href="#" class="rc-author-top__button"> Zobrazit všechny články</a>
+  </div>
+</div>
 
 
+<!--RECENZE -->
 
-  </body>
+<div class="rc-reviews-threerow">
+  <div class="rc-reviews-threerow__wrap">
+    <div class="rc-reviews-threerow__single">
+      <div class="rc-reviews-threerow__single-image">
+        <img
+          class="rc-reviews-threerow__photo-img"
+          src="https://pobo-cdn.b-cdn.net/widget/reviews-threerow--2.jpg">
+      </div>
+      
+      <span class="rc-reviews-threerow__stars"></span>
+      
+      <span class="rc-reviews-threerow__reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis autem illum, quo, reprehenderit in laboriosam ut, eum itaque hic earum nam error quasi adipisci exercitationem impedit! Modi, quaerat corporis.</span>
+      
+      <h3 class="rc-reviews-threerow__name">Mary Johnson</h3>
+      
+      <span class="rc-reviews-threerow__date"> 11.6.2022</span>
+    </div>
+    <div class="rc-reviews-threerow__single">
+      <div class="rc-reviews-threerow__single-image">
+        <img
+          class="rc-reviews-threerow__photo-img"
+          src="https://pobo-cdn.b-cdn.net/widget/reviews-threerow-1.jpg">
+      
+      </div>
+      
+      <span class="rc-reviews-threerow__stars"></span>
+      
+      <span class="rc-reviews-threerow__reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis autem illum, quo, reprehenderit in laboriosam ut, eum itaque hic earum nam error quasi adipisci exercitationem impedit! Modi, quaerat corporis.</span>
+      
+      <h3 class="rc-reviews-threerow__name">Robert Smith</h3>
+      
+      <span class="rc-reviews-threerow__date"> 10.6.2022</span>
+    </div>
+    
+    <div class="rc-reviews-threerow__single">
+      <div class="rc-reviews-threerow__single-image">
+        <img
+          class="rc-reviews-threerow__photo-img"
+          src="https://pobo-cdn.b-cdn.net/widget/reviews-threerow-3.jpg">
+      </div>
+      <span class="rc-reviews-threerow__stars"></span>
+      
+      <span class="rc-reviews-threerow__reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis autem illum, quo, reprehenderit in laboriosam ut, eum itaque hic earum nam error quasi adipisci exercitationem impedit! Modi, quaerat corporis.</span>
+      
+      <h3 class="rc-reviews-threerow__name">Jennifer Williams</h3>
+      
+      <span class="rc-reviews-threerow__date"> 9.6.2022</span>
+    
+    </div>
+  </div>
+</div>
+
+<!-- AUTOR FOTKA NAD DIVEM -->
+
+<div class="rc-author-above">
+  <div class="rc-author-above__wrap">
+    <div class="rc-author-above__wrap-img">
+      <img
+        class="rc-author-above__photo-img"
+        src="https://pobo-cdn.b-cdn.net/widget/author-content-left.jpg">
+    </div>
+    
+    
+    <div class="rc-author-above__content">
+      <h2 class="rc-author-above__content-name"> Jonathan Doyle </h2>
+      <p class="rc-author-above__content-text"> Komentátor a editor názorové rubriky, člen redakce
+        nejsledovanějšího časopisu Pobo od roku 2021. Novinařinou se zabývá již od roku 2002. Věnuje se psaní o
+        eshopech, o jazyce a zajímavostech 21. století. Získal několik novinářských cen. </p>
+      
+      <a href="#" class="rc-author-above__content-link"> Zobrazit všechny články</a>
+    
+    </div>
+  </div>
+</div>
+
+<!-- BIKE MAX WIDGET -->
+<div class="pb-bike-max">
+  <div class="pb-bike-max__wrap">
+    <div class="pb-bike-max__left">
+      <img
+        src="https://pobo-cdn.b-cdn.net/widget/bike-max/9241-6_4ever-exstream-elite--kobalt-cerna--2021--prumer-kol-29-vyska-ramu-xl-53-cm-20-8.jpeg">
+    </div>
+    <div class="pb-bike-max__right">
+      <h2 class="pb-bike-max__title"><span class="underline">  Základní vlastnosti </span></h2>
+      
+      <div class="pb-bike-max__item">
+        <div class="pb-bike-max__icon">
+          <span class="pb-bike-max__icon-single pb-bike-max__icon--engin"></span>
+        </div>
+        <h2 class="pb-bike-max__name">Motor: Bafang M400 </h2>
+      </div>
+      <div class="pb-bike-max__item">
+        <div class="pb-bike-max__icon">
+          <span class="pb-bike-max__icon-single pb-bike-max__icon--battery"></span>
+        </div>
+        <h2 class="pb-bike-max__name"> Baterie: 522 Wh </h2>
+      </div>
+      
+      <div class="pb-bike-max__item">
+        <div class="pb-bike-max__icon">
+          <span class="pb-bike-max__icon-single pb-bike-max__icon--vidlice"></span>
+        </div>
+        <h2 class="pb-bike-max__name"> MTB 29" </h2>
+      </div>
+      <div class="pb-bike-max__item">
+        <div class="pb-bike-max__icon">
+          <span class="pb-bike-max__icon-single pb-bike-max__icon--wheel"></span>
+        </div>
+        <h2 class="pb-bike-max__name"> Velikost kol: 29" </h2>
+      </div>
+      <div class="pb-bike-max__item">
+        <div class="pb-bike-max__icon">
+          <span class="pb-bike-max__icon-single pb-bike-max__icon--gearbox"></span>
+        </div>
+        <h2 class="pb-bike-max__name"> Počet převodů: 6 převodů</h2>
+      </div>
+      <div class="pb-bike-max__item">
+        <div class="pb-bike-max__icon">
+          <span class="pb-bike-max__icon-single pb-bike-max__icon--reach"></span>
+        </div>
+        <h2 class="pb-bike-max__name"> Dojezd: 300 km </h2>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+
+</body>
 </html>

@@ -1,6 +1,6 @@
-@import "~bootstrap/scss/mixins/_grid.scss";
-@import "~bootstrap/scss/mixins/_grid-framework.scss";
-@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "node_modules/bootstrap/scss/mixins/_grid.scss";
+@import "node_modules/bootstrap/scss/mixins/_grid-framework.scss";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
 
 $grid-columns: 12;
 $grid-gutter-width: 30px;
