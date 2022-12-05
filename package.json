@@ -17,7 +17,10 @@
     "type": "git",
     "url": "git+https://github.com/pobo-builder/widget-asset.git"
   },
-  "author": "Tomas Smetka <tomas@pobo.cz>",
+  "contributors": [
+    { "name": "Tomas Smetka", "email": "tomas@pobo.cz" },
+    { "name": "Vojta Vanek", "email": "vojta@pobo.cz" }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pobo-builder/shoptet-boilerplate-addon/issues"
