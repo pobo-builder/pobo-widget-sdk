@@ -57,7 +57,6 @@ Nás zajímají hlavně:
 Nyní začneme s kódováním našeho prvního widgetu. Vytvoříme si vlastní SCSS soubor v adresáři `src/*` který výstižně pojmenujeme. Do souboru
 `src/editor.scss` je potřeba tento soubor importovat přes `@import`.
 
-Následně spustíme příkaz `npm run watch` který se postará o sledování změn v souborech SCSS a zkompiluje je. Zároveň nám vytvořte i virtuální server 
-na adrese localhost:8088 kde můžeme vidět změny ihned po provedení.
+Následně spustíme příkaz `npm run watch` který se postará o sledování změn v SCSS souborech a zkompiluje je. Zároveň nám vytvoří i virtuální server na adrese localhost:8088 kde můžeme vidět změny ihned po provedení.
 
-V souboru `index.html` vytvoříme našemu widgetu i vlastní HTML kód, aby pro nás tvorba stylů byla co nejpříjemnější.
+V souboru `index.html` vytvoříme našemu widgetu i vlastní HTML kód, aby pro nás tvorba stylů byla co nejpříjemnější. 
