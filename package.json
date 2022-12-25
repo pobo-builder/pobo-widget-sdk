@@ -1,5 +1,5 @@
 {
-  "name": "pobo-widget-asset",
+  "name": "widget-skeleton",
   "version": "1.0.0",
   "description": "",
   "source": "index.html",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pobo-builder/widget-asset.git"
+    "url": "git+https://github.com/pobo-builder/widget-skeleton.git"
   },
   "contributors": [
     { "name": "Tomas Smetka", "email": "tomas@pobo.cz", "url": "https://github.com/smety" },
@@ -23,14 +23,14 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pobo-builder/shoptet-boilerplate-addon/issues"
+    "url": "https://github.com/pobo-builder/widget-skeleton/issues"
   },
-  "homepage": "https://github.com/pobo-builder/shoptet-boilerplate-addon#readme",
+  "homepage": "https://github.com/pobo-builder/widget-skeleton#readme",
   "devDependencies": {
-    "@parcel/package-manager": "2.8.0",
-    "@parcel/transformer-sass": "2.8.0",
+    "@parcel/package-manager": "2.8.2",
+    "@parcel/transformer-sass": "2.8.2",
     "ngrok": "4.3.3",
-    "parcel": "2.8.0",
+    "parcel": "2.8.2",
     "bootstrap": "4.3.1"
   }
 }
