@@ -14,7 +14,7 @@
     }
   }
   &__left {
-    width: 60%;
+    width: 50%;
     @include media-breakpoint-down(md) {
       width: 100%;
     }
@@ -23,7 +23,7 @@
     }
   }
   &__right {
-    width: 40%;
+    width: 50%;
     padding: 20px 40px;
     @include media-breakpoint-down(md) {
       width: 100%;
