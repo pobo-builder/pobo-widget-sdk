@@ -5,6 +5,7 @@
   "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
+    "test": "npx parcel test.html -p 8088 --dist-dir dist",
     "watch": "npx parcel index.html -p 8088 --dist-dir dist",
     "build": "npx parcel build src/editor.scss --no-source-maps --dist-dir build",
     "proxy": "ngrok http 8088"
@@ -37,8 +38,12 @@
   "devDependencies": {
     "@parcel/package-manager": "2.8.2",
     "@parcel/transformer-sass": "2.8.2",
+    "@parcel/transformer-vue": "^2.8.2",
+    "bootstrap": "4.3.1",
     "ngrok": "4.3.3",
-    "parcel": "2.8.2",
-    "bootstrap": "4.3.1"
+    "parcel": "2.8.2"
+  },
+  "dependencies": {
+    "vue": "2.7.14"
   }
 }
