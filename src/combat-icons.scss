@@ -1,0 +1,46 @@
+.pb-combat-icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; 
+   
+    &__wrap{
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
+        gap: 15px;
+        max-width: 1200px;
+
+        @include media-breakpoint-down(sm) {
+            grid-template-columns: 1fr;
+         }
+    }
+
+    &__single{
+        display: flex;
+        padding: 15px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon{
+        max-height: 80px;
+        margin-right: 20px;
+    }
+
+
+    &__photo-image{
+        width: 100%;
+    }
+    &__title{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__info{
+        font-size: 15px;
+    }
+
+
+}
+
