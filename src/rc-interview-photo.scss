@@ -72,7 +72,9 @@
     }
   }
 
-  &__text-content {
-    font-size: 22px;
+  p {
+    font-family: Georgia,sans-serif;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
