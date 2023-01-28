@@ -1,4 +1,4 @@
-# Pobo Page Builder tvorba vlastních widgetů
+# Vytváření widgetu v Pobo Page Builder
 
 Tento repozitář slouží především pro klienty doplňku Pobo Page Builder, kteří si
 chtějí upravovat vzhled svých widgetů. 
@@ -54,9 +54,205 @@ Nás zajímají hlavně:
 
 ## Píšeme první widget
 
-Nyní začneme s kódováním našeho prvního widgetu. Vytvoříme si vlastní SCSS soubor v adresáři `src/*` který výstižně pojmenujeme. Do souboru
-`src/editor.scss` je potřeba tento soubor importovat přes `@import`.
+Nyní začneme s kódováním našeho prvního widgetu. Nejdříve si vytvoříme nový PR 
+`git checkout -b "widget-fv-bikemax-benefix-big" origin/main`. 
 
-Následně spustíme příkaz `npm run watch` který se postará o sledování změn v SCSS souborech a zkompiluje je. Zároveň nám vytvoří i virtuální server na adrese localhost:8088 kde můžeme vidět změny ihned po provedení.
+Dále si si vytvoříme SCSS soubor v adresáři `src/*` který 
+pojmenujeme podle konvence `.[brand]-[client]-[typ-widgetu]-[varianta]` (např. `fv-bikemax-benefit-big.scss`). Tento 
+SCSS soubor naimportujeme do `src/editor.scss` (např. `@import "fv-bikemax-benefit-big.scss";`).
 
-V souboru `index.html` vytvoříme našemu widgetu i vlastní HTML kód, aby pro nás tvorba stylů byla co nejpříjemnější. 
+Následně spustíme příkaz `npm run watch` který se postará o sledování změn v SCSS souborech + kompilaci do CSS a
+vytvoří server s nastylovanými widgety na url http://localhost:8088. 
+
+## Píšeme CSS (SCSS)
+
+Widgety doporučujeme stylovat metodikou [BEM](https://www.vzhurudolu.cz/prirucka/bem), která zaručí nízkou specifičnost
+a minimální riziko ovlivnění externími úpravami (např. přetížení stylů šablonou, globálními úpravami kodérů a pod.).
+
+Při psaní tříd **doporučujeme** používat prefixy podle názvu SCSS souboru (např. `.fv-bikemax-benefit-big {}`. Tím se vyhneme 
+kolizím s jinými widgety. Kód tedy bude vypadat přibližně takto:
+
+```scss
+
+.fv-bikemax-benefit-big {
+  &__title {
+    font-size: 10px
+  }
+  
+  &__subtitle {
+    font-size: 20px;
+  }
+
+  &__image {
+    float: left;
+  }
+}
+```
+
+**Důležitá informace:** V prefixech nepoužívejte `.pb-*` ani `.rc-*` - tyto prefixy používá Pobo Page Builder pro 
+widgety dostupné všem klientům a mohlo by dojít ke kolizi. 
+
+## Vyjímky při stylování obsahu
+
+V Pobo Page Builder lze pro úpravu textu použít dva způsoby:
+
+1. Vytváření  obsahu ve wysiwyg editoru (s možností vkládat nadpisy, odstavce, odkazy, tabulky atd.). Nejčastěji se 
+používá pro obsah, ve kterém chce klient pracovat s plnohodnotným obsahem a je prostor pro zobrazení  wysiwyg editoru. 
+Obsah v něm nelze stylovat BEM metodikou, ale je potřeba jej nastylovat zanořením. 
+
+![Wysiwyg](./doc/wysiwyg.png)
+
+Ukázkové SCSS:
+
+```scss
+.fv-bikemax-benefit-big {
+  &__image-container {
+    position: relative;
+  }
+  
+  &__image {
+    float: left;
+  }
+  
+  &__content {
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+      font-size: 10px;  
+    }
+    
+    a {
+      text-decoration: underline;
+    }
+    
+    ul, li, table .. atd {
+      ....
+    }
+  }
+}
+```
+
+HTML bude vypadat následovně: 
+
+```html
+<div class="fv-bikemax-benefit-big">
+  <div class="fv-bikemax-benefit-big__image-container">
+    <img src="#" class="fv-bikemax-benefit-big__image">
+  </div>
+  <div class="fv-bikemax-benefit-big">
+    ↓ ------------------------------------------------|
+    <h2>Hello world</h2>                              |  Obsah zabalený ve wysiwyg 
+    <p>Lorem ipsum is <a href="#">dolores</a>.</p>    |        
+    ↑ ------------------------------------------------|
+  </div>
+</div>
+```
+
+2. Text v jednoduchí podobě 
+
+Jednoduchý text (bez moožnosti vkládání odkazu, tabulek a pod.) se styluje klasicky podle BEM metodiky. Kód bude bude 
+vypadat např.:
+
+```scss
+.fv-bikemax-benefit-big {
+  &__image {
+    float: left;
+    position: relative;
+  }
+  
+  &__title {
+    font-size: 20px;
+  }
+  
+  &__subtitle {
+    font-size: 10px;
+  }
+}
+```
+
+HTML bude vypadat následovně:
+
+```html
+<div class="fv-bikemax-benefit-big">
+  <div class="fv-bikemax-benefit-big__image-container">
+    <img src="#" class="fv-bikemax-benefit-big__image">
+  </div>
+  <div>
+    <h2 class="fv-bikemax-benefit-big__title">Hello world</h2> ←------------------| Nadpis může být  `<h2>`, `<h3>`
+    <span class="fv-bikemax-benefit-big__subtitle">Lorem ipsum is samet</span> ←--| Pro jednoduchý text použiejem `<span>`
+  </div>
+</div>
+```
+
+![Wysiwyg](./doc/inline.png)
+
+## Stylování obrázků
+
+Obrázky obalujeme elementem, který má nastavenou CSS vlastnost `position: relative`. Pobo vkládá k obrázku tlačítko, 
+které je absolutně napozicované vůči rodiči (viz. ukázka kódu výše).
+
+## Používání odrážek a seznamů
+
+Odrážky a číslované seznamy se v Pobo používají tak, že místo `<li>` zobrazí pole (textarea) pro vkládání textu:
+
+![Wysiwyg](./doc/list.png)
+
+Pobo následně vytvoří z každého nového řádku položku v seznamu (li). Z  tohoto důvodu doporučujeme používat
+seznamy na jednoduché texty (do `<li>` nelze vkládat span a pod.). 
+
+# Psaní HTML 
+
+HTML widgetu píšeme do souboru `widget.html` vždy na konec seznamu widgetů. Parcel v případě změny v `index.html`
+provede hotreload a změny se projeví ihned (i v CSS).
+
+
+## Testování widgetu před nasazení ke klientovi 
+
+Před nasazením je dobré otestovat zobrazení widgetu na straně klienta a jeho e-shopu. K tomu slouží
+jednoduchý postup:
+
+1. Spustíme ngrok (proxy server na lokální vývoj) příkazem `npm run proxy`
+3. Terminál nám vrátí následující výstup: 
+
+![ngrok](./doc/ngrok.png)
+
+Nás zajímá veřejné URL, kterou nám vrátí, např. `https://abcd-12-34-56-789.ngrok.io/`. Tato URL je public tunelem (proxy)
+na náš lokální server (`http://localhost:8088/`). 
+
+3. Otevřeme si `https://abcd-12-34-56-789.ngrok.io/` a vyhledáme si CSS soubor, který je nalinkovaný v hlavičce
+(např. `/index.cc2492f5.css` (název bude vždy jiný, používá se content hash)). Zkopírujeme si cestu k CSS souboru 
+(např. `https://abcd-12-34-56-789.ngrok.io/index.cc2492f5.css`).
+
+4. Poté se přihlásíme do Pobo na url  [www.pobo.cz/login](https://www.pobo.cz/login), přejdeme na stránku
+   [www.pobo.cz/app/asset](https://www.pobo.cz/app/asset), vytvoříme první úpravu a do pole kód vložíme následující: 
+
+```scss
+@import "https://abcd-12-34-56-789.ngrok.io/index.cc2492f5.css";
+```
+
+![Asset](./doc/asset.png)
+
+Následně uložíme. Tímto krokem přiložíme testovací CSS k widgetu. 
+
+6. Nyní si vyhledáme produkt, na kterém
+otestujeme widget. V editoru si vyhledáme pomocí filtrů v pravém panelu  **Widget s HTML kódem**, vložíme do obsahu a pastneme 
+něj HTML widgetu:
+
+![Widget s HTML](./doc/widget-html.png)
+
+Následně provedeme export produktu a zkontrolujeme vzhled widgetu na produktu. V této fázi můžeme upravovat SASS a provést
+korekci vzhledu bez nutnosti kamokoliv ukládat CSS. 
+
+7. Jakmile bude widget dokončený, vytvoříme PR a pošleme info na `tomas@pobo.cz` s odkazem na PR. Nezapomene také
+smazat vytvořenou vlastní úpravu v Pobo.
+
+Na nasazení widgetu do produkce se widget objeví v záložce `Od Pobo`.
+
+
+
+## Děkujeme partnerům
+
+<img src="./doc/fv-studio.png" width="200" height="auto"/>
+
