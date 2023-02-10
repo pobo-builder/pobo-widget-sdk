@@ -1,0 +1,125 @@
+.fv-bikemax-benefit-v-first {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  &__wrap {
+    max-width: 1199px;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+  &__left {
+    width: 45%;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__right {
+    width: 50%;
+    padding: 20px 40px;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      padding: 20px 20px;
+    }
+  }
+
+  &__icon-single {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-size: 40px;
+  }
+
+  &__item {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 3px 0px;
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    color: rgb(141, 140, 140);
+    padding-left: 20px;
+    margin: 0px;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  &__name {
+    font-size: 23px;
+    font-weight: bold;
+    padding-left: 20px;
+    margin: 0px;
+  }
+
+  &__icon {
+    text-align: center;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &--frame {
+      background-image: url("https://cdn.myshoptet.com/usr/api.fv-studio.cz/user/documents/upload/clients/pobo/img/frame.svg");
+    }
+    &--fork {
+      background-image: url("https://pobo-cdn.b-cdn.net/widget/bike-max/pruzina.png");
+    }
+    &--sheel {
+      background-image: url("https://pobo-cdn.b-cdn.net/widget/bike-max/pruzina.png");
+    }
+    &--gearbox {
+      background-image: url("https://cdn.myshoptet.com/usr/api.fv-studio.cz/user/documents/upload/clients/pobo/img/cassette.svg");
+    }
+    &--equipment {
+      background-image: url("https://pobo-cdn.b-cdn.net/widget/bike-max/pruzina.png");
+    }
+    &--breaks {
+      background-image: url("https://cdn.myshoptet.com/usr/api.fv-studio.cz/user/documents/upload/clients/pobo/img/noun-brake-lever.svg?");
+    }
+    &--muffler {
+      background-image: url("https://pobo-cdn.b-cdn.net/widget/bike-max/pruzina.png");
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -35px;
+      top: 42%;
+      transform: translate(-50%, -50%);
+      background-image: url("https://pobo-cdn.b-cdn.net/widget/bike-max/arrow.svg");
+      width: 15px;
+      height: 15px;
+      background-size: 15px;
+    }
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin: 0px;
+  }
+
+  &__underline {
+    background-image: linear-gradient(120deg, #f85557 0%, #ff999b 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+  }
+}
