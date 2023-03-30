@@ -15,6 +15,7 @@
   }
   &__left {
     width: 45%;
+    position: relative;
     @include media-breakpoint-down(md) {
       width: 100%;
     }
