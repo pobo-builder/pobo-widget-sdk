@@ -1,0 +1,110 @@
+$element: ".rc-counter";
+
+#{$element} {
+  display: grid;
+  margin: 20px 0;
+  padding: 25px 0;
+  position: relative;
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    padding: 10px 0;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: white;
+    opacity: 35%;
+    z-index: 8;
+  }
+
+  &.dark {
+    background: black;
+  }
+
+  &__two {
+    grid-template-columns: 50% 50%;
+  }
+
+  &__three {
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  }
+
+  &__box {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__inner {
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial,sans-serif;
+
+    @include media-breakpoint-down(sm) {
+      padding: 10px 5px;
+    }
+  }
+
+  &__header {
+    padding: 0 0 5px 0;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333333;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+
+
+    &--medium {
+      font-size: 32px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__info {
+    padding: 0;
+    margin: 5px 0 0 0;
+    display: block;
+    font-size: 17px;
+    color: #4b4b4b;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+    }
+
+    &--medium {
+      font-size: 18px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &.dark {
+    #{$element}__header {
+      background: blue;
+    }
+  }
+}
