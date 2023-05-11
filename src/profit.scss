@@ -1,4 +1,4 @@
-.pb-profit {
+.rc-profit {
   padding: 10px 0;
 
 
@@ -17,11 +17,13 @@
   &__list-item {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 15px 0;
+    position: relative;
   }
 
   &__list-ico {
     width: 30px;
+    display: flex;
   }
 
   &__list-content {
@@ -83,6 +85,6 @@
 
   &__left-half,
   &__right-half {
-
+    position: relative;
   }
 }
