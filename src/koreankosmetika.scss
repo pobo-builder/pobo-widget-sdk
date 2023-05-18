@@ -8,10 +8,11 @@
     justify-content: center;
     align-items: center;
 
+ 
     &__wrap{
         display: flex;
         flex-direction: column;
-        padding-top: 20px;
+        padding-top: 18px;
     }
 
     &__wrap-title{
@@ -67,6 +68,9 @@
         justify-content: center;
         align-content: center;
         text-align: center;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
     }
 
     &__icons{
@@ -77,6 +81,10 @@
         align-content: center;
         text-align: center;
         margin-top: 20px;
+
+        @include media-breakpoint-down(md) { 
+            grid-template-columns: repeat(5, 1fr);
+        }
     }
 
     &__icons-title{
