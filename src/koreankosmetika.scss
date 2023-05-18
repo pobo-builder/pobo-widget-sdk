@@ -21,6 +21,7 @@
         font-size: 34px;
         text-align: center;
         width: auto;
+  
         padding: 15px 0px;
         &::before{
             content: "";
@@ -58,7 +59,7 @@
             @include media-breakpoint-down(md) {
                 left:90%;
               }    
-    }
+      }
     }
 
     &__number-line{
@@ -73,6 +74,21 @@
         }
     }
 
+
+    &__number-line-mobile{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        grid-column: span 5;
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+
+
     &__icons{
         display: grid;
         grid-template-columns: repeat(10, 1fr);
@@ -84,6 +100,8 @@
 
         @include media-breakpoint-down(md) { 
             grid-template-columns: repeat(5, 1fr);
+            grid-auto-flow: dense;
+            gap: 10px;
         }
     }
 
@@ -108,6 +126,8 @@
         width: 90%;
     }
 
+
+
     &__num{
         z-index: 10;
         position: relative;
@@ -116,7 +136,7 @@
     }
     
 
-    &__number-line-number{
+    &__number-line-number, &__number-line-mobile-number{
         position: relative;
         font-size: 10px;
         font-weight: bold;
@@ -163,6 +183,14 @@
         }
     }
 
+    &__number-line-mobile-number{
+        margin-top:10px;
+        &::after{
+            display: none;
+        }
+     
+    }
+
     &__active-number{
         color: white;
         font-size: 14px;
@@ -194,4 +222,3 @@
 }
 
 
- 
