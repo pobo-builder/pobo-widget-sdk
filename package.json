@@ -10,7 +10,7 @@
     "proxy": "ngrok http 8088"
   },
   "engines": {
-    "node": ">=10.19",
+    "node": ">=14.19",
     "npm": ">=6.14"
   },
   "repository": {
@@ -35,10 +35,10 @@
   },
   "homepage": "https://github.com/pobo-builder/widget-skeleton#readme",
   "devDependencies": {
-    "@parcel/package-manager": "2.8.2",
-    "@parcel/transformer-sass": "2.8.2",
+    "@parcel/package-manager": "2.9.2",
+    "@parcel/transformer-sass": "2.9.2",
     "ngrok": "4.3.3",
-    "parcel": "2.8.2",
+    "parcel": "2.9.2",
     "bootstrap": "4.3.1"
   }
 }

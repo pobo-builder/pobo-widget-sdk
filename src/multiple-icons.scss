@@ -1,4 +1,4 @@
-.rc-multiple-ico-in-one{
+.rc-inline-image{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -26,19 +26,6 @@
         padding: 12px 10px;
 
 
-    }
-
-    &__main-ico{
-        height: 150px;
-        width: auto;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0 0 20px;
-    }
-
-    &__image{
-       max-height : 150px;
-       position: relative;
     }
 
     &__content{
