@@ -13,6 +13,11 @@
     align-items: center;
     position: relative;
     box-shadow: rgba(17, 17, 26, 0.1) 0 1px 0;
+
+    @include media-breakpoint-down(sm) {
+      padding: 35px 0px;
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -32,6 +37,12 @@
       background-size: 55px;
       background-image: url("https://pobo-cdn.b-cdn.net/widget/quotation_ico_transparent-2.svg");
       top: -26px;
+
+      @include media-breakpoint-down(sm) {
+        width: 35px;
+        height: 45px;
+        background-size: 35px;
+      }
     }
 
     &--left {
@@ -53,6 +64,9 @@
 
         @include media-breakpoint-down(sm) {
           margin-left: 0;
+          width: 35px;
+          height: 65px;
+          background-size: 35px;
         }
       }
     }
