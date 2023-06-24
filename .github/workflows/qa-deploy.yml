@@ -1,0 +1,77 @@
+name: Deploy CSS to Bunny CDN
+
+on:
+  push:
+    branches: ["*"]
+
+jobs:
+  deploy:
+   # if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build CSS
+        run: npm run build
+
+      - name: Deploy to Bunny CDN (www.pobo.cz)
+        uses: isthatcentered/dist-to-ftp@master
+        with:
+          user: pobo-cdn
+          password: ${{ secrets.BUNNY_API_CZ }}
+          host: storage.bunnycdn.com
+          port: 21
+          path: build
+          into: assets
+          cleanupExisting: false
+
+      - name: Purge Bunny CDN cache (www.pobo.cz)
+        run: |
+            curl --request POST \
+                 --url 'https://api.bunny.net/purge?url=https://image.pobo.cz/assets/editor.css&async=true' \
+                 --header 'AccessKey: ${{ secrets.BUNNY_API_CZ }}'
+
+
+      - name: Deploy to Bunny CDN (www.pobo.hu)
+        uses: isthatcentered/dist-to-ftp@master
+        with:
+          user: pobo-hu
+          password: ${{ secrets.BUNNY_API_HU }}
+          host: storage.bunnycdn.com
+          port: 21
+          path: build
+          into: assets
+          cleanupExisting: false
+
+      - name: Purge Bunny CDN cache (www.pobo.hu)
+        run: |
+          curl --request POST \
+               --url 'https://api.bunny.net/purge?url=https://image.pobo.hu/assets/editor.css&async=true' \
+               --header 'AccessKey: ${{ secrets.BUNNY_API_HU }}'
+
+      - name: Deploy to Bunny CDN (www.pobo.space)
+        uses: isthatcentered/dist-to-ftp@master
+        with:
+          user: pobo-space
+          password: ${{ secrets.BUNNY_API_SPACE }}
+          host: ny.storage.bunnycdn.com
+          port: 21
+          path: build
+          into: assets
+          cleanupExisting: false
+
+      - name: Purge Bunny CDN cache (www.pobo.space)
+        run: |
+          curl --request POST \
+               --url 'https://api.bunny.net/purge?url=https://image.pobo.space/assets/editor.css&async=true' \
+               --header 'AccessKey: ${{ secrets.BUNNY_API_SPACE }}'
