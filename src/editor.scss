@@ -53,7 +53,6 @@
 @import "profit";
 @import "image-right-overlay";
 @import "image-left-overlay";
-@import "combat-text-widget";
 @import "card-call-to-action";
 
 @import "review-one";
@@ -77,18 +76,20 @@
 @import "reviews-three-in-row";
 @import "counter";
 
-@import "bike-max";
-@import "combat-icons";
 
 
 @import "grid";
 @import "embed";
 @import "spacing";
 @import "rc-interview-photo";
-
 @import "parameter";
-@import "koreankosmetika";
+
+
 
 // Custom template
-//@import "custom-template/01";
+@import "koreankosmetika";
+@import "combat-text-widget";
+@import "bike-max";
+@import "combat-icons";
+@import "yolab-custom";
 @import "fv-bikemax-benefit-widget";
