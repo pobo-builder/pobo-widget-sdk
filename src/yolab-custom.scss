@@ -1,539 +1,546 @@
-.yolab-description{
-    width: 100%;
-    max-width: 1199px;
-    border-radius: 8px;
-    padding: 24px 0px;
-    background: white;
-    font-family: 'Work Sans', sans-serif;
-    margin-top: 16px;
-    h2,h3,p{
-        margin: 0;
-    }
+.yolab-description {
+  width: 100%;
+  max-width: 1199px;
+  border-radius: 8px;
+  padding: 24px 0px;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 16px;
 
-    &__wrap{
-        display: flex;
-        justify-content: center;
-        margin-top: 25px;
-        padding: 0px 32px;
-        @include media-breakpoint-down(sm) {
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            margin-top: 10px;
-        }
-    }
+  h2, h3, p {
+    margin: 0;
+  }
 
-    &__left, &__right{
-        width: 50%;
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
-    }
-
-    &__left{
-        margin-right: 70px;
-
-        @include media-breakpoint-down(sm) {
-            margin-right: 0;
-        }
-    }
-    &__title{
-        font-weight: 300 !important;
-        text-transform: uppercase;
-        font-size: 20px !important;
-        padding-left: 32px;
-        font-family: 'Work Sans', sans-serif !important;
-        @include media-breakpoint-down(sm) {
-            text-align: center;
-            padding-left: 0px;
-        }
-    }
-
-    &__subtitle{
-        font-size: 30px !important;
-        font-weight: 400 !important;
-        line-height: 1.6;
-        font-family: 'Work Sans', sans-serif !important;
-        @include media-breakpoint-down(sm) {
-            line-height: 1.3;
-            padding-bottom: 12px;
-            font-size: 24px;
-        }
-    }
-
-    &__content, &__right{
-        font-size: 16px;
-        font-weight: 300;
-        color: #6C6E73;
-        line-height: 1.8;
-    }
-}
-
-.yolab-procedure{
-    width: 100%;
-    max-width: 1199px;
-    border-radius: 8px 8px 0 0;
-    padding: 24px 0px;
-    margin-top: 16px;
-    background: white;
-    font-family: 'Work Sans', sans-serif;
-    h2,h3,p{
-        margin: 0;
-    }
-    &__title{
-        font-weight: 300;
-        text-transform: uppercase;
-        font-size: 20px;
-        padding-bottom: 24px;
-        padding-left: 32px;
-    
-        @include media-breakpoint-down(sm) {
-            display: none;
-        }
-    }
-
-    &__left, &__right{
-        width: 50%;
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
-    }
-
-    &__left{
-        position: relative;
-        margin-right: 80px;
-        @include media-breakpoint-down(sm) {
-            margin-right: 0;
-        }
-    }
-
-    &__wrap{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 32px;
-        @include media-breakpoint-down(sm) {
-            flex-direction: column;
-        }
-    }
-
-    &__image{
-        width: 100%;
-        border-radius: 12px;
-        position: relative;
-    }
-
-    &__subtitle{
-        margin:0;
-        font-size: 30px !important;
-        font-weight: 400 !important;
-        line-height: 1.6;
-        font-family: 'Work Sans', sans-serif !important;
-
-        @include media-breakpoint-down(sm) {
-            text-align: center;
-            padding-top: 30px;
-            font-size: 24px;
-        }
-    }
-    
-
-}
-
-
-.yolab-procedure-item{
-    width: 100%;
-    background: white;
-    font-family: 'Work Sans', sans-serif;
-    max-width: 1199px;
-    h2, h3, p{
-        margin: 0;
-    }
-
-    &__wrap{
-        display: flex;
-        padding: 32px 32px 72px 32px;
-        border-top: 1px solid #E4E7E9;
-        @include media-breakpoint-down(sm) {
-            flex-direction: column;
-        }
-    }
-
-    &__info, &__content{
-        width: 50%;
-
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
-    }
-
-    &__info{
-        display: grid; 
-        grid-template-columns: 60px 1fr;
-        gap: 20px;
-        padding-top: 24px;
-    
-        @include media-breakpoint-down(sm) {
-            padding-top: 0;
-            padding-bottom: 24px;
-            align-items: center;
-        }
-    }
-
-    &__content{
-        margin-left: 60px;
-        font-size: 16px !important;
-        font-weight: 300 !important;
-        color: #6C6E73 !important;
-        font-family: 'Work Sans', sans-serif !important;
-        line-height: 1.8;
-        @include media-breakpoint-down(sm) {
-            margin-left: 0px;
-        }
-    }
-
-    &__number-text{
-        background-color: #00bdb72c;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border-radius: 50%;
-        color: #00bdb6;
-        font-weight: 400 !important;
-        font-family: 'Work Sans', sans-serif !important;
-        font-size: 16px !important;
-    }
-
-    &__title-text{
-        margin:0;
-        font-size: 25px !important;
-        font-weight: 400 !important;
-        line-height: 1.6 !important;
-        font-family: 'Work Sans', sans-serif !important;
-    }
-
-    &__text{
-        font-size: 16px;
-        font-weight: 300;
-        color: #6C6E73;
-        line-height: 1.8;
-    }
-}
-
-
-.yolab-substances{
-    width: 100%;
-    max-width: 1199px;
-    border-radius: 8px 8px 0 0;
-    padding-top: 24px;
-    margin-top: 16px;
-    background: white;
-    font-family: 'Work Sans', sans-serif;
-
-    &__title-wrap{
-        width: 100%;
-        padding: 0px 32px;
-        display: flex;
-        flex-direction: column;
-        @include media-breakpoint-down(sm) {
-            padding: 0;
-         }
-    }
-
-    &__title-text{
-        font-weight: 300;
-        text-transform: uppercase;
-        font-size: 20px;
-        padding-left: 32px;
-        font-family: 'Work Sans', sans-serif;
-    }
-
-    &__subtitle-wrap{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 15px;
-        
-        
-    }
-
-    &__subtitle{
-        margin:0;
-        font-size: 30px !important;
-        font-weight: 400 !important;
-        line-height: 1.6 !important;
-        font-family: 'Work Sans', sans-serif !important;
-        @include media-breakpoint-down(sm) {
-            padding: 0px 12px;
-        }
-    }
-}
-
-.yolab-substances-items{
-    width: 100%;
-    max-width: 1199px;
-    padding: 12px 0px;
-    background: white;
-    font-family: 'Work Sans', sans-serif;
-
-
-    h2, h3, p{
-        margin: 0;
-    }
-
-    &__wrap{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 0px 19px 0px 10px;
-        gap: 12px;
-        height: 100%;
-
-        @include media-breakpoint-down(sm) {
-            grid-template-columns: 1fr ;
-        }
-    }
-
-    &__item{
-        position: relative;
-        border: 1px solid #dadada;
-        padding: 65px 30px 65px 30px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-
-        @include media-breakpoint-down(sm) {
-            padding: 25px 15px 25px 15px;
-         }
-    }
-
-    &__name{
-        color: #222222;
-        font-size: 20px;
-        font-weight: 400;
-    }
-
-    &__middle{
-        width: 100%;
-        font-size: 15px;
-        line-height: 1.6;
-        color: #222222;
-        margin: 15px 0px;
-        @include media-breakpoint-down(sm) {
-           display: none;
-        }
-    }
-
-    &__top{
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    &__compo{
-        margin-left: 17px;
-        font-weight: 500;
-        font-size: 19px;
-        color: #8B9093;
-        position: relative;
-        &::before{
-            content: '';
-            width: 4px;
-            height: 4px;
-            display: inline-block;
-            background: #E4E7E9;
-            border-radius: 50%;
-            margin-right: 8px;
-            margin-left: 8px;
-            margin-bottom: 3px;
-            position: absolute;
-            top: 50%;
-            left: -17px;
-            transform: translateY(-50%);
-        }
-    }
-
-    &__img{
-        width: 100%;
-        max-width: 120px !important;
-        position: absolute;
-        bottom: -20;
-        right: -20;
-
-        @include media-breakpoint-down(sm) {
-            transform: translate(-50%, -50%);
-            top: 50%;
-            right: -50px;
-         }
-    }
-
-    &__link{
-        color: #8B9093;
-        font-size: 15px;
-        line-height: 20px;
-        margin-bottom: 24px;
-        text-decoration: none;
-    }
-}
-
-.yolab-instructions{
-    width: 100%;
-    max-width: 1199px;
-    border-radius: 8px;
-    padding: 24px 0px;
-    margin-top: 16px;
-    background: white;
-    font-family: 'Work Sans', sans-serif;
-
-    &__title{
-        font-weight: 300;
-        text-transform: uppercase;
-        font-size: 20px;
-        padding-left: 32px;
-        margin-bottom: 0;
-    }
-
-    &__container, &__picture{
-        width: 50%;
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
-    }
-
-    &__subtitle{
-        padding-left: 40px;
-        font-size: 30px !important;
-        font-weight: 400 !important;
-        line-height: 1.6 !important;
-        font-family: 'Work Sans', sans-serif !important;
-        margin: 25px;
-
-        @include media-breakpoint-down(sm) {
-            text-align: center;
-            margin: 25px 0px;
-            padding-left: 0px !important;
-        }
-    }
-
-    &__wrap{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 40px;
-    }
-
-    &__content{
-        margin-right: 35px;
-        margin-left: 14px;
-    }
-
-    &__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__ico-img{
-        max-width: 45px !important;
-    }
-
-
-    &__content-title{
-        font-size: 16px;
-        color: #6C6E73;
-        font-weight: 400;
-        line-height: 22px;
-        margin-top: 5px;
-    
-    }
-
-    &__content-text{
-        font-size: 18px;
-        font-weight: 300;
-        color: #6C6E73;
-        line-height: 1.8;
-    }
-    &__item{
-        display: flex;
-        margin-top: 45px;
-        justify-content: flex-start;
-    }
-
-    &__picture{
-        position: relative;
-        margin-right: 40px;
-        @include media-breakpoint-down(sm) {
-            display: none;
-        }
-    }
-
-
-
-    &__picture-img{
-        width: 100%;
-    }
-}
-
-
-.yolab-reviews{
-    width: 100%;
-    max-width: 1199px;
+  &__wrap {
     display: flex;
     justify-content: center;
-    padding: 24px 0px;
-    margin-top: 16px;
-    border-radius: 8px;
-    background: white;
-    font-family: 'Work Sans', sans-serif;
+    margin-top: 25px;
+    padding: 0px 32px;
     @include media-breakpoint-down(sm) {
-        flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-top: 10px;
     }
-    &__left{
-        width: 40%;
-        margin-left: 36px;
-        margin-top: 55px;
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: column;
-        }
-        @include media-breakpoint-down(sm) {
-            margin-left: 0;
-        }
+  }
+
+  &__left, &__right {
+    width: 50%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
     }
+  }
 
-    &__number{
-        font-size: 55px;
-        color: black;
-        font-weight: 200;
-        margin-top: 5px;
-        display: inline;
+  &__left {
+    margin-right: 70px;
 
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 10px;
-        }
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
     }
+  }
 
-    &__right{
-        width: 60%;
-        margin-top: 20px;
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-        }
+  &__title {
+    font-weight: 300 !important;
+    text-transform: uppercase;
+    font-size: 20px !important;
+    padding-left: 32px;
+    font-family: 'Work Sans', sans-serif !important;
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      padding-left: 0px;
     }
+  }
 
-    &__item{
-        margin-bottom: 40px;
-        @include media-breakpoint-down(sm) {
-            padding: 0px 15px;
-        }
+  &__subtitle {
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    line-height: 1.6;
+    font-family: 'Work Sans', sans-serif !important;
+    @include media-breakpoint-down(sm) {
+      line-height: 1.3;
+      padding-bottom: 12px;
+      font-size: 24px;
     }
+  }
 
-    
+  &__content, &__right {
+    font-size: 16px;
+    font-weight: 300;
+    color: #6C6E73;
+    line-height: 1.8;
+  }
+}
+
+.yolab-procedure {
+  width: 100%;
+  max-width: 1199px;
+  border-radius: 8px 8px 0 0;
+  padding: 24px 0px;
+  margin-top: 16px;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+
+  h2, h3, p {
+    margin: 0;
+  }
+
+  &__title {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &__left, &__right {
+    width: 50%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__left {
+    position: relative;
+    margin-right: 80px;
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 32px;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    line-height: 1.6;
+    font-family: 'Work Sans', sans-serif !important;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      padding-top: 30px;
+      font-size: 24px;
+    }
+  }
+
+
+}
+
+
+.yolab-procedure-item {
+  width: 100%;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+  max-width: 1199px;
+
+  h2, h3, p {
+    margin: 0;
+  }
+
+  &__wrap {
+    display: flex;
+    padding: 32px 32px 72px 32px;
+    border-top: 1px solid #E4E7E9;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__info, &__content {
+    width: 50%;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+    padding-top: 24px;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+      padding-bottom: 24px;
+      align-items: center;
+    }
+  }
+
+  &__content {
+    margin-left: 60px;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: #6C6E73 !important;
+    font-family: 'Work Sans', sans-serif !important;
+    line-height: 1.8;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0px;
+    }
+  }
+
+  &__number-text {
+    background-color: #00bdb72c;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    color: #00bdb6;
+    font-weight: 400 !important;
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 16px !important;
+  }
+
+  &__title-text {
+    margin: 0;
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    font-family: 'Work Sans', sans-serif !important;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #6C6E73;
+    line-height: 1.8;
+  }
+}
+
+
+.yolab-substances {
+  width: 100%;
+  max-width: 1199px;
+  border-radius: 8px 8px 0 0;
+  padding-top: 24px;
+  margin-top: 16px;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+
+  &__title-wrap {
+    width: 100%;
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+  }
+
+  &__title-text {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 32px;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  &__subtitle-wrap {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+
+
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    font-family: 'Work Sans', sans-serif !important;
+    @include media-breakpoint-down(sm) {
+      padding: 0px 12px;
+    }
+  }
+}
+
+.yolab-substances-items {
+  width: 100%;
+  max-width: 1199px;
+  padding: 12px 0px;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+
+
+  h2, h3, p {
+    margin: 0;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 19px 0px 10px;
+    gap: 12px;
+    height: 100%;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border: 1px solid #dadada;
+    padding: 65px 30px 65px 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    @include media-breakpoint-down(sm) {
+      padding: 25px 15px 25px 15px;
+    }
+  }
+
+  &__name {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__middle {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #222222;
+    margin: 15px 0px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__compo {
+    margin-left: 17px;
+    font-weight: 500;
+    font-size: 19px;
+    color: #8B9093;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      display: inline-block;
+      background: #E4E7E9;
+      border-radius: 50%;
+      margin-right: 8px;
+      margin-left: 8px;
+      margin-bottom: 3px;
+      position: absolute;
+      top: 50%;
+      left: -17px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 120px !important;
+    position: absolute;
+    bottom: -20;
+    right: -20;
+
+    @include media-breakpoint-down(sm) {
+      transform: translate(-50%, -50%);
+      top: 50%;
+      right: -50px;
+    }
+  }
+
+  &__link {
+    color: #8B9093;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 24px;
+    text-decoration: none;
+  }
+}
+
+.yolab-instructions {
+  width: 100%;
+  max-width: 1199px;
+  border-radius: 8px;
+  padding: 24px 0px;
+  margin-top: 16px;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+
+  &__title {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 32px;
+    margin-bottom: 0;
+  }
+
+  &__container, &__picture {
+    width: 50%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    padding-left: 40px;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    font-family: 'Work Sans', sans-serif !important;
+    margin: 25px;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      margin: 25px 0px;
+      padding-left: 0px !important;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  &__content {
+    margin-right: 35px;
+    margin-left: 14px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__ico-img {
+    max-width: 45px !important;
+  }
+
+
+  &__content-title {
+    font-size: 16px;
+    color: #6C6E73;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 5px;
+
+  }
+
+  &__content-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: #6C6E73;
+    line-height: 1.8;
+  }
+
+  &__item {
+    display: flex;
+    margin-top: 45px;
+    justify-content: flex-start;
+  }
+
+  &__picture {
+    position: relative;
+    margin-right: 40px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+
+  &__picture-img {
+    width: 100%;
+  }
+}
+
+
+.yolab-reviews {
+  width: 100%;
+  max-width: 1199px;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px;
+  margin-top: 16px;
+  border-radius: 8px;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+
+  &__left {
+    width: 40%;
+    margin-left: 36px;
+    margin-top: 55px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+  }
+
+  &__number {
+    font-size: 55px;
+    color: black;
+    font-weight: 200;
+    margin-top: 5px;
+    display: inline;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__right {
+    width: 60%;
+    margin-top: 20px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    @include media-breakpoint-down(sm) {
+      padding: 0px 15px;
+    }
+  }
+
+
   &__stars {
     margin: 10px 0px;
     margin-bottom: 30px;
@@ -547,15 +554,15 @@
     background-size: 100% 100%;
   }
 
-  &__subtitle{
-      color: #6C6E73;
-      text-transform: uppercase;
-      font-weight: 300 !important;
-      font-size: 17px !important;
-      font-family: 'Work Sans', sans-serif !important;
+  &__subtitle {
+    color: #6C6E73;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    font-size: 17px !important;
+    font-family: 'Work Sans', sans-serif !important;
   }
 
-  &__button{
+  &__button {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -569,19 +576,19 @@
     margin-top: 70px;
     text-decoration: none;
     @include media-breakpoint-down(sm) {
-        margin-top: 10px;
+      margin-top: 10px;
     }
   }
 
-  &__product{
-      color: black;
-      font-weight: 300;
-      font-size: 17px;
-      line-height: 1.2;
-      margin-bottom: 0;
+  &__product {
+    color: black;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.2;
+    margin-bottom: 0;
   }
 
-  &__review-text{
+  &__review-text {
     color: black;
     font-weight: 300;
     font-size: 17px;
@@ -589,64 +596,65 @@
   }
 }
 
-.yolab-faq{
-    width: 100%;
-    max-width: 1199px;
+.yolab-faq {
+  width: 100%;
+  max-width: 1199px;
+  display: flex;
+  padding: 24px 0px;
+  margin-top: 16px;
+  background: #F5F6F7;
+  font-family: 'Work Sans', sans-serif;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+
+  &__left {
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 40px;
+    padding: 0px 30px;
     display: flex;
-    padding: 24px 0px;
-    margin-top: 16px;
-    background: #F5F6F7;
-    font-family: 'Work Sans', sans-serif;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: left;
 
     @include media-breakpoint-down(sm) {
-        flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      align-items: flex-start;
+      padding: 0;
     }
-    &__left{
-        width: 20%;
-        margin-left: 10px;
-        margin-right: 40px;
-        padding: 0px 30px;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        text-align: left;
+  }
 
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-            align-items: flex-start;
-            padding: 0;
-        }
+  &__title {
+    color: #6C6E73;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    @include media-breakpoint-down(sm) {
+      padding-left: 22px;
     }
+  }
 
-    &__title{
-        color: #6C6E73;
-        font-size: 18px;
-        font-weight: 300;
-        text-transform: uppercase;
-        @include media-breakpoint-down(sm) {
-            padding-left: 22px;
-        }
+  &__subtitle {
+    font-size: 36px !important;
+    font-weight: 400 !important;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 4px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 22px;
     }
-
-    &__subtitle{
-        font-size: 36px  !important;
-        font-weight: 400 !important;
-        font-family: 'Work Sans', sans-serif;
-        margin-top: 4px;
-        @include media-breakpoint-down(sm) {
-            padding-left: 22px;
-        }
-    }
+  }
 
 
-    &__right{
-        overflow: hidden;
-        width: 80%;
-        @include media-breakpoint-down(sm) {
-            width: 100%;
-            margin-right: 0;
-        }
+  &__right {
+    overflow: hidden;
+    width: 80%;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      margin-right: 0;
     }
+  }
 }
