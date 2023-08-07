@@ -1,0 +1,20 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 42 | /     @include media-breakpoint-down(sm) {
+ * 43 | |       font-size: 32px;
+ * 44 | |       text-align: left;
+ * 45 | |       padding: 0 15px;
+ * 46 | \     }
+ *    '
+ *   arsov-custom.scss 42:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 42 \2502  \250c      @include media-breakpoint-down(sm) {\a 43 \2502  \2502        font-size: 32px;\a 44 \2502  \2502        text-align: left;\a 45 \2502  \2502        padding: 0 15px;\a 46 \2502  \2514      }\a    \2575 \a   arsov-custom.scss 42:5  root stylesheet";
+}

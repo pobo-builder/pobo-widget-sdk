@@ -1,26 +1,10 @@
-/*** SMAZAT, FONTY BUDOU NÁSLEDNĚ PŘÍMO V SHOPTETU */
-
-@font-face {
-  font-family: 'SofiaProRegular';
-  src: url('font/SofiaProRegular.woff2') format('woff2'),
-  url('font/SofiaProRegular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SofiaProBold';
-  src: url('font/SofiaProSemiBold.woff2') format('woff2'),
-  url('font/SofiaProSemiBold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.arsov-text{
+.arsov-text {
   width: 100%;
-  font-family: SofiaProBold, sans-serif;
+  font-family: 'SofiaPro', sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
 
-  &__wrap{
+  &__wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,9 +12,12 @@
     flex-direction: column;
   }
 
-  &__title{
+  &__title {
     font-size: 50px;
     margin: 0 0 30px 0;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
     @include media-breakpoint-down(sm) {
       font-size: 32px;
       text-align: left;
@@ -38,17 +25,20 @@
     }
   }
 
-  &__content{
+  &__content {
     font-size: 15px;
     max-width: 600px;
-    line-height: 1.3;
+    line-height: 1.5;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
     @include media-breakpoint-down(sm) {
       text-align: left;
       padding: 0 15px;
     }
   }
 
-  &__items{
+  &__items {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -62,41 +52,55 @@
     }
   }
 
-  &__items-single{
+  &__items-single {
     max-width: 150px;
     display: flex;
   }
 
-  &__items-content{
+  &__items-content {
     font-size: 17px;
     text-align: left;
     padding-left: 10px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: unset;
   }
 
-  &__items-img{
+  &__items-img {
     width: 100%;
     max-width: 40px;
     object-fit: contain;
   }
 }
 
-.arsov-title{
+.arsov-title {
   width: 100%;
   margin: 90px 0 60px 0;
-  font-family: SofiaProBold, sans-serif;
-  &__wrap{
+  font-family: SofiaPro, sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
+
+  &__wrap {
     text-align: center;
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+      padding-left: 15px;
+    }
   }
 
-  &__content{
+  &__content {
     font-size: 50px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
     @include media-breakpoint-down(sm) {
       font-size: 32px;
     }
   }
 }
 
-.arsov-photo-left{
+.arsov-photo-left {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -104,7 +108,8 @@
   @include media-breakpoint-down(sm) {
     margin-bottom: 30px;
   }
-  &__wrap{
+
+  &__wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -114,17 +119,17 @@
     }
   }
 
-  &__photo, &__content{
+  &__photo, &__content {
     height: 100%;
   }
 
-  &__photo{
+  &__photo {
     @include media-breakpoint-down(sm) {
       order: 1;
     }
   }
 
-  &__photo-img{
+  &__photo-img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -135,7 +140,7 @@
     }
   }
 
-  &__content{
+  &__content {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -149,7 +154,7 @@
     }
   }
 
-  &__content-img{
+  &__content-img {
     position: relative;
     max-width: 45px;
     margin: 0 0 30px 0;
@@ -159,13 +164,16 @@
     }
   }
 
-  &__content-title{
-    font-family: SofiaProBold, sans-serif;
+  &__content-title {
+    font-family: SofiaPro, sans-serif !important;
     font-size: 24px;
     margin: 0;
+    font-weight: bold;
+    font-style: normal;
   }
 
-  &__items{
+
+  &__items {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -179,7 +187,7 @@
     }
   }
 
-  &__items-single{
+  &__items-single {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,23 +197,27 @@
     }
   }
 
-  &__items-img{
+  &__items-img {
     position: relative;
   }
-  &__items-subtitle{
-    font-family: 'SofiaProRegular', sans-serif;
-    font-weight: 200;
+
+  &__items-subtitle {
+    font-family: 'SofiaPro', sans-serif !important;
     padding-left: 10px;
     font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
   }
 
-  &__text{
-    font-family: 'SofiaProRegular', sans-serif;
+  &__text {
+    font-family: 'SofiaPro', sans-serif !important;
     font-size: 15px;
     text-align: center;
     line-height: 1.4;
     color: #190701;
     max-width: 380px;
+    font-weight: normal;
+    font-style: normal;
     @include media-breakpoint-down(sm) {
       text-align: left;
     }
@@ -213,13 +225,13 @@
 }
 
 
-
-
 .arsov-carousel {
   width: 100%;
   position: relative;
   display: inline-block;
   margin-bottom: 60px;
+  margin-top: 20px;
+
   &__wrap {
     position: absolute;
     top: 0;
@@ -241,12 +253,13 @@
     }
   }
 
-  &__wrap-number{
+  &__wrap-number {
     margin: 0 0 30px 0;
-    font-family: 'SofiaProRegular', sans-serif;
+    font-family: 'SofiaPro', sans-serif !important;
     font-size: 25px;
-    font-weight: 300;
     color: white;
+    font-weight: normal;
+    font-style: normal;
 
     @include media-breakpoint-down(sm) {
       font-size: 20px;
@@ -254,21 +267,23 @@
     }
   }
 
-  &__wrap-title{
+  &__wrap-title {
     position: relative;
     margin: 0 0 30px 0;
-    font-family: 'SofiaProBold', sans-serif;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
     font-size: 50px;
     color: white;
     @include media-breakpoint-down(sm) {
-     font-size: 24px;
+      font-size: 24px;
       margin: 0 0 20px 0;
     }
   }
 
-  &__wrap-text{
+  &__wrap-text {
     max-width: 600px;
-    font-family: 'SofiaProBold', sans-serif;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
     line-height: 1.4;
     color: white;
   }
@@ -302,66 +317,46 @@
   }
 
   &__small-img {
-  width: 160px;
-  height: 120px;
-  margin: 0 5px;
-  object-fit: cover;
-  cursor: pointer;
-  position: relative;
-  border-radius: 5px;
+    width: 160px;
+    height: 120px;
+    margin: 0 5px;
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
 
     @include media-breakpoint-down(sm) {
       width: 80px;
       height: 50px;
     }
-  &:hover{
 
+    &:hover {
+
+    }
   }
-}
 
-&__small-img.selected {
-  position: relative;
-  background: red;
-  display: block;
-  &::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 160px;
-    height: 120px;
+  &__small-img.selected {
+    position: relative;
     background: red;
     display: block;
-  }
-}
-}
 
-/*** Přestylování přímo na eshopu  */
-
-.pb-faq{
-  box-shadow: unset;
-  margin: 30px 0;
-  &__header{
-    background: #F4B33D;
-    box-shadow: unset;
-    outline: none;
-    border: unset;
-    margin: 0 !important;
-    padding: 17px 15px !important;
-    border-radius: 3px;
-    font-family: 'SofiaProBold', sans-serif;
-    font-size: 15px;
-    &:before{
-      background: url("https://pobo-cdn.b-cdn.net/widget/arsov/Polygon.svg") center no-repeat;
-      right: 5px;
-      left: unset;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 160px;
+      height: 120px;
+      background: red;
+      display: block;
     }
   }
 }
 
-.arsov-about{
+.arsov-about {
   width: 100%;
-  &__wrap{
+
+  &__wrap {
     display: flex;
     width: 100%;
     @include media-breakpoint-down(sm) {
@@ -371,7 +366,7 @@
     }
   }
 
-  &__left, &__right{
+  &__left, &__right {
     width: 50%;
     padding: 20px 40px;
     @include media-breakpoint-down(sm) {
@@ -379,33 +374,604 @@
     }
   }
 
-  &__left-img{
+  &__left-img {
     width: 100%;
   }
 
-  &__right{
+  &__right {
     display: flex;
     justify-content: center;
-    //align-items: center;
     flex-direction: column;
   }
 
-  &__right-title{
+  &__right-title {
     font-size: 30px;
-    font-family: 'SofiaProBold', sans-serif;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
     margin: 0 0 30px 0;
   }
 
-  &__right-content{
+  &__right-content {
     font-size: 15px;
-    font-family: 'SofiaProRegular', sans-serif;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
     margin: 0 0 30px 0;
     line-height: 1.5;
   }
 
-  &__right-link{
+  &__right-link {
     color: #F4B33D;
-    font-family: 'SofiaProRegular', sans-serif;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
     font-size: 15px;
+  }
+}
+
+.arsov-photo-right {
+  width: 100%;
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__content, &__photo {
+    width: 50%;
+    padding: 0 20px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__photo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content-title {
+    position: relative;
+    margin: 0 0 30px 0;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+      margin: 0;
+    }
+  }
+
+  &__photo-img {
+    width: 100%;
+  }
+
+
+  &__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 0;
+    @include media-breakpoint-down(sm) {
+      justify-content: flex-start;
+      margin-top: 40px;
+    }
+  }
+
+  &__items-single {
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      margin: 10px 0;
+    }
+  }
+
+  &__items-textbold {
+    display: inline-block;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 500px;
+  }
+
+  &__items-textregular {
+    display: inline-block;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 30px 0;
+    max-width: 500px;
+  }
+}
+
+
+.arsov-effects {
+  width: 100%;
+  margin-top: 60px;
+  font-family: 'SofiaPro', sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__right, &__left {
+    width: 50%;
+    padding: 0 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__left {
+    padding: 15px 0 45px 100px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background: url("https://pobo-cdn.b-cdn.net/widget/arsov/left-top.svg") center no-repeat;
+      left: 0;
+      top: 0;
+      background-size: 100%;
+      width: 18px;
+      height: 32px;
+
+      @include media-breakpoint-down(sm) {
+        left: 10px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: url("https://pobo-cdn.b-cdn.net/widget/arsov/left-bottom.svg") center no-repeat;
+      width: 47px;
+      height: 29px;
+      left: 0;
+      bottom: 0;
+      background-size: 100%;
+      @include media-breakpoint-down(sm) {
+        background: url("https://pobo-cdn.b-cdn.net/widget/arsov/right-top.svg") center no-repeat;
+        right: 10px;
+        top: 0;
+        left: unset;
+        width: 46px;
+        height: 29px;
+        bottom: unset;
+      }
+
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 15px 0 45px 38px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 15px 0 45px 50px;
+    }
+
+  }
+
+  &__left-title, &__right-title {
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &__right {
+    padding: 15px 100px 45px 15px;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background: url("https://pobo-cdn.b-cdn.net/widget/arsov/right-top.svg") center no-repeat;
+      right: 0;
+      top: 0;
+      background-size: 100%;
+      width: 46px;
+      height: 29px;
+      @include media-breakpoint-down(sm) {
+        background: url("https://pobo-cdn.b-cdn.net/widget/arsov/right-bottom.svg") center no-repeat;
+        right: 10px;
+        bottom: 0;
+        background-size: 100%;
+        width: 18px;
+        height: 32px;
+        top: unset;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: url("https://pobo-cdn.b-cdn.net/widget/arsov/right-bottom.svg") center no-repeat;
+      right: 0;
+      bottom: 0;
+      background-size: 100%;
+      width: 18px;
+      height: 32px;
+
+      @include media-breakpoint-down(sm) {
+        background: url("https://pobo-cdn.b-cdn.net/widget/arsov/left-bottom.svg") center no-repeat;
+        width: 47px;
+        height: 29px;
+        left: 10px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 15px 50px 45px 0;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 15px 0 45px 38px;
+    }
+
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__left-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include media-breakpoint-down(sm) {
+      grid-template-columns:  1fr;
+      gap: 15px;
+    }
+  }
+
+  &__right-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns:   repeat(2, 1fr);
+    }
+  }
+
+  &__right-item, &__left-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__left-text, &__right-text {
+    font-size: 15px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &__right-img, &__left-img {
+    padding-right: 10px;
+    max-height: 20px;
+  }
+}
+
+.arsov-numbers {
+  width: 100%;
+  font-family: 'SofiaPro', sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns:  1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+      margin-left: 15px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 70px;
+    max-height: 57px;
+  }
+
+  &__item-img {
+    height: 60px;
+    margin-bottom: 15px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 5px;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+    }
+    line-height: 1.4;
+  }
+}
+
+.arsov-reviews {
+  width: 100%;
+  font-family: 'SofiaPro', sans-serif !important;
+  margin-top: 60px;
+  font-weight: normal;
+  font-style: normal;
+
+  &__wrap {
+    width: 100%;
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 31px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 15px;
+    }
+  }
+
+  &__item-left {
+    width: 71px;
+  }
+
+  &__item-right {
+    width: calc(100% - 71px);
+  }
+
+  &__item-img {
+    width: 71px;
+    height: 71px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__item-text {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  &__item-info {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  &__item-name {
+    font-size: 15px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &__title {
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 30px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 15px;
+    }
+  }
+}
+
+.arsov-tomas {
+  width: 100%;
+  margin-top: 60px;
+  background: #F4C3CA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'SofiaPro', sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+  @include media-breakpoint-down(sm) {
+    margin-top: 210px;
+    border-radius: 5px;
+  }
+
+  &__wrap {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    padding: 50px 0;
+    gap: 30px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      padding-bottom: 0;
+      margin-bottom: -130px;
+    }
+  }
+
+  &__right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      top: -180px;
+    }
+  }
+
+  &__left {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      top: -180px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 271px;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      max-width: none;
+      padding: 0 20px;
+    }
+  }
+
+  &__text {
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.4;
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+      text-align: center;
+    }
+  }
+
+  &__signature {
+    font-family: SofiaPro, sans-serif !important;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 25px;
+    font-size: 18px;
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+      text-align: center;
+    }
+  }
+}
+
+.arsov-ingredients {
+  width: 100%;
+  margin-top: 80px;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 170px;
+  }
+
+  &__title {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      padding-left: 15px;
+    }
+  }
+
+  &__text {
+    max-width: 200px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.4;
+    @include media-breakpoint-down(sm) {
+      padding-left: 15px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info, &__info-gray {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 45px;
+    line-height: 1.4;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      padding: 0 15px;
+      text-align: left;
+    }
+  }
+
+  &__info-gray {
+    text-transform: uppercase;
+    color: #9C9EA9;
   }
 }

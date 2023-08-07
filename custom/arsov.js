@@ -1,5 +1,9 @@
 
 document.addEventListener("DOMContentLoaded", function() {
+    const hasIdElement = document.querySelector("#pobo-all-content");
+    const hasClassElement = document.querySelector(".arsov-carousel");
+
+    if (hasIdElement && hasClassElement) {
     const carousels = document.querySelectorAll(".arsov-carousel");
     const carouselContainer = document.createElement("div");
     const carouselNav = document.createElement("div");
@@ -42,4 +46,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     showCarousel(0);
+    }
 });
