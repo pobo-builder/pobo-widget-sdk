@@ -1,0 +1,977 @@
+.arsov-text {
+  width: 100%;
+  font-family: 'SofiaPro', sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 50px;
+    margin: 0 0 30px 0;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+      text-align: left;
+      padding: 0 15px;
+    }
+  }
+
+  &__content {
+    font-size: 15px;
+    max-width: 600px;
+    line-height: 1.5;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+      padding: 0 15px;
+    }
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    @include media-breakpoint-down(sm) {
+      justify-content: flex-start;
+      margin-left: 15px;
+      margin-top: 40px;
+    }
+  }
+
+  &__items-single {
+    max-width: 150px;
+    display: flex;
+  }
+
+  &__items-content {
+    font-size: 17px;
+    text-align: left;
+    padding-left: 10px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: unset;
+  }
+
+  &__items-img {
+    width: 100%;
+    max-width: 40px;
+    object-fit: contain;
+  }
+}
+
+.arsov-title {
+  width: 100%;
+  margin: 90px 0 60px 0;
+  font-family: SofiaPro, sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
+
+  &__wrap {
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+      padding-left: 15px;
+    }
+  }
+
+  &__content {
+    font-size: 50px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+    }
+  }
+}
+
+.arsov-photo-left {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 30px;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns:  1fr;
+      justify-items: center;
+    }
+  }
+
+  &__photo, &__content {
+    height: 100%;
+  }
+
+  &__photo {
+    @include media-breakpoint-down(sm) {
+      order: 1;
+    }
+  }
+
+  &__photo-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 600px;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+      order: 2;
+    }
+  }
+
+  &__content-img {
+    position: relative;
+    max-width: 45px;
+    margin: 0 0 30px 0;
+
+    @include media-breakpoint-down(sm) {
+      margin: 30px 0;
+    }
+  }
+
+  &__content-title {
+    font-family: SofiaPro, sans-serif !important;
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+  &__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+
+    @include media-breakpoint-down(sm) {
+      justify-content: flex-start;
+      margin: 0 0 30px;
+    }
+  }
+
+  &__items-single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+    }
+  }
+
+  &__items-img {
+    position: relative;
+  }
+
+  &__items-subtitle {
+    font-family: 'SofiaPro', sans-serif !important;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  &__text {
+    font-family: 'SofiaPro', sans-serif !important;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.4;
+    color: #190701;
+    max-width: 380px;
+    font-weight: normal;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+    }
+  }
+}
+
+
+.arsov-carousel {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 60px;
+  margin-top: 20px;
+
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.32);
+
+    @include media-breakpoint-down(md) {
+      justify-content: flex-start;
+      padding-top: 30px;
+    }
+  }
+
+  &__wrap-number {
+    margin: 0 0 30px 0;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-size: 25px;
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__wrap-title {
+    position: relative;
+    margin: 0 0 30px 0;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    @include media-breakpoint-down(sm) {
+      font-size: 24px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__wrap-text {
+    max-width: 600px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    line-height: 1.4;
+    color: white;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    @include media-breakpoint-down(sm) {
+      height: 350px;
+      max-width: unset;
+      object-fit: cover;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__small-img {
+    width: 160px;
+    height: 120px;
+    margin: 0 5px;
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+
+    @include media-breakpoint-down(sm) {
+      width: 80px;
+      height: 50px;
+    }
+
+    &:hover {
+
+    }
+  }
+
+  &__small-img.selected {
+    position: relative;
+    background: red;
+    display: block;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 160px;
+      height: 120px;
+      background: red;
+      display: block;
+    }
+  }
+}
+
+.arsov-about {
+  width: 100%;
+
+  &__wrap {
+    display: flex;
+    width: 100%;
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__left, &__right {
+    width: 50%;
+    padding: 20px 40px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__left-img {
+    width: 100%;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__right-title {
+    font-size: 30px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 0 30px 0;
+  }
+
+  &__right-content {
+    font-size: 15px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+  }
+
+  &__right-link {
+    color: #F4B33D;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+  }
+}
+
+.arsov-photo-right {
+  width: 100%;
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__content, &__photo {
+    width: 50%;
+    padding: 0 20px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__photo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content-title {
+    position: relative;
+    margin: 0 0 30px 0;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+      margin: 0;
+    }
+  }
+
+  &__photo-img {
+    width: 100%;
+  }
+
+
+  &__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 0;
+    @include media-breakpoint-down(sm) {
+      justify-content: flex-start;
+      margin-top: 40px;
+    }
+  }
+
+  &__items-single {
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      margin: 10px 0;
+    }
+  }
+
+  &__items-textbold {
+    display: inline-block;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 500px;
+  }
+
+  &__items-textregular {
+    display: inline-block;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 30px 0;
+    max-width: 500px;
+  }
+}
+
+
+.arsov-effects {
+  width: 100%;
+  margin-top: 60px;
+  font-family: 'SofiaPro', sans-serif !important;
+  font-weight: bold;
+  font-style: normal;
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__right, &__left {
+    width: 50%;
+    padding: 0 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__left {
+    padding: 15px 0 45px 100px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background: url("https://pobo-cdn.b-cdn.net/widget/arsov/left-top.svg") center no-repeat;
+      left: 0;
+      top: 0;
+      background-size: 100%;
+      width: 18px;
+      height: 32px;
+
+      @include media-breakpoint-down(sm) {
+        left: 10px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: url("https://pobo-cdn.b-cdn.net/widget/arsov/left-bottom.svg") center no-repeat;
+      width: 47px;
+      height: 29px;
+      left: 0;
+      bottom: 0;
+      background-size: 100%;
+      @include media-breakpoint-down(sm) {
+        background: url("https://pobo-cdn.b-cdn.net/widget/arsov/right-top.svg") center no-repeat;
+        right: 10px;
+        top: 0;
+        left: unset;
+        width: 46px;
+        height: 29px;
+        bottom: unset;
+      }
+
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 15px 0 45px 38px;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 15px 0 45px 50px;
+    }
+
+  }
+
+  &__left-title, &__right-title {
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &__right {
+    padding: 15px 100px 45px 15px;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background: url("https://pobo-cdn.b-cdn.net/widget/arsov/right-top.svg") center no-repeat;
+      right: 0;
+      top: 0;
+      background-size: 100%;
+      width: 46px;
+      height: 29px;
+      @include media-breakpoint-down(sm) {
+        background: url("https://pobo-cdn.b-cdn.net/widget/arsov/right-bottom.svg") center no-repeat;
+        right: 10px;
+        bottom: 0;
+        background-size: 100%;
+        width: 18px;
+        height: 32px;
+        top: unset;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: url("https://pobo-cdn.b-cdn.net/widget/arsov/right-bottom.svg") center no-repeat;
+      right: 0;
+      bottom: 0;
+      background-size: 100%;
+      width: 18px;
+      height: 32px;
+
+      @include media-breakpoint-down(sm) {
+        background: url("https://pobo-cdn.b-cdn.net/widget/arsov/left-bottom.svg") center no-repeat;
+        width: 47px;
+        height: 29px;
+        left: 10px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 15px 50px 45px 0;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 15px 0 45px 38px;
+    }
+
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__left-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include media-breakpoint-down(sm) {
+      grid-template-columns:  1fr;
+      gap: 15px;
+    }
+  }
+
+  &__right-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns:   repeat(2, 1fr);
+    }
+  }
+
+  &__right-item, &__left-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__left-text, &__right-text {
+    font-size: 15px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &__right-img, &__left-img {
+    padding-right: 10px;
+    max-height: 20px;
+  }
+}
+
+.arsov-numbers {
+  width: 100%;
+  font-family: 'SofiaPro', sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns:  1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+      margin-left: 15px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: contain;
+    max-width: 70px;
+    max-height: 57px;
+  }
+
+  &__item-img {
+    height: 60px;
+    margin-bottom: 15px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 5px;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+    }
+    line-height: 1.4;
+  }
+}
+
+.arsov-reviews {
+  width: 100%;
+  font-family: 'SofiaPro', sans-serif !important;
+  margin-top: 60px;
+  font-weight: normal;
+  font-style: normal;
+
+  &__wrap {
+    width: 100%;
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 31px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 15px;
+    }
+  }
+
+  &__item-left {
+    width: 71px;
+  }
+
+  &__item-right {
+    width: calc(100% - 71px);
+  }
+
+  &__item-img {
+    width: 71px;
+    height: 71px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__item-text {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  &__item-info {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  &__item-name {
+    font-size: 15px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &__title {
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 30px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 15px;
+    }
+  }
+}
+
+.arsov-tomas {
+  width: 100%;
+  margin-top: 60px;
+  background: #F4C3CA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'SofiaPro', sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+  @include media-breakpoint-down(sm) {
+    margin-top: 210px;
+    border-radius: 5px;
+  }
+
+  &__wrap {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    padding: 50px 0;
+    gap: 30px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      padding-bottom: 0;
+      margin-bottom: -130px;
+    }
+  }
+
+  &__right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      top: -180px;
+    }
+  }
+
+  &__left {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      top: -180px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 271px;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      max-width: none;
+      padding: 0 20px;
+    }
+  }
+
+  &__text {
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.4;
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+      text-align: center;
+    }
+  }
+
+  &__signature {
+    font-family: SofiaPro, sans-serif !important;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 25px;
+    font-size: 18px;
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+      text-align: center;
+    }
+  }
+}
+
+.arsov-ingredients {
+  width: 100%;
+  margin-top: 80px;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 170px;
+  }
+
+  &__title {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: bold;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      padding-left: 15px;
+    }
+  }
+
+  &__text {
+    max-width: 200px;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.4;
+    @include media-breakpoint-down(sm) {
+      padding-left: 15px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__info, &__info-gray {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 45px;
+    line-height: 1.4;
+    font-family: 'SofiaPro', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    @include media-breakpoint-down(sm) {
+      padding: 0 15px;
+      text-align: left;
+    }
+  }
+
+  &__info-gray {
+    text-transform: uppercase;
+    color: #9C9EA9;
+  }
+}
