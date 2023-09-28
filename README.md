@@ -256,3 +256,4 @@ Na nasazení widgetu do produkce se widget objeví v záložce `Od Pobo`.
 
 <img src="./doc/fv-studio.png" width="200" height="auto"/>
 
+
