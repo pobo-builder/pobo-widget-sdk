@@ -1,0 +1,91 @@
+$product-card-height: 350px;
+$product-card-image-container: 180px;
+$product-card-button-bg: linear-gradient(#15b407, #0e8804);
+$product-card-button-bg-hover: linear-gradient(#17c008, #109405);
+$product-card-button-shadow: 2px 2px 1px 0 rgba(203, 202, 202, 0.50);
+$product-card-button-border: #0f9d04;
+$product-card-button-font-size: 14px;
+$product-card-button-icon: "https://image.pobo.cz/widget/product-basket.svg";
+
+.pb-product-card {
+  &__carousel {
+    height: $product-card-height;
+  }
+
+  &__image-container {
+    height: $product-card-image-container;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image-img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    object-fit: fill;
+    mix-blend-mode: multiply;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    height: 40px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__price {
+    font-size: 17px;
+    line-height: 18px;
+    color: green;
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    margin: 20px 0 0 0;
+  }
+
+  &__button {
+  }
+
+  &__action {
+    padding: 15px 0 0 0;
+
+    a {
+      display: block;
+      width: 100%;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: $product-card-button-shadow;
+      color: white;
+      text-decoration: none;
+      font-size: $product-card-button-font-size;
+      position: relative;
+      background-image: $product-card-button-bg;
+      border: 1px solid $product-card-button-border;
+
+      &:hover {
+        background-image: $product-card-button-bg-hover;
+      }
+
+      &:after {
+        background: url(#{$product-card-button-icon}) no-repeat center center;
+        background-size: 100% 100%;
+        position: absolute;
+        content: "";
+        width: 18px;
+        height: 18px;
+        filter: invert(100%);
+        top: 6px;
+        right: 10px;
+      }
+    }
+  }
+}
