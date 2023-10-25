@@ -1,5 +1,6 @@
 .pb-evaluation-two {
   width: 100%;
+  padding: 20px 0;
 
   &__title {
     width: 100%;
@@ -23,7 +24,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 0 20px;
     position: relative;
 
     @media only screen and (max-width: 830px) {
@@ -35,9 +36,11 @@
 
   &__single {
     width: 100%;
-    margin-left: 20px;
     box-shadow: 8px 8px 8px #e3e3e3;
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     @media only screen and (max-width: 830px) {
       margin: 0px;
@@ -45,17 +48,13 @@
   }
 
   &__logo {
-    margin: -55px auto 0 auto;
     display: block;
     max-width: 200px;
     width: 100%;
-    background: white;
   }
 
   &__text-in {
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 5px 35px 30px 35px;
     margin-top: 20px;
     display: block;
     font-size: 20px;
