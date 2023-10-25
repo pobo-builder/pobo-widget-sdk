@@ -26,8 +26,9 @@ $product-card-button-icon: "https://image.pobo.cz/widget/product-basket.svg";
     max-width: 100%;
     height: auto;
     width: auto;
-    object-fit: fill;
+    object-fit: contain;
     mix-blend-mode: multiply;
+
   }
 
   &__title {
