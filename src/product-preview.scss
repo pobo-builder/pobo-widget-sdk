@@ -18,6 +18,7 @@ $product-card-button-icon: "https://image.pobo.cz/widget/product-basket.svg";
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   &__image-img {
