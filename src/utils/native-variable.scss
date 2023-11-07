@@ -1,0 +1,51 @@
+:root {
+  --rc-global-widget-padding: 20px 0;
+  --rc-global-widget-margin: 20px 0;
+
+  /** .rc-inline-image (3 widgets variant) **/
+  --rc-inline-image-title-font-color: black;
+  --rc-inline-image-title-font-size: 21px;
+  --rc-inline-image-title-line-height: 24px;
+
+  --rc-inline-image-sub-title-font-color: black;
+  --rc-inline-image-sub-title-font-size: 14px;
+  --rc-inline-image-sub-title-line-height: 18px;
+
+  --rc-inline-image-wrap-content: 20px;
+
+  /** .rc-parameter (global) **/
+  --rc-parameter-big-padding: 0px 0;
+  --rc-parameter-big-margin: 0px 0;
+
+  --rc-parameter-small-padding: 2px 0;
+  --rc-parameter-small-margin: 2px 0;
+
+  /** .rc-parameter (small) **/
+  --rc-parameter-small-value-font-size: 14px;
+  --rc-parameter-small-value-font-color: black;
+
+  --rc-parameter-small-info-font-size: 20px;
+  --rc-parameter-small-info-font-color: #575757;
+
+  /** .rc-parameter (big) **/
+  --rc-parameter-big-value-font-size: 15px;
+  --rc-parameter-big-value-font-color: #575757;
+
+  --rc-parameter-big-info-font-size: 22px;
+  --rc-parameter-big-info-font-color: black;
+
+  /** .rc-advantages-two (three widgets) **/
+  --rc-advantages-title-font-size: 20px;
+  --rc-advantages-title-line-height: 24px;
+  --rc-advantages-title-font-color: black;
+  --rc-advantages-title-font-weight: 600;
+  --rc-advantages-title-padding: 0;
+  --rc-advantages-title-margin: 0;
+
+  --rc-advantages-info-font-size: 14px;
+  --rc-advantages-info-line-height: 18px;
+  --rc-advantages-info-font-color: #575757;
+  --rc-advantages-info-font-weight: 400;
+  --rc-advantages-info-padding: 10px 0 0 0;
+  --rc-advantages-info-margin: 0;
+}

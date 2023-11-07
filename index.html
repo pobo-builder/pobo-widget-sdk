@@ -5,6 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <link rel="stylesheet" href="src/editor.scss">
+  <!-- Prefetch Pobo Page Builder CDN  -->
+  <link rel="dns-prefetch" href="https://image.pobo.cz">
+
+
+  <!-- © Pobo Page Builder  -->
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      var po = document.createElement("script");
+      po.type = "text/javascript";
+      po.async = true;
+      po.dataset.url = "https://www.pobo.cz";
+      po.dataset.cdn = "https://image.pobo.cz";
+      po.dataset.tier = "standard";
+      po.fetchpriority = "high";
+      po.dataset.key = btoa(window.location.host);
+      po.id = "pobo-asset-url";
+      po.awacs = true;
+      po.src = "https://image.pobo.cz/assets/editor.js";
+
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(po, s);
+    });
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .plugin-fixed-header {
+      display: none;
+    }
+  </style>
+
+
   <title>Widget pobo</title>
 
   <style>
@@ -17,212 +52,144 @@
   </style>
 </head>
 <body>
-<a href="custom/yolab-custom.html"> Custom template YOLAB </a> <br>
-<a href="custom/arsov-custom.html"> Custom template Arsov </a>
-<a href="custom/arsov-custom-2.html"> Custom template Arsov 02 </a>
-<div class="rc-title-line">
-  <div class="rc-title-line__wrap">
-    <h2 class="rc-title-line__title"> Elegance bez kompromisů </h2>
-  </div>
-</div>
-
-<div class="rc-inline-image">
-  <div class="rc-inline-image__wrap">
-    <div class="rc-inline-image__content rc-inline-image__three">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/47.%20Delivery%20car.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> Doprava do tří dnů </h2>
-        <span class="rc-inline-image__subtitle"> Objednávky do 12:00 odesíláme ještě v ten stejný den. </span>
+<div id="pobo-all-content">
+  <div id="pobo-standard-widget">
+    <div data-pobo-widget-id='8' class='widget-container'>
+      <div class="widget-typography widget-gallery">
+        <div class="rc-image-half-left">
+          <div class="rc-image-half-left__image"><a href="https://cdn.pobo.cz/widget/macbbok-1.png"
+                                                    class="pb-gallery-trigger"> <img
+            data-src="https://image.pobo.cz/widget/macbbok-1.png" class="lazyLoad rc-image-half-left__img" alt="Test">
+          </a></div>
+          <div class="rc-image-half-left__text"><h2>Nadpis: Název produktu</h2>
+            <p>Tento ... je z vysoce kvalitní materiálu určený pro ... . Hodí se do každého domu, zahrady a bytu. </p>
+            <p>Je vyrobený z ... . Barevná kombinace se skládá z ..., ... Šířka tohoto produktu je .... . a výška ... .,
+              proto můžete tento výrobek použít ... .</p></div>
+        </div>
       </div>
     </div>
-
-    <div class="rc-inline-image__content rc-inline-image__three">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/51.%20Package.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> 14 dní na vrácení </h2>
-        <span class="rc-inline-image__subtitle"> Produkt můžete kdykoliv během 14 dnů bez otázek vrátit.</span>
-      </div>
-    </div>
-
-    <div class="rc-inline-image__content rc-inline-image__three">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/45.%20Award.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> Ověřeno zákazníky </h2>
-        <span class="rc-inline-image__subtitle"> Tento produkt zakoupilo již více než 500 lidí před vámi. </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="rc-inline-image">
-  <div class="rc-inline-image__wrap">
-    <div class="rc-inline-image__content rc-inline-image__two">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/47.%20Delivery%20car.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> Doprava do tří dnů </h2>
-        <span class="rc-inline-image__subtitle"> Objednávky do 12:00 odesíláme ještě v ten stejný den. </span>
-      </div>
-    </div>
-
-    <div class="rc-inline-image__content rc-inline-image__two">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/45.%20Award.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> Ověřeno zákazníky </h2>
-        <span class="rc-inline-image__subtitle"> Tento produkt zakoupilo již více než 500 lidí před vámi. </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rc-inline-image">
-  <div class="rc-inline-image__wrap">
-    <div class="rc-inline-image__content">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/47.%20Delivery%20car.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> Doprava do tří dnů </h2>
-        <span class="rc-inline-image__subtitle"> Objednávky do 12:00 odesíláme ještě v ten stejný den. </span>
-      </div>
-    </div>
-
-    <div class="rc-inline-image__content">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/51.%20Package.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> 14 dní na vrácení </h2>
-        <span class="rc-inline-image__subtitle"> Produkt můžete kdykoliv během 14 dnů bez otázek vrátit.</span>
-      </div>
-    </div>
-
-    <div class="rc-inline-image__content">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/45.%20Award.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> Ověřeno zákazníky </h2>
-        <span class="rc-inline-image__subtitle"> Tento produkt zakoupilo již více než 500 lidí před vámi. </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="rc-inline-image">
-  <div class="rc-inline-image__wrap">
-    <div class="rc-inline-image__content">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/47.%20Delivery%20car.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> Doprava do tří dnů </h2>
-        <span class="rc-inline-image__subtitle"> Objednávky do 12:00 odesíláme ještě v ten stejný den. </span>
-      </div>
-    </div>
-
-    <div class="rc-inline-image__content">
-      <div class="rc-inline-image__content-image">
-        <img class="rc-inline-image__sec-image" src="https://pobo-cdn.b-cdn.net/widget/45.%20Award.png" alt="">
-      </div>
-      <div class="rc-inline-image__content-text">
-        <h2 class="rc-inline-image__title"> Ověřeno zákazníky </h2>
-        <span class="rc-inline-image__subtitle"> Tento produkt zakoupilo již více než 500 lidí před vámi. </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="rc-profit">
-  <div class="rc-profit__container">
-    <div class="rc-profit__left-half">
-      <div class="rc-profit__list">
-        <h2 class="rc-profit__header">Výhody Apple iPhone 15</h2>
-        <div class="rc-profit__list-container">
-          <div class="rc-profit__list-item">
-            <div class="rc-profit__list-ico">
-              <img src="https://pobo-cdn.b-cdn.net/assets/checked.svg" class="rc-profit__list-ico-img">
-            </div>
-            <div class="rc-profit__list-content">
-              <h2 class="rc-profit__list-header">Revoluční technologie a výkon</h2>
-              <span class="rc-profit__list-info">iPhone14 přináší revoluční technologie, které zajišťují nejlepší výkon na trhu.</span>
+    <div data-pobo-widget-id='88' class='widget-container'>
+      <div class="widget-projector">
+        <div class="rc-parameter-small-left">
+          <div class="rc-parameter-small-left__box"><h2 class="rc-parameter__header-right"> Parametry iPhone 14 </h2>
+            <div class="rc-parameter">
+              <div class="rc-parameter__box-small-left-parameter">
+                <div class="rc-parameter__box-small-left-content"><span
+                  class="rc-parameter__box-small-left-content-value"> A16 Bionic </span> <span
+                  class="rc-parameter__box-small-left-content-text"> Procesor </span></div>
+                <div class="rc-parameter__box-small-left-parameter-icon">
+                  <div class="rc-parameter__box-small-left-icon-image"><img
+                    data-src="https://image.pobo.cz/icon/parameter/006-chip.svg"
+                    class="lazyLoad rc-parameter__box-small-left-icon-img" alt="Test"></div>
+                </div>
+              </div>
+              <div class="rc-parameter__box-small-left-parameter">
+                <div class="rc-parameter__box-small-left-content"><span
+                  class="rc-parameter__box-small-left-content-value"> 256 GB </span> <span
+                  class="rc-parameter__box-small-left-content-text"> Pamět v telefonu </span></div>
+                <div class="rc-parameter__box-small-left-parameter-icon">
+                  <div class="rc-parameter__box-small-left-icon-image"><img
+                    data-src="https://image.pobo.cz/icon/parameter/038-ssd.svg"
+                    class="lazyLoad rc-parameter__box-small-left-icon-img" alt="Test"></div>
+                </div>
+              </div>
+              <div class="rc-parameter__box-small-left-parameter">
+                <div class="rc-parameter__box-small-left-content"><span
+                  class="rc-parameter__box-small-left-content-value"> 24 h </span> <span
+                  class="rc-parameter__box-small-left-content-text"> Výdrž v teelefonu </span></div>
+                <div class="rc-parameter__box-small-left-parameter-icon">
+                  <div class="rc-parameter__box-small-left-icon-image"><img
+                    data-src="https://image.pobo.cz/icon/parameter/002-battery.svg"
+                    class="lazyLoad rc-parameter__box-small-left-icon-img" alt="Test"></div>
+                </div>
+              </div>
+              <div class="rc-parameter__box-small-left-parameter">
+                <div class="rc-parameter__box-small-left-content"><span
+                  class="rc-parameter__box-small-left-content-value"> 5G </span> <span
+                  class="rc-parameter__box-small-left-content-text"> Rychlý internet </span></div>
+                <div class="rc-parameter__box-small-left-parameter-icon">
+                  <div class="rc-parameter__box-small-left-icon-image"><img
+                    data-src="https://image.pobo.cz/icon/parameter/033-router.svg"
+                    class="lazyLoad rc-parameter__box-small-left-icon-img" alt="Test"></div>
+                </div>
+              </div>
+              <div class="rc-parameter__box-small-left-parameter">
+                <div class="rc-parameter__box-small-left-content"><span
+                  class="rc-parameter__box-small-left-content-value"> 40W </span> <span
+                  class="rc-parameter__box-small-left-content-text"> Rychlost nabíjení </span></div>
+                <div class="rc-parameter__box-small-left-parameter-icon">
+                  <div class="rc-parameter__box-small-left-icon-image"><img
+                    data-src="https://image.pobo.cz/icon/parameter/016-extension-cord.svg"
+                    class="lazyLoad rc-parameter__box-small-left-icon-img" alt="Test"></div>
+                </div>
+              </div>
+              <div class="rc-parameter__box-small-left-parameter">
+                <div class="rc-parameter__box-small-left-content"><span
+                  class="rc-parameter__box-small-left-content-value"> eSIM </span> <span
+                  class="rc-parameter__box-small-left-content-text"> SIM přímo v telefonu </span></div>
+                <div class="rc-parameter__box-small-left-parameter-icon">
+                  <div class="rc-parameter__box-small-left-icon-image"><img
+                    data-src="https://image.pobo.cz/icon/parameter/035-sd-card.svg"
+                    class="lazyLoad rc-parameter__box-small-left-icon-img" alt="Test"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="rc-profit__list-item">
-            <div class="rc-profit__list-ico">
-              <img src="https://pobo-cdn.b-cdn.net/assets/checked.svg" class="rc-profit__list-ico-img">
-            </div>
-            <div class="rc-profit__list-content">
-              <h2 class="rc-profit__list-header">Nádherný design a kvalita</h2>
-              <span
-                class="rc-profit__list-info">iPhone14 se pyšní nádherným designem a prvotřídní kvalitou zpracování.</span>
+          <div class="rc-parameter-small-left__image"><img data-src="https://pobo-cdn.b-cdn.net/widget/iphone.jpg"
+                                                           class="lazyLoad rc-parameter__image-img" alt="Test"></div>
+        </div>
+      </div>
+    </div>
+    <div data-pobo-widget-id='6' class='widget-container'>
+      <div class="widget-projector">
+        <div class="rc-advantages-three">
+          <div class="rc-advantages-three__item">
+            <div class="rc-advantages-three__ico-container"><img
+              data-src="https://image.pobo.cz/icon/review/009-customer.svg"
+              class="lazyLoad rc-advantages-three__ico-img" alt="Test"></div>
+            <div class="rc-advantages-three__info"><h2 class="rc-advantages-three__info-header"> 14 dnů na vrácení </h2>
+              <span class="rc-advantages-three__info-text"> Pokud se Vám výrobek nebude líbit nebo nebude splňovat očekávání, můžete jako spotřebitel zboží vrátit do 14 dnů od zakoupení. </span>
             </div>
           </div>
-          <div class="rc-profit__list-item">
-            <div class="rc-profit__list-ico">
-              <img src="https://pobo-cdn.b-cdn.net/assets/checked.svg" class="rc-profit__list-ico-img">
+          <div class="rc-advantages-three__item">
+            <div class="rc-advantages-three__ico-container"><img
+              data-src="https://image.pobo.cz/icon/review/014-good-review.svg"
+              class="lazyLoad rc-advantages-three__ico-img" alt="Test"></div>
+            <div class="rc-advantages-three__info"><h2 class="rc-advantages-three__info-header"> Ověřený e-shop </h2>
+              <span class="rc-advantages-three__info-text"> Podle recenzí na Heureka.cz dlouhodobě většina našich zákazníků doporučuje nákup na našem e-shopu. Ke každému zákazníkovi přistupujeme individuálně. </span>
             </div>
-            <div class="rc-profit__list-content">
-              <h2 class="rc-profit__list-header">Inovativní funkce a přívětivost</h2>
-              <span class="rc-profit__list-info">iPhone14 přináší širokou škálu inovativních funkcí a uživatelskou přívětivost.</span>
+          </div>
+          <div class="rc-advantages-three__item">
+            <div class="rc-advantages-three__ico-container"><img
+              data-src="https://image.pobo.cz/icon/review/030-good-feedback.svg"
+              class="lazyLoad rc-advantages-three__ico-img" alt="Test"></div>
+            <div class="rc-advantages-three__info"><h2 class="rc-advantages-three__info-header"> Individuální
+              přístup </h2> <span class="rc-advantages-three__info-text"> Pokud máte dotaz, nebojte se zavolat nebo napsat. Rádi Vám poradíme a pomůžeme s výběrem zboží. Jsme odborníci v oboru. </span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="rc-profit__right-half">
-      <img src="https://pobo-cdn.b-cdn.net/widget/counter-bg-team.jpeg" class="rc-profit__right-img">
-    </div>
-  </div>
-</div>
-
-<div class="rc-profit">
-  <div class="rc-profit__container">
-    <div class="rc-profit__left-half">
-      <img src="https://pobo-cdn.b-cdn.net/widget/counter-bg-team.jpeg" class="rc-profit__right-img">
-    </div>
-
-    <div class="rc-profit__right-half">
-      <div class="rc-profit__list">
-        <h2 class="rc-profit__header">Výhody Apple iPhone 15</h2>
-        <div class="rc-profit__list-container">
-          <div class="rc-profit__list-item">
-            <div class="rc-profit__list-ico">
-              <img src="https://pobo-cdn.b-cdn.net/assets/checked.svg" class="rc-profit__list-ico-img">
+    <div data-pobo-widget-id='109' class='widget-container'>
+      <div class="widget-projector">
+        <div class="rc-inline-image">
+          <div class="rc-inline-image__wrap">
+            <div class="rc-inline-image__content">
+              <div class="rc-inline-image__content-image"><img
+                data-src="https://pobo-cdn.b-cdn.net/widget/47.%20Delivery%20car.png"
+                class="lazyLoad rc-inline-image__sec-image" alt="Test"></div>
+              <div class="rc-inline-image__content-text"><h2 class="rc-inline-image__title"> Doprava do tří dnů </h2>
+                <span class="rc-inline-image__subtitle"> Objednávky do 12:00 odesíláme ještě v ten stejný den. </span>
+              </div>
             </div>
-            <div class="rc-profit__list-content">
-              <h2 class="rc-profit__list-header">Revoluční technologie a výkon</h2>
-              <span class="rc-profit__list-info">iPhone14 přináší revoluční technologie, které zajišťují nejlepší výkon na trhu.</span>
-            </div>
-          </div>
-          <div class="rc-profit__list-item">
-            <div class="rc-profit__list-ico">
-              <img src="https://pobo-cdn.b-cdn.net/assets/checked.svg" class="rc-profit__list-ico-img">
-            </div>
-            <div class="rc-profit__list-content">
-              <h2 class="rc-profit__list-header">Nádherný design a kvalita</h2>
-              <span
-                class="rc-profit__list-info">iPhone14 se pyšní nádherným designem a prvotřídní kvalitou zpracování.</span>
-            </div>
-          </div>
-          <div class="rc-profit__list-item">
-            <div class="rc-profit__list-ico">
-              <img src="https://pobo-cdn.b-cdn.net/assets/checked.svg" class="rc-profit__list-ico-img">
-            </div>
-            <div class="rc-profit__list-content">
-              <h2 class="rc-profit__list-header">Inovativní funkce a přívětivost</h2>
-              <span class="rc-profit__list-info">iPhone14 přináší širokou škálu inovativních funkcí a uživatelskou přívětivost.</span>
+            <div class="rc-inline-image__content">
+              <div class="rc-inline-image__content-image"><img
+                data-src="https://pobo-cdn.b-cdn.net/widget/45.%20Award.png" class="lazyLoad rc-inline-image__sec-image"
+                alt="Test"></div>
+              <div class="rc-inline-image__content-text"><h2 class="rc-inline-image__title"> Ověřeno zákazníky </h2>
+                <span
+                  class="rc-inline-image__subtitle"> Tento produkt zakoupilo již více než 500 lidí před vámi. </span>
+              </div>
             </div>
           </div>
         </div>
@@ -230,1402 +197,5 @@
     </div>
   </div>
 </div>
-
-
-<div class="rc-profit">
-  <div class="rc-profit__list">
-    <h2 class="rc-profit__header">Výhody Apple iPhone 15</h2>
-    <div class="rc-profit__list-container">
-      <div class="rc-profit__list-item">
-        <div class="rc-profit__list-ico">
-          <img src="https://pobo-cdn.b-cdn.net/assets/checked.svg" class="rc-profit__list-ico-img">
-        </div>
-        <div class="rc-profit__list-content">
-          <h2 class="rc-profit__list-header">Revoluční technologie a výkon</h2>
-          <span class="rc-profit__list-info">iPhone14 přináší revoluční technologie, které zajišťují nejlepší výkon na trhu.</span>
-        </div>
-      </div>
-      <div class="rc-profit__list-item">
-        <div class="rc-profit__list-ico">
-          <img src="https://pobo-cdn.b-cdn.net/assets/checked.svg" class="rc-profit__list-ico-img">
-        </div>
-        <div class="rc-profit__list-content">
-          <h2 class="rc-profit__list-header">Nádherný design a kvalita</h2>
-          <span
-            class="rc-profit__list-info">iPhone14 se pyšní nádherným designem a prvotřídní kvalitou zpracování.</span>
-        </div>
-      </div>
-      <div class="rc-profit__list-item">
-        <div class="rc-profit__list-ico">
-          <img src="https://pobo-cdn.b-cdn.net/assets/checked.svg" class="rc-profit__list-ico-img">
-        </div>
-        <div class="rc-profit__list-content">
-          <h2 class="rc-profit__list-header">Inovativní funkce a přívětivost</h2>
-          <span class="rc-profit__list-info">iPhone14 přináší širokou škálu inovativních funkcí a uživatelskou přívětivost.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- KOREAN KOSMETIKA CUSTOM WIDGET -->
-<div class="custom-korean-widget">
-  <div class="custom-korean-widget__wrap">
-    <h2 class="custom-korean-widget__wrap-title"> Step of use </h2>
-    <div class="custom-korean-widget__number-line">
-      <div class="custom-korean-widget__number-line-number"><span class="custom-korean-widget__num">1</span></div>
-      <div class="custom-korean-widget__number-line-number"><span class="custom-korean-widget__num">2</span></div>
-      <div class="custom-korean-widget__number-line-number"><span class="custom-korean-widget__num">3</span></div>
-      <div class="custom-korean-widget__number-line-number custom-korean-widget__active-number"><span
-        class="custom-korean-widget__num">4</span></div>
-      <div class="custom-korean-widget__number-line-number"><span class="custom-korean-widget__num">5</span></div>
-      <div class="custom-korean-widget__number-line-number"><span class="custom-korean-widget__num">6</span></div>
-      <div class="custom-korean-widget__number-line-number"><span class="custom-korean-widget__num">7</span></div>
-      <div class="custom-korean-widget__number-line-number"><span class="custom-korean-widget__num">8</span></div>
-      <div class="custom-korean-widget__number-line-number"><span class="custom-korean-widget__num">9</span></div>
-      <div class="custom-korean-widget__number-line-number"><span class="custom-korean-widget__num">10</span></div>
-    </div>
-
-    <div class="custom-korean-widget__number-line-mobile">
-      <div class="custom-korean-widget__number-line-mobile-number"><span class="custom-korean-widget__num">1</span>
-      </div>
-      <div class="custom-korean-widget__number-line-mobile-number"><span class="custom-korean-widget__num">2</span>
-      </div>
-      <div class="custom-korean-widget__number-line-mobile-number"><span class="custom-korean-widget__num">3</span>
-      </div>
-      <div class="custom-korean-widget__number-line-mobile-number"><span class="custom-korean-widget__num">4</span>
-      </div>
-      <div class="custom-korean-widget__number-line-mobile-number"><span class="custom-korean-widget__num">5</span>
-      </div>
-    </div>
-
-    <div class="custom-korean-widget__icons">
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/oil.png">
-        </div>
-        <h3 class="custom-korean-widget__icons-title"> Oil cleanses</h3>
-      </div>
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/foam.png">
-        </div>
-        <h3 class="custom-korean-widget__icons-title"> Foam cleanse </h3>
-      </div>
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/xfoil.png">
-        </div>
-        <h3 class="custom-korean-widget__icons-title"> Exfoliate</h3>
-      </div>
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/toner.png">
-        </div>
-        <h3 class="custom-korean-widget__icons-title"> Toners</h3>
-      </div>
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/esence.png">
-        </div>
-        <h3 class="custom-korean-widget__icons-title"> Essence</h3>
-      </div>
-
-      <div class="custom-korean-widget__number-line-mobile mt-2">
-        <div class="custom-korean-widget__number-line-mobile-number custom-korean-widget__active-number"><span
-          class="custom-korean-widget__num">6</span></div>
-        <div class="custom-korean-widget__number-line-mobile-number"><span class="custom-korean-widget__num">7</span>
-        </div>
-        <div class="custom-korean-widget__number-line-mobile-number"><span class="custom-korean-widget__num">8</span>
-        </div>
-        <div class="custom-korean-widget__number-line-mobile-number"><span class="custom-korean-widget__num">9</span>
-        </div>
-        <div class="custom-korean-widget__number-line-mobile-number"><span class="custom-korean-widget__num">10</span>
-        </div>
-      </div>
-
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/serum.png">
-        </div>
-        <h3 class="custom-korean-widget__active-title"> Serum</h3>
-      </div>
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/mask.png">
-        </div>
-        <h3 class="custom-korean-widget__icons-title"> Sheet mask</h3>
-      </div>
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/eye.png">
-        </div>
-        <h3 class="custom-korean-widget__icons-title"> Eye cream </h3>
-      </div>
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/cream.png">
-        </div>
-        <h3 class="custom-korean-widget__icons-title">Cream or sleep mask</h3>
-      </div>
-      <div class="custom-korean-widget__icons-item">
-        <div class="custom-korean-widget__icons-item-image">
-          <img class="custom-korean-widget__image" src="https://pobo-cdn.b-cdn.net/client/koreankosmetika/spf.png">
-        </div>
-        <h3 class="custom-korean-widget__icons-title">SPF 45+</h3>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="rc-counter rc-counter__two">
-  <img src="https://image.pobo.cz/widget/counter-bg.png" class="rc-counter__img">
-  <div class="rc-counter__box">
-    <div class="rc-counter__inner">
-      <h3 class="rc-counter__header rc-counter__header--medium">Více jak 1 000</h3>
-      <span class="rc-counter__info rc-counter__info--medium">výdejních míst po celé ČR</span>
-    </div>
-  </div>
-
-  <div class="rc-counter__box">
-    <div class="rc-counter__inner">
-      <h3 class="rc-counter__header rc-counter__header--medium">Přes 10 000</h3>
-      <span class="rc-counter__info rc-counter__info--medium">Hodnocení na Heurece</span>
-    </div>
-  </div>
-</div>
-
-<div class="rc-counter rc-counter__three">
-  <img src="https://image.pobo.cz/widget/counter-bg.png" class="rc-counter__img">
-  <div class="rc-counter__box">
-    <div class="rc-counter__inner">
-      <h3 class="rc-counter__header">Více jak 1 000</h3>
-      <span class="rc-counter__info">výdejních míst po celé ČR</span>
-    </div>
-  </div>
-
-  <div class="rc-counter__box">
-    <div class="rc-counter__inner">
-      <h3 class="rc-counter__header">Přes 10 000</h3>
-      <span class="rc-counter__info">Hodnocení na Heurece</span>
-    </div>
-  </div>
-
-  <div class="rc-counter__box">
-    <div class="rc-counter__inner">
-      <h3 class="rc-counter__header">Garantované vrácení</h3>
-      <span class="rc-counter__info">Peněz do 14 dní</span>
-    </div>
-  </div>
-</div>
-
-
-<div class="rc-card-call-to-action">
-  <div class="rc-card-call-to-action__wrap rc-card-call-to-action--four-in-row">
-    <!--SINGLE -->
-    <div class="rc-card-call-to-action__single">
-      <div class="rc-card-call-to-action__image">
-        <img class="rc-card-call-to-action__photo" src="https://image.pobo.cz/widget/sample-widget-in-text-1.jpeg">
-      </div>
-      <div class="rc-card-call-to-action__content">
-        <h2 class="rc-card-call-to-action__title"> Jak psát správně popisky</h2>
-        <span class="rc-card-call-to-action__text">  Návod pro začínajíčí e-shopy, kteří chtějí popisky, které vydělávají. Méně je někdy více a při psaní popisků to platí také. Lidé obsah na internetu skenují, proto se snažte psát 100 - 120 znaků na jeden odstavec.</span>
-      </div>
-      <div class="rc-card-call-to-action__button">
-        <a class="rc-card-call-to-action__link"> Číst dál </a>
-      </div>
-    </div>
-    <!--SINGLE -->
-    <div class="rc-card-call-to-action__single">
-      <div class="rc-card-call-to-action__image">
-        <img class="rc-card-call-to-action__photo" src="https://image.pobo.cz/widget/sample-widget-in-text-1.jpeg">
-      </div>
-      <div class="rc-card-call-to-action__content">
-        <h2 class="rc-card-call-to-action__title"> Jak psát správně popisky</h2>
-        <span class="rc-card-call-to-action__text">  Návod pro začínajíčí e-shopy, kteří chtějí popisky, které vydělávají. Méně je někdy více a při psaní popisků to platí také. Lidé obsah na internetu skenují, proto se snažte psát 100 - 120 znaků na jeden odstavec.</span>
-      </div>
-      <div class="rc-card-call-to-action__button">
-        <a class="rc-card-call-to-action__link"> Číst dál </a>
-      </div>
-    </div>
-    <!--SINGLE -->
-    <div class="rc-card-call-to-action__single">
-      <div class="rc-card-call-to-action__image">
-        <img class="rc-card-call-to-action__photo" src="https://image.pobo.cz/widget/sample-widget-in-text-1.jpeg">
-      </div>
-      <div class="rc-card-call-to-action__content">
-        <h2 class="rc-card-call-to-action__title"> Jak psát správně popisky</h2>
-        <span class="rc-card-call-to-action__text">  Návod pro začínajíčí e-shopy, kteří chtějí popisky, které vydělávají. Méně je někdy více a při psaní popisků to platí také. Lidé obsah na internetu skenují, proto se snažte psát 100 - 120 znaků na jeden odstavec.</span>
-      </div>
-      <div class="rc-card-call-to-action__button">
-        <a class="rc-card-call-to-action__link"> Číst dál </a>
-      </div>
-    </div>
-    <!--SINGLE -->
-    <div class="rc-card-call-to-action__single">
-      <div class="rc-card-call-to-action__image">
-        <img class="rc-card-call-to-action__photo" src="https://image.pobo.cz/widget/sample-widget-in-text-1.jpeg">
-      </div>
-      <div class="rc-card-call-to-action__content">
-        <h2 class="rc-card-call-to-action__title"> Jak psát správně popisky</h2>
-        <span class="rc-card-call-to-action__text">  Návod pro začínajíčí e-shopy, kteří chtějí popisky, které vydělávají. Méně je někdy více a při psaní popisků to platí také. Lidé obsah na internetu skenují, proto se snažte psát 100 - 120 znaků na jeden odstavec.</span>
-      </div>
-      <div class="rc-card-call-to-action__button">
-        <a class="rc-card-call-to-action__link"> Číst dál </a>
-      </div>
-    </div>
-
-
-  </div>
-</div>
-
-
-<!-- GALERIE S PŘIDÁVATELNÝMI OBRÁZKY -->
-<div class="rc-dynamic-gallery">
-  <div class="rc-dynamic-gallery__wrap">
-
-    <div class="rc-dynamic-gallery__item">
-      <img class="rc-dynamic-gallery__photo" src="https://pobo-cdn.b-cdn.net/widget/dynamicgallery3.jpg">
-    </div>
-
-    <div class="rc-dynamic-gallery__item">
-      <img class="rc-dynamic-gallery__photo" src="https://pobo-cdn.b-cdn.net/widget/dynamic-gallery2.jpg">
-    </div>
-
-  </div>
-</div>
-
-<!-- Parameter right small-->
-<div class="rc-parameter-small-right">
-  <div class="rc-parameter-small-right__image">
-    <img src="https://pobo-cdn.b-cdn.net/widget/iphone.jpg" class="rc-parameter__image-img">
-  </div>
-  <div class="rc-parameter-small-right__box">
-    <h2 class="rc-parameter__header-left">
-      Parametry iPhone 14
-    </h2>
-
-    <div class="rc-parameter">
-      <div class="rc-parameter__box-small-right-parameter">
-        <div class="rc-parameter__box-small-right-parameter-icon">
-          <div class="rc-parameter__box-small-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/006-chip.svg"
-                 class="rc-parameter__box-small-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-small-right-content">
-          <span class="rc-parameter__box-small-right-content-value">A16 Bionic</span>
-          <span class="rc-parameter__box-small-right-content-text">Procesor</span>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-small-right-parameter">
-        <div class="rc-parameter__box-small-right-parameter-icon">
-          <div class="rc-parameter__box-small-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/038-ssd.svg"
-                 class="rc-parameter__box-small-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-small-right-content">
-          <span class="rc-parameter__box-small-right-content-value"> 256 GB </span>
-          <span class="rc-parameter__box-small-right-content-text"> Pamět v telefonu</span>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-small-right-parameter">
-        <div class="rc-parameter__box-small-right-parameter-icon">
-          <div class="rc-parameter__box-small-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/002-battery.svg"
-                 class="rc-parameter__box-small-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-small-right-content">
-          <span class="rc-parameter__box-small-right-content-value"> 24 h </span>
-          <span class="rc-parameter__box-small-right-content-text"> Výdrž v teelefonu</span>
-        </div>
-      </div>
-
-
-      <div class="rc-parameter__box-small-right-parameter">
-        <div class="rc-parameter__box-small-right-parameter-icon">
-          <div class="rc-parameter__box-small-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/033-router.svg"
-                 class="rc-parameter__box-small-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-small-right-content">
-          <span class="rc-parameter__box-small-right-content-value"> 5G </span>
-          <span class="rc-parameter__box-small-right-content-text"> Rychlý internet</span>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-small-right-parameter">
-        <div class="rc-parameter__box-small-right-parameter-icon">
-          <div class="rc-parameter__box-small-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/016-extension-cord.svg"
-                 class="rc-parameter__box-small-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-small-right-content">
-          <span class="rc-parameter__box-small-right-content-value"> 40W </span>
-          <span class="rc-parameter__box-small-right-content-text"> Rychlost nabíjení</span>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-small-right-parameter">
-        <div class="rc-parameter__box-small-right-parameter-icon">
-          <div class="rc-parameter__box-small-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/035-sd-card.svg"
-                 class="rc-parameter__box-small-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-small-right-content">
-          <span class="rc-parameter__box-small-right-content-value"> eSIM </span>
-          <span class="rc-parameter__box-small-right-content-text"> SIM přímo v telefonu</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Parameter left small -->
-<div class="rc-parameter-small-left">
-  <div class="rc-parameter-small-left__box">
-    <h2 class="rc-parameter__header-right">
-      Parametry iPhone 14
-    </h2>
-
-    <div class="rc-parameter">
-      <div class="rc-parameter__box-small-left-parameter">
-        <div class="rc-parameter__box-small-left-content">
-          <span class="rc-parameter__box-small-left-content-value">A16 Bionic</span>
-          <span class="rc-parameter__box-small-left-content-text">Procesor</span>
-        </div>
-
-        <div class="rc-parameter__box-small-left-parameter-icon">
-          <div class="rc-parameter__box-small-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/006-chip.svg"
-                 class="rc-parameter__box-small-left-icon-img">
-          </div>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-small-left-parameter">
-        <div class="rc-parameter__box-small-left-content">
-          <span class="rc-parameter__box-small-left-content-value"> 256 GB </span>
-          <span class="rc-parameter__box-small-left-content-text"> Pamět v telefonu</span>
-        </div>
-
-        <div class="rc-parameter__box-small-left-parameter-icon">
-          <div class="rc-parameter__box-small-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/038-ssd.svg"
-                 class="rc-parameter__box-small-left-icon-img">
-          </div>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-small-left-parameter">
-        <div class="rc-parameter__box-small-left-content">
-          <span class="rc-parameter__box-small-left-content-value"> 24 h </span>
-          <span class="rc-parameter__box-small-left-content-text"> Výdrž v teelefonu</span>
-        </div>
-
-        <div class="rc-parameter__box-small-left-parameter-icon">
-          <div class="rc-parameter__box-small-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/002-battery.svg"
-                 class="rc-parameter__box-small-left-icon-img">
-          </div>
-        </div>
-      </div>
-
-
-      <div class="rc-parameter__box-small-left-parameter">
-        <div class="rc-parameter__box-small-left-content">
-          <span class="rc-parameter__box-small-left-content-value"> 5G </span>
-          <span class="rc-parameter__box-small-left-content-text"> Rychlý internet</span>
-        </div>
-
-        <div class="rc-parameter__box-small-left-parameter-icon">
-          <div class="rc-parameter__box-small-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/033-router.svg"
-                 class="rc-parameter__box-small-left-icon-img">
-          </div>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-small-left-parameter">
-        <div class="rc-parameter__box-small-left-content">
-          <span class="rc-parameter__box-small-left-content-value"> 40W </span>
-          <span class="rc-parameter__box-small-left-content-text"> Rychlost nabíjení</span>
-        </div>
-
-        <div class="rc-parameter__box-small-left-parameter-icon">
-          <div class="rc-parameter__box-small-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/016-extension-cord.svg"
-                 class="rc-parameter__box-small-left-icon-img">
-          </div>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-small-left-parameter">
-        <div class="rc-parameter__box-small-left-content">
-          <span class="rc-parameter__box-small-left-content-value"> eSIM </span>
-          <span class="rc-parameter__box-small-left-content-text"> SIM přímo v telefonu</span>
-        </div>
-
-        <div class="rc-parameter__box-small-left-parameter-icon">
-          <div class="rc-parameter__box-small-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/035-sd-card.svg"
-                 class="rc-parameter__box-small-left-icon-img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="rc-parameter-small-left__image">
-    <img src="https://pobo-cdn.b-cdn.net/widget/iphone.jpg" class="rc-parameter__image-img">
-  </div>
-</div>
-
-<!-- Parameter left big -->
-<div class="rc-parameter-big-left">
-  <div class="rc-parameter-big-left__box">
-    <h2 class="rc-parameter__header-right">
-      Parametry iPhone 14
-    </h2>
-
-    <div class="rc-parameter">
-      <div class="rc-parameter__box-big-left-parameter">
-        <div class="rc-parameter__box-big-left-content">
-          <span class="rc-parameter__box-big-left-content-value">A16 Bionic</span>
-          <span class="rc-parameter__box-big-left-content-text">Procesor</span>
-        </div>
-
-        <div class="rc-parameter__box-big-left-parameter-icon">
-          <div class="rc-parameter__box-big-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/006-chip.svg"
-                 class="rc-parameter__box-big-left-icon-img">
-          </div>
-        </div>
-      </div>
-      <div class="rc-parameter__box-big-left-parameter">
-        <div class="rc-parameter__box-big-left-content">
-          <span class="rc-parameter__box-big-left-content-value">24 h</span>
-          <span class="rc-parameter__box-big-left-content-text">Výdrž v teelefonu</span>
-        </div>
-
-        <div class="rc-parameter__box-big-left-parameter-icon">
-          <div class="rc-parameter__box-big-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/002-battery.svg"
-                 class="rc-parameter__box-big-left-icon-img">
-          </div>
-        </div>
-      </div>
-      <div class="rc-parameter__box-big-left-parameter">
-        <div class="rc-parameter__box-big-left-content">
-          <span class="rc-parameter__box-big-left-content-value">FaceID</span>
-          <span class="rc-parameter__box-big-left-content-text">Odemykání telefonu obličejem</span>
-        </div>
-
-        <div class="rc-parameter__box-big-left-parameter-icon">
-          <div class="rc-parameter__box-big-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/006-chip.svg"
-                 class="rc-parameter__box-big-left-icon-img">
-          </div>
-        </div>
-      </div>
-      <div class="rc-parameter__box-big-left-parameter">
-        <div class="rc-parameter__box-big-left-content">
-          <span class="rc-parameter__box-big-left-content-value">40W</span>
-          <span class="rc-parameter__box-big-left-content-text">Rychlost nabíjení</span>
-        </div>
-
-        <div class="rc-parameter__box-big-left-parameter-icon">
-          <div class="rc-parameter__box-big-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/016-extension-cord.svg"
-                 class="rc-parameter__box-big-left-icon-img">
-          </div>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-big-left-parameter">
-        <div class="rc-parameter__box-big-left-content">
-          <span class="rc-parameter__box-big-left-content-value">256 GB</span>
-          <span class="rc-parameter__box-big-left-content-text">Pamět v telefonu</span>
-        </div>
-
-        <div class="rc-parameter__box-big-left-parameter-icon">
-          <div class="rc-parameter__box-big-left-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/038-ssd.svg"
-                 class="rc-parameter__box-big-left-icon-img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="rc-parameter-big-left__image">
-    <img src="https://pobo-cdn.b-cdn.net/widget/iphone.jpg" class="rc-parameter__image-img">
-  </div>
-</div>
-
-<!-- Parameter right big -->
-<div class="rc-parameter-big-right">
-  <div class="rc-parameter-big-right__image">
-    <img src="https://pobo-cdn.b-cdn.net/widget/iphone.jpg" class="rc-parameter__image-img">
-  </div>
-
-  <div class="rc-parameter-big-right__box">
-    <h2 class="rc-parameter__header-left">
-      Parametry iPhone 14
-    </h2>
-
-    <div class="rc-parameter">
-      <div class="rc-parameter__box-big-right-parameter">
-        <div class="rc-parameter__box-big-right-parameter-icon">
-          <div class="rc-parameter__box-big-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/006-chip.svg"
-                 class="rc-parameter__box-big-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-big-right-content">
-          <span class="rc-parameter__box-big-right-content-value">A16 Bionic</span>
-          <span class="rc-parameter__box-big-right-content-text">Procesor</span>
-        </div>
-      </div>
-      <div class="rc-parameter__box-big-right-parameter">
-        <div class="rc-parameter__box-big-right-parameter-icon">
-          <div class="rc-parameter__box-big-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/002-battery.svg"
-                 class="rc-parameter__box-big-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-big-right-content">
-          <span class="rc-parameter__box-big-right-content-value">24 h</span>
-          <span class="rc-parameter__box-big-right-content-text">Výdrž v teelefonu</span>
-        </div>
-      </div>
-      <div class="rc-parameter__box-big-right-parameter">
-        <div class="rc-parameter__box-big-right-parameter-icon">
-          <div class="rc-parameter__box-big-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/006-chip.svg"
-                 class="rc-parameter__box-big-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-big-right-content">
-          <span class="rc-parameter__box-big-right-content-value">FaceID</span>
-          <span class="rc-parameter__box-big-right-content-text">Odemykání telefonu obličejem</span>
-        </div>
-      </div>
-      <div class="rc-parameter__box-big-right-parameter">
-        <div class="rc-parameter__box-big-right-parameter-icon">
-          <div class="rc-parameter__box-big-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/016-extension-cord.svg"
-                 class="rc-parameter__box-big-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-big-right-content">
-          <span class="rc-parameter__box-big-right-content-value">40W</span>
-          <span class="rc-parameter__box-big-right-content-text">Rychlost nabíjení</span>
-        </div>
-      </div>
-
-      <div class="rc-parameter__box-big-right-parameter">
-        <div class="rc-parameter__box-big-right-parameter-icon">
-          <div class="rc-parameter__box-big-right-icon-image">
-            <img src="https://image.pobo.cz/icon/parameter/038-ssd.svg"
-                 class="rc-parameter__box-big-right-icon-img">
-          </div>
-        </div>
-
-        <div class="rc-parameter__box-big-right-content">
-          <span class="rc-parameter__box-big-right-content-value">256 GB</span>
-          <span class="rc-parameter__box-big-right-content-text">Pamět v telefonu</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- TEAM WIDGET -->
-<div class="rc-team-three">
-  <div class="rc-team-three__single">
-    <img
-      class="rc-team-three__single--size"
-      src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-1.webp"
-      alt=""
-    />
-    <div class="rc-team-three__single-content">
-      <h3 class="rc-team-three__single-name">Tomáš Smetka</h3>
-      <span class="rc-team-three__single-position">Developer</span>
-    </div>
-  </div>
-  <div class="rc-team-three__single">
-    <img
-      class="rc-team-three__single--size"
-      src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-2.webp"
-      alt=""
-    />
-    <div class="rc-team-three__single-content">
-      <h3 class="rc-team-three__single-name">Michal Štikar</h3>
-      <span class="rc-team-three__single-position">Product</span>
-    </div>
-  </div>
-  <div class="rc-team-three__single">
-    <img
-      class="rc-team-three__single--size"
-      src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-3.webp"
-      alt=""
-    />
-    <div class="rc-team-three__single-content">
-      <h3 class="rc-team-three__single-name">Vojtěch Vaněk</h3>
-      <span class="rc-team-three__single-position">Frontend-dev</span>
-    </div>
-  </div>
-
-</div>
-
-
-<!-- REVIEWS -->
-
-<div class="rc-reviews-two">
-  <div class="rc-reviews-two__box">
-    <div class="rc-reviews-two__box-top">
-      <div class="rc-reviews-two__box-profile">
-        <div class="rc-reviews-two__box-photo">
-          <img class="rc-reviews-two__box-img"
-               src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-1.webp"/>
-        </div>
-        <div class="rc-reviews-two__box-user">
-          <h4 class="rc-reviews-two__box-name">Mike Wazowski</h4>
-          <span class="rc-reviews-two__box-smallname">Věrný zákazník</span>
-        </div>
-      </div>
-
-      <div class="rc-reviews-two__reviews">
-        <div class="rc-reviews-two__star"></div>
-        <div class="rc-reviews-two__star"></div>
-        <div class="rc-reviews-two__star"></div>
-        <div class="rc-reviews-two__star"></div>
-        <div class="rc-reviews-two__star"></div>
-      </div>
-    </div>
-
-    <div class="rc-reviews-two__client-comment">
-          <span class="rc-reviews-two__client-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem, quaerat quis? Provident temporibus architecto
-            asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-            tenetur voluptates incidunt blanditiis sed atque cumque.
-          </span>
-    </div>
-  </div>
-  <div class="rc-reviews-two__box">
-    <div class="rc-reviews-two__box-top">
-      <div class="rc-reviews-two__box-profile">
-        <div class="rc-reviews-two__box-photo">
-          <img class="rc-reviews-two__box-img"
-               src="https://pobo-cdn.b-cdn.net/widget/photo-pb-widget-1.webp"/>
-        </div>
-        <div class="rc-reviews-two__box-user">
-          <h4 class="rc-reviews-two__box-name">Mike Wazowski</h4>
-          <span class="rc-reviews-two__box-smallname">Věrný zákazník</span>
-        </div>
-      </div>
-
-      <div class="rc-reviews-two__reviews">
-        <div class="rc-reviews-two__star"></div>
-        <div class="rc-reviews-two__star"></div>
-        <div class="rc-reviews-two__star"></div>
-        <div class="rc-reviews-two__star"></div>
-        <div class="rc-reviews-two__star"></div>
-      </div>
-    </div>
-
-    <div class="rc-reviews-two__client-comment">
-          <span class="rc-reviews-two__client-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem, quaerat quis? Provident temporibus architecto
-            asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
-            tenetur voluptates incidunt blanditiis sed atque cumque.
-          </span>
-    </div>
-  </div>
-</div>
-
-<!-- Information BOX -->
-
-<div class="rc-information-two">
-  <div class="rc-information-two__wrap">
-    <div class="rc-information-two__icon">
-      <div class="rc-information-two__ico"></div>
-    </div>
-    <div class="rc-information-two__content">
-      <h2 class="rc-information-two__content-title">Potvrzení objednávky</h2>
-      <span class="rc-information-two__content-text">
-            Vyrábíme zboží na míru a tak je potřeba pro dokončení objednávky nám
-            ji potvrdit telefonicky. Do 24 hodin se vám ozve jeden z našich
-            pracovníků.
-          </span>
-    </div>
-  </div>
-</div>
-
-<!-- Warning box -->
-
-<div class="rc-warning-two">
-  <div class="rc-warning-two__wrap">
-    <div class="rc-warning-two__icon">
-      <div class="rc-warning-two__ico"></div>
-    </div>
-    <div class="rc-warning-two__content">
-      <h2 class="rc-warning-two__content-title">Nelze objednat</h2>
-      <span class="rc-warning-two__content-text">
-            Objednávky momentálně nepřijímáme. Máte-li o tento produkt zájem,
-            kontaktujte nás na našem emailu nebo nám zavolejte.
-          </span>
-    </div>
-  </div>
-</div>
-
-<!-- Quotation Card-->
-
-<div class="rc-quotation-card">
-  <div class="rc-quotation-card__wrap">
-        <span class="rc-quotation-card__content-text">
-          Velmi oceňuji ochotu a rychlé jednání. S doplňkem Pobo jsme velmi
-          spokojení. Tvorba popisků je intuitivní a při problémech vždy
-          nacházíme řešení.
-        </span>
-    <h4 class="rc-quotation-card__content-name"> Veronika Vitoulova </h4>
-  </div>
-</div>
-
-<!-- JUMBOTRON-->
-<div class="rc-jumbotron-one">
-  <div class="rc-jumbotron-one__wrap">
-    <img
-      class="rc-jumbotron-one__wrap-img"
-      src="https://pobo-cdn.b-cdn.net/widget/jumbowidget-2.png"
-      alt="pobo-jumbotron"
-    />
-    <div class="rc-jumbotron-one__content">
-      <h2 class="rc-jumbotron-one__content-title">Pijete protein a výsledky nikde?</h2>
-
-      <span class="rc-jumbotron-one__content-text">
-              Pít protein nestačí! Pokud chcete vidět opravdové výsledky, musíte
-              začít pořádně cvičit. Že nevíte jak? Mrkněte na náš blog, kam
-              každý den přidáváme užitečné články ohledně cvičení!
-            </span>
-    </div>
-  </div>
-</div>
-
-<!-- SUCCESS WIDGET -->
-
-<div class="rc-success-one">
-  <div class="rc-success-one__wrap">
-    <div class="rc-success-one__icon">
-      <div class="rc-success-one__ico"></div>
-    </div>
-    <div class="rc-success-one__content">
-      <h2 class="rc-success-one__content-title">Doručíme ještě dnes!</h2>
-      <span class="rc-success-one__content-text">
-            Pokud objednáte do 10:00 doručíme vám v Praze vaši objednávku ješte
-            dnes a to s dopravou zdarma!
-          </span>
-    </div>
-  </div>
-</div>
-
-<!-- AUTOR FOTKA Z LEVA -->
-<div class="rc-author-left">
-  <div class="rc-author-left__wrap">
-    <div class="rc-author-left__img-wrap">
-
-      <img
-        class="rc-author-left__photo-img"
-        src="https://pobo-cdn.b-cdn.net/widget/author-content-left.jpg">
-
-    </div>
-
-    <div class="rc-author-left__content">
-      <h2 class="rc-author-left__content-title">John Doyle</h2>
-
-      <span class="rc-author-left__content-text">
-                    Komentátor a editor názorové rubriky, člen redakce nejsledovanějšího časopisu Pobo od roku 2021. Novinařinou se zabývá již od roku 2002. Věnuje se psaní o eshopech, o jazyce a zajímavostech 21. století. Získal několik novinářských cen.
-                </span>
-    </div>
-  </div>
-</div>
-
-<!-- CITACE S ROZDĚLENÍM -->
-<div class="rc-quotation-split">
-  <div class="rc-quotation-split__wrap">
-
-    <h3 class="rc-quotation-split__text">Nesnáším, když o sobě mluví jako o podnikatelích lidé, kterým nejde ani tak
-      o to, něco podnikat, jako v první řadě o to, rychle začít vydělávat peníze...</h3>
-
-    <span class="rc-quotation-split__line"> </span>
-    <h2 class="rc-quotation-split__author"> Steve Jobs</h2>
-  </div>
-</div>
-
-<!-- AUTOR FOTKA NAHOŘE -->
-<div class="rc-author-top">
-  <div class="rc-author-top__wrap">
-    <div class="rc-author-top__info">
-      <div class="rc-author-top__info-img">
-        <img
-          class="rc-author-top__info-photo"
-          src="https://pobo-cdn.b-cdn.net/widget/author-content-left.jpg">
-      </div>
-      <div class="rc-author-top__info-content">
-        <h2 class="rc-author-top__info-content-name">Jonathan Doyle</h2>
-        <p class="rc-author-top__info-content-position"> Zakladatel & novinář</p>
-      </div>
-    </div>
-
-    <div class="rc-author-top__text">
-      <div class="rc-author-top__text-wrap">
-        <p class="rc-author-top__text-content"> Ahoj, moje jméno je Jonathan Doyle a jsem komentátor a editor
-          názorové rubriky, člen redakce nejsledovanějšího časopisu Pobo od roku 2021. Novinařinou se zabývám
-          již od roku 2002. Věnuji se psaní o eshopech, o jazyce a zajímavostech 21. století. Získal jsem i
-          pár novinářských cen.</p>
-      </div>
-    </div>
-
-    <a href="#" class="rc-author-top__button"> Zobrazit všechny články</a>
-  </div>
-</div>
-
-
-<!--RECENZE -->
-
-<div class="rc-reviews-threerow">
-  <div class="rc-reviews-threerow__wrap">
-    <div class="rc-reviews-threerow__single">
-      <div class="rc-reviews-threerow__single-image">
-        <img
-          class="rc-reviews-threerow__photo-img"
-          src="https://pobo-cdn.b-cdn.net/widget/reviews-threerow--2.jpg">
-      </div>
-
-      <span class="rc-reviews-threerow__stars"></span>
-
-      <span class="rc-reviews-threerow__reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis autem illum, quo, reprehenderit in laboriosam ut, eum itaque hic earum nam error quasi adipisci exercitationem impedit! Modi, quaerat corporis.</span>
-
-      <h3 class="rc-reviews-threerow__name">Mary Johnson</h3>
-
-      <span class="rc-reviews-threerow__date"> 11.6.2022</span>
-    </div>
-    <div class="rc-reviews-threerow__single">
-      <div class="rc-reviews-threerow__single-image">
-        <img
-          class="rc-reviews-threerow__photo-img"
-          src="https://pobo-cdn.b-cdn.net/widget/reviews-threerow-1.jpg">
-
-      </div>
-
-      <span class="rc-reviews-threerow__stars"></span>
-
-      <span class="rc-reviews-threerow__reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis autem illum, quo, reprehenderit in laboriosam ut, eum itaque hic earum nam error quasi adipisci exercitationem impedit! Modi, quaerat corporis.</span>
-
-      <h3 class="rc-reviews-threerow__name">Robert Smith</h3>
-
-      <span class="rc-reviews-threerow__date"> 10.6.2022</span>
-    </div>
-
-    <div class="rc-reviews-threerow__single">
-      <div class="rc-reviews-threerow__single-image">
-        <img
-          class="rc-reviews-threerow__photo-img"
-          src="https://pobo-cdn.b-cdn.net/widget/reviews-threerow-3.jpg">
-      </div>
-      <span class="rc-reviews-threerow__stars"></span>
-
-      <span class="rc-reviews-threerow__reviews">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis autem illum, quo, reprehenderit in laboriosam ut, eum itaque hic earum nam error quasi adipisci exercitationem impedit! Modi, quaerat corporis.</span>
-
-      <h3 class="rc-reviews-threerow__name">Jennifer Williams</h3>
-
-      <span class="rc-reviews-threerow__date"> 9.6.2022</span>
-
-    </div>
-  </div>
-</div>
-
-<!-- AUTOR FOTKA NAD DIVEM -->
-
-<div class="rc-author-above">
-  <div class="rc-author-above__wrap">
-    <div class="rc-author-above__wrap-img">
-      <img
-        class="rc-author-above__photo-img"
-        src="https://pobo-cdn.b-cdn.net/widget/author-content-left.jpg">
-    </div>
-
-
-    <div class="rc-author-above__content">
-      <h2 class="rc-author-above__content-name"> Jonathan Doyle </h2>
-      <p class="rc-author-above__content-text"> Komentátor a editor názorové rubriky, člen redakce
-        nejsledovanějšího časopisu Pobo od roku 2021. Novinařinou se zabývá již od roku 2002. Věnuje se psaní o
-        eshopech, o jazyce a zajímavostech 21. století. Získal několik novinářských cen. </p>
-
-      <a href="#" class="rc-author-above__content-link"> Zobrazit všechny články</a>
-
-    </div>
-  </div>
-</div>
-
-<!-- BIKE MAX WIDGET -->
-<div class="pb-bike-max">
-  <div class="pb-bike-max__wrap">
-    <div class="pb-bike-max__left">
-      <img
-        src="https://pobo-cdn.b-cdn.net/widget/bike-max/9241-6_4ever-exstream-elite--kobalt-cerna--2021--prumer-kol-29-vyska-ramu-xl-53-cm-20-8.jpeg">
-    </div>
-    <div class="pb-bike-max__right">
-      <h2 class="pb-bike-max__title"> Základní vlastnosti</h2>
-
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--engin"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="pb-bike-max__subtitle">Motor:</h2>
-          <h2 class="pb-bike-max__name">Bafang M400 </h2>
-        </div>
-      </div>
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--battery"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="pb-bike-max__subtitle">Baterie:</h2>
-          <h2 class="pb-bike-max__name">522 Wh </h2>
-        </div>
-      </div>
-
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--vidlice"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="pb-bike-max__subtitle">MTB:</h2>
-          <h2 class="pb-bike-max__name">29" </h2>
-        </div>
-      </div>
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--wheel"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="pb-bike-max__subtitle">Velikost kol:</h2>
-          <h2 class="pb-bike-max__name">29" </h2>
-        </div>
-      </div>
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--gearbox"></span>
-        </div>
-
-        <div class="pb-bike-max__content">
-          <h2 class="pb-bike-max__subtitle">Počet převodů: </h2>
-          <h2 class="pb-bike-max__name">6 převodů </h2>
-        </div>
-      </div>
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--reach"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="pb-bike-max__subtitle">Dojezd: </h2>
-          <h2 class="pb-bike-max__name">300 km </h2>
-        </div>
-      </div>
-
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--tlumic"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="pb-bike-max__subtitle">Tlumič: </h2>
-          <h2 class="pb-bike-max__name">ANO </h2>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-</div>
-
-
-<!-- BIKE MAX WIDGET 7 icons -->
-<div class="pb-bike-max">
-  <div class="pb-bike-max__wrap">
-    <div class="pb-bike-max__left">
-      <img
-        src="https://pobo-cdn.b-cdn.net/widget/bike-max/9241-6_4ever-exstream-elite--kobalt-cerna--2021--prumer-kol-29-vyska-ramu-xl-53-cm-20-8.jpeg">
-    </div>
-    <div class="pb-bike-max__right">
-      <h2 class="pb-bike-max__title"><span class="underline">  Základní vlastnosti </span></h2>
-
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--engin"></span>
-        </div>
-        <h2 class="pb-bike-max__name">Motor: Bafang M400 </h2>
-      </div>
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--battery"></span>
-        </div>
-        <h2 class="pb-bike-max__name"> Baterie: 522 Wh </h2>
-      </div>
-
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--vidlice"></span>
-        </div>
-        <h2 class="pb-bike-max__name"> MTB 29" </h2>
-      </div>
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--wheel"></span>
-        </div>
-        <h2 class="pb-bike-max__name"> Velikost kol: 29" </h2>
-      </div>
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--gearbox"></span>
-        </div>
-        <h2 class="pb-bike-max__name"> Počet převodů: 6 převodů</h2>
-      </div>
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--reach"></span>
-        </div>
-        <h2 class="pb-bike-max__name"> Dojezd: 300 km </h2>
-      </div>
-      <div class="pb-bike-max__item">
-        <div class="pb-bike-max__icon">
-          <span class="pb-bike-max__icon-single pb-bike-max__icon--tlumic"></span>
-        </div>
-        <h2 class="pb-bike-max__name"> Tlumič: ANO </h2>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<!-- COMBAT WIDGETY TITLE -->
-<div class="pb-combat-text">
-  <div class="pb-combat-text__wrap">
-    <h2 class="pb-combat-text__title"> Platforma MMP Front Flap </h2>
-    <p class="pb-combat-text__content"> Potřebuješ svůj nosič plátů nebo taktickou vestu osadit zásobníkama a hledáš
-      šikovné řešení ? Náš MMP (Multi Mission Platform) Front Flap tuto potřebu řeší a nabízí toho mnohem víc. Front
-      Flap je řešen jako velká kangaroo kapsa uzavíratelná na suchý zip, která pojme celou škálu vyměnitelných insertů
-      (prodávají se zvlášť). </p>
-  </div>
-</div>
-
-
-<!-- Image right overlay START -->
-<div class="rc-image-right-overlay">
-  <div class="rc-image-right-overlay__text">
-    <aside>
-      <h2>Skříň na M4 a AK47</h2>
-
-      <p>Tuto škříň využije každý majitel <strong>M4 a AK47</strong> s plnou polní. Ideální kombo pro majitele
-        automatických zbraní.</p>
-
-      <p>
-        Povrchová vrstva lamina je odolná vůči krátkodobému působení vody, zvýšené teplotě a chemikáliím používaným v
-        domácnosti. Dále je snadno omyvatelná a bez zápachu.
-      </p>
-    </aside>
-
-    <a href="#" class="rc-image-right-overlay__link">
-      Nakoupit skříň
-    </a>
-  </div>
-
-  <div class="rc-image-right-overlay__image">
-    <div class="rc-image-right-overlay__image-overlay">
-      <img src="https://image.pobo.cz/images/df6a10enqj41/bkb190bbq9ex4xqahn5h-md.jpeg" class="img-fluid">
-    </div>
-  </div>
-</div>
-
-<!-- Image right overlay END -->
-
-<!-- Image right overlay START
-<div class="rc-image-left-overlay">
-  <div class="rc-image-left-overlay__image">
-    <div class="rc-image-left-overlay__image-overlay">
-      <img src="https://image.pobo.cz/images/df6a10enqj41/bkb190bbq9ex4xqahn5h-md.jpeg" class="img-fluid">
-    </div>
-  </div>
-  <div class="rc-image-left-overlay__text">
-    <aside>
-      <h2>Skříň na M4 a AK47</h2>
-
-      <p>Tuto škříň využije každý majitel <strong>M4 a AK47</strong> s plnou polní. Ideální kombo pro majitele
-      automatických zbraní.</p>
-
-      <p>
-        Povrchová vrstva lamina je odolná vůči krátkodobému působení vody, zvýšené teplotě a chemikáliím používaným v
-        domácnosti. Dále je snadno omyvatelná a bez zápachu.
-      </p>
-    </aside>
-
-    <a href="#" class="rc-image-left-overlay__link">
-      Nakoupit skříň
-    </a>
-  </div>
-
- </div>
--->
-<!-- Image right overlay END -->
-
-<!-- FV BIKEMAX BENEFIT widget one -->
-<div class="fv-bikemax-benefit-widget">
-  <div class="fv-bikemax-benefit-widget__wrap">
-    <div class="fv-bikemax-benefit-widget__left">
-      <img
-        src="https://pobo-cdn.b-cdn.net/widget/bike-max/9241-6_4ever-exstream-elite--kobalt-cerna--2021--prumer-kol-29-vyska-ramu-xl-53-cm-20-8.jpeg">
-    </div>
-    <div class="fv-bikemax-benefit-widget__right">
-      <h2 class="fv-bikemax-benefit-widget__title"><span class="underline">  Klíčové vlastnosti </span></h2>
-
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--frame"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Materiál rámu: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> Karbon </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--fork"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Vidlice: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> vzduchová Rock Shox </h2>
-        </div>
-      </div>
-
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--wheel"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Velikost kol: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> 29" </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--gearbox"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Počet převodů: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> 1 x 12 </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--equipment"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Výbava: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> Shimano Deore / XT </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--breaks"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Brzdy: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> hydraulické Shimano Deore </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--muffler"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Tlumič: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> vzduchový Rock Shox Monarch </h2>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- FV BIKEMAX BENEFIT widget two -->
-<div class="fv-bikemax-benefit-widget">
-  <div class="fv-bikemax-benefit-widget__wrap">
-    <div class="fv-bikemax-benefit-widget__left">
-      <img
-        src="https://pobo-cdn.b-cdn.net/widget/bike-max/9241-6_4ever-exstream-elite--kobalt-cerna--2021--prumer-kol-29-vyska-ramu-xl-53-cm-20-8.jpeg">
-    </div>
-    <div class="fv-bikemax-benefit-widget__right">
-      <h2 class="fv-bikemax-benefit-widget__title"><span class="underline">  Klíčové vlastnosti </span></h2>
-
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--wheel"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Velikost kol: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> 24" </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--gearbox"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Počet převodů: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> 1 x 12 </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--breaks"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Brzdy: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> hydraulické Shimano Deore </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--frame"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Materiál rámu: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> hliníkový </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--weight"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Hmotnost: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> 8,7kg </h2>
-        </div>
-      </div>
-
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--child-height"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Doporučená výška dítěte: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> 120 - 150cm </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--child-age"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Doporučený věk dítěte: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> 7 - 11 let </h2>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- FV BIKEMAX BENEFIT widget three -->
-<div class="fv-bikemax-benefit-widget">
-  <div class="fv-bikemax-benefit-widget__wrap">
-    <div class="fv-bikemax-benefit-widget__left">
-      <img
-        src="https://pobo-cdn.b-cdn.net/widget/bike-max/9241-6_4ever-exstream-elite--kobalt-cerna--2021--prumer-kol-29-vyska-ramu-xl-53-cm-20-8.jpeg">
-    </div>
-    <div class="fv-bikemax-benefit-widget__right">
-      <h2 class="fv-bikemax-benefit-widget__title"><span class="underline">  Klíčové vlastnosti </span></h2>
-
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--frame"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Materiál rámu: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> Karbon </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--fork"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Vidlice: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> vzduchová Rock Shox </h2>
-        </div>
-      </div>
-
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--wheel"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Velikost kol: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> 29" </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--gearbox"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Počet převodů: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> 1 x 12 </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--equipment"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Výbava: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> Shimano Deore / XT </h2>
-        </div>
-      </div>
-      <div class="fv-bikemax-benefit-widget__item">
-        <div class="fv-bikemax-benefit-widget__icon">
-          <span class="fv-bikemax-benefit-widget__icon-single fv-bikemax-benefit-widget__icon--breaks"></span>
-        </div>
-        <div class="pb-bike-max__content">
-          <h2 class="fv-bikemax-benefit-widget__subtitle"> Brzdy: </h2>
-          <h2 class="fv-bikemax-benefit-widget__name"> hydraulické Shimano Deore </h2>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
 </body>
 </html>

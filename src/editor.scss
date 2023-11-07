@@ -1,31 +1,5 @@
-@mixin infobox {
-  h1,
-  h2,
-  h3 {
-    padding: 0;
-    margin: 0 0 10px 0;
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  p {
-    font-size: 15px;
-    line-height: 20px;
-    padding: 0;
-    margin: 0;
-  }
-
-  ul,
-  ol {
-    padding: 10px 0 10px 20px;
-
-    li {
-      padding: 5px 0;
-    }
-  }
-}
-
-@import "plugin/gallery";
+@import "utils/native-variable";
+@import "utils/infobox";
 @import "checked-list";
 @import "image-right";
 @import "image-left";
@@ -75,16 +49,27 @@
 @import "quotation-split";
 @import "reviews-three-in-row";
 @import "counter";
+@import "rc-interview-photo";
+@import "parameter";
 
+/**
+ Core Bootstrap
+**/
 @import "grid";
 @import "embed";
 @import "spacing";
-@import "rc-interview-photo";
-@import "parameter";
-@import "product-preview";
+/**
+ Core Bootstrap
+**/
+
+
 @import "plugin/carousel";
+@import "plugin/gallery";
+@import "product-preview";
 
-
+/**
+ Custom widgets
+**/
 @import "yolab-custom";
 @import "arsov-custom";
 @import "koreankosmetika";

@@ -1,5 +1,6 @@
 .rc-parameter-small-right {
-  padding: 30px 0;
+  padding: var(--rc-global-widget-padding);
+  margin: var(--rc-global-widget-margin);
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -25,7 +26,8 @@
 
 
 .rc-parameter-small-left {
-  padding: 30px 0;
+  padding: var(--rc-global-widget-padding);
+  margin: var(--rc-global-widget-margin);
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -50,7 +52,8 @@
 }
 
 .rc-parameter-big-left {
-  padding: 30px 0;
+  padding: var(--rc-global-widget-padding);
+  margin: var(--rc-global-widget-margin);
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -74,7 +77,8 @@
 }
 
 .rc-parameter-big-right {
-  padding: 30px 0;
+  padding: var(--rc-global-widget-padding);
+  margin: var(--rc-global-widget-margin);
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -132,6 +136,8 @@
     width: 50%;
     align-items: center;
     position: relative;
+    padding: var(--rc-parameter-small-padding);
+    margin: var(--rc-parameter-small-margin);
   }
 
   &__box-small-right-parameter-icon {
@@ -161,23 +167,26 @@
 
   &__box-small-right-content-text {
     display: block;
-    font-size: 12px;
-    color: black;
+    font-size: var(--rc-parameter-small-value-font-size);
+    color: var(--rc-parameter-small-value-font-color);
   }
 
   &__box-small-right-content-value {
     display: block;
-    font-size: 15px;
     font-weight: 600;
     margin: 0 0 2px 0;
+    font-size: var(--rc-parameter-small-info-font-size);
+    color: var(--rc-parameter-small-info-font-color);
   }
 
-
+  // Small left
   &__box-small-left-parameter {
     display: flex;
     width: 50%;
     align-items: center;
     position: relative;
+    padding: var(--rc-parameter-small-padding);
+    margin: var(--rc-parameter-small-margin);
   }
 
   &__box-small-left-parameter-icon {
@@ -207,17 +216,18 @@
 
   &__box-small-left-content-text {
     display: block;
-    font-size: 12px;
-    color: black;
     text-align: right;
+    font-size: var(--rc-parameter-small-value-font-size);
+    color: var(--rc-parameter-small-value-font-color);
   }
 
   &__box-small-left-content-value {
     display: block;
-    font-size: 15px;
     font-weight: 600;
     margin: 0 0 2px 0;
     text-align: right;
+    font-size: var(--rc-parameter-small-info-font-size);
+    color: var(--rc-parameter-small-info-font-color);
   }
 
 
@@ -227,6 +237,8 @@
     width: 100%;
     align-items: center;
     position: relative;
+    padding: var(--rc-parameter-big-padding);
+    margin: var(--rc-parameter-big-margin);
   }
 
   &__box-big-left-parameter-icon {
@@ -256,17 +268,18 @@
 
   &__box-big-left-content-text {
     display: block;
-    font-size: 12px;
-    color: black;
     text-align: right;
+    font-size: var(--rc-parameter-big-value-font-size);
+    color: var(--rc-parameter-big-value-font-color);
   }
 
   &__box-big-left-content-value {
     display: block;
-    font-size: 15px;
     font-weight: 600;
     margin: 0 0 2px 0;
     text-align: right;
+    font-size: var(--rc-parameter-big-info-font-size);
+    color: var(--rc-parameter-big-info-font-color);
   }
 
 
@@ -277,6 +290,8 @@
     width: 100%;
     align-items: center;
     position: relative;
+    padding: var(--rc-parameter-big-padding);
+    margin: var(--rc-parameter-big-margin);
   }
 
   &__box-big-right-parameter-icon {
@@ -306,14 +321,15 @@
 
   &__box-big-right-content-text {
     display: block;
-    font-size: 12px;
-    color: black;
+    font-size: var(--rc-parameter-big-value-font-size);
+    color: var(--rc-parameter-big-value-font-color);
   }
 
   &__box-big-right-content-value {
     display: block;
-    font-size: 15px;
     font-weight: 600;
     margin: 0 0 2px 0;
+    font-size: var(--rc-parameter-big-info-font-size);
+    color: var(--rc-parameter-big-info-font-color);
   }
 }

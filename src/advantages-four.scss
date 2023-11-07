@@ -1,5 +1,6 @@
 .rc-advantages-four {
-  padding: 20px 0;
+  padding: var(--rc-global-widget-padding);
+  margin: var(--rc-global-widget-margin);
 
   @include media-breakpoint-up(sm) {
     padding: 20px 0;
@@ -36,10 +37,11 @@
   }
 
   &__info-header {
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    line-height: 24px;
+    margin: var(--rc-advantages-title-margin);
+    color: var(--rc-advantages-title-font-color);
+    font-size: var(--rc-advantages-title-font-size);
+    line-height: var(--rc-advantages-title-line-height);
+    font-weight: var(--rc-advantages-title-font-weight);
 
     @include media-breakpoint-down(sm) {
       font-size: 16px;
@@ -48,12 +50,12 @@
   }
 
   &__info-text {
-    padding: 0;
-    margin: 10px 0 0 0;
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 300;
     display: block;
-    text-align: center;
+    padding: var(--rc-advantages-info-margin);
+    margin: var(--rc-advantages-info-padding);
+    color: var(--rc-advantages-info-font-color);
+    font-size: var(--rc-advantages-info-font-size);
+    line-height: var(--rc-advantages-info-line-height);
+    font-weight: var(--rc-advantages-info-font-weight);
   }
 }
