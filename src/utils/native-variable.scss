@@ -1,6 +1,40 @@
 :root {
-  --rc-global-widget-padding: 15px 0; /* Increase padding for more space */
-  --rc-global-widget-margin: 15px 0; /* Increase margin for more space */
+  --rc-typo-h2-font-size: 25px;
+  --rc-typo-h2-line-height: 30px;
+  --rc-typo-h2-font-weight: 600;
+  --rc-typo-h2-font-color: #0c0c0c;
+  --rc-typo-h2-padding: 0;
+  --rc-typo-h2-margin: 0 0 20px 0;
+
+  --rc-typo-h3-font-size: 20px;
+  --rc-typo-h3-line-height: 25px;
+  --rc-typo-h3-font-weight: 600;
+  --rc-typo-h3-font-color: #0c0c0c;
+  --rc-typo-h3-padding: 0;
+  --rc-typo-h3-margin: 0 0 20px 0;
+
+  --rc-typo-h4-font-size: 15px;
+  --rc-typo-h4-line-height: 20px;
+  --rc-typo-h4-font-weight: 600;
+  --rc-typo-h4-font-color: #0c0c0c;
+  --rc-typo-h4-padding: 0;
+  --rc-typo-h4-margin: 0 0 20px 0;
+
+  --rc-typo-p-font-size: 15px;
+  --rc-typo-p-line-height: 20px;
+  --rc-typo-p-padding: 0;
+  --rc-typo-p-margin: 0 0 20px 0;
+
+  --rc-typo-list-padding: 0;
+  --rc-typo-list-margin: 0 0 20px 0;
+  --rc-typo-list-item-padding: 0;
+  --rc-typo-list-item-margin: 0 0 10px 0;
+
+  --rc-link-color: #0c0c0c;
+  --rc-link-hover-color: #0c0c0c;
+
+  --rc-global-widget-padding: 10px 0;
+  --rc-global-widget-margin: 10px 0;
 
   --rc-inline-content-image-width: 70px;
   --rc-inline-content-image-max-width: 80px;
@@ -12,13 +46,11 @@
   --rc-inline-image-content-box-shadow: none;
   --rc-inline-image-content-border: none;
 
-
   --rc-inline-sec-image-width: 70px;
   --rc-inline-sec-image-min-width: 80px;
   --rc-inline-sec-image-border-radius: 0;
   --rc-inline-sec-image-border: none;
 
-  /** .rc-inline-image (3 widgets variant) **/
   --rc-inline-image-bg: none;
   --rc-inline-image-box-shadow: none;
   --rc-inline-image-border-radius: none;
@@ -34,7 +66,6 @@
   --rc-inline-image-title-border: none;
   --rc-inline-image-title-font-weight: 600;
 
-
   --rc-inline-image-sub-title-font-color: black;
   --rc-inline-image-sub-title-font-size: 14px;
   --rc-inline-image-sub-title-line-height: 18px;
@@ -47,7 +78,6 @@
 
   --rc-inline-image-wrap-content: 20px;
 
-  /** .rc-parameter (global) **/
   --rc-parameter-big-padding: 0px 0;
   --rc-parameter-big-margin: 0px 0;
 
@@ -56,13 +86,15 @@
   --rc-parameter-small-bg: none;
   --rc-parameter-small-box-shadow: none;
   --rc-parameter-small-border-radius: none;
-
-  /** .rc-parameter (small) **/
   --rc-parameter-small-value-font-size: 14px;
   --rc-parameter-small-value-font-color: black;
   --rc-parameter-small-value-font-weight: 400;
   --rc-parameter-small-value-margin: 2px 0 0 0;
   --rc-parameter-small-value-padding: 0;
+  --rc-parameter-small-info-font-size: 18px;
+  --rc-parameter-small-info-font-color: #0c0c0c;
+  --rc-parameter-small-info-font-weight: 500;
+  --rc-parameter-small-info-margin: 0;
 
   --rc-parameter-header-font-size: 22px;
   --rc-parameter-header-font-color: #0c0c0c;
@@ -70,20 +102,12 @@
   --rc-parameter-header-margin: 0 0 50px 0;
   --rc-parameter-header-padding: 0;
 
-
-  --rc-parameter-small-info-font-size: 18px;
-  --rc-parameter-small-info-font-color: #0c0c0c;
-  --rc-parameter-small-info-font-weight: 500;
-  --rc-parameter-small-info-margin: 0;
-
-  /** .rc-parameter (big) **/
   --rc-parameter-big-value-font-size: 15px;
   --rc-parameter-big-value-font-color: #575757;
 
   --rc-parameter-big-info-font-size: 22px;
   --rc-parameter-big-info-font-color: black;
 
-  /** .rc-advantages-two (three widgets) **/
   --rc-advantages-bg: none;
   --rc-advantages-box-shadow: none;
   --rc-advantages-border-radius: none;
@@ -92,7 +116,7 @@
   --rc-advantages-title-font-color: black;
   --rc-advantages-title-font-weight: 600;
   --rc-advantages-title-padding: 0;
-  --rc-advantages-title-margin: 0;
+  --rc-advantages-title-margin: 20px 0 20px 0;
 
   --rc-advantages-item-padding: 10px;
   --rc-advantages-item-border: none;
@@ -101,7 +125,6 @@
   --rc-advantages-item-border-radius: none;
   --rc-advantages-item-margin: 0;
 
-
   --rc-advantages-info-font-size: 16px;
   --rc-advantages-info-line-height: 18px;
   --rc-advantages-info-font-color: #575757;
@@ -109,16 +132,108 @@
   --rc-advantages-info-padding: 10px 0 0 0;
   --rc-advantages-info-margin: 0;
 
-  --rc-advantages-ico-container-bg: none;
-  --rc-advantages-ico-container-padding: 0 0 20px 0;
+  --rc-advantages-ico-container-bg: white;
   --rc-advantages-ico-container-margin: 0;
   --rc-advantages-ico-container-box-shadow: none;
   --rc-advantages-ico-container-border-radius: 0;
   --rc-advantages-ico-container-height: 150px;
-
+  --rc-advantages-ico-container-padding: 0 0 20px 0;
+  --rc-advantages-ico-container-width: 100%;
   --rc-advantages-ico-container-img-max-height: 150px;
+  --rc-advantages-ico-container-img-max-width: 100%;
+
   --rc-advantages-ico-container-img-box-shadow: none;
   --rc-advantages-ico-container-img-bg: none;
   --rc-advantages-ico-container-img-border-radius: 0;
   --rc-advantages-ico-container-img-border-color: none;
+
+  --rc-profit-bg: none;
+  --rc-profit-box-shadow: none;
+  --rc-profit-border-radius: none;
+  --rc-inline-border-radius: none;
+
+  --rc-profit-list-header-font-size: 16px;
+  --rc-profit-list-header-line-height: 18px;
+  --rc-profit-list-header-padding: 0;
+  --rc-profit-list-header-margin: 0 0 2px 0;
+
+  --rc-list-info-font-size: 14px;
+  --rc-list-info-line-height: 16px;
+  --rc-list-info-font-color: #575757;
+  --rc-list-info-font-weight: 400;
+  --rc-list-info-padding: 0;
+  --rc-list-info-margin: 0;
+
+  --rc-profit-list-item-padding: 10px 0;
+  --rc-profit-list-item-margin: 0;
+  --rc-profit-list-item-bg: none;
+  --rc-profit-list-item-box-shadow: none;
+  --rc-profit-list-item-border-radius: none;
+  --rc-profit-list-item-border: none;
+
+  --rc-profit-list-padding: 10px 50px;
+  --rc-profit-list-bg: none;
+  --rc-profit-list-box-shadow: none;
+  --rc-profit-list-border-radius: none;
+  --rc-profit-list-border: none;
+
+  --rc-profit-list-container-padding: 10px;
+  --rc-profit-list-container-margin: 0;
+  --rc-profit-list-container-bg: none;
+  --rc-profit-list-container-box-shadow: none;
+  --rc-profit-list-container-border-radius: none;
+  --rc-profit-list-container-border-color: none;
+
+  --rc-image-img-bg: none;
+  --rc-image-img-padding: 0;
+  --rc-image-img-margin: 0;
+  --rc-image-img-border-radius: 0;
+  --rc-image-img-box-shadow: none;
+  --rc-image-img-border-color: none;
+
+  --rc-image-bg: none;
+  --rc-image-box-shadow: none;
+  --rc-image-border-color: none;
+
+  --rc-counter-bg: none;
+  --rc-counter-box-shadow: none;
+  --rc-counter-border-radius: none;
+  --rc-counter-border: none;
+  --rc-counter-overlay-bg: rgb(0 0 0 / 50%);
+
+  --rc-counter-header-font-size: 26px;
+  --rc-counter-header-line-height: 30px;
+  --rc-counter-header-font-weight: 600;
+  --rc-counter-header-font-color: #fff;
+  --rc-counter-header-padding: 0 0 5px;
+  --rc-counter-header-margin: 0;
+  --rc-counter-header-text-shadow: 1px 1px 1px #000;
+
+  --rc-counter-header-half-font-size: 26px;
+  --rc-counter-header-half-line-height: 30px;
+  --rc-counter-header-half-font-weight: 600;
+  --rc-counter-header-half-font-color: #fff;
+  --rc-counter-header-half-padding: 0 0 5px;
+  --rc-counter-header-half-margin: 0;
+  --rc-counter-header-half-text-shadow: 1px 1px 1px #000;
+
+  --rc-counter-info-font-size: 18px;
+  --rc-counter-info-line-height: 22px;
+  --rc-counter-info-font-weight: 400;
+  --rc-counter-info-font-color: #fff;
+  --rc-counter-info-padding: 0;
+  --rc-counter-info-margin: 0;
+  --rc-counter-info-text-shadow: 1px 1px 1px #000;
+
+  --rc-image-overlay-bg: #eeeeee;
+  --rc-image-overlay-bg-after: #5b5b5b;
+  --rc-image-overlay-bg-opacity: 0.1;
+}
+
+
+@media only screen and (min-width: 549px) {
+  :root {
+    --rc-global-widget-padding: 10px 0;
+    --rc-global-widget-margin: 10px 0;
+  }
 }

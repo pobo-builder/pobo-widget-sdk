@@ -2,10 +2,15 @@ $element: ".rc-counter";
 
 #{$element} {
   display: grid;
-  margin: 20px 0;
-  padding: 25px 0;
   position: relative;
   overflow: hidden;
+  border-radius: var(--rc-counter-border-radius);
+  border: var(--rc-counter-border);
+  box-shadow: var(--rc-counter-box-shadow);
+  background: var(--rc-counter-bg);
+  padding: var(--rc-global-widget-padding);
+  margin: var(--rc-global-widget-margin);
+
 
   @include media-breakpoint-down(sm) {
     padding: 10px 0;
@@ -25,12 +30,8 @@ $element: ".rc-counter";
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgb(0 0 0 / 50%);
+    background-color: var(--rc-counter-overlay-bg);
     z-index: 8;
-  }
-
-  &.dark {
-    background: black;
   }
 
   &__two {
@@ -50,7 +51,7 @@ $element: ".rc-counter";
     padding: 25px;
     border-radius: 10px;
     text-align: center;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
 
     @include media-breakpoint-down(sm) {
       padding: 10px 5px;
@@ -58,12 +59,13 @@ $element: ".rc-counter";
   }
 
   &__header {
-    color: #fff;
-    margin: 0;
-    padding: 0 0 5px;
-    font-size: 26px;
-    font-weight: 600;
-    text-shadow: 1px 1px 1px #000;
+    font-size: var(--rc-counter-header-font-size);
+    color: var(--rc-counter-header-font-color);
+    margin: var(--rc-counter-header-margin);
+    padding: var(--rc-counter-header-padding);
+    font-weight: var(--rc-counter-header-font-weight);
+    text-shadow: var(--rc-counter-header-text-shadow);
+
 
     @include media-breakpoint-down(sm) {
       font-size: 16px;
@@ -71,21 +73,23 @@ $element: ".rc-counter";
 
 
     &--medium {
-      font-size: 32px;
-
-      @include media-breakpoint-down(sm) {
-        font-size: 22px;
-      }
+      font-size: var(--rc-counter-header-half-font-size);
+      color: var(--rc-counter-header-half-font-color);
+      margin: var(--rc-counter-header-half-margin);
+      padding: var(--rc-counter-header-half-padding);
+      font-weight: var(--rc-counter-header-half-font-weight);
+      text-shadow: var(--rc-counter-header-half-text-shadow);
     }
   }
 
   &__info {
-    padding: 0;
-    margin: 5px 0 0 0;
-    display: block;
-    font-size: 17px;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    font-size: var(--rc-counter-info-font-size);
+    color: var(--rc-counter-info-font-color);
+    margin: var(--rc-counter-info-margin);
+    padding: var(--rc-counter-info-padding);
+    font-weight: var(--rc-counter-info-font-weight);
+    text-shadow: var(--rc-counter-info-text-shadow);
+
 
     @include media-breakpoint-down(sm) {
       font-size: 12px;
@@ -97,12 +101,6 @@ $element: ".rc-counter";
       @include media-breakpoint-down(sm) {
         font-size: 13px;
       }
-    }
-  }
-
-  &.dark {
-    #{$element}__header {
-      background: blue;
     }
   }
 }

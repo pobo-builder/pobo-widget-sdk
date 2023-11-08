@@ -1,8 +1,12 @@
 .rc-image-left {
   display: flex;
-  padding: 20px 0;
   align-items: center;
   flex-wrap: wrap;
+  padding: var(--rc-global-widget-padding);
+  margin: var(--rc-global-widget-margin);
+  background: var(--rc-image-bg);
+  box-shadow: var(--rc-image-box-shadow);
+  border: var(--rc-image-border-color);
 
   @include media-breakpoint-down(sm) {
     padding: 20px 0;
@@ -22,19 +26,11 @@
   &__img {
     max-width: 100%;
     height: auto;
-  }
-
-  &__header {
-    font-size: 25px;
-    padding: 0;
-    margin: 0 0 25px;
-  }
-
-  &__p {
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-    line-height: 26px;
+    padding: var(--rc-image-img-padding);
+    margin: var(--rc-image-img-margin);
+    border-radius: var(--rc-image-img-border-radius);
+    box-shadow: var(--rc-image-img-box-shadow);
+    border: var(--rc-image-img-border-color);
   }
 
   &__text {

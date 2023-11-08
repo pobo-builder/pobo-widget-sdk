@@ -1,6 +1,11 @@
 .rc-advantages-two {
   padding: var(--rc-global-widget-padding);
   margin: var(--rc-global-widget-margin);
+  background: var(--rc-advantages-bg);
+  box-shadow: var(--rc-advantages-box-shadow);
+  border: var(--rc-advantages-border-radius);
+  background: var(--rc-image-bg);
+  border: var(--rc-image-border-color);
 
   @include media-breakpoint-up(sm) {
     padding: 20px 0;
@@ -8,7 +13,12 @@
   }
 
   &__item {
-    padding: 10px;
+    padding: var(--rc-advantages-item-padding);
+    border: var(--rc-advantages-item-border);
+    background: var(--rc-advantages-item-bg);
+    box-shadow: var(--rc-advantages-item-box-shadow);
+    border-radius: var(--rc-advantages-item-border-radius);
+    margin: var(--rc-advantages-item-margin);
 
     @include media-breakpoint-up(sm) {
       width: calc(100% / 2);
@@ -16,20 +26,27 @@
   }
 
   &__ico-container {
-    width: 100%;
-    height: 150px;
     text-align: center;
-    padding: 0 0 20px 0;
     display: flex;
     align-items: center;
     position: relative;
+    border-radius: var(--rc-advantages-ico-container-border-radius);
+    margin: var(--rc-advantages-ico-container-margin);
+    box-shadow: var(--rc-advantages-ico-container-box-shadow);
+    background: var(--rc-advantages-ico-container-bg);
+    padding: var(--rc-advantages-ico-container-padding);
+    width: var(--rc-advantages-ico-container-width);
+    height: var(--rc-advantages-ico-container-height);
   }
 
   &__ico-img {
     margin: 0 auto;
-    max-height: 150px;
-    width: auto;
-    max-width: 100%;
+    max-height: var(--rc-advantages-ico-container-img-max-height);
+    max-width: var(--rc-advantages-ico-container-img-max-width);
+    box-shadow: var(--rc-advantages-ico-container-img-box-shadow);
+    background: var(--rc-advantages-ico-container-img-bg);
+    border-radius: var(--rc-advantages-ico-container-img-border-radius);
+    border: var(--rc-advantages-ico-container-img-border-color)
   }
 
   &__info {

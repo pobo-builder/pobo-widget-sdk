@@ -24,28 +24,27 @@
   }
 
   &__ico-container {
-    width: 100%;
-    height: var(--rc-advantages-ico-container-height);
     text-align: center;
     display: flex;
     align-items: center;
     position: relative;
     border-radius: var(--rc-advantages-ico-container-border-radius);
-    padding: var(--rc-advantages-ico-container-padding);
     margin: var(--rc-advantages-ico-container-margin);
     box-shadow: var(--rc-advantages-ico-container-box-shadow);
     background: var(--rc-advantages-ico-container-bg);
+    padding: var(--rc-advantages-ico-container-padding);
+    width: var(--rc-advantages-ico-container-width);
+    height: var(--rc-advantages-ico-container-height);
   }
 
   &__ico-img {
     margin: 0 auto;
-    width: auto;
     max-height: var(--rc-advantages-ico-container-img-max-height);
+    max-width: var(--rc-advantages-ico-container-img-max-width);
     box-shadow: var(--rc-advantages-ico-container-img-box-shadow);
     background: var(--rc-advantages-ico-container-img-bg);
     border-radius: var(--rc-advantages-ico-container-img-border-radius);
     border: var(--rc-advantages-ico-container-img-border-color);
-    max-width: 100%;
   }
 
   &__info {

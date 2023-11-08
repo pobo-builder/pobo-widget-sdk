@@ -1,13 +1,28 @@
 .rc-profit {
-  padding: 10px 0;
-
+  padding: var(--rc-global-widget-padding);
+  margin: var(--rc-global-widget-margin);
+  background: var(--rc-profit-bg);
+  box-shadow: var(--rc-profit-box-shadow);
+  border-radius: var(--rc-inline-border-radius);
+  border: var(--rc-inline-border);
 
   &__list-container {
-    padding: 10px;
+    padding: var(--rc-profit-list-container-padding);
+    margin: var(--rc-profit-list-container-margin);
+    background: var(--rc-profit-list-container-bg);
+    box-shadow: var(--rc-profit-list-container-box-shadow);
+    border-radius: var(--rc-profit-list-container-border-radius);
+    border: var(--rc-profit-list-container-border-color);
   }
 
   &__list {
-    padding: 10px 50px;
+    padding: var(--rc-profit-list-padding);
+    margin: var(--rc-profit-list-margin);
+    background: var(--rc-profit-list-bg);
+    box-shadow: var(--rc-profit-list-box-shadow);
+    border-radius: var(--rc-profit-list-border-radius);
+    border: var(--rc-profit-list-border);
+
 
     @include media-breakpoint-down(md) {
       padding: 10px;
@@ -17,8 +32,14 @@
   &__list-item {
     display: flex;
     align-items: center;
-    margin: 15px 0;
+   //  margin: 15px 0;
     position: relative;
+    padding: var(--rc-profit-list-item-padding);
+    margin: var(--rc-profit-list-item-margin);
+    background: var(--rc-profit-list-item-bg);
+    box-shadow: var(--rc-profit-list-item-box-shadow);
+    border-radius: var(--rc-profit-list-item-border-radius);
+    border: var(--rc-profit-list-item-border);
   }
 
   &__list-ico {
@@ -32,10 +53,10 @@
   }
 
   &__list-header {
-    padding: 0;
-    margin: 0 0 2px 0;
-    font-size: 16px;
-    line-height: 22px;
+    padding: var(--rc-profit-list-header-padding);
+    margin: var(--rc-profit-list-header-margin);
+    font-size: var(--rc-profit-list-header-font-size);
+    line-height: var(--rc-profit-list-header-line-height);
   }
 
   &__header {
@@ -56,9 +77,12 @@
 
   &__list-info {
     display: block;
-    font-size: 14px;
-    line-height: 16px;
-    color: #3e3e3e;
+    font-size: var(--rc-list-info-font-size);
+    line-height: var(--rc-list-info-line-height);
+    color: var(--rc-list-info-font-color);
+    font-weight: var(--rc-list-info-font-weight);
+    padding: var(--rc-list-info-padding);
+    margin: var(--rc-list-info-margin);
   }
 
   &__right-img {
