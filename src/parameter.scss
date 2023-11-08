@@ -123,11 +123,12 @@
   }
 
   &__header-right {
-    font-size: 22px;
-    margin: 0 0 25px 0;
-    padding: 0 10px 0 0;
-    font-weight: 600;
     text-align: right;
+    font-size: var(--rc-parameter-header-font-size);
+    color: var(--rc-parameter-header-font-color);
+    font-weight: var(--rc-parameter-header-font-weight);
+    margin: var(--rc-parameter-header-margin);
+    padding: var(--rc-parameter-header-padding);
   }
 
   // Small right
@@ -187,6 +188,9 @@
     position: relative;
     padding: var(--rc-parameter-small-padding);
     margin: var(--rc-parameter-small-margin);
+    background: var(--rc-parameter-small-bg);
+    box-shadow: var(--rc-parameter-small-box-shadow);
+    border-radius: var(--rc-parameter-small-border-radius);
   }
 
   &__box-small-left-parameter-icon {
@@ -219,15 +223,21 @@
     text-align: right;
     font-size: var(--rc-parameter-small-value-font-size);
     color: var(--rc-parameter-small-value-font-color);
+    // todo predat dale
+    font-weight: var(--rc-parameter-small-value-font-weight);
+    margin: var(--rc-parameter-small-value-margin);
+    padding: var(--rc-parameter-small-value-padding);
   }
 
   &__box-small-left-content-value {
     display: block;
-    font-weight: 600;
-    margin: 0 0 2px 0;
     text-align: right;
+    // todo predat do dalsich variant
     font-size: var(--rc-parameter-small-info-font-size);
     color: var(--rc-parameter-small-info-font-color);
+    font-weight: var(--rc-parameter-small-info-font-weight);
+    margin: var(--rc-parameter-small-info-margin);
+
   }
 
 

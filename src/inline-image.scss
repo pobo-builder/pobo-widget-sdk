@@ -6,6 +6,10 @@
   flex-direction: column;
   padding: var(--rc-global-widget-padding);
   margin: var(--rc-global-widget-margin);
+  background: var(--rc-inline-image-bg);
+  box-shadow: var(--rc-inline-image-box-shadow);
+  border-radius: var(--rc-inline-image-border-radius);
+  border: var(--rc-inline-image-border);
 
   &__wrap {
     width: 100%;
@@ -35,6 +39,12 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    background: var(--rc-inline-image-content-bg);
+    border-radius: var(--rc-inline-image-content-border-radius);
+    padding: var(--rc-inline-image-content-padding);
+    margin: var(--rc-inline-image-content-margin);
+    box-shadow: var(--rc-inline-image-content-box-shadow);
+    border: var(--rc-inline-image-content-border);
 
     @include media-breakpoint-down(md) {
       width: 100% !important;
@@ -49,26 +59,34 @@
   }
 
   &__content-image {
-    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80px;
     position: relative;
+    width: var(--rc-inline-content-image-width);
+    max-width: var(--rc-inline-content-image-max-width);
   }
 
 
   &__sec-image {
-    width: 70px;
-    min-width: 70px;
+    width: var(--rc-inline-sec-image-width);
+    min-width: var(--rc-inline-sec-image-min-width);
+    border-radius: var(--rc-inline-sec-image-border-radius);
+    border: var(--rc-inline-sec-image-border-color);
   }
 
   &__title {
-    margin: 0;
-    padding-bottom: 8px;
     line-height: var(--rc-inline-image-title-line-height);
     font-size: var(--rc-inline-image-title-font-size);
     color: var(--rc-inline-image-title-font-color);
+    font-weight: var(--rc-inline-image-title-font-weight);
+    padding: var(--rc-inline-image-title-padding);
+    margin: var(--rc-inline-image-title-margin);
+    background: var(--rc-inline-image-title-bg);
+    border: var(--rc-inline-image-title-border);
+    box-shadow: var(--rc-inline-image-title-box-shadow);
+    border-radius: var(--rc-inline-image-title-border-radius);
+
 
     @include media-breakpoint-down(sm) {
       font-size: 16px;
@@ -78,7 +96,13 @@
   &__subtitle {
     line-height: var(--rc-inline-image-sub-title-line-height);
     font-size: var(--rc-inline-image-sub-title-font-size);
-    color: var(--rc-inline-image-sub-title-color);
+    color: var(--rc-inline-image-sub-title-font-color);
+    padding: var(--rc-inline-image-sub-title-padding);
+    margin: var(--rc-inline-image-sub-title-margin);
+    background: var(--rc-inline-image-sub-title-bg);
+    border: var(--rc-inline-image-sub-title-border);
+    box-shadow: var(--rc-inline-image-sub-title-box-shadow);
+    border-radius: var(--rc-inline-image-sub-title-border-radius);
   }
 
   &__three {

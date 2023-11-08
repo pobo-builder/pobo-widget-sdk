@@ -1,15 +1,49 @@
 :root {
-  --rc-global-widget-padding: 20px 0;
-  --rc-global-widget-margin: 20px 0;
+  --rc-global-widget-padding: 15px 0; /* Increase padding for more space */
+  --rc-global-widget-margin: 15px 0; /* Increase margin for more space */
+
+  --rc-inline-content-image-width: 70px;
+  --rc-inline-content-image-max-width: 80px;
+
+  --rc-inline-image-content-bg: none;
+  --rc-inline-image-content-border-radius: 0;
+  --rc-inline-image-content-padding: 20px;
+  --rc-inline-image-content-margin: 0;
+  --rc-inline-image-content-box-shadow: none;
+  --rc-inline-image-content-border: none;
+
+
+  --rc-inline-sec-image-width: 70px;
+  --rc-inline-sec-image-min-width: 80px;
+  --rc-inline-sec-image-border-radius: 0;
+  --rc-inline-sec-image-border: none;
 
   /** .rc-inline-image (3 widgets variant) **/
-  --rc-inline-image-title-font-color: black;
+  --rc-inline-image-bg: none;
+  --rc-inline-image-box-shadow: none;
+  --rc-inline-image-border-radius: none;
+  --rc-inline-image-border: none;
+
+  --rc-inline-image-title-font-color: #333;
   --rc-inline-image-title-font-size: 21px;
   --rc-inline-image-title-line-height: 24px;
+  --rc-inline-image-title-padding: 0 0 8px 0;
+  --rc-inline-image-title-margin: 0;
+  --rc-inline-image-title-box-shadow: none;
+  --rc-inline-image-title-border-radius: 0;
+  --rc-inline-image-title-border: none;
+  --rc-inline-image-title-font-weight: 600;
+
 
   --rc-inline-image-sub-title-font-color: black;
   --rc-inline-image-sub-title-font-size: 14px;
   --rc-inline-image-sub-title-line-height: 18px;
+  --rc-inline-image-sub-title-padding: 0;
+  --rc-inline-image-sub-title-margin: 0;
+  --rc-inline-image-sub-title-bg: none;
+  --rc-inline-image-sub-title-border: none;
+  --rc-inline-image-sub-title-box-shadow: none;
+  --rc-inline-image-sub-title-border-radius: 0;
 
   --rc-inline-image-wrap-content: 20px;
 
@@ -19,13 +53,28 @@
 
   --rc-parameter-small-padding: 2px 0;
   --rc-parameter-small-margin: 2px 0;
+  --rc-parameter-small-bg: none;
+  --rc-parameter-small-box-shadow: none;
+  --rc-parameter-small-border-radius: none;
 
   /** .rc-parameter (small) **/
   --rc-parameter-small-value-font-size: 14px;
   --rc-parameter-small-value-font-color: black;
+  --rc-parameter-small-value-font-weight: 400;
+  --rc-parameter-small-value-margin: 2px 0 0 0;
+  --rc-parameter-small-value-padding: 0;
 
-  --rc-parameter-small-info-font-size: 20px;
-  --rc-parameter-small-info-font-color: #575757;
+  --rc-parameter-header-font-size: 22px;
+  --rc-parameter-header-font-color: #0c0c0c;
+  --rc-parameter-header-font-weight: 500;
+  --rc-parameter-header-margin: 0 0 50px 0;
+  --rc-parameter-header-padding: 0;
+
+
+  --rc-parameter-small-info-font-size: 18px;
+  --rc-parameter-small-info-font-color: #0c0c0c;
+  --rc-parameter-small-info-font-weight: 500;
+  --rc-parameter-small-info-margin: 0;
 
   /** .rc-parameter (big) **/
   --rc-parameter-big-value-font-size: 15px;
@@ -35,17 +84,41 @@
   --rc-parameter-big-info-font-color: black;
 
   /** .rc-advantages-two (three widgets) **/
-  --rc-advantages-title-font-size: 20px;
+  --rc-advantages-bg: none;
+  --rc-advantages-box-shadow: none;
+  --rc-advantages-border-radius: none;
+  --rc-advantages-title-font-size: 22px;
   --rc-advantages-title-line-height: 24px;
   --rc-advantages-title-font-color: black;
   --rc-advantages-title-font-weight: 600;
   --rc-advantages-title-padding: 0;
   --rc-advantages-title-margin: 0;
 
-  --rc-advantages-info-font-size: 14px;
+  --rc-advantages-item-padding: 10px;
+  --rc-advantages-item-border: none;
+  --rc-advantages-item-bg: none;
+  --rc-advantages-item-box-shadow: none;
+  --rc-advantages-item-border-radius: none;
+  --rc-advantages-item-margin: 0;
+
+
+  --rc-advantages-info-font-size: 16px;
   --rc-advantages-info-line-height: 18px;
   --rc-advantages-info-font-color: #575757;
   --rc-advantages-info-font-weight: 400;
   --rc-advantages-info-padding: 10px 0 0 0;
   --rc-advantages-info-margin: 0;
+
+  --rc-advantages-ico-container-bg: none;
+  --rc-advantages-ico-container-padding: 0 0 20px 0;
+  --rc-advantages-ico-container-margin: 0;
+  --rc-advantages-ico-container-box-shadow: none;
+  --rc-advantages-ico-container-border-radius: 0;
+  --rc-advantages-ico-container-height: 150px;
+
+  --rc-advantages-ico-container-img-max-height: 150px;
+  --rc-advantages-ico-container-img-box-shadow: none;
+  --rc-advantages-ico-container-img-bg: none;
+  --rc-advantages-ico-container-img-border-radius: 0;
+  --rc-advantages-ico-container-img-border-color: none;
 }
