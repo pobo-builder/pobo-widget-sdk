@@ -228,6 +228,26 @@
   --rc-image-overlay-bg: #eeeeee;
   --rc-image-overlay-bg-after: #5b5b5b;
   --rc-image-overlay-bg-opacity: 0.1;
+
+  --rc-text-in-image-bg: #eeeeee;
+  --rc-text-in-image-border: none;
+  --rc-text-in-image-box-shadow: none;
+
+  --rc-text-in-image-single-header-font-size: 34px;
+  --rc-text-in-image-single-header-line-height: 35px;
+  --rc-text-in-image-single-header-font-weight: 600;
+  --rc-text-in-image-single-header-font-color: #fff;
+  --rc-text-in-image-single-header-padding: 0;
+  --rc-text-in-image-single-header-margin: 0 0 10px 0;
+  --rc-text-in-image-single-header-text-shadow: 1px 1px 1px #282828;
+
+  --rc-text-in-image-single-text-font-size: 16px;
+  --rc-text-in-image-single-text-line-height: 22px;
+  --rc-text-in-image-single-text-font-weight: 400;
+  --rc-text-in-image-single-text-font-color: #fff;
+  --rc-text-in-image-single-text-padding: 0;
+  --rc-text-in-image-single-text-margin: 0;
+  --rc-text-in-image-single-text-text-shadow:  1px 1px 1px #282828;
 }
 
 

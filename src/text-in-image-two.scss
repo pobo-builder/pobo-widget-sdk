@@ -1,7 +1,11 @@
 .rc-image-two {
   display: flex;
   max-width: 100%;
-  margin: auto;
+  border: var(--rc-text-in-image-border);
+  box-shadow: var(--rc-text-in-image-box-shadow);
+  background: var(--rc-text-in-image-bg);
+  padding: var(--rc-global-widget-padding);
+  margin: var(--rc-global-widget-margin);
 
   &__single {
     width: 50%;
