@@ -1,16 +1,15 @@
 .rc-image-one {
   width: 100%;
-  border: var(--rc-text-in-image-border);
-  box-shadow: var(--rc-text-in-image-box-shadow);
-  background: var(--rc-text-in-image-bg);
-  padding: var(--rc-global-widget-padding);
-  margin: var(--rc-global-widget-margin);
+  border: var(--pobo-text-in-image-border);
+  box-shadow: var(--pobo-text-in-image-box-shadow);
+  background: var(--pobo-text-in-image-bg);
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
 
   &__single {
     width: 100%;
     position: relative;
     margin-bottom: 5px;
-    background: rgba(0, 0, 0, 0.486);
     flex-direction: column;
     color: white;
   }
@@ -23,13 +22,13 @@
   }
 
   &__header {
-    color: var(--rc-text-in-image-single-header-font-color);
-    line-height: var(--rc-text-in-image-single-header-line-height);
-    font-weight: var(--rc-text-in-image-single-header-font-weight);
-    font-size: var(--rc-text-in-image-single-header-font-size);
-    padding: var(--rc-text-in-image-single-header-padding);
-    margin: var(--rc-text-in-image-single-header-margin);
-    text-shadow: var(--rc-text-in-image-single-header-text-shadow);
+    color: var(--pobo-text-in-image-single-header-font-color);
+    line-height: var(--pobo-text-in-image-single-header-line-height);
+    font-weight: var(--pobo-text-in-image-single-header-font-weight);
+    font-size: var(--pobo-text-in-image-single-header-font-size);
+    padding: var(--pobo-text-in-image-single-header-padding);
+    margin: var(--pobo-text-in-image-single-header-margin);
+    text-shadow: var(--pobo-text-in-image-single-header-text-shadow);
 
     @include media-breakpoint-down(sm) {
       font-size: 20px;
@@ -37,13 +36,13 @@
   }
 
   &__info {
-    font-size: var(--rc-text-in-image-single-text-font-size);
-    line-height: var(--rc-text-in-image-single-text-line-height);
-    font-weight: var(--rc-text-in-image-single-text-font-weight);
-    color: var(--rc-text-in-image-single-text-font-color);
-    padding: var(--rc-text-in-image-single-text-padding);
-    margin: var(--rc-text-in-image-single-text-margin);
-    text-shadow: var(--rc-text-in-image-single-text-text-shadow);
+    font-size: var(--pobo-text-in-image-single-text-font-size);
+    line-height: var(--pobo-text-in-image-single-text-line-height);
+    font-weight: var(--pobo-text-in-image-single-text-font-weight);
+    color: var(--pobo-text-in-image-single-text-font-color);
+    padding: var(--pobo-text-in-image-single-text-padding);
+    margin: var(--pobo-text-in-image-single-text-margin);
+    text-shadow: var(--pobo-text-in-image-single-text-text-shadow);
 
     @include media-breakpoint-down(sm) {
       font-size: 14px;
@@ -61,10 +60,10 @@
   &__down {
     position: absolute;
     bottom: 0;
-    padding: 30px;
     width: 100%;
-    backdrop-filter: blur(5px);
-    background-color: hsl(0deg 0% 0% / 50%);
+    padding: var(--pobo-text-in-image-single-content-padding);
+    backdrop-filter: var(--pobo-text-in-image-overlay-blur);
+    background-color: var(--pobo-text-in-image-overlay-bg);
 
     @include media-breakpoint-down(sm) {
       padding: 20px;

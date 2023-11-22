@@ -1,11 +1,11 @@
 .rc-image-two {
   display: flex;
   max-width: 100%;
-  border: var(--rc-text-in-image-border);
-  box-shadow: var(--rc-text-in-image-box-shadow);
-  background: var(--rc-text-in-image-bg);
-  padding: var(--rc-global-widget-padding);
-  margin: var(--rc-global-widget-margin);
+  border: var(--pobo-text-in-image-border);
+  box-shadow: var(--pobo-text-in-image-box-shadow);
+  background: var(--pobo-text-in-image-bg);
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
 
   &__single {
     width: 50%;
@@ -29,15 +29,6 @@
   &__content{
     padding: 25px;
     height: 100%;
-
-    h2{
-      font-size: 3vw;
-    }
-
-    p{
-      font-size: 1vw;
-      color: white;
-    }
   }
 
   &__down {

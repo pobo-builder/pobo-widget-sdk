@@ -1,17 +1,20 @@
 .pb-evaluation-two {
   width: 100%;
+  padding: var(--pobo-evaluation-two-padding);
+  margin: var(--pobo-evaluation-two-margin);
+
 
   &__title {
     width: 100%;
-    padding: 30px 20px;
-    background: white;
+    padding: var(--pobo-evaluation-two-title-padding);
+    background: var(--pobo-evaluation-two-title-bg);
   }
 
   &__contents {
     width: 100%;
     display: flex;
-    padding: 0 30px;
     flex-direction: row;
+    padding: var(--pobo-evaluation-two-contents-padding);
 
     @media only screen and (max-width: 830px) {
       flex-direction: column;
@@ -20,69 +23,77 @@
   }
 
   &__obl-single {
-    width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 20px;
     position: relative;
+    padding: var(--pobo-evaluation-two-obl-single-padding);
+    margin: var(--pobo-evaluation-two-obl-single-margin);
+    gap: var(--pobo-evaluation-two-obl-single-gap);
 
     @media only screen and (max-width: 830px) {
       width: 100%;
-      margin: 30px 0px;
-      padding: 0px;
+      margin: 30px 0;
+      padding: 0;
     }
   }
 
   &__single {
     width: 100%;
-    margin-left: 20px;
-    box-shadow: 8px 8px 8px #e3e3e3;
-    padding: 30px;
+    padding: var(--pobo-evaluation-two-single-padding);
+    margin: var(--pobo-evaluation-two-single-margin);
+    border-radius: var(--pobo-evaluation-two-single-border-radius);
+    box-shadow: var(--pobo-evaluation-two-single-box-shadow);
+    background: var(--pobo-evaluation-two-single-bg);
+    border: var(--pobo-evaluation-two-single-border);
 
     @media only screen and (max-width: 830px) {
-      margin: 0px;
+      margin: 0;
     }
   }
 
   &__logo {
-    margin: -55px auto 0 auto;
     display: block;
-    max-width: 200px;
     width: 100%;
-    background: white;
+    padding: var(--pobo-evaluation-two-logo-padding);
+    margin: var(--pobo-evaluation-two-logo-margin);
+    max-width: var(--pobo-evaluation-two-logo-max-width);
   }
 
   &__text-in {
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-top: 20px;
     display: block;
-    font-size: 20px;
-    line-height: 1.7;
     font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: var(--pobo-evaluation-two-text-in-padding);
+    margin: var(--pobo-evaluation-two-text-in-margin);
+    font-size: var(--pobo-evaluation-two-text-in-font-size);
+    line-height: var(--pobo-evaluation-two-text-in-line-height);
+    font-weight: var(--pobo-evaluation-two-text-in-font-weight);
+    font-family: var(--pobo-review-font-family);
   }
 
   &__header {
     text-align: center;
-    margin: 30px 0;
-    font-weight: 400;
+    font-size: var(--pobo-evaluation-two-header-font-size);
+    font-weight: var(--pobo-evaluation-two-header-font-weight);
+    line-height: var(--pobo-evaluation-two-header-line-height);
+    color: var(--pobo-evaluation-two-header-font-color);
+    padding: var(--pobo-evaluation-two-header-padding);
+    margin: var(--pobo-evaluation-two-header-margin);
+
 
     &:before {
-      background: #e3e3e3;
       content: "";
       width: 100%;
-      height: 1px;
       display: block;
-      margin-bottom: -24px;
+      background: var(--pobo-evaluation-two-header-before-bg);
+      height: var(--pobo-evaluation-two-header-before-height);
+      margin: var(--pobo-evaluation-two-header-before-margin);
     }
   }
 
   &__span {
-    font-size: 30px;
-    background: white !important;
-    padding: 0 20px;
+    background: var(--pobo-evaluation-two-span-bg);
+    padding: var(--pobo-evaluation-two-span-padding);
+    margin: var(--pobo-evaluation-two-span-margin);
   }
 
   &__button {
@@ -92,7 +103,7 @@
     justify-content: flex-end;
 
     @media only screen and (max-width: 830px) {
-      margin: 5px 0px;
+      margin: 5px 0;
     }
 
     &__btn {

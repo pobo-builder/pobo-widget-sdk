@@ -1,10 +1,9 @@
 .rc-image-right-overlay {
   display: flex;
   align-items: center;
-  background: var(--rc-image-overlay-bg);
-  font-family: Tahoma, sans-serif;
-  padding: var(--rc-global-widget-padding);
-  margin: var(--rc-global-widget-margin);
+  background: var(--pobo-image-overlay-bg);
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
 
   @include media-breakpoint-down(md) {
     flex-direction: column;
@@ -13,7 +12,8 @@
 
   &__text {
     width: 50%;
-    padding: 20px 40px;
+    padding: var(--pobo-image-overlay-text-padding);
+
 
     @include media-breakpoint-down(md) {
       width: 100% !important;
@@ -31,8 +31,8 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background: var(--rc-image-overlay-bg-after);
-      opacity: var(--rc-image-overlay-bg-opacity);
+      background: var(--pobo-image-overlay-bg-after);
+      opacity: var(--pobo-image-overlay-bg-opacity);
     }
 
     @include media-breakpoint-down(sm) {

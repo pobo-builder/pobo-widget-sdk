@@ -1,11 +1,11 @@
 .rc-advantages-two {
-  padding: var(--rc-global-widget-padding);
-  margin: var(--rc-global-widget-margin);
-  background: var(--rc-advantages-bg);
-  box-shadow: var(--rc-advantages-box-shadow);
-  border: var(--rc-advantages-border-radius);
-  background: var(--rc-image-bg);
-  border: var(--rc-image-border-color);
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+  background: var(--pobo-advantages-bg);
+  box-shadow: var(--pobo-advantages-box-shadow);
+  border: var(--pobo-advantages-border-radius);
+  background: var(--pobo-image-bg);
+  border: var(--pobo-image-border-color);
 
   @include media-breakpoint-up(sm) {
     padding: 20px 0;
@@ -13,12 +13,12 @@
   }
 
   &__item {
-    padding: var(--rc-advantages-item-padding);
-    border: var(--rc-advantages-item-border);
-    background: var(--rc-advantages-item-bg);
-    box-shadow: var(--rc-advantages-item-box-shadow);
-    border-radius: var(--rc-advantages-item-border-radius);
-    margin: var(--rc-advantages-item-margin);
+    padding: var(--pobo-advantages-item-padding);
+    border: var(--pobo-advantages-item-border);
+    background: var(--pobo-advantages-item-bg);
+    box-shadow: var(--pobo-advantages-item-box-shadow);
+    border-radius: var(--pobo-advantages-item-border-radius);
+    margin: var(--pobo-advantages-item-margin);
 
     @include media-breakpoint-up(sm) {
       width: calc(100% / 2);
@@ -30,23 +30,23 @@
     display: flex;
     align-items: center;
     position: relative;
-    border-radius: var(--rc-advantages-ico-container-border-radius);
-    margin: var(--rc-advantages-ico-container-margin);
-    box-shadow: var(--rc-advantages-ico-container-box-shadow);
-    background: var(--rc-advantages-ico-container-bg);
-    padding: var(--rc-advantages-ico-container-padding);
-    width: var(--rc-advantages-ico-container-width);
-    height: var(--rc-advantages-ico-container-height);
+    border-radius: var(--pobo-advantages-ico-container-border-radius);
+    margin: var(--pobo-advantages-ico-container-margin);
+    box-shadow: var(--pobo-advantages-ico-container-box-shadow);
+    background: var(--pobo-advantages-ico-container-bg);
+    padding: var(--pobo-advantages-ico-container-padding);
+    width: var(--pobo-advantages-ico-container-width);
+    height: var(--pobo-advantages-ico-container-height);
   }
 
   &__ico-img {
     margin: 0 auto;
-    max-height: var(--rc-advantages-ico-container-img-max-height);
-    max-width: var(--rc-advantages-ico-container-img-max-width);
-    box-shadow: var(--rc-advantages-ico-container-img-box-shadow);
-    background: var(--rc-advantages-ico-container-img-bg);
-    border-radius: var(--rc-advantages-ico-container-img-border-radius);
-    border: var(--rc-advantages-ico-container-img-border-color)
+    max-height: var(--pobo-advantages-ico-container-img-max-height);
+    max-width: var(--pobo-advantages-ico-container-img-max-width);
+    box-shadow: var(--pobo-advantages-ico-container-img-box-shadow);
+    background: var(--pobo-advantages-ico-container-img-bg);
+    border-radius: var(--pobo-advantages-ico-container-img-border-radius);
+    border: var(--pobo-advantages-ico-container-img-border-color)
   }
 
   &__info {
@@ -54,12 +54,12 @@
   }
 
   &__info-header {
-    padding: var(--rc-advantages-title-padding);
-    margin: var(--rc-advantages-title-margin);
-    color: var(--rc-advantages-title-font-color);
-    font-size: var(--rc-advantages-title-font-size);
-    line-height: var(--rc-advantages-title-line-height);
-    font-weight: var(--rc-advantages-title-font-weight);
+    padding: var(--pobo-advantages-title-padding);
+    margin: var(--pobo-advantages-title-margin);
+    color: var(--pobo-advantages-title-font-color);
+    font-size: var(--pobo-advantages-two-title-font-size);
+    line-height: var(--pobo-advantages-two-title-line-height);
+    font-weight: var(--pobo-advantages-two-title-font-weight);
 
     @include media-breakpoint-down(sm) {
       font-size: 16px;
@@ -69,11 +69,11 @@
 
   &__info-text {
     display: block;
-    padding: var(--rc-advantages-info-margin);
-    margin: var(--rc-advantages-info-padding);
-    color: var(--rc-advantages-info-font-color);
-    font-size: var(--rc-advantages-info-font-size);
-    line-height: var(--rc-advantages-info-line-height);
-    font-weight: var(--rc-advantages-info-font-weight);
+    padding: var(--pobo-advantages-info-margin);
+    margin: var(--pobo-advantages-info-padding);
+    color: var(--pobo-advantages-info-font-color);
+    font-size: var(--pobo-advantages-two-info-font-size);
+    line-height: var(--pobo-advantages-two-info-line-height);
+    font-weight: var(--pobo-advantages-two-info-font-weight);
   }
 }

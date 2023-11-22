@@ -1,18 +1,19 @@
 .rc-image-three {
   display: flex;
   width: 100%;
-  border: var(--rc-text-in-image-border);
-  box-shadow: var(--rc-text-in-image-box-shadow);
-  background: var(--rc-text-in-image-bg);
-  padding: var(--rc-global-widget-padding);
-  margin: var(--rc-global-widget-margin);
+  border: var(--pobo-text-in-image-border);
+  box-shadow: var(--pobo-text-in-image-box-shadow);
+  background: var(--pobo-text-in-image-bg);
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
 
   &__single {
     height: 400px;
     position: relative;
     margin: 5px;
-    background: rgba(0, 0, 0, 0.486);
-    color: #fff;
+    background: var(--pobo-text-in-image-single-bg);
+    color: var(--pobo-text-in-image-single-font-color);
+    text-shadow: var(--pobo-text-in-image-single-text-shadow);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -27,9 +28,13 @@
   }
 
   &__content-head {
-    font-size: 24px;
-    color: white;
-    font-weight: 500;
+    color: var(--pobo-text-in-image-three-header-font-color);
+    line-height: var(--pobo-text-in-image-three-header-line-height);
+    font-weight: var(--pobo-text-in-image-three-header-font-weight);
+    font-size: var(--pobo-text-in-image-three-header-font-size);
+    padding: var(--pobo-text-in-image-three-header-padding);
+    margin: var(--pobo-text-in-image-three-header-margin);
+    text-shadow: var(--pobo-text-in-image-three-header-text-shadow);
   }
 
   &__content-info {
@@ -38,20 +43,14 @@
   }
 
   &__content {
-    padding: 15px;
     position: absolute;
     bottom: 0;
-    background: #222222bf;
+    left: 0;
+    backdrop-filter: var(--pobo-text-in-image-overlay-blur);
+    background-color: var(--pobo-text-in-image-overlay-bg);
+    padding: var(--pobo-text-in-image-three-content-background);
     height: 150px;
-
-    h2 {
-      font-size: 3vw;
-    }
-
-    p {
-      font-size: 1vw;
-      color: white;
-    }
+    width: 100%;
   }
 
   &__down {

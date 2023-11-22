@@ -1,15 +1,20 @@
 .rc-reviews-threerow {
   width: 100%;
   display: flex;
-  padding: 20px 0px;
   align-items: center;
   justify-content: center;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+  background: var(--pobo-reviews-three-bg);
+  box-shadow: var(--pobo-reviews-three-box-shadow);
+  border-radius: var(--pobo-reviews-three-border-radius);
+  background: var(--pobo-reviews-three-bg);
+  border: var(--pobo-reviews-three-border);
 
   &__wrap {
-    padding: 0px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: var(--pobo-reviews-three-wrap-gap);
 
     @include media-breakpoint-down(lg) {
       grid-template-columns: 1fr;
@@ -17,28 +22,35 @@
   }
 
   &__photo-img {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
     object-fit: cover;
     object-position: center;
+    border-radius: var(--pobo-reviews-three-photo-img-radius);
+    height: var(--pobo-reviews-three-photo-img-height);
+    width: var(--pobo-reviews-three-photo-img-width);
   }
 
   &__single-image {
     position: relative;
+    padding: var(--pobo-reviews-three-single-image-padding);
+    margin: var(--pobo-reviews-three-single-image-margin);
+    border: var(--pobo-reviews-three-single-image-border);
+    box-shadow: var(--pobo-reviews-three-single-image-box-shadow);
+    border-radius: var(--pobo-reviews-three-single-image-border-radius);
+    background: var(--pobo-reviews-three-single-image-bg);
   }
 
   &__single {
-    -webkit-box-shadow: -1px -1px 15px -10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px -1px 15px -10px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px -1px 15px -10px rgba(0, 0, 0, 0.75);
     display: flex;
-    padding: 15px 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    gap: 10px;
+    box-shadow: var(--pobo-reviews-three-single-box-shadow);
+    padding: var(--pobo-reviews-three-single-padding);
+    margin: var(--pobo-reviews-three-single-margin);
+    border-radius: var(--pobo-reviews-three-single-border-radius);
+    background: var(--pobo-reviews-three-single-bg);
+    border: var(--pobo-reviews-three-single-border);
   }
 
   &__stars {
@@ -51,9 +63,13 @@
   }
 
   &__reviews {
-    padding: 0 25px;
-    margin: 0;
-    font-size: 16px;
+    padding: var(--pobo-reviews-three-reviews-padding);
+    margin: var(--pobo-reviews-three-reviews-margin);
+    font-size: var(--pobo-reviews-three-reviews-font-size);
+    line-height: var(--pobo-reviews-three-reviews-line-height);
+    color: var(--pobo-reviews-three-reviews-font-color);
+    font-weight: var(--pobo-reviews-three-reviews-font-weight);
+    font-family: var(--pobo-review-font-family);
 
     @include media-breakpoint-down(lg) {
       padding: 0;
@@ -65,16 +81,20 @@
   }
 
   &__name {
-    font-size: 15px;
-    font-weight: bold;
-    padding-top: 15px;
-    margin: 0;
+    color: var(--pobo-reviews-three-name-font-color);
+    font-size: var(--pobo-reviews-three-name-font-size);
+    line-height: var(--pobo-reviews-three-name-line-height);
+    font-weight: var(--pobo-reviews-three-name-font-weight);
+    margin: var(--pobo-reviews-three-name-margin);
+    padding: var(--pobo-reviews-three-name-padding);
   }
 
   &__date {
-    font-size: 13px;
-    color: rgb(173, 173, 173);
-    margin: 0;
-    padding: 0;
+    font-size: var(--pobo-reviews-three-date-font-size);
+    line-height: var(--pobo-reviews-three-date-line-height);
+    font-weight: var(--pobo-reviews-three-date-font-weight);
+    color: var(--pobo-reviews-three-date-font-color);
+    margin: var(--pobo-reviews-three-date-margin);
+    padding: var(--pobo-reviews-three-date-padding);
   }
 }

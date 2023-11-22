@@ -1,26 +1,41 @@
 .rc-reviews-two {
   width: 100%;
   display: grid;
-  padding: 20px 0;
   align-items: center;
-  gap: 15px;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+  background: var(--pobo-reviews-two-bg);
+  box-shadow: var(--pobo-reviews-two-box-shadow);
+  border-radius: var(--pobo-reviews-two-border-radius);
+  border: var(--pobo-reviews-two-border-color);
+  gap: var(--pobo-reviews-two-gap);
 
   @include media-breakpoint-down(md) {
     grid-template-columns: 1fr;
   }
 
   &__box {
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    padding: 20px;
+    box-shadow: var(--pobo-reviews-two-inner-box-shadow);
+    border-radius: var(--pobo-reviews-two-inner-border-radius);
+    background: var(--pobo-reviews-two-inner-bg);
+    border: var(--pobo-reviews-two-inner-border-color);
+    padding: var(--pobo-reviews-two-inner-padding);
+    margin: var(--pobo-reviews-two-inner-margin);
     transition: 0.5s ease translate;
   }
+
   &__client-text {
-    font-size: 18px;
-    color: #4b4b4b;
+    font-family: var(--pobo-review-font-family);
     display: block;
+    text-align: center;
+    font-size: var(--pobo-reviews-two-client-text-font-size);
+    font-weight: var(--pobo-reviews-two-client-text-font-weight);
+    line-height: var(--pobo-reviews-two-client-text-line-height);
+    color: var(--pobo-reviews-two-client-text-font-color);
+    margin: var(--pobo-reviews-two-client-text-margin);
+    padding: var(--pobo-reviews-two-client-text-padding);
   }
 
   &__box-top {
@@ -28,8 +43,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: var(--pobo-reviews-two-box-top-gap);
+    margin: var(--pobo-reviews-two-box-top-margin);
 
     @include media-breakpoint-down(sm) {
       flex-direction: column;
@@ -42,23 +57,26 @@
   }
 
   &__box-name {
-    color: #3d3d3d;
-    font-size: 22px;
-    letter-spacing: 0.5px;
-    margin-bottom: 0px;
+    color: var(--pobo-reviews-two-box-name-font-color);
+    font-size: var(--pobo-reviews-two-box-name-font-size);
+    margin: var(--pobo-reviews-two-box-margin);
+    font-weight: var(--pobo-reviews-two-box-name-font-weight);
+    line-height: var(--pobo-reviews-two-box-name-line-height);
   }
 
   &__box-smallname {
-    color: #979797;
-    font-size: 17px;
+    color: var(--pobo-reviews-two-box-smallname-font-color);
+    font-size: var(--pobo-reviews-two-box-smallname-font-size);
+    margin: var(--pobo-reviews-two-box-smallname-margin);
+    font-weight: var(--pobo-reviews-two-box-smallname-font-weight);
+    line-height: var(--pobo-reviews-two-box-smallname-line-height);
   }
 
   &__box-photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
     overflow: hidden;
-    margin-right: 10px;
+    width: var(--pobo-reviews-two-box-photo-size);
+    height: var(--pobo-reviews-two-box-photo-size);
+    border-radius: var(--pobo-reviews-two-box-photo-radius);
   }
 
   &__box-img {
@@ -71,6 +89,7 @@
   &__box-user {
     display: flex;
     flex-direction: column;
+    padding: 0 0 0 20px;
   }
 
   &__reviews {
@@ -87,9 +106,9 @@
   }
 
   &__star {
-    background-image: url("https://pobo-cdn.b-cdn.net/static/iconmonstr-star-filled%20(1).svg");
-    width: 25px;
-    height: 25px;
+    background-image: var(--pobo-reviews-two-box-star-bg);
+    width: var(--pobo-reviews-two-box-star-size);
+    height: var(--pobo-reviews-two-box-star-size);
     background-size: 100% 100%;
   }
 }
