@@ -84,6 +84,11 @@
   --pobo-inline-image-content-margin: 0;
   --pobo-inline-image-content-box-shadow: none;
   --pobo-inline-image-content-border: none;
+  --pobo-inline-image-single-margin: 0 20px;
+  --pobo-inline-image-single-padding: 12px 10px;
+  --pobo-inline-image-wrap-gap: 20px;
+  --pobo-inline-image-content-gap: 20px;
+  --pobo-inline-image-wrap-gap-md: 50px;
 
   --pobo-inline-sec-image-width: 70px;
   --pobo-inline-sec-image-min-width: 80px;
@@ -838,6 +843,54 @@
   --pobo-header-text-inner-padding: 0;
   --pobo-header-text-inner-margin: 20px 0 0 0;
   --pobo-header-text-inner-line-height: 24px;
+
+  --pobo-infobox-info-padding: 15px;
+  --pobo-infobox-info-background: #e3f1ff;
+  --pobo-infobox-info-border: 1px solid #b8daff;
+  --pobo-infobox-info-margin: 20px 0;
+  --pobo-infobox-info-box-shadow: 0 0 4px #90ddff;
+  --pobo-infobox-info-border-radius: 4px;
+  --pobo-infobox-info-color: #004085;
+  --pobo-infobox-warning-padding: 15px;
+  --pobo-infobox-warning-background: #ffe3e3;
+  --pobo-infobox-warning-border: 1px solid #ffb8b8;
+  --pobo-infobox-warning-margin: 20px 0;
+  --pobo-infobox-warning-box-shadow: 0 0 4px #ff9090;
+  --pobo-infobox-warning-border-radius: 4px;
+  --pobo-infobox-warning-color: #721c24;
+
+  --pobo-information-two-wrap-box-shadow: 0 0 4px #ffd490;
+  --pobo-information-two-wrap-border-radius: 4px;
+  --pobo-information-two-ico-background: url("https://pobo-cdn.b-cdn.net/widget/danger-white.png") no-repeat;;
+  --pobo-information-two-ico-size: 40px;
+
+  --pobo-information-two-icon-background: #f7ad38;
+  --pobo-information-two-icon-padding: 0 20px;
+  --pobo-information-two-icon-width: 80px;
+  --pobo-information-two-icon-max-width: 30px;
+  --pobo-information-two-content-padding: 15px;
+  --pobo-information-two-content-background-color: #ffe5bb;
+  --pobo-information-two-content-border: 1px solid #ffcc74;
+  --pobo-information-two-content-text-font-size: 15px;
+  --pobo-information-two-content-text-line-height: 20px;
+  --pobo-information-two-content-text-color: #6c4300;
+
+  --pobo-information-two-content-title-font-size: 20px;
+  --pobo-information-two-content-title-padding: 0;
+  --pobo-information-two-content-title-margin: 0 0 10px 0;
+  --pobo-information-two-content-title-color: #6c4300;
+
+  --pobo-jumbotron-one-wrap-background: black;
+  --pobo-jumbotron-one-wrap-img-size: 100%;
+  --pobo-jumbotron-one-content-background: rgba(0, 0, 0, 0.527);
+  --pobo-jumbotron-one-content-padding: 100px;
+  --pobo-jumbotron-one-content-padding-sm: 20px 10px;
+  --pobo-jumbotron-one-content-title-color: white;
+  --pobo-jumbotron-one-content-title-font-size: 42px;
+  --pobo-jumbotron-one-content-title-padding: 20px 0px;
+  --pobo-jumbotron-one-content-text-color: white;
+  --pobo-jumbotron-one-content-text-font-size: 20px;
+  --pobo-jumbotron-one-content-text-padding: 20px 0px;
 }
 
 

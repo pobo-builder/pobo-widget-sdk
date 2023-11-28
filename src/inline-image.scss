@@ -16,27 +16,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: var(--pobo-inline-image-wrap-gap);
 
     @include media-breakpoint-down(md) {
       flex-direction: column;
-      gap: 50px;
+      gap: var(--pobo-inline-image-wrap-gap-md);
       align-items: flex-start;
     }
   }
 
   &__single {
-    margin: 0 20px;
+    margin: var(--pobo-inline-image-single-margin);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 12px 10px;
+    padding: var(--pobo-inline-image-single-padding);
   }
 
   &__content {
     display: flex;
-    gap: 20px;
+    gap: var(--pobo-inline-image-wrap-gap);
     justify-content: center;
     align-items: center;
     background: var(--pobo-inline-image-content-bg);

@@ -41,20 +41,26 @@
   }
 
   &__link {
-    margin: 20px 0 0 0;
     display: inline-block;
-    padding: 0 20px;
-    line-height: 40px;
-    font-weight: 300;
     text-decoration: none;
-    color: white;
-    background: black;
-    border: 1px solid black;
+    color: var(--pobo-btn-color);
+    background: var(--pobo-btn-bg);
+    box-shadow: var(--pobo-btn-box-shadow);
+    border: var(--pobo-btn-border);
+    cursor: pointer;
+    padding: var(--pobo-btn-padding);
+    margin: var(--pobo-btn-margin);
+    font-size: var(--pobo-btn-font-size);
+    line-height: var(--pobo-btn-line-height);
+    font-weight: var(--pobo-btn-font-weight);
+    border-radius: var(--pobo-btn-border-radius);
+    transition: var(--pobo-btn-transition);
+
 
     &:hover {
-      background: lighten(black, 0.4);
-      color: white;
+      background: var(--pobo-btn-hover-bg);
       text-decoration: none;
+      color: var(--pobo-btn-hover-text-color);
     }
   }
 }

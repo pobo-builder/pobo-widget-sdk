@@ -1,54 +1,54 @@
 .rc-information-two {
-  padding: 20px 0;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
 
   &__wrap {
     display: flex;
-    box-shadow: 0 0 4px #ffd490;
-    border-radius: 4px;
+    box-shadow: var(--pobo-information-two-wrap-box-shadow);
+    border-radius: var(--pobo-information-two-wrap-border-radius);
     overflow: hidden;
   }
 
   &__ico {
-    background: url("https://pobo-cdn.b-cdn.net/widget/danger-white.png")
-      no-repeat;
-    width: 40px;
-    height: 40px;
-    background-size: 40px;
+    background: var(--pobo-information-two-ico-background);
+    width: var(--pobo-information-two-ico-size);
+    height: var(--pobo-information-two-ico-size);
+    background-size: var(--pobo-information-two-ico-size);
   }
 
   &__icon {
-    background: #f7ad38;
-    padding: 0 20px;
+    background: var(--pobo-information-two-icon-background);
+    padding: var( --pobo-information-two-icon-padding);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
+    width: var(--pobo-information-two-icon-width);
 
     &--size {
-      max-width: 30px;
+      max-width: var(--pobo-information-two-icon-max-width);
     }
   }
 
   &__content {
-    padding: 15px;
-    background-color: #ffe5bb;
+    padding: var(--pobo-information-two-content-padding);
+    background-color: var(--pobo-information-two-content-background-color);
     align-self: stretch;
-    border: 1px solid #ffcc74;
+    border: var(--pobo-information-two-content-border);
     border-left: 0;
     width: calc(100% - 80px);
   }
 
   &__content-text {
-    font-size: 15px;
-    line-height: 20px;
-    color: #6c4300;
+    font-size: var(--pobo-information-two-content-text-font-size);
+    line-height: var(--pobo-information-two-content-text-line-height);
+    color: var(--pobo-information-two-content-text-color);
     display: block;
   }
 
   &__content-title {
-    font-size: 20px;
-    padding: 0;
-    margin: 0 0 10px 0;
-    color: #6c4300;
+    font-size: var(--pobo-information-two-content-title-font-size);
+    padding: var(--pobo-information-two-content-title-padding);
+    margin: var(--pobo-information-two-content-title-margin);
+    color: var(--pobo-information-two-content-title-color);
   }
 }

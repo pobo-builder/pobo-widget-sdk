@@ -9,12 +9,12 @@
 
   @include media-breakpoint-down(sm) {
     display: block;
-    padding: 20px 0;
+    padding: var(--pobo-image-padding-sm);
   }
 
   &__image {
-    width: 50%;
-    padding: 0 0 0 30px;
+    width: var(--pobo-image-photo-width);
+    padding: var(--pobo-image-text-padding);
     position: relative;
 
     @include media-breakpoint-down(sm) {
@@ -25,8 +25,8 @@
   }
 
   &__text {
-    width: 50%;
-    padding: 0 30px 0 0;
+    width: var(--pobo-image-text-width);
+    padding: var(--pobo-image-photo-padding);
 
     @include media-breakpoint-down(sm) {
       width: 100%;
