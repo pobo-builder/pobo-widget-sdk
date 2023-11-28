@@ -270,6 +270,13 @@
   --pobo-image-box-shadow: none;
   --pobo-image-border-color: none;
 
+  --pobo-image-photo-width: 50%;
+  --pobo-image-text-width: 50%;
+  --pobo-image-padding-sm: 20px 0;
+  --pobo-image-photo-padding: 0 30px 0 0;
+  --pobo-image-photo-padding-sm: 30px 0 0;
+  --pobo-image-text-padding: 0 0 0 30px;
+
   --pobo-counter-bg: none;
   --pobo-counter-box-shadow: none;
   --pobo-counter-border-radius: none;
@@ -299,6 +306,9 @@
   --pobo-counter-info-padding: 0;
   --pobo-counter-info-margin: 0;
   --pobo-counter-info-text-shadow: 1px 1px 1px #000;
+  --pobo-counter-medium-font-size: 18px;
+  --pobo-counter-inner-padding: 25px;
+  --pobo-counter-inner-border-radius: 10px;
 
   --pobo-image-overlay-bg: #eeeeee;
   --pobo-image-overlay-bg-after: #5b5b5b;
@@ -815,6 +825,19 @@
   --pobo-checked-right-image-list-width: 50%;
   --pobo-checked-right-image-list-padding: 0 0 0 40px;
   --pobo-checked-right-image-image-width: 50%;
+
+  --pobo-dynamic-gallery-wrap-padding: 10px;
+  --pobo-dynamic-gallery-wrap-grid-gap: 10px;
+  --pobo-dynamic-gallery-photo-size: 100%;
+  --pobo-dynamic-gallery-photo-max-height: 300px;
+
+  --pobo-header-text-font-size: 30px;
+  --pobo-header-text-padding: 0;
+  --pobo-header-text-margin: 0;
+  --pobo-header-text-inner-font-size: 15;
+  --pobo-header-text-inner-padding: 0;
+  --pobo-header-text-inner-margin: 20px 0 0 0;
+  --pobo-header-text-inner-line-height: 24px;
 }
 
 

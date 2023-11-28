@@ -48,8 +48,8 @@ $element: ".rc-counter";
   }
 
   &__inner {
-    padding: 25px;
-    border-radius: 10px;
+    padding: var(--pobo-counter-inner-padding);
+    border-radius: var(--pobo-counter-inner-border-radius);
     text-align: center;
     font-family: Arial, sans-serif;
 
@@ -96,7 +96,7 @@ $element: ".rc-counter";
     }
 
     &--medium {
-      font-size: 18px;
+      font-size: var(--pobo-counter-medium-font-size);
 
       @include media-breakpoint-down(sm) {
         font-size: 13px;
