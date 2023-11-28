@@ -3,7 +3,7 @@
 
   &__wrap {
     display: flex;
-    box-shadow: var(-pobo-success-one-box-shadow);
+    box-shadow: var(--pobo-success-one-box-shadow);
     border-radius: var(--pobo-success-one-border-radius);
     overflow: hidden;
   }

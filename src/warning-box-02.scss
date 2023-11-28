@@ -1,27 +1,27 @@
 .rc-warning-two {
-  padding: 20px 0;
+  padding: var(--pobo-warning-one-padding);
 
   &__wrap {
     display: flex;
-    box-shadow: 0 0 4px #ff9090;
-    border-radius: 4px;
+    box-shadow: var(--pobo-warning-one-box-shadow);
+    border-radius: var(--pobo-warning-one-border-radius);
     overflow: hidden;
   }
 
   &__ico {
-    background: url("https://pobo-cdn.b-cdn.net/widget/x-ico.png") no-repeat;
-    width: 40px;
-    height: 40px;
-    background-size: 40px;
+    background: var(--pobo-warning-one-ico-background);
+    width: var(--pobo-warning-one-ico-size);
+    height: var(--pobo-warning-one-ico-size);
+    background-size: var(--pobo-warning-one-ico-size);
   }
 
   &__icon {
-    background: #f73838;
-    padding: 0 20px;
+    background: var(--pobo-warning-one-icon-background);
+    padding: var(--pobo-warning-one-icon-padding);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
+    width: var(--pobo-warning-one-icon-width);
 
     &--size {
       max-width: 30px;
@@ -29,25 +29,25 @@
   }
 
   &__content {
-    padding: 15px;
-    background-color: #ffbbbb;
+    padding: var(--pobo-warning-one-content-padding);
+    background-color: var(--pobo-warning-one-content-background-color);
     align-self: stretch;
-    border: 1px solid #ff7474;
+    border: var(--pobo-warning-one-content-border);
     border-left: 0;
     width: calc(100% - 80px);
   }
 
   &__content-title {
-    font-size: 20px;
-    padding: 0;
-    margin: 0 0 10px 0;
-    color: #6c0000;
+    font-size: var(--pobo-warning-one-content-title-font-size);
+    padding: var(--pobo-warning-one-content-title-padding);
+    margin: var(--pobo-warning-one-content-title-margin);
+    color: var(--pobo-warning-one-content-title-color);
   }
 
   &__content-text {
-    font-size: 15px;
-    line-height: 20px;
-    color: #6c0000;
+    font-size: var(--pobo-warning-one-content-text-font-size);
+    line-height: var(--pobo-warning-one-content-text-line-height);
+    color: var(--pobo-warning-one-content-title-color);
     display: block;
   }
 }
