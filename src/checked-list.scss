@@ -1,25 +1,24 @@
 .checked-list {
-  padding: 0;
-  margin: 0;
-  max-width: 500px;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+  max-width: var(--pobo-checked-list-max-width);
 
   .li {
-    padding: 5px 0 5px 35px;
+    padding: var(--pobo-checked-list-li-padding);
     position: relative;
-    margin: 0;
+    margin: var(--pobo-checked-list-li-margin);
     list-style: none;
-    line-height: 24px;
-    font-size: 16px;
+    line-height: var(--pobo-checked-list-li-line-height);
+    font-size: var(--pobo-checked-list-li-font-size);
 
     &:before {
       position: absolute;
-      left: 0;
-      top: 7px;
-      width: 20px;
+      left: var(--pobo-checked-list-li-left);
+      top: var(--pobo-checked-list-li-top);
+      width: var(--pobo-checked-list-li-size);
       content: "";
-      height: 20px;
-      background: url("https://image.pobo.cz/assets/checked.svg") no-repeat
-        center center;
+      height: var(--pobo-checked-list-li-size);
+      background: var(--pobo-checked-list-li-background)
     }
   }
 }
