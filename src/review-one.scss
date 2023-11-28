@@ -1,6 +1,7 @@
 .pb-review-one {
   width: 100%;
-  padding: 10px;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
   display: flex;
   
   @media only screen and (max-width: 549px) {
@@ -8,9 +9,9 @@
   }
   
   &__left {
-    width: 10%;
-    min-width: 80px;
-    padding: 0 10px;
+    width: var(--pobo-review-one-left-width);
+    min-width: var(--pobo-review-one-left-min-width);
+    padding: var(--pobo-review-one-left-padding);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,11 +24,11 @@
   }
   
   &__right {
-    width: 90%;
+    width: var(--pobo-review-one-right-width);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 10px;
+    padding: var(--pobo-review-one-right-padding);
     
     @media only screen and (max-width: 549px) {
       width: 100%;
@@ -38,24 +39,24 @@
   
   &__img {
     width: 100%;
-    max-width: 50px;
+    max-width: var(--pobo-review-one-img-max-width);
   }
 
   &__header {
-    font-size: 30px;
-    font-weight: 500;
-    padding: 8px 0px;
-    margin: 0px;
+    font-size: var(--pobo-review-one-header-font-size);
+    font-weight: var(--pobo-review-one-header-font-weight);
+    padding: var(--pobo-review-one-header-padding);
+    margin: var(--pobo-review-one-header-margin);
   }
 
   &__text {
-    font-size: 18px;
-    line-height: 1.3;
+    font-size: var(--pobo-review-one-text-font-size);
+    line-height: var(--pobo-review-one-text-line-height);
   }
   
   &__number {
-    font-size: 40px;
-    line-height: 0.8;
-    font-weight: 500;
+    font-size: var(--pobo-review-one-number-font-size);
+    line-height: var(--pobo-review-one-number-line-height);
+    font-weight: var(--pobo-review-one-number-font-weight);
   }
 }

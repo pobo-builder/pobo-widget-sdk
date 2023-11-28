@@ -362,6 +362,16 @@
   --pobo-text-in-image-three-header-text-shadow: 1px 1px 1px #282828;
   --pobo-text-in-image-three-content-background: 20px;
 
+  --pobo-text-in-image-content-height: 150px;
+  --pobo-text-in-image-circle-radius: 50%;
+  --pobo-text-in-image-circle-width: 50px;
+  --pobo-text-in-image-circle-line-height: 50px;
+  --pobo-text-in-image-circle-font-size: 25px;
+  --pobo-text-in-image-single-height: 500px;
+  --pobo-text-in-image-single-margin: 5px;
+  --pobo-text-in-image-single-background: rgba(0, 0, 0, 0.486);
+  --pobo-text-in-image-content-padding: 25px;
+  --pobo-text-in-image-circle-size: 4vw;
 
   --pobo-card-call-to-action-bg: unset;
   --pobo-card-call-to-action-shadow: none;
@@ -927,6 +937,42 @@
   --pobo-rating-image-content-text-line-height: 28px;
   --pobo-rating-image-width: 300px;
   --pobo-rating-image-border-radius: 50%;
+
+  --pobo-review-one-left-width: 10%;
+  --pobo-review-one-left-min-width: 80px;
+  --pobo-review-one-left-padding: 0 10px;
+  --pobo-review-one-right-width: 90%;
+  --pobo-review-one-right-padding: 0px 10px;
+  --pobo-review-one-img-max-width: 50px;
+  --pobo-review-one-header-font-size: 30px;
+  --pobo-review-one-header-font-weight: 500;
+  --pobo-review-one-header-padding: 8px 0;
+  --pobo-review-one-header-margin: 0px;
+  --pobo-review-one-text-font-size: 18px;
+  --pobo-review-one-text-line-height: 1.3;
+  --pobo-review-one-number-font-size: 40px;
+  --pobo-review-one-number-line-height: 0.8;
+  --pobo-review-one-number-font-weight: bold;
+
+  --pobo-success-one-padding: 20px 0;
+  --pobo-success-one-box-shadow: 0 0 4px #93d8a6;
+  --pobo-success-one-border-radius: 4px;
+  --pobo-success-one-ico-background: url("https://pobo-cdn.b-cdn.net/widget/like.png") no-repeat;
+  --pobo-success-one-ico-size: 40px;
+  --pobo-success-one-icon-background: #90e24a;
+  --pobo-success-one-icon-padding: 0 20px;
+  --pobo-success-one-icon-width: 80px;
+  --pobo-success-one-content-padding: 15px;
+  --pobo-success-one-content-background-color: #c8f9d2;
+  --pobo-success-one-content-border: 1px solid #a5ea85;
+  --pobo-success-one-content-title-font-size: 20px;
+  --pobo-success-one-content-title-padding: 0;
+  --pobo-success-one-content-title-margin: 0 0 10px 0;
+  --pobo-success-one-content-title-color: #046c00;
+  --pobo-success-one-content-text-font-size: 15px;
+  --pobo-success-one-content-text-line-height: 20px;
+
+
 }
 
 

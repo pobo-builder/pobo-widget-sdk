@@ -9,11 +9,11 @@
 
   &__single {
     width: 50%;
-    height: 500px;
+    height: var(--pobo-text-in-image-single-height);
     display: flex;
     position: relative;
-    margin: 5px;
-    background: rgba(0, 0, 0, 0.486);
+    margin: var(--pobo-text-in-image-single-margin);
+    background: var(--pobo-text-in-image-single-background);
     flex-direction: column;
     color: white;
   }
@@ -27,7 +27,7 @@
   }
 
   &__content{
-    padding: 25px;
+    padding: var(--pobo-text-in-image-content-padding);
     height: 100%;
   }
 
@@ -39,8 +39,8 @@
   }
 
   &__circle {
-    width: 4vw;
-    line-height: 4vw;
+    width: var(--pobo-text-in-image-circle-size);
+    line-height: var(--pobo-text-in-image-circle-size);
     border-radius: 50%;
     position: absolute;
     text-align: center;

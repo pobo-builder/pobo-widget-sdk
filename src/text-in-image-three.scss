@@ -49,7 +49,7 @@
     backdrop-filter: var(--pobo-text-in-image-overlay-blur);
     background-color: var(--pobo-text-in-image-overlay-bg);
     padding: var(--pobo-text-in-image-three-content-background);
-    height: 150px;
+    height: var(--pobo-text-in-image-content-height);
     width: 100%;
   }
 
@@ -80,15 +80,15 @@
     }
 
     &__circle {
-      border-radius: 50%;
+      border-radius: var(--pobo-text-in-image-circle-radius);
       position: absolute;
       text-align: center;
       background-color: white;
       color: black;
       mix-blend-mode: lighten;
-      width: 50px;
-      line-height: 50px;
-      font-size: 25px;
+      width: var(--pobo-text-in-image-circle-width);
+      line-height: var(--pobo-text-in-image-circle-line-height);
+      font-size: var(--pobo-text-in-image-circle-font-size);
     }
   }
 }
