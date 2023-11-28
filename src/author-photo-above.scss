@@ -1,7 +1,8 @@
 .rc-author-above {
   width: 100%;
   display: flex;
-  padding: 60px 0px;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
   align-items: center;
   justify-content: center;
 
@@ -9,12 +10,12 @@
     display: flex;
     position: relative;
     height: 100%;
-    max-width: 999px;
+    max-width: var(--pobo-author-above-max-width);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 18px 50px -10px;
+    border-radius: var(--pobo-author-above-wrap-border-radius);
+    box-shadow: var(--pobo-author-above-wrap-box-shadow);
   }
 
   &__wrap-img {
@@ -23,49 +24,47 @@
 
   &__photo-img {
     position: relative;
-    top: -40px;
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    top: var(--pobo-author-above-photo-img-top);
+    border-radius: var(--pobo-author-above-photo-img-radius);
+    height: var(--pobo-author-above-photo-img-size);
+    width: var(--pobo-author-above-photo-img-size);
     object-fit: cover;
     object-position: center;
-    border: 1px solid #585858;
+    border: var(--pobo-author-above-photo-img-border);
   }
 
   &__content {
     text-align: center;
-    padding: 0px 40px;
+    padding: var(--pobo-author-above-content-padding);
     position: relative;
-    top: -40px;
+    top: var(--pobo-author-above-content-top);
 
     @include media-breakpoint-down(sm) {
-      padding: 0px 17px;
+      padding: var(--pobo-author-above-content-padding-sm);
     }
   }
 
   &__content-name {
-    font-size: 27px;
+    font-size: var(--pobo-author-above-content-name-font-size);
     font-weight: bold;
-    margin: 0;
-    padding: 17px 0px;
+    margin: var(--pobo-author-above-content-name-margin);
+    padding: var(--pobo-author-above-content-name-padding);
   }
 
   &__content-text {
-    color: #585858;
-    font-size: 16px;
-    line-height: 26px;
-    font-style: italic;
-    font-family: Georgia, sans-serif;
+    color: var(--pobo-author-above-content-text-color);;
+    font-size: var(--pobo-author-above-content-text-font-size);
+    line-height: var(--pobo-author-above-content-text-line-height);
   }
 
   &__content-link {
-    padding-top: 17px;
-    color: black;
+    padding-top: var(--pobo-author-above-content-link-padding-top);
+    color: var(--pobo-author-above-content-link-color);
     font-weight: bold;
-    font-size: 14px;
+    font-size: var(--pobo-author-above-content-link-font-size);
 
     &:hover {
-      color: black;
+      color: var(--pobo-author-above-content-link-color);
       text-decoration: underline;
     }
   }

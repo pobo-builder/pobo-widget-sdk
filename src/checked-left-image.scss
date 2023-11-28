@@ -7,14 +7,14 @@
   }
 
   &__header {
-    padding: 0 0 20px 0;
-    margin: 0;
-    font-size: 28px;
+    padding: var(--pobo-checked-left-image-header-padding);
+    margin: var(--pobo-checked-left-image-header-margin);
+    font-size: var(--pobo-checked-left-image-header-font-size);
   }
 
   &__list {
-    width: 50%;
-    padding: 0 40px 0 0;
+    width: var(--pobo-checked-left-image-list-width);
+    padding: var(--pobo-checked-left-image-list-padding);
 
     @include media-breakpoint-down(sm) {
       width: 100%;
@@ -22,7 +22,7 @@
   }
 
   &__image {
-    width: 50%;
+    width: var(--pobo-checked-left-image-image-width);
     position: relative;
 
     @include media-breakpoint-down(sm) {
