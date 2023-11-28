@@ -29,7 +29,6 @@
   &__client-text {
     font-family: var(--pobo-review-font-family);
     display: block;
-    text-align: center;
     font-size: var(--pobo-reviews-two-client-text-font-size);
     font-weight: var(--pobo-reviews-two-client-text-font-weight);
     line-height: var(--pobo-reviews-two-client-text-line-height);
@@ -89,7 +88,7 @@
   &__box-user {
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
   }
 
   &__reviews {

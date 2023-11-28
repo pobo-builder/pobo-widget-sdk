@@ -137,12 +137,12 @@
   --pobo-parameter-small-value-padding: 0;
   --pobo-parameter-small-info-font-size: 18px;
   --pobo-parameter-small-info-font-color: #0c0c0c;
-  --pobo-parameter-small-info-font-weight: 500;
+  --pobo-parameter-small-info-font-weight: 600;
   --pobo-parameter-small-info-margin: 0;
 
   --pobo-parameter-header-font-size: 22px;
   --pobo-parameter-header-font-color: #0c0c0c;
-  --pobo-parameter-header-font-weight: 500;
+  --pobo-parameter-header-font-weight: 600;
   --pobo-parameter-header-margin: 0 0 50px 0;
   --pobo-parameter-header-padding: 0;
   --pobo-parameter-image-padding: 10px 20px 10px 10px;
@@ -439,7 +439,7 @@
   --pobo-reviews-two-box-smallname-font-color: #7c7c7c;
   --pobo-reviews-two-box-smallname-line-height: 20px;
   --pobo-reviews-two-box-smallname-padding: 0;
-  --pobo-reviews-two-box-smallname-margin: 0 0 10px 0;
+  --pobo-reviews-two-box-smallname-margin: 0;
 
   --pobo-reviews-two-box-star-bg: url("https://pobo-cdn.b-cdn.net/static/iconmonstr-star-filled%20(1).svg");
   --pobo-reviews-two-box-star-size: 30px;
@@ -459,8 +459,9 @@
   --pobo-reviews-three-wrap-gap: 20px;
 
   --pobo-reviews-three-photo-img-radius: 50%;
-  --pobo-reviews-three-photo-img-height: 100px;
-  --pobo-reviews-three-photo-img-width: 100px;
+  --pobo-reviews-three-photo-img-height: 60px;
+  --pobo-reviews-three-photo-img-width: 60px;
+  --pobo-reviews-three-photo-img-margin: 10px;
 
   --pobo-reviews-three-single-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
   --pobo-reviews-three-single-border-radius: 5px;
