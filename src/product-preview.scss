@@ -30,49 +30,55 @@ $product-card-button-icon: "https://image.pobo.cz/widget/product-basket.svg";
   }
 
   &__title {
-    padding: 0;
-    margin: 20px 0 0 0;
-    font-size: 14px;
-    line-height: 16px;
+    padding: var(--pobo-product-card-title-padding);
+    margin: var(--pobo-product-card-title-margin);
+    font-size: var(--pobo-product-card-title-font-size);
+    line-height: var(--pobo-product-card-title-line-height);
     display: block;
-    height: 40px;
+    height: var(--pobo-product-card-title-height);
     color: black;
-    font-weight: 600;
+    font-weight: var(--pobo-product-card-title-font-weight);
     text-align: center;
   }
 
   &__price {
-    font-size: 17px;
-    line-height: 18px;
+    font-size: var(--pobo-product-price-font-size);
+    line-height: var(--pobo-product-price-line-height);
     color: green;
     text-align: center;
-    font-weight: 600;
+    font-weight: var(--pobo-product-price-font-weight);
     display: block;
-    margin: 20px 0 0 0;
+    margin: var(--pobo-product-price-margin);
   }
 
   &__button {
   }
 
   &__action {
-    padding: 15px 0 0 0;
-
+    padding: var(--pobo-product-price-action-padding);
+    display: flex;
+    justify-content: center;
     a {
-      display: block;
-      width: 100%;
-      line-height: 32px;
-      text-align: center;
-      border-radius: 4px;
-      box-shadow: $product-card-button-shadow;
-      color: white;
+      display: inline-block;
       text-decoration: none;
-      font-size: $product-card-button-font-size;
-      position: relative;
-      background-image: $product-card-button-bg;
-      border: 1px solid $product-card-button-border;
+      color: var(--pobo-btn-color);
+      background: var(--pobo-btn-bg);
+      box-shadow: var(--pobo-btn-box-shadow);
+      border: var(--pobo-btn-border);
+      cursor: pointer;
+      padding: var(--pobo-btn-padding);
+      margin: var(--pobo-btn-margin);
+      font-size: var(--pobo-btn-font-size);
+      line-height: var(--pobo-btn-line-height);
+      font-weight: var(--pobo-btn-font-weight);
+      border-radius: var(--pobo-btn-border-radius);
+      transition: var(--pobo-btn-transition);
+
 
       &:hover {
-        background-image: $product-card-button-bg-hover;
+        background: var(--pobo-btn-hover-bg);
+        text-decoration: none;
+        color: var(--pobo-btn-hover-text-color);
       }
 
       &:after {

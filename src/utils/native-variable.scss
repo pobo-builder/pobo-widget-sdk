@@ -145,6 +145,13 @@
   --pobo-parameter-header-font-weight: 500;
   --pobo-parameter-header-margin: 0 0 50px 0;
   --pobo-parameter-header-padding: 0;
+  --pobo-parameter-image-padding: 10px 20px 10px 10px;
+  --pobo-parameter-image-left-padding: 10px 10px 10px 20px;
+  --pobo-parameter-image-big-padding: 20px 20px 20px 40px;
+  --pobo-parameter-header-left-font-size: 22px;
+  --pobo-parameter-header-left-margin: 0 0 25px 0;
+  --pobo-parameter-header-left-padding: 0 0 0 10px;
+  --pobo-parameter-header-left-font-weight: 600;
 
   --pobo-parameter-big-value-font-size: 15px;
   --pobo-parameter-big-value-font-color: #575757;
@@ -891,6 +898,35 @@
   --pobo-jumbotron-one-content-text-color: white;
   --pobo-jumbotron-one-content-text-font-size: 20px;
   --pobo-jumbotron-one-content-text-padding: 20px 0px;
+
+  --pobo-list-container-padding: 20px 0;
+  --pobo-list-header-font-size: 25px;
+  --pobo-list-header-padding: 0;
+  --pobo-list-header-margin: 0 0 25px;
+  --pobo-list-ul-padding: 0 0 0 40px;
+  --pobo-list-ul-margin: 0;
+  --pobo-list-li-padding: 2px 0;
+
+  --pobo-product-card-title-padding: 0;
+  --pobo-product-card-title-margin: 20px 0 0 0;
+  --pobo-product-card-title-font-size: 14px;
+  --pobo-product-card-title-line-height: 16px;
+  --pobo-product-card-title-height: 40px;
+  --pobo-product-card-title-font-weight: 600;
+
+  --pobo-product-price-font-size: 17px;
+  --pobo-product-price-line-height: 18px;
+  --pobo-product-price-font-weight: 600;
+  --pobo-product-price-margin: 20px 0 0 0;
+  --pobo-product-price-action-padding: 15px 0 0 0;
+
+  --pobo-rating-image-container-padding: 10px;
+  --pobo-rating-image-content-padding: 50px 40px 50px 40px;
+  --pobo-rating-image-content-padding-sm: 0 40px 40px 40px;
+  --pobo-rating-image-content-text-font-size: 22px;
+  --pobo-rating-image-content-text-line-height: 28px;
+  --pobo-rating-image-width: 300px;
+  --pobo-rating-image-border-radius: 50%;
 }
 
 

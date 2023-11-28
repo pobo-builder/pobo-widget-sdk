@@ -12,7 +12,7 @@
 
     @include media-breakpoint-up(sm) {
       width: 50%;
-      padding: 10px 20px 10px 10px;
+      padding: var(--pobo-parameter-image-padding);
       text-align: right;
     }
   }
@@ -39,7 +39,7 @@
 
     @include media-breakpoint-up(sm) {
       width: 50%;
-      padding: 10px 10px 10px 20px;
+      padding: var(--pobo-parameter-image-left-padding);
       text-align: left;
     }
   }
@@ -65,7 +65,7 @@
 
     @include media-breakpoint-up(sm) {
       width: 70%;
-      padding: 20px 20px 20px 40px;
+      padding: var(--pobo-parameter-image-big-padding);
     }
   }
 
@@ -90,7 +90,7 @@
 
     @include media-breakpoint-up(sm) {
       width: 70%;
-      padding: 20px 20px 20px 40px;
+      padding: var(--pobo-parameter-image-big-padding);
     }
   }
 
@@ -116,10 +116,10 @@
   }
 
   &__header-left {
-    font-size: 22px;
-    margin: 0 0 25px 0;
-    padding: 0 0 0 10px;
-    font-weight: 600;
+    font-size: var(--pobo-parameter-header-left-font-size);
+    margin: var(--pobo-parameter-header-left-margin);
+    padding: var(--pobo-parameter-header-left-padding);
+    font-weight: var(--pobo-parameter-header-left-font-weight);
   }
 
   &__header-right {

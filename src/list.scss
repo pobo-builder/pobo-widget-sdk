@@ -1,20 +1,20 @@
 .rc-list {
   &__container {
-    padding: 20px 0;
+    padding: var(--pobo-list-container-padding);
   }
 
   &__header {
-    font-size: 25px;
-    padding: 0;
-    margin: 0 0 25px;
+    font-size: var(--pobo-list-header-font-size);
+    padding: var(--pobo-list-header-padding);
+    margin: var(--pobo-list-header-margin);
   }
 
   &__ul {
-    padding: 0 0 0 40px;
-    margin: 0;
+    padding: var(--pobo-list-ul-padding);
+    margin: var(--pobo-list-ul-margin);
   }
 
   &__li {
-    padding: 2px 0;
+    padding: var(--pobo-list-li-padding);
   }
 }
