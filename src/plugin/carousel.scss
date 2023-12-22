@@ -1,16 +1,23 @@
+$carousel-product-border: #d9d9d9;
+$carousel-product-radius: 5px;
+$carousel-product-bg: #fafafa;
+
 .pb-carousel-container {
   position: relative;
+  padding: 0 20px;
+  margin: 20px 0;
 }
 
 .pb-carousel-inner {
   overflow: auto;
   white-space: nowrap;
-  padding: 0 0 20px 0;
+  border: 1px solid $carousel-product-border;
   position: relative;
   scroll-behavior: smooth;
+  border-radius: $carousel-product-radius;
 
-  &__trigger-left {
-    left: -20px;
+  &__trigger-left,
+  &__trigger-right {
     position: absolute;
     top: 100px;
     width: 40px;
@@ -19,26 +26,19 @@
     color: black;
     z-index: 10;
     box-shadow: 0 0 10px rgba(203, 202, 202, 0.50);
-    border: 1px solid #d9d9d9;
+    border: 1px solid $carousel-product-border;
     border-radius: 50%;
     background: #FFF url("https://www.svgrepo.com/show/432461/double-arrow-right.svg") no-repeat 50% 50%;
     background-size: contain;
+  }
+
+  &__trigger-left {
+    left: 0;
     transform: rotate(180deg);
   }
 
   &__trigger-right {
-    right: -20px;
-    position: absolute;
-    top: 100px;
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 0 10px rgba(203, 202, 202, 0.50);
-    border: 1px solid #d9d9d9;
-    border-radius: 50%;
-    font-size: 40px;
-    z-index: 10;
-    background: #FFF url("https://www.svgrepo.com/show/432461/double-arrow-right.svg") no-repeat 100% 100%;
-    background-size: contain;
+    right: 0;
   }
 
   &__item {
@@ -47,25 +47,32 @@
     height: 200px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #d9d9d9;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(203, 202, 202, 0.50);
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
+    white-space: initial;
 
     .image {
       position: relative;
+
       img {
         max-width: 100%;
         width: 100%;
         height: auto;
       }
+    }
+  }
+
+  &__item--carousel-product {
+    display: inline-block;
+    width: calc(100% / 4);
+    background: $carousel-product-bg;
+    letter-spacing: 0;
+    white-space: initial;
+    padding: 20px;
+    margin-right: -4px;
+
+
+    @include media-breakpoint-down(lg) {
+      width: 240px;
     }
   }
 }

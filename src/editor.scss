@@ -54,7 +54,6 @@
 @import "profit";
 @import "image-right-overlay";
 @import "image-left-overlay";
-@import "combat-text-widget";
 @import "card-call-to-action";
 
 @import "review-one";
@@ -78,19 +77,20 @@
 @import "reviews-three-in-row";
 @import "counter";
 
-@import "bike-max";
-@import "combat-icons";
-
-
 @import "grid";
 @import "embed";
 @import "spacing";
 @import "rc-interview-photo";
-
 @import "parameter";
-@import "koreankosmetika";
+@import "product-preview";
+@import "plugin/carousel";
 
-// Custom template
-//@import "custom-template/01";
+
+@import "yolab-custom";
+@import "arsov-custom";
+@import "koreankosmetika";
+@import "combat-text-widget";
+@import "bike-max";
+@import "combat-icons";
 @import "fv-bikemax-benefit-widget";
 @import "lobey-custom";

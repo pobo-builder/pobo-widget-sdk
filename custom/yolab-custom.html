@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="../src/editor.scss">
+  <title>Widget pobo</title>
+
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 20px 0;
+      font-family: sans-serif;
+      background-color: #F5F6F7;
+    }
+  </style>
+</head>
+<body>
+
+<!-- SINGLE WIDGET S POPISEM PRODUKTŮ -->
+<div class="yolab-description">
+  <h2 class="yolab-description__title"> Popis produktu </h2>
+  <div class="yolab-description__wrap">
+    <div class="yolab-description__left">
+      <h3 class="yolab-description__subtitle"> Vysněná dosažitelná postava </h3>
+    </div>
+    <div class="yolab-description__right">
+      <p class="yolab-description__content">
+        Naše revoluční přírodní formula, Odstraňovač tuku, je funkčním doplňkem stravy navrženým speciálně pro urychlení
+        hubnutí. Hlavní účinnou látkou je glukomannan, který po styku s vodou nabývá objem v žaludku a navozuje pocit
+        sytosti.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- WIDGET KTERÝ BUDE SLOUŽIT JAKO ÚVOD K JAK TO FUNGUJE
+     KTERÝ BUDE ZVLÁŠŤ KAŽDÁ POLOŽKA -->
+<div class="yolab-procedure">
+  <h2 class="yolab-procedure__title"> Jak to funguje </h2>
+  <div class="yolab-procedure__wrap">
+    <div class="yolab-procedure__left">
+      <img class="yolab-procedure__image" src="https://pobo-cdn.b-cdn.net/widget/yolab/yolab-photo-01.jpg"/>
+    </div>
+    <div class="yolab-procedure__right">
+      <h3 class="yolab-procedure__subtitle">
+        Dosáhni vysněné postavy s Odstraňovačem tuku!
+      </h3>
+    </div>
+  </div>
+</div>
+
+
+<!-- WIDGET NA SINGLE POLOŽKY K PROCEDUŘE, aby bylo možné si jich přidat
+kolik bude potřeba. -->
+
+<div class="yolab-procedure-item">
+  <div class="yolab-procedure-item__wrap">
+    <div class="yolab-procedure-item__info">
+      <span class="yolab-procedure-item__number-text"> 01 </span>
+
+      <h2 class="yolab-procedure-item__title-text"> Účinná podpora při hubnutí </h2>
+    </div>
+
+    <div class="yolab-procedure-item__content">
+      <p class="yolab-procedure-item__text"> Pro urychlení hubnutí a dosažení vysněné postavy je zde Odstraňovač tuku.
+        Jeho prověřená kombinace rostlinných výtažků a účinných látek, včetně glukomannanu, ti pomáhá navodit pocit
+        sytosti, zlepšuje metabolismus a podporuje úbytek váhy a štíhlejší postavu. </p>
+    </div>
+  </div>
+</div>
+
+<div class="yolab-procedure-item">
+  <div class="yolab-procedure-item__wrap">
+    <div class="yolab-procedure-item__info">
+      <span class="yolab-procedure-item__number-text"> 02 </span>
+
+
+      <h2 class="yolab-procedure-item__title-text"> Zdravé hubnutí a fungování metabolismu </h2>
+    </div>
+
+    <div class="yolab-procedure-item__content">
+      <p class="yolab-procedure-item__text"> Odstraňovač tuku má komplexní přínos na tvůj organismus. Extrakt z bršlice
+        a glukomannan podporují zdravé hubnutí, zatímco chrom napomáhá k normálnímu metabolismu tuků, cukrů a bílkovin.
+        S tímto přírodním doplňkem stravy dosáhneš správného fungování metabolismu a zvýšení odolnosti organismu.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="yolab-procedure-item">
+  <div class="yolab-procedure-item__wrap">
+    <div class="yolab-procedure-item__info">
+      <span class="yolab-procedure-item__number-text"> 03 </span>
+
+      <h2 class="yolab-procedure-item__title-text"> Pozitivní účinky na celkové zdraví </h2>
+    </div>
+
+    <div class="yolab-procedure-item__content">
+      <p class="yolab-procedure-item__text"> Odstraňovač tuku nejenže pomáhá zvýšit spalování tuku při pohybových
+        aktivitách, ale také má pozitivní vliv na tvé celkové zdraví. Díky přírodním složkám a jejich účinnosti se těšíš
+        správnému fungování střevního traktu a dosažení štíhlejší postavy.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Substance sama je jen hlavička, items jsou pak položky + jako single widget -->
+<div class="yolab-substances">
+  <div class="yolab-substances__title-wrap">
+    <div class="yolab-substances__title">
+      <h2 class="yolab-substances__title-text"> Složení </h2>
+    </div>
+    <div class="yolab-substances__subtitle-wrap">
+      <h3 class="yolab-substances__subtitle"> Jedinečná kombinace účinných látek </h3>
+    </div>
+  </div>
+
+  <div class="yolab-substances-items">
+    <div class="yolab-substances-items__wrap">
+      <div class="yolab-substances-items__item">
+        <div class="yolab-substances-items__top">
+          <h2 class="yolab-substances-items__name"> Bršlice kozí noha </h2>
+          <span class="yolab-substances-items__compo"> 18 mg </span>
+        </div>
+        <div class="yolab-substances-items__middle">
+          <span class="yolab-substances-items__text"> Její listy, kořeny a semena obsahují různé bioaktivní látky, které jí přisuzují léčivé vlastnosti. </span>
+        </div>
+
+        <div class="yolab-substances-items__cta">
+          <a class="yolab-substances-items__link" href="#"> Více informací </a>
+        </div>
+
+        <img class="yolab-substances-items__img" src="https://pobo-cdn.b-cdn.net/widget/yolab/ico-002.jpeg">
+      </div>
+      <div class="yolab-substances-items__item">
+        <div class="yolab-substances-items__top">
+          <h2 class="yolab-substances-items__name"> Chitosan </h2>
+          <span class="yolab-substances-items__compo"> 1500 mg </span>
+        </div>
+        <div class="yolab-substances-items__middle">
+          <span class="yolab-substances-items__text"> Hlavní složkou je chitin, přirozený polysacharid s protizánětlivými vlastnostmi. Společně s glukosaminem. </span>
+        </div>
+
+        <div class="yolab-substances-items__cta">
+          <a class="yolab-substances-items__link" href="#"> Více informací </a>
+        </div>
+
+        <img class="yolab-substances-items__img" src="https://pobo-cdn.b-cdn.net/widget/yolab/ico-003.png">
+      </div>
+
+      <div class="yolab-substances-items__item">
+        <div class="yolab-substances-items__top">
+          <h2 class="yolab-substances-items__name"> Chrom </h2>
+          <span class="yolab-substances-items__compo"> 30 µg </span>
+        </div>
+        <div class="yolab-substances-items__middle">
+          <span class="yolab-substances-items__text">  také aktivně přispívá k udržení normálního metabolismu makroživin, což zahrnuje správné štěpení a využívání sacharidů, bílkovin a tuků v těle.  </span>
+        </div>
+
+        <div class="yolab-substances-items__cta">
+          <a class="yolab-substances-items__link" href="#"> Více informací </a>
+        </div>
+
+        <img class="yolab-substances-items__img" src="https://pobo-cdn.b-cdn.net/widget/yolab/ico-004.webp">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- BUDE JAKO EXTRA WIDGET, ZÁROVEŇ JE ALE VLOŽENÝ I DO TOHO WIDGETU S HEADER, aby to mělo nějaký smysl...-->
+<div class="yolab-substances-items">
+  <div class="yolab-substances-items__wrap">
+    <div class="yolab-substances-items__item">
+      <div class="yolab-substances-items__top">
+        <h2 class="yolab-substances-items__name"> Glukomannan </h2>
+        <span class="yolab-substances-items__compo"> 3 g </span>
+      </div>
+      <div class="yolab-substances-items__middle">
+        <span class="yolab-substances-items__text">  je rostlinná vláknina, která při styku s vodou nabývá na objemu. Díky tomu navozuje v žaludku pocit sytosti, a tím podporuje zdravé hubnutí. Pomáhá také udržovat normální hladinu cholesterolu a glukózy v krvi. </span>
+      </div>
+
+      <div class="yolab-substances-items__cta">
+        <a class="yolab-substances-items__link" href="#"> Více informací </a>
+      </div>
+
+      <img class="yolab-substances-items__img" src="https://pobo-cdn.b-cdn.net/widget/yolab/ico-006.png">
+    </div>
+    <div class="yolab-substances-items__item">
+      <div class="yolab-substances-items__top">
+        <h2 class="yolab-substances-items__name"> Výtažek z bršlice </h2>
+        <span class="yolab-substances-items__compo"> 0,1 mg </span>
+      </div>
+      <div class="yolab-substances-items__middle">
+        <span class="yolab-substances-items__text">Výtažek z bršlice je vynikajícím přírodním prostředkem pro podporu trávení, urychluje látkovou výměnu a přispívá k efektivnímu spalování tuků. Pomáhá tělu efektivněji využívat živiny z potravy. </span>
+      </div>
+
+      <div class="yolab-substances-items__cta">
+        <a class="yolab-substances-items__link" href="#"> Více informací </a>
+      </div>
+
+      <img class="yolab-substances-items__img" src="https://pobo-cdn.b-cdn.net/widget/yolab/ico-005.png">
+    </div>
+
+
+    <div class="yolab-substances-items__item">
+      <div class="yolab-substances-items__top">
+        <h2 class="yolab-substances-items__name"> Žádný lepek </h2>
+        <span class="yolab-substances-items__compo"> 0 g </span>
+      </div>
+      <div class="yolab-substances-items__middle">
+        <span class="yolab-substances-items__text"> Produkt je čistě přírodní a neobsahuje lepek, laktózu, cukr, aspartam ani GMO. Také není testován na zvířatech. Celková hmotnost produktu: 167,4 g. </span>
+      </div>
+
+      <div class="yolab-substances-items__cta">
+        <a class="yolab-substances-items__link" href="#"> Více informací </a>
+      </div>
+
+      <img class="yolab-substances-items__img" src="https://pobo-cdn.b-cdn.net/widget/yolab/ico-001.jpeg">
+    </div>
+  </div>
+</div>
+
+
+<!-- Jak produkt používat, dvě odrážky... -->
+
+<div class="yolab-instructions">
+  <h2 class="yolab-instructions__title"> Dávkování </h2>
+  <div class="yolab-instructions__wrap-subtitle">
+    <h3 class="yolab-instructions__subtitle"> Jak produkt užívat? </h3>
+  </div>
+
+  <div class="yolab-instructions__wrap">
+    <div class="yolab-instructions__container">
+      <div class="yolab-instructions__item">
+        <div class="yolab-instructions__ico">
+          <img class="yolab-instructions__ico-img" src="https://pobo-cdn.b-cdn.net/widget/yolab/check-ico.png"
+               alt="ico">
+        </div>
+        <div class="yolab-instructions__content">
+          <h2 class="yolab-instructions__content-title"> Kdy a kolik </h2>
+          <span class="yolab-instructions__content-text"> 6 kapslí denně rozdělených do 2 – 3 dávek v průběhu dne. Užívej nalačno a zapij sklenicí vody. Pitný režim je důležitý po celou dobu užívání přípravku. Jednotlivé složky mohou svou funkci plně rozvinout pouze za přítomnosti vody. Nezapomínej také na pravidelný pohyb – bez něj kila dolů nepůjdou. Yolab Odstraňovač tuku působí nejlépe při pravidelné pohybové aktivitě a pestré nízkokalorické stravě, protože tvou snahu shodit kila pořádně urychlí. </span>
+        </div>
+      </div>
+      <div class="yolab-instructions__item">
+        <div class="yolab-instructions__ico">
+          <img class="yolab-instructions__ico-img" src="https://pobo-cdn.b-cdn.net/widget/yolab/check-ico.png"
+               alt="ico">
+        </div>
+        <div class="yolab-instructions__content">
+          <h2 class="yolab-instructions__content-title"> Upozornění </h2>
+          <span class="yolab-instructions__content-text"> Nepřekračujte doporučenou denní dávku. Produkt není náhradou pestré a vyvážené stravy. Při nižším příjmu tekutin může osobám s polykacími problémy hrozit udušení. Není vhodné pro děti, těhotné a kojící ženy. Uchovávejte mimo dosah malých dětí. Skladujte v suchu při teplotách do 25 °C. Chraňte před mrazem a přímým slunečním zářením.</span>
+        </div>
+      </div>
+    </div>
+    <div class="yolab-instructions__picture">
+      <img class="yolab-instructions__picture-img" src="https://pobo-cdn.b-cdn.net/widget/yolab/produkt-1.jpeg"/>
+    </div>
+  </div>
+</div>
+
+
+<!-- RECENZE -->
+
+<div class="yolab-reviews">
+  <div class="yolab-reviews__left">
+    <h2 class="yolab-reviews__number"> 4.8 </h2>
+    <div class="yolab-reviews__stars">
+      <div class="yolab-reviews__star"></div>
+      <div class="yolab-reviews__star"></div>
+      <div class="yolab-reviews__star"></div>
+      <div class="yolab-reviews__star"></div>
+      <div class="yolab-reviews__star"></div>
+    </div>
+    <h3 class="yolab-reviews__subtitle"> Celkem 15 recenzí </h3>
+
+    <a class="yolab-reviews__button" href="#"> Ohodnotit produkt </a>
+  </div>
+
+  <div class="yolab-reviews__right">
+    <div class="yolab-reviews__item">
+      <h2 class="yolab-reviews__product"> Jarmila Kulhánková </h2>
+      <div class="yolab-reviews__stars">
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+      </div>
+      <span class="yolab-reviews__review-text">
+                        Odstraňovač tuku, který jsem nedávno vyzkoušel, mi překvapivě přirostl k srdci. Jeho účinnost při odstraňování tuku je ohromující. Používám ho již několik týdnů a vidím značný rozdíl ve své postavě. 
+                    </span>
+    </div>
+
+    <div class="yolab-reviews__item">
+      <h2 class="yolab-reviews__product"> Kristýna Bláhová </h2>
+      <div class="yolab-reviews__stars">
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+      </div>
+      <span class="yolab-reviews__review-text">
+                        Už po krátké době používání jsem si všiml dramatického zlepšení své postavy. Má lehká a nelepkavá konzistence se snadno nanáší a rychle se vstřebává. 
+                    </span>
+    </div>
+
+    <div class="yolab-reviews__item">
+      <h2 class="yolab-reviews__product"> Monika Bartošová </h2>
+      <div class="yolab-reviews__stars">
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+        <div class="yolab-reviews__star"></div>
+      </div>
+      <span class="yolab-reviews__review-text">
+                        Je mým novým nejlepším přítelem. Jeho účinky jsou prostě fantastické. Používám ho denně a výsledky jsou opravdu viditelné. Moje postava se tvaruje, tukové polštářky se zmenšují a pokožka je hebká a pružná. Mám pocit, že konečně nacházím rovnováhu ve svém vzhledu. 
+                    </span>
+    </div>
+  </div>
+</div>
+
+
+<!-- FAQ - dohromady s původními widgety aby fungoval javascript, snad...
+Přestylování pak přímo u klienta v Pobu.
+-->
+
+
+<div class="yolab-faq">
+  <div class="yolab-faq__left">
+    <h2 class="yolab-faq__title"> Vaše dotazy </h2>
+    <h3 class="yolab-faq__subtitle"> FAQ </h3>
+  </div>
+  <div class="yolab-faq__right">
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Jaké je složení? </h2>
+      <div class="pb-faq__content">
+        <p> V Odstraňovači tuku jsou následující složky: glukomanan, chitosan, bršlice kozí noha a chrom pikolinát. Více
+          informací naleznete v popisu produktu.</p>
+      </div>
+    </div>
+
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Na jak dlouho mi vydrží jedno balení?</h2>
+      <div class="pb-faq__content">
+        <p> Protože je doporučené dávkování 6 kapslí denně, tak Vám balení vydrží na 30 dnů.</p>
+      </div>
+    </div>
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Není to nebezpečné? Nemohou se objevit nějaké vedlejší účinky? </h2>
+      <div class="pb-faq__content">
+        <p>Veškeré složky jsou bezpečné a přírodního původu. Doporučujeme především zapíjet velkým množstvím vody a
+          řídit se instrukcemi na etiketě. </p>
+      </div>
+    </div>
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Jak dlouho trvá dodání? </h2>
+      <div class="pb-faq__content">
+        <p> Balíček odesíláme nejpozději následující pracovní den po přijetí objednávky. Váš Odstraňovač u Vás tak bude
+          již do dvou pracovních dnů. </p>
+      </div>
+    </div>
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Jak mi Odstraňovač tuku pomůže při hubnutí?</h2>
+      <div class="pb-faq__content">
+        <p> Principem fungování, mimo jiné, je, že hlavní složka glukomanan při smíchání s vodou zvětší mnohonásobně
+          svůj objem a dojde tak k pocitu plnosti po konzumaci menšího množství jidla.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
