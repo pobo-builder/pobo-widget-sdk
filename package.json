@@ -5,9 +5,9 @@
   "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "watch": "npx parcel index.html -p 8051 --dist-dir dist",
+    "watch": "npx parcel index.html -p 8088 --dist-dir dist",
     "build": "npx parcel build src/editor.scss --no-source-maps --dist-dir build",
-    "proxy": "ngrok http 8051"
+    "proxy": "ngrok http 8088"
   },
   "engines": {
     "node": ">=14.19",
