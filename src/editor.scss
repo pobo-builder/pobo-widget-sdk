@@ -56,9 +56,9 @@
 /**
  Core Bootstrap
 **/
-@import "grid";
-@import "embed";
-@import "spacing";
+@import "utils/grid";
+@import "utils/embed";
+@import "utils/spacing";
 /**
  Core Bootstrap
 **/
@@ -71,13 +71,13 @@
 /**
  Custom widgets
 **/
-@import "yolab-custom";
-@import "arsov-custom";
-@import "koreankosmetika";
-@import "combat-text-widget";
-@import "bike-max";
-@import "combat-icons";
-@import "fv-bikemax-benefit-widget";
+@import "custom/yolab-custom";
+@import "custom/arsov-custom";
+@import "custom/koreankosmetika";
+@import "custom/combat-text-widget";
+@import "custom/bike-max";
+@import "custom/combat-icons";
+@import "custom/fv-bikemax-benefit-widget";
 
 
 li:has(> a.active) {
