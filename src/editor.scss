@@ -1,4 +1,5 @@
 @import "utils/native-variable";
+@import "utils/container-resolver";
 @import "utils/infobox";
 @import "checked-list";
 @import "image-right";
@@ -80,6 +81,6 @@
 @import "custom/fv-bikemax-benefit-widget";
 
 
-li:has(> a.active) {
+.widget-container {
 
 }

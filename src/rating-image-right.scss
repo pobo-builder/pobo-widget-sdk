@@ -2,6 +2,9 @@
   position: relative;
   padding: var(--pobo-global-widget-padding);
   margin: var(--pobo-global-widget-margin);
+  background: var(--pobo-rating-image-bg);
+  box-shadow: var(--pobo-rating-image-box-shadow);
+  border: var(--pobo-rating-image-border-color);
 
   @include media-breakpoint-down(sm) {
     padding: 0;
@@ -37,6 +40,7 @@
       content: "„";
       left: 0;
       top: 0;
+      font-family: Georgia, sans-serif;
 
       @include media-breakpoint-down(sm) {
         top: -60px;
@@ -47,11 +51,13 @@
       content: "“";
       right: 0;
       bottom: 0;
+      font-family: Georgia, sans-serif;
     }
 
     p {
       font-size: var(--pobo-rating-image-content-text-font-size);
       line-height: var(--pobo-rating-image-content-text-line-height);
+      font-weight: var(--pobo-rating-image-content-text-font-weight);
       font-style: italic;
     }
   }

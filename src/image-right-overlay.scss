@@ -20,6 +20,13 @@
     }
   }
 
+
+  &__image-overlay {
+    img {
+      vertical-align: middle;
+    }
+  }
+
   &__image {
     width: 50%;
     position: relative;

@@ -2,6 +2,9 @@
   width: 100%;
   padding: var(--pobo-global-widget-padding);
   margin: var(--pobo-global-widget-margin);
+  background: var(--pobo-review-one-bg);
+  box-shadow: var(--pobo-review-one-box-shadow);
+  border: var(--pobo-review-one-border-color);
   display: flex;
   
   @media only screen and (max-width: 549px) {
@@ -50,8 +53,10 @@
   }
 
   &__text {
+    font-family: var(--pobo-review-one-font-family);
     font-size: var(--pobo-review-one-text-font-size);
     line-height: var(--pobo-review-one-text-line-height);
+    font-style: italic;
   }
   
   &__number {
