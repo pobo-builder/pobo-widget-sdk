@@ -9,7 +9,7 @@
     margin: var(--pobo-infobox-info-margin);
     box-shadow: var(--pobo-infobox-info-box-shadow);
     border-radius: var(--pobo-infobox-info-border-radius);
-    @include infobox();
+    @include typo();
 
     h2 {
       color: var(--pobo-infobox-info-color);
@@ -27,7 +27,7 @@
     margin: var(--pobo-infobox-warning-margin);
     box-shadow: var(--pobo-infobox-warning-box-shadow);
     border-radius: var(--pobo-infobox-warning-border-radius);
-    @include infobox();
+    @include typo();
 
     h2 {
       color: var(--pobo-infobox-warning-color);

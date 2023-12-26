@@ -1,4 +1,4 @@
-@mixin infobox {
+@mixin typo {
   p {
     font-size: var(--pobo-typo-p-font-size);
     line-height: var(--pobo-typo-p-line-height);
@@ -59,7 +59,7 @@
 
 #pobo-all-content {
   .widget-typography {
-    @include infobox();
+    @include typo();
   }
 
   .widget-gallery {
