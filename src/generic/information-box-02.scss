@@ -1,0 +1,54 @@
+.rc-information-two {
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+
+  &__wrap {
+    display: flex;
+    box-shadow: var(--pobo-information-two-wrap-box-shadow);
+    border-radius: var(--pobo-information-two-wrap-border-radius);
+    overflow: hidden;
+  }
+
+  &__ico {
+    background: var(--pobo-information-two-ico-background);
+    width: var(--pobo-information-two-ico-size);
+    height: var(--pobo-information-two-ico-size);
+    background-size: var(--pobo-information-two-ico-size);
+  }
+
+  &__icon {
+    background: var(--pobo-information-two-icon-background);
+    padding: var( --pobo-information-two-icon-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--pobo-information-two-icon-width);
+
+    &--size {
+      max-width: var(--pobo-information-two-icon-max-width);
+    }
+  }
+
+  &__content {
+    padding: var(--pobo-information-two-content-padding);
+    background-color: var(--pobo-information-two-content-background-color);
+    align-self: stretch;
+    border: var(--pobo-information-two-content-border);
+    border-left: 0;
+    width: calc(100% - 80px);
+  }
+
+  &__content-text {
+    font-size: var(--pobo-information-two-content-text-font-size);
+    line-height: var(--pobo-information-two-content-text-line-height);
+    color: var(--pobo-information-two-content-text-color);
+    display: block;
+  }
+
+  &__content-title {
+    font-size: var(--pobo-information-two-content-title-font-size);
+    padding: var(--pobo-information-two-content-title-padding);
+    margin: var(--pobo-information-two-content-title-margin);
+    color: var(--pobo-information-two-content-title-color);
+  }
+}

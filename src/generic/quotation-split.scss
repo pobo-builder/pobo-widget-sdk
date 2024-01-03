@@ -1,0 +1,72 @@
+.rc-quotation-split {
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+
+  &__wrap {
+    position: relative;
+    box-shadow: var(--pobo-quotation-split-wrap-shadow);
+    padding: var(--pobo-quotation-split-wrap-padding);
+    border-radius: var(--pobo-quotation-split-wrap-border-radius);
+    background: var(--pobo-quotation-split-wrap-bg);
+    border: var(--pobo-quotation-split-wrap-border);
+    text-align: center;
+  }
+
+  &__text {
+    position: relative;
+    font-size: var(--pobo-quotation-split-text-font-size);
+    font-style: var(--pobo-quotation-split-text-font-style);
+    line-height: var(--pobo-quotation-split-text-line-height);
+    padding: var(--pobo-quotation-split-text-padding);
+    margin: var(--pobo-quotation-split-text-margin);
+    color: var(--pobo-quotation-split-text-color);
+    font-weight: var(--pobo-quotation-split-text-font-weight);
+    font-family: var(--pobo-review-font-family);
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 28px;
+      background-image: url("https://pobo-cdn.b-cdn.net/widget/quotation.svg");
+      transform: rotate(180deg);
+      margin-left: -35px;
+      z-index: 2;
+
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 28px;
+      height: 28px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 28px;
+      background-image: url("https://pobo-cdn.b-cdn.net/widget/quotation.svg");
+      margin: 20px 0 0 20px;
+      z-index: 2;
+    }
+  }
+
+  &__author {
+    font-size: var(--pobo-quotation-split-author-font-size);
+    color: var(--pobo-quotation-split-author-font-color);
+    padding: var(--pobo-quotation-split-author-split-padding);
+    margin: var(--pobo-quotation-split-author-margin);
+    font-weight: var(--pobo-quotation-split-author-font-weight);
+    font-family: var(--pobo-review-font-family);
+  }
+
+  &__line {
+    width: 35px;
+    height: 1px;
+    background: #9b9da4;
+  }
+}
+

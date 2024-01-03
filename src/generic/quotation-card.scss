@@ -1,0 +1,73 @@
+.rc-quotation-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+    padding: var(--pobo-quotation-card-wrap-padding);
+    margin: var(--pobo-quotation-card-wrap-margin);
+    background: var(--pobo-quotation-card-wrap-bg);
+    box-shadow: var(--pobo-quotation-card-wrap-box-shadow);
+    min-height: var(--pobo-quotation-card-wrap-min-height);
+    border-radius: var(--pobo-quotation-card-wrap-border-radius);
+
+
+    &:before {
+      font-family: Georgia, serif;
+      content: "\201C";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 5em;
+      color: rgba(#e6e6e6, 0.8);
+      font-weight: normal;
+    }
+
+    &:after {
+      font-family: Georgia, serif;
+      content: "\201C";
+      position: absolute;
+      bottom: -110px;
+      line-height: 100px;
+      right: -32px;
+      font-size: 25em;
+      color: rgba(#e6e6e6, 0.8);
+      font-weight: normal;
+    }
+
+    @include media-breakpoint-down(sm) {
+      &:after {
+        font-size: 22em;
+        right: -25px;
+      }
+    }
+  }
+
+  &__content-text {
+    display: block;
+    font-style: italic;
+    font-size: var(--pobo-quotation-card-content-text-font-size);
+    line-height: var(--pobo-quotation-card-content-text-line-height);
+    margin: var(--pobo-quotation-card-content-text-margin);
+    padding: var(--pobo-quotation-card-content-text-padding);
+    color: var(--pobo-quotation-card-content-text-color);
+    font-weight: var(--pobo-quotation-card-content-text-font-weight);
+    font-family: var(--pobo-review-font-family);
+
+  }
+
+  &__content-name {
+    display: block;
+    font-size: var(--pobo-quotation-card-content-name-font-size);
+    line-height: var(--pobo-quotation-card-content-name-line-height);
+    margin: var(--pobo-quotation-card-content-name-margin);
+    padding: var(--pobo-quotation-card-content-name-padding);
+    color: var(--pobo-quotation-card-content-name-color);
+    font-weight: var(--pobo-quotation-card-content-name-font-weight);
+  }
+}

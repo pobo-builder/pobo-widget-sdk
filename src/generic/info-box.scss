@@ -1,0 +1,40 @@
+.rc-infobox {
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+
+  &__info {
+    padding: var(--pobo-infobox-info-padding);
+    background: var(--pobo-infobox-info-background);
+    border: var(--pobo-infobox-info-border);
+    margin: var(--pobo-infobox-info-margin);
+    box-shadow: var(--pobo-infobox-info-box-shadow);
+    border-radius: var(--pobo-infobox-info-border-radius);
+    @include typo();
+
+    h2 {
+      color: var(--pobo-infobox-info-color);
+    }
+
+    * {
+      color: var(--pobo-infobox-info-color);
+    }
+  }
+
+  &__warning {
+    padding: var(--pobo-infobox-warning-padding);
+    background: var(--pobo-infobox-warning-background);
+    border: var(--pobo-infobox-warning-border);
+    margin: var(--pobo-infobox-warning-margin);
+    box-shadow: var(--pobo-infobox-warning-box-shadow);
+    border-radius: var(--pobo-infobox-warning-border-radius);
+    @include typo();
+
+    h2 {
+      color: var(--pobo-infobox-warning-color);
+    }
+
+    * {
+      color: var(--pobo-infobox-warning-color);
+    }
+  }
+}

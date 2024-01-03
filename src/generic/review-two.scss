@@ -1,0 +1,120 @@
+.pb-evaluation-two {
+  width: 100%;
+  padding: var(--pobo-evaluation-two-padding);
+  margin: var(--pobo-evaluation-two-margin);
+
+
+  &__title {
+    width: 100%;
+    padding: var(--pobo-evaluation-two-title-padding);
+    background: var(--pobo-evaluation-two-title-bg);
+  }
+
+  &__contents {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: var(--pobo-evaluation-two-contents-padding);
+
+    @media only screen and (max-width: 830px) {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+
+  &__obl-single {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: var(--pobo-evaluation-two-obl-single-padding);
+    margin: var(--pobo-evaluation-two-obl-single-margin);
+    gap: var(--pobo-evaluation-two-obl-single-gap);
+
+    @media only screen and (max-width: 830px) {
+      width: 100%;
+      margin: 30px 0;
+      padding: 0;
+    }
+  }
+
+  &__single {
+    width: 100%;
+    padding: var(--pobo-evaluation-two-single-padding);
+    margin: var(--pobo-evaluation-two-single-margin);
+    border-radius: var(--pobo-evaluation-two-single-border-radius);
+    box-shadow: var(--pobo-evaluation-two-single-box-shadow);
+    background: var(--pobo-evaluation-two-single-bg);
+    border: var(--pobo-evaluation-two-single-border);
+
+    @media only screen and (max-width: 830px) {
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 100%;
+    padding: var(--pobo-evaluation-two-logo-padding);
+    margin: var(--pobo-evaluation-two-logo-margin);
+    max-width: var(--pobo-evaluation-two-logo-max-width);
+  }
+
+  &__text-in {
+    display: block;
+    font-style: italic;
+    padding: var(--pobo-evaluation-two-text-in-padding);
+    margin: var(--pobo-evaluation-two-text-in-margin);
+    font-size: var(--pobo-evaluation-two-text-in-font-size);
+    line-height: var(--pobo-evaluation-two-text-in-line-height);
+    font-weight: var(--pobo-evaluation-two-text-in-font-weight);
+    font-family: var(--pobo-review-font-family);
+  }
+
+  &__header {
+    text-align: center;
+    font-size: var(--pobo-evaluation-two-header-font-size);
+    font-weight: var(--pobo-evaluation-two-header-font-weight);
+    line-height: var(--pobo-evaluation-two-header-line-height);
+    color: var(--pobo-evaluation-two-header-font-color);
+    padding: var(--pobo-evaluation-two-header-padding);
+    margin: var(--pobo-evaluation-two-header-margin);
+
+
+    &:before {
+      content: "";
+      width: 100%;
+      display: block;
+      background: var(--pobo-evaluation-two-header-before-bg);
+      height: var(--pobo-evaluation-two-header-before-height);
+      margin: var(--pobo-evaluation-two-header-before-margin);
+    }
+  }
+
+  &__span {
+    background: var(--pobo-evaluation-two-span-bg);
+    padding: var(--pobo-evaluation-two-span-padding);
+    margin: var(--pobo-evaluation-two-span-margin);
+  }
+
+  &__button {
+    width: 100%;
+    margin: 5px 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: 830px) {
+      margin: 5px 0;
+    }
+
+    &__btn {
+      background: rgb(46, 46, 46);
+      display: block;
+      padding: 5px 10px;
+
+      & a {
+        color: rgb(240, 240, 240);
+        text-decoration: none;
+      }
+    }
+  }
+}

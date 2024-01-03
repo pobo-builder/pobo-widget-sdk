@@ -1,0 +1,106 @@
+$element: ".rc-counter";
+
+#{$element} {
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--pobo-counter-border-radius);
+  border: var(--pobo-counter-border);
+  box-shadow: var(--pobo-counter-box-shadow);
+  background: var(--pobo-counter-bg);
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+
+
+  @include media-breakpoint-down(sm) {
+    padding: 10px 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: calc(-50%);
+    z-index: 5;
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--pobo-counter-overlay-bg);
+    z-index: 8;
+  }
+
+  &__two {
+    grid-template-columns: 50% 50%;
+  }
+
+  &__three {
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  }
+
+  &__box {
+    position: relative;
+    z-index: 8;
+  }
+
+  &__inner {
+    padding: var(--pobo-counter-inner-padding);
+    border-radius: var(--pobo-counter-inner-border-radius);
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+    @include media-breakpoint-down(sm) {
+      padding: 10px 5px;
+    }
+  }
+
+  &__header {
+    font-size: var(--pobo-counter-header-font-size);
+    color: var(--pobo-counter-header-font-color);
+    margin: var(--pobo-counter-header-margin);
+    padding: var(--pobo-counter-header-padding);
+    font-weight: var(--pobo-counter-header-font-weight);
+    text-shadow: var(--pobo-counter-header-text-shadow);
+
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+
+
+    &--medium {
+      font-size: var(--pobo-counter-header-half-font-size);
+      color: var(--pobo-counter-header-half-font-color);
+      margin: var(--pobo-counter-header-half-margin);
+      padding: var(--pobo-counter-header-half-padding);
+      font-weight: var(--pobo-counter-header-half-font-weight);
+      text-shadow: var(--pobo-counter-header-half-text-shadow);
+    }
+  }
+
+  &__info {
+    font-size: var(--pobo-counter-info-font-size);
+    color: var(--pobo-counter-info-font-color);
+    margin: var(--pobo-counter-info-margin);
+    padding: var(--pobo-counter-info-padding);
+    font-weight: var(--pobo-counter-info-font-weight);
+    text-shadow: var(--pobo-counter-info-text-shadow);
+
+
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+    }
+
+    &--medium {
+      font-size: var(--pobo-counter-medium-font-size);
+
+      @include media-breakpoint-down(sm) {
+        font-size: 13px;
+      }
+    }
+  }
+}

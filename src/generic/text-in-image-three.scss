@@ -1,0 +1,107 @@
+.rc-image-three {
+  display: flex;
+  width: 100%;
+  border: var(--pobo-text-in-image-border);
+  box-shadow: var(--pobo-text-in-image-box-shadow);
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+
+  &__single {
+    height: 400px;
+    position: relative;
+    margin: 5px;
+    background: var(--pobo-text-in-image-single-bg);
+    color: var(--pobo-text-in-image-single-font-color);
+    text-shadow: var(--pobo-text-in-image-single-text-shadow);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+  }
+
+  &__img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  &__content-head {
+    color: var(--pobo-text-in-image-three-header-font-color);
+    line-height: var(--pobo-text-in-image-three-header-line-height);
+    font-weight: var(--pobo-text-in-image-three-header-font-weight);
+    font-size: var(--pobo-text-in-image-three-header-font-size);
+    padding: var(--pobo-text-in-image-three-header-padding);
+    margin: var(--pobo-text-in-image-three-header-margin);
+    text-shadow: var(--pobo-text-in-image-three-header-text-shadow);
+  }
+
+  &__content-info {
+    color: white;
+    font-size: 15px;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: var(--pobo-text-in-image-overlay-blur);
+    background-color: var(--pobo-text-in-image-overlay-bg);
+    padding: var(--pobo-text-in-image-three-content-background);
+    height: var(--pobo-text-in-image-content-height);
+    width: 100%;
+  }
+
+  &__down {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 550px) {
+    & {
+      flex-direction: column;
+    }
+    &__single {
+      width: 100%;
+      height: 300px;
+    }
+
+    &__content {
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    &__circle {
+      border-radius: var(--pobo-text-in-image-circle-radius);
+      position: absolute;
+      text-align: center;
+      background-color: white;
+      color: black;
+      mix-blend-mode: lighten;
+      width: var(--pobo-text-in-image-circle-width);
+      line-height: var(--pobo-text-in-image-circle-line-height);
+      font-size: var(--pobo-text-in-image-circle-font-size);
+    }
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .rc-image-three {
+    &__single {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__content {
+      padding: 10px;
+      margin: 0;
+    }
+  }
+}

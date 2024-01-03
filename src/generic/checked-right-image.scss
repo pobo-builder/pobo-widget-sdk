@@ -1,0 +1,37 @@
+.checked-right-image {
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+
+  &__header {
+    padding: var(--pobo-checked-right-image-header-padding);
+    margin: var(--pobo-checked-right-image-header-margin);
+    font-size: var(--pobo-checked-right-image-header-font-size);
+  }
+
+  &__list {
+    width: var(--pobo-checked-right-image-list-width);
+    padding: var(--pobo-checked-right-image-list-padding);
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    width: var(--pobo-checked-right-image-image-width);
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}

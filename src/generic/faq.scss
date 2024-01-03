@@ -1,0 +1,57 @@
+.pb-faq {
+  &__header {
+    position: relative;
+    margin: var(--pobo-faq-header-margin);
+    padding: var(--pobo-faq-header-padding);
+    border-radius: var(--pobo-faq-header-border-radius);
+    border: var(--pobo-faq-header-border);
+    font-size: var(--pobo-faq-header-font-size);
+    box-shadow: var(--pobo-faq-header-box-shadow);
+    font-weight: var(--pobo-faq-header-font-weight);
+    outline: var(--pobo-faq-header-outline);
+    background-image: var(--pobo-faq-header-background-image);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      left: 5px;
+      top: calc(50% - 15px);
+      width: 30px;
+      height: 30px;
+      background: var(--pobo-faq-header-before-background-image);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &.active {
+      border-radius: var(--pobo-faq-header-border-radius-active);
+
+      &:before {
+        transform: rotate(180deg);
+      }
+
+      + .pb-faq__content {
+        display: block;
+      }
+    }
+  }
+
+  &__content {
+    display: none;
+    border-top: 0;
+    background: var(--pobo-faq-content-background);
+    border-radius: var(--pobo-faq-content-border-radius);
+    box-shadow: var(--pobo-faq-content-box-shadow);
+    padding: var(--pobo-faq-content-padding);
+    border: var(--pobo-faq-content-border);
+
+
+    &.active {
+      display: block;
+    }
+
+  }
+}

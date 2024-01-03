@@ -1,0 +1,115 @@
+.rc-interview-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+  background: var(--pobo-interview-photo-bg);
+  box-shadow: var(--pobo-interview-photo-box-shadow);
+  border-radius: var(--pobo-interview-photo-border-radius);
+  border: var(--pobo-interview-photo-border);
+
+
+  &__wrap {
+    width: 100%;
+    align-items: center;
+    position: relative;
+    max-width: var(--pobo-interview-photo-wrap-max-width);
+    padding: var(--pobo-interview-photo-wrap-padding);
+    margin: var(--pobo-interview-photo-wrap-margin);
+    gap: var(--pobo-interview-photo-wrap-gap);
+    font-size: var(--pobo-interview-photo-wrap-font-size);
+    line-height: var(--pobo-interview-photo-wrap-line-height);
+    color: var(--pobo-interview-photo-wrap-font-color);
+    font-weight: var(--pobo-interview-photo-wrap-font-weight);
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
+  }
+
+  &__text {
+    position: relative;
+    padding: var(--pobo-interview-photo-text-padding);
+    margin: var(--pobo-interview-photo-text-margin);
+    font-size: var(--pobo-interview-photo-text-font-size);
+    line-height: var(--pobo-interview-photo-text-line-height);
+    color: var(--pobo-interview-photo-text-font-color);
+    font-weight: var(--pobo-interview-photo-text-font-weight);
+    text-align: var(--pobo-interview-photo-text-align);
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 55px;
+      background-image: url("https://pobo-cdn.b-cdn.net/widget/quotation_ico_transparent-2.svg");
+      top: -26px;
+
+      @include media-breakpoint-down(sm) {
+        width: 35px;
+        height: 45px;
+        background-size: 35px;
+      }
+    }
+
+    &--left {
+      &::before {
+        left: -10px;
+      }
+    }
+
+    &--right {
+      &::before {
+        background-image: url("https://image.pobo.cz/widget/question-mark-2.svg");
+        width: 55px;
+        height: 95px;
+        background-size: 55px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        right: -20px;
+
+        @include media-breakpoint-down(sm) {
+          margin-left: 0;
+          width: 35px;
+          height: 65px;
+          background-size: 35px;
+        }
+      }
+    }
+  }
+
+  &__wrap-content {
+    width: calc(100% - var(--pobo-interview-photo-person-size));
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__person {
+    position: relative;
+    width: var(--pobo-interview-photo-person-size);
+    height: var(--pobo-interview-photo-person-size);
+    border-radius: var(--pobo-interview-photo-person-img-border-radius);
+    margin: var(--pobo-interview-photo-person-margin);
+    padding: var(--pobo-interview-photo-person-padding);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  &__person-img {
+    max-width: var(--pobo-interview-photo-person-img-max-width);
+    height: auto;
+    border-radius: var(--pobo-interview-photo-person-img-border-radius);
+    clip-path: var(--pobo-interview-photo-person-img-clip-path);
+  }
+}

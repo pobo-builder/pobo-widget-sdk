@@ -1,0 +1,73 @@
+.rc-author-left {
+  width: 100%;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+  background: var(--pobo-author-left-bg);
+  box-shadow: var(--pobo-author-left-box-shadow);
+  border-radius: var(--pobo-author-left-border-radius);
+  border: var(--pobo-author-left-border);
+
+
+  &__wrap {
+    gap: var(--pobo-author-left-wrap-gap);
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    width: var(--pobo-author-left-img-wrap-size);
+    height: var(--pobo-author-left-img-wrap-size);
+    border-radius: var(--pobo-author-left-img-wrap-border-radius);
+    border: var(--pobo-author-left-img-wrap-border);
+    box-shadow: var(--pobo-author-left-img-wrap-box-shadow);
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - var(--pobo-author-left-img-wrap-size) - 50px);
+
+    @include media-breakpoint-down(sm) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__content-title {
+    font-size: var(--pobo-author-left-content-title-font-size);
+    line-height: var(--pobo-author-left-content-title-line-height);
+    font-weight: var(--pobo-author-left-content-title-font-weight);
+    color: var(--pobo-author-left-content-title-font-color);
+    padding: var(--pobo-author-left-content-title-padding);
+    margin: var(--pobo-author-left-content-title-margin);
+  }
+
+  &__content-text {
+    font-size: var(--pobo-author-left-content-text-font-size);
+    padding: var(--pobo-author-left-content-text-padding);
+    margin: var(--pobo-author-left-content-text-margin);
+    color: var(--pobo-author-left-content-text-font-color);
+    font-weight: var(--pobo-author-left-content-text-font-weight);
+    line-height: var(--pobo-author-left-content-text-line-height);
+  }
+
+  &__photo-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+}

@@ -1,0 +1,67 @@
+.pb-review-one {
+  width: 100%;
+  padding: var(--pobo-global-widget-padding);
+  margin: var(--pobo-global-widget-margin);
+  background: var(--pobo-review-one-bg);
+  box-shadow: var(--pobo-review-one-box-shadow);
+  border: var(--pobo-review-one-border-color);
+  display: flex;
+  
+  @media only screen and (max-width: 549px) {
+    flex-direction: column;
+  }
+  
+  &__left {
+    width: var(--pobo-review-one-left-width);
+    min-width: var(--pobo-review-one-left-min-width);
+    padding: var(--pobo-review-one-left-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    @media only screen and (max-width: 549px) {
+      width: 100%;
+    }
+  }
+  
+  &__right {
+    width: var(--pobo-review-one-right-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--pobo-review-one-right-padding);
+    
+    @media only screen and (max-width: 549px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  
+  &__img {
+    width: 100%;
+    max-width: var(--pobo-review-one-img-max-width);
+  }
+
+  &__header {
+    font-size: var(--pobo-review-one-header-font-size);
+    font-weight: var(--pobo-review-one-header-font-weight);
+    padding: var(--pobo-review-one-header-padding);
+    margin: var(--pobo-review-one-header-margin);
+  }
+
+  &__text {
+    font-family: var(--pobo-review-one-font-family);
+    font-size: var(--pobo-review-one-text-font-size);
+    line-height: var(--pobo-review-one-text-line-height);
+    font-style: italic;
+  }
+  
+  &__number {
+    font-size: var(--pobo-review-one-number-font-size);
+    line-height: var(--pobo-review-one-number-line-height);
+    font-weight: var(--pobo-review-one-number-font-weight);
+  }
+}
