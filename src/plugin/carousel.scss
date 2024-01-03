@@ -1,3 +1,9 @@
+// stylelint-disable declaration-no-important
+@import "node_modules/bootstrap/scss/_functions.scss";
+@import "node_modules/bootstrap/scss/_variables.scss";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+
 $carousel-product-border: #d9d9d9;
 $carousel-product-radius: 5px;
 $carousel-product-bg: #fafafa;
