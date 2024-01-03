@@ -1,14 +1,15 @@
 .pb-userwidget {
   width: 100%;
   background: white;
-  max-width: var(--pobo-userwidget-max-width);
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
-
+  max-width: 990px;
+  * {
+    margin: 0;
+    padding: 0;
+  }
   &__wrap {
     width: 100%;
     display: flex;
-    border: var(--pobo-userwidget-wrap-border);
+    border: 1px solid rgb(158, 158, 158);
 
     @media screen and (max-width: 508px) {
       flex-direction: column;
@@ -16,15 +17,14 @@
   }
 
   &__photo {
-    padding: var(--pobo-userwidget-photo-padding);
-    max-width: var(--pobo-userwidget-photo-max-width);
+    padding: 20px;
+    max-width: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
     img {
-      width: var(--pobo-userwidget-photo-width);
+      width: 90px;
 
       @media screen and (max-width: 508px) {
         width: 100%;
@@ -40,12 +40,12 @@
   }
 
   &__info {
-    padding: var(--pobo-userwidget-info-padding);
+    padding: 20px 20px;
     width: calc(100% - 80px);
 
     h3 {
       &__text-h3 {
-        font-size: var(--pobo-userwidget-info-text-h3-font-size);
+        font-size: 27px;
         line-height: 150%;
       }
 
@@ -56,7 +56,7 @@
 
     p {
       &__text-p {
-        font-size: var(--pobo-userwidget-info-text-p-font-size);
+        font-size: 19px;
         line-height: 150%;
         padding: 0px;
 

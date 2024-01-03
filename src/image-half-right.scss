@@ -1,20 +1,16 @@
 .rc-image-half-right {
   display: flex;
+  padding: 20px 0;
   align-items: center;
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
-  background: var(--pobo-image-bg);
-  box-shadow: var(--pobo-image-box-shadow);
-  border: var(--pobo-image-border-color);
 
   @include media-breakpoint-down(sm) {
     display: block;
-    padding: var(--pobo-image-padding-sm);
+    padding: 20px 0;
   }
 
   &__image {
-    width: var(--pobo-image-photo-width);
-    padding: var(--pobo-image-text-padding);
+    width: 50%;
+    padding: 0 0 0 30px;
     position: relative;
 
     @include media-breakpoint-down(sm) {
@@ -25,8 +21,8 @@
   }
 
   &__text {
-    width: var(--pobo-image-text-width);
-    padding: var(--pobo-image-photo-padding);
+    width: 50%;
+    padding: 0 30px 0 0;
 
     @include media-breakpoint-down(sm) {
       width: 100%;
@@ -37,10 +33,18 @@
   &__img {
     max-width: 100%;
     height: auto;
-    padding: var(--pobo-image-img-padding);
-    margin: var(--pobo-image-img-margin);
-    border-radius: var(--pobo-image-img-border-radius);
-    box-shadow: var(--pobo-image-img-box-shadow);
-    border: var(--pobo-image-img-border-color);
+  }
+
+  &__p {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  &__header {
+    font-size: 30px;
+    padding: 0;
+    margin: 0 0 25px;
   }
 }

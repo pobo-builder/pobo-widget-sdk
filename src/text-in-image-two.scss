@@ -1,19 +1,15 @@
 .rc-image-two {
   display: flex;
   max-width: 100%;
-  border: var(--pobo-text-in-image-border);
-  box-shadow: var(--pobo-text-in-image-box-shadow);
-  background: var(--pobo-text-in-image-bg);
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+  margin: auto;
 
   &__single {
     width: 50%;
-    height: var(--pobo-text-in-image-single-height);
+    height: 500px;
     display: flex;
     position: relative;
-    margin: var(--pobo-text-in-image-single-margin);
-    background: var(--pobo-text-in-image-single-background);
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.486);
     flex-direction: column;
     color: white;
   }
@@ -27,8 +23,17 @@
   }
 
   &__content{
-    padding: var(--pobo-text-in-image-content-padding);
+    padding: 25px;
     height: 100%;
+
+    h2{
+      font-size: 3vw;
+    }
+
+    p{
+      font-size: 1vw;
+      color: white;
+    }
   }
 
   &__down {
@@ -39,8 +44,8 @@
   }
 
   &__circle {
-    width: var(--pobo-text-in-image-circle-size);
-    line-height: var(--pobo-text-in-image-circle-size);
+    width: 4vw;
+    line-height: 4vw;
     border-radius: 50%;
     position: absolute;
     text-align: center;

@@ -1,17 +1,17 @@
+.rc-text {
+  &__normal {
+  }
+}
+
 .rc-gallery {
   &__image-title {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: var(--pobo-gallery-image-title-font-size);
-    line-height: var(--pobo-gallery-image-title-line-height);
-    margin: var(--pobo-gallery-image-title-margin);
-    color: var(--pobo-gallery-image-title-font-color);
-    padding: var(--pobo-gallery-image-title-padding);
-    background: var(--pobo-gallery-image-title-bg);
-    box-shadow: var(--pobo-gallery-image-title-box-shadow);
-    border-radius: var(--pobo-gallery-image-title-border-radius);
-    border: var(--pobo-gallery-image-title-border);
+    font-size: 16px;
+    line-height: 20px;
+    margin: 20px 0;
+    color: #6c6c6c;
   }
 }
 

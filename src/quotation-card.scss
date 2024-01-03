@@ -1,21 +1,19 @@
 .rc-quotation-card {
   width: 100%;
   display: flex;
+  padding: 20px 0;
   align-items: center;
   justify-content: center;
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+  color: red;
 
   &__wrap {
+    padding: 20px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(black, 0.12);
     position: relative;
     overflow: hidden;
-    padding: var(--pobo-quotation-card-wrap-padding);
-    margin: var(--pobo-quotation-card-wrap-margin);
-    background: var(--pobo-quotation-card-wrap-bg);
-    box-shadow: var(--pobo-quotation-card-wrap-box-shadow);
-    min-height: var(--pobo-quotation-card-wrap-min-height);
-    border-radius: var(--pobo-quotation-card-wrap-border-radius);
-
+    min-height: 120px;
 
     &:before {
       font-family: Georgia, serif;
@@ -49,25 +47,21 @@
   }
 
   &__content-text {
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 80%;
+    color: black;
     display: block;
-    font-style: italic;
-    font-size: var(--pobo-quotation-card-content-text-font-size);
-    line-height: var(--pobo-quotation-card-content-text-line-height);
-    margin: var(--pobo-quotation-card-content-text-margin);
-    padding: var(--pobo-quotation-card-content-text-padding);
-    color: var(--pobo-quotation-card-content-text-color);
-    font-weight: var(--pobo-quotation-card-content-text-font-weight);
-    font-family: var(--pobo-review-font-family);
-
   }
 
   &__content-name {
+    font-size: 16px;
+    margin-top: 10px;
     display: block;
-    font-size: var(--pobo-quotation-card-content-name-font-size);
-    line-height: var(--pobo-quotation-card-content-name-line-height);
-    margin: var(--pobo-quotation-card-content-name-margin);
-    padding: var(--pobo-quotation-card-content-name-padding);
-    color: var(--pobo-quotation-card-content-name-color);
-    font-weight: var(--pobo-quotation-card-content-name-font-weight);
+    font-weight: 200;
+    opacity: 0.8;
+    font-style: italic;
+    color: black;
   }
 }

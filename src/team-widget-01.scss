@@ -1,15 +1,10 @@
 .rc-team-three {
   display: grid;
+  padding: 20px 0;
   align-items: center;
+  gap: 10px;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
-  background: var(--pobo-team-three-bg);
-  box-shadow: var(--pobo-team-three-box-shadow);
-  border-radius: var(--pobo-team-three-border-radius);
-  border: var(--pobo-team-three-border);
-  gap: var(--pobo-team-three-gap);
 
   @include media-breakpoint-down(md) {
     grid-template-columns: 1fr;
@@ -26,34 +21,22 @@
   }
 
   &__single-content {
-    background: var(--pobo-team-three-single-content-bg);
-    box-shadow: var(--pobo-team-three-single-content-box-shadow);
-    padding: var(--pobo-team-three-single-content-padding);
-    margin-top: var(--pobo-team-three-single-content-margin-top);
-    border-radius: var(--pobo-team-three-single-content-border-radius);
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 0 10px #cccccc;
+    padding: 20px;
+    margin-top: -4px;
     text-align: center;
   }
 
-  &__single--size {
-    border-top-left-radius:  var(--pobo-team-three-single-content-border-radius);
-    border-top-right-radius:  var(--pobo-team-three-single-content-border-radius);
-  }
-
   &__single-name {
-    color: var(--pobo-team-three-single-name-font-color);
-    font-size: var(--pobo-team-three-single-name-font-size);
-    margin: var(--pobo-team-three-single-name-margin);
-    padding: var(--pobo-team-three-single-name-padding);
-    line-height: var(--pobo-team-three-single-name-line-height);
-    font-weight: var(--pobo-team-three-single-name-font-weight);
+    color: #1a202c;
+    font-size: 24px;
+    margin: 0;
   }
 
   &__single-position {
-    color: var(--pobo-team-three-single-position-font-color);
-    font-size: var(--pobo-team-three-single-position-font-size);
-    margin: var(--pobo-team-three-single-position-margin);
-    padding: var(--pobo-team-three-single-position-padding);
-    line-height: var(--pobo-team-three-single-position-line-height);
-    font-weight: var(--pobo-team-three-single-position-font-weight);
+    color: #a0aec0;
+    font-size: 17px;
+    margin: 0;
   }
 }

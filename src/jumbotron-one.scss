@@ -1,7 +1,6 @@
 .rc-jumbotron-one {
   width: 100%;
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+  padding: 20px 0;
   align-items: center;
   justify-content: center;
 
@@ -10,30 +9,30 @@
     position: relative;
     height: auto;
     z-index: 1;
-    background: var(--pobo-jumbotron-one-wrap-background);
+    background: black;
   }
 
   &__wrap-img {
-    width: var(--pobo-jumbotron-one-wrap-img-size);
+    width: 100%;
     position: absolute;
     left: 0;
     top: 0;
     z-index: -2;
-    height: var(--pobo-jumbotron-one-wrap-img-size);
+    height: 100%;
     object-fit: cover;
   }
 
   &__content {
     position: relative;
-    background: var(--pobo-jumbotron-one-content-background);
+    background: rgba(0, 0, 0, 0.527);
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    padding: var(--pobo-jumbotron-one-content-padding);
+    padding: 100px;
 
     @include media-breakpoint-down(sm) {
-      padding: var(--pobo-jumbotron-one-content-padding-sm);
+      padding: 20px 10px;
     }
 
     display: flex;
@@ -44,14 +43,13 @@
   }
 
   &__content-title {
-    color: var(--pobo-jumbotron-one-content-title-color);
-    font-size: var(--pobo-jumbotron-one-content-title-font-size);
-    padding: var(--pobo-jumbotron-one-content-title-padding);
-    margin: 0;
+    color: white;
+    font-size: 42px;
+    padding: 20px 0px;
   }
   &__content-text {
-    color: var(--pobo-jumbotron-one-content-text-color);
-    font-size: var(--pobo-jumbotron-one-content-text-font-size);
-    padding: var(--pobo-jumbotron-one-content-text-padding);
+    color: white;
+    font-size: 20px;
+    padding: 20px 0px;
   }
 }

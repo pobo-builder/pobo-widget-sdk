@@ -1,6 +1,5 @@
 .rc-parameter-small-right {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+  padding: 30px 0;
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -12,7 +11,7 @@
 
     @include media-breakpoint-up(sm) {
       width: 50%;
-      padding: var(--pobo-parameter-image-padding);
+      padding: 10px 20px 10px 10px;
       text-align: right;
     }
   }
@@ -26,8 +25,7 @@
 
 
 .rc-parameter-small-left {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+  padding: 30px 0;
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -39,7 +37,7 @@
 
     @include media-breakpoint-up(sm) {
       width: 50%;
-      padding: var(--pobo-parameter-image-left-padding);
+      padding: 10px 10px 10px 20px;
       text-align: left;
     }
   }
@@ -52,8 +50,7 @@
 }
 
 .rc-parameter-big-left {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+  padding: 30px 0;
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -65,7 +62,7 @@
 
     @include media-breakpoint-up(sm) {
       width: 70%;
-      padding: var(--pobo-parameter-image-big-padding);
+      padding: 20px 20px 20px 40px;
     }
   }
 
@@ -77,8 +74,7 @@
 }
 
 .rc-parameter-big-right {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+  padding: 30px 0;
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -90,7 +86,7 @@
 
     @include media-breakpoint-up(sm) {
       width: 70%;
-      padding: var(--pobo-parameter-image-big-padding);
+      padding: 20px 20px 20px 40px;
     }
   }
 
@@ -116,19 +112,18 @@
   }
 
   &__header-left {
-    font-size: var(--pobo-parameter-header-left-font-size);
-    margin: var(--pobo-parameter-header-left-margin);
-    padding: var(--pobo-parameter-header-left-padding);
-    font-weight: var(--pobo-parameter-header-left-font-weight);
+    font-size: 22px;
+    margin: 0 0 25px 0;
+    padding: 0 0 0 10px;
+    font-weight: 600;
   }
 
   &__header-right {
+    font-size: 22px;
+    margin: 0 0 25px 0;
+    padding: 0 10px 0 0;
+    font-weight: 600;
     text-align: right;
-    font-size: var(--pobo-parameter-header-font-size);
-    color: var(--pobo-parameter-header-font-color);
-    font-weight: var(--pobo-parameter-header-font-weight);
-    margin: var(--pobo-parameter-header-margin);
-    padding: var(--pobo-parameter-header-padding);
   }
 
   // Small right
@@ -137,8 +132,6 @@
     width: 50%;
     align-items: center;
     position: relative;
-    padding: var(--pobo-parameter-small-padding);
-    margin: var(--pobo-parameter-small-margin);
   }
 
   &__box-small-right-parameter-icon {
@@ -168,29 +161,23 @@
 
   &__box-small-right-content-text {
     display: block;
-    font-size: var(--pobo-parameter-small-value-font-size);
-    color: var(--pobo-parameter-small-value-font-color);
+    font-size: 12px;
+    color: black;
   }
 
   &__box-small-right-content-value {
     display: block;
+    font-size: 15px;
     font-weight: 600;
     margin: 0 0 2px 0;
-    font-size: var(--pobo-parameter-small-info-font-size);
-    color: var(--pobo-parameter-small-info-font-color);
   }
 
-  // Small left
+
   &__box-small-left-parameter {
     display: flex;
     width: 50%;
     align-items: center;
     position: relative;
-    padding: var(--pobo-parameter-small-padding);
-    margin: var(--pobo-parameter-small-margin);
-    background: var(--pobo-parameter-small-bg);
-    box-shadow: var(--pobo-parameter-small-box-shadow);
-    border-radius: var(--pobo-parameter-small-border-radius);
   }
 
   &__box-small-left-parameter-icon {
@@ -220,24 +207,17 @@
 
   &__box-small-left-content-text {
     display: block;
+    font-size: 12px;
+    color: black;
     text-align: right;
-    font-size: var(--pobo-parameter-small-value-font-size);
-    color: var(--pobo-parameter-small-value-font-color);
-    // todo predat dale
-    font-weight: var(--pobo-parameter-small-value-font-weight);
-    margin: var(--pobo-parameter-small-value-margin);
-    padding: var(--pobo-parameter-small-value-padding);
   }
 
   &__box-small-left-content-value {
     display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 2px 0;
     text-align: right;
-    // todo predat do dalsich variant
-    font-size: var(--pobo-parameter-small-info-font-size);
-    color: var(--pobo-parameter-small-info-font-color);
-    font-weight: var(--pobo-parameter-small-info-font-weight);
-    margin: var(--pobo-parameter-small-info-margin);
-
   }
 
 
@@ -247,8 +227,6 @@
     width: 100%;
     align-items: center;
     position: relative;
-    padding: var(--pobo-parameter-big-padding);
-    margin: var(--pobo-parameter-big-margin);
   }
 
   &__box-big-left-parameter-icon {
@@ -278,18 +256,17 @@
 
   &__box-big-left-content-text {
     display: block;
+    font-size: 12px;
+    color: black;
     text-align: right;
-    font-size: var(--pobo-parameter-big-value-font-size);
-    color: var(--pobo-parameter-big-value-font-color);
   }
 
   &__box-big-left-content-value {
     display: block;
+    font-size: 15px;
     font-weight: 600;
     margin: 0 0 2px 0;
     text-align: right;
-    font-size: var(--pobo-parameter-big-info-font-size);
-    color: var(--pobo-parameter-big-info-font-color);
   }
 
 
@@ -300,8 +277,6 @@
     width: 100%;
     align-items: center;
     position: relative;
-    padding: var(--pobo-parameter-big-padding);
-    margin: var(--pobo-parameter-big-margin);
   }
 
   &__box-big-right-parameter-icon {
@@ -331,15 +306,14 @@
 
   &__box-big-right-content-text {
     display: block;
-    font-size: var(--pobo-parameter-big-value-font-size);
-    color: var(--pobo-parameter-big-value-font-color);
+    font-size: 12px;
+    color: black;
   }
 
   &__box-big-right-content-value {
     display: block;
+    font-size: 15px;
     font-weight: 600;
     margin: 0 0 2px 0;
-    font-size: var(--pobo-parameter-big-info-font-size);
-    color: var(--pobo-parameter-big-info-font-color);
   }
 }

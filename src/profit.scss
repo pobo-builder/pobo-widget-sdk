@@ -1,28 +1,13 @@
 .rc-profit {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
-  background: var(--pobo-profit-bg);
-  box-shadow: var(--pobo-profit-box-shadow);
-  border-radius: var(--pobo-inline-border-radius);
-  border: var(--pobo-inline-border);
+  padding: 10px 0;
+
 
   &__list-container {
-    padding: var(--pobo-profit-list-container-padding);
-    margin: var(--pobo-profit-list-container-margin);
-    background: var(--pobo-profit-list-container-bg);
-    box-shadow: var(--pobo-profit-list-container-box-shadow);
-    border-radius: var(--pobo-profit-list-container-border-radius);
-    border: var(--pobo-profit-list-container-border-color);
+    padding: 10px;
   }
 
   &__list {
-    padding: var(--pobo-profit-list-padding);
-    margin: var(--pobo-profit-list-margin);
-    background: var(--pobo-profit-list-bg);
-    box-shadow: var(--pobo-profit-list-box-shadow);
-    border-radius: var(--pobo-profit-list-border-radius);
-    border: var(--pobo-profit-list-border);
-
+    padding: 10px 50px;
 
     @include media-breakpoint-down(md) {
       padding: 10px;
@@ -32,13 +17,8 @@
   &__list-item {
     display: flex;
     align-items: center;
+    margin: 15px 0;
     position: relative;
-    padding: var(--pobo-profit-list-item-padding);
-    margin: var(--pobo-profit-list-item-margin);
-    background: var(--pobo-profit-list-item-bg);
-    box-shadow: var(--pobo-profit-list-item-box-shadow);
-    border-radius: var(--pobo-profit-list-item-border-radius);
-    border: var(--pobo-profit-list-item-border);
   }
 
   &__list-ico {
@@ -52,21 +32,17 @@
   }
 
   &__list-header {
-    color: var(--pobo-profit-list-header-font-color);
-    padding: var(--pobo-profit-list-header-padding);
-    margin: var(--pobo-profit-list-header-margin);
-    font-size: var(--pobo-profit-list-header-font-size);
-    line-height: var(--pobo-profit-list-header-line-height);
-    font-weight: var(--pobo-profit-list-header-font-weight);
+    padding: 0;
+    margin: 0 0 2px 0;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   &__header {
-    padding: var(--pobo-profit-header-padding);
-    margin: var(--pobo-profit-header-margin);
-    font-size: var(--pobo-profit-header-font-size);
-    line-height: var(--pobo-profit-header-line-height);
-    font-weight: var(--pobo-profit-header-font-weight);
-    color: var(--pobo-profit-header-font-color);
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   &__container {
@@ -80,12 +56,9 @@
 
   &__list-info {
     display: block;
-    font-size: var(--pobo-list-info-font-size);
-    line-height: var(--pobo-list-info-line-height);
-    color: var(--pobo-list-info-font-color);
-    font-weight: var(--pobo-list-info-font-weight);
-    padding: var(--pobo-list-info-padding);
-    margin: var(--pobo-list-info-margin);
+    font-size: 14px;
+    line-height: 16px;
+    color: #3e3e3e;
   }
 
   &__right-img {

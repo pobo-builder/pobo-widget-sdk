@@ -1,11 +1,5 @@
 .rc-advantages-two {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
-  background: var(--pobo-advantages-bg);
-  box-shadow: var(--pobo-advantages-box-shadow);
-  border: var(--pobo-advantages-border-radius);
-  background: var(--pobo-image-bg);
-  border: var(--pobo-image-border-color);
+  padding: 20px 0;
 
   @include media-breakpoint-up(sm) {
     padding: 20px 0;
@@ -13,12 +7,7 @@
   }
 
   &__item {
-    padding: var(--pobo-advantages-item-padding);
-    border: var(--pobo-advantages-item-border);
-    background: var(--pobo-advantages-item-bg);
-    box-shadow: var(--pobo-advantages-item-box-shadow);
-    border-radius: var(--pobo-advantages-item-border-radius);
-    margin: var(--pobo-advantages-item-margin);
+    padding: 10px;
 
     @include media-breakpoint-up(sm) {
       width: calc(100% / 2);
@@ -26,27 +15,20 @@
   }
 
   &__ico-container {
+    width: 100%;
+    height: 150px;
     text-align: center;
+    padding: 0 0 20px 0;
     display: flex;
     align-items: center;
     position: relative;
-    border-radius: var(--pobo-advantages-ico-container-border-radius);
-    margin: var(--pobo-advantages-ico-container-margin);
-    box-shadow: var(--pobo-advantages-ico-container-box-shadow);
-    background: var(--pobo-advantages-ico-container-bg);
-    padding: var(--pobo-advantages-ico-container-padding);
-    width: var(--pobo-advantages-ico-container-width);
-    height: var(--pobo-advantages-ico-container-height);
   }
 
   &__ico-img {
     margin: 0 auto;
-    max-height: var(--pobo-advantages-ico-container-img-max-height);
-    max-width: var(--pobo-advantages-ico-container-img-max-width);
-    box-shadow: var(--pobo-advantages-ico-container-img-box-shadow);
-    background: var(--pobo-advantages-ico-container-img-bg);
-    border-radius: var(--pobo-advantages-ico-container-img-border-radius);
-    border: var(--pobo-advantages-ico-container-img-border-color)
+    max-height: 150px;
+    width: auto;
+    max-width: 100%;
   }
 
   &__info {
@@ -54,12 +36,10 @@
   }
 
   &__info-header {
-    padding: var(--pobo-advantages-title-padding);
-    margin: var(--pobo-advantages-title-margin);
-    color: var(--pobo-advantages-title-font-color);
-    font-size: var(--pobo-advantages-two-title-font-size);
-    line-height: var(--pobo-advantages-two-title-line-height);
-    font-weight: var(--pobo-advantages-two-title-font-weight);
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
 
     @include media-breakpoint-down(sm) {
       font-size: 16px;
@@ -68,12 +48,11 @@
   }
 
   &__info-text {
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
     display: block;
-    padding: var(--pobo-advantages-info-margin);
-    margin: var(--pobo-advantages-info-padding);
-    color: var(--pobo-advantages-info-font-color);
-    font-size: var(--pobo-advantages-two-info-font-size);
-    line-height: var(--pobo-advantages-two-info-line-height);
-    font-weight: var(--pobo-advantages-two-info-font-weight);
   }
 }

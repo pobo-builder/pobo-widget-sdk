@@ -1,17 +1,13 @@
 .rc-rating-image-right {
   position: relative;
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
-  background: var(--pobo-rating-image-bg);
-  box-shadow: var(--pobo-rating-image-box-shadow);
-  border: var(--pobo-rating-image-border-color);
+  padding: 0 20px;
 
   @include media-breakpoint-down(sm) {
     padding: 0;
   }
 
   &__container {
-    padding: var(--pobo-rating-image-container-padding);
+    padding: 10px;
     display: flex;
     align-items: center;
 
@@ -22,12 +18,12 @@
 
   &__content {
     width: calc(100% - 300px);
-    padding: var(--pobo-rating-image-content-padding);
+    padding: 50px 40px 50px 40px;
     position: relative;
 
     @include media-breakpoint-down(sm) {
       width: 100%;
-      padding: var(--pobo-rating-image-content-padding-sm);
+      padding: 0 40px 40px 40px;
     }
 
     &:before,
@@ -40,7 +36,6 @@
       content: "„";
       left: 0;
       top: 0;
-      font-family: Georgia, sans-serif;
 
       @include media-breakpoint-down(sm) {
         top: -60px;
@@ -51,19 +46,18 @@
       content: "“";
       right: 0;
       bottom: 0;
-      font-family: Georgia, sans-serif;
     }
 
     p {
-      font-size: var(--pobo-rating-image-content-text-font-size);
-      line-height: var(--pobo-rating-image-content-text-line-height);
-      font-weight: var(--pobo-rating-image-content-text-font-weight);
+      font-size: 22px;
+      font-family: Verdana, sans-serif;
+      line-height: 28px;
       font-style: italic;
     }
   }
 
   &__image {
-    width: var(--pobo-rating-image-width);
+    width: 300px;
 
     @include media-breakpoint-down(sm) {
       width: 100%;
@@ -71,12 +65,12 @@
   }
 
   &__image-container {
-    max-width: var(--pobo-rating-image-width);
-    max-height: var(--pobo-rating-image-width);
+    max-width: 300px;
+    max-height: 300px;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-radius: var(--pobo-rating-image-border-radius);
+    border-radius: 50%;
     position: relative;
 
     @include media-breakpoint-down(sm) {

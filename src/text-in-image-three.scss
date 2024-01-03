@@ -1,18 +1,14 @@
 .rc-image-three {
   display: flex;
   width: 100%;
-  border: var(--pobo-text-in-image-border);
-  box-shadow: var(--pobo-text-in-image-box-shadow);
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+  margin: auto;
 
   &__single {
     height: 400px;
     position: relative;
     margin: 5px;
-    background: var(--pobo-text-in-image-single-bg);
-    color: var(--pobo-text-in-image-single-font-color);
-    text-shadow: var(--pobo-text-in-image-single-text-shadow);
+    background: rgba(0, 0, 0, 0.486);
+    color: #fff;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -27,13 +23,9 @@
   }
 
   &__content-head {
-    color: var(--pobo-text-in-image-three-header-font-color);
-    line-height: var(--pobo-text-in-image-three-header-line-height);
-    font-weight: var(--pobo-text-in-image-three-header-font-weight);
-    font-size: var(--pobo-text-in-image-three-header-font-size);
-    padding: var(--pobo-text-in-image-three-header-padding);
-    margin: var(--pobo-text-in-image-three-header-margin);
-    text-shadow: var(--pobo-text-in-image-three-header-text-shadow);
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
   }
 
   &__content-info {
@@ -42,14 +34,20 @@
   }
 
   &__content {
+    padding: 15px;
     position: absolute;
     bottom: 0;
-    left: 0;
-    backdrop-filter: var(--pobo-text-in-image-overlay-blur);
-    background-color: var(--pobo-text-in-image-overlay-bg);
-    padding: var(--pobo-text-in-image-three-content-background);
-    height: var(--pobo-text-in-image-content-height);
-    width: 100%;
+    background: #222222bf;
+    height: 150px;
+
+    h2 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 1vw;
+      color: white;
+    }
   }
 
   &__down {
@@ -79,15 +77,19 @@
     }
 
     &__circle {
-      border-radius: var(--pobo-text-in-image-circle-radius);
+      //   width: 4vw;
+      //   line-height: 4vw;
+      border-radius: 50%;
       position: absolute;
       text-align: center;
+      //   font-size: 3vw;
       background-color: white;
       color: black;
       mix-blend-mode: lighten;
-      width: var(--pobo-text-in-image-circle-width);
-      line-height: var(--pobo-text-in-image-circle-line-height);
-      font-size: var(--pobo-text-in-image-circle-font-size);
+
+      width: 50px;
+      line-height: 50px;
+      font-size: 25px;
     }
   }
 }

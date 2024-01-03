@@ -1,27 +1,27 @@
 .rc-warning-two {
-  padding: var(--pobo-warning-one-padding);
+  padding: 20px 0;
 
   &__wrap {
     display: flex;
-    box-shadow: var(--pobo-warning-one-box-shadow);
-    border-radius: var(--pobo-warning-one-border-radius);
+    box-shadow: 0 0 4px #ff9090;
+    border-radius: 4px;
     overflow: hidden;
   }
 
   &__ico {
-    background: var(--pobo-warning-one-ico-background);
-    width: var(--pobo-warning-one-ico-size);
-    height: var(--pobo-warning-one-ico-size);
-    background-size: var(--pobo-warning-one-ico-size);
+    background: url("https://pobo-cdn.b-cdn.net/widget/x-ico.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
   }
 
   &__icon {
-    background: var(--pobo-warning-one-icon-background);
-    padding: var(--pobo-warning-one-icon-padding);
+    background: #f73838;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: var(--pobo-warning-one-icon-width);
+    width: 80px;
 
     &--size {
       max-width: 30px;
@@ -29,25 +29,25 @@
   }
 
   &__content {
-    padding: var(--pobo-warning-one-content-padding);
-    background-color: var(--pobo-warning-one-content-background-color);
+    padding: 15px;
+    background-color: #ffbbbb;
     align-self: stretch;
-    border: var(--pobo-warning-one-content-border);
+    border: 1px solid #ff7474;
     border-left: 0;
     width: calc(100% - 80px);
   }
 
   &__content-title {
-    font-size: var(--pobo-warning-one-content-title-font-size);
-    padding: var(--pobo-warning-one-content-title-padding);
-    margin: var(--pobo-warning-one-content-title-margin);
-    color: var(--pobo-warning-one-content-title-color);
+    font-size: 20px;
+    padding: 0;
+    margin: 0 0 10px 0;
+    color: #6c0000;
   }
 
   &__content-text {
-    font-size: var(--pobo-warning-one-content-text-font-size);
-    line-height: var(--pobo-warning-one-content-text-line-height);
-    color: var(--pobo-warning-one-content-title-color);
+    font-size: 15px;
+    line-height: 20px;
+    color: #6c0000;
     display: block;
   }
 }

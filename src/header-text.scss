@@ -1,19 +1,19 @@
 .rc-header-text {
   text-align: center;
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+  padding: 20px 0;
+  margin: 20px 0;
 
   &__header {
-    font-size: var(--pobo-header-text-font-size);
-    padding: var(--pobo-header-text-padding);
-    margin: var(--pobo-header-text-margin);
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
   }
 
   &__text {
-    font-size: var(--pobo-header-text-inner-font-size);
-    padding: var(--pobo-header-text-inner-padding);
-    margin: var(--pobo-header-text-inner-margin);
-    line-height: var(--pobo-header-text-inner-line-height);
+    font-size: 15px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    line-height: 24px;
     display: block;
   }
 }
