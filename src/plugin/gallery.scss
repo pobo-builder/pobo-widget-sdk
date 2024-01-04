@@ -24,11 +24,35 @@
 
   &__image {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 200px);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
+  }
+
+  &__image-small{
+    position: relative;
+    display: flex;
+    gap:20px;
+    overflow-y: scroll;
+    width: 90%;
+    scrollbar-width: none;
+    margin: 0 auto;
+    height: 200px;
+    align-items: safe center;
+    justify-content: safe center;
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+
+  &__image-item{
+    width: 100px;
+    height:100px;
+    object-fit: cover;
+    border-radius: 20px;
   }
 
   &__img {
