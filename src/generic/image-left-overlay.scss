@@ -3,8 +3,6 @@
   align-items: center;
   background: var(--pobo-image-overlay-bg);
   font-family: var(--pobo-image-overlay-font-family);
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
 
   @include media-breakpoint-down(md) {
     flex-direction: column;

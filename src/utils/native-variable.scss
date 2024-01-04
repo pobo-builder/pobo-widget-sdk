@@ -1,4 +1,6 @@
 :root {
+  --pobo-font-family: "Roboto", sans-serif;
+
   --pobo-typo-h2-font-size: 25px;
   --pobo-typo-h2-line-height: 30px;
   --pobo-typo-h2-font-weight: 600;
@@ -6,12 +8,26 @@
   --pobo-typo-h2-padding: 0;
   --pobo-typo-h2-margin: 0 0 20px 0;
 
+  --pobo-typo-h2-before-content: none;
+  --pobo-typo-h2-before-bottom: -10px;
+  --pobo-typo-h2-before-left: 0;
+  --pobo-typo-h2-before-width: 200px;
+  --pobo-typo-h2-before-height: 2px;
+  --pobo-typo-h2-before-bg: #eaeaea;
+
   --pobo-typo-h3-font-size: 20px;
   --pobo-typo-h3-line-height: 25px;
   --pobo-typo-h3-font-weight: 600;
   --pobo-typo-h3-font-color: #0c0c0c;
   --pobo-typo-h3-padding: 0;
   --pobo-typo-h3-margin: 0 0 20px 0;
+
+  --pobo-typo-h3-before-content: none;
+  --pobo-typo-h3-before-bottom: -10px;
+  --pobo-typo-h3-before-left: 0;
+  --pobo-typo-h3-before-width: 200px;
+  --pobo-typo-h3-before-height: 2px;
+  --pobo-typo-h3-before-bg: #eaeaea;
 
   --pobo-typo-h4-font-size: 15px;
   --pobo-typo-h4-line-height: 20px;
@@ -29,6 +45,7 @@
   --pobo-typo-list-margin: 0 0 20px 0;
   --pobo-typo-list-item-padding: 0;
   --pobo-typo-list-item-margin: 0 0 10px 0;
+  --pobo-typo-list-item-style: square;
 
   --pobo-link-color: #0c0c0c;
   --pobo-link-hover-color: #0c0c0c;
@@ -72,11 +89,12 @@
 
   --pobo-review-font-family: Roboto, sans-serif;
 
-  --pobo-global-widget-padding: 20px 0;
-  --pobo-global-widget-margin: 20px 0;
+  --pobo-global-widget-padding: 25px 0;
+  --pobo-global-widget-margin: 1px ;
+  --pobo-global-widget-max-width: 1200px;
 
-  --pobo-widget-container-author-bg: #fafafa;
-  --pobo-widget-container-author-border-color: #f8f8f8;
+  --pobo-widget-container-author-bg: transparent;
+  --pobo-widget-container-author-border-color: transparent;
 
   --pobo-inline-content-image-width: 70px;
   --pobo-inline-content-image-max-width: 80px;
@@ -330,7 +348,7 @@
   --pobo-image-overlay-bg-opacity: 0.06;
   --pobo-image-overlay-font-family: "Tahoma, sans-serif";
 
-  --pobo-text-in-image-bg: #eeeeee;
+  --pobo-text-in-image-bg: transparent;
   --pobo-text-in-image-border: none;
   --pobo-text-in-image-box-shadow: none;
   --pobo-text-in-image-overlay-bg: rgba(0, 0, 0, 0.62);
@@ -661,7 +679,7 @@
 
   --pobo-interview-photo-bg: #fff;
   --pobo-interview-photo-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
-  --pobo-interview-photo-border-radius: 5px;
+  --pobo-interview-photo-border-radius: 15px;
   --pobo-interview-photo-border: none;
   --pobo-interview-photo-padding: 0;
 
@@ -751,7 +769,7 @@
   --pobo-author-top-wrap-padding: 50px 20px 60px 20px;
   --pobo-author-top-wrap-margin: 0;
   --pobo-author-top-wrap-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
-  --pobo-author-top-wrap-border-radius: 5px;
+  --pobo-author-top-wrap-border-radius: 15px;
 
   --pobo-author-top-info-gap: 20px;
   --pobo-author-top-info-photo-size: 120px;
@@ -876,7 +894,6 @@
   --pobo-infobox-warning-padding: 15px;
   --pobo-infobox-warning-background: #ffe3e3;
   --pobo-infobox-warning-border: 1px solid #ffb8b8;
-  --pobo-infobox-warning-margin: 20px 0;
   --pobo-infobox-warning-box-shadow: 0 0 4px #ff9090;
   --pobo-infobox-warning-border-radius: 4px;
   --pobo-infobox-warning-color: #721c24;
@@ -968,7 +985,6 @@
   --pobo-review-one-number-line-height: 0.8;
   --pobo-review-one-number-font-weight: bold;
 
-  --pobo-success-one-padding: 20px 0;
   --pobo-success-one-box-shadow: 0 0 4px #93d8a6;
   --pobo-success-one-border-radius: 4px;
   --pobo-success-one-ico-background: url("https://pobo-cdn.b-cdn.net/widget/like.png") no-repeat;
@@ -999,7 +1015,6 @@
   --pobo-userwidget-info-text-h3-font-size: 27px;
   --pobo-userwidget-info-text-p-font-size: 19px;
 
-  --pobo-warning-one-padding: 20px 0;
   --pobo-warning-one-box-shadow: 0 0 4px #ff7474;
   --pobo-warning-one-border-radius: 4px;
   --pobo-warning-one-ico-background:  url("https://pobo-cdn.b-cdn.net/widget/x-ico.png") no-repeat;
@@ -1016,6 +1031,20 @@
   --pobo-warning-one-content-title-color: #6c0000;
   --pobo-warning-one-content-text-font-size: 15px;
   --pobo-warning-one-content-text-line-height: 20px;
+
+  --pobo-carousel-container-padding: 20px 50px;
+  --pobo-carousel-container-margin: 0;
+
+  --pobo-carousel-inner-border: 1px solid #eeeeee;
+  --pobo-carousel-inner-border-radius: 5px;
+  --pobo-carousel-inner-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  --pobo-carousel-inner-trigger-bg-image: #FFF url("https://www.svgrepo.com/show/432461/double-arrow-right.svg") no-repeat 50% 50%;
+  --pobo-carousel-inner-trigger-border: 1px solid #eeeeee;
+  --pobo-carousel-inner-trigger-size: 40px;
+
+  --pobo-carousel-item-prouct-bg: #fff;
+  --pobo-carousel-item-prouct-padding: 20px;
+  --pobo-carousel-item-prouct-count: 4.5;
 
 }
 

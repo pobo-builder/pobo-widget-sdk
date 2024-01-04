@@ -1,19 +1,21 @@
 body {
-  &.pobo-active-full-width {
-    #pobo-standard-widget,
-    #pobo-share-widget {
-      font-family: var(--pobo-review-font-family);
+  #pobo-standard-widget,
+  #pobo-share-widget {
+    font-family: var(--pobo-review-font-family);
 
-      .widget-container {
-        position: relative;
+    .widget-container {
+      position: relative;
+      padding: var(--pobo-global-widget-padding);
+      margin: var(--pobo-global-widget-margin);
 
-        & > div {
-          max-width: 1000px;
-          margin: 20px auto;
-          padding: 10px 0;
-        }
+      & > div {
+        max-width: var(--pobo-global-widget-max-width);
+        margin: 0 auto;
       }
     }
+  }
+
+  &.pobo-active-full-width {
 
     // Todo nastavit tridu z HTML -> poslat request na export popisku
     [data-pobo-widget-id="92"],

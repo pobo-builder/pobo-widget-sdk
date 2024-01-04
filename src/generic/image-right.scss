@@ -1,12 +1,7 @@
-@import "node_modules/bootstrap/scss/_functions.scss";
-@import "node_modules/bootstrap/scss/_variables.scss";
-@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
-
 .rc-image-right {
   display: flex;
   align-items: center;
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
+
   background: var(--pobo-image-bg);
   box-shadow: var(--pobo-image-box-shadow);
   border: var(--pobo-image-border-color);

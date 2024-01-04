@@ -1,6 +1,4 @@
 .rc-parameter-small-right {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -26,8 +24,6 @@
 
 
 .rc-parameter-small-left {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -52,8 +48,6 @@
 }
 
 .rc-parameter-big-left {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
   align-items: center;
 
   @include media-breakpoint-up(sm) {
@@ -77,8 +71,6 @@
 }
 
 .rc-parameter-big-right {
-  padding: var(--pobo-global-widget-padding);
-  margin: var(--pobo-global-widget-margin);
   align-items: center;
 
   @include media-breakpoint-up(sm) {
