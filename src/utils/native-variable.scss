@@ -15,7 +15,7 @@
   --pobo-typo-h2-before-height: 2px;
   --pobo-typo-h2-before-bg: #eaeaea;
 
-  --pobo-typo-h3-font-size: 20px;
+  --pobo-typo-h3-font-size: 22px;
   --pobo-typo-h3-line-height: 25px;
   --pobo-typo-h3-font-weight: 600;
   --pobo-typo-h3-font-color: #0c0c0c;
@@ -29,8 +29,8 @@
   --pobo-typo-h3-before-height: 2px;
   --pobo-typo-h3-before-bg: #eaeaea;
 
-  --pobo-typo-h4-font-size: 15px;
-  --pobo-typo-h4-line-height: 20px;
+  --pobo-typo-h4-font-size: 20px;
+  --pobo-typo-h4-line-height: 24px;
   --pobo-typo-h4-font-weight: 600;
   --pobo-typo-h4-font-color: #0c0c0c;
   --pobo-typo-h4-padding: 0;
@@ -42,10 +42,11 @@
   --pobo-typo-p-margin: 0 0 20px 0;
 
   --pobo-typo-list-padding: 0;
-  --pobo-typo-list-margin: 0 0 20px 0;
+  --pobo-typo-list-margin: 0 0 20px 20px;
   --pobo-typo-list-item-padding: 0;
+  --pobo-typo-list-item-font-size: 18px;
   --pobo-typo-list-item-margin: 0 0 10px 0;
-  --pobo-typo-list-item-style: square;
+  --pobo-typo-list-item-style: auto;
 
   --pobo-link-color: #0c0c0c;
   --pobo-link-hover-color: #0c0c0c;
@@ -62,6 +63,7 @@
   --pobo-gallery-img-bg: none;
   --pobo-gallery-img-margin: 0px;
 
+  --pobo-gallery-image-title-text-align: center;
   --pobo-gallery-image-title-font-size: 13px;
   --pobo-gallery-image-title-line-height: 15px;
   --pobo-gallery-image-title-font-weight: 300;

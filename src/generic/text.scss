@@ -2,7 +2,7 @@
   &__image-title {
     display: block;
     width: 100%;
-    text-align: center;
+    text-align: var(--pobo-gallery-image-title-text-align);
     font-size: var(--pobo-gallery-image-title-font-size);
     line-height: var(--pobo-gallery-image-title-line-height);
     margin: var(--pobo-gallery-image-title-margin);
