@@ -1,13 +1,13 @@
 {
   "name": "widget-skeleton",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "watch:standalone": "npx parcel index.html -p 8088 --dist-dir dist",
     "watch:generic": "npx parcel generic.html -p 8087 --dist-dir dist",
-    "build": "npx parcel build src/editor.scss --no-source-maps --dist-dir build",
+    "build": "npx parcel build src/editor.scss src/generic.scss --no-source-maps --dist-dir build",
     "proxy": "ngrok http 8088"
   },
   "engines": {
