@@ -1,0 +1,17 @@
+.rc-header-text {
+  text-align: center;
+
+  &__header {
+    font-size: var(--pobo-header-text-font-size);
+    padding: var(--pobo-header-text-padding);
+    margin: var(--pobo-header-text-margin);
+  }
+
+  &__text {
+    font-size: var(--pobo-header-text-inner-font-size);
+    padding: var(--pobo-header-text-inner-padding);
+    margin: var(--pobo-header-text-inner-margin);
+    line-height: var(--pobo-header-text-inner-line-height);
+    display: block;
+  }
+}

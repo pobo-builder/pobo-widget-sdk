@@ -1,0 +1,27 @@
+.rc-dynamic-gallery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrap {
+    padding: var(--pobo-dynamic-gallery-wrap-padding);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+    grid-gap: var(--pobo-dynamic-gallery-wrap-grid-gap);
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    }
+
+  }
+
+  &__photo {
+    width: var(--pobo-dynamic-gallery-photo-size);
+    height: var(--pobo-dynamic-gallery-photo-size);
+    object-fit: cover;
+    max-height: var(--pobo-dynamic-gallery-photo-max-height);
+    object-position: center center;
+  }
+}

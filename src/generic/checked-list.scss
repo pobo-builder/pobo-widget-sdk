@@ -1,0 +1,28 @@
+.checked-list {
+  max-width: var(--pobo-checked-list-max-width);
+
+  .li {
+    padding: var(--pobo-checked-list-li-padding);
+    position: relative;
+    margin: var(--pobo-checked-list-li-margin);
+    list-style: none;
+    line-height: var(--pobo-checked-list-li-line-height);
+    font-size: var(--pobo-checked-list-li-font-size);
+
+    &:before {
+      position: absolute;
+      left: var(--pobo-checked-list-li-left);
+      top: var(--pobo-checked-list-li-top);
+      width: var(--pobo-checked-list-li-size);
+      content: "";
+      height: var(--pobo-checked-list-li-size);
+      background: var(--pobo-checked-list-li-background)
+    }
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}

@@ -1,0 +1,45 @@
+body {
+  #pobo-standard-widget,
+  #pobo-share-widget {
+    font-family: var(--pobo-review-font-family);
+
+    .widget-container {
+      position: relative;
+      padding: var(--pobo-global-widget-padding);
+      margin: var(--pobo-global-widget-margin);
+
+      & > div {
+        max-width: var(--pobo-global-widget-max-width);
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &.pobo-active-full-width {
+
+    // Todo nastavit tridu z HTML -> poslat request na export popisku
+    [data-pobo-widget-id="92"],
+    [data-pobo-widget-id="93"]
+    {
+      background: var(--pobo-image-overlay-bg);
+
+      & > div {
+        padding: 0;
+      }
+    }
+
+
+    [data-pobo-widget-id="84"],
+    [data-pobo-widget-id="85"],
+    [data-pobo-widget-id="77"]
+    {
+      background: var(--pobo-widget-container-author-bg);
+      border-bottom: 1px solid var(--pobo-widget-container-author-border-color);
+      border-top: 1px solid var(--pobo-widget-container-author-border-color);
+
+      & > div {
+        padding: 0;
+      }
+    }
+  }
+}

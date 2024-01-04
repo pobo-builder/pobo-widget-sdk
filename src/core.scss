@@ -1,3 +1,86 @@
 @import "node_modules/bootstrap/scss/_functions.scss";
 @import "node_modules/bootstrap/scss/_variables.scss";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+@mixin typo {
+  p {
+    font-size: var(--pobo-typo-p-font-size);
+    line-height: var(--pobo-typo-p-line-height);
+    padding: var(--pobo-typo-p-padding);
+    margin: var(--pobo-typo-p-margin);
+  }
+
+  ul,
+  ol {
+    padding: var(--pobo-typo-list-padding);
+    margin: var(--pobo-typo-list-margin);
+
+    li {
+      padding: var(--pobo-typo-list-item-padding);
+      margin: var(--pobo-typo-list-item-margin);
+      list-style: var(--pobo-typo-list-item-style);
+    }
+  }
+
+  a:not(.btn, .rc-image-right-overlay__link, .rc-image-left-overlay__link) {
+    color: var(--pobo-link-color);
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--pobo-link-hover-color);
+    }
+  }
+
+
+  h2:not(.rc-header-text__header) {
+    font-size: var(--pobo-typo-h2-font-size);
+    line-height: var(--pobo-typo-h2-line-height);
+    font-weight: var(--pobo-typo-h2-font-weight);
+    color: var(--pobo-typo-h2-font-color);
+    padding: var(--pobo-typo-h2-padding);
+    margin: var(--pobo-typo-h2-margin);
+    position: relative;
+    z-index: 2;
+
+    &:before {
+      position: absolute;
+      content: var(--pobo-typo-h2-before-content);
+      bottom: var(--pobo-typo-h2-before-bottom);
+      left: var(--pobo-typo-h2-before-left);
+      width: var(--pobo-typo-h2-before-width);
+      height: var(--pobo-typo-h2-before-height);
+      background: var(--pobo-typo-h2-before-bg);
+    }
+  }
+
+  h3 {
+    font-size: var(--pobo-typo-h3-font-size);
+    line-height: var(--pobo-typo-h3-line-height);
+    font-weight: var(--pobo-typo-h3-font-weight);
+    color: var(--pobo-typo-h3-font-color);
+    padding: var(--pobo-typo-h3-padding);
+    margin: var(--pobo-typo-h3-margin);
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: var(--pobo-typo-h3-before-content);
+      bottom: var(--pobo-typo-h3-before-bottom);
+      left: var(--pobo-typo-h3-before-left);
+      width: var(--pobo-typo-h3-before-width);
+      height: var(--pobo-typo-h3-before-height);
+      background: var(--pobo-typo-h3-before-bg);
+    }
+  }
+
+  h4 {
+    font-size: var(--pobo-typo-h4-font-size);
+    line-height: var(--pobo-typo-h4-line-height);
+    font-weight: var(--pobo-typo-h4-font-weight);
+    color: var(--pobo-typo-h4-font-color);
+    padding: var(--pobo-typo-h4-padding);
+    margin: var(--pobo-typo-h4-margin);
+  }
+}

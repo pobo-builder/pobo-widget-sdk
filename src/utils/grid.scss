@@ -1,6 +1,6 @@
-@import "grid/row";
-@import "grid/col";
-@import "grid/flex";
+@import "../grid/row";
+@import "../grid/col";
+@import "../grid/flex";
 
 $columns: 12;
 $gutter: 30px;

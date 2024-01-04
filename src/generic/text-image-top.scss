@@ -1,0 +1,59 @@
+.rc-text-image-top {
+  position: relative;
+  border: var(--pobo-text-in-image-border);
+  box-shadow: var(--pobo-text-in-image-box-shadow);
+  background: var(--pobo-text-in-image-bg);
+
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__background {
+    padding: var(--pobo-text-in-image-single-content-padding);
+    background-color: var(--pobo-text-in-image-overlay-bg);
+    backdrop-filter: var(--pobo-text-in-image-single-content-background);
+
+    @include media-breakpoint-down(sm) {
+      padding: 20px;
+    }
+  }
+
+  &__header {
+    color: var(--pobo-text-in-image-single-header-font-color);
+    line-height: var(--pobo-text-in-image-single-header-line-height);
+    font-weight: var(--pobo-text-in-image-single-header-font-weight);
+    font-size: var(--pobo-text-in-image-single-header-font-size);
+    padding: var(--pobo-text-in-image-single-header-padding);
+    margin: var(--pobo-text-in-image-single-header-margin);
+    text-shadow: var(--pobo-text-in-image-single-header-text-shadow);
+
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    font-size: var(--pobo-text-in-image-single-text-font-size);
+    line-height: var(--pobo-text-in-image-single-text-line-height);
+    font-weight: var(--pobo-text-in-image-single-text-font-weight);
+    color: var(--pobo-text-in-image-single-text-font-color);
+    padding: var(--pobo-text-in-image-single-text-padding);
+    margin: var(--pobo-text-in-image-single-text-margin);
+    text-shadow: var(--pobo-text-in-image-single-text-text-shadow);
+
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}

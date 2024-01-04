@@ -1,0 +1,86 @@
+.rc-rating-two {
+  width: 100%;
+  box-shadow: var(--pobo-rating-two-box-shadow);
+  border-radius: var(--pobo-rating-two-border-radius);
+  background: var(--pobo-rating-two-bg);
+  border: var(--pobo-rating-two-border);
+  gap: var(--pobo-rating-two-gap);
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+  }
+
+  &__list {
+    padding: var(--pobo-rating-two-list-padding);
+    margin: var(--pobo-rating-two-list-margin);
+    list-style-type: none;
+  }
+
+  &__list-item {
+    position: relative;
+    padding: var(--pobo-rating-two-list-item-padding);
+    margin: var(--pobo-rating-two-list-item-margin);
+    font-size: var(--pobo-rating-two-list-item-font-size);
+    line-height: var(--pobo-rating-two-list-item-line-height);
+    color: var(--pobo-rating-two-list-item-font-color);
+    font-weight: var(--pobo-rating-two-list-item-font-weight);
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 6px;
+      width: var(--pobo-rating-two-list-item-after-size);
+      height: var(--pobo-rating-two-list-item-after-size);
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &__header {
+    padding: var(--pobo-rating-two-header-padding);
+    margin: var(--pobo-rating-two-header-margin);
+    font-size: var(--pobo-rating-two-header-font-size);
+    line-height: var(--pobo-rating-two-header-line-height);
+    color: var(--pobo-rating-two-header-font-color);
+    font-weight: var(--pobo-rating-two-header-font-weight);
+  }
+
+  &__list-item--plus {
+    &:after {
+      background: var(--pobo-rating-two-list-item-plus);
+    }
+  }
+
+  &__list-item--minus {
+    &:after {
+      background: var(--pobo-rating-two-list-item-minus);
+    }
+  }
+
+  &__pros {
+    @include media-breakpoint-down(sm) {
+      margin: 50px 0 0 0;
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+  }
+
+  &__const,
+  &__pros {
+    padding: var(--pobo-rating-two-box-padding);
+    margin: var(--pobo-rating-two-box-margin);
+    background: var(--pobo-rating-two-const-bg);
+    border: var(--pobo-rating-two-box-border-color);
+    border-radius: var(--pobo-rating-two-box-border-radius);
+    box-shadow: var(--pobo-rating-two-box-box-shadow);
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+  }
+}

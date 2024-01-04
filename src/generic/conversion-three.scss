@@ -1,0 +1,49 @@
+.rc-conversion-three {
+  background: var(--pobo-conversion-three-bg);
+  border: var(--pobo-conversion-three-border);
+  box-shadow: var(--pobo-conversion-three-box-shadow);
+  border-radius: var(--pobo-conversion-three-border-radius);
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    width: calc(100% + 20px);
+  }
+
+  &__item {
+    text-align: center;
+    margin: var(--pobo-conversion-three-item-margin);
+    padding: var(--pobo-conversion-three-item-padding);
+
+    @include media-breakpoint-up(sm) {
+      width: calc(100% / 3);
+    }
+  }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    width: var(--pobo-conversion-three-count-width);
+    height: var(--pobo-conversion-three-count-height);
+    border-radius: var(--pobo-conversion-three-count-border-radius);
+    box-shadow: var(--pobo-conversion-three-count-box-shadow);
+    border: var(--pobo-conversion-three-count-border);
+    font-size: var(--pobo-conversion-three-count-font-size);
+    font-weight: var(--pobo-conversion-three-count-font-weight);
+    font-family: var(--pobo-review-font-family);
+    color: var(--pobo-conversion-three-count-font-color);
+    background: var(--pobo-conversion-three-count-bg);
+  }
+
+  &__title {
+    display: block;
+    color: var(--pobo-conversion-three-title-font-color);
+    font-size: var(--pobo-conversion-three-title-font-size);
+    line-height: var(--pobo-conversion-three-title-line-height);
+    font-weight: var(--pobo-conversion-three-title-font-weight);
+    margin: var(--pobo-conversion-three-title-margin);
+    padding: var(--pobo-conversion-three-title-padding);
+  }
+}

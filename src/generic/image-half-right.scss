@@ -1,0 +1,44 @@
+.rc-image-half-right {
+  display: flex;
+  align-items: center;
+  background: var(--pobo-image-bg);
+  box-shadow: var(--pobo-image-box-shadow);
+  border: var(--pobo-image-border-color);
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    padding: var(--pobo-image-padding-sm);
+  }
+
+  &__image {
+    width: var(--pobo-image-photo-width);
+    padding: var(--pobo-image-text-padding);
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    width: var(--pobo-image-text-width);
+    padding: var(--pobo-image-photo-padding);
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    padding: var(--pobo-image-img-padding);
+    margin: var(--pobo-image-img-margin);
+    border-radius: var(--pobo-image-img-border-radius);
+    box-shadow: var(--pobo-image-img-box-shadow);
+    border: var(--pobo-image-img-border-color);
+  }
+}

@@ -1,0 +1,27 @@
+#pobo-all-content {
+  font-family: var(--pobo-font-family);
+
+  .widget-typography {
+    @include typo();
+  }
+
+  .widget-gallery {
+    background: var(--pobo-gallery-bg);
+    box-shadow: var(--pobo-gallery-box-shadow);
+    border-radius: var(--pobo-gallery-border-radius);
+    border: var(--pobo-gallery-border);
+
+    a {
+      display: block;
+
+      img {
+        border: var(--pobo-gallery-img-border);
+        border-radius: var(--pobo-gallery-img-border-radius);
+        box-shadow: var(--pobo-gallery-img-box-shadow);
+        padding: var(--pobo-gallery-img-padding);
+        background: var(--pobo-gallery-img-bg);
+        margin: var(--pobo-gallery-img-margin);
+      }
+    }
+  }
+}
