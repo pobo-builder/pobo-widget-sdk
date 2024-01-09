@@ -1046,6 +1046,41 @@
   --pobo-carousel-item-prouct-padding: 20px;
   --pobo-carousel-item-prouct-count: 4.5;
 
+  --pobo-gallery-modal-blur: blur(4px);
+  --pobo-gallery-modal-background-color: hsla(0, 0%, 0%, 0.5);
+  --pobo-gallery-modal-top: 0;
+  --pobo-gallery-modal-bottom: 0;
+  --pobo-gallery-modal-width: 100%;
+  --pobo-gallery-modal-height: 100%;
+
+  --pobo-gallery-modal-close-width: 50px;
+  --pobo-gallery-modal-close-height: 50px;
+  --pobo-gallery-modal-close-right: 10px;
+  --pobo-gallery-modal-close-top: 10px;
+  --pobo-gallery-modal-close-font-size: 50px;
+  --pobo-gallery-modal-close-line-height: 50px;
+  --pobo-gallery-modal-close-border-radius: 50%;
+  --pobo-gallery-modal-close-color: white;
+
+  --pobo-gallery-modal-image-width: 100vw;
+  --pobo-gallery-modal-image-height: calc(100vh - 200px);
+  --pobo-gallery-modal-image-padding: 10px;
+
+  --pobo-gallery-modal-image-small-gap: 20px;
+  --pobo-gallery-modal-image-small-width: 90%;
+  --pobo-gallery-modal-image-small-margin: 0 auto;
+  --pobo-gallery-modal-image-small-height: 200px;
+
+  --pobo-gallery-modal-image-item-width: 100px;
+  --pobo-gallery-modal-image-item-height: 100px;
+  --pobo-gallery-modal-image-item-border-radius: 20px;
+  --pobo-gallery-modal-image-item-flex-shrink: 0px;
+
+  --pobo-gallery-modal-img-max-width: 100%;
+  --pobo-gallery-modal-img-max-height: 100%;
+  --pobo-gallery-modal-img-width: auto;
+  --pobo-gallery-modal-img-height: auto;
+  --pobo-gallery-modal-img-box-shadow: 0 0 10px 10px #00000014;
 }
 
 
