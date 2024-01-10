@@ -1,0 +1,67 @@
+.pb-gallery-modal {
+  position: fixed;
+  top: var(--pobo-gallery-modal-top);
+  left: var(--pobo-gallery-modal-bottom);
+  width: var(--pobo-gallery-modal-width);
+  height: var(--pobo-gallery-modal-height);
+  z-index: 2147483640;
+  backdrop-filter: var(--pobo-gallery-modal-blur);
+  background-color: var(--pobo-gallery-modal-background-color);
+
+  &__close {
+    position: fixed;
+    z-index: 2147483641;
+    width: var(--pobo-gallery-modal-close-width);
+    height: var(--pobo-gallery-modal-close-height);
+    right: var(--pobo-gallery-modal-close-right);
+    top: var(--pobo-gallery-modal-close-top);
+    font-size: var(--pobo-gallery-modal-close-font-size);
+    line-height: var(--pobo-gallery-modal-close-line-height);
+    border-radius: var(--pobo-gallery-modal-close-border-radius);
+    color: var(--pobo-gallery-modal-close-color);
+    text-align: center;
+  }
+
+  &__image {
+    width: var(--pobo-gallery-modal-image-width);
+    height: var(--pobo-gallery-modal-image-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--pobo-gallery-modal-image-padding);
+  }
+
+  &__image-small{
+    position: relative;
+    display: flex;
+    gap:var(--pobo-gallery-modal-image-small-gap);
+    overflow-y: scroll;
+    width: var(--pobo-gallery-modal-image-small-width);
+    scrollbar-width: none;
+    margin: var(--pobo-gallery-modal-image-small-margin);
+    height: var(--pobo-gallery-modal-image-small-height);
+    align-items: safe center;
+    justify-content: safe center;
+
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+
+  &__image-item{
+    width: var(--pobo-gallery-modal-image-item-width);
+    height: var(--pobo-gallery-modal-image-item-height);
+    object-fit: cover;
+    border-radius: var(--pobo-gallery-modal-image-item-border-radius);
+    flex-shrink: var(--pobo-gallery-modal-image-item-flex-shrink);
+    cursor: pointer;
+  }
+
+  &__img {
+    max-width: var(--pobo-gallery-modal-img-max-width);
+    max-height: var(--pobo-gallery-modal-img-max-height);
+    width: var(--pobo-gallery-modal-img-width);
+    height: var(--pobo-gallery-modal-img-height);
+    box-shadow: var(--pobo-gallery-modal-img-box-shadow);
+  }
+}
