@@ -33,10 +33,15 @@
 
   &__text {
     width: calc(100% - 35%);
-    padding: 0 0 0 30px;
+    background: var(--pobo-image-left-box-bg);
+    text-align: var(--pobo-image-left-text-align);
+    padding: var(--pobo-image-left-padding);
+    margin: var(--pobo-image-left-margin);
+    border-radius: var(--pobo-image-left-border-radius);
+    position: relative;
+    z-index: 1;
 
     @include media-breakpoint-down(sm) {
-      padding: 10px 0;
       flex: 0 0 100%;
       max-width: 100%;
       order: 1;

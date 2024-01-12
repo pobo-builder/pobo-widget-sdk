@@ -14,6 +14,8 @@
     align-items: center;
     border-radius: var(--pobo-author-above-wrap-border-radius);
     box-shadow: var(--pobo-author-above-wrap-box-shadow);
+    background: var(--pobo-author-above-wrap-bg);
+    margin: var(--pobo-author-above-wrap-margin);
   }
 
   &__wrap-img {

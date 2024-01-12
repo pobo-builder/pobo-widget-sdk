@@ -8,11 +8,7 @@ $element: ".rc-counter";
   border: var(--pobo-counter-border);
   box-shadow: var(--pobo-counter-box-shadow);
   background: var(--pobo-counter-bg);
-
-
-  @include media-breakpoint-down(sm) {
-    padding: 10px 0;
-  }
+  padding: var(--pobo-counter-padding);
 
   &__img {
     width: 100%;

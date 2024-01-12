@@ -108,6 +108,7 @@
   }
 
   &__header-left {
+    text-align: var(--pobo-parameter-header-left-align);
     font-size: var(--pobo-parameter-header-left-font-size);
     margin: var(--pobo-parameter-header-left-margin);
     padding: var(--pobo-parameter-header-left-padding);
@@ -115,7 +116,7 @@
   }
 
   &__header-right {
-    text-align: right;
+    text-align: var(--pobo-parameter-header-text-align);
     font-size: var(--pobo-parameter-header-font-size);
     color: var(--pobo-parameter-header-font-color);
     font-weight: var(--pobo-parameter-header-font-weight);
@@ -187,6 +188,10 @@
 
   &__box-small-left-parameter-icon {
     width: 50px;
+
+    @include media-breakpoint-down(md) {
+      order: 1;
+    }
   }
 
   &__box-small-left-icon-img {
@@ -208,6 +213,11 @@
   &__box-small-left-content {
     width: calc(100% - 50px);
     padding: 0 15px 0 0;
+
+    @include media-breakpoint-down(md) {
+      order: 2;
+      padding: 0 0 0 15px;
+    }
   }
 
   &__box-small-left-content-text {
@@ -215,21 +225,26 @@
     text-align: right;
     font-size: var(--pobo-parameter-small-value-font-size);
     color: var(--pobo-parameter-small-value-font-color);
-    // todo predat dale
     font-weight: var(--pobo-parameter-small-value-font-weight);
     margin: var(--pobo-parameter-small-value-margin);
     padding: var(--pobo-parameter-small-value-padding);
+
+    @include media-breakpoint-down(md) {
+      text-align: left;
+    }
   }
 
   &__box-small-left-content-value {
     display: block;
     text-align: right;
-    // todo predat do dalsich variant
     font-size: var(--pobo-parameter-small-info-font-size);
     color: var(--pobo-parameter-small-info-font-color);
     font-weight: var(--pobo-parameter-small-info-font-weight);
     margin: var(--pobo-parameter-small-info-margin);
 
+    @include media-breakpoint-down(md) {
+      text-align: left;
+    }
   }
 
 

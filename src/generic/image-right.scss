@@ -1,7 +1,6 @@
 .rc-image-right {
   display: flex;
   align-items: center;
-
   background: var(--pobo-image-bg);
   box-shadow: var(--pobo-image-box-shadow);
   border: var(--pobo-image-border-color);
@@ -32,11 +31,16 @@
 
   &__text {
     width: calc(100% - 35%);
-    padding: 0 30px 0 0;
+    background: var(--pobo-image-right-box-bg);
+    text-align: var(--pobo-image-right-text-align);
+    padding: var(--pobo-image-right-padding);
+    margin: var(--pobo-image-right-margin);
+    border-radius: var(--pobo-image-right-border-radius);
+    position: relative;
+    z-index: 1;
 
     @include media-breakpoint-down(sm) {
       width: 100%;
-      padding: 10px 0;
     }
   }
 }
