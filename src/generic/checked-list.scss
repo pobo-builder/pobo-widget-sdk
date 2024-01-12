@@ -1,5 +1,6 @@
 .checked-list {
   max-width: var(--pobo-checked-list-max-width);
+  padding: var(--pobo-checked-list-padding);
 
   .li {
     padding: var(--pobo-checked-list-li-padding);

@@ -26,13 +26,18 @@
 
   &__text {
     width: var(--pobo-image-text-width);
-    padding: var(--pobo-image-text-padding);
+    background: var(--pobo-image-left-box-bg);
+    text-align: var(--pobo-image-left-text-align);
+    padding: var(--pobo-image-left-padding);
+    margin: var(--pobo-image-left-margin);
+    border-radius: var(--pobo-image-left-border-radius);
+    position: relative;
+    z-index: 1;
 
     @include media-breakpoint-down(sm) {
       flex: 0 0 100%;
       max-width: 100%;
       order: 1;
-      padding: 0;
     }
   }
 

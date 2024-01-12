@@ -17,6 +17,13 @@
     overflow: hidden;
     z-index: -2;
     height: 100%;
+
+
+    @include media-breakpoint-down(sm) {
+      height: var(--pobo-text-in-image-single-img-height);
+      object-fit: cover;
+      width: 100vw;
+    }
   }
 
   &__header {
@@ -27,10 +34,6 @@
     padding: var(--pobo-text-in-image-single-header-padding);
     margin: var(--pobo-text-in-image-single-header-margin);
     text-shadow: var(--pobo-text-in-image-single-header-text-shadow);
-
-    @include media-breakpoint-down(sm) {
-      font-size: 20px;
-    }
   }
 
   &__info {
@@ -41,11 +44,6 @@
     padding: var(--pobo-text-in-image-single-text-padding);
     margin: var(--pobo-text-in-image-single-text-margin);
     text-shadow: var(--pobo-text-in-image-single-text-text-shadow);
-
-    @include media-breakpoint-down(sm) {
-      font-size: 14px;
-      line-height: 18px;
-    }
   }
 
   &__content {

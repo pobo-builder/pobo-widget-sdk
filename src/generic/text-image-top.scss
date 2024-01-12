@@ -15,10 +15,6 @@
     padding: var(--pobo-text-in-image-single-content-padding);
     background-color: var(--pobo-text-in-image-overlay-bg);
     backdrop-filter: var(--pobo-text-in-image-single-content-background);
-
-    @include media-breakpoint-down(sm) {
-      padding: 20px;
-    }
   }
 
   &__header {
@@ -29,11 +25,6 @@
     padding: var(--pobo-text-in-image-single-header-padding);
     margin: var(--pobo-text-in-image-single-header-margin);
     text-shadow: var(--pobo-text-in-image-single-header-text-shadow);
-
-
-    @include media-breakpoint-down(sm) {
-      font-size: 20px;
-    }
   }
 
   &__text {
@@ -44,16 +35,16 @@
     padding: var(--pobo-text-in-image-single-text-padding);
     margin: var(--pobo-text-in-image-single-text-margin);
     text-shadow: var(--pobo-text-in-image-single-text-text-shadow);
-
-
-    @include media-breakpoint-down(sm) {
-      font-size: 14px;
-      line-height: 18px;
-    }
   }
 
   &__img {
     max-width: 100%;
-    height: auto;
+    height: var(--pobo-text-in-image-single-img-height);
+
+    @include media-breakpoint-down(sm) {
+      height: var(--pobo-text-in-image-single-img-height);
+      object-fit: cover;
+      width: 100vw;
+    }
   }
 }
