@@ -1,3 +1,13 @@
+# Generické šablony (POC)
+
+Tento repozitář obsahuje generické šablony pro widgety v Pobo Page Builder.
+
+Changelog verze:
+
+- [2.0.2](version/2.0.2.md) - Add background color variable 
+- [2.0.1](version/2.0.1.md) - Add mobile variable support
+- [2.0.0](version/2.0.0.md) - First version
+
 # Vytváření widgetu v Pobo Page Builder
 
 Tento repozitář slouží především pro klienty doplňku Pobo Page Builder, kteří si
