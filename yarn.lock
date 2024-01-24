@@ -1846,6 +1846,11 @@ sass@^1.38.0:
     immutable "^4.0.0"
     source-map-js ">=0.6.2 <2.0.0"
 
+scroll-dom-animation@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/scroll-dom-animation/-/scroll-dom-animation-1.0.9.tgz#b2e8c997aa4b2202046d1619e3b677834a584a4c"
+  integrity sha512-i7jZZ3ZMBL9kdHXK6gWM3VPcYRP7lzLL/aHnK/xjPWbqWuOQz4wMSgy5J92Ulg6fS65HauucQq13QNfJX2k5uA==
+
 semver@^7.5.2:
   version "7.5.4"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
