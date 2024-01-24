@@ -11,6 +11,10 @@
     }
   }
 
+  tr:nth-child(even) {
+    background: var(--pobo-standard-table-tr-even-bg);
+  }
+
   td {
     padding: var(--pobo-standard-table-td-padding);
     font-size: var(--pobo-standard-table-td-font-size);
