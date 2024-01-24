@@ -5,6 +5,7 @@
 @mixin typo {
   p {
     font-size: var(--pobo-typo-p-font-size);
+    color: var(--pobo-typo-p-font-color);
     line-height: var(--pobo-typo-p-line-height);
     padding: var(--pobo-typo-p-padding);
     margin: var(--pobo-typo-p-margin);
@@ -17,6 +18,7 @@
 
     li {
       font-size: var(--pobo-typo-list-item-font-size);
+      color: var(--pobo-typo-list-item-font-color);
       padding: var(--pobo-typo-list-item-padding);
       margin: var(--pobo-typo-list-item-margin);
       list-style: var(--pobo-typo-list-item-style);

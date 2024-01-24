@@ -41,6 +41,7 @@
   --pobo-typo-h4-margin: 0 0 20px 0;
 
   --pobo-typo-p-font-size: 18px;
+  --pobo-typo-p-font-color: #0c0c0c;
   --pobo-typo-p-line-height: 25px;
   --pobo-typo-p-padding: 0;
   --pobo-typo-p-margin: 0 0 20px 0;
@@ -49,8 +50,16 @@
   --pobo-typo-list-margin: 0 0 20px 20px;
   --pobo-typo-list-item-padding: 0;
   --pobo-typo-list-item-font-size: 18px;
+  --pobo-typo-list-item-font-color: #0c0c0c;
   --pobo-typo-list-item-margin: 0 0 10px 0;
   --pobo-typo-list-item-style: auto;
+
+  --pobo-standard-table-td-font-size: 14px;
+  --pobo-standard-table-td-font-color: #0c0c0c;
+  --pobo-standard-table-td-padding: 6px 2px;
+  --pobo-standard-table-tr-even-bg: #f6f6f6;
+  --pobo-standard-table-tr-border-bottom: 1px solid #dcdcdc;
+  --pobo-standard-table-tr-hover-bg: transparent;
 
   --pobo-link-color: #0c0c0c;
   --pobo-link-hover-color: #0c0c0c;
@@ -1024,6 +1033,7 @@
   --pobo-title-line-title-gap: 20px;
   --pobo-title-line-title-font-size: 25px;
   --pobo-title-line-title-line-height: 30px;
+  --pobo-title-line-title-before-border-top-color: 1px solid #3f3f3f;
 
   --pobo-userwidget-max-width: 990px;
   --pobo-userwidget-wrap-border: 1px solid rgb(158, 158, 158);

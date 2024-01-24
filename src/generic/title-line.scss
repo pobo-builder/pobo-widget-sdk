@@ -23,7 +23,7 @@
     &:before,
     &:after {
       content: '';
-      border-top: 2px solid black;
+      border-top: var(--pobo-title-line-title-before-border-top-color);
     }
   }
 }

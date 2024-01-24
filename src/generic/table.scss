@@ -4,10 +4,20 @@
   border-spacing: 0;
 
   tr {
-    border-bottom: 1px solid #dcdcdc;
+    border-bottom: var(--pobo-standard-table-tr-border-bottom);
+
+    &:hover {
+      background: var(--pobo-standard-table-tr-hover-bg);
+    }
+  }
+
+  tr:nth-child(even) {
+    background: var(--pobo-standard-table-tr-even-bg);
   }
 
   td {
-    padding: 6px 0;
+    padding: var(--pobo-standard-table-td-padding);
+    font-size: var(--pobo-standard-table-td-font-size);
+    color: var(--pobo-standard-table-td-font-color);
   }
 }

@@ -98,3 +98,7 @@
 @import "generic/plugin/carousel";
 @import "generic/plugin/gallery";
 @import "product-preview";
+
+.d-none {
+  display: none !important;
+}
