@@ -1,0 +1,66 @@
+.icons-dynamic{
+    width: 100%;
+    padding: 20px 0;
+    &__wrap{
+        width: 100%;
+        display: flex;
+        gap: 25px;
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+        }
+    }
+
+    &__icons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 50%;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            padding: 0 20px;
+        }
+    } 
+
+    &__text-wrap{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
+    }
+
+    &__icon{
+        width: calc(33.3333% - 10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon-img{
+        width: 90px;
+        height: 90px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        position: relative;
+    }
+
+    &__icon-title{
+        font-size: 17px;
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+
+    &__text{
+        line-height: 1.4;
+        @include media-breakpoint-down(md) {
+            padding: 0 20px;
+        }
+    }
+}
