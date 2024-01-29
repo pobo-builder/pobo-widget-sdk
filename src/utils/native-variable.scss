@@ -1122,6 +1122,41 @@
   --pobo-image-left-padding: 0 0 0 20px;
   --pobo-image-left-margin: 0;
   --pobo-image-left-border-radius: 0;
+
+  --pobo-three-dynamic-box-padding: 20px 5px;
+  --pobo-three-dynamic-box-gap: 10px;
+  --pobo-three-dynamic-box-item-width: calc(33.3333% - 10px);
+  --pobo-three-dynamic-box-item-background: rgba(0, 0, 0, 0.089);
+  --pobo-three-dynamic-box-item-radius: 10px;
+  --pobo-three-dynamic-box-item-padding: 13px 0px;
+  --pobo-three-dynamic-box-item-max-width: 400px;
+  --pobo-three-dynamic-box-item-md-width: calc(50% - 10px);
+  --pobo-three-dynamic-box-ico-wrap-width: 50px;
+  --pobo-three-dynamic-box-title-font-size: 16px;
+  --pobo-three-dynamic-box-title-margin: 0px;
+  --pobo-three-dynamic-box-title-padding: 0 10px;
+  --pobo-three-dynamic-box-title-weight: normal;
+  --pobo-three-dynamic-box-img-size: 30px;
+
+
+  --pobo-icons-dynamic-padding: 20px 0;
+  --pobo-icons-dynamic-max-width: 1350px;
+  --pobo-icons-dynamic-wrap-gap: 25px;
+  --pobo-icons-dynamic-icons-gap: 15px;
+  --pobo-icons-dynamic-icons-width: 50%;
+  --pobo-icons-dynamic-icons-md-width: 100%;
+  --pobo-icons-dynamic-icons-md-padding: 0 20px;
+  --pobo-icons-dynamic-text-wrap-width: 50%;
+  --pobo-icons-dynamic-text-wrap-md-width: 100%;
+  --pobo-icons-dynamic-icon-width: calc(33.3333% - 10px);
+  --pobo-icons-dynamic-icon-img-size: 90px;
+  --pobo-icons-dynamic-icon-title-font-size: 17px;
+  --pobo-icons-dynamic-icon-title-line-height: 1.4;
+  --pobo-icons-dynamic-icon-title-margin-bottom: 0;
+  --pobo-icons-dynamic-text-line-height: 1.4;
+  --pobo-icons-dynamic-text-md-padding: 0 20px;
+
+
 }
 
 

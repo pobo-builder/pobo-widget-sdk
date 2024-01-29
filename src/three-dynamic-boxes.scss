@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     padding: 20px 5px;
     gap: 10px;
+    justify-content: center;
     &__item{
         width: calc(33.3333% - 10px);
         display: flex;
@@ -11,6 +12,7 @@
         border-radius: 10px;
         align-items: center;
         padding: 13px 0;
+        max-width: 400px;
 
         @include media-breakpoint-down(md) {
             width: calc(50% - 10px);
