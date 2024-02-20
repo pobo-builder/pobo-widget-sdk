@@ -1,89 +1,110 @@
 @import "core";
 
-@import "utils/native-variable";
+
+@import "generative/widget-container";
+@import "generative/variables";
 @import "utils/container-resolver";
+@import "utils/native-variable";
 @import "utils/infobox";
+@import "generic/part/parameter-core";
+@import "generic/part/gallery-resolver";
 
 @import "generic/checked-list";
-@import "generic/header-text";
+@import "generic/rc-header-text";
 @import "generic/text";
 @import "generic/table";
-@import "generic/list";
-@import "generic/rating-two";
-@import "generic/conversion-three";
+@import "generic/rc-list";
+@import "generic/rc-rating-two";
+@import "generic/rc-conversion-three";
 @import "generic/checked-left-image";
 @import "generic/checked-right-image";
-@import "generic/text-image-top";
-@import "generic/rating-image-right";
-@import "generic/faq";
-@import "generic/user-with-image";
-@import "generic/info-box";
-@import "generic/profit";
-@import "generic/card-call-to-action";
+@import "generic/rc-text-image-top";
+@import "generic/rc-rating-image-right";
+@import "generic/pb-faq";
+@import "generic/pb-userwidget";
+@import "generic/rc-infobox";
+@import "generic/rc-profit";
+@import "generic/rc-card-call-to-action";
+@import "generic/pb-evaluation-two";
+@import "generic/rc-video-half-left";
+@import "generic/rc-video-half-right";
+@import "generic/rc-video-left";
+@import "generic/rc-video-right";
+
+@import "generic/rc-one-video";
+@import "generic/rc-two-videos";
+
+@import "generic/rc-gallery-one";
+@import "generic/rc-gallery-two";
+@import "generic/rc-gallery-three";
+@import "generic/rc-gallery-four";
 
 /**
   Advantages
 **/
-@import "generic/advantages-three";
-@import "generic/advantages-four";
-@import "generic/advantages-two";
+@import "generic/rc-advantages-three";
+@import "generic/rc-advantages-four";
+@import "generic/rc-advantages-two";
 
 /**
  Image left & right + text (above)
 **/
-@import "generic/image-half-right";
-@import "generic/image-half-left";
-@import "generic/image-right";
-@import "generic/image-left";
-@import "generic/image-right-overlay";
-@import "generic/image-left-overlay";
+@import "generic/rc-image-half-right";
+@import "generic/rc-image-half-left";
+@import "generic/rc-image-right";
+@import "generic/rc-image-left";
+@import "generic/rc-image-right-overlay";
+@import "generic/rc-image-left-overlay";
 
 /**
  Text in image
 **/
-@import "generic/text-in-image-one";
-@import "generic/text-in-image-two";
-@import "generic/text-in-image-three";
+//@import "generic/text-in-image-one";
+@import "generic/rc-text-image-top";
+@import "generic/rc-image-three";
 
 /**
  Review widgets
 **/
-@import "generic/review-one";
-@import "generic/review-two";
-@import "generic/reviews-two";
-@import "generic/reviews-three-in-row";
+@import "generic/pb-review-one";
+@import "generic/rc-reviews-two";
+@import "generic/rc-reviews-threerow";
 
 /**
  Information and warning boxes
 **/
-@import "generic/warning-box-02";
-@import "generic/information-box-02";
-@import "generic/successful-box-one";
+@import "generic/rc-warning-two";
+@import "generic/rc-information-two";
+@import "generic/rc-success-one";
 
 /**
  Authors
 **/
-@import "generic/author-photo-left";
-@import "generic/author-photo-top";
-@import "generic/author-photo-above";
+@import "generic/rc-author-left";
+@import "generic/rc-author-top";
+@import "generic/rc-author-above";
 
 /**
  Gallery
 **/
-@import "generic/inline-image";
-@import "generic/dynamic-gallery";
+@import "generic/rc-inline-image";
+@import "generic/rc-dynamic-gallery";
 
 
-@import "generic/team-widget-01";
-@import "generic/quotation-card";
-@import "generic/jumbotron-one";
+@import "generic/rc-team-three";
+@import "generic/rc-quotation-card";
+@import "generic/rc-jumbotron-one";
 
-@import "generic/title-line";
-@import "generic/quotation-split";
-@import "generic/counter";
+@import "generic/rc-title-line";
+@import "generic/rc-quotation-split";
+@import "generic/rc-counter";
 @import "generic/rc-interview-photo";
-@import "generic/parameter";
+@import "generic/rc-parameter-small-right";
+@import "generic/rc-parameter-small-left";
+@import "generic/rc-parameter-big-right";
+@import "generic/rc-parameter-big-left";
 @import "generic/two-videos";
+@import "generic/rc-image-one";
 
 /**
  Core Bootstrap
@@ -98,7 +119,3 @@
 @import "generic/plugin/carousel";
 @import "generic/plugin/gallery";
 @import "product-preview";
-
-.d-none {
-  display: none !important;
-}

@@ -1,0 +1,23 @@
+.rc-parameter-small-right {
+  align-items: center;
+
+  @include media-breakpoint-up(sm) {
+    display: flex;
+  }
+
+  &__image {
+    position: relative;
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+      padding: var(--pobo-parameter-image-padding);
+      text-align: right;
+    }
+  }
+
+  &__box {
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+  }
+}

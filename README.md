@@ -4,6 +4,7 @@ Tento repozitář obsahuje generické šablony pro widgety v Pobo Page Builder.
 
 Changelog verze:
 
+- [3.0.0](version/3.0.0.md) - Support full width widget, add background, spacing widget support 
 - [2.0.3](version/2.0.3.md) - Add variables for list item, paragraph, title line, standard table
 - [2.0.2](version/2.0.2.md) - Add background color variable 
 - [2.0.1](version/2.0.1.md) - Add mobile variable support

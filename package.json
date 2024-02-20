@@ -1,14 +1,14 @@
 {
-  "name": "widget-skeleton",
-  "version": "2.0.3",
+  "name": "widget-asset",
+  "version": "3.0.0",
   "description": "",
   "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "watch:standalone": "npx parcel index.html -p 8088 --dist-dir dist",
-    "watch:generic": "npx parcel generic.html -p 8086 --dist-dir dist",
-    "build": "npx parcel build src/editor.scss src/generic.scss --no-source-maps --dist-dir build",
-    "proxy": "ngrok http 8088"
+    "watch:generic": "node extract.js && npx parcel generic.html -p 8086 --dist-dir dist",
+    "build": "node extract.js && npx parcel build src/editor.scss src/generic.scss --no-source-maps --dist-dir build",
+    "proxy": "ngrok http http://localhost:8086"
   },
   "engines": {
     "node": ">=14.19",
@@ -41,6 +41,9 @@
     "scroll-dom-animation": "1.0.9",
     "ngrok": "4.3.3",
     "parcel": "2.10.3",
-    "bootstrap": "4.3.1"
+    "ngrok-agent": "4.3.3",
+    "bootstrap": "4.3.1",
+    "path": "0.12.7",
+    "fs": "0.0.1-security"
   }
 }

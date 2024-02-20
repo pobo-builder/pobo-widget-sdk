@@ -1,0 +1,56 @@
+.rc-text-image-top {
+  position: relative;
+  border: var(--pobo-text-in-image-border);
+  box-shadow: var(--pobo-text-in-image-box-shadow);
+  background: var(--pobo-text-in-image-bg);
+
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__background {
+    padding: var(--pobo-text-in-image-single-top-content-padding);
+    margin: var(--pobo-text-in-image-single-top-content-margin);
+    background: var(--pobo-text-in-image-single-top-content-bg);
+    backdrop-filter: var(--pobo-text-in-image-top-single-content-backdrop);
+    box-shadow: var(--pobo-text-in-image-single-content-box-shadow);
+    max-width: var(--pobo-text-in-image-single-content-max-width);
+  }
+
+  &__header {
+    font-family: var(--pobo-text-in-image-single-top-header-font-family);
+    color: var(--pobo-text-in-image-single-top-header-font-color);
+    line-height: var(--pobo-text-in-image-single-top-header-line-height);
+    font-weight: var(--pobo-text-in-image-single-top-header-font-weight);
+    font-size: var(--pobo-text-in-image-single-top-header-font-size);
+    padding: var(--pobo-text-in-image-single-top-header-padding);
+    margin: var(--pobo-text-in-image-single-top-content-margin);
+    text-shadow: var(--pobo-text-in-image-single-top-header-text-shadow);
+  }
+
+  &__text {
+    font-family: var(--pobo-text-in-image-single-top-text-font-family);
+    font-size: var(--pobo-text-in-image-single-top-text-font-size);
+    line-height: var(--pobo-text-in-image-single-top-text-line-height);
+    font-weight: var(--pobo-text-in-image-single-top-text-font-weight);
+    color: var(--pobo-text-in-image-single-top-text-font-color);
+    padding: var(--pobo-text-in-image-single-top-text-padding);
+    margin: var(--pobo-text-in-image-single-top-text-margin);
+    text-shadow: var(--pobo-text-in-image-single-top-text-shadow);
+    display: block;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: var(--pobo-text-in-image-single-img-height);
+
+    @include media-breakpoint-down(sm) {
+      height: var(--pobo-text-in-image-single-img-height);
+      object-fit: cover;
+      width: 100vw;
+    }
+  }
+}

@@ -6,10 +6,6 @@
   box-shadow: var(--pobo-image-box-shadow);
   border: var(--pobo-image-border-color);
 
-  @include media-breakpoint-down(sm) {
-    padding: 20px 0;
-  }
-
   &__image {
     width: 35%;
     position: relative;

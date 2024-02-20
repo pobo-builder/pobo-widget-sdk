@@ -1,0 +1,36 @@
+@import "small-left-parameter";
+@import "small-right-parameter";
+@import "big-left-parameter";
+@import "big-right-parameter";
+
+.rc-parameter {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &__image-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &--two {
+    display: block;
+  }
+
+  &__header-left {
+    text-align: var(--pobo-parameter-header-left-align);
+    font-size: var(--pobo-parameter-header-left-font-size);
+    margin: var(--pobo-parameter-header-left-margin);
+    padding: var(--pobo-parameter-header-left-padding);
+    font-weight: var(--pobo-parameter-header-left-font-weight);
+  }
+
+  &__header-right {
+    text-align: var(--pobo-parameter-header-text-align);
+    font-size: var(--pobo-parameter-header-font-size);
+    color: var(--pobo-parameter-header-font-color);
+    font-weight: var(--pobo-parameter-header-font-weight);
+    margin: var(--pobo-parameter-header-margin);
+    padding: var(--pobo-parameter-header-padding);
+  }
+}

@@ -1,20 +1,29 @@
-.rc-text-image-top {
-  position: relative;
+.rc-image-one {
+  width: 100%;
   border: var(--pobo-text-in-image-border);
   box-shadow: var(--pobo-text-in-image-box-shadow);
   background: var(--pobo-text-in-image-bg);
 
-  &__info {
-    position: absolute;
-    top: 0;
-    left: 0;
+  &__single {
     width: 100%;
+    position: relative;
+    margin-bottom: 5px;
+    flex-direction: column;
+    color: white;
   }
 
-  &__background {
-    padding: var(--pobo-text-in-image-single-content-padding);
-    background-color: var(--pobo-text-in-image-overlay-bg);
-    backdrop-filter: var(--pobo-text-in-image-single-content-background);
+  &__img {
+    width: 100%;
+    overflow: hidden;
+    z-index: -2;
+    height: 100%;
+
+
+    @include media-breakpoint-down(sm) {
+      height: var(--pobo-text-in-image-single-img-height);
+      object-fit: cover;
+      width: 100vw;
+    }
   }
 
   &__header {
@@ -27,7 +36,7 @@
     text-shadow: var(--pobo-text-in-image-single-header-text-shadow);
   }
 
-  &__text {
+  &__info {
     font-size: var(--pobo-text-in-image-single-text-font-size);
     line-height: var(--pobo-text-in-image-single-text-line-height);
     font-weight: var(--pobo-text-in-image-single-text-font-weight);
@@ -37,14 +46,23 @@
     text-shadow: var(--pobo-text-in-image-single-text-text-shadow);
   }
 
-  &__img {
-    max-width: 100%;
-    height: var(--pobo-text-in-image-single-img-height);
+  &__content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__down {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: var(--pobo-text-in-image-single-content-padding);
+    backdrop-filter: var(--pobo-text-in-image-overlay-blur);
+    background: var(--pobo-text-in-image-single-content-bg);
 
     @include media-breakpoint-down(sm) {
-      height: var(--pobo-text-in-image-single-img-height);
-      object-fit: cover;
-      width: 100vw;
+      padding: 20px;
     }
   }
 }

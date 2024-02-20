@@ -1,6 +1,4 @@
-$element: ".rc-counter";
-
-#{$element} {
+.rc-counter {
   display: grid;
   position: relative;
   overflow: hidden;

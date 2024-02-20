@@ -43,9 +43,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    backdrop-filter: var(--pobo-text-in-image-overlay-blur);
-    background-color: var(--pobo-text-in-image-overlay-bg);
-    padding: var(--pobo-text-in-image-three-content-background);
+    backdrop-filter: var(--pobo-text-in-image-three-content-backdrop-filter);
+    background: var(--pobo-text-in-image-three-content-background);
+    padding: var(--pobo-text-in-image-three-content-padding);
     height: var(--pobo-text-in-image-content-height);
     width: 100%;
   }

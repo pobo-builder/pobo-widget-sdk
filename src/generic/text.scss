@@ -5,6 +5,7 @@
     text-align: var(--pobo-gallery-image-title-text-align);
     font-size: var(--pobo-gallery-image-title-font-size);
     line-height: var(--pobo-gallery-image-title-line-height);
+    font-weight: var(--pobo-gallery-image-title-font-weight);
     margin: var(--pobo-gallery-image-title-margin);
     color: var(--pobo-gallery-image-title-font-color);
     padding: var(--pobo-gallery-image-title-padding);
@@ -15,6 +16,32 @@
   }
 }
 
+
+
 .pb-gallery-trigger {
+  position: relative;
   display: block;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: var(--pobo-gallery-trigger-before-transition);
+    opacity: 0;
+  }
+
+  &:hover {
+    &:before {
+      background: var(--pobo-gallery-trigger-before-hover-bg);
+      background-size: var(--pobo-gallery-trigger-before-hover-bg-size);
+      background-repeat: var(--pobo-gallery-trigger-before-hover-bg-repeat);
+      background-position: var(--pobo-gallery-trigger-before-hover-bg-position);
+      display: var(--pobo-gallery-trigger-before-hover-display);
+      opacity: var(--pobo-gallery-trigger-before-hover-opacity);
+    }
+  }
 }

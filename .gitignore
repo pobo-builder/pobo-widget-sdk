@@ -6,3 +6,5 @@ build
 .idea
 package-lock.json
 magic
+generative/*
+!generative/.gitkeep
