@@ -1,0 +1,49 @@
+.rc-video-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__image {
+    width: 35%;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 2;
+    }
+  }
+
+  &__video {
+    width: 35%;
+    height: auto;
+    padding: var(--pobo-video-left-video-padding);
+    margin: var(--pobo-video-left-video-margin);
+    border-radius: var(--pobo-video-left-video-border-radius);
+    box-shadow: var(--pobo-video-left-video-box-shadow);
+    border: var(--pobo-video-left-video-border);
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+    }
+  }
+
+  &__text {
+    width: calc(100% - 35%);
+    background: var(--pobo-video-left-box-bg);
+    text-align: var(--pobo-video-left-text-align);
+    padding: var(--pobo-video-left-box-padding);
+    margin: var(--pobo-video-left-box-margin);
+    border-radius: var(--pobo-video-left-box-border-radius);
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+    }
+  }
+}

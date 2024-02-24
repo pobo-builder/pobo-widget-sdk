@@ -46,7 +46,7 @@
 
   &__content-name {
     font-size: var(--pobo-author-above-content-name-font-size);
-    font-weight: bold;
+    font-weight: var(--pobo-author-above-content-name-font-weight);
     margin: var(--pobo-author-above-content-name-margin);
     padding: var(--pobo-author-above-content-name-padding);
   }
@@ -55,6 +55,10 @@
     color: var(--pobo-author-above-content-text-color);;
     font-size: var(--pobo-author-above-content-text-font-size);
     line-height: var(--pobo-author-above-content-text-line-height);
+    font-weight: var(--pobo-author-above-content-text-font-weight);
+    font-family: var(--pobo-citation-font-family);
+    padding: var(--pobo-author-above-content-text-padding);
+    margin: var(--pobo-author-above-content-text-margin);
   }
 
   &__content-link {

@@ -13,7 +13,6 @@
     box-shadow: var(--pobo-author-top-wrap-box-shadow);
     background: var(--pobo-author-top-wrap-bg);
     border-radius: var(--pobo-author-top-wrap-border-radius);
-
   }
 
   &__info {
@@ -73,7 +72,7 @@
     font-size: var(--pobo-author-top-text-font-size);
     line-height: var(--pobo-author-top-text-line-height);
     font-weight: var(--pobo-author-top-text-font-weight);
-    font-family: var(--pobo-review-font-family);
+    font-family: var(--pobo-citation-font-family);
 
     @include media-breakpoint-down(sm) {
       flex-direction: column;
@@ -86,6 +85,6 @@
     line-height: var(--pobo-author-top-text-content-line-height);
     margin: var(--pobo-author-top-text-content-margin);
     font-weight: var(--pobo-author-top-text-content-font-weight);
-    font-family: var(--pobo-review-font-family);
+    font-family: var(--pobo-citation-font-family);
   }
 }

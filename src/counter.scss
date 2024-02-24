@@ -1,6 +1,4 @@
-$element: ".rc-counter";
-
-#{$element} {
+.rc-counter {
   display: grid;
   margin: 20px 0;
   padding: 25px 0;
@@ -101,7 +99,7 @@ $element: ".rc-counter";
   }
 
   &.dark {
-    #{$element}__header {
+    .rc-counter__header {
       background: blue;
     }
   }

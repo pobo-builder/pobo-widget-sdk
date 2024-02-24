@@ -1,0 +1,75 @@
+.rc-parameter {
+  &__box-small-left-parameter {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    position: relative;
+    padding: var(--pobo-parameter-small-left-padding);
+    margin: var(--pobo-parameter-small-left-margin);
+    background: var(--pobo-parameter-small-left-bg);
+    box-shadow: var(--pobo-parameter-small-left-box-shadow);
+    border-radius: var(--pobo-parameter-small-left-border-radius);
+  }
+
+  &__box-small-left-parameter-icon {
+    width: var(--pobo-parameter-small-left-icon-size);
+    height: var(--pobo-parameter-small-left-icon-size);
+    border: var(--pobo-parameter-small-left-icon-border);
+    border-radius: var(--pobo-parameter-small-left-icon-border-radius);
+    box-shadow: var(--pobo-parameter-small-left-icon-box-shadow);
+    background: var(--pobo-parameter-small-left-icon-bg);
+
+    @include media-breakpoint-down(md) {
+      order: 1;
+    }
+  }
+
+  &__box-small-left-icon-img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  &__box-small-left-icon-image {
+    position: relative;
+    display: flex;
+    align-items: var(--pobo-parameter-small-left-icon-align-items);
+    justify-content: var(--pobo-parameter-small-left-icon-justify-content);
+    height: 100%;
+    width: 100%;
+  }
+
+  &__box-small-left-content {
+    width: calc(100% - var(--pobo-parameter-small-left-icon-size));
+    order: var(--pobo-parameter-small-left-content-order);
+    padding: var(--pobo-parameter-small-left-content-padding);
+
+    @include media-breakpoint-down(md) {
+      order: 2;
+    }
+  }
+
+  &__box-small-left-content-text {
+    display: block;
+    text-align: var(--pobo-parameter-small-left-text-align);
+    font-size: var(--pobo-parameter-small-left-value-font-size);
+    color: var(--pobo-parameter-small-left-value-font-color);
+    font-weight: var(--pobo-parameter-small-left-value-font-weight);
+    margin: var(--pobo-parameter-small-left-value-margin);
+    padding: var(--pobo-parameter-small-left-value-padding);
+
+    @include media-breakpoint-down(md) {
+      text-align: left;
+    }
+  }
+
+  &__box-small-left-content-value {
+    display: block;
+    text-align: var(--pobo-parameter-small-left-info-text-align);
+    font-size: var(--pobo-parameter-small-left-info-font-size);
+    color: var(--pobo-parameter-small-left-info-font-color);
+    font-weight: var(--pobo-parameter-small-left-info-font-weight);
+    margin: var(--pobo-parameter-small-left-info-margin);
+  }
+}
