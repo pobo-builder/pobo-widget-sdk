@@ -19,6 +19,8 @@
     grid-gap: var(--pobo-title-line-title-gap);
     font-size: var(--pobo-title-line-title-font-size);
     line-height: var(--pobo-title-line-title-line-height);
+    color: var(--pobo-title-line-title-color);
+    font-weight: var(--pobo-title-line-title-font-weight);
 
     &:before,
     &:after {
