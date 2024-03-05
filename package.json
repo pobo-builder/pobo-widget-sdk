@@ -1,6 +1,6 @@
 {
   "name": "widget-asset",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "",
   "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
