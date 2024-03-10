@@ -9,6 +9,7 @@
   &__image {
     width: 35%;
     position: relative;
+    text-align: var(--pobo-image-photo-text-align);
 
     @include media-breakpoint-down(sm) {
       flex: 0 0 100%;

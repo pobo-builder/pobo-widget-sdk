@@ -1,15 +1,16 @@
 :root {
-  --pobo-font-family: "Roboto", sans-serif;
+  --pobo-font-family: var(--template-font);
 
   --pobo-citation-font-family: Georgia, "Times New Roman", Times, serif;
 
-  --pobo-container-max-width: 1200px;
+  --pobo-container-max-width: 1400px;
 
   --pobo-all-content-padding: 0;
   --pobo-all-content-margin: 0;
   --pobo-all-content-background: none;
 
   --pobo-typo-h2-font-size: 25px;
+  --pobo-typo-h2-font-family: var(--pobo-font-family);
   --pobo-typo-h2-line-height: 30px;
   --pobo-typo-h2-font-weight: 600;
   --pobo-typo-h2-font-color: #0c0c0c;
@@ -24,6 +25,7 @@
   --pobo-typo-h2-before-bg: #eaeaea;
 
   --pobo-typo-h3-font-size: 22px;
+  --pobo-typo-h3-font-family: var(--pobo-font-family);
   --pobo-typo-h3-line-height: 25px;
   --pobo-typo-h3-font-weight: 600;
   --pobo-typo-h3-font-color: #0c0c0c;
@@ -38,6 +40,7 @@
   --pobo-typo-h3-before-bg: #eaeaea;
 
   --pobo-typo-h4-font-size: 20px;
+  --pobo-typo-h4-font-family: var(--pobo-font-family);
   --pobo-typo-h4-line-height: 24px;
   --pobo-typo-h4-font-weight: 600;
   --pobo-typo-h4-font-color: #0c0c0c;
@@ -45,6 +48,7 @@
   --pobo-typo-h4-margin: 0 0 20px 0;
 
   --pobo-typo-p-font-size: 18px;
+  --pobo-typo-p-font-weight: normal;
   --pobo-typo-p-font-color: #0c0c0c;
   --pobo-typo-p-line-height: 25px;
   --pobo-typo-p-padding: 0;
@@ -54,6 +58,8 @@
   --pobo-typo-list-margin: 0 0 20px 20px;
   --pobo-typo-list-item-padding: 0;
   --pobo-typo-list-item-font-size: 18px;
+  --pobo-typo-list-item-font-family: var(--pobo-font-family);
+  --pobo-typo-list-item-font-weight: 400;
   --pobo-typo-list-item-font-color: #0c0c0c;
   --pobo-typo-list-item-margin: 0 0 10px 0;
 
@@ -65,7 +71,11 @@
   --pobo-standard-table-tr-hover-bg: transparent;
 
   --pobo-link-color: #0c0c0c;
+  --pobo-link-transition: color .3s ease-in-out;
+  --pobo-link-outline: none;
+  --pobo-link-text-decoration: none;
   --pobo-link-hover-color: #0c0c0c;
+  --pobo-link-hover-text-decoration: underline;
 
   --pobo-gallery-bg: none;
   --pobo-gallery-box-shadow: none;
@@ -447,6 +457,7 @@
   --pobo-image-text-width: 50%;
   --pobo-image-padding-sm: 20px 0;
   --pobo-image-photo-padding: 0 30px 0 0;
+  --pobo-image-photo-text-align: left;
   --pobo-image-photo-padding-sm: 30px 0 0;
   --pobo-image-text-padding: 0 0 0 30px;
 

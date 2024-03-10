@@ -4,7 +4,8 @@ Tento repozitář obsahuje generické šablony pro widgety v Pobo Page Builder.
 
 Changelog verze:
 
-- [3.0.3](version/3.0.3.md) - Fix max width widget
+- [3.2.0](version/3.2.0.md) - Fix font family, add variable for image align 
+- [3.1.0](version/3.1.0) - Fix max width widget
 - [3.0.2](version/3.0.2.md) - Fix `<li>` circle, remove native variable
 - [3.0.1](version/3.0.1.md) - Fix bug with full width widget, add font family variable
 - [3.0.0](version/3.0.0.md) - Support full width widget, add background, spacing widget support 
@@ -12,6 +13,14 @@ Changelog verze:
 - [2.0.2](version/2.0.2.md) - Add background color variable 
 - [2.0.1](version/2.0.1.md) - Add mobile variable support
 - [2.0.0](version/2.0.0.md) - First version
+
+## Classy s otazníkem
+
+- [ ] `rc-header-top-image-bottom`
+- [x] `*__image` - zarovnání obrázku
+- [x] `typo - h2, h3, h4` - font family
+- [x] `typo - p` - font weight
+
 
 # Vytváření widgetu v Pobo Page Builder
 
