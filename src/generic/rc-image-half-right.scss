@@ -13,6 +13,7 @@
   &__image {
     width: var(--pobo-image-photo-width);
     padding: var(--pobo-image-text-padding);
+    text-align: var(--pobo-image-photo-text-align);
     position: relative;
 
     @include media-breakpoint-down(sm) {
