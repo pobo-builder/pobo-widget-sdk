@@ -12,6 +12,30 @@
     line-height: var(--pobo-typo-p-line-height);
     padding: var(--pobo-typo-p-padding);
     margin: var(--pobo-typo-p-margin);
+
+    strong,
+    b {
+      font-weight: var(--pobo-typo-p-strong-font-weight);
+    }
+  }
+
+  table {
+    padding: var(--pobo-typo-table-padding);
+    margin: var(--pobo-typo-table-margin);
+    border-collapse: var(--pobo-typo-table-border-collapse);
+    border: var(--pobo-typo-table-border);
+    background: var(--pobo-typo-table-bg);
+
+    tr {
+      border: var(--pobo-typo-table-tr-border-bottom);
+    }
+
+    td {
+      padding: var(--pobo-typo-table-td-padding);
+      margin: var(--pobo-typo-table-td-margin);
+      border: var(--pobo-typo-table-td-border-bottom);
+      background: var(--pobo-typo-table-td-bg);
+    }
   }
 
   ul,

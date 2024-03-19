@@ -14,7 +14,6 @@
     @include media-breakpoint-down(sm) {
       grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
     }
-
   }
 
   &__photo {

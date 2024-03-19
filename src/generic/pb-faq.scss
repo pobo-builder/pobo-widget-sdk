@@ -18,10 +18,10 @@
     &:before {
       position: absolute;
       content: "";
-      left: 5px;
-      top: calc(50% - 15px);
-      width: 30px;
-      height: 30px;
+      left: var(--pobo-faq-header-before-left);
+      top: var(--pobo-faq-header-before-top);
+      width: var(--pobo-faq-header-before-size);
+      height: var(--pobo-faq-header-before-size);
       background: var(--pobo-faq-header-before-background-image);
       transition: transform 0.5s ease-in-out;
     }
@@ -46,12 +46,11 @@
     border-radius: var(--pobo-faq-content-border-radius);
     box-shadow: var(--pobo-faq-content-box-shadow);
     padding: var(--pobo-faq-content-padding);
+    margin: var(--pobo-faq-content-margin);
     border: var(--pobo-faq-content-border);
-
 
     &.active {
       display: block;
     }
-
   }
 }

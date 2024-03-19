@@ -16,7 +16,11 @@ Changelog verze:
 
 ## Classy s otazníkem
 
-- [ ] `rc-header-top-image-bottom`
+- [ ] `checked-right-image__header` - barva
+- [x] `rc-advantages-*__info-header` - move to variable
+- [x] `rc-profit__list-item` (vyhody), display: flex, align-items: center, wrap
+- [x] `typo - p > strong` - font weight
+- [ ] `rc-header-top-image-bottom` - font-weight, color ...
 - [x] `*__image` - zarovnání obrázku
 - [x] `typo - h2, h3, h4` - font family
 - [x] `typo - p` - font weight

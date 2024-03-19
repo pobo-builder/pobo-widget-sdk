@@ -2,7 +2,6 @@
   --pobo-font-family: var(--template-font);
 
   --pobo-citation-font-family: Georgia, "Times New Roman", Times, serif;
-
   --pobo-container-max-width: 1400px;
 
   --pobo-all-content-padding: 0;
@@ -53,6 +52,20 @@
   --pobo-typo-p-line-height: 25px;
   --pobo-typo-p-padding: 0;
   --pobo-typo-p-margin: 0 0 20px 0;
+  --pobo-typo-p-strong-font-weight: 600;
+
+  --pobo-typo-table-padding: 0;
+  --pobo-typo-table-margin: 0;
+  --pobo-typo-table-border-collapse: collapse;
+  --pobo-typo-table-border: 0;
+  --pobo-typo-table-bg: none;
+  --pobo-typo-table-tr-border-bottom: 0;
+  --pobo-typo-table-td-border-bottom: 0;
+  --pobo-typo-table-td-padding: 6px 2px;
+  --pobo-typo-table-td-margin: 0;
+  --pobo-typo-table-td-font-size: 14px;
+  --pobo-typo-table-td-bg: none;
+
 
   --pobo-typo-list-padding: 0;
   --pobo-typo-list-margin: 0 0 20px 20px;
@@ -272,6 +285,8 @@
   --pobo-advantages-bg: none;
   --pobo-advantages-box-shadow: none;
   --pobo-advantages-border-radius: none;
+  --pobo-advantages-flex-wrap: nowrap;
+  --pobo-advantages-gap: 0;
   --pobo-advantages-title-font-size: 18px;
   --pobo-advantages-title-line-height: 24px;
   --pobo-advantages-title-font-color: #383838;
@@ -361,11 +376,16 @@
   --pobo-list-info-margin: 4px 0 0 0;
 
   --pobo-profit-list-item-padding: 10px 0;
+  --pobo-profit-list-item-display: flex;
+  --pobo-profit-list-item-align-items: center;
   --pobo-profit-list-item-margin: 0;
   --pobo-profit-list-item-bg: none;
   --pobo-profit-list-item-box-shadow: none;
   --pobo-profit-list-item-border-radius: none;
   --pobo-profit-list-item-border: none;
+
+  --pobo-profit-list-ico-display: flex;
+  --pobo-profit-list-ico-size: 30px;
 
   --pobo-profit-list-padding: 10px 30px;
   --pobo-profit-list-margin: 20px 0;
@@ -387,6 +407,8 @@
   --pobo-image-img-border-radius: 0;
   --pobo-image-img-box-shadow: none;
   --pobo-image-img-border-color: none;
+  --pobo-image-img-mix-blend-mode: unset;
+  --pobo-image-img-object-fit: cover;
 
 
   --pobo-video-left-video-padding: 0;
@@ -1015,10 +1037,15 @@
   --pobo-faq-header-border-radius-active: 5px 5px 0 0;
   --pobo-faq-header-box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 7px 0px;
   --pobo-faq-header-outline: none;
+  --pobo-faq-header-before-size: 30px;
+  --pobo-faq-header-before-top: calc(50% - 15px);
+  --pobo-faq-header-before-left: 5px;
   --pobo-faq-header-background-image: linear-gradient(#fcfcfc, #efefef);
   --pobo-faq-header-before-background-image: url("https://image.pobo.cz/assets/arrow-bottom.svg") no-repeat center center;
 
+
   --pobo-faq-content-padding: 5px 20px;
+  --pobo-faq-content-margin: 0;
   --pobo-faq-content-background: #fff;
   --pobo-faq-content-border: 1px solid #eaeaea;
   --pobo-faq-content-border-radius: 0 0 5px 5px;
