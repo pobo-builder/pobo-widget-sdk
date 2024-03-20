@@ -39,7 +39,7 @@
     "@parcel/package-manager": "2.10.3",
     "@parcel/transformer-sass": "2.10.3",
     "scroll-dom-animation": "1.0.9",
-    "photoswipe": "5.4.3",
+    "lightgallery": "2.7.2",
     "ngrok": "4.3.3",
     "parcel": "2.10.3",
     "bootstrap": "4.3.1",
