@@ -597,6 +597,12 @@
   --pobo-text-in-image-three-content-background: linear-gradient(0deg, black, transparent);
   --pobo-text-in-image-three-content-backdrop-filter: blur(1px);
 
+  --pobo-image-three-single-height: 400px;
+  --pobo-image-three-single-margin: 5px;
+  --pobo-image-three-single-position: relative;
+  --pobo-image-three-single-overflow: hidden;
+  --pobo-image-three-single-width: calc(100% / 3);
+
   --pobo-text-in-image-content-height: 150px;
   --pobo-text-in-image-three-content-padding: 20px;
   --pobo-text-in-image-circle-radius: 50%;

@@ -5,17 +5,17 @@
   box-shadow: var(--pobo-text-in-image-box-shadow);
 
   &__single {
-    height: 400px;
-    position: relative;
-    margin: 5px;
+    height: var(--pobo-image-three-single-height);
+    position: var(--pobo-image-three-single-position);
+    margin: var(--pobo-image-three-single-margin);
     background: var(--pobo-text-in-image-single-bg);
     color: var(--pobo-text-in-image-single-font-color);
     text-shadow: var(--pobo-text-in-image-single-text-shadow);
-    overflow: hidden;
+    overflow: var(--pobo-image-three-single-overflow);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% / 3);
+    width: var(--pobo-image-three-single-width);
   }
 
   &__img {
