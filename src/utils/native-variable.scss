@@ -1266,6 +1266,20 @@
   --pobo-carousel-container-padding: 20px 50px;
   --pobo-carousel-container-margin: 0;
 
+  --pobo-carousel-trigger-box-shadow: 0 0 10px rgba(203, 202, 202, 0.50);
+  --pobo-carousel-trigger-border-radius: 50%;
+  --pobo-carousel-trigger-font-size: 40px;
+  --pobo-carousel-trigger-left-rotate: rotate(180deg);
+  --pobo-carousel-carousel-width-md: 240px;
+
+  --pobo-carousel-item-width: calc(1200px / 5);
+  --pobo-carousel-item-height: 200px;
+  --pobo-carousel-item-margin: 10px;
+  --pobo-carousel-item-padding: 10px;
+  --pobo-carousel-item-border-radius: 5px;
+  --pobo-carousel-item-white-space: initial;
+
+
   --pobo-carousel-inner-border: 1px solid #eeeeee;
   --pobo-carousel-inner-border-radius: 5px;
   --pobo-carousel-inner-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
