@@ -468,6 +468,28 @@
   --pobo-counter-overlay-bg: rgb(0 0 0 / 50%);
   --pobo-counter-padding: 80px 0;
 
+  --pobo-counter-img-position: absolute;
+  --pobo-counter-img-top: calc(-50%);
+  --pobo-counter-img-zindex: 5;
+  --pobo-counter-img-width: 100%;
+  --pobo-counter-img-height: auto;
+  --pobo-counter-img-left: 0;
+
+  --pobo-counter-before-content: '';
+  --pobo-counter-before-width: 100%;
+  --pobo-counter-before-height: 100%;
+  --pobo-counter-before-position: absolute;
+  --pobo-counter-before-zindex: 8;
+
+  --pobo-counter-two-grid: 50% 50%;
+  --pobo-counter-three-grid: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  --pobo-counter-inner-paading: 10px 5px;
+  --pobo-counter-inner-font: Arial, sans-serif;
+
+  --pobo-counter-header-font-size-sm: 16px;
+  --pobo-counter-info-font-size-sm: 12px;
+  --pobo-counter-medium-font-size-sm: 13px;
+
   --pobo-counter-header-font-size: 26px;
   --pobo-counter-header-line-height: 30px;
   --pobo-counter-header-font-weight: 600;
@@ -574,6 +596,12 @@
   --pobo-text-in-image-three-header-text-shadow: 1px 1px 1px #282828;
   --pobo-text-in-image-three-content-background: linear-gradient(0deg, black, transparent);
   --pobo-text-in-image-three-content-backdrop-filter: blur(1px);
+
+  --pobo-image-three-single-height: 400px;
+  --pobo-image-three-single-margin: 5px;
+  --pobo-image-three-single-position: relative;
+  --pobo-image-three-single-overflow: hidden;
+  --pobo-image-three-single-width: calc(100% / 3);
 
   --pobo-text-in-image-content-height: 150px;
   --pobo-text-in-image-three-content-padding: 20px;
@@ -1243,6 +1271,20 @@
 
   --pobo-carousel-container-padding: 20px 50px;
   --pobo-carousel-container-margin: 0;
+
+  --pobo-carousel-trigger-box-shadow: 0 0 10px rgba(203, 202, 202, 0.50);
+  --pobo-carousel-trigger-border-radius: 50%;
+  --pobo-carousel-trigger-font-size: 40px;
+  --pobo-carousel-trigger-left-rotate: rotate(180deg);
+  --pobo-carousel-carousel-width-md: 240px;
+
+  --pobo-carousel-item-width: calc(1200px / 5);
+  --pobo-carousel-item-height: 200px;
+  --pobo-carousel-item-margin: 10px;
+  --pobo-carousel-item-padding: 10px;
+  --pobo-carousel-item-border-radius: 5px;
+  --pobo-carousel-item-white-space: initial;
+
 
   --pobo-carousel-inner-border: 1px solid #eeeeee;
   --pobo-carousel-inner-border-radius: 5px;

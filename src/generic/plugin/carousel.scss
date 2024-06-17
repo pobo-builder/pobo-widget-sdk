@@ -19,19 +19,19 @@
     top: calc(50% - var(--pobo-carousel-inner-trigger-size) / 2);
     width: var(--pobo-carousel-inner-trigger-size);
     height: var(--pobo-carousel-inner-trigger-size);
-    font-size: 40px;
+    font-size: var(--pobo-carousel-trigger-font-size);
     color: black;
     z-index: 10;
-    box-shadow: 0 0 10px rgba(203, 202, 202, 0.50);
+    box-shadow: var(--pobo-carousel-trigger-box-shadow);
     border: var(--pobo-carousel-inner-trigger-border);
-    border-radius: 50%;
+    border-radius: var(--pobo-carousel-trigger-border-radius);
     background: var(--pobo-carousel-inner-trigger-bg-image);
     background-size: contain;
   }
 
   &__trigger-left {
     left: 0;
-    transform: rotate(180deg);
+    transform: var(--pobo-carousel-trigger-left-rotate);
   }
 
   &__trigger-right {
@@ -40,12 +40,12 @@
 
   &__item {
     display: inline-block;
-    width: calc(1200px / 5);
-    height: 200px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    white-space: initial;
+    width: var(--pobo-carousel-item-width);
+    height: var(--pobo-carousel-item-height);
+    margin: var(--pobo-carousel-item-margin);
+    padding: var(--pobo-carousel-item-padding);
+    border-radius: var(--pobo-carousel-item-border-radius);
+    white-space: var(--pobo-carousel-item-white-space);
 
     .image {
       position: relative;
@@ -68,7 +68,7 @@
     margin-right: -4px;
 
     @include media-breakpoint-down(lg) {
-      width: 240px;
+      width: var(--pobo-carousel-carousel-width-md);
     }
   }
 }
