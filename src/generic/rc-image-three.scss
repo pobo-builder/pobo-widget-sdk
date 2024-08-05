@@ -20,8 +20,9 @@
 
   &__img {
     flex-shrink: 0;
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
+    object-fit: var(--pobo-image-three-img-object-fit);
   }
 
   &__content-head {
