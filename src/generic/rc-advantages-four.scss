@@ -2,11 +2,10 @@
   background: var(--pobo-advantages-bg);
   box-shadow: var(--pobo-advantages-box-shadow);
   border: var(--pobo-advantages-border-radius);
-
-  @include media-breakpoint-up(sm) {
-    padding: 20px 0;
-    display: flex;
-  }
+  flex-wrap: var(--pobo-advantages-flex-wrap);
+  gap: var(--pobo-advantages-gap);
+  padding: var(--pobo-advantages-padding);
+  display: flex;
 
   &__item {
     padding: var(--pobo-advantages-item-padding);
@@ -56,12 +55,6 @@
     font-size: var(--pobo-advantages-four-title-font-size);
     line-height: var(--pobo-advantages-four-title-line-height);
     font-weight: var(--pobo-advantages-four-title-font-weight);
-
-
-    @include media-breakpoint-down(sm) {
-      font-size: 16px;
-      line-height: 20px;
-    }
   }
 
   &__info-text {

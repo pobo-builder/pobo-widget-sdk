@@ -1,5 +1,6 @@
 export default class FullWidthService {
     constructor() {
+        return;
         this.left = 0;
 
         ['DOMContentLoaded'].forEach(event => {

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 756px) {
   :root {
     --pobo-counter-padding: 50px 0;
     --pobo-counter-header-half-font-size: 18px;
@@ -52,5 +52,17 @@
     --pobo-parameter-small-left-content-order: 1;
     --pobo-global-widget-padding: 20px 0;
 
+    --pobo-advantages-three-title-font-size: 16px;
+    --pobo-advantages-three-title-line-height: 20px;
+
+    --pobo-advantages-two-title-font-size: 16px;
+    --pobo-advantages-two-title-line-height: 20px;
+
+    --pobo-advantages-four-title-font-size: 16px;
+    --pobo-advantages-four-title-line-height: 20px;
+    --pobo-advantages-flex-wrap: wrap;
+    --pobo-advantages-gap: 20px;
+
+    --pobo-profit-list-padding: 10px;
   }
 }

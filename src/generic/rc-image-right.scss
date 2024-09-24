@@ -28,6 +28,8 @@
     border-radius: var(--pobo-image-img-border-radius);
     box-shadow: var(--pobo-image-img-box-shadow);
     border: var(--pobo-image-img-border-color);
+    mix-blend-mode: var(--pobo-image-img-mix-blend-mode);
+    object-fit: var(--pobo-image-img-object-fit);
   }
 
   &__text {

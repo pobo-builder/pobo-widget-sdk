@@ -20,17 +20,12 @@
     box-shadow: var(--pobo-profit-list-box-shadow);
     border-radius: var(--pobo-profit-list-border-radius);
     border: var(--pobo-profit-list-border);
-
-
-    @include media-breakpoint-down(md) {
-      padding: 10px;
-    }
   }
 
   &__list-item {
-    display: flex;
-    align-items: center;
     position: relative;
+    display: var(--pobo-profit-list-item-display);
+    align-items: var(--pobo-profit-list-item-align-items);
     padding: var(--pobo-profit-list-item-padding);
     margin: var(--pobo-profit-list-item-margin);
     background: var(--pobo-profit-list-item-bg);
@@ -40,8 +35,9 @@
   }
 
   &__list-ico {
-    width: 30px;
-    display: flex;
+    width: var(--pobo-profit-list-ico-size);
+    height: var(--pobo-profit-list-ico-size);
+    display: var(--pobo-profit-list-ico-display);
   }
 
   &__list-content {
