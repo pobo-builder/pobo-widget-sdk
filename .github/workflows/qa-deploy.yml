@@ -19,10 +19,10 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build CSS
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to Bunny CDN (www.pobo.cz)
         uses: isthatcentered/dist-to-ftp@master
