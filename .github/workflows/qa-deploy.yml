@@ -1,8 +1,8 @@
 name: Deploy CSS to Bunny CDN
 
 on:
-  pull_request:
-    types: [closed]
+  push:
+    branches: ["master"]
 
 jobs:
   deploy:
