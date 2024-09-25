@@ -1,12 +1,11 @@
 name: Deploy CSS to Bunny CDN
 
 on:
-  pull_request:
-    types: [closed]
+  push:
+    branches: ["master"]
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
@@ -19,10 +18,10 @@ jobs:
           node-version: 14
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build CSS
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to Bunny CDN (www.pobo.cz)
         uses: isthatcentered/dist-to-ftp@master
