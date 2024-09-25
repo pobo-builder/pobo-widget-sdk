@@ -1,7 +1,7 @@
 @import "core";
 
-@import 'lightgallery/css/lightgallery.css';
-@import 'lightgallery/css/lg-thumbnail.css';
+@import '/node_modules/lightgallery/css/lightgallery.css';
+@import '/node_modules/lightgallery/css/lg-thumbnail.css';
 
 @import "generative/widget-container";
 @import "generative/variables";
@@ -41,6 +41,9 @@
 @import "generic/rc-gallery-two";
 @import "generic/rc-gallery-three";
 @import "generic/rc-gallery-four";
+
+@import "generic/rc-image-right-two-column";
+@import "generic/rc-image-left-two-column";
 
 /**
   Advantages
@@ -122,3 +125,4 @@
 @import "generic/plugin/carousel";
 @import "generic/plugin/gallery";
 @import "product-preview";
+

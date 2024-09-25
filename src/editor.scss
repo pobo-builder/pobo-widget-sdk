@@ -2,8 +2,8 @@
 @import "node_modules/bootstrap/scss/_variables.scss";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
 
-@import 'lightgallery/css/lightgallery.css';
-@import 'lightgallery/css/lg-thumbnail.css';
+@import '/node_modules/lightgallery/css/lightgallery.css';
+@import '/node_modules/lightgallery/css/lg-thumbnail.css';
 
 
 @mixin infobox {
