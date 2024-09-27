@@ -1,7 +1,8 @@
 {
   "name": "widget-asset",
   "version": "3.2.2",
-  "description": "",
+  "description": "Widget asset for Pobo Page Builder",
+  "licenses": "BSD-3-Clause",
   "source": "index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
@@ -11,7 +12,7 @@
     "proxy": "ngrok http http://localhost:8086"
   },
   "engines": {
-    "node": ">=14.00",
+    "node": ">=20.00",
     "npm": ">=6.14"
   },
   "repository": {
