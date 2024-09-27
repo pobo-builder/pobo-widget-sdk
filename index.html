@@ -5,53 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <link rel="stylesheet" href="src/editor.scss">
-  <!-- Prefetch Pobo Page Builder CDN  -->
   <link rel="dns-prefetch" href="https://image.pobo.cz">
-
-
-  <!-- © Pobo Page Builder  -->
-  <script>
-    window.addEventListener("DOMContentLoaded", function () {
-      var po = document.createElement("script");
-      po.type = "text/javascript";
-      po.async = true;
-      po.dataset.url = "https://www.pobo.cz";
-      po.dataset.cdn = "https://image.pobo.cz";
-      po.dataset.tier = "standard";
-      po.fetchpriority = "high";
-      po.id = "pobo-asset-url";
-      po.awacs = true;
-      po.src = "https://image.pobo.cz/assets/editor.js";
-
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(po, s);
-    });
-  </script>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    .plugin-fixed-header {
-      display: none;
-    }
-  </style>
-
-
   <title>Widget pobo</title>
-
-  <style>
-    body {
-      padding: 0;
-      background: #FFF;
-      margin: 0 auto;
-      max-width: 1100px;
-    }
-  </style>
 </head>
 
 <body>
+
+<div style="max-width: 999px; margin: 0 auto;">
+  <div class="rc-image-right-two-column">
+    <div class="rc-image-right-two-column__image">
+      <img src="https://cdn.pobo.cz/widget/macbbok-1.png" class="rc-image-right-two-column__img">
+    </div>
+    <div class="rc-image-right-two-column__content">
+      <div class=rc-image-right-two-column__title-wrap">
+        <h2 class=rc-image-right-two-column__title">Testovací titulek </h2>
+      </div>
+      <div class="rc-image-right-two-column__text-wrap">
+        <div class="rc-image-right-two-column__text-next">
+          <p>
+            Tento produkt je vyroben z vysoce kvalitního materiálu, který zaručuje dlouhou životnost a odolnost. Jeho univerzální design a praktičnost ho činí ideálním doplňkem nejen pro každý dům, ale také pro zahradu a byt.
+          </p>
+        </div>
+        <div class="rc-image-right-two-column__text-next">
+          <p>
+            Tento produkt je vyroben z vysoce kvalitního materiálu, který zaručuje dlouhou životnost a odolnost. Jeho univerzální design a praktičnost ho činí ideálním doplňkem nejen pro každý dům, ale také pro zahradu a byt.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rc-image-left-two-column">
+    <div class="rc-image-left-two-column__content">
+      <div class=rc-image-left-two-column__title-wrap">
+        <h2 class=rc-image-left-two-column__title">Testovací titulek </h2>
+      </div>
+      <div class="rc-image-left-two-column__text-wrap">
+        <div class="rc-image-left-two-column__text-next">
+          <p>
+            Tento produkt je vyroben z vysoce kvalitního materiálu, který zaručuje dlouhou životnost a odolnost. Jeho univerzální design a praktičnost ho činí ideálním doplňkem nejen pro každý dům, ale také pro zahradu a byt.
+          </p>
+        </div>
+        <div class="rc-image-left-two-column__text-next">
+          <p>
+            Tento produkt je vyroben z vysoce kvalitního materiálu, který zaručuje dlouhou životnost a odolnost. Jeho univerzální design a praktičnost ho činí ideálním doplňkem nejen pro každý dům, ale také pro zahradu a byt.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="rc-image-left-two-column__image">
+      <img src="https://cdn.pobo.cz/widget/macbbok-1.png" class="rc-image-right-two-column__img">
+    </div>
+  </div>
+
+</div>
+
 <div id="pobo-all-content">
   <div id="pobo-standard-widget">
     <div data-pobo-widget-id='70' class='widget-container'>
