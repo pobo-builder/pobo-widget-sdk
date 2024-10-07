@@ -9,6 +9,7 @@
     list-style: none;
     line-height: var(--pobo-checked-list-li-line-height);
     font-size: var(--pobo-checked-list-li-font-size);
+    color: var(--pobo-checked-list-li-color);
 
     &:before {
       position: absolute;

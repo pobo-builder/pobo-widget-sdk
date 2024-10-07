@@ -53,6 +53,7 @@
   --pobo-typo-p-line-height: 25px;
   --pobo-typo-p-padding: 0;
   --pobo-typo-p-margin: 0 0 20px 0;
+  --pobo-typo-p-font-family: var(--pobo-font-family);
 
   --pobo-typo-list-padding: 0;
   --pobo-typo-list-margin: 0 0 20px 20px;
@@ -262,6 +263,7 @@
   --pobo-parameter-header-left-margin: 0 0 25px 0;
   --pobo-parameter-header-left-padding: 0 0 0 10px;
   --pobo-parameter-header-left-font-weight: 600;
+  --pobo-parameter-header-left-color: #000000;
 
   --pobo-parameter-big-value-font-size: 15px;
   --pobo-parameter-big-value-font-color: #575757;
@@ -643,6 +645,7 @@
   --pobo-card-call-to-action-text-margin: 0 0 20px 0;
 
   --pobo-card-call-to-action-button-padding: 0 0 15px 0;
+  --pobo-card-call-to-action-title-color: unset;
 
   --pobo-reviews-two-gap: 40px;
   --pobo-reviews-two-bg: unset;
@@ -930,6 +933,7 @@
   --pobo-interview-photo-person-size: 150px;
   --pobo-interview-photo-person-margin: 20px auto 20px auto;
   --pobo-interview-photo-person-padding: 0;
+  --pobo-interview-photo-wrap-background: #f4f4f4;
 
   --pobo-author-left-bg: transparent;
   --pobo-author-left-box-shadow: none;
@@ -1078,6 +1082,8 @@
   --pobo-author-above-content-link-padding-top: 17px;
   --pobo-author-above-content-link-font-size: 14px;
   --pobo-author-above-content-link-color: black;
+  --pobo-author-above-content-name-color: unset;
+  --pobo-author-above-content-name-line-height: unset;
 
   --pobo-checked-left-image-header-padding: 0 0 20px 0;
   --pobo-checked-left-image-header-margin: 0;
@@ -1095,6 +1101,7 @@
   --pobo-checked-list-li-left: 0;
   --pobo-checked-list-li-top: 7px;
   --pobo-checked-list-li-size: 20px;
+  --pobo-checked-list-li-color: #000000;
   --pobo-checked-list-li-background: url("https://image.pobo.cz/assets/checked.svg") no-repeat
   center center;
 
