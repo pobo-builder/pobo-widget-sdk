@@ -22,6 +22,7 @@
     line-height: var(--pobo-interview-photo-wrap-line-height);
     color: var(--pobo-interview-photo-wrap-font-color);
     font-weight: var(--pobo-interview-photo-wrap-font-weight);
+    background: var(--pobo-interview-photo-wrap-background);
 
     @include media-breakpoint-up(md) {
       display: flex;
