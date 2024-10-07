@@ -23,6 +23,8 @@
     margin: var(--pobo-parameter-header-left-margin);
     padding: var(--pobo-parameter-header-left-padding);
     font-weight: var(--pobo-parameter-header-left-font-weight);
+    color: var(--pobo-parameter-header-left-color);
+    line-height: var(--pobo-parameter-header-line-height);
   }
 
   &__header-right {
