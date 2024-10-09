@@ -23,6 +23,7 @@
 
   &__img {
     width: var(--pobo-image-left-col-img-width);
+    position: relative;
   }
 
   &__content {
@@ -46,14 +47,15 @@
   }
 
   &__text-wrap {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     @include media-breakpoint-up(sm) {
       gap: var(--pobo-image-left-col-text-wrap-gap-up);
     }
 
     @include media-breakpoint-down(sm) {
-      flex-direction: var(--pobo-image-left-col-text-wrap-flex-direction-down);
+      grid-template-columns: 1fr;
     }
   }
 }
