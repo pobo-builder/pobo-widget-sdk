@@ -11,6 +11,7 @@
   }
 
   &__image {
+    position: relative;
     width: var(--pobo-image-left-col-image-width);
     flex-shrink: var(--pobo-image-left-col-image-flex-shrink);
 

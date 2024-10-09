@@ -10,6 +10,7 @@
     flex-direction: column;
   }
   &__image {
+    position: relative;
     width: 35%;
     flex-shrink: 0;
 
