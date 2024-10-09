@@ -12,6 +12,7 @@
   &__image {
     width: 35%;
     flex-shrink: 0;
+    position: relative;
 
     @include media-breakpoint-down(sm) {
       width: 100%;
@@ -22,6 +23,7 @@
 
   &__img {
     width: 100%;
+    position: relative;
   }
 
   &__content {
@@ -45,14 +47,15 @@
   }
 
   &__text-wrap {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     @include media-breakpoint-up(sm) {
       gap: 20px;
     }
 
     @include media-breakpoint-down(sm) {
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
   }
 }
