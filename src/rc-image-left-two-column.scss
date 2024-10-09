@@ -22,6 +22,7 @@
 
   &__img {
     width: 100%;
+    position: relative;
   }
 
   &__content {
@@ -44,14 +45,15 @@
   }
 
   &__text-wrap {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     @include media-breakpoint-up(sm) {
       gap: 20px;
     }
 
     @include media-breakpoint-down(sm) {
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
   }
 }
