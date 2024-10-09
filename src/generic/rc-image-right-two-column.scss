@@ -11,6 +11,7 @@
   }
 
   &__image {
+    position: relative;
     width: var(--pobo-image-right-col-image-width);
     flex-shrink: var(--pobo-image-right-col-image-flex-shrink);
 
@@ -22,6 +23,7 @@
   }
 
   &__img {
+    position: relative;
     width: var(--pobo-image-right-col-img-width);
   }
 
@@ -46,14 +48,15 @@
   }
 
   &__text-wrap {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     @include media-breakpoint-up(sm) {
       gap: var(--pobo-image-right-col-text-wrap-gap-up);
     }
 
     @include media-breakpoint-down(sm) {
-      flex-direction: var(--pobo-image-right-col-text-wrap-flex-direction-down);
+      grid-template-columns: 1fr;
     }
   }
 }
