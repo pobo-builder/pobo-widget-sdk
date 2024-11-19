@@ -8,6 +8,7 @@
     position: relative;
     height: auto;
     z-index: 1;
+    display: flex;
     background: var(--pobo-jumbotron-one-wrap-background);
   }
 
@@ -39,6 +40,30 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--pobo-btn-color);
+    background: var(--pobo-btn-bg);
+    box-shadow: var(--pobo-btn-box-shadow);
+    border: var(--pobo-btn-border);
+    cursor: pointer;
+    padding: var(--pobo-btn-padding);
+    margin: var(--pobo-btn-margin);
+    font-size: var(--pobo-btn-font-size);
+    line-height: var(--pobo-btn-line-height);
+    font-weight: var(--pobo-btn-font-weight);
+    border-radius: var(--pobo-btn-border-radius);
+    transition: var(--pobo-btn-transition);
+
+
+    &:hover {
+      background: var(--pobo-btn-hover-bg);
+      text-decoration: none;
+      color: var(--pobo-btn-hover-text-color);
+    }
   }
 
   &__content-title {
