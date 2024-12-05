@@ -4,6 +4,7 @@ Tento repozitář obsahuje generické šablony pro widgety v Pobo Page Builder.
 
 Changelog verze:
 
+- [3.4.2](version/3.4.2.md) - Fix `.rc-profit` icon width
 - [3.4.1](version/3.4.0.md) - Extension of variables'
 - [3.4.0](version/3.4.0.md) - Add multi-column widgets'
 - [3.3.0](version/3.3.0.md) - New gallery - PhotoSwipe

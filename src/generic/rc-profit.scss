@@ -4,6 +4,11 @@
   border-radius: var(--pobo-inline-border-radius);
   border: var(--pobo-inline-border);
 
+  &__list-ico-img {
+    max-width: 100%;
+    height: auto;
+  }
+
   &__list-container {
     padding: var(--pobo-profit-list-container-padding);
     margin: var(--pobo-profit-list-container-margin);
@@ -40,12 +45,12 @@
   }
 
   &__list-ico {
-    width: 30px;
+    width: var(--pobo-profit-list-ico-width);
     display: flex;
   }
 
   &__list-content {
-    width: calc(100% - 80px);
+    width: calc(100% - var(--pobo-profit-list-ico-width));
     padding: 0 0 0 20px;
   }
 
