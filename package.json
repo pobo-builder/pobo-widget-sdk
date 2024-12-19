@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pobo-builder/pobo-asset-sdk"
+    "url": "git+https://github.com/pobo-builder/pobo-widget-sdk"
   },
   "contributors": [
     {
@@ -36,9 +36,9 @@
   ],
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/pobo-builder/pobo-asset-sdk/issues"
+    "url": "https://github.com/pobo-builder/pobo-widget-sdk/issues"
   },
-  "homepage": "https://github.com/pobo-builder/pobo-asset-sdk#readme",
+  "homepage": "https://github.com/pobo-builder/pobo-widget-sdk#readme",
   "devDependencies": {
     "@parcel/package-manager": "2.10.3",
     "@parcel/transformer-sass": "2.10.3",
