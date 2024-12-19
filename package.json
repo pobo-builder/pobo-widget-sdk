@@ -1,9 +1,12 @@
 {
-  "name": "widget-asset",
-  "version": "3.4.2",
+  "name": "pobo-widget-sdk",
+  "version": "3.5.1",
   "description": "Widget asset for Pobo Page Builder",
   "licenses": "BSD-3-Clause",
   "source": "index.html",
+  "files": [
+    "build"
+  ],
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "watch:standalone": "npx parcel index.html -p 8088 --dist-dir dist",
@@ -17,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pobo-builder/widget-skeleton.git"
+    "url": "git+https://github.com/pobo-builder/pobo-asset-sdk"
   },
   "contributors": [
     {
@@ -31,11 +34,11 @@
       "url": "https://github.com/votechv"
     }
   ],
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/pobo-builder/widget-skeleton/issues"
+    "url": "https://github.com/pobo-builder/pobo-asset-sdk/issues"
   },
-  "homepage": "https://github.com/pobo-builder/widget-skeleton#readme",
+  "homepage": "https://github.com/pobo-builder/pobo-asset-sdk#readme",
   "devDependencies": {
     "@parcel/package-manager": "2.10.3",
     "@parcel/transformer-sass": "2.10.3",
