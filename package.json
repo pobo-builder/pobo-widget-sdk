@@ -1,6 +1,6 @@
 {
   "name": "pobo-widget-sdk",
-  "version": "3.5.2",
+  "version": "3.5.3",
   "description": "Widget asset for Pobo Page Builder",
   "licenses": "BSD-3-Clause",
   "source": "index.html",
