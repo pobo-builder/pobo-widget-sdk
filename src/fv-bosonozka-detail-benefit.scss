@@ -1,29 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-$white: #ffffff;
-$dark: #292725;
-$dark-8: rgba($dark, 0.08);
-$dark-16: rgba($dark, 0.16);
-$dark-64: rgba($dark, 0.64);
-$sand: #bbaf96;
-$sand-16: rgba($sand, 0.16);
-$light: #ffffff;
-$green: #1BA78C;
-$green-8: rgba($green, 0.08);
-$red: #BF1F00;
-$red-16: rgba($red, 0.16);
-$font-primary: "Urbanist", sans-serif;
+//:root {
+//  --fv-pobo-white: #ffffff;
+//  --fv-pobo-dark: #292725;
+//  --fv-pobo-dark-8: rgba(--fv-pobo-dark, 0.08);
+//  --fv-pobo-dark-16: rgba(--fv-pobo-dark, 0.16);
+//  --fv-pobo-dark-64: rgba(--fv-pobo-dark, 0.64);
+//  --fv-pobo-sand: #bbaf96;
+//  --fv-pobo-sand-16: rgba(--fv-pobo-sand, 0.16);
+//  --fv-pobo-light: #ffffff;
+//  --fv-pobo-green: #1BA78C;
+//  --fv-pobo-green-8: rgba(--fv-pobo-green, 0.08);
+//  --fv-pobo-red: #BF1F00;
+//  --fv-pobo-red-16: rgba(--fv-pobo-red, 0.16);
+//  --fv-pobo-font-primary: "Urbanist", sans-serif;
+//}
 
-html {
-  font-size: 62.5%;
-}
+//html {
+//  font-size: 62.5%;
+//}
 
-body {
-  font-family: $font-primary;
-}
+//body {
+//  font-family: var(--fv-pobo-font-primary);
+//}
 
 [class*="fv-bosonozka-"] {
-  font-family: $font-primary;
+  font-family: var(--fv-pobo-font-primary);
 
   .icon {
     img {
@@ -38,8 +40,8 @@ body {
     font-weight: 700;
     line-height: 5.6rem;
     margin: 6.4rem 0 !important;
-    color: $dark;
-    font-family: $font-primary;
+    color: var(--fv-pobo-dark);
+    font-family: var(--fv-pobo-font-primary);
   }
 }
 
@@ -74,7 +76,7 @@ body {
     .icon {
       padding: .8rem;
       border-radius: 8rem;
-      background: $sand-16;
+      background: var(--fv-pobo-sand-16);
 
       @media (min-width: 768px) {
         padding: 2.4rem;
@@ -226,8 +228,8 @@ body {
       align-items: center;
       gap: 0.4rem;
       border-radius: 8rem;
-      background: $dark;
-      color: $light;
+      background: var(--fv-pobo-dark);
+      color: var(--fv-pobo-light);
       font-size: 1.4rem;
       font-weight: 700;
       line-height: 2rem;
@@ -399,7 +401,7 @@ body {
         }
 
         #{ $self }__headline {
-          color: $dark;
+          color: var(--fv-pobo-dark);
           font-size: 1.8rem;
           font-weight: 700;
           line-height: 2.4rem;
@@ -416,7 +418,7 @@ body {
         }
 
         .content {
-          color: $dark;
+          color: var(--fv-pobo-dark);
           font-size: 1.6rem;
           font-weight: 400;
           line-height: 2.4rem;
@@ -484,24 +486,24 @@ body {
   }
 
   &.info {
-    background: $dark-8;
-    color: $dark;
+    background: var(--fv-pobo-dark-8);
+    color: var(--fv-pobo-dark);
   }
   &.neutral {
-    background-color: $green-8;
-    color: $green;
+    background-color: var(--fv-pobo-green-8);
+    color: var(--fv-pobo-green);
   }
   &.success {
-    background-color: $green;
-    color: $white;
+    background-color: var(--fv-pobo-green);
+    color: var(--fv-pobo-white);
   }
   &.warning {
-    background: $red-16;
-    color: $red;
+    background: var(--fv-pobo-red-16);
+    color: var(--fv-pobo-red);
   }
   &.error {
-    background-color: $red;
-    color: $white;
+    background-color: var(--fv-pobo-red);
+    color: var(--fv-pobo-white);
   }
 }
 
@@ -556,7 +558,7 @@ body {
 
   #{ $self }__module {
     border-radius: 1.6rem;
-    background: $dark-8;
+    background: var(--fv-pobo-dark-8);
     padding: 2.4rem;
     display: grid;
     grid-template-areas: "ico headline"
@@ -584,7 +586,7 @@ body {
     }
 
     #{ $self }__headline {
-      color: $dark;
+      color: var(--fv-pobo-dark);
       font-size: 1.8rem;
       font-weight: 700;
       line-height: 2.4rem;
@@ -596,7 +598,7 @@ body {
     }
 
     .content {
-      color: $dark;
+      color: var(--fv-pobo-dark);
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 2.4rem;
@@ -652,8 +654,8 @@ body {
       align-items: center;
       gap: 0.4rem;
       border-radius: 8rem;
-      background: $dark;
-      color: $light;
+      background: var(--fv-pobo-dark);
+      color: var(--fv-pobo-light);
       font-size: 1.4rem;
       font-weight: 700;
       line-height: 2rem;
