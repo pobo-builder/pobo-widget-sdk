@@ -1,18 +1,22 @@
 //@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 //:root {
-//  --fv-pobo-white: #ffffff;
-//  --fv-pobo-dark: #292725;
-//  --fv-pobo-dark-8: rgba(--fv-pobo-dark, 0.08);
-//  --fv-pobo-dark-16: rgba(--fv-pobo-dark, 0.16);
-//  --fv-pobo-dark-64: rgba(--fv-pobo-dark, 0.64);
-//  --fv-pobo-sand: #bbaf96;
-//  --fv-pobo-sand-16: rgba(--fv-pobo-sand, 0.16);
-//  --fv-pobo-light: #ffffff;
-//  --fv-pobo-green: #1BA78C;
-//  --fv-pobo-green-8: rgba(--fv-pobo-green, 0.08);
-//  --fv-pobo-red: #BF1F00;
-//  --fv-pobo-red-16: rgba(--fv-pobo-red, 0.16);
+//  --fv-pobo-white: rgb(255, 255, 255);
+//  --fv-pobo-dark: rgb(41, 39, 37);
+//  --fv-pobo-dark-8: rgba(41, 39, 37, 0.08);
+//  --fv-pobo-dark-16: rgba(41, 39, 37, 0.16);
+//  --fv-pobo-dark-64: rgba(41, 39, 37, 0.64);
+//  --fv-pobo-sand: rgb(187, 175, 150);
+//  --fv-pobo-sand-16: rgba(187, 175, 150, 0.16);
+//  --fv-pobo-light: rgb(255, 255, 255);
+//  --fv-pobo-green: rgb(27, 167, 140);
+//  --fv-pobo-green-8: rgba(27, 167, 140, 0.08);
+//  --fv-pobo-red: rgb(191, 31, 0);
+//  --fv-pobo-red-16: rgba(191, 31, 0, 0.16);
+//  --fv-pobo-bg-beige: rgb(210, 204, 196);
+//  --fv-pobo-bg-green: rgb(222, 245, 224);
+//  --fv-pobo-bg-blue: rgb(225, 241, 244);
+//  --fv-pobo-bg-yellow: rgb(250, 241, 217);
 //  --fv-pobo-font-primary: "Urbanist", sans-serif;
 //}
 
@@ -417,7 +421,7 @@
           }
         }
 
-        .content {
+        p {
           color: var(--fv-pobo-dark);
           font-size: 1.6rem;
           font-weight: 400;
@@ -437,6 +441,23 @@
         }
       }
     }
+  }
+
+  &.beige,
+  .beige {
+    background-color: var(--fv-pobo-bg-beige);
+  }
+  &.green,
+  .green {
+    background-color: var(--fv-pobo-bg-green);
+  }
+  &.blue,
+  .blue {
+    background-color: var(--fv-pobo-bg-blue);
+  }
+  &.yellow,
+  .yellow {
+    background-color: var(--fv-pobo-bg-yellow);
   }
 }
 
@@ -558,7 +579,7 @@
 
   #{ $self }__module {
     border-radius: 1.6rem;
-    background: var(--fv-pobo-dark-8);
+    background: var(--fv-pobo-bg-yellow);
     padding: 2.4rem;
     display: grid;
     grid-template-areas: "ico headline"
@@ -597,7 +618,7 @@
       }
     }
 
-    .content {
+    p {
       color: var(--fv-pobo-dark);
       font-size: 1.6rem;
       font-weight: 400;
