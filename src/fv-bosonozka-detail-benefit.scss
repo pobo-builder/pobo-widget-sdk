@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-:root {
-  --fv-pobo-white: rgb(255, 255, 255);
-  --fv-pobo-dark: rgb(41, 39, 37);
-  --fv-pobo-dark-8: rgba(41, 39, 37, 0.08);
-  --fv-pobo-dark-16: rgba(41, 39, 37, 0.16);
-  --fv-pobo-dark-64: rgba(41, 39, 37, 0.64);
-  --fv-pobo-sand: rgb(187, 175, 150);
-  --fv-pobo-sand-16: rgba(187, 175, 150, 0.16);
-  --fv-pobo-light: rgb(255, 255, 255);
-  --fv-pobo-green: rgb(27, 167, 140);
-  --fv-pobo-green-8: rgba(27, 167, 140, 0.08);
-  --fv-pobo-green-blue: rgb(191, 223, 217);
-  --fv-pobo-red: rgb(191, 31, 0);
-  --fv-pobo-red-16: rgba(191, 31, 0, 0.16);
-  --fv-pobo-bg-beige: rgb(210, 204, 196);
-  --fv-pobo-bg-green: rgb(222, 245, 224);
-  --fv-pobo-bg-blue: rgb(225, 241, 244);
-  --fv-pobo-bg-yellow: rgb(250, 241, 217);
-  --fv-pobo-pink: rgb(239, 208, 202);
-  --fv-pobo-font-primary: "Urbanist", sans-serif;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: var(--fv-pobo-font-primary);
-  max-width: 800px;
-}
+//@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+//:root {
+//  --fv-pobo-white: rgb(255, 255, 255);
+//  --fv-pobo-dark: rgb(41, 39, 37);
+//  --fv-pobo-dark-8: rgba(41, 39, 37, 0.08);
+//  --fv-pobo-dark-16: rgba(41, 39, 37, 0.16);
+//  --fv-pobo-dark-64: rgba(41, 39, 37, 0.64);
+//  --fv-pobo-sand: rgb(187, 175, 150);
+//  --fv-pobo-sand-16: rgba(187, 175, 150, 0.16);
+//  --fv-pobo-light: rgb(255, 255, 255);
+//  --fv-pobo-green: rgb(27, 167, 140);
+//  --fv-pobo-green-8: rgba(27, 167, 140, 0.08);
+//  --fv-pobo-green-blue: rgb(191, 223, 217);
+//  --fv-pobo-red: rgb(191, 31, 0);
+//  --fv-pobo-red-16: rgba(191, 31, 0, 0.16);
+//  --fv-pobo-bg-beige: rgb(210, 204, 196);
+//  --fv-pobo-bg-green: rgb(222, 245, 224);
+//  --fv-pobo-bg-blue: rgb(225, 241, 244);
+//  --fv-pobo-bg-yellow: rgb(250, 241, 217);
+//  --fv-pobo-pink: rgb(239, 208, 202);
+//  --fv-pobo-font-primary: "Urbanist", sans-serif;
+//}
+//html {
+//  font-size: 62.5%;
+//}
+//body {
+//  font-family: var(--fv-pobo-font-primary);
+//  max-width: 800px;
+//}
 
 @mixin bottom-border-divider() {
   margin-bottom: 2.4rem;
