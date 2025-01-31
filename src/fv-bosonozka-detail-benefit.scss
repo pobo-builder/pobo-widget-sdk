@@ -1218,20 +1218,19 @@
     border-bottom: 0.1rem solid var(--fv-pobo-dark-16);
     cursor: pointer;
 
-    &::before {
-      content: '';
-      background-color: var(--fv-pobo-white);
-      background-repeat: no-repeat;
-      background-size: contain;
-      display: inline-flex;
+    #{$self}__icon {
       height: 2.4rem;
       width: 2.4rem;
-      mask: url(https://667728.myshoptet.com/user/documents/fv-studio-app/assets/icons/add.svg) no-repeat 50% 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      #{$self}__icon-remove {
+        display: none;
+      }
     }
 
     &:last-child {
@@ -1264,6 +1263,10 @@
       line-height: 2rem;
       grid-column: 2;
 
+      body:not(.template-13) & {
+        display: block !important;
+      }
+
       @media (min-width: 992px) {
         font-size: 1.6rem;
         line-height: 2.4rem;
@@ -1273,24 +1276,15 @@
     &.showed {
       background-color: var(--fv-pobo-white);
 
-      &::before {
-        content: '';
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: inline-flex;
-        height: 2.4rem;
-        width: 2.4rem;
-        mask: url(https://667728.myshoptet.com/user/documents/fv-studio-app/assets/icons/remove.svg) no-repeat 50% 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-      }
-
       #{$self}__faq-answer {
         display: block;
+      }
+
+      #{$self}__icon-remove {
+        display: block;
+      }
+      #{$self}__icon-add {
+        display: none;
       }
     }
   }
