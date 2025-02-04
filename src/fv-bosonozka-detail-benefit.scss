@@ -137,11 +137,27 @@
       }
     }
 
-    > p {
+    #{ $self }__headline-text {
+      color: var(--fv-pobo-dark);
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      margin: 0 !important;
+      padding: 0;
+
+      @media (max-width: 1223.98px) {
+        grid-area: content;
+        font-size: 1.4rem;
+        line-height: 2rem;
+      }
+    }
+
+    #{ $self }__text-p {
       font-size: 1.4rem;
       font-weight: 400;
       line-height: 2rem;
       margin: 0 0 2.4rem 0;
+      display: block;
 
       @media (min-width: 768px) {
         font-size: 1.8rem;
@@ -162,18 +178,8 @@
       padding: 0;
 
       @media (min-width: 768px) {
-        grid-template-columns: repeat(3, 1fr);
         gap: 3.2rem;
         padding: 4.8rem 0 0 0;
-      }
-
-      &:not(:has(#{ $self }__block > p)) {
-        display: flex;
-        flex-wrap: wrap;
-
-        @media (max-width: 767.98px) {
-          gap: 0;
-        }
       }
 
       #{ $self }__block {
@@ -185,49 +191,9 @@
         row-gap: 1.6rem;
 
         @media (min-width: 768px) {
-          body.type-product & {
-            display: grid;
-            flex-direction: unset;
-            row-gap: unset;
-          }
-
-          display: flex;
-          flex-direction: column;
-          gap: 1.6rem;
-          flex: 1 0 0;
-        }
-
-        &:not(:has(>p)) {
-          display: flex !important;
-          flex-direction: row !important;
-          align-items: center;
-          justify-content: flex-start;
-          width: 100%;
-          text-align: center;
-
-          @media (min-width: 768px) {
-            flex-direction: column !important;
-            justify-content: center;
-            width: calc(100% / 3);
-            row-gap: .8rem !important;
-          }
-
-          #{ $self }__icon {
-            display: flex;
-          }
-
-          #{ $self }__headline {
-            @media (max-width: 767.98px) {
-              font-size: 1.4rem;
-              line-height: 2rem;
-            }
-
-            p {
-              font-weight: inherit !important;
-              font-size: inherit !important;
-              line-height: inherit !important;
-            }
-          }
+          display: grid;
+          flex-direction: unset;
+          row-gap: unset;
         }
 
         #{ $self }__icon {
@@ -314,6 +280,51 @@
         font-size: 3.2rem;
         line-height: 4rem;
         margin: 2.4rem 0 !important;
+      }
+    }
+  }
+}
+@mixin fv-bosonozka-advanced-banner-center-text($self) {
+  #{ $self }__content {
+    #{ $self }__blocks {
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (max-width: 767.98px) {
+        gap: 0;
+      }
+
+      #{ $self }__block {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        text-align: center;
+
+        @media (min-width: 768px) {
+          flex-direction: column !important;
+          justify-content: center;
+          width: calc(100% / 3 - 3rem);
+          row-gap: .8rem !important;
+        }
+
+        #{ $self }__icon {
+          display: flex;
+        }
+
+        #{ $self }__headline {
+          @media (max-width: 767.98px) {
+            font-size: 1.4rem;
+            line-height: 2rem;
+          }
+
+          p {
+            font-weight: inherit !important;
+            font-size: inherit !important;
+            line-height: inherit !important;
+          }
+        }
       }
     }
   }
@@ -535,18 +546,6 @@
     }
 
     a {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      gap: 0.4rem;
-      transition: all .3s ease-in-out;
-
       &::after {
         content: '';
         padding: .8rem;
@@ -563,6 +562,15 @@
         width: 2.4rem;
         height: 2.4rem;
         z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        transition: all .3s ease-in-out;
+        z-index: 1;
 
         @media (min-width: 768px) {
           font-size: 1.6rem;
@@ -580,11 +588,11 @@
         height: 2.4rem;
         width: 2.4rem;
         mask: url(https://image.pobo.cz/images/3lz9h2lslxjt/zlh7lr6sklm97m74a7qb-md.svg) no-repeat 50% 50%;
-        z-index: 1;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 2;
       }
 
       &:hover {
@@ -711,6 +719,7 @@
   background-color: var(--fv-pobo-bg-beige);
   @include fv-bosonozka-advanced-banner($self);
   @include fv-bosonozka-advanced-banner-top-content($self);
+  @include fv-bosonozka-advanced-banner-center-text($self);
 }
 .fv-bosonozka-advanced-banner-left-content-image-top-green {
   $self: &;
@@ -725,6 +734,10 @@
   @include fv-bosonozka-advanced-banner($self);
   @include fv-bosonozka-advanced-banner-top-content($self);
   @include fv-bosonozka-advanced-banner-image-bottom($self);
+
+  #{ $self }__text-p {
+    margin-block: 0 !important;
+  }
 }
 .fv-bosonozka-advanced-banner-left-content-image-bottom-yellow {
   $self: &;
