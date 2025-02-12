@@ -1,0 +1,40 @@
+.pbc-oh-my-bean-puff {
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-image: var(--pobo-custom-bean-bg-image-big);
+  background-size: var(--pobo-custom-bean-bg-size);
+  min-height: var(--pobo-custom-bean-min-height);
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    background-image: var(--pobo-custom-bean-bg-image-small);
+  }
+
+  &__content {
+    width: var(--pobo-custom-bean-content-width);
+    max-width: var(--pobo-custom-bean-content-max-width);
+    height: var(--pobo-custom-bean-content-height);
+    display: flex;
+
+    @media screen and (max-width: 480px) {
+      max-width: var(--pobo-custom-bean-content-max-width-mobile);
+    }
+
+    h2 {
+      font-size: var(--pobo-custom-bean-heading-font-size);
+      text-align: var(--pobo-custom-bean-heading-text-align);
+      font-family: var(--pobo-custom-bean-heading-font-family), serif;
+      line-height: var(--pobo-custom-bean-heading-line-height);
+      color: var(--pobo-custom-bean-heading-color);
+
+      @media screen and (max-width: 480px) {
+        font-size: var(--pobo-custom-bean-heading-font-size-mobile);
+      }
+
+      @media screen and (max-width: 670px) {
+        font-size: var(--pobo-custom-bean-heading-font-size-tablet);
+      }
+    }
+  }
+}
