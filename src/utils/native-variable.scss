@@ -1441,7 +1441,8 @@
   /***
    Oh my bean custom
  */
-
+  --pobo-custom-bean-color:#21219B;
+  --pobo-custom-bean-font-family: Sztos Condensed;
   --pobo-custom-bean-bg-image-big: url("https://pobo-cdn.b-cdn.net/client/ohmybean/puff_big.svg");
   --pobo-custom-bean-bg-image-small: url("https://pobo-cdn.b-cdn.net/client/ohmybean/puff_small.svg");
   --pobo-custom-bean-bg-size: 100% 100%;
@@ -1449,14 +1450,37 @@
   --pobo-custom-bean-content-width: 100%;
   --pobo-custom-bean-content-max-width: 80%;
   --pobo-custom-bean-content-height: 100%;
-  --pobo-custom-bean-content-max-width-mobile: 77%;
+  --pobo-custom-bean-content-max-width-mobile: 75%;
   --pobo-custom-bean-heading-font-size: 31px;
   --pobo-custom-bean-heading-text-align: center;
   --pobo-custom-bean-heading-font-family: Sztos Condensed, sans-serif;
   --pobo-custom-bean-heading-line-height: 1.4;
   --pobo-custom-bean-heading-color: #21219B;
   --pobo-custom-bean-heading-font-size-mobile: 32px;
-  --pobo-custom-bean-heading-font-size-tablet: 25px;
+  --pobo-custom-bean-heading-font-size-tablet: 23px;
+  --pobo-custom-bean-notes-width: 100%;
+  --pobo-custom-bean-notes-border-radius: 20px;
+  --pobo-custom-bean-notes-bg: white;
+  --pobo-custom-bean-notes-position: relative;
+  --pobo-custom-bean-notes-content-width: 100%;
+  --pobo-custom-bean-notes-content-z-index: 2;
+  --pobo-custom-bean-notes-content-padding: 20px 20px 90px;
+  --pobo-custom-bean-notes-content-max-width: 550px;
+  --pobo-custom-bean-notes-content-position: relative;
+  --pobo-custom-bean-heading-margin: 0;
+  --pobo-custom-bean-paragraph-font-size: 14px;
+  --pobo-custom-bean-paragraph-color: var(--pobo-custom-bean-color);
+  --pobo-custom-bean-paragraph-font-family: var(--pobo-custom-bean-font-family);
+  --pobo-custom-bean-paragraph-margin: 8px 0;
+  --pobo-custom-bean-notes-before-position: absolute;
+  --pobo-custom-bean-notes-before-width: 100%;
+  --pobo-custom-bean-notes-before-height: 100%;
+  --pobo-custom-bean-notes-before-right: 0;
+  --pobo-custom-bean-notes-before-bottom: 0;
+  --pobo-custom-bean-notes-before-bg-image: url("https://pobo-cdn.b-cdn.net/client/ohmybean/coffee.png");
+  --pobo-custom-bean-notes-before-bg-repeat: no-repeat;
+  --pobo-custom-bean-notes-before-bg-position: right bottom;
+
 }
 
 
