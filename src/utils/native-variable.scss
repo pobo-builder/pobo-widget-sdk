@@ -1437,6 +1437,26 @@
   --pobo-widget-parameter-big-right-padding: 0;
 
   --pobo-widget-author-above-margin: 50px 0 20px 0;
+
+  /***
+   Oh my bean custom
+ */
+
+  --pobo-custom-bean-bg-image-big: url("https://pobo-cdn.b-cdn.net/client/ohmybean/puff_big.svg");
+  --pobo-custom-bean-bg-image-small: url("https://pobo-cdn.b-cdn.net/client/ohmybean/puff_small.svg");
+  --pobo-custom-bean-bg-size: 100% 100%;
+  --pobo-custom-bean-min-height: 480px;
+  --pobo-custom-bean-content-width: 100%;
+  --pobo-custom-bean-content-max-width: 80%;
+  --pobo-custom-bean-content-height: 100%;
+  --pobo-custom-bean-content-max-width-mobile: 77%;
+  --pobo-custom-bean-heading-font-size: 31px;
+  --pobo-custom-bean-heading-text-align: center;
+  --pobo-custom-bean-heading-font-family: Sztos Condensed, sans-serif;
+  --pobo-custom-bean-heading-line-height: 1.4;
+  --pobo-custom-bean-heading-color: #21219B;
+  --pobo-custom-bean-heading-font-size-mobile: 32px;
+  --pobo-custom-bean-heading-font-size-tablet: 25px;
 }
 
 
