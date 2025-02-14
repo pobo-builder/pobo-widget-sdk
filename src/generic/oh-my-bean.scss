@@ -53,6 +53,7 @@
     padding: var(--pobo-custom-bean-notes-content-padding);
     max-width: var(--pobo-custom-bean-notes-content-max-width);
     position: var(--pobo-custom-bean-notes-content-position);
+    font-weight: 600;
 
     h2 {
       font-size: var(--pobo-custom-bean-heading-font-size);
@@ -183,6 +184,10 @@
     }
   }
 
+  &__image{
+    position: relative;
+  }
+
   &__item-right {
     padding: var(--pobo-custom-bean-boxes-item-right-padding);
 
@@ -225,11 +230,18 @@
 
     @media screen and (max-width: 480px) {
       right: 15px;
+      width: 120px;
+      height: 120px;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
     }
   }
 
   &__wrap {
     max-width: var(--pobo-custom-bean-info-wrap-max-width);
+    h2{
+      font-weight: 600;
+    }
   }
 
   &--floral {
@@ -341,7 +353,7 @@
     width: 170px;
     max-width: var(--pobo-custom-bean-farmer-img-max-width);
     @media screen and (max-width: 480px) {
-      right: 15px;
+      right: -15px;
     }
     .pbc-oh-my-bean-farmer__img {
       width: 100%;
@@ -383,20 +395,29 @@
   }
 
   &__headline{
-    font-weight: 700;
+    font-weight: 600;
     font-size: var(--pobo-custom-bean-h2-font-size);
   }
 
   &__text{
     font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__detail-text{
+    h3{
+      font-weight: 700;
+      font-size: 16px;
+    }
   }
 
   &__wrap{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
+    gap: 20px;
     @media screen and (max-width: 480px) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
     }
 
     &--five{
@@ -466,6 +487,7 @@
 
   &__title{
     font-size: var(--pobo-custom-bean-h2-font-size);
+    font-weight: 600;
   }
 
   .pb-faq{
@@ -478,6 +500,7 @@
       border-bottom: 2px solid var(--pobo-custom-bean-color);
       padding: 12px 12px 12px 0;
       font-size: var(--pobo-custom-bean-p-font-size);
+      font-weight: 700;
 
       &:before{
         content: url("https://image.pobo.cz/assets/arrow-bottom.svg");
@@ -489,8 +512,12 @@
     }
 
     &__content{
+      box-shadow: unset;
+      border: none;
+      padding: 19px 0 0;
       font-family: var(--pobo-custom-bean-font-family), sans-serif;
       p{
+        font-weight: 500;
         font-size: var(--pobo-custom-bean-p-font-size);
       }
       h2{
