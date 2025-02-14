@@ -396,15 +396,18 @@
 
   &__headline{
     font-weight: 600;
+    margin: 10px 0 20px 0;
     font-size: var(--pobo-custom-bean-h2-font-size);
   }
 
   &__text{
     font-weight: 400;
     font-size: 24px;
+    margin: 10px 0 0 0;
   }
 
   &__detail-text{
+    margin: 0;
     h3{
       font-weight: 700;
       font-size: 16px;
