@@ -415,24 +415,16 @@
   }
 
   &__wrap{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    @media screen and (max-width: 480px) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    &--five{
-      grid-template-rows: 1fr 1fr;
-      @media screen and (max-width: 480px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 70px;
+    row-gap: 28px;
   }
 
   &__item-cloud{
+    width: 138px;
     background: url("https://pobo-cdn.b-cdn.net/client/ohmybean/prep.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -443,7 +435,11 @@
   }
 
   &__item {
-    width: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
 
     &--last {
