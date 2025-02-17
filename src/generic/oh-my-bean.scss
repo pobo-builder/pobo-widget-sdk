@@ -7,6 +7,13 @@
   min-height: var(--pobo-custom-bean-min-height);
   align-items: center;
   font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  @media screen and (max-width: 1199px) {
+    background-image: var(--pobo-custom-bean-bg-image-small);
+  }
+
+  @media screen and (max-width: 991px) {
+    background-image: var(--pobo-custom-bean-bg-image-big);
+  }
 
   @media screen and (max-width: 480px) {
     background-image: var(--pobo-custom-bean-bg-image-small);
