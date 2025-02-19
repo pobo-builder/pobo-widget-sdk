@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="src/generic.scss">
+  <!-- Prefetch Pobo Page Builder CDN  -->
+  <link rel="dns-prefetch" href="https://image.pobo.cz">
+  <script src="src/main.js" async type="module"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+  <style>
+    .widget-container {
+      border-bottom: 0px solid transparent;
+    }
+
+    .widget-container {
+      border-bottom: 0px solid red;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    });
+
+
+    // add new event listeren document ready
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(() => {
+        const images = document.querySelectorAll('.rc-counter__img, .rc-advantages-two__ico-img');
+        let timeout;
+
+        images.forEach(image => {
+          const container = image.closest('.lazyLoad'); // Předpokládá, že obrázek je uvnitř kontejneru
+
+          container.addEventListener('mousemove', function (e) {
+            if (timeout) clearTimeout(timeout);
+
+            timeout = setTimeout(() => {
+              const rect = container.getBoundingClientRect();
+              const x = e.clientX - rect.left;
+              const y = e.clientY - rect.top;
+
+              const centerX = rect.width / 2;
+              const centerY = rect.height / 2;
+
+              const deltaX = (x - centerX) / 20;
+              const deltaY = (y - centerY) / 20;
+
+              image.style.transform = `rotateX(${deltaY}deg) rotateY(${deltaX}deg)`;
+            }, 50); // Zpoždění 50ms
+          });
+
+          container.addEventListener('mouseleave', function () {
+            if (timeout) clearTimeout(timeout);
+            console.log('leave');
+            image.style.transform = 'rotateX(0deg) rotateY(0deg)';
+          });
+        });
+
+
+        interact('.widget-container2')
+          .resizable({
+            invert: 'reposition',
+            edges: {top: false, left: false, bottom: true, right: false},
+            modifiers: [
+              interact.modifiers.restrictEdges({
+                outer: 'parent'
+              })
+            ],
+            inertia: false
+          })
+          .on('resizemove', function (event) {
+            var target = event.target;
+            var newPaddingTop = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
+            var newPaddingBottom = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
+
+            // Zobrazíme v konzoli informace o změně
+            console.log('Aktuální padding-top:', target.style.paddingBottom);
+            console.log('Delta (změna) top:', event.deltaRect.bottom);
+            console.log('Nový padding-top:', newPaddingTop + 'px');
+
+            // Nastavíme nový padding-top
+
+
+            target.style.paddingBottom = newPaddingTop + 'px';
+            target.style.paddingTop = newPaddingBottom + 'px';
+          });
+
+        interact('.rc-advantages-four__ico-img')
+          .resizable({
+            invert: 'reposition',
+            edges: {top: false, left: false, bottom: true, right: false},
+            modifiers: [
+              interact.modifiers.restrictEdges({
+                outer: 'parent'
+              })
+            ],
+            inertia: false
+          })
+          .on('resizemove', function (event) {
+            var target = event.target;
+            var newPaddingTop = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
+            var newPaddingBottom = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
+
+            // width
+            var newWidth = parseInt(target.style.width || 0) + event.deltaRect.width;
+
+            // Zobrazíme v konzoli informace o změně
+            console.log('Aktuální padding-top:', target.style.paddingBottom);
+            console.log('Delta (změna) top:', event.deltaRect.bottom);
+            console.log('Nový padding-top:', newPaddingTop + 'px');
+
+
+            // Nastavíme nový padding-top
+
+
+            //  target.style.paddingBottom = newPaddingTop + 'px';
+            //  target.style.paddingTop = newPaddingBottom + 'px';
+            if (newWidth) {
+              target.style.width = newWidth + 'px';
+            }
+          });
+      }, 100)
+    });
+  </script>
+
+  <title>Widget pobo</title>
+</head>
+<body>
+
+<div style="max-width: 999px; margin: 0 auto; background: #21219B; padding: 5px;">
+  <div class="pbc-oh-my-bean-puff">
+    <div class="pbc-oh-my-bean-puff__content">
+      <p>
+        Káva s plným tělem, karamelovou sladkostí a florálním nádechem máty, citronové trávy a citrusovou kyselinkou.
+      </p>
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-notes">
+    <div class="pbc-oh-my-bean-notes__content">
+      <h2>
+          Poznámky z pražírny
+        </h2>
+        <p>
+          Představujeme další indonéskou kávu, která nám ukazuje rozmanitost tohoto regionu. Můžete se těšit na tóny tropického ovoce doplněné jemnou citrusovou kyselinkou, která je vyvážena příjemnou karamelovou sladkostí.
+          </p>
+        <p>
+          Představujeme další indonéskou kávu, která nám ukazuje rozmanitost tohoto regionu. Můžete se těšit na tóny tropického ovoce doplněné jemnou citrusovou kyselinkou, která je vyvážena příjemnou karamelovou sladkostí.
+        </p>
+
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-notes-simple">
+    <div class="pbc-oh-my-bean-notes-simple__content">
+      <h2>
+        Poznámky z pražírny
+      </h2>
+      <p>
+        Představujeme další indonéskou kávu, která nám ukazuje rozmanitost tohoto regionu. Můžete se těšit na tóny tropického ovoce doplněné jemnou citrusovou kyselinkou, která je vyvážena příjemnou karamelovou sladkostí.
+      </p>
+      <p>
+        Představujeme další indonéskou kávu, která nám ukazuje rozmanitost tohoto regionu. Můžete se těšit na tóny tropického ovoce doplněné jemnou citrusovou kyselinkou, která je vyvážena příjemnou karamelovou sladkostí.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-boxes">
+    <div class="pbc-oh-my-bean-boxes__wrap">
+      <div class="pbc-oh-my-bean-boxes__item">
+        <div class="pbc-oh-my-bean-boxes__item-left">
+          <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/oh-my-beans-icons-4.svg" class="pbc-oh-my-bean-boxes__image" />
+        </div>
+        <div class="pbc-oh-my-bean-boxes__item-right">
+          <h3 class="pbc-oh-my-bean-boxes__item-h3"> Region </h3>
+          <h2 class="pbc-oh-my-bean-boxes__item-h2"> Kerinci </h2>
+        </div>
+      </div>
+      <div class="pbc-oh-my-bean-boxes__item">
+        <div class="pbc-oh-my-bean-boxes__item-left">
+          <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/oh-my-beans-icons-3.svg" class="pbc-oh-my-bean-boxes__image" />
+        </div>
+        <div class="pbc-oh-my-bean-boxes__item-right">
+          <h3 class="pbc-oh-my-bean-boxes__item-h3"> Farmář </h3>
+          <h2 class="pbc-oh-my-bean-boxes__item-h2"> drobní farmáři </h2>
+        </div>
+      </div>
+      <div class="pbc-oh-my-bean-boxes__item">
+        <div class="pbc-oh-my-bean-boxes__item-left">
+          <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/oh-my-beans-icons-2.svg" class="pbc-oh-my-bean-boxes__image" />
+        </div>
+        <div class="pbc-oh-my-bean-boxes__item-right">
+          <h3 class="pbc-oh-my-bean-boxes__item-h3"> Sklizeň </h3>
+          <h2 class="pbc-oh-my-bean-boxes__item-h2"> 23/24 </h2>
+        </div>
+      </div>
+      <div class="pbc-oh-my-bean-boxes__item">
+        <div class="pbc-oh-my-bean-boxes__item-left">
+          <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/oh-my-beans-icons-7.svg" class="pbc-oh-my-bean-boxes__image" />
+        </div>
+        <div class="pbc-oh-my-bean-boxes__item-right">
+          <h3 class="pbc-oh-my-bean-boxes__item-h3"> Způsoby zpracování </h3>
+          <h2 class="pbc-oh-my-bean-boxes__item-h2"> Honey </h2>
+        </div>
+      </div>
+      <div class="pbc-oh-my-bean-boxes__item">
+        <div class="pbc-oh-my-bean-boxes__item-left">
+          <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/oh-my-beans-icons-6.svg" class="pbc-oh-my-bean-boxes__image" />
+        </div>
+        <div class="pbc-oh-my-bean-boxes__item-right">
+          <h3 class="pbc-oh-my-bean-boxes__item-h3"> Farma </h3>
+          <h2 class="pbc-oh-my-bean-boxes__item-h2"> Koerintji Barokah Bersama </h2>
+        </div>
+      </div>
+      <div class="pbc-oh-my-bean-boxes__item">
+        <div class="pbc-oh-my-bean-boxes__item-left">
+          <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/oh-my-beans-icons-5.svg" class="pbc-oh-my-bean-boxes__image" />
+        </div>
+        <div class="pbc-oh-my-bean-boxes__item-right">
+          <h3 class="pbc-oh-my-bean-boxes__item-h3"> Partner </h3>
+          <h2 class="pbc-oh-my-bean-boxes__item-h2"> Sucafina Speciality </h2>
+        </div>
+      </div>
+      <div class="pbc-oh-my-bean-boxes__item">
+        <div class="pbc-oh-my-bean-boxes__item-left">
+          <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/oh-my-beans-icons-8.svg" class="pbc-oh-my-bean-boxes__image" />
+        </div>
+        <div class="pbc-oh-my-bean-boxes__item-right">
+          <h3 class="pbc-oh-my-bean-boxes__item-h3"> Odrůda </h3>
+          <h2 class="pbc-oh-my-bean-boxes__item-h2"> Andung Sari, Sigarar Utang Andung Sari, Sigarar Utang</h2>
+        </div>
+      </div>
+      <div class="pbc-oh-my-bean-boxes__item">
+        <div class="pbc-oh-my-bean-boxes__item-left">
+          <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/oh-my-beans-icons-1.svg" class="pbc-oh-my-bean-boxes__image" />
+        </div>
+        <div class="pbc-oh-my-bean-boxes__item-right">
+          <h3 class="pbc-oh-my-bean-boxes__item-h3"> Nadmořská výška </h3>
+          <h2 class="pbc-oh-my-bean-boxes__item-h2"> 1400–1700 m. n. m. </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-info-color pbc-oh-my-bean-info-color--floral">
+    <div class="pbc-oh-my-bean-info-color__wrap">
+      <p>
+        <h2>
+           Charakter kávy
+        </h2>
+        <p>
+          Květinové tóny v kávě evokují vůně jasmínu, růže nebo levandule, najít můžete i nádech černého čaje. Jejich profil nabízí elegantní a rafinovaný zážitek s hebkou texturou. Ideální pro ty, kteří hledají jemnou a neokázalou chuťovou kompozici.
+        </p>
+      </p>
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-info-color pbc-oh-my-bean-info-color--choco">
+    <div class="pbc-oh-my-bean-info-color__wrap">
+      <p>
+      <h2>
+        Charakter kávy
+      </h2>
+      <p>
+        Květinové tóny v kávě evokují vůně jasmínu, růže nebo levandule, najít můžete i nádech černého čaje. Jejich profil nabízí elegantní a rafinovaný zážitek s hebkou texturou. Ideální pro ty, kteří hledají jemnou a neokázalou chuťovou kompozici.
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-info-color pbc-oh-my-bean-info-color--fruity">
+    <div class="pbc-oh-my-bean-info-color__wrap">
+      <p>
+      <h2>
+        Charakter kávy
+      </h2>
+      <p>
+        Květinové tóny v kávě evokují vůně jasmínu, růže nebo levandule, najít můžete i nádech černého čaje. Jejich profil nabízí elegantní a rafinovaný zážitek s hebkou texturou. Ideální pro ty, kteří hledají jemnou a neokázalou chuťovou kompozici.
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-info-color pbc-oh-my-bean-info-color--sweet">
+    <div class="pbc-oh-my-bean-info-color__wrap">
+      <p>
+      <h2>
+        Charakter kávy
+      </h2>
+      <p>
+        Květinové tóny v kávě evokují vůně jasmínu, růže nebo levandule, najít můžete i nádech černého čaje. Jejich profil nabízí elegantní a rafinovaný zážitek s hebkou texturou. Ideální pro ty, kteří hledají jemnou a neokázalou chuťovou kompozici.
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-farmer">
+    <div class="pbc-oh-my-bean-farmer__top">
+     <h2 class="pbc-oh-my-bean-farmer__title"> O farmáři </h2>
+    <div class="pbc-oh-my-bean-farmer__background">
+      <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/mapa-ameriky.svg" class="pbc-oh-my-bean-farmer__bg">
+    </div>
+    <div class="pbc-oh-my-bean-farmer__image">
+      <img src="https://pobo-cdn.b-cdn.net/client/ohmybean/farmar.svg" class="pbc-oh-my-bean-farmer__img">
+    </div>
+    </div>
+    <div class="pbc-oh-my-bean-farmer__content">
+      <p class="pbc-oh-my-bean-farmer__content-text">
+        <p>
+        Na farmě Los Nogales se skrývá nejen rodinný podnik, ale i fascinující příběh. Oscar Hernandéz, charismatický vůdce celého projektu, je třetí generace farmářů, kteří se věnují pěstování kávy na jihu oblastí Hulla nedaleko městečka Bruselas.
+        </p>
+        <p>
+          Oscar je člověk plny energie, s nadšením a inovativními myšlenkami, které nejenom obohacují jeho rodinu, ale také celé okolí.         </p>
+        <p>
+          Jeho otec, Ricaurte Hernandéz dokázal kávy z Bruselasu dostat mezí ty nejlepší v celé Kolumbii. V roce 2006 získal Ricaurte prestižní ocenění Cup of Excellence, coz dostalo Jeho farmu do širokého povědomí.
+        </p>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="pbc-oh-my-bean-preparation">
+    <h2 class="pbc-oh-my-bean-preparation__headline"> Příprava</h2>
+    <div class="pbc-oh-my-bean-preparation__wrap">
+      <div class="pbc-oh-my-bean-preparation__item">
+        <div class="pbc-oh-my-bean-preparation__item-cloud">
+           <h3 class="pbc-oh-my-bean-preparation__detail-text"> 16g </h3>
+        </div>
+        <h3 class="pbc-oh-my-bean-preparation__text"> Množství kávy </h3>
+      </div>
+      <div class="pbc-oh-my-bean-preparation__item">
+        <div class="pbc-oh-my-bean-preparation__item-cloud">
+          <h3 class="pbc-oh-my-bean-preparation__detail-text"> 16g </h3>
+        </div>
+        <h3 class="pbc-oh-my-bean-preparation__text"> Množství kávy </h3>
+      </div>
+      <div class="pbc-oh-my-bean-preparation__item pbc-oh-my-bean-preparation__item--last">
+        <div class="pbc-oh-my-bean-preparation__item-cloud">
+          <h3 class="pbc-oh-my-bean-preparation__detail-text"> 16g </h3>
+        </div>
+        <h3 class="pbc-oh-my-bean-preparation__text"> Množství kávy </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-preparation">
+    <h2 class="pbc-oh-my-bean-preparation__headline"> Příprava</h2>
+    <div class="pbc-oh-my-bean-preparation__wrap pbc-oh-my-bean-preparation__wrap--five">
+      <div class="pbc-oh-my-bean-preparation__item">
+        <div class="pbc-oh-my-bean-preparation__item-cloud">
+          <h3 class="pbc-oh-my-bean-preparation__detail-text"> 16g </h3>
+        </div>
+        <h3 class="pbc-oh-my-bean-preparation__text"> Množství kávy </h3>
+      </div>
+      <div class="pbc-oh-my-bean-preparation__item">
+        <div class="pbc-oh-my-bean-preparation__item-cloud">
+          <h3 class="pbc-oh-my-bean-preparation__detail-text"> 16g </h3>
+        </div>
+        <h3 class="pbc-oh-my-bean-preparation__text"> Množství kávy </h3>
+      </div>
+      <div class="pbc-oh-my-bean-preparation__item">
+        <div class="pbc-oh-my-bean-preparation__item-cloud">
+          <h3 class="pbc-oh-my-bean-preparation__detail-text"> 16g </h3>
+        </div>
+        <h3 class="pbc-oh-my-bean-preparation__text"> Množství kávy </h3>
+      </div>
+      <div class="pbc-oh-my-bean-preparation__item pbc-oh-my-bean-preparation__item--last-five">
+        <div class="pbc-oh-my-bean-preparation__item-cloud">
+          <h3 class="pbc-oh-my-bean-preparation__detail-text"> 16g </h3>
+        </div>
+        <h3 class="pbc-oh-my-bean-preparation__text"> Množství kávy </h3>
+      </div>
+      <div class="pbc-oh-my-bean-preparation__item pbc-oh-my-bean-preparation__item--last-five-two">
+        <div class="pbc-oh-my-bean-preparation__item-cloud">
+          <h3 class="pbc-oh-my-bean-preparation__detail-text"> 16g </h3>
+        </div>
+        <h3 class="pbc-oh-my-bean-preparation__text"> Množství kávy </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="pbc-oh-my-bean-faq">
+    <h2 class="pbc-oh-my-bean-faq__title"> Časté dotazy </h2>
+
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Podle čeho si mám kávu vybrat?  </h2>
+      <div class="pb-faq__content">
+        <p> Odpověď </p>
+      </div>
+    </div>
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Podle čeho si mám kávu vybrat?  </h2>
+      <div class="pb-faq__content">
+        <p> Odpověď </p>
+      </div>
+    </div>
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Podle čeho si mám kávu vybrat?  </h2>
+      <div class="pb-faq__content">
+        <p> Odpověď </p>
+      </div>
+    </div>
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Podle čeho si mám kávu vybrat?  </h2>
+      <div class="pb-faq__content">
+        <p> Odpověď </p>
+      </div>
+    </div>
+    <div class="pb-faq">
+      <h2 class="pb-faq__header"> Podle čeho si mám kávu vybrat?  </h2>
+      <div class="pb-faq__content">
+        <p> Odpověď </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pbc-oh-my-bean-main-title">
+    <h2> Blog </h2>
+  </div>
+
+  <div class="pbc-oh-my-bean-color-info-box pbc-oh-my-bean-color-info-box--color5 pbc-oh-my-bean-color-info-box--with-picto pbc-oh-my-bean-color-info-box--vir">
+    <p class="pbc-oh-my-bean-color-info-box__text">
+      <h2>
+        Odrůda Bourbon
+      </h2>
+      <p>
+        Jedna z nejvýznamnějších odrůd známá vynikající kvalitou a schopností růst v nejvyšších nadmořských výškách.
+      </p>
+    <h3>
+      Historie
+    </h3>
+    <p>
+      Kolem roku 1715 bylo několik rostlin zavlečeno Francouzi na ostrov, který dnes známé jako Réunion (v té době známý jako Ile Bourbon) v Indickém oceánu. Tyto stromy Typica na ostrově zmutovaly a dala vzniknout odrůdě, které dnes říkáme Bourbon. Ukázalo se, že je produktivnější než její předchůdce. Tato její vlastnost učinila z nové odrůdy velmi žádanou a rozšířila se po celé Brazílii (kde byla převzata koncem 18. století) a dalších částech Střední a Jižní Ameriky a také na africkém kontinentu, zejména ve Rwandě.
+    </p>
+    <h3>
+      Podrobnosti a morfologie
+    </h3>
+    <p>
+      Bourbon má velké, široké listy se zvlněnými okraji a má tendenci mít více sekundárních větví ve srovnání s jinými kávovníky. Bobule jsou poměrně malé a velmi silné a mohou být červené, žluté nebo růžové v závislosti na pododrůdě.
+    </p>
+    </p>
+  </div>
+
+  <div class="pbc-oh-my-bean-color-info-box pbc-oh-my-bean-color-info-box--color2 pbc-oh-my-bean-color-info-box--with-bean">
+    <p>
+    <h2>
+      Odrůda Bourbon
+    </h2>
+    <p>
+      Jedna z nejvýznamnějších odrůd známá vynikající kvalitou a schopností růst v nejvyšších nadmořských výškách.
+    </p>
+    <h3>
+      Historie
+    </h3>
+    <p>
+      Kolem roku 1715 bylo několik rostlin zavlečeno Francouzi na ostrov, který dnes známé jako Réunion (v té době známý jako Ile Bourbon) v Indickém oceánu. Tyto stromy Typica na ostrově zmutovaly a dala vzniknout odrůdě, které dnes říkáme Bourbon. Ukázalo se, že je produktivnější než její předchůdce. Tato její vlastnost učinila z nové odrůdy velmi žádanou a rozšířila se po celé Brazílii (kde byla převzata koncem 18. století) a dalších částech Střední a Jižní Ameriky a také na africkém kontinentu, zejména ve Rwandě.
+    </p>
+    <h3>
+      Podrobnosti a morfologie
+    </h3>
+    <p>
+      Bourbon má velké, široké listy se zvlněnými okraji a má tendenci mít více sekundárních větví ve srovnání s jinými kávovníky. Bobule jsou poměrně malé a velmi silné a mohou být červené, žluté nebo růžové v závislosti na pododrůdě.
+    </p>
+    </p>
+  </div>
+
+
+</div>
+
+</body>
+</html>
