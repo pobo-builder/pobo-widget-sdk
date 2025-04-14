@@ -5,6 +5,8 @@
 
 @import "generative/widget-container";
 @import "generative/variables";
+@import "custom/lobey-custom";
+
 @import "utils/container-resolver";
 @import "utils/native-variable";
 @import "utils/infobox";
@@ -130,4 +132,4 @@
   Custom clients
 **/
 @import "generic/oh-my-bean";
-
+@import "custom/lobey-custom";
