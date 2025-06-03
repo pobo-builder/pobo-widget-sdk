@@ -1,0 +1,51 @@
+.pb-nokov-custom-boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif !important;
+
+  &__box {
+    flex: 1 1 calc(25% - 14px);
+    width: calc(25% - 14px);
+    min-width: 220px;
+    max-width: calc(25% - 14px);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: white;
+    border: 1px solid #ededed;
+    box-shadow: 0 2px 8px rgba(30,30,60,0.06);
+    padding: 0 18px;
+    box-sizing: border-box;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #23232c;
+
+    &:hover {
+      border-color: #239ceb;
+      color: #239ceb !important;
+      text-decoration: underline;
+    }
+  }
+
+  &__img {
+    height: 50px;
+    width: auto;
+    margin-right: 16px;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  &__title {
+    font-size: 15px;
+    line-height: 1;
+    white-space: nowrap;
+    user-select: none;
+    font-weight: 600;
+  }
+}
