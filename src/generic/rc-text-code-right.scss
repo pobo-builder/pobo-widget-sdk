@@ -1,0 +1,33 @@
+.rc-text-code-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--pobo-text-code-bg);
+  box-shadow: var(--pobo-text-code-box-shadow);
+  border: var(--pobo-text-code-border);
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+
+  &__text{
+    width: 50%;
+    padding: var(--pobo-text-code-text-padding);
+    margin: var(--pobo-text-code-text-margin);
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__code{
+    width: 50%;
+    padding: var(--pobo-text-code-cd-padding);
+    margin: var(--pobo-text-code-cd-margin);
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}
