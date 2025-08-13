@@ -59,6 +59,7 @@
 
 .pb-klara-rott-reference {
   margin: 20px 0;
+  max-width: 1400px;
 
   &__header {
     text-align: center;
@@ -86,8 +87,8 @@
     border-radius: 10px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     padding: 25px;
-    width: 300px;
-    max-width: 300px;
+    width: 400px;
+    max-width:400px;
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
