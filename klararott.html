@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="src/generic.scss">
+  <!-- Prefetch Pobo Page Builder CDN  -->
+  <link rel="dns-prefetch" href="https://image.pobo.cz">
+  <script src="src/main.js" async type="module"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+  <style>
+    .widget-container {
+      border-bottom: 0px solid transparent;
+    }
+
+    .widget-container {
+      border-bottom: 0px solid red;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    });
+
+
+    // add new event listeren document ready
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(() => {
+        const images = document.querySelectorAll('.rc-counter__img, .rc-advantages-two__ico-img');
+        let timeout;
+
+        images.forEach(image => {
+          const container = image.closest('.lazyLoad'); // Předpokládá, že obrázek je uvnitř kontejneru
+
+          container.addEventListener('mousemove', function (e) {
+            if (timeout) clearTimeout(timeout);
+
+            timeout = setTimeout(() => {
+              const rect = container.getBoundingClientRect();
+              const x = e.clientX - rect.left;
+              const y = e.clientY - rect.top;
+
+              const centerX = rect.width / 2;
+              const centerY = rect.height / 2;
+
+              const deltaX = (x - centerX) / 20;
+              const deltaY = (y - centerY) / 20;
+
+              image.style.transform = `rotateX(${deltaY}deg) rotateY(${deltaX}deg)`;
+            }, 50); // Zpoždění 50ms
+          });
+
+          container.addEventListener('mouseleave', function () {
+            if (timeout) clearTimeout(timeout);
+            console.log('leave');
+            image.style.transform = 'rotateX(0deg) rotateY(0deg)';
+          });
+        });
+
+
+        interact('.widget-container2')
+          .resizable({
+            invert: 'reposition',
+            edges: {top: false, left: false, bottom: true, right: false},
+            modifiers: [
+              interact.modifiers.restrictEdges({
+                outer: 'parent'
+              })
+            ],
+            inertia: false
+          })
+          .on('resizemove', function (event) {
+            var target = event.target;
+            var newPaddingTop = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
+            var newPaddingBottom = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
+
+            // Zobrazíme v konzoli informace o změně
+            console.log('Aktuální padding-top:', target.style.paddingBottom);
+            console.log('Delta (změna) top:', event.deltaRect.bottom);
+            console.log('Nový padding-top:', newPaddingTop + 'px');
+
+            // Nastavíme nový padding-top
+
+
+            target.style.paddingBottom = newPaddingTop + 'px';
+            target.style.paddingTop = newPaddingBottom + 'px';
+          });
+
+        interact('.rc-advantages-four__ico-img')
+          .resizable({
+            invert: 'reposition',
+            edges: {top: false, left: false, bottom: true, right: false},
+            modifiers: [
+              interact.modifiers.restrictEdges({
+                outer: 'parent'
+              })
+            ],
+            inertia: false
+          })
+          .on('resizemove', function (event) {
+            var target = event.target;
+            var newPaddingTop = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
+            var newPaddingBottom = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
+
+            // width
+            var newWidth = parseInt(target.style.width || 0) + event.deltaRect.width;
+
+            // Zobrazíme v konzoli informace o změně
+            console.log('Aktuální padding-top:', target.style.paddingBottom);
+            console.log('Delta (změna) top:', event.deltaRect.bottom);
+            console.log('Nový padding-top:', newPaddingTop + 'px');
+
+
+            // Nastavíme nový padding-top
+
+
+            //  target.style.paddingBottom = newPaddingTop + 'px';
+            //  target.style.paddingTop = newPaddingBottom + 'px';
+            if (newWidth) {
+              target.style.width = newWidth + 'px';
+            }
+          });
+      }, 100)
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Playwrite+DE+LA:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Widget pobo</title>
+</head>
+<body>
+<div style="max-width: 1040px; margin: 0 auto; padding: 5px;">
+
+  <div class="pb-klara-rott-reference">
+    <h2 class="pb-klara-rott-reference__header">Hodnocení našich zákaznic</h2>
+
+    <div class="pb-klara-rott-reference__carousel">
+      <div class="pb-klara-rott-reference__item">
+        <div class="pb-klara-rott-reference__stars">
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+        </div>
+        <span class="pb-klara-rott-reference__name">Karel S.</span>
+        <span class="pb-klara-rott-reference__text">Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes.</span>
+      </div>
+
+      <div class="pb-klara-rott-reference__item">
+        <div class="pb-klara-rott-reference__stars">
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+        </div>
+        <span class="pb-klara-rott-reference__name">Martinka</span>
+        <span class="pb-klara-rott-reference__text">Skvělé produkty, výborná komunikace a rychlé dodání</span>
+      </div>
+
+      <div class="pb-klara-rott-reference__item">
+        <div class="pb-klara-rott-reference__stars">
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+          <span class="pb-klara-rott-reference__star">★</span>
+        </div>
+        <span class="pb-klara-rott-reference__name">Pavla H.</span>
+        <span class="pb-klara-rott-reference__text">Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-klara-rott-ingredient">
+    <div class="pb-klara-rott-ingredient__item">
+      <div class="pb-klara-rott-ingredient__icon">
+        <img src="https://pobo-cdn.b-cdn.net/client/klararott/icon-cc.svg" alt="">
+      </div>
+      <div class="pb-klara-rott-ingredient__content">
+        <p class="pb-klara-rott-ingredient__title">Aspalathus Linearis Water</p>
+        <p class="pb-klara-rott-ingredient__description">Silná koncentrace hydrolátů z rooibosu má značné antioxidační účinky, chrání pleť před působením volných radikálů a jejím následným poškozením, zabraňuje tvorbě vrásek, ztrátě elasticity a vysušení.</p>
+      </div>
+    </div>
+
+    <div class="pb-klara-rott-ingredient__item">
+      <div class="pb-klara-rott-ingredient__icon">
+        <img src="https://pobo-cdn.b-cdn.net/client/klararott/icon-cc.svg" alt="">
+      </div>
+      <div class="pb-klara-rott-ingredient__content">
+        <p class="pb-klara-rott-ingredient__title">Lactobacillus Ferment</p>
+        <p class="pb-klara-rott-ingredient__description">Podporují obnovu buněk a produkci kolagenu, mají antimikrobiální účinky na pleť.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
