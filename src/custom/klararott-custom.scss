@@ -90,6 +90,7 @@
     max-width: 300px;
     flex-shrink: 0;
     position: relative;
+    overflow: hidden;
 
     @include media-breakpoint-down(sm) {
       width: 280px;
@@ -126,5 +127,7 @@
     text-align: center;
     margin: 0;
     display: block;
+    hyphens: auto;
+    white-space: normal;
   }
 }
