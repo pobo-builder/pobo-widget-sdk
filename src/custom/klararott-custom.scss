@@ -1,0 +1,130 @@
+.pb-klara-rott-ingredient {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 auto 15px;
+    }
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: var(--pobo-typo-h3-font-size);
+    font-weight: var(--pobo-typo-h3-font-weight);
+    color: var(--pobo-typo-h3-font-color);
+    margin: var(--pobo-typo-h3-margin);
+    line-height: var(--pobo-typo-h3-line-height);
+  }
+
+  &__description {
+    font-size: var(--pobo-typo-p-font-size);
+    color: var(--pobo-typo-p-font-color);
+    line-height: var(--pobo-typo-p-line-height);
+    margin: var(--pobo-typo-p-margin);
+  }
+}
+
+.pb-klara-rott-reference {
+  margin: 20px 0;
+
+  &__header {
+    text-align: center;
+    font-size: var(--pobo-typo-h2-font-size);
+    font-weight: var(--pobo-typo-h2-font-weight);
+    color: var(--pobo-typo-h2-font-color);
+    margin: var(--pobo-typo-h2-margin);
+    line-height: var(--pobo-typo-h2-line-height);
+  }
+
+  &__carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+
+    @include media-breakpoint-down(sm) {
+      gap: 15px;
+    }
+  }
+
+  &__item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 300px;
+    max-width: 300px;
+    flex-shrink: 0;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      width: 280px;
+      max-width: 280px;
+      padding: 20px;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+
+  &__star {
+    color: #ffc107;
+    font-size: 18px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin: 0 0 15px;
+    display: block;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin: 0;
+    display: block;
+  }
+}
