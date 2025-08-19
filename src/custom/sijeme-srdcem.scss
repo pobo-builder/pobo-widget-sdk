@@ -1,0 +1,11 @@
+.pb-sijemesrdcem-wrap{
+  display: grid;
+  grid-template-columns: repeat(5, 45px);
+  gap: 15px;
+  margin-bottom: 40px;
+
+  img{
+    width: 100%;
+    max-width: 50px;
+  }
+}
