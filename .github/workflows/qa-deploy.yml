@@ -2,7 +2,7 @@ name: Deploy CSS to Bunny CDN
 
 on:
   push:
-    branches: ["master"]
+    branches: ["fix-key"]
 
 jobs:
   deploy:
