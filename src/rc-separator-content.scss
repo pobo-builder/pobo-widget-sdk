@@ -1,0 +1,10 @@
+.rc-separator-content {
+  margin: 40px 0;
+  
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background: #eaeaea;
+    border: none;
+  }
+}

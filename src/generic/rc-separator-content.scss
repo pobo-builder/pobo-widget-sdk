@@ -1,0 +1,10 @@
+.rc-separator-content {
+  margin: var(--pobo-separator-content-margin);
+  
+  &__separator {
+    width: var(--pobo-separator-content-width);
+    height: var(--pobo-separator-content-height);
+    background: var(--pobo-separator-content-bg);
+    border: none;
+  }
+}
