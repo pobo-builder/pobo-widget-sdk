@@ -1,0 +1,207 @@
+.pbc-pb-ambeauty-products {
+  width: var(--pobo-custom-ambeauty-products-width);
+  margin: var(--pobo-custom-ambeauty-products-margin);
+  padding: var(--pobo-custom-ambeauty-products-padding);
+  background: var(--pobo-custom-ambeauty-products-bg);
+  box-sizing: border-box;
+
+  &__container {
+    display: var(--pobo-custom-ambeauty-products-container-display);
+    flex-wrap: var(--pobo-custom-ambeauty-products-container-flex-wrap);
+    justify-content: var(--pobo-custom-ambeauty-products-container-justify-content);
+    align-items: var(--pobo-custom-ambeauty-products-container-align-items);
+    gap: var(--pobo-custom-ambeauty-products-container-gap);
+    max-width: var(--pobo-custom-ambeauty-products-container-max-width);
+    margin: var(--pobo-custom-ambeauty-products-container-margin);
+
+    @include media-breakpoint-down(lg) {
+      gap: var(--pobo-custom-ambeauty-products-container-gap-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: var(--pobo-custom-ambeauty-products-container-flex-direction-mobile);
+      gap: var(--pobo-custom-ambeauty-products-container-gap-mobile);
+    }
+  }
+
+  &__item {
+    display: var(--pobo-custom-ambeauty-products-item-display);
+    flex-direction: var(--pobo-custom-ambeauty-products-item-flex-direction);
+    align-items: var(--pobo-custom-ambeauty-products-item-align-items);
+    flex: var(--pobo-custom-ambeauty-products-item-flex);
+    max-width: var(--pobo-custom-ambeauty-products-item-max-width);
+    min-width: var(--pobo-custom-ambeauty-products-item-min-width);
+    padding: var(--pobo-custom-ambeauty-products-item-padding);
+    background: var(--pobo-custom-ambeauty-products-item-bg);
+    border-radius: var(--pobo-custom-ambeauty-products-item-border-radius);
+    box-sizing: border-box;
+    text-align: var(--pobo-custom-ambeauty-products-item-text-align);
+    box-shadow: var(--pobo-custom-ambeauty-products-item-box-shadow);
+
+    @include media-breakpoint-down(lg) {
+      flex: var(--pobo-custom-ambeauty-products-item-flex-tablet);
+      padding: var(--pobo-custom-ambeauty-products-item-padding-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      flex: var(--pobo-custom-ambeauty-products-item-flex-mobile);
+      padding: var(--pobo-custom-ambeauty-products-item-padding-mobile);
+    }
+  }
+
+  &__image-wrapper {
+    width: var(--pobo-custom-ambeauty-products-image-wrapper-width);
+    margin-bottom: var(--pobo-custom-ambeauty-products-image-wrapper-margin-bottom);
+    display: var(--pobo-custom-ambeauty-products-image-wrapper-display);
+    justify-content: var(--pobo-custom-ambeauty-products-image-wrapper-justify-content);
+    align-items: var(--pobo-custom-ambeauty-products-image-wrapper-align-items);
+    background: var(--pobo-custom-ambeauty-products-image-wrapper-bg);
+    border-radius: var(--pobo-custom-ambeauty-products-image-wrapper-border-radius);
+    padding: var(--pobo-custom-ambeauty-products-image-wrapper-padding);
+    min-height: var(--pobo-custom-ambeauty-products-image-wrapper-min-height);
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: var(--pobo-custom-ambeauty-products-image-wrapper-margin-bottom-tablet);
+      min-height: var(--pobo-custom-ambeauty-products-image-wrapper-min-height-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: var(--pobo-custom-ambeauty-products-image-wrapper-margin-bottom-mobile);
+      min-height: var(--pobo-custom-ambeauty-products-image-wrapper-min-height-mobile);
+    }
+  }
+
+  &__image {
+    width: var(--pobo-custom-ambeauty-products-image-width);
+    max-width: var(--pobo-custom-ambeauty-products-image-max-width);
+    height: var(--pobo-custom-ambeauty-products-image-height);
+    object-fit: var(--pobo-custom-ambeauty-products-image-object-fit);
+
+    @include media-breakpoint-down(lg) {
+      max-width: var(--pobo-custom-ambeauty-products-image-max-width-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      max-width: var(--pobo-custom-ambeauty-products-image-max-width-mobile);
+    }
+  }
+
+  &__title {
+    font-size: var(--pobo-custom-ambeauty-products-title-font-size);
+    font-family: var(--pobo-custom-ambeauty-products-title-font-family);
+    color: var(--pobo-custom-ambeauty-products-title-color);
+    line-height: var(--pobo-custom-ambeauty-products-title-line-height);
+    font-weight: var(--pobo-custom-ambeauty-products-title-font-weight);
+    margin: var(--pobo-custom-ambeauty-products-title-margin);
+    text-decoration: var(--pobo-custom-ambeauty-products-title-text-decoration);
+
+    @include media-breakpoint-down(lg) {
+      font-size: var(--pobo-custom-ambeauty-products-title-font-size-tablet);
+      margin-bottom: var(--pobo-custom-ambeauty-products-title-margin-bottom-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: var(--pobo-custom-ambeauty-products-title-font-size-mobile);
+      margin-bottom: var(--pobo-custom-ambeauty-products-title-margin-bottom-mobile);
+    }
+  }
+
+  &__section {
+    width: var(--pobo-custom-ambeauty-products-section-width);
+    margin-bottom: var(--pobo-custom-ambeauty-products-section-margin-bottom);
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: var(--pobo-custom-ambeauty-products-section-margin-bottom-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: var(--pobo-custom-ambeauty-products-section-margin-bottom-mobile);
+    }
+  }
+
+  &__label {
+    font-size: var(--pobo-custom-ambeauty-products-label-font-size);
+    font-family: var(--pobo-custom-ambeauty-products-label-font-family);
+    color: var(--pobo-custom-ambeauty-products-label-color);
+    line-height: var(--pobo-custom-ambeauty-products-label-line-height);
+    font-weight: var(--pobo-custom-ambeauty-products-label-font-weight);
+    margin: var(--pobo-custom-ambeauty-products-label-margin);
+    text-transform: var(--pobo-custom-ambeauty-products-label-text-transform);
+    letter-spacing: var(--pobo-custom-ambeauty-products-label-letter-spacing);
+
+    @include media-breakpoint-down(lg) {
+      font-size: var(--pobo-custom-ambeauty-products-label-font-size-tablet);
+      margin-bottom: var(--pobo-custom-ambeauty-products-label-margin-bottom-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: var(--pobo-custom-ambeauty-products-label-font-size-mobile);
+      margin-bottom: var(--pobo-custom-ambeauty-products-label-margin-bottom-mobile);
+    }
+  }
+
+  &__text {
+    font-size: var(--pobo-custom-ambeauty-products-text-font-size);
+    font-family: var(--pobo-custom-ambeauty-products-text-font-family);
+    color: var(--pobo-custom-ambeauty-products-text-color);
+    line-height: var(--pobo-custom-ambeauty-products-text-line-height);
+    font-weight: var(--pobo-custom-ambeauty-products-text-font-weight);
+    margin: var(--pobo-custom-ambeauty-products-text-margin);
+
+    @include media-breakpoint-down(lg) {
+      font-size: var(--pobo-custom-ambeauty-products-text-font-size-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: var(--pobo-custom-ambeauty-products-text-font-size-mobile);
+    }
+  }
+
+  &__price {
+    font-size: var(--pobo-custom-ambeauty-products-price-font-size);
+    font-family: var(--pobo-custom-ambeauty-products-price-font-family);
+    color: var(--pobo-custom-ambeauty-products-price-color);
+    line-height: var(--pobo-custom-ambeauty-products-price-line-height);
+    font-weight: var(--pobo-custom-ambeauty-products-price-font-weight);
+    margin: var(--pobo-custom-ambeauty-products-price-margin);
+
+    @include media-breakpoint-down(lg) {
+      font-size: var(--pobo-custom-ambeauty-products-price-font-size-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: var(--pobo-custom-ambeauty-products-price-font-size-mobile);
+    }
+  }
+
+  &__button {
+    width: var(--pobo-custom-ambeauty-products-button-width);
+    margin-top: var(--pobo-custom-ambeauty-products-button-margin-top);
+    padding: var(--pobo-custom-ambeauty-products-button-padding);
+    background: var(--pobo-custom-ambeauty-products-button-bg);
+    border: var(--pobo-custom-ambeauty-products-button-border);
+    border-radius: var(--pobo-custom-ambeauty-products-button-border-radius);
+    font-size: var(--pobo-custom-ambeauty-products-button-font-size);
+    font-family: var(--pobo-custom-ambeauty-products-button-font-family);
+    color: var(--pobo-custom-ambeauty-products-button-color);
+    font-weight: var(--pobo-custom-ambeauty-products-button-font-weight);
+    cursor: var(--pobo-custom-ambeauty-products-button-cursor);
+    transition: var(--pobo-custom-ambeauty-products-button-transition);
+    box-sizing: border-box;
+
+    &:hover {
+      background: var(--pobo-custom-ambeauty-products-button-hover-bg);
+      border-color: var(--pobo-custom-ambeauty-products-button-hover-border-color);
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: var(--pobo-custom-ambeauty-products-button-padding-tablet);
+      font-size: var(--pobo-custom-ambeauty-products-button-font-size-tablet);
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: var(--pobo-custom-ambeauty-products-button-padding-mobile);
+      font-size: var(--pobo-custom-ambeauty-products-button-font-size-mobile);
+    }
+  }
+}
