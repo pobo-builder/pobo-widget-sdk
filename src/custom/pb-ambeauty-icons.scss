@@ -1,0 +1,85 @@
+.pbc-pb-ambeauty-icons {
+  width: var(--pobo-custom-ambeauty-icons-width);
+  margin: var(--pobo-custom-ambeauty-icons-margin);
+  padding: var(--pobo-custom-ambeauty-icons-padding);
+  background: var(--pobo-custom-ambeauty-icons-bg);
+  border-radius: var(--pobo-custom-ambeauty-icons-border-radius);
+  box-sizing: border-box;
+
+  &__container {
+    display: var(--pobo-custom-ambeauty-icons-container-display);
+    flex-wrap: var(--pobo-custom-ambeauty-icons-container-flex-wrap);
+    justify-content: var(--pobo-custom-ambeauty-icons-container-justify-content);
+    align-items: var(--pobo-custom-ambeauty-icons-container-align-items);
+    gap: var(--pobo-custom-ambeauty-icons-container-gap);
+
+    @include media-breakpoint-down(lg) {
+      gap: var(--pobo-custom-ambeauty-icons-container-gap-tablet);
+    }
+
+    @include media-breakpoint-down(sm) {
+      gap: var(--pobo-custom-ambeauty-icons-container-gap-mobile);
+      flex-direction: var(--pobo-custom-ambeauty-icons-container-flex-direction-mobile);
+    }
+  }
+
+  &__item {
+    display: var(--pobo-custom-ambeauty-icons-item-display);
+    flex-direction: var(--pobo-custom-ambeauty-icons-item-flex-direction);
+    align-items: var(--pobo-custom-ambeauty-icons-item-align-items);
+    justify-content: var(--pobo-custom-ambeauty-icons-item-justify-content);
+    flex: var(--pobo-custom-ambeauty-icons-item-flex);
+    width: var(--pobo-custom-ambeauty-icons-item-width);
+    padding: var(--pobo-custom-ambeauty-icons-item-padding);
+    background: var(--pobo-custom-ambeauty-icons-item-bg);
+    border-radius: var(--pobo-custom-ambeauty-icons-item-border-radius);
+    box-sizing: border-box;
+    text-align: var(--pobo-custom-ambeauty-icons-item-text-align);
+
+    @include media-breakpoint-down(lg) {
+      flex: var(--pobo-custom-ambeauty-icons-item-flex-tablet);
+      padding: var(--pobo-custom-ambeauty-icons-item-padding-tablet);
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: var(--pobo-custom-ambeauty-icons-item-flex-mobile);
+      padding: var(--pobo-custom-ambeauty-icons-item-padding-mobile);
+    }
+  }
+
+  &__icon {
+    width: var(--pobo-custom-ambeauty-icons-icon-width);
+    height: var(--pobo-custom-ambeauty-icons-icon-height);
+    margin-bottom: var(--pobo-custom-ambeauty-icons-icon-margin-bottom);
+    object-fit: var(--pobo-custom-ambeauty-icons-icon-object-fit);
+
+    @include media-breakpoint-down(lg) {
+      width: var(--pobo-custom-ambeauty-icons-icon-width-tablet);
+      height: var(--pobo-custom-ambeauty-icons-icon-height-tablet);
+      margin-bottom: var(--pobo-custom-ambeauty-icons-icon-margin-bottom-tablet);
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: var(--pobo-custom-ambeauty-icons-icon-width-mobile);
+      height: var(--pobo-custom-ambeauty-icons-icon-height-mobile);
+      margin-bottom: var(--pobo-custom-ambeauty-icons-icon-margin-bottom-mobile);
+    }
+  }
+
+  &__text {
+    font-size: var(--pobo-custom-ambeauty-icons-text-font-size);
+    font-family: var(--pobo-custom-ambeauty-icons-text-font-family);
+    color: var(--pobo-custom-ambeauty-icons-text-color);
+    line-height: var(--pobo-custom-ambeauty-icons-text-line-height);
+    font-weight: var(--pobo-custom-ambeauty-icons-text-font-weight);
+    margin: var(--pobo-custom-ambeauty-icons-text-margin);
+
+    @include media-breakpoint-down(lg) {
+      font-size: var(--pobo-custom-ambeauty-icons-text-font-size-tablet);
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-custom-ambeauty-icons-text-font-size-mobile);
+    }
+  }
+}
