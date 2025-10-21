@@ -2,7 +2,7 @@ name: Deploy CSS to Bunny CDN
 
 on:
   push:
-    branches: ["fix-deploy-ngrok"]
+    branches: ["master"]
 
 jobs:
   deploy:
