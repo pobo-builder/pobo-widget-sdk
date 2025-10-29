@@ -16,23 +16,9 @@ body {
         margin: 0 auto;
       }
     }
+
+    .d-none {
+      display: none;
+    }
   }
-}
-
-
-// Example of a container resolver
-:root {
-  [data-pobo-unique-id="1"] {
-    // --pobo-widget-author-top-bg: blue;
-  }
-
-  [data-pobo-unique-id="3"] {
-  }
-
-  [data-pobo-unique-id="4"] {
-  }
-}
-
-.d-none {
-  display: none;
 }
