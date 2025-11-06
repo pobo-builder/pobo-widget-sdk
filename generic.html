@@ -76,13 +76,9 @@
             var newPaddingTop = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
             var newPaddingBottom = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
 
-            // Zobrazíme v konzoli informace o změně
             console.log('Aktuální padding-top:', target.style.paddingBottom);
             console.log('Delta (změna) top:', event.deltaRect.bottom);
             console.log('Nový padding-top:', newPaddingTop + 'px');
-
-            // Nastavíme nový padding-top
-
 
             target.style.paddingBottom = newPaddingTop + 'px';
             target.style.paddingTop = newPaddingBottom + 'px';
@@ -104,20 +100,12 @@
             var newPaddingTop = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
             var newPaddingBottom = parseInt(target.style.paddingBottom || 0) + event.deltaRect.bottom;
 
-            // width
             var newWidth = parseInt(target.style.width || 0) + event.deltaRect.width;
 
-            // Zobrazíme v konzoli informace o změně
             console.log('Aktuální padding-top:', target.style.paddingBottom);
             console.log('Delta (změna) top:', event.deltaRect.bottom);
             console.log('Nový padding-top:', newPaddingTop + 'px');
 
-
-            // Nastavíme nový padding-top
-
-
-            //  target.style.paddingBottom = newPaddingTop + 'px';
-            //  target.style.paddingTop = newPaddingBottom + 'px';
             if (newWidth) {
               target.style.width = newWidth + 'px';
             }
@@ -138,6 +126,84 @@
   <h2> Custom widget for <a href="./bonghemia.html"> Bonghemia </a></h2>
   <h2> Custom widget for <a href="./nokov.html"> Nokov </a></h2>
   <h2> Custom widget for <a href="./klararott.html"> Klára Rott </a></h2>
+
+
+
+
+  <h3>Nový custom widget pro pohlcovače vlhkosti</h3>
+  <div class="pbc-pb-vlhkost-widget">
+    <div class="pbc-pb-vlhkost-widget__image">
+      <img src="https://pobo-cdn.b-cdn.net/client/pohlcovace-vlhkosti/placeholder-img.png" alt="Pohlcovač vlhkosti" class="pbc-pb-vlhkost-widget__img">
+    </div>
+    <div class="pbc-pb-vlhkost-widget__text">
+      <h2 class="pbc-pb-vlhkost-widget__title">Hlavní nadpis widgetu</h2>
+      <div class="pbc-pb-vlhkost-widget__icons">
+        <div class="pbc-pb-vlhkost-widget__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-1.svg" alt="Ikona 1" class="pbc-pb-vlhkost-widget__icon">
+          <span class="pbc-pb-vlhkost-widget__icon-text">Text k ikoně 1</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-2.svg" alt="Ikona 2" class="pbc-pb-vlhkost-widget__icon">
+          <span class="pbc-pb-vlhkost-widget__icon-text">Text k ikoně 2</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-3.svg" alt="Ikona 3" class="pbc-pb-vlhkost-widget__icon">
+          <span class="pbc-pb-vlhkost-widget__icon-text">Text k ikoně 3</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-4.svg" alt="Ikona 4" class="pbc-pb-vlhkost-widget__icon">
+          <span class="pbc-pb-vlhkost-widget__icon-text">Text k ikoně 4</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-5.svg" alt="Ikona 5" class="pbc-pb-vlhkost-widget__icon">
+          <span class="pbc-pb-vlhkost-widget__icon-text">Text k ikoně 5</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-6.svg" alt="Ikona 6" class="pbc-pb-vlhkost-widget__icon">
+          <span class="pbc-pb-vlhkost-widget__icon-text">Text k ikoně 6</span>
+        </div>
+      </div>
+      <p class="pbc-pb-vlhkost-widget__description">Toto je popisný text, který vysvětluje hlavní benefity a funkce pohlcovačů vlhkosti. Text může být delší a rozdělen do více vět.</p>
+    </div>
+  </div>
+
+  <h3>Nový custom widget pro pohlcovače vlhkosti - PRAVÁ verze</h3>
+  <div class="pbc-pb-vlhkost-widget-right">
+    <div class="pbc-pb-vlhkost-widget-right__text">
+      <h2 class="pbc-pb-vlhkost-widget-right__title">Hlavní nadpis widgetu - pravá verze</h2>
+      <div class="pbc-pb-vlhkost-widget-right__icons">
+        <div class="pbc-pb-vlhkost-widget-right__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-1.svg" alt="Ikona 1" class="pbc-pb-vlhkost-widget-right__icon">
+          <span class="pbc-pb-vlhkost-widget-right__icon-text">Text k ikoně 1</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget-right__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-2.svg" alt="Ikona 2" class="pbc-pb-vlhkost-widget-right__icon">
+          <span class="pbc-pb-vlhkost-widget-right__icon-text">Text k ikoně 2</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget-right__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-3.svg" alt="Ikona 3" class="pbc-pb-vlhkost-widget-right__icon">
+          <span class="pbc-pb-vlhkost-widget-right__icon-text">Text k ikoně 3</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget-right__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-4.svg" alt="Ikona 4" class="pbc-pb-vlhkost-widget-right__icon">
+          <span class="pbc-pb-vlhkost-widget-right__icon-text">Text k ikoně 4</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget-right__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-5.svg" alt="Ikona 5" class="pbc-pb-vlhkost-widget-right__icon">
+          <span class="pbc-pb-vlhkost-widget-right__icon-text">Text k ikoně 5</span>
+        </div>
+        <div class="pbc-pb-vlhkost-widget-right__icon-item">
+          <img src="https://pobo-cdn.b-cdn.net/client/ambeauty/ico-6.svg" alt="Ikona 6" class="pbc-pb-vlhkost-widget-right__icon">
+          <span class="pbc-pb-vlhkost-widget-right__icon-text">Text k ikoně 6</span>
+        </div>
+      </div>
+      <p class="pbc-pb-vlhkost-widget-right__description">Toto je popisný text pro pravou verzi widgetu, který vysvětluje hlavní benefity a funkce pohlcovačů vlhkosti.</p>
+    </div>
+    <div class="pbc-pb-vlhkost-widget-right__image">
+      <img src="https://pobo-cdn.b-cdn.net/client/pohlcovace-vlhkosti/placeholder-img.png" alt="Pohlcovač vlhkosti" class="pbc-pb-vlhkost-widget-right__img">
+    </div>
+  </div>
+
 
   <h3>Widget s ikonkami (původní verze)</h3>
   <div class="pbc-pb-ambeauty-icons">

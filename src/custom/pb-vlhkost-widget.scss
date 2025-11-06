@@ -1,0 +1,137 @@
+.pbc-pb-vlhkost-widget,
+.pbc-pb-vlhkost-widget-right {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: var(--pobo-custom-vlhkost-widget-bg);
+  padding: var(--pobo-custom-vlhkost-widget-padding);
+  margin: var(--pobo-custom-vlhkost-widget-margin);
+  border-radius: var(--pobo-custom-vlhkost-widget-border-radius);
+  box-shadow: var(--pobo-custom-vlhkost-widget-box-shadow);
+  box-sizing: border-box;
+
+  &__image {
+    width: 50%;
+    padding: var(--pobo-custom-vlhkost-widget-img-padding);
+    box-sizing: border-box;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    display: block;
+  }
+
+  &__text {
+    width: 50%;
+    padding: var(--pobo-custom-vlhkost-widget-text-padding);
+    box-sizing: border-box;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    color: #333333;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 0 20px 0;
+
+    @include media-breakpoint-down(lg) {
+      gap: 10px;
+    }
+
+    @include media-breakpoint-down(md) {
+      gap: 8px;
+    }
+  }
+
+  &__icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    flex: 0 1 calc(25% - 9px);
+    min-width: 80px;
+
+    @include media-breakpoint-down(lg) {
+      flex: 0 1 calc(25% - 7px);
+      min-width: 70px;
+    }
+
+    @include media-breakpoint-down(md) {
+      flex: 0 1 calc(50% - 4px);
+      min-width: 60px;
+    }
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+
+    @include media-breakpoint-down(lg) {
+      width: 32px;
+      height: 32px;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &__icon-text {
+    font-size: 14px;
+    font-weight: 500;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 10px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 9px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 15px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+    }
+  }
+}
