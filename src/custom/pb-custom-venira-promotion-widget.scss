@@ -1,0 +1,184 @@
+.pb-custom-venira-promotion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 40px 20px;
+
+  &__item {
+    width: 50%;
+    max-width: 600px;
+    background: var(--pobo-custom-venira-promotion-bg);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__title {
+    color: var(--pobo-custom-venira-promotion-title-color);
+    font-size: var(--pobo-custom-venira-promotion-title-font-size);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 3;
+  }
+
+  &__label {
+    display: inline-block;
+    background: var(--pobo-custom-venira-promotion-alert-bg);
+    color: var(--pobo-custom-venira-promotion-alert-color);
+    padding: 15px 20px;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 15px -30px;
+    white-space: nowrap;
+    width: fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 3;
+    
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    color: var(--pobo-custom-venira-promotion-subtitle-color);
+    font-size: var(--pobo-custom-venira-promotion-subtitle-font-size);
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 15px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  &__text {
+    color: var(--pobo-custom-venira-promotion-text-color);
+    font-size: var(--pobo-custom-venira-promotion-text-font-size);
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 15px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex-grow: 1;
+    z-index: 3;
+  }
+
+  &__link {
+    display: inline-block;
+    background: var(--pobo-custom-venira-promotion-cta-bg);
+    color: var(--pobo-custom-venira-promotion-cta-color);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 0 0 15px 0;
+    align-self: flex-start;
+    z-index: 3;
+
+    &:hover {
+      background: var(--pobo-custom-venira-promotion-cta-bg-hover);
+      color: var(--pobo-custom-venira-promotion-cta-color-hover);
+    }
+  }
+
+  &__images, &__images-spec {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: auto;
+    min-height: 200px;
+  }
+
+  &__images-spec{
+    position: relative;
+    top: -50px;
+  }
+
+  &__img {
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &:nth-child(1) {
+      width: 70%;
+      height: auto;
+      aspect-ratio: 3/4;
+      position: relative;
+      z-index: 1;
+    }
+
+    &:nth-child(2) {
+      width: 40%;
+      height: auto;
+      aspect-ratio: 2/3;
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        transform: translateY(-50%) scale(1.02);
+      }
+    }
+  }
+
+  &__img-spec{
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+
+    &__item {
+      width: 100%;
+      padding: 20px;
+    }
+
+    &__label {
+      margin-left: -20px;
+    }
+
+    &__images {
+      min-height: 150px;
+    }
+
+    &__img {
+      &:nth-child(1) {
+        width: 65%;
+      }
+
+      &:nth-child(2) {
+        width: 40%;
+        right: 20px;
+      }
+    }
+  }
+}
