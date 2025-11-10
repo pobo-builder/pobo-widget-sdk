@@ -116,14 +116,13 @@
   }
 
   &__img {
+    width: 100%;
     border-radius: 15px;
     object-fit: cover;
     transition: transform 0.3s ease;
     cursor: pointer;
+    position: relative;
 
-    &:hover {
-      transform: scale(1.02);
-    }
 
     &:nth-child(1) {
       width: 70%;
@@ -143,10 +142,6 @@
       transform: translateY(-50%);
       z-index: 2;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-
-      &:hover {
-        transform: translateY(-50%) scale(1.02);
-      }
     }
   }
 

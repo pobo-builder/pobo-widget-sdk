@@ -30,23 +30,13 @@
   }
 
   &__link {
-    color: var(--pobo-custom-venira-list-link-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
     display: block;
+    position: relative;
     padding: var(--pobo-custom-venira-list-link-padding);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.4;
-
-    @include media-breakpoint-down(md) {
-      font-size: 15px;
-    }
 
     &--sub {
       margin-left: var(--pobo-custom-venira-list-sub-indent);
       position: relative;
-      font-weight: 500;
 
       &:before {
         content: "•";
@@ -62,6 +52,24 @@
       @include media-breakpoint-down(md) {
         margin-left: calc(var(--pobo-custom-venira-list-sub-indent) - 5px);
       }
+    }
+  }
+
+  &__anchor {
+    color: var(--pobo-custom-venira-list-link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
+
+    .pb-custom-venira-list__link--sub & {
+      font-weight: 500;
     }
 
     &:hover {
