@@ -10,6 +10,8 @@
     font-weight: var(--pobo-faq-header-font-weight);
     outline: var(--pobo-faq-header-outline);
     background: var(--pobo-faq-header-background-image);
+    color: var(--pobo-faq-header-color);
+
 
     &:hover {
       cursor: pointer;
@@ -47,6 +49,7 @@
     box-shadow: var(--pobo-faq-content-box-shadow);
     padding: var(--pobo-faq-content-padding);
     border: var(--pobo-faq-content-border);
+    color: var(--pobo-faq-content-color);
 
 
     &.active {
