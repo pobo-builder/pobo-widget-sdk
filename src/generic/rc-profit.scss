@@ -5,6 +5,7 @@
   border: var(--pobo-inline-border);
 
   &__list-ico-img {
+    display: var(--pobo-profit-list-ico-img-display);
     max-width: 100%;
     height: auto;
   }
@@ -47,6 +48,22 @@
   &__list-ico {
     width: var(--pobo-profit-list-ico-width);
     display: flex;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: var(--pobo-profit-list-ico-before-display);
+      width: var(--pobo-profit-list-ico-before-size);
+      height: var(--pobo-profit-list-ico-before-size);;
+      background-image:var(--pobo-profit-list-ico-before-img);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 1;
+    }
   }
 
   &__list-content {
