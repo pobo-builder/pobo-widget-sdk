@@ -1107,6 +1107,7 @@
     display: flex;
     flex-direction: column;
     gap: 18px;
+    flex-wrap: wrap;
 
     @include media-breakpoint-up(xl) {
       flex-direction: row;
@@ -1117,18 +1118,47 @@
     }
   }
 
+  &__step-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    @include media-breakpoint-up(xl) {
+      flex: 0 0 calc(25% - 15px);
+      max-width: calc(25% - 15px);
+    }
+    
+    &:nth-child(4n) .pb-arsov-usage__arrow,
+    &:last-child .pb-arsov-usage__arrow {
+      display: none;
+    }
+    
+    @include media-breakpoint-down(lg) {
+      &:last-child .pb-arsov-usage__arrow {
+        display: none;
+      }
+    }
+  }
+
   &__step {
     margin: 0 auto;
     max-width: 420px;
     position: relative;
+    flex: 1;
 
     @include media-breakpoint-up(xl) {
-      flex: 1 1 0;
       max-width: none;
     }
 
     &:last-child:after {
       display: none;
+    }
+  }
+  
+  > .pb-arsov-usage__step {
+    @include media-breakpoint-up(xl) {
+      flex: 1 1 0;
+      max-width: none;
     }
   }
 
@@ -1155,8 +1185,11 @@
     font-size: 0;
     height: 100%;
     text-align: center;
+    flex-shrink: 0;
+    display: none;
 
     @include media-breakpoint-up(xl) {
+      display: block;
       width: 32px;
     }
 
@@ -1171,17 +1204,38 @@
 
       @include media-breakpoint-up(xl) {
         content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='15' fill='none' viewBox='0 0 45 15'%3E%3Cpath fill='%23DDC9BB' d='M44.707 8.071a1 1 0 0 0 0-1.414L38.343.293a1 1 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414zM0 7.364v1h44v-2H0z'/%3E%3C/svg%3E");
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        position: relative;
+        top: auto;
+        transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
       }
 
       @include media-breakpoint-up(xxl) {
         content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='15' fill='none' viewBox='0 0 45 15'%3E%3Cpath fill='%23DDC9BB' d='M44.707 8.071a1 1 0 0 0 0-1.414L38.343.293a1 1 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414zM0 7.364v1h44v-2H0z'/%3E%3C/svg%3E");
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
       }
+    }
+  }
+  
+  > .pb-arsov-usage__arrow {
+    display: none;
+    
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      
+      &:before {
+        position: static;
+        transform: none;
+      }
+    }
+
+    @include media-breakpoint-up(xxl) {
+      width: 45px;
     }
   }
 
