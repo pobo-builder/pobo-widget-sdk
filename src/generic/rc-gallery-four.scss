@@ -1,1 +1,36 @@
-.rc-gallery-four {}
+.rc-gallery-four {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pobo-gallery-four-gap);
+  padding: var(--pobo-gallery-four-padding);
+  background: var(--pobo-gallery-four-bg);
+  border: var(--pobo-gallery-four-border);
+  border-radius: var(--pobo-gallery-four-border-radius);
+  box-shadow: var(--pobo-gallery-four-box-shadow);
+
+  &__image {
+    width: calc(100% / 4 - var(--pobo-gallery-four-gap) * 3 / 4);
+    overflow: hidden;
+    border-radius: var(--pobo-gallery-four-image-border-radius);
+    box-shadow: var(--pobo-gallery-four-image-box-shadow);
+    border: var(--pobo-gallery-four-image-border);
+    background: var(--pobo-gallery-four-image-bg);
+
+    @include media-breakpoint-down(md) {
+      width: calc(100% / 2 - var(--pobo-gallery-four-gap) / 2);
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__image-img {
+    width: 100%;
+    height: var(--pobo-gallery-four-image-img-height);
+    object-fit: var(--pobo-gallery-four-image-img-object-fit);
+    object-position: var(--pobo-gallery-four-image-img-object-position);
+    display: block;
+  }
+}
