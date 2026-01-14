@@ -1,1 +1,27 @@
-.rc-gallery-one {}
+.rc-gallery-one {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--pobo-gallery-one-padding);
+  background: var(--pobo-gallery-one-bg);
+  border: var(--pobo-gallery-one-border);
+  border-radius: var(--pobo-gallery-one-border-radius);
+  box-shadow: var(--pobo-gallery-one-box-shadow);
+
+  &__image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--pobo-gallery-one-image-border-radius);
+    box-shadow: var(--pobo-gallery-one-image-box-shadow);
+    border: var(--pobo-gallery-one-image-border);
+    background: var(--pobo-gallery-one-image-bg);
+  }
+
+  &__img {
+    width: 100%;
+    height: var(--pobo-gallery-one-img-height);
+    object-fit: var(--pobo-gallery-one-img-object-fit);
+    object-position: var(--pobo-gallery-one-img-object-position);
+    display: block;
+  }
+}

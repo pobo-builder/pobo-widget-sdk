@@ -1,142 +1,124 @@
+# Pobo Widget SDK
 
-# Generic Templates (POC)
+SCSS widget library for [Pobo Page Builder](https://www.pobo.cz). Provides styled UI components for e-commerce product pages.
 
-This repository contains generic templates for widgets in Pobo Page Builder.
+## Requirements
 
-Changelog versions:
+- [Node.js](https://nodejs.org/) >= 20
+- [npm](https://www.npmjs.com/) >= 9
 
-- [3.4.2](version/3.4.2.md) - Fix `.rc-profit` icon width
-- [3.4.1](version/3.4.0.md) - Extension of variables
-- [3.4.0](version/3.4.0.md) - Add multi-column widgets
-- [3.3.0](version/3.3.0.md) - New gallery - PhotoSwipe
-- [3.2.0](version/3.2.0.md) - Fix font family, add variable for image alignment
-- [3.1.0](version/3.1.0) - Fix max width widget
-- [3.0.2](version/3.0.2.md) - Fix `<li>` circle, remove native variable
-- [3.0.1](version/3.0.1.md) - Fix bug with full-width widget, add font family variable
-- [3.0.0](version/3.0.0.md) - Support full-width widget, add background, spacing widget support
-- [2.0.3](version/2.0.3.md) - Add variables for list item, paragraph, title line, standard table
-- [2.0.2](version/2.0.2.md) - Add background color variable
-- [2.0.1](version/2.0.1.md) - Add mobile variable support
-- [2.0.0](version/2.0.0.md) - First version
+## Installation
 
-## Classes with a question mark
-
-- [ ] `rc-header-top-image-bottom`
-- [x] `*__image` - image alignment
-- [x] `typo - h2, h3, h4` - font family
-- [x] `typo - h2, h3, h4` - font family
-- [x] `typo - p` - font weight
-
-
-# Creating a Widget in Pobo Page Builder
-
-This repository is primarily for Pobo Page Builder plugin clients who want to customize the appearance of their widgets.
-
-## Before we start...
-
-Before starting, you need to have the following tools installed on your computer:
-
-1. Version control system [git](https://git-scm.com/)
-2. [nodejs](https://nodejs.org/en/) (min. >=10.19)
-3. [npm](https://www.npmjs.com/) (min. >=6) or [Yarn](https://yarnpkg.com/)
-
-## Cloning the repository
-
-1. Clone the repository using:
-
-```
-git clone git@github.com:pobo-builder/widget-asset.git
-```
-
-Then install the dependencies using:
-```
+```bash
+git clone git@github.com:pobo-builder/pobo-widget-sdk.git
+cd pobo-widget-sdk
 npm install
 ```
-If you are using Yarn:
-```
-yarn install
-```
 
-# Directory structure
+## Development
 
-After installing the dependencies, you will see the following structure:
+```bash
+# BEM components (recommended)
+npm run watch:generic    # http://localhost:8086
 
-``` 
-├── README.md
-├── dist
-├── node_modules
-├── package-lock.json
-├── package.json
-└── src
-    └── *.scss
+# Legacy components
+npm run watch:standalone # http://localhost:8088
+
+# Production build
+npm run build
 ```
 
-Main points of interest:
+## Project Structure
 
-1. The `dist/*` directory contains JS and CSS compiled from the `src/*` directory.
-2. The `src/*` directory contains the source SCSS files for individual Pobo widgets.
-3. The `package.json` file includes the following scripts in the `scripts` section:
-   1. `watch` (run with `npm run watch`) watches all files in the `src/*` directory and compiles them into `dist/*` upon changes.
-   2. `build` (run with `npm run build`) compiles the `src/*` files into `dist/*`, removes source maps, and minifies the code.
-   3. `proxy` (`npm run proxy`) creates a tunnel (proxy) from `localhost:8088` to a public URL (explained further below).
+```
+src/
+├── generic/                 # BEM components with CSS variables
+│   ├── rc-*.scss            # Widget components
+│   ├── part/                # Shared partials
+│   └── plugin/              # Plugin styles
+├── utils/
+│   └── native-variable.scss # CSS custom properties
+├── custom/                  # Client-specific styles
+├── *.scss                   # Legacy components
+├── editor.scss              # Legacy entry point
+└── generic.scss             # BEM entry point
 
+generic.html                 # BEM component examples
+index.html                   # Legacy component examples
+```
 
-## Writing Your First Widget
+## Component Systems
 
-Let's start by coding our first widget. First, create a new PR:
-`git checkout -b "widget-fv-bikemax-benefix-big" origin/main`.
-
-Next, create a new SCSS file in the `src/*` directory and name it using the convention `[brand]-[client]-[widget-type]-[variant]` (e.g., `fv-bikemax-benefit-big.scss`). Import this SCSS file into `src/editor.scss` (e.g., `@import "fv-bikemax-benefit-big.scss";`).
-
-Run the command `npm run watch` to watch for changes in SCSS files, compile them into CSS, and create a server displaying styled widgets at `http://localhost:8088`.
-
-## Writing CSS (SCSS)
-
-We recommend styling widgets using the [BEM methodology](https://www.vzhurudolu.cz/prirucka/bem), which ensures low specificity and minimal risk of interference with external modifications (e.g., overriding styles by a template, global adjustments by coders, etc.).
-
-When writing classes, **we recommend** using prefixes based on the SCSS file name (e.g., `.fv-bikemax-benefit-big`). This avoids conflicts with other widgets. The code should look something like this:
+### BEM System (Modern)
+Located in `src/generic/`. Uses CSS custom properties with `--pobo-*` prefix for theming.
 
 ```scss
-.fv-bikemax-benefit-big {
+.rc-gallery-one {
+  padding: var(--pobo-gallery-one-padding);
+  // ...
+}
+```
+
+### Legacy System
+Located in `src/`. Uses hardcoded values.
+
+```scss
+.rc-gallery-one {
+  padding: 0;
+  // ...
+}
+```
+
+## Creating Custom Widgets
+
+1. Create a new branch:
+```bash
+git checkout -b "widget-[client]-[type]" origin/master
+```
+
+2. Create SCSS file in `src/custom/` with naming convention `[client]-[widget-type].scss`
+
+3. Import in `src/editor.scss`:
+```scss
+@import "custom/[client]-[widget-type]";
+```
+
+4. Use BEM methodology with unique prefix:
+```scss
+.client-widget-name {
   &__title {
-    font-size: 10px;
-  }
-  
-  &__subtitle {
     font-size: 20px;
   }
 
   &__image {
-    float: left;
+    width: 100%;
   }
 }
 ```
 
-**Important Information:** Do not use prefixes like `.pb-*` or `.rc-*` as these are reserved for Pobo Page Builder widgets available to all clients, and conflicts may occur.
+> **Note:** Do not use `.pb-*` or `.rc-*` prefixes - these are reserved for Pobo core widgets.
 
-...
+## Testing with ngrok
 
-## Testing the Widget Before Deployment
-
-Before deploying, it's good practice to test the widget's appearance on the client's side. Here's a simple process:
-
-1. Start `ngrok` (a proxy server for local development) using:
-```
+1. Start the proxy:
+```bash
 npm run proxy
 ```
 
-3. The terminal will return output like this:
+2. Copy the public URL (e.g., `https://xxxx.ngrok.io`)
 
-![ngrok](./doc/ngrok.png)
+3. Find the CSS file path in browser dev tools
 
-Note the public URL, e.g., `https://abcd-12-34-56-789.ngrok.io/`. This URL is a public tunnel (proxy) to your local server (`http://localhost:8088/`).
-
-3. Open `https://abcd-12-34-56-789.ngrok.io/` and find the linked CSS file in the header (e.g., `/index.cc2492f5.css` - the name will vary, as a content hash is used). Copy the path to the CSS file (e.g., `https://abcd-12-34-56-789.ngrok.io/index.cc2492f5.css`).
-
-4. Log in to Pobo at [www.pobo.cz/login](https://www.pobo.cz/login), navigate to [www.pobo.cz/app/asset](https://www.pobo.cz/app/asset), create your first customization, and insert the following into the code field:
-
+4. Add to Pobo at [pobo.cz/app/asset](https://www.pobo.cz/app/asset):
 ```scss
-@import "https://abcd-12-34-56-789.ngrok.io/index.cc2492f5.css";
+@import "https://xxxx.ngrok.io/index.xxxxx.css";
 ```
 
-![Asset](./doc/asset.png)
+## Documentation
+
+- [CLAUDE.md](./CLAUDE.md) - Detailed conventions and patterns for AI assistants
+- [Changelog](./version/) - Version history
+
+## License
+
+BSD-3-Clause

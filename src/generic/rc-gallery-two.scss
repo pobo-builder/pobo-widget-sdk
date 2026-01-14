@@ -1,1 +1,32 @@
-.rc-gallery-two {}
+.rc-gallery-two {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pobo-gallery-two-gap);
+  padding: var(--pobo-gallery-two-padding);
+  background: var(--pobo-gallery-two-bg);
+  border: var(--pobo-gallery-two-border);
+  border-radius: var(--pobo-gallery-two-border-radius);
+  box-shadow: var(--pobo-gallery-two-box-shadow);
+
+  &__image {
+    width: calc(100% / 2 - var(--pobo-gallery-two-gap) / 2);
+    overflow: hidden;
+    border-radius: var(--pobo-gallery-two-image-border-radius);
+    box-shadow: var(--pobo-gallery-two-image-box-shadow);
+    border: var(--pobo-gallery-two-image-border);
+    background: var(--pobo-gallery-two-image-bg);
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: var(--pobo-gallery-two-img-height);
+    object-fit: var(--pobo-gallery-two-img-object-fit);
+    object-position: var(--pobo-gallery-two-img-object-position);
+    display: block;
+  }
+}

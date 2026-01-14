@@ -40,13 +40,13 @@
   },
   "homepage": "https://github.com/pobo-builder/pobo-widget-sdk#readme",
   "devDependencies": {
-    "@parcel/package-manager": "2.13.3",
-    "@parcel/transformer-sass": "2.13.3",
+    "@parcel/package-manager": "^2.16.3",
+    "@parcel/transformer-sass": "^2.16.3",
     "bootstrap": "4.3.1",
-    "lightgallery": "2.7.2",
+    "lightgallery": "^2.9.0",
     "ngrok": "4.3.3",
-    "parcel": "2.13.3",
-    "scroll-dom-animation": "1.0.9",
-    "svgo": "^3.3.2"
+    "parcel": "^2.16.3",
+    "scroll-dom-animation": "^1.0.9",
+    "svgo": "^4.0.0"
   }
 }

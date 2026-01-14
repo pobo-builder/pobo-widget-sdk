@@ -1,0 +1,27 @@
+.rc-gallery-one {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  &__image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+  }
+}

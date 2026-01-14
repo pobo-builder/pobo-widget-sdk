@@ -1,1 +1,36 @@
-.rc-gallery-three {}
+.rc-gallery-three {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pobo-gallery-three-gap);
+  padding: var(--pobo-gallery-three-padding);
+  background: var(--pobo-gallery-three-bg);
+  border: var(--pobo-gallery-three-border);
+  border-radius: var(--pobo-gallery-three-border-radius);
+  box-shadow: var(--pobo-gallery-three-box-shadow);
+
+  &__image {
+    width: calc(100% / 3 - var(--pobo-gallery-three-gap) * 2 / 3);
+    overflow: hidden;
+    border-radius: var(--pobo-gallery-three-image-border-radius);
+    box-shadow: var(--pobo-gallery-three-image-box-shadow);
+    border: var(--pobo-gallery-three-image-border);
+    background: var(--pobo-gallery-three-image-bg);
+
+    @include media-breakpoint-down(md) {
+      width: calc(100% / 2 - var(--pobo-gallery-three-gap) / 2);
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: var(--pobo-gallery-three-img-height);
+    object-fit: var(--pobo-gallery-three-img-object-fit);
+    object-position: var(--pobo-gallery-three-img-object-position);
+    display: block;
+  }
+}
