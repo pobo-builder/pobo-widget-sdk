@@ -26,11 +26,11 @@
     }
   }
 
-  &__image-img {
+  &__img {
     width: 100%;
-    height: var(--pobo-gallery-four-image-img-height);
-    object-fit: var(--pobo-gallery-four-image-img-object-fit);
-    object-position: var(--pobo-gallery-four-image-img-object-position);
+    height: var(--pobo-gallery-four-img-height);
+    object-fit: var(--pobo-gallery-four-img-object-fit);
+    object-position: var(--pobo-gallery-four-img-object-position);
     display: block;
   }
 }

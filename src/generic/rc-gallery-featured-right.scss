@@ -28,11 +28,11 @@
     background: var(--pobo-gallery-featured-right-image-bg);
   }
 
-  &__image-img {
+  &__img {
     width: 100%;
-    height: var(--pobo-gallery-featured-right-image-img-height);
-    object-fit: var(--pobo-gallery-featured-right-image-img-object-fit);
-    object-position: var(--pobo-gallery-featured-right-image-img-object-position);
+    height: var(--pobo-gallery-featured-right-img-height);
+    object-fit: var(--pobo-gallery-featured-right-img-object-fit);
+    object-position: var(--pobo-gallery-featured-right-img-object-position);
     display: block;
   }
 

@@ -22,11 +22,11 @@
     }
   }
 
-  &__image-img {
+  &__img {
     width: 100%;
-    height: var(--pobo-gallery-two-image-img-height);
-    object-fit: var(--pobo-gallery-two-image-img-object-fit);
-    object-position: var(--pobo-gallery-two-image-img-object-position);
+    height: var(--pobo-gallery-two-img-height);
+    object-fit: var(--pobo-gallery-two-img-object-fit);
+    object-position: var(--pobo-gallery-two-img-object-position);
     display: block;
   }
 }

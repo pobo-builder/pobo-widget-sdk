@@ -17,11 +17,11 @@
     background: var(--pobo-gallery-one-image-bg);
   }
 
-  &__image-img {
+  &__img {
     width: 100%;
-    height: var(--pobo-gallery-one-image-img-height);
-    object-fit: var(--pobo-gallery-one-image-img-object-fit);
-    object-position: var(--pobo-gallery-one-image-img-object-position);
+    height: var(--pobo-gallery-one-img-height);
+    object-fit: var(--pobo-gallery-one-img-object-fit);
+    object-position: var(--pobo-gallery-one-img-object-position);
     display: block;
   }
 }

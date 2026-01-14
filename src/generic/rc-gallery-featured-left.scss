@@ -49,11 +49,11 @@
     background: var(--pobo-gallery-featured-left-image-bg);
   }
 
-  &__image-img {
+  &__img {
     width: 100%;
-    height: var(--pobo-gallery-featured-left-image-img-height);
-    object-fit: var(--pobo-gallery-featured-left-image-img-object-fit);
-    object-position: var(--pobo-gallery-featured-left-image-img-object-position);
+    height: var(--pobo-gallery-featured-left-img-height);
+    object-fit: var(--pobo-gallery-featured-left-img-object-fit);
+    object-position: var(--pobo-gallery-featured-left-img-object-position);
     display: block;
   }
 }
