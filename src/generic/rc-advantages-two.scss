@@ -1,7 +1,7 @@
 .rc-advantages-two {
   background: var(--pobo-advantages-bg);
   box-shadow: var(--pobo-advantages-box-shadow);
-  border: var(--pobo-advantages-border-radius);
+  border-radius: var(--pobo-advantages-border-radius);
   border: var(--pobo-image-border-color);
 
   @include media-breakpoint-up(sm) {
