@@ -25,6 +25,7 @@
     border-radius: 0;
     box-shadow: none;
     border: none;
+    position: relative;
     background: transparent;
   }
 
@@ -43,6 +44,7 @@
     box-shadow: none;
     border: none;
     background: transparent;
+    position: relative;
 
     @include media-breakpoint-down(sm) {
       width: 100%;

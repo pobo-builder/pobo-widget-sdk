@@ -16,6 +16,7 @@
     box-shadow: none;
     border: none;
     background: transparent;
+    position: relative;
 
     @include media-breakpoint-down(sm) {
       width: 100%;
@@ -47,6 +48,8 @@
     box-shadow: none;
     border: none;
     background: transparent;
+    overflow: hidden;
+    position: relative;
   }
 
   &__img {
