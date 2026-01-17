@@ -11,6 +11,7 @@
   &__image {
     width: 100%;
     overflow: hidden;
+    position: relative;
     border-radius: var(--pobo-gallery-one-image-border-radius);
     box-shadow: var(--pobo-gallery-one-image-box-shadow);
     border: var(--pobo-gallery-one-image-border);

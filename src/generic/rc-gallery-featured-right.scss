@@ -22,6 +22,8 @@
 
   &__image {
     width: 100%;
+    overflow: hidden;
+    position: relative;
     border-radius: var(--pobo-gallery-featured-right-image-border-radius);
     box-shadow: var(--pobo-gallery-featured-right-image-box-shadow);
     border: var(--pobo-gallery-featured-right-image-border);
@@ -39,6 +41,7 @@
   &__right {
     width: calc(50% - var(--pobo-gallery-featured-right-gap) / 2);
     overflow: hidden;
+    position: relative;
     border-radius: var(--pobo-gallery-featured-right-right-border-radius);
     box-shadow: var(--pobo-gallery-featured-right-right-box-shadow);
     border: var(--pobo-gallery-featured-right-right-border);

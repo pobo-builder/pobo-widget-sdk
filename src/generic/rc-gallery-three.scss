@@ -10,6 +10,7 @@
   box-shadow: var(--pobo-gallery-three-box-shadow);
 
   &__image {
+    position: relative;
     width: calc(100% / 3 - var(--pobo-gallery-three-gap) * 2 / 3);
     overflow: hidden;
     border-radius: var(--pobo-gallery-three-image-border-radius);
