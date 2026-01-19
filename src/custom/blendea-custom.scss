@@ -27,6 +27,7 @@
     height: 160px;
     overflow: hidden;
     border-radius: 12px 12px 0 0;
+    position: relative;
   }
 
   &__img {
@@ -34,6 +35,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    position: relative;
   }
 
   &__content {
