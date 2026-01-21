@@ -3,6 +3,7 @@
   box-shadow: var(--pobo-profit-box-shadow);
   border-radius: var(--pobo-inline-border-radius);
   border: var(--pobo-inline-border);
+  padding: var(--pobo-profit-padding);
 
   &__list-ico-img {
     display: var(--pobo-profit-list-ico-img-display);
@@ -69,7 +70,7 @@
 
   &__list-content {
     width: calc(100% - var(--pobo-profit-list-ico-width));
-    padding: 0 0 0 20px;
+    padding: var(--pobo-profit-list-content-padding);
   }
 
   &__list-header {

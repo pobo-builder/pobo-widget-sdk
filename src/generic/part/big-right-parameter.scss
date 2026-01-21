@@ -42,6 +42,7 @@
   &__box-big-right-content-text {
     display: block;
     font-size: var(--pobo-parameter-big-right-value-font-size);
+    line-height: var(--pobo-parameter-big-right-value-line-height);
     color: var(--pobo-parameter-big-right-value-font-color);
     font-weight: var(--pobo-parameter-big-right-value-font-weight);
     text-align: var(--pobo-parameter-big-right-value-text-align);
@@ -52,6 +53,7 @@
     font-weight: var(--pobo-parameter-big-right-info-font-weight);
     margin: var(--pobo-parameter-big-right-info-margin);
     font-size: var(--pobo-parameter-big-info-font-size);
+    line-height: var(--pobo-parameter-big-info-line-height);
     color: var(--pobo-parameter-big-right-info-font-color);
     text-align: var(--pobo-parameter-big-right-info-text-align);
   }

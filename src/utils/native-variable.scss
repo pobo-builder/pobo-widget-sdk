@@ -191,6 +191,7 @@
   --pobo-parameter-big-right-value-font-weight: 18px;
   --pobo-parameter-big-right-value-font-color: #575757;
   --pobo-parameter-big-right-value-font-size: 15px;
+  --pobo-parameter-big-right-value-line-height: 17px;
   --pobo-parameter-big-right-value-text-align: left;
 
   --pobo-parameter-big-padding: 0px 0;
@@ -233,12 +234,14 @@
   --pobo-parameter-small-right-box-shadow: none;
   --pobo-parameter-small-right-border-radius: none;
   --pobo-parameter-small-right-value-font-size: 14px;
+  --pobo-parameter-small-right-value-line-height: 16px;
   --pobo-parameter-small-right-text-align: left;
   --pobo-parameter-small-right-value-font-color: black;
   --pobo-parameter-small-right-value-font-weight: 400;
   --pobo-parameter-small-right-value-margin: 4px 0 0 0;
   --pobo-parameter-small-right-value-padding: 0;
   --pobo-parameter-small-right-info-font-size: 17px;
+  --pobo-parameter-small-right-info-line-height: 19px;
   --pobo-parameter-small-right-info-text-align: left;
   --pobo-parameter-small-right-info-font-color: #0c0c0c;
   --pobo-parameter-small-right-info-font-weight: 600;
@@ -269,11 +272,13 @@
   --pobo-parameter-big-value-font-color: #575757;
 
   --pobo-parameter-big-info-font-size: 18px;
+  --pobo-parameter-big-info-line-height: 20px;
   --pobo-parameter-big-info-font-color: black;
 
   --pobo-advantages-bg: none;
   --pobo-advantages-box-shadow: none;
   --pobo-advantages-border-radius: none;
+  --pobo-advantages-padding: 0;
   --pobo-advantages-title-font-size: 18px;
   --pobo-advantages-title-line-height: 24px;
   --pobo-advantages-title-font-color: #383838;
@@ -338,7 +343,8 @@
   --pobo-profit-bg: none;
   --pobo-profit-box-shadow: none;
   --pobo-profit-border-radius: none;
-  --pobo-inline-border-radius: none;
+  --pobo-inline-border: none;
+  --pobo-profit-padding: 0;
 
   --pobo-profit-list-header-font-size: 18px;
   --pobo-profit-list-header-line-height: 20px;
@@ -370,6 +376,7 @@
   --pobo-profit-list-item-border: none;
   --pobo-profit-list-ico-width: 30px;
   --pobo-profit-list-ico-height: 30px;
+  --pobo-profit-list-content-padding: 0 0 0 20px;
 
   --pobo-profit-list-ico-before-size: 30px;
   --pobo-profit-list-ico-before-img: url("https://image.pobo.space/assets/checked.svg");
@@ -605,6 +612,9 @@
   --pobo-text-in-image-three-header-text-shadow: 1px 1px 1px #282828;
   --pobo-text-in-image-three-content-background: linear-gradient(0deg, black, transparent);
   --pobo-text-in-image-three-content-backdrop-filter: blur(1px);
+  --pobo-text-in-image-three-content-font-color: white;
+  --pobo-text-in-image-three-content-font-size: 15px;
+  --pobo-text-in-image-three-content-line-height: 20px;
 
   --pobo-image-three-single-height: 400px;
   --pobo-image-three-single-margin: 5px;

@@ -2,6 +2,7 @@
   background: var(--pobo-advantages-bg);
   box-shadow: var(--pobo-advantages-box-shadow);
   border: var(--pobo-advantages-border-radius);
+  padding: var(--pobo-advantages-padding);
 
   @include media-breakpoint-up(sm) {
     padding: 20px 0;
