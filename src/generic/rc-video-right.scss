@@ -17,6 +17,7 @@
   &__video {
     width: 35%;
     height: auto;
+    position: relative;
     padding: var(--pobo-video-right-video-padding);
     margin: var(--pobo-video-right-video-margin);
     border-radius: var(--pobo-video-right-video-border-radius);

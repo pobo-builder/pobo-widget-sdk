@@ -36,8 +36,9 @@
   }
 
   &__content-info {
-    color: white;
-    font-size: 15px;
+    color: var(--pobo-text-in-image-three-content-font-color);
+    font-size: var(--pobo-text-in-image-three-content-font-size);
+    line-height: var(--pobo-text-in-image-three-content-line-height);
   }
 
   &__content {
