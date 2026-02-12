@@ -1,0 +1,232 @@
+.pb-vitie-custom-elements {
+  width: 100%;
+  background: var(--pobo-vitie-custom-elements-bg);
+  padding: var(--pobo-vitie-custom-elements-padding);
+  margin: var(--pobo-vitie-custom-elements-margin);
+  border-radius: var(--pobo-vitie-custom-elements-border-radius);
+
+  &__content {
+    padding: var(--pobo-vitie-custom-elements-content-padding);
+    margin: var(--pobo-vitie-custom-elements-content-margin);
+  }
+
+  &__heading {
+    color: var(--pobo-vitie-custom-elements-heading-color);
+    font-size: var(--pobo-vitie-custom-elements-heading-font-size);
+    line-height: var(--pobo-vitie-custom-elements-heading-line-height);
+    margin: var(--pobo-vitie-custom-elements-heading-margin);
+    padding: var(--pobo-vitie-custom-elements-heading-padding);
+    font-weight: var(--pobo-vitie-custom-elements-heading-font-weight);
+    text-align: var(--pobo-vitie-custom-elements-heading-text-align);
+  }
+
+  &__text {
+    color: var(--pobo-vitie-custom-elements-text-color);
+    font-size: var(--pobo-vitie-custom-elements-text-font-size);
+    line-height: var(--pobo-vitie-custom-elements-text-line-height);
+    margin: var(--pobo-vitie-custom-elements-text-margin);
+    padding: var(--pobo-vitie-custom-elements-text-padding);
+    font-weight: var(--pobo-vitie-custom-elements-text-font-weight);
+    text-align: var(--pobo-vitie-custom-elements-text-text-align);
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-vitie-custom-elements-text-font-size-mobile);
+      text-align: var(--pobo-vitie-custom-elements-text-text-align-mobile);
+    }
+  }
+
+  &__icons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--pobo-vitie-custom-elements-icons-gap);
+    justify-content: var(--pobo-vitie-custom-elements-icons-justify);
+    margin: var(--pobo-vitie-custom-elements-icons-margin);
+    padding: var(--pobo-vitie-custom-elements-icons-padding);
+
+    @include media-breakpoint-down(sm) {
+      justify-content: var(--pobo-vitie-custom-elements-icons-justify-mobile);
+      gap: var(--pobo-vitie-custom-elements-icons-gap-mobile);
+    }
+  }
+
+  &__icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    max-width: var(--pobo-vitie-custom-elements-icon-item-max-width);
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 calc(50% - var(--pobo-vitie-custom-elements-icons-gap-mobile) / 2);
+      max-width: none;
+    }
+  }
+
+  &__icon {
+    width: var(--pobo-vitie-custom-elements-icon-size);
+    height: var(--pobo-vitie-custom-elements-icon-size);
+    object-fit: contain;
+    margin-bottom: var(--pobo-vitie-custom-elements-icon-margin-bottom);
+
+    @include media-breakpoint-down(sm) {
+      width: var(--pobo-vitie-custom-elements-icon-size-mobile);
+      height: var(--pobo-vitie-custom-elements-icon-size-mobile);
+    }
+  }
+
+  &__icon-label {
+    color: var(--pobo-vitie-custom-elements-icon-label-color);
+    font-size: var(--pobo-vitie-custom-elements-icon-label-font-size);
+    line-height: var(--pobo-vitie-custom-elements-icon-label-line-height);
+    text-align: center;
+    font-weight: var(--pobo-vitie-custom-elements-icon-label-font-weight);
+    margin: 0;
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-vitie-custom-elements-icon-label-font-size-mobile);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin: var(--pobo-vitie-custom-elements-image-margin);
+    padding: var(--pobo-vitie-custom-elements-image-padding);
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: var(--pobo-vitie-custom-elements-img-object-fit);
+    border-radius: var(--pobo-vitie-custom-elements-img-border-radius);
+    max-height: var(--pobo-vitie-custom-elements-img-max-height);
+
+    @include media-breakpoint-down(sm) {
+      max-height: var(--pobo-vitie-custom-elements-img-max-height-mobile);
+    }
+  }
+}
+
+.pb-vitie-custom-compare {
+  width: 100%;
+  background: var(--pobo-vitie-custom-compare-bg);
+  padding: var(--pobo-vitie-custom-compare-padding);
+  margin: var(--pobo-vitie-custom-compare-margin);
+  border-radius: var(--pobo-vitie-custom-compare-border-radius);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--pobo-vitie-custom-compare-grid-gap);
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+      gap: var(--pobo-vitie-custom-compare-grid-gap-mobile);
+    }
+  }
+
+  &__item {
+    background: var(--pobo-vitie-custom-compare-item-bg);
+    border-radius: var(--pobo-vitie-custom-compare-item-border-radius);
+    padding: var(--pobo-vitie-custom-compare-item-padding);
+    box-shadow: var(--pobo-vitie-custom-compare-item-shadow);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: var(--pobo-vitie-custom-compare-image-margin-bottom);
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: var(--pobo-vitie-custom-compare-img-max-height);
+
+    @include media-breakpoint-down(sm) {
+      max-height: var(--pobo-vitie-custom-compare-img-max-height-mobile);
+    }
+  }
+
+  &__title {
+    color: var(--pobo-vitie-custom-compare-title-color);
+    font-size: var(--pobo-vitie-custom-compare-title-font-size);
+    line-height: var(--pobo-vitie-custom-compare-title-line-height);
+    font-weight: var(--pobo-vitie-custom-compare-title-font-weight);
+    margin: var(--pobo-vitie-custom-compare-title-margin);
+    text-decoration: underline;
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-vitie-custom-compare-title-font-size-mobile);
+    }
+  }
+
+  &__section {
+    margin: var(--pobo-vitie-custom-compare-section-margin);
+    border: var(--pobo-vitie-custom-compare-section-border);
+    border-radius: var(--pobo-vitie-custom-compare-section-border-radius);
+    padding: var(--pobo-vitie-custom-compare-section-padding);
+  }
+
+  &__section-title {
+    color: var(--pobo-vitie-custom-compare-section-title-color);
+    font-size: var(--pobo-vitie-custom-compare-section-title-font-size);
+    font-weight: var(--pobo-vitie-custom-compare-section-title-font-weight);
+    text-transform: uppercase;
+    letter-spacing: var(--pobo-vitie-custom-compare-section-title-letter-spacing);
+    margin: var(--pobo-vitie-custom-compare-section-title-margin);
+    display: var(--pobo-vitie-custom-compare-section-title-display);
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-vitie-custom-compare-section-title-font-size-mobile);
+    }
+  }
+
+  &__section-text {
+    color: var(--pobo-vitie-custom-compare-section-text-color);
+    font-size: var(--pobo-vitie-custom-compare-section-text-font-size);
+    line-height: var(--pobo-vitie-custom-compare-section-text-line-height);
+    margin: var(--pobo-vitie-custom-compare-section-text-margin);
+    display: var(--pobo-vitie-custom-compare-section-text-display);
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-vitie-custom-compare-section-text-font-size-mobile);
+    }
+  }
+
+  &__button {
+    margin-top: auto;
+    padding-top: var(--pobo-vitie-custom-compare-button-padding-top);
+  }
+
+  &__link {
+    display: inline-block;
+    background: var(--pobo-vitie-custom-compare-link-bg);
+    color: var(--pobo-vitie-custom-compare-link-color);
+    padding: var(--pobo-vitie-custom-compare-link-padding);
+    border-radius: var(--pobo-vitie-custom-compare-link-border-radius);
+    border: var(--pobo-vitie-custom-compare-link-border);
+    text-decoration: none;
+    font-weight: var(--pobo-vitie-custom-compare-link-font-weight);
+    font-size: var(--pobo-vitie-custom-compare-link-font-size);
+    transition: var(--pobo-vitie-custom-compare-link-transition);
+    width: var(--pobo-vitie-custom-compare-link-width);
+    text-align: center;
+
+    &:hover {
+      background: var(--pobo-vitie-custom-compare-link-hover-bg);
+      color: var(--pobo-vitie-custom-compare-link-hover-color);
+      border: var(--pobo-vitie-custom-compare-link-hover-border);
+      text-decoration: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-vitie-custom-compare-link-font-size-mobile);
+      padding: var(--pobo-vitie-custom-compare-link-padding-mobile);
+    }
+  }
+}
