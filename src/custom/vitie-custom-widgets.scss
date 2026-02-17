@@ -36,6 +36,7 @@
   }
 
   &__icons-grid {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: var(--pobo-vitie-custom-elements-icons-gap);
