@@ -440,6 +440,7 @@
     gap: var(--pobo-bikemax-main-feature-gap);
     max-width: var(--pobo-bikemax-main-feature-item-max-width);
     margin: 0 auto;
+    position: relative;
 
     @include media-breakpoint-up(lg) {
       margin: 0;
@@ -498,4 +499,20 @@
   p{
     margin: 10px 0;
   }
+}
+
+
+
+.content-editor__widget{
+  .pb-custom-bikemax-main__feature-label{
+    color: rgb(142, 142, 142) !important;
+    margin: 0  !important;
+    font-weight: 500  !important;
+  }
+}
+
+.content-editor__component-preview{
+  .pb-custom-bikemax-main__feature-value{
+    font-weight: 900  !important;
+}
 }
