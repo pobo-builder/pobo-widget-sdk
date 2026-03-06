@@ -21,7 +21,7 @@
 
     @include media-breakpoint-down(sm) {
       height: var(--pobo-text-in-image-single-img-height);
-      object-fit: cover;
+      object-fit: contain;
       width: 100vw;
     }
   }
