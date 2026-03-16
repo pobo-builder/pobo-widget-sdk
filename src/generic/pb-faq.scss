@@ -38,6 +38,46 @@
 
       + .pb-faq__content {
         display: block;
+        
+        h2 {
+          font-size: var(--pobo-faq-content-h2-font-size);
+          line-height: var(--pobo-faq-content-h2-line-height);
+          color: var(--pobo-faq-content-h2-color);
+          margin: var(--pobo-faq-content-h2-margin);
+          font-weight: var(--pobo-faq-content-h2-font-weight);
+        }
+        
+        h3 {
+          font-size: var(--pobo-faq-content-h3-font-size);
+          line-height: var(--pobo-faq-content-h3-line-height);
+          color: var(--pobo-faq-content-h3-color);
+          margin: var(--pobo-faq-content-h3-margin);
+          font-weight: var(--pobo-faq-content-h3-font-weight);
+        }
+        
+        p {
+          font-size: var(--pobo-faq-content-p-font-size);
+          line-height: var(--pobo-faq-content-p-line-height);
+          color: var(--pobo-faq-content-p-color);
+          margin: var(--pobo-faq-content-p-margin);
+          font-weight: var(--pobo-faq-content-p-font-weight);
+        }
+        
+        li {
+          font-size: var(--pobo-faq-content-li-font-size);
+          line-height: var(--pobo-faq-content-li-line-height);
+          color: var(--pobo-faq-content-li-color);
+          margin: var(--pobo-faq-content-li-margin);
+          font-weight: var(--pobo-faq-content-li-font-weight);
+        }
+        
+        a {
+          font-size: var(--pobo-faq-content-a-font-size);
+          line-height: var(--pobo-faq-content-a-line-height);
+          color: var(--pobo-faq-content-a-color);
+          margin: var(--pobo-faq-content-a-margin);
+          font-weight: var(--pobo-faq-content-a-font-weight);
+        }
       }
     }
   }
