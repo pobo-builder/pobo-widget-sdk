@@ -1249,10 +1249,20 @@
   &__text {
     text-align: center;
     margin-bottom: var(--pobo-bikemax-delivery-text-margin-bottom);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     @include media-breakpoint-down(md) {
       margin-bottom: var(--pobo-bikemax-delivery-text-margin-bottom-mobile);
     }
+  }
+  
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: var(--pobo-bikemax-delivery-text-align);
+    align-items: var(--pobo-bikemax-delivery-text-align-items);
   }
 
 
