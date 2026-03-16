@@ -2430,6 +2430,176 @@
   --pobo-bikemax-info-color-cta-line-height: 1.2;
   --pobo-bikemax-info-color-cta-font-weight: 700;
   --pobo-bikemax-info-color-cta-border: none;
+
+  // Bikemax Text Bar Widget
+  --pobo-bikemax-text-bar-bg: #f8f8f8;
+  --pobo-bikemax-text-bar-padding: 25px 30px;
+  --pobo-bikemax-text-bar-padding-mobile: 12px 15px;
+  --pobo-bikemax-text-bar-margin: 20px 0;
+  
+  --pobo-bikemax-text-bar-badge-size: 60px;
+  --pobo-bikemax-text-bar-badge-size-mobile: 50px;
+  --pobo-bikemax-text-bar-badge-bg: #E11F27;
+  
+  --pobo-bikemax-text-bar-img-height: 140px;
+  --pobo-bikemax-text-bar-img-height-mobile: 100px;
+  --pobo-bikemax-text-bar-img-margin-right: 20px;
+  
+  --pobo-bikemax-text-bar-content-gap: 30px;
+  --pobo-bikemax-text-bar-content-gap-mobile: 25px;
+  --pobo-bikemax-text-bar-content-padding-right: 60px;
+  
+  --pobo-bikemax-text-bar-h2-font-size: 20px;
+  --pobo-bikemax-text-bar-h2-font-size-mobile: 18px;
+  --pobo-bikemax-text-bar-h2-color: #333333;
+  --pobo-bikemax-text-bar-h2-font-weight: 700;
+  --pobo-bikemax-text-bar-h2-line-height: 1.2;
+  --pobo-bikemax-text-bar-h2-margin: 0 0 8px 0;
+  
+  --pobo-bikemax-text-bar-p-font-size: 15px;
+  --pobo-bikemax-text-bar-p-font-size-mobile: 14px;
+  --pobo-bikemax-text-bar-p-color: #666666;
+  --pobo-bikemax-text-bar-p-line-height: 1.5;
+  
+  --pobo-bikemax-text-bar-icons-gap: 25px;
+  --pobo-bikemax-text-bar-icons-gap-mobile: 15px;
+  
+  --pobo-bikemax-text-bar-icon-size: 45px;
+  --pobo-bikemax-text-bar-icon-size-mobile: 35px;
+  --pobo-bikemax-text-bar-icon-margin-bottom: 8px;
+  
+  --pobo-bikemax-text-bar-icon-label-font-size: 13px;
+  --pobo-bikemax-text-bar-icon-label-font-size-mobile: 12px;
+  --pobo-bikemax-text-bar-icon-label-color: #999999;
+  --pobo-bikemax-text-bar-icon-label-margin: 0 0 2px 0;
+  --pobo-bikemax-text-bar-icon-label-line-height: 1.2;
+  
+  --pobo-bikemax-text-bar-icon-value-font-size: 14px;
+  --pobo-bikemax-text-bar-icon-value-font-size-mobile: 13px;
+  --pobo-bikemax-text-bar-icon-value-color: #333333;
+  --pobo-bikemax-text-bar-icon-value-font-weight: 700;
+  --pobo-bikemax-text-bar-icon-value-line-height: 1.2;
+
+  // Bikemax Delivery Widget
+  --pobo-bikemax-delivery-bg: #e8e8e8;
+  --pobo-bikemax-delivery-padding: 40px 20px;
+  --pobo-bikemax-delivery-padding-mobile: 30px 15px;
+  --pobo-bikemax-delivery-margin: 30px 0;
+  
+  --pobo-bikemax-delivery-container-max-width: 1200px;
+  
+  --pobo-bikemax-delivery-badge-size: 60px;
+  --pobo-bikemax-delivery-badge-size-mobile: 50px;
+  --pobo-bikemax-delivery-badge-bg: #E11F27;
+  
+  --pobo-bikemax-delivery-text-margin-bottom: 35px;
+  --pobo-bikemax-delivery-text-margin-bottom-mobile: 25px;
+  
+  --pobo-bikemax-delivery-h3-font-size: 14px;
+  --pobo-bikemax-delivery-h3-font-size-mobile: 13px;
+  --pobo-bikemax-delivery-h3-color: #999999;
+  --pobo-bikemax-delivery-h3-font-weight: 400;
+  --pobo-bikemax-delivery-h3-text-transform: uppercase;
+  --pobo-bikemax-delivery-h3-letter-spacing: 0.5px;
+  --pobo-bikemax-delivery-h3-margin: 0 0 5px 0;
+  
+  --pobo-bikemax-delivery-h2-font-size: 28px;
+  --pobo-bikemax-delivery-h2-font-size-mobile: 24px;
+  --pobo-bikemax-delivery-h2-color: #333333;
+  --pobo-bikemax-delivery-h2-font-weight: 700;
+  --pobo-bikemax-delivery-h2-line-height: 1.2;
+  
+  --pobo-bikemax-delivery-p-font-size: 15px;
+  --pobo-bikemax-delivery-p-font-size-mobile: 14px;
+  --pobo-bikemax-delivery-p-color: #666666;
+  --pobo-bikemax-delivery-p-line-height: 1.5;
+  --pobo-bikemax-delivery-p-max-width: 800px;
+  --pobo-bikemax-delivery-p-margin: 12px 0 0 0;
+  
+  --pobo-bikemax-delivery-icons-gap: 60px;
+  --pobo-bikemax-delivery-icons-gap-lg: 40px;
+  --pobo-bikemax-delivery-icons-gap-md: 30px;
+  --pobo-bikemax-delivery-icons-gap-mobile: 20px;
+  
+  --pobo-bikemax-delivery-icon-size: 50px;
+  --pobo-bikemax-delivery-icon-size-mobile: 40px;
+  --pobo-bikemax-delivery-icon-margin-bottom: 12px;
+  --pobo-bikemax-delivery-icon-margin-bottom-mobile: 8px;
+  
+  --pobo-bikemax-delivery-icon-label-font-size: 14px;
+  --pobo-bikemax-delivery-icon-label-font-size-mobile: 13px;
+  --pobo-bikemax-delivery-icon-label-color: #333333;
+  --pobo-bikemax-delivery-icon-label-font-weight: 700;
+  --pobo-bikemax-delivery-icon-label-margin: 0 0 4px 0;
+  --pobo-bikemax-delivery-icon-label-line-height: 1.2;
+  
+  --pobo-bikemax-delivery-icon-value-font-size: 13px;
+  --pobo-bikemax-delivery-icon-value-font-size-mobile: 12px;
+  --pobo-bikemax-delivery-icon-value-color: #666666;
+  --pobo-bikemax-delivery-icon-value-line-height: 1.3;
+  --pobo-bikemax-delivery-icon-value-max-width: 150px;
+
+  // Bikemax Image Text Widget
+  --pobo-bikemax-image-text-bg: #ffffff;
+  --pobo-bikemax-image-text-margin: 20px 0;
+  
+  --pobo-bikemax-image-text-img-min-height: 400px;
+  --pobo-bikemax-image-text-img-min-height-mobile: 300px;
+  
+  --pobo-bikemax-image-text-content-padding: 40px 50px;
+  --pobo-bikemax-image-text-content-padding-lg: 30px 35px;
+  --pobo-bikemax-image-text-content-padding-mobile: 30px 25px;
+  
+  --pobo-bikemax-image-text-header-margin-bottom: 20px;
+  --pobo-bikemax-image-text-header-gap: 20px;
+  
+  --pobo-bikemax-image-text-logo-size: 60px;
+  --pobo-bikemax-image-text-logo-size-mobile: 50px;
+  
+  --pobo-bikemax-image-text-h3-font-size: 14px;
+  --pobo-bikemax-image-text-h3-font-size-mobile: 13px;
+  --pobo-bikemax-image-text-h3-color: #999999;
+  --pobo-bikemax-image-text-h3-font-weight: 400;
+  --pobo-bikemax-image-text-h3-text-transform: uppercase;
+  --pobo-bikemax-image-text-h3-letter-spacing: 0.5px;
+  --pobo-bikemax-image-text-h3-margin: 0 0 5px 0;
+  
+  --pobo-bikemax-image-text-h2-font-size: 24px;
+  --pobo-bikemax-image-text-h2-font-size-mobile: 20px;
+  --pobo-bikemax-image-text-h2-color: #333333;
+  --pobo-bikemax-image-text-h2-font-weight: 700;
+  --pobo-bikemax-image-text-h2-line-height: 1.2;
+  
+  --pobo-bikemax-image-text-text-margin: 0 0 25px 0;
+  --pobo-bikemax-image-text-p-font-size: 15px;
+  --pobo-bikemax-image-text-p-font-size-mobile: 14px;
+  --pobo-bikemax-image-text-p-color: #666666;
+  --pobo-bikemax-image-text-p-line-height: 1.5;
+  
+  --pobo-bikemax-image-text-icons-gap: 30px;
+  --pobo-bikemax-image-text-icons-gap-mobile: 20px;
+  --pobo-bikemax-image-text-icons-margin: 25px 0 0 0;
+  --pobo-bikemax-image-text-icons-margin-mobile: 20px 0 0 0;
+  
+  --pobo-bikemax-image-text-icon-size: 45px;
+  --pobo-bikemax-image-text-icon-size-mobile: 40px;
+  --pobo-bikemax-image-text-icon-margin-bottom: 10px;
+  --pobo-bikemax-image-text-icon-margin-bottom-mobile: 8px;
+  
+  --pobo-bikemax-image-text-icon-item-padding: 10px;
+  --pobo-bikemax-image-text-icon-item-padding-mobile: 5px;
+  --pobo-bikemax-image-text-icon-text-font-size: 13px;
+  --pobo-bikemax-image-text-icon-text-font-size-mobile: 12px;
+  --pobo-bikemax-image-text-icon-text-color: #666666;
+  --pobo-bikemax-image-text-icon-text-font-weight: 500;
+  --pobo-bikemax-image-text-icon-text-line-height: 1.3;
+  
+  --pobo-bikemax-image-text-bottom-text-margin: 25px 0 0 0;
+  --pobo-bikemax-image-text-bottom-text-margin-mobile: 20px 0 0 0;
+  --pobo-bikemax-image-text-bottom-text-font-size: 14px;
+  --pobo-bikemax-image-text-bottom-text-font-size-mobile: 13px;
+  --pobo-bikemax-image-text-bottom-text-color: #666666;
+  --pobo-bikemax-image-text-bottom-text-line-height: 1.5;
 }
 
 
