@@ -84,6 +84,11 @@
     border: var(--pobo-inline-image-title-border);
     box-shadow: var(--pobo-inline-image-title-box-shadow);
     border-radius: var(--pobo-inline-image-title-border-radius);
+
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-inline-image-title-md-font-size);
+    }
   }
 
   &__subtitle {
@@ -96,6 +101,10 @@
     border: var(--pobo-inline-image-sub-title-border);
     box-shadow: var(--pobo-inline-image-sub-title-box-shadow);
     border-radius: var(--pobo-inline-image-sub-title-border-radius);
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-inline-image-sub-title-md-font-size);
+    }
   }
 
   &__three {
