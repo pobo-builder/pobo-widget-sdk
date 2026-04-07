@@ -12,7 +12,8 @@
     "watch:standalone": "npx parcel index.html -p 8088 --dist-dir dist",
     "watch:generic": "node extract.js && npx parcel generic.html -p 8086 --dist-dir dist",
     "build": "node extract.js && npx parcel build src/editor.scss src/generic.scss --no-source-maps --dist-dir build",
-    "proxy": "ngrok http http://localhost:8086"
+    "proxy": "ngrok http http://localhost:8086",
+    "preview": "node preview-server.js"
   },
   "engines": {
     "node": ">=20",
