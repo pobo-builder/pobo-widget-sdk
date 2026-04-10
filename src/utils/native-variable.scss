@@ -434,22 +434,21 @@
 
   --pobo-video-half-left-video-padding: 0;
   --pobo-video-half-left-video-margin: 0;
-  --pobo-video-half-left-video-border-radius: 0;
+  --pobo-video-half-left-video-border-radius: 20px;
+  --pobo-video-half-left-video-bg: none;
   --pobo-video-half-left-video-border: none;
   --pobo-video-half-left-video-box-shadow: none;
-
-  --pobo-video-half-left-box-bg: none;
-  --pobo-video-half-left-box-padding: 0 0 0 40px;
-  --pobo-video-half-left-box-margin: 0;
-  --pobo-video-half-left-box-border-radius: 0;
-  --pobo-video-half-left-text-align: left;
-
+  --pobo-video-half-left-video-order: 1;
+  --pobo-video-half-left-text-order: 2;
 
   --pobo-video-half-right-video-padding: 0;
   --pobo-video-half-right-video-margin: 0;
-  --pobo-video-half-right-video-border-radius: 0;
+  --pobo-video-half-right-video-border-radius: 20px;
+  --pobo-video-half-right-video-bg: none;
   --pobo-video-half-right-video-border: none;
   --pobo-video-half-right-video-box-shadow: none;
+  --pobo-video-half-right-video-order: 2;
+  --pobo-video-half-right-text-order: 1;
 
   --pobo-video-half-right-box-bg: none;
   --pobo-video-half-right-box-padding: 0 40px 0 0;
@@ -1607,20 +1606,63 @@
 
   --pobo-widget-author-above-margin: 50px 0 20px 0;
 
+  --pobo-nv-intro-text-in-video-border-radius: 20px;
+  --pobo-nv-intro-text-in-video-margin: 0;
+  --pobo-nv-intro-text-in-video-padding: 0;
 
-  --pobo-nv-text-in-video-bg: rgba(0, 0, 0, 0.56);
-  --pobo-nv-text-in-video-inner-padding: 0;
-  --pobo-nv-text-in-video-inner-margin: 0 auto;
-  --pobo-nv-text-in-video-inner-max-width: 800px;
+  --pobo-nv-intro-text-in-video-bg: rgba(0, 0, 0, 0.56);
+  --pobo-nv-intro-text-in-video-height: 600px;
+  --pobo-nv-intro-text-in-video-inner-padding: 0;
+  --pobo-nv-intro-text-in-video-inner-margin: 0 auto;
+  --pobo-nv-intro-text-in-video-inner-max-width: 800px;
 
-  --pobo-nv-text-in-video-title-font-size: 32px;
-  --pobo-nv-text-in-video-title-font-weight: 800;
-  --pobo-nv-text-in-video-title-line-height: 36px;
-  --pobo-nv-text-in-video-title-font-family: Sztos Condensed, sans-serif;
-  --pobo-nv-text-in-video-title-text-align: center;
-  --pobo-nv-text-in-video-title-color: #ffffff;
-  --pobo-nv-text-in-video-title-margin: 0;
-  --pobo-nv-text-in-video-title-padding: 0;
+  --pobo-nv-intro-text-in-video-title-font-size: 42px;
+  --pobo-nv-intro-text-in-video-title-font-weight: 800;
+  --pobo-nv-intro-text-in-video-title-line-height: 58px;
+  --pobo-nv-intro-text-in-video-title-font-family: Sztos Condensed, sans-serif;
+  --pobo-nv-intro-text-in-video-title-text-align: center;
+  --pobo-nv-intro-text-in-video-title-color: #ffffff;
+  --pobo-nv-intro-text-in-video-title-margin: 0;
+  --pobo-nv-intro-text-in-video-title-padding: 0;
+  --pobo-nv-intro-text-in-video-title-text-shadow: 0 0 5px #000000;
+
+  --pobo-nv-intro-text-in-video-subtitle-font-size: 18px;
+  --pobo-nv-intro-text-in-video-subtitle-font-weight: 400;
+  --pobo-nv-intro-text-in-video-subtitle-line-height: 28px;
+  --pobo-nv-intro-text-in-video-subtitle-font-family: Sztos Condensed, sans-serif;
+  --pobo-nv-intro-text-in-video-subtitle-text-align: center;
+  --pobo-nv-intro-text-in-video-subtitle-color: rgba(255, 255, 255, 0.8);
+  --pobo-nv-intro-text-in-video-subtitle-margin: 20px 0 0 0;
+  --pobo-nv-intro-text-in-video-subtitle-padding: 0;
+  --pobo-nv-intro-text-in-video-subtitle-text-shadow: none;
+
+  --pobo-video-half-left-align-items: center;
+  --pobo-video-half-left-bg: none;
+  --pobo-video-half-left-padding: 0;
+  --pobo-video-half-left-margin: 0;
+  --pobo-video-half-left-border-radius: 0;
+  --pobo-video-half-left-box-shadow: none;
+  --pobo-video-half-left-border-color: 0;
+  --pobo-video-half-left-text-padding: 0 0 0 40px;
+  --pobo-video-half-left-text-margin: 0;
+  --pobo-video-half-left-text-bg: none;
+  --pobo-video-half-left-text-border-radius: 0;
+  --pobo-video-half-left-text-box-shadow: none;
+  --pobo-video-half-left-text-border: 0;
+
+  --pobo-video-half-right-align-items: center;
+  --pobo-video-half-right-bg: none;
+  --pobo-video-half-right-padding: 0;
+  --pobo-video-half-right-margin: 0;
+  --pobo-video-half-right-border-radius: 0;
+  --pobo-video-half-right-box-shadow: none;
+  --pobo-video-half-right-border-color: 0;
+  --pobo-video-half-right-text-padding: 0 40px 0 0;
+  --pobo-video-half-right-text-margin: 0;
+  --pobo-video-half-right-text-bg: none;
+  --pobo-video-half-right-text-border-radius: 0;
+  --pobo-video-half-right-text-box-shadow: none;
+  --pobo-video-half-right-text-border: 0;
 
   /***
    Oh my bean custom
