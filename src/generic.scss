@@ -90,9 +90,9 @@
 /**
  Authors
 **/
-@import "generic/rc-author-left";
-@import "generic/rc-author-top";
-@import "generic/rc-author-above";
+@import "generic/author/rc-author-left";
+@import "generic/author/rc-author-top";
+@import "generic/author/rc-author-above";
 
 /**
  Gallery
@@ -169,5 +169,5 @@
 @import "custom/vitie-custom-widgets";
 @import 'fv-bosonozka-detail-benefit';
 @import "custom/blendea-custom";
-@import "generic/rc-text-code-right";
-@import "generic/rc-text-code-left";
+@import "generic/code/rc-text-code-right";
+@import "generic/code/rc-text-code-left";
