@@ -10,7 +10,7 @@ function extractClassName(filename) {
 }
 
 function generateFiles() {
-    fs.readdir(srcDir, (err, files) => {
+    fs.readdir(srcDir, { recursive: true }, (err, files) => {
         if (err) {
             console.error('Error reading the directory:', err);
             return;
@@ -21,9 +21,10 @@ function generateFiles() {
         const classNames = new Set();
 
         files.forEach(file => {
-            if (file.endsWith('.scss')) {
-                const className = extractClassName(file);
-                if (!classNames.has(className)) {
+            const basename = path.basename(file);
+            if (basename.endsWith('.scss') && !file.startsWith('part') && !file.startsWith('plugin')) {
+                const className = extractClassName(basename);
+                if (className && !classNames.has(className)) {
                     classNames.add(className);
 
                     variablesContent += ` --pobo-widget-${className}-padding: var(--pobo-global-widget-padding);\n`;
