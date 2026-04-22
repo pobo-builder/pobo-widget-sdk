@@ -162,5 +162,15 @@
 @import "custom/vitie-custom-widgets";
 @import 'fv-bosonozka-detail-benefit';
 @import "custom/blendea-custom";
+@import "custom/eskomat-custom";
 @import "generic/rc-text-code-right";
 @import "generic/rc-text-code-left";
+
+
+:root:has(.pb-custom-eskomat-recipe-four){
+  --pobo-font-family: "GT-Pressura", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+
+  #pobo-all-content{
+    --pobo-font-family: "GT-Pressura", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+  }
+}

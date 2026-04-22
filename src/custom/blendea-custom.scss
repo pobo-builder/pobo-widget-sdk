@@ -209,16 +209,6 @@
     background: var(--pobo-blendea-offer-three-badge-red-bg);
   }
 
-  &__title {
-    font-family: var(--pobo-blendea-offer-three-title-font-family);
-    font-size: var(--pobo-blendea-offer-three-title-font-size);
-    font-weight: var(--pobo-blendea-offer-three-title-font-weight);
-    line-height: var(--pobo-blendea-offer-three-title-line-height);
-    color: var(--pobo-blendea-offer-three-title-color);
-    margin: var(--pobo-blendea-offer-three-title-margin);
-    padding: 0;
-  }
-
   &__image {
     position: relative;
     margin: var(--pobo-blendea-offer-three-image-margin);
