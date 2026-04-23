@@ -4,6 +4,7 @@
   @include media-breakpoint-up(sm) {
     padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item {
