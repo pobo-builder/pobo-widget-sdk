@@ -10,8 +10,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "watch:standalone": "npx parcel index.html -p 8088 --dist-dir dist",
-    "watch:generic": "node extract.js && npx parcel generic.html -p 8086 --dist-dir dist",
-    "build": "node extract.js && npx parcel build src/editor.scss src/generic.scss --no-source-maps --dist-dir build",
+    "watch:generic": "npx tsx extract.ts && npx parcel generic.html -p 8086 --dist-dir dist",
+    "build": "npx tsx extract.ts && npx parcel build src/editor.scss src/generic.scss --no-source-maps --dist-dir build",
     "proxy": "ngrok http http://localhost:8086",
     "preview": "node preview-server.js"
   },
@@ -43,11 +43,14 @@
   "devDependencies": {
     "@parcel/package-manager": "^2.16.3",
     "@parcel/transformer-sass": "^2.16.3",
+    "@types/sprintf-js": "^1.1.4",
     "bootstrap": "4.3.1",
     "lightgallery": "^2.9.0",
     "ngrok": "4.3.3",
     "parcel": "^2.16.3",
     "scroll-dom-animation": "^1.0.9",
-    "svgo": "^4.0.0"
+    "sprintf-js": "^1.1.3",
+    "svgo": "^4.0.0",
+    "tsx": "^4.21.0"
   }
 }

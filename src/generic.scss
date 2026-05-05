@@ -31,47 +31,47 @@
 @import "generic/rc-profit";
 @import "generic/rc-card-call-to-action";
 @import "generic/pb-evaluation-two";
-@import "generic/rc-video-half-left";
-@import "generic/rc-video-half-right";
-@import "generic/rc-video-left";
-@import "generic/rc-video-right";
+@import "generic/video/rc-video-half-left";
+@import "generic/video/rc-video-half-right";
+@import "generic/video/rc-video-left";
+@import "generic/video/rc-video-right";
 
-@import "generic/rc-one-video";
-@import "generic/rc-two-videos";
+@import "generic/video/rc-one-video";
+@import "generic/video/rc-two-videos";
 
-@import "generic/rc-gallery-one";
-@import "generic/rc-gallery-two";
-@import "generic/rc-gallery-three";
-@import "generic/rc-gallery-four";
-@import "generic/rc-gallery-featured-left";
-@import "generic/rc-gallery-featured-right";
+@import "generic/gallery/rc-gallery-one";
+@import "generic/gallery/rc-gallery-two";
+@import "generic/gallery/rc-gallery-three";
+@import "generic/gallery/rc-gallery-four";
+@import "generic/gallery/rc-gallery-featured-left";
+@import "generic/gallery/rc-gallery-featured-right";
 
-@import "generic/rc-image-right-two-column";
-@import "generic/rc-image-left-two-column";
+@import "generic/text-and-image/rc-image-right-two-column";
+@import "generic/text-and-image/rc-image-left-two-column";
 
 /**
   Advantages
 **/
-@import "generic/rc-advantages-three";
-@import "generic/rc-advantages-four";
-@import "generic/rc-advantages-two";
+@import "generic/advantages/rc-advantages-three";
+@import "generic/advantages/rc-advantages-four";
+@import "generic/advantages/rc-advantages-two";
 
 /**
  Image left & right + text (above)
 **/
-@import "generic/rc-image-half-right";
-@import "generic/rc-image-half-left";
-@import "generic/rc-image-right";
-@import "generic/rc-image-left";
-@import "generic/rc-image-right-overlay";
-@import "generic/rc-image-left-overlay";
+@import "generic/text-and-image/rc-image-half-right";
+@import "generic/text-and-image/rc-image-half-left";
+@import "generic/text-and-image/rc-image-right";
+@import "generic/text-and-image/rc-image-left";
+@import "generic/text-and-image/rc-image-right-overlay";
+@import "generic/text-and-image/rc-image-left-overlay";
 
 /**
  Text in image
 **/
 //@import "generic/text-in-image-one";
 @import "generic/rc-text-image-top";
-@import "generic/rc-image-three";
+@import "generic/text-and-image/rc-image-three";
 
 /**
  Review widgets
@@ -90,15 +90,15 @@
 /**
  Authors
 **/
-@import "generic/rc-author-left";
-@import "generic/rc-author-top";
-@import "generic/rc-author-above";
+@import "generic/author/rc-author-left";
+@import "generic/author/rc-author-top";
+@import "generic/author/rc-author-above";
 
 /**
  Gallery
 **/
 @import "generic/rc-inline-image";
-@import "generic/rc-dynamic-gallery";
+@import "generic/gallery/rc-dynamic-gallery";
 
 /**
   Separator widget
@@ -120,12 +120,12 @@
 @import "generic/rc-quotation-split";
 @import "generic/rc-counter";
 @import "generic/rc-interview-photo";
-@import "generic/rc-parameter-small-right";
-@import "generic/rc-parameter-small-left";
-@import "generic/rc-parameter-big-right";
-@import "generic/rc-parameter-big-left";
-@import "generic/two-videos";
-@import "generic/rc-image-one";
+@import "generic/parameter/rc-parameter-small-right";
+@import "generic/parameter/rc-parameter-small-left";
+@import "generic/parameter/rc-parameter-big-right";
+@import "generic/parameter/rc-parameter-big-left";
+@import "generic/video/two-videos";
+@import "generic/text-and-image/rc-image-one";
 
 /**
  Core Bootstrap
@@ -141,6 +141,13 @@
 @import "generic/rc-carousel-text";
 @import "generic/plugin/gallery";
 @import "generic/product-preview";
+
+/**
+  Native video
+**/
+@import "generic/native-video/nv-intro-text-in-video";
+@import "generic/native-video/nv-video-half-left";
+@import "generic/native-video/nv-video-half-right";
 
 /**
   Custom clients
@@ -162,6 +169,9 @@
 @import "custom/vitie-custom-widgets";
 @import 'fv-bosonozka-detail-benefit';
 @import "custom/blendea-custom";
+@import "generic/code/rc-text-code-right";
+@import "generic/code/rc-text-code-left";
+
 @import "custom/eskomat-custom";
 @import "custom/mybesthome";
 @import "generic/rc-text-code-right";
