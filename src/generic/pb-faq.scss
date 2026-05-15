@@ -1,7 +1,7 @@
 .pb-faq {
   &__header {
     position: relative;
-    margin: var(--pobo-faq-header-margin);
+    margin: var(--pobo-faq-header-margin) !important;
     padding: var(--pobo-faq-header-padding);
     border-radius: var(--pobo-faq-header-border-radius);
     border: var(--pobo-faq-header-border);
