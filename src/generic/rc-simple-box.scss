@@ -1,0 +1,33 @@
+.rc-simple-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  gap: var(--pobo-simple-box-gap);
+  margin: var(--pobo-simple-box-margin);
+
+  &__item {
+    position: relative;
+    flex: 1 1 var(--pobo-simple-box-item-basis);
+    min-width: 0;
+    box-sizing: border-box;
+    padding: var(--pobo-simple-box-item-padding);
+    background: var(--pobo-simple-box-item-bg);
+    border: var(--pobo-simple-box-item-border);
+    border-radius: var(--pobo-simple-box-item-border-radius);
+    box-shadow: var(--pobo-simple-box-item-box-shadow);
+    color: var(--pobo-simple-box-content-color);
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-simple-box-content-font-size);
+    line-height: var(--pobo-simple-box-content-line-height);
+    font-weight: var(--pobo-simple-box-content-font-weight);
+
+    @include media-breakpoint-down(md) {
+      flex: 1 1 var(--pobo-simple-box-item-basis-md);
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex: 1 1 100%;
+    }
+  }
+}
