@@ -3108,19 +3108,26 @@
   --pobo-mbh-care-icons-desc-line-height: 1.4;
   --pobo-mbh-care-icons-desc-color: #6b6b6b;
 
-  --pobo-simple-box-gap: 20px;
-  --pobo-simple-box-margin: 0;
-  --pobo-simple-box-item-basis: 260px;
-  --pobo-simple-box-item-basis-md: 45%;
-  --pobo-simple-box-item-padding: 24px;
-  --pobo-simple-box-item-bg: #f5f5f5;
-  --pobo-simple-box-item-border: 1px solid #e3e3e3;
-  --pobo-simple-box-item-border-radius: 8px;
-  --pobo-simple-box-item-box-shadow: none;
-  --pobo-simple-box-content-font-size: 15px;
-  --pobo-simple-box-content-line-height: 1.6;
-  --pobo-simple-box-content-font-weight: 400;
-  --pobo-simple-box-content-color: #555555;
+  --pobo-simple-content-box-gap: 20px;
+  --pobo-simple-content-box-margin: 0;
+  --pobo-simple-content-box-item-basis: 260px;
+  --pobo-simple-content-box-item-basis-md: 45%;
+  --pobo-simple-content-box-item-padding: 24px;
+  --pobo-simple-content-box-item-bg: #f5f5f5;
+  --pobo-simple-content-box-item-border: 1px solid #e3e3e3;
+  --pobo-simple-content-box-item-border-radius: 8px;
+  --pobo-simple-content-box-item-box-shadow: none;
+  --pobo-simple-content-box-title-font-family: var(--pobo-font-family);
+  --pobo-simple-content-box-title-font-size: 18px;
+  --pobo-simple-content-box-title-line-height: 1.3;
+  --pobo-simple-content-box-title-font-weight: 600;
+  --pobo-simple-content-box-title-color: #2b2b2b;
+  --pobo-simple-content-box-title-margin: 0 0 10px 0;
+  --pobo-simple-content-box-title-padding: 0;
+  --pobo-simple-content-box-content-font-size: 15px;
+  --pobo-simple-content-box-content-line-height: 1.6;
+  --pobo-simple-content-box-content-font-weight: 400;
+  --pobo-simple-content-box-content-color: #555555;
 }
 
 
