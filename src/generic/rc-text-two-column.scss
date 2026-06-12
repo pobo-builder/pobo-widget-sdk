@@ -1,0 +1,22 @@
+.rc-text-two-column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: var(--pobo-text-two-column-gap);
+  margin: var(--pobo-text-two-column-margin);
+
+  &__col {
+    flex: 1 1 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    color: var(--pobo-text-two-column-content-color);
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-text-two-column-content-font-size);
+    line-height: var(--pobo-text-two-column-content-line-height);
+    font-weight: var(--pobo-text-two-column-content-font-weight);
+
+    @include media-breakpoint-up(md) {
+      flex: 1 1 calc(50% - var(--pobo-text-two-column-gap) / 2);
+    }
+  }
+}
