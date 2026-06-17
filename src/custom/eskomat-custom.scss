@@ -980,12 +980,6 @@
 
   &__video {
     position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: var(--pobo-eskomat-recipe-detail-video-bg);
-    border-radius: var(--pobo-eskomat-recipe-detail-video-border-radius);
-    overflow: hidden;
-    margin: var(--pobo-eskomat-recipe-detail-video-margin);
   }
 
   &__iframe {
@@ -1254,4 +1248,12 @@
   @include media-breakpoint-up(md) {
     padding: var(--pobo-eskomat-params-wrapper-padding);
   }
+}
+
+.content-editor__editable.pb-custom-eskomat-params__value,
+.content-editor__editable.pb-custom-eskomat-params__label {
+  display: inline-block;
+  min-width: 50px;
+  min-height: 1em;
+  background: rgb(255 212 137 / 0.32);
 }
