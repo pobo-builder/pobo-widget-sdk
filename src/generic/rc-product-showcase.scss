@@ -1,0 +1,128 @@
+.rc-product-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+  gap: var(--pobo-product-showcase-gap);
+  margin: var(--pobo-product-showcase-margin);
+  padding: var(--pobo-product-showcase-padding);
+  background: var(--pobo-product-showcase-bg);
+  border: var(--pobo-product-showcase-border);
+  border-radius: var(--pobo-product-showcase-border-radius);
+  box-shadow: var(--pobo-product-showcase-box-shadow);
+  font-family: var(--pobo-font-family);
+
+  @include media-breakpoint-down(md) {
+    --pobo-product-showcase-img-height: 280px;
+    --pobo-product-showcase-name-font-size: 23px;
+    --pobo-product-showcase-price-font-size: 24px;
+    --pobo-product-showcase-body-padding: 4px;
+  }
+
+  &__media {
+    position: relative;
+    flex: 1 1 var(--pobo-product-showcase-media-basis);
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+    padding: var(--pobo-product-showcase-media-padding);
+    background: var(--pobo-product-showcase-media-bg);
+    border: var(--pobo-product-showcase-media-border);
+    border-radius: var(--pobo-product-showcase-media-border-radius);
+
+    @include media-breakpoint-down(md) {
+      flex: 1 1 100%;
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: var(--pobo-product-showcase-img-height);
+    object-fit: var(--pobo-product-showcase-img-object-fit);
+    object-position: center;
+    mix-blend-mode: var(--pobo-product-showcase-img-blend-mode);
+  }
+
+  &__body {
+    flex: 1 1 var(--pobo-product-showcase-body-basis);
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--pobo-product-showcase-body-padding);
+
+    @include media-breakpoint-down(md) {
+      flex: 1 1 100%;
+    }
+  }
+
+  &__name {
+    display: block;
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-product-showcase-name-font-size);
+    line-height: var(--pobo-product-showcase-name-line-height);
+    font-weight: var(--pobo-product-showcase-name-font-weight);
+    color: var(--pobo-product-showcase-name-color);
+    margin: var(--pobo-product-showcase-name-margin);
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--pobo-product-showcase-meta-gap);
+    margin: var(--pobo-product-showcase-meta-margin);
+  }
+
+  &__price {
+    display: inline-block;
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-product-showcase-price-font-size);
+    line-height: var(--pobo-product-showcase-price-line-height);
+    font-weight: var(--pobo-product-showcase-price-font-weight);
+    color: var(--pobo-product-showcase-price-color);
+  }
+
+  &__availability {
+    display: inline-block;
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-product-showcase-availability-font-size);
+    line-height: var(--pobo-product-showcase-availability-line-height);
+    font-weight: var(--pobo-product-showcase-availability-font-weight);
+    color: var(--pobo-product-showcase-availability-color);
+    background: var(--pobo-product-showcase-availability-bg);
+    border-radius: var(--pobo-product-showcase-availability-border-radius);
+    padding: var(--pobo-product-showcase-availability-padding);
+  }
+
+  &__cart.pb-product-cart {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: var(--pobo-product-showcase-cart-color);
+    background: var(--pobo-product-showcase-cart-bg);
+    border: var(--pobo-product-showcase-cart-border);
+    box-shadow: var(--pobo-product-showcase-cart-box-shadow);
+    padding: var(--pobo-product-showcase-cart-padding);
+    margin: var(--pobo-product-showcase-cart-margin);
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-product-showcase-cart-font-size);
+    line-height: var(--pobo-product-showcase-cart-line-height);
+    font-weight: var(--pobo-product-showcase-cart-font-weight);
+    border-radius: var(--pobo-product-showcase-cart-border-radius);
+
+    &:hover {
+      color: var(--pobo-product-showcase-cart-hover-color);
+      background: var(--pobo-product-showcase-cart-hover-bg);
+    }
+  }
+}
