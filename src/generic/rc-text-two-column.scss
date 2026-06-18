@@ -5,7 +5,7 @@
   gap: var(--pobo-text-two-column-gap);
   margin: var(--pobo-text-two-column-margin);
 
-  &__col {
+  &__col-left, &__col-right {
     flex: 1 1 100%;
     min-width: 0;
     box-sizing: border-box;
