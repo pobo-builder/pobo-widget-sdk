@@ -153,15 +153,19 @@
     &__item {
         position: relative;
         width: 100%;
-        padding: var(--pobo-amix-content-photo-item-padding);
-        border-bottom: var(--pobo-amix-content-photo-item-border);
-
-        &:last-child {
-            border-bottom: 0;
-        }
     }
 
     &__text {
+    }
+
+    & &__text p {
+        margin: 0;
+        padding: var(--pobo-amix-content-photo-item-padding);
+        border-bottom: var(--pobo-amix-content-photo-item-border);
+    }
+
+    & &__text p:last-child {
+        border-bottom: 0;
     }
 
     &__photo {
