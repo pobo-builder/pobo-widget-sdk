@@ -1,0 +1,894 @@
+.pb-custom-amix-benefits {
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    background: var(--pobo-amix-benefits-bg);
+    border-radius: var(--pobo-amix-benefits-border-radius);
+    padding: var(--pobo-amix-benefits-padding-mobile);
+
+    @include media-breakpoint-up(md) {
+        padding: var(--pobo-amix-benefits-padding);
+    }
+
+    &__title {
+        display: block;
+        margin: var(--pobo-amix-benefits-title-margin-mobile);
+
+        @include media-breakpoint-up(md) {
+            margin: var(--pobo-amix-benefits-title-margin);
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: var(--pobo-amix-benefits-column-gap);
+        row-gap: var(--pobo-amix-benefits-row-gap);
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+
+        @include media-breakpoint-up(sm) {
+            width: calc((100% - var(--pobo-amix-benefits-column-gap)) / 2);
+        }
+
+        @include media-breakpoint-up(md) {
+            width: calc((100% - var(--pobo-amix-benefits-column-gap) * 2) / 3);
+        }
+    }
+
+    &__ico {
+        position: relative;
+        width: var(--pobo-amix-benefits-ico-size);
+        height: var(--pobo-amix-benefits-ico-size);
+        margin: var(--pobo-amix-benefits-ico-margin);
+    }
+
+    &__ico-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__text {
+    }
+}
+
+.pb-custom-amix-content-columns {
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    background: var(--pobo-amix-content-columns-bg);
+    border-radius: var(--pobo-amix-content-columns-border-radius);
+    padding: var(--pobo-amix-content-columns-padding-mobile);
+
+    @include media-breakpoint-up(md) {
+        padding: var(--pobo-amix-content-columns-padding);
+    }
+
+    &__title {
+        display: block;
+        margin: var(--pobo-amix-content-columns-title-margin-mobile);
+
+        @include media-breakpoint-up(md) {
+            margin: var(--pobo-amix-content-columns-title-margin);
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: var(--pobo-amix-content-columns-column-gap);
+        row-gap: var(--pobo-amix-content-columns-row-gap);
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: calc((100% - var(--pobo-amix-content-columns-column-gap) * 2) / 3);
+        }
+    }
+
+    &__ico {
+        position: relative;
+        width: var(--pobo-amix-content-columns-ico-size);
+        height: var(--pobo-amix-content-columns-ico-size);
+        margin: var(--pobo-amix-content-columns-ico-margin);
+    }
+
+    &__ico-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__text {
+    }
+}
+
+.pb-custom-amix-content-photo {
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    background: var(--pobo-amix-content-photo-bg);
+    border-radius: var(--pobo-amix-content-photo-border-radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: var(--pobo-amix-content-photo-gap);
+
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    &__main {
+        width: 100%;
+        padding: var(--pobo-amix-content-photo-main-padding-mobile);
+
+        @include media-breakpoint-up(md) {
+            flex: 1 1 auto;
+            align-self: center;
+            padding: var(--pobo-amix-content-photo-main-padding);
+        }
+    }
+
+    &__title {
+        display: block;
+        margin: var(--pobo-amix-content-photo-title-margin);
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        padding: var(--pobo-amix-content-photo-item-padding);
+        border-bottom: var(--pobo-amix-content-photo-item-border);
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__text {
+    }
+
+    &__photo {
+        position: relative;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            flex: 0 0 var(--pobo-amix-content-photo-photo-width);
+            width: var(--pobo-amix-content-photo-photo-width);
+            align-self: center;
+        }
+    }
+
+    &__photo-img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: var(--pobo-amix-content-photo-img-max-mobile);
+        margin: 0 auto;
+
+        @include media-breakpoint-up(md) {
+            max-width: none;
+            margin: 0;
+        }
+    }
+}
+
+.pb-custom-amix-compare {
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    background: var(--pobo-amix-compare-bg);
+    border-radius: var(--pobo-amix-compare-border-radius);
+    padding: var(--pobo-amix-compare-padding-mobile);
+
+    @include media-breakpoint-up(md) {
+        padding: var(--pobo-amix-compare-padding);
+    }
+
+    &__title {
+        display: block;
+        text-align: center;
+        margin: var(--pobo-amix-compare-title-margin-mobile);
+
+        @include media-breakpoint-up(md) {
+            margin: var(--pobo-amix-compare-title-margin);
+        }
+    }
+
+    &__cols {
+        display: flex;
+        gap: var(--pobo-amix-compare-col-gap);
+        margin: var(--pobo-amix-compare-cols-margin);
+    }
+
+    &__col {
+        flex: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__photo {
+        position: relative;
+        width: 100%;
+        height: var(--pobo-amix-compare-photo-height);
+        margin: var(--pobo-amix-compare-photo-margin);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__photo-img {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        mix-blend-mode: multiply;
+    }
+
+    &__product {
+        display: block;
+        min-height: var(--pobo-amix-compare-product-min-height);
+        margin: var(--pobo-amix-compare-product-margin);
+        font-size: var(--pobo-amix-compare-product-font-size);
+        font-weight: var(--pobo-amix-compare-product-font-weight);
+        line-height: 1.3;
+        color: var(--pobo-amix-compare-product-color);
+    }
+
+    &__text {
+        width: 100%;
+    }
+
+    & &__cols &__col h2 {
+        position: relative;
+        margin: var(--pobo-amix-compare-label-margin) !important;
+        padding: var(--pobo-amix-compare-label-padding) !important;
+        border-top: var(--pobo-amix-compare-divider) !important;
+        text-transform: uppercase !important;
+        font-size: var(--pobo-amix-compare-label-font-size) !important;
+        font-weight: var(--pobo-amix-compare-label-font-weight) !important;
+        letter-spacing: var(--pobo-amix-compare-label-letter-spacing) !important;
+        line-height: var(--pobo-amix-compare-label-line-height) !important;
+        color: var(--pobo-amix-compare-label-color) !important;
+    }
+
+    & &__cols &__col h3 {
+        margin: var(--pobo-amix-compare-value-margin) !important;
+        padding: 0 !important;
+        text-transform: none !important;
+        letter-spacing: normal !important;
+        font-size: var(--pobo-amix-compare-value-font-size) !important;
+        font-weight: var(--pobo-amix-compare-value-font-weight) !important;
+        line-height: var(--pobo-amix-compare-value-line-height) !important;
+        color: var(--pobo-amix-compare-value-neutral-color) !important;
+    }
+
+    & &__cols &__col--ours h3 {
+        color: var(--pobo-amix-compare-value-good-color) !important;
+    }
+
+    & &__cols &__col--theirs h3 {
+        color: var(--pobo-amix-compare-value-bad-color) !important;
+    }
+
+    &__button {
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        margin: var(--pobo-amix-compare-button-margin);
+        padding: var(--pobo-amix-compare-button-padding);
+        background: var(--pobo-amix-compare-button-bg);
+        color: var(--pobo-amix-compare-button-color) !important;
+        font-size: var(--pobo-amix-compare-button-font-size);
+        font-weight: var(--pobo-amix-compare-button-font-weight);
+        line-height: 1.2;
+        border: none;
+        border-radius: var(--pobo-amix-compare-button-radius);
+        cursor: pointer;
+        -webkit-appearance: none;
+        appearance: none;
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: var(--pobo-amix-compare-button-bg-hover);
+        }
+    }
+}
+
+.pb-custom-amix-protein-chart {
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    background: var(--pobo-amix-protein-chart-bg);
+    border-radius: var(--pobo-amix-protein-chart-border-radius);
+    padding: var(--pobo-amix-protein-chart-padding-mobile);
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        padding: var(--pobo-amix-protein-chart-padding);
+    }
+
+    & h3 {
+        margin-top: var(--pobo-amix-protein-chart-heading-margin-top) !important;
+    }
+
+    &__chart {
+        width: 100%;
+        margin: var(--pobo-amix-protein-chart-chart-margin);
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: var(--pobo-amix-protein-chart-bar-gap);
+    }
+
+    &__bar {
+        width: 100%;
+    }
+
+    &__bar-row {
+        display: flex;
+        align-items: center;
+        gap: var(--pobo-amix-protein-chart-value-gap);
+    }
+
+    &__bar-fill {
+        flex: 0 1 auto;
+        min-width: 2px;
+        max-width: 100%;
+        height: var(--pobo-amix-protein-chart-bar-height);
+        background: var(--pobo-amix-protein-chart-bar-color);
+        border-radius: var(--pobo-amix-protein-chart-bar-radius);
+    }
+
+    &__bar-value {
+        flex: 0 0 auto;
+        font-size: var(--pobo-amix-protein-chart-value-font-size);
+        font-weight: var(--pobo-amix-protein-chart-value-font-weight);
+        line-height: 1;
+        color: var(--pobo-amix-protein-chart-value-color);
+    }
+
+    &__bar-label {
+        display: block;
+        margin: var(--pobo-amix-protein-chart-label-margin);
+        font-size: var(--pobo-amix-protein-chart-label-font-size);
+        line-height: 1.3;
+        color: var(--pobo-amix-protein-chart-label-color);
+    }
+
+    &__bar:nth-child(1) &__bar-fill {
+        background: var(--pobo-amix-protein-chart-bar-color-1);
+    }
+
+    &__bar:nth-child(2) &__bar-fill {
+        background: var(--pobo-amix-protein-chart-bar-color-2);
+    }
+
+    &__bar:nth-child(3) &__bar-fill {
+        background: var(--pobo-amix-protein-chart-bar-color-3);
+    }
+}
+
+.pb-custom-amix-guide {
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    background: var(--pobo-amix-guide-bg);
+    border-radius: var(--pobo-amix-guide-border-radius);
+    overflow: hidden;
+
+    &__main {
+        padding: var(--pobo-amix-guide-main-padding-mobile);
+
+        @include media-breakpoint-up(md) {
+            padding: var(--pobo-amix-guide-main-padding);
+        }
+    }
+
+    &__text {
+    }
+
+    &__photo {
+        position: relative;
+        width: 100%;
+        height: var(--pobo-amix-guide-photo-height-mobile);
+
+        @include media-breakpoint-up(md) {
+            height: var(--pobo-amix-guide-photo-height);
+        }
+    }
+
+    &__photo-img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.pb-custom-amix-vitamin-b {
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    background: var(--pobo-amix-vitamin-b-bg);
+    border-radius: var(--pobo-amix-vitamin-b-border-radius);
+    padding: var(--pobo-amix-vitamin-b-padding-mobile);
+
+    @include media-breakpoint-up(md) {
+        padding: var(--pobo-amix-vitamin-b-padding);
+    }
+
+    &__text {
+        max-width: var(--pobo-amix-vitamin-b-text-max-width);
+        margin: var(--pobo-amix-vitamin-b-text-margin);
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--pobo-amix-vitamin-b-content-gap);
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: var(--pobo-amix-vitamin-b-item-gap);
+
+        @include media-breakpoint-up(md) {
+            flex: 1 1 auto;
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__ico {
+        position: relative;
+        width: var(--pobo-amix-vitamin-b-ico-size);
+        height: var(--pobo-amix-vitamin-b-ico-size);
+        margin: var(--pobo-amix-vitamin-b-ico-margin);
+    }
+
+    &__ico-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--pobo-amix-vitamin-b-info-gap);
+    }
+
+    &__item-title {
+        display: block;
+        font-size: var(--pobo-amix-vitamin-b-item-title-font-size);
+        font-weight: var(--pobo-amix-vitamin-b-item-title-font-weight);
+        line-height: 1.3;
+        color: var(--pobo-amix-vitamin-b-item-title-color);
+    }
+
+    &__item-text {
+        display: block;
+        font-size: var(--pobo-amix-vitamin-b-item-text-font-size);
+        line-height: 1.5;
+        color: var(--pobo-amix-vitamin-b-item-text-color);
+    }
+
+    &__media {
+        position: relative;
+
+        @include media-breakpoint-up(md) {
+            flex: 0 0 var(--pobo-amix-vitamin-b-media-width);
+            width: var(--pobo-amix-vitamin-b-media-width);
+        }
+    }
+
+    &__photo {
+        position: relative;
+        width: 100%;
+    }
+
+    &__photo-img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        mix-blend-mode: multiply;
+    }
+}
+
+.pb-custom-amix-snack {
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    background: var(--pobo-amix-snack-bg);
+    border-radius: var(--pobo-amix-snack-border-radius);
+    overflow: hidden;
+
+    &__main {
+        padding: var(--pobo-amix-snack-main-padding-mobile);
+
+        @include media-breakpoint-up(md) {
+            padding: var(--pobo-amix-snack-main-padding);
+        }
+    }
+
+    &__text {
+        margin: var(--pobo-amix-snack-text-margin);
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: var(--pobo-amix-snack-column-gap);
+        row-gap: var(--pobo-amix-snack-row-gap);
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: calc((100% - var(--pobo-amix-snack-column-gap) * 2) / 3);
+        }
+    }
+
+    &__ico {
+        position: relative;
+        width: var(--pobo-amix-snack-ico-size);
+        height: var(--pobo-amix-snack-ico-size);
+        margin: var(--pobo-amix-snack-ico-margin);
+    }
+
+    &__ico-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__subtitle {
+        display: block;
+        margin: var(--pobo-amix-snack-subtitle-margin);
+        font-size: var(--pobo-amix-snack-subtitle-font-size);
+        font-weight: var(--pobo-amix-snack-subtitle-font-weight);
+        line-height: 1.3;
+        color: var(--pobo-amix-snack-subtitle-color);
+    }
+
+    &__item-text {
+        display: block;
+        font-size: var(--pobo-amix-snack-item-text-font-size);
+        line-height: 1.6;
+        color: var(--pobo-amix-snack-item-text-color);
+    }
+
+    &__photo {
+        position: relative;
+        width: 100%;
+        height: var(--pobo-amix-snack-photo-height-mobile);
+
+        @include media-breakpoint-up(md) {
+            height: var(--pobo-amix-snack-photo-height);
+        }
+    }
+
+    &__photo-img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.pb-custom-amix-nutrition-stats {
+    position: relative;
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    border-radius: var(--pobo-amix-nutrition-stats-border-radius);
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: var(--pobo-amix-nutrition-stats-overlay);
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    &__bg-img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        padding: var(--pobo-amix-nutrition-stats-padding-mobile);
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            padding: var(--pobo-amix-nutrition-stats-padding);
+        }
+    }
+
+    &__text {
+        max-width: var(--pobo-amix-nutrition-stats-text-max-width);
+        margin: var(--pobo-amix-nutrition-stats-text-margin);
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--pobo-amix-nutrition-stats-items-gap);
+    }
+
+    &__item {
+        position: relative;
+        flex: 1 1 0;
+        min-width: var(--pobo-amix-nutrition-stats-item-min-width);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--pobo-amix-nutrition-stats-value-label-gap);
+    }
+
+    &__value {
+        display: block;
+        font-size: var(--pobo-amix-nutrition-stats-value-font-size);
+        font-weight: var(--pobo-amix-nutrition-stats-value-font-weight);
+        line-height: 1;
+        color: var(--pobo-amix-nutrition-stats-value-color);
+    }
+
+    &__label {
+        display: block;
+        font-size: var(--pobo-amix-nutrition-stats-label-font-size);
+        line-height: 1.3;
+        color: var(--pobo-amix-nutrition-stats-label-color);
+    }
+
+    & h2 {
+        color: var(--pobo-amix-nutrition-stats-heading-color) !important;
+    }
+
+    & p {
+        color: var(--pobo-amix-nutrition-stats-text-color) !important;
+    }
+}
+
+.pb-custom-amix-labs {
+    position: relative;
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    border-radius: var(--pobo-amix-labs-border-radius);
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: var(--pobo-amix-labs-overlay);
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    &__bg-img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        padding: var(--pobo-amix-labs-padding-mobile);
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            padding: var(--pobo-amix-labs-padding);
+        }
+    }
+
+    &__text {
+        max-width: var(--pobo-amix-labs-text-max-width);
+        margin: var(--pobo-amix-labs-text-margin);
+    }
+
+    &__boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--pobo-amix-labs-boxes-gap);
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--pobo-amix-labs-box-gap);
+        flex: 1 1 100%;
+        padding: var(--pobo-amix-labs-box-padding);
+        background: var(--pobo-amix-labs-box-bg);
+        border-radius: var(--pobo-amix-labs-box-radius);
+        color: var(--pobo-amix-labs-box-color) !important;
+        text-decoration: none !important;
+        text-align: left;
+
+        @include media-breakpoint-up(md) {
+            flex: 1 1 0;
+            min-width: 0;
+        }
+    }
+
+    &__box-text {
+        font-size: var(--pobo-amix-labs-box-font-size);
+        font-weight: var(--pobo-amix-labs-box-font-weight);
+        line-height: 1.35;
+        color: var(--pobo-amix-labs-box-color);
+    }
+
+    &__box-arrow {
+        flex: 0 0 auto;
+        width: var(--pobo-amix-labs-arrow-size);
+        height: var(--pobo-amix-labs-arrow-size);
+        border-style: solid;
+        border-width: 2px 2px 0 0;
+        border-color: var(--pobo-amix-labs-arrow-color);
+        transform: rotate(45deg);
+    }
+
+    & h2 {
+        color: var(--pobo-amix-labs-heading-color) !important;
+    }
+
+    & p {
+        color: var(--pobo-amix-labs-text-color) !important;
+    }
+}
+
+.pb-custom-amix-faq {
+    width: 100%;
+    margin: var(--pobo-amix-widget-margin);
+    background: var(--pobo-amix-faq-bg);
+    border-radius: var(--pobo-amix-faq-border-radius);
+    padding: var(--pobo-amix-faq-padding-mobile);
+
+    @include media-breakpoint-up(md) {
+        padding: var(--pobo-amix-faq-padding);
+    }
+
+    &__title {
+        display: block;
+        margin: var(--pobo-amix-faq-title-margin);
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        position: relative;
+        border-top: var(--pobo-amix-faq-item-border);
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--pobo-amix-faq-head-gap);
+        padding: var(--pobo-amix-faq-head-padding);
+        cursor: pointer;
+    }
+
+    &__question {
+        display: block;
+        font-size: var(--pobo-amix-faq-question-font-size);
+        font-weight: var(--pobo-amix-faq-question-font-weight);
+        line-height: 1.35;
+        color: var(--pobo-amix-faq-question-color);
+    }
+
+    &__toggle {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--pobo-amix-faq-toggle-size);
+        height: var(--pobo-amix-faq-toggle-size);
+        border-radius: 50%;
+        background: var(--pobo-amix-faq-toggle-bg);
+    }
+
+    &__chevron {
+        width: var(--pobo-amix-faq-chevron-size);
+        height: var(--pobo-amix-faq-chevron-size);
+        margin-top: -3px;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        border-color: var(--pobo-amix-faq-chevron-color);
+        transform: rotate(45deg);
+        transition: transform var(--pobo-amix-faq-transition);
+    }
+
+    &__answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height var(--pobo-amix-faq-transition);
+    }
+
+    &__answer-inner {
+        padding: var(--pobo-amix-faq-answer-padding);
+    }
+
+    &__item.is-open &__chevron {
+        margin-top: 3px;
+        transform: rotate(-135deg);
+    }
+
+    &__item.is-open &__question {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+}
