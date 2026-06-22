@@ -636,7 +636,11 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 0;
+    }
+
+    &__bg .content-editor__photo-select-share {
+        top: 0;
+        left: 0;
     }
 
     &__bg-img {
@@ -728,7 +732,11 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 0;
+    }
+
+    &__bg .content-editor__photo-select-share {
+        top: 0;
+        left: 0;
     }
 
     &__bg-img {
@@ -873,7 +881,6 @@
     }
 
     &__answer {
-        max-height: 0;
         overflow: hidden;
         transition: max-height var(--pobo-amix-faq-transition);
     }
@@ -891,4 +898,18 @@
         text-decoration: underline;
         text-underline-offset: 5px;
     }
+}
+
+.content-editor__editable.pb-custom-amix-compare__product,
+.content-editor__editable.pb-custom-amix-vitamin-b__item-title,
+.content-editor__editable.pb-custom-amix-vitamin-b__item-text,
+.content-editor__editable.pb-custom-amix-snack__subtitle,
+.content-editor__editable.pb-custom-amix-snack__item-text,
+.content-editor__editable.pb-custom-amix-nutrition-stats__value,
+.content-editor__editable.pb-custom-amix-nutrition-stats__label,
+.content-editor__editable.pb-custom-amix-faq__question {
+    display: inline-block;
+    min-width: 50px;
+    min-height: 1em;
+    background: var(--pobo-amix-editor-empty-bg);
 }
