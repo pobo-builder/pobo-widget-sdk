@@ -1,0 +1,136 @@
+.pb-product-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: var(--pobo-font-family);
+  padding: var(--pobo-product-item-padding);
+  background: var(--pobo-product-item-bg);
+  border: var(--pobo-product-item-border);
+  border-radius: var(--pobo-product-item-border-radius);
+  box-shadow: var(--pobo-product-item-box-shadow);
+
+  .pb-product-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .pb-product-media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: var(--pobo-product-item-media-padding);
+    background: var(--pobo-product-item-media-bg);
+    border-radius: var(--pobo-product-item-media-border-radius);
+  }
+
+  .pb-product-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: var(--pobo-product-item-img-height);
+    object-fit: var(--pobo-product-item-img-object-fit);
+    object-position: center;
+    mix-blend-mode: var(--pobo-product-item-img-blend-mode);
+  }
+
+  .pb-product-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: var(--pobo-product-item-body-padding);
+  }
+
+  .pb-product-name {
+    display: block;
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-product-item-name-font-size);
+    line-height: var(--pobo-product-item-name-line-height);
+    font-weight: var(--pobo-product-item-name-font-weight);
+    color: var(--pobo-product-item-name-color);
+    margin: var(--pobo-product-item-name-margin);
+  }
+
+  .pb-product-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--pobo-product-item-meta-gap);
+    margin: var(--pobo-product-item-meta-margin);
+  }
+
+  .pb-product-price {
+    display: inline-block;
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-product-item-price-font-size);
+    line-height: var(--pobo-product-item-price-line-height);
+    font-weight: var(--pobo-product-item-price-font-weight);
+    color: var(--pobo-product-item-price-color);
+  }
+
+  .pb-product-availability {
+    display: inline-block;
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-product-item-availability-font-size);
+    line-height: var(--pobo-product-item-availability-line-height);
+    font-weight: var(--pobo-product-item-availability-font-weight);
+    color: var(--pobo-product-item-availability-color);
+    background: var(--pobo-product-item-availability-bg);
+    border-radius: var(--pobo-product-item-availability-border-radius);
+    padding: var(--pobo-product-item-availability-padding);
+
+    &--out {
+      color: var(--pobo-product-item-availability-out-color);
+      background: var(--pobo-product-item-availability-out-bg);
+    }
+  }
+
+  .pb-product-cart {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: var(--pobo-product-item-cart-color);
+    background: var(--pobo-product-item-cart-bg);
+    border: var(--pobo-product-item-cart-border);
+    box-shadow: var(--pobo-product-item-cart-box-shadow);
+    padding: var(--pobo-product-item-cart-padding);
+    margin: var(--pobo-product-item-cart-margin);
+    font-family: var(--pobo-font-family);
+    font-size: var(--pobo-product-item-cart-font-size);
+    line-height: var(--pobo-product-item-cart-line-height);
+    font-weight: var(--pobo-product-item-cart-font-weight);
+    border-radius: var(--pobo-product-item-cart-border-radius);
+
+    &:hover {
+      color: var(--pobo-product-item-cart-hover-color);
+      background: var(--pobo-product-item-cart-hover-bg);
+    }
+
+    &--disabled {
+      color: var(--pobo-product-item-cart-disabled-color);
+      background: var(--pobo-product-item-cart-disabled-bg);
+      box-shadow: none;
+      cursor: default;
+      pointer-events: none;
+
+      &:hover {
+        color: var(--pobo-product-item-cart-disabled-color);
+        background: var(--pobo-product-item-cart-disabled-bg);
+      }
+    }
+
+    &--loading {
+      opacity: var(--pobo-product-item-cart-loading-opacity);
+      cursor: progress;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,4 +1,18 @@
 .rc-product-carousel {
+  --pobo-product-item-border-radius: 16px;
+  --pobo-product-item-box-shadow: 0 12px 32px -20px rgba(17, 24, 39, 0.24);
+  --pobo-product-item-img-height: 200px;
+  --pobo-product-item-body-padding: 16px;
+  --pobo-product-item-name-font-size: 15px;
+  --pobo-product-item-name-margin: 0 0 10px 0;
+  --pobo-product-item-meta-gap: 8px;
+  --pobo-product-item-meta-margin: 0 0 14px 0;
+  --pobo-product-item-price-font-size: 18px;
+  --pobo-product-item-availability-font-size: 12px;
+  --pobo-product-item-availability-padding: 5px 10px;
+  --pobo-product-item-cart-padding: 11px 16px;
+  --pobo-product-item-cart-font-size: 14px;
+
   position: relative;
   box-sizing: border-box;
   padding: var(--pobo-product-carousel-padding);
@@ -31,20 +45,12 @@
     }
   }
 
-  &__item {
-    display: inline-block;
+  .pb-product-item {
+    display: inline-flex;
     vertical-align: top;
     white-space: normal;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
     width: var(--pobo-product-carousel-item-width);
     margin: var(--pobo-product-carousel-item-margin);
-    padding: var(--pobo-product-carousel-item-padding);
-    background: var(--pobo-product-carousel-item-bg);
-    border: var(--pobo-product-carousel-item-border);
-    border-radius: var(--pobo-product-carousel-item-border-radius);
-    box-shadow: var(--pobo-product-carousel-item-box-shadow);
 
     @include media-breakpoint-down(lg) {
       width: var(--pobo-product-carousel-item-width-md);
@@ -52,98 +58,6 @@
 
     @include media-breakpoint-down(sm) {
       width: var(--pobo-product-carousel-item-width-sm);
-    }
-  }
-
-  &__media {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    text-decoration: none;
-    padding: var(--pobo-product-carousel-media-padding);
-    margin: var(--pobo-product-carousel-media-margin);
-    background: var(--pobo-product-carousel-media-bg);
-    border-radius: var(--pobo-product-carousel-media-border-radius);
-  }
-
-  &__img {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: var(--pobo-product-carousel-img-height);
-    object-fit: var(--pobo-product-carousel-img-object-fit);
-    object-position: center;
-    mix-blend-mode: var(--pobo-product-carousel-img-blend-mode);
-  }
-
-  &__body {
-    display: flex;
-    flex-direction: column;
-    padding: var(--pobo-product-carousel-body-padding);
-  }
-
-  &__name {
-    display: block;
-    font-family: var(--pobo-font-family);
-    font-size: var(--pobo-product-carousel-name-font-size);
-    line-height: var(--pobo-product-carousel-name-line-height);
-    font-weight: var(--pobo-product-carousel-name-font-weight);
-    color: var(--pobo-product-carousel-name-color);
-    margin: var(--pobo-product-carousel-name-margin);
-  }
-
-  &__meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: var(--pobo-product-carousel-meta-gap);
-    margin: var(--pobo-product-carousel-meta-margin);
-  }
-
-  &__price {
-    display: inline-block;
-    font-family: var(--pobo-font-family);
-    font-size: var(--pobo-product-carousel-price-font-size);
-    line-height: var(--pobo-product-carousel-price-line-height);
-    font-weight: var(--pobo-product-carousel-price-font-weight);
-    color: var(--pobo-product-carousel-price-color);
-  }
-
-  &__availability {
-    display: inline-block;
-    font-family: var(--pobo-font-family);
-    font-size: var(--pobo-product-carousel-availability-font-size);
-    line-height: var(--pobo-product-carousel-availability-line-height);
-    font-weight: var(--pobo-product-carousel-availability-font-weight);
-    color: var(--pobo-product-carousel-availability-color);
-    background: var(--pobo-product-carousel-availability-bg);
-    border-radius: var(--pobo-product-carousel-availability-border-radius);
-    padding: var(--pobo-product-carousel-availability-padding);
-  }
-
-  &__cart.pb-product-cart {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    color: var(--pobo-product-carousel-cart-color);
-    background: var(--pobo-product-carousel-cart-bg);
-    border: var(--pobo-product-carousel-cart-border);
-    box-shadow: var(--pobo-product-carousel-cart-box-shadow);
-    padding: var(--pobo-product-carousel-cart-padding);
-    margin: var(--pobo-product-carousel-cart-margin);
-    font-family: var(--pobo-font-family);
-    font-size: var(--pobo-product-carousel-cart-font-size);
-    line-height: var(--pobo-product-carousel-cart-line-height);
-    font-weight: var(--pobo-product-carousel-cart-font-weight);
-    border-radius: var(--pobo-product-carousel-cart-border-radius);
-
-    &:hover {
-      color: var(--pobo-product-carousel-cart-hover-color);
-      background: var(--pobo-product-carousel-cart-hover-bg);
     }
   }
 }
