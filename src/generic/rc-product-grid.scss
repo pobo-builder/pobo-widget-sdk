@@ -1,4 +1,8 @@
 .rc-product-grid {
+  --pobo-product-item-border-radius: 16px;
+  --pobo-product-item-box-shadow: 0 12px 32px -20px rgba(17, 24, 39, 0.24);
+  --pobo-product-item-img-height: 220px;
+
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -8,19 +12,9 @@
   margin: var(--pobo-product-grid-margin);
   font-family: var(--pobo-font-family);
 
-  &__item {
-    position: relative;
+  .pb-product-item {
     flex: 1 1 var(--pobo-product-grid-item-basis);
     min-width: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    padding: var(--pobo-product-grid-item-padding);
-    background: var(--pobo-product-grid-item-bg);
-    border: var(--pobo-product-grid-item-border);
-    border-radius: var(--pobo-product-grid-item-border-radius);
-    box-shadow: var(--pobo-product-grid-item-box-shadow);
 
     @include media-breakpoint-down(md) {
       flex: 1 1 var(--pobo-product-grid-item-basis-md);
@@ -28,99 +22,6 @@
 
     @include media-breakpoint-down(sm) {
       flex: 1 1 var(--pobo-product-grid-item-basis-sm);
-    }
-  }
-
-  &__media {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    text-decoration: none;
-    padding: var(--pobo-product-grid-media-padding);
-    margin: var(--pobo-product-grid-media-margin);
-    background: var(--pobo-product-grid-media-bg);
-    border-radius: var(--pobo-product-grid-media-border-radius);
-  }
-
-  &__img {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: var(--pobo-product-grid-img-height);
-    object-fit: var(--pobo-product-grid-img-object-fit);
-    object-position: center;
-    mix-blend-mode: var(--pobo-product-grid-img-blend-mode);
-  }
-
-  &__body {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    padding: var(--pobo-product-grid-body-padding);
-  }
-
-  &__name {
-    display: block;
-    font-family: var(--pobo-font-family);
-    font-size: var(--pobo-product-grid-name-font-size);
-    line-height: var(--pobo-product-grid-name-line-height);
-    font-weight: var(--pobo-product-grid-name-font-weight);
-    color: var(--pobo-product-grid-name-color);
-    margin: var(--pobo-product-grid-name-margin);
-  }
-
-  &__meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: var(--pobo-product-grid-meta-gap);
-    margin: var(--pobo-product-grid-meta-margin);
-  }
-
-  &__price {
-    display: inline-block;
-    font-family: var(--pobo-font-family);
-    font-size: var(--pobo-product-grid-price-font-size);
-    line-height: var(--pobo-product-grid-price-line-height);
-    font-weight: var(--pobo-product-grid-price-font-weight);
-    color: var(--pobo-product-grid-price-color);
-  }
-
-  &__availability {
-    display: inline-block;
-    font-family: var(--pobo-font-family);
-    font-size: var(--pobo-product-grid-availability-font-size);
-    line-height: var(--pobo-product-grid-availability-line-height);
-    font-weight: var(--pobo-product-grid-availability-font-weight);
-    color: var(--pobo-product-grid-availability-color);
-    background: var(--pobo-product-grid-availability-bg);
-    border-radius: var(--pobo-product-grid-availability-border-radius);
-    padding: var(--pobo-product-grid-availability-padding);
-  }
-
-  &__cart.pb-product-cart {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    color: var(--pobo-product-grid-cart-color);
-    background: var(--pobo-product-grid-cart-bg);
-    border: var(--pobo-product-grid-cart-border);
-    box-shadow: var(--pobo-product-grid-cart-box-shadow);
-    padding: var(--pobo-product-grid-cart-padding);
-    margin: var(--pobo-product-grid-cart-margin);
-    font-family: var(--pobo-font-family);
-    font-size: var(--pobo-product-grid-cart-font-size);
-    line-height: var(--pobo-product-grid-cart-line-height);
-    font-weight: var(--pobo-product-grid-cart-font-weight);
-    border-radius: var(--pobo-product-grid-cart-border-radius);
-
-    &:hover {
-      color: var(--pobo-product-grid-cart-hover-color);
-      background: var(--pobo-product-grid-cart-hover-bg);
     }
   }
 }
