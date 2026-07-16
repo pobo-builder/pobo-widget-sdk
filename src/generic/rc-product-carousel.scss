@@ -6,7 +6,7 @@
   --pobo-product-item-name-font-size: 15px;
   --pobo-product-item-name-margin: 0 0 10px 0;
   --pobo-product-item-meta-gap: 8px;
-  --pobo-product-item-meta-margin: 0 0 14px 0;
+  --pobo-product-item-meta-margin: auto 0 14px 0;
   --pobo-product-item-price-font-size: 18px;
   --pobo-product-item-availability-font-size: 12px;
   --pobo-product-item-availability-padding: 5px 10px;
@@ -20,6 +20,8 @@
   font-family: var(--pobo-font-family);
 
   &__inner {
+    display: flex;
+    align-items: stretch;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -46,17 +48,18 @@
   }
 
   .pb-product-item {
-    display: inline-flex;
-    vertical-align: top;
+    flex: 0 0 var(--pobo-product-carousel-item-width);
     white-space: normal;
     width: var(--pobo-product-carousel-item-width);
     margin: var(--pobo-product-carousel-item-margin);
 
     @include media-breakpoint-down(lg) {
+      flex-basis: var(--pobo-product-carousel-item-width-md);
       width: var(--pobo-product-carousel-item-width-md);
     }
 
     @include media-breakpoint-down(sm) {
+      flex-basis: var(--pobo-product-carousel-item-width-sm);
       width: var(--pobo-product-carousel-item-width-sm);
     }
   }

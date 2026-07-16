@@ -3161,7 +3161,7 @@
   --pobo-product-item-name-color: #16130f;
   --pobo-product-item-name-margin: 0 0 12px 0;
   --pobo-product-item-meta-gap: 10px;
-  --pobo-product-item-meta-margin: 0 0 16px 0;
+  --pobo-product-item-meta-margin: auto 0 16px 0;
   --pobo-product-item-price-font-size: 19px;
   --pobo-product-item-price-line-height: 1.1;
   --pobo-product-item-price-font-weight: 800;
@@ -3176,7 +3176,7 @@
   --pobo-product-item-availability-out-color: #b91c1c;
   --pobo-product-item-availability-out-bg: #fdecec;
   --pobo-product-item-cart-color: var(--pobo-btn-color, #ffffff);
-  --pobo-product-item-cart-bg: var(--pobo-btn-bg, #333333);
+  --pobo-product-item-cart-bg: var(--pobo-btn-bg, var(--color-primary, var(--pr, #333333)));
   --pobo-product-item-cart-border: var(--pobo-btn-border, none);
   --pobo-product-item-cart-box-shadow: var(--pobo-btn-box-shadow, none);
   --pobo-product-item-cart-padding: 12px 18px;
@@ -3186,7 +3186,10 @@
   --pobo-product-item-cart-font-weight: 700;
   --pobo-product-item-cart-border-radius: 10px;
   --pobo-product-item-cart-hover-color: var(--pobo-btn-hover-text-color, #ffffff);
-  --pobo-product-item-cart-hover-bg: var(--pobo-btn-hover-bg, #111111);
+  --pobo-product-item-cart-hover-bg: var(
+    --pobo-btn-hover-bg,
+    var(--color-primary-hover, var(--color-primary, var(--pr, #111111)))
+  );
   --pobo-product-item-cart-disabled-color: #9ca3af;
   --pobo-product-item-cart-disabled-bg: #ececec;
   --pobo-product-item-cart-loading-opacity: 0.6;
