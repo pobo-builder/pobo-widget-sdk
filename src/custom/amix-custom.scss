@@ -265,7 +265,7 @@
         width: 100%;
     }
 
-    & &__cols &__col h2 {
+    & &__cols &__col h3 {
         position: relative;
         margin: var(--pobo-amix-compare-label-margin) !important;
         padding: var(--pobo-amix-compare-label-padding) !important;
@@ -278,7 +278,7 @@
         color: var(--pobo-amix-compare-label-color) !important;
     }
 
-    & &__cols &__col h3 {
+    & &__cols &__col h4 {
         margin: var(--pobo-amix-compare-value-margin) !important;
         padding: 0 !important;
         text-transform: none !important;
@@ -289,11 +289,11 @@
         color: var(--pobo-amix-compare-value-neutral-color) !important;
     }
 
-    & &__cols &__col--ours h3 {
+    & &__cols &__col--ours h4 {
         color: var(--pobo-amix-compare-value-good-color) !important;
     }
 
-    & &__cols &__col--theirs h3 {
+    & &__cols &__col--theirs h4 {
         color: var(--pobo-amix-compare-value-bad-color) !important;
     }
 
@@ -333,7 +333,7 @@
         padding: var(--pobo-amix-protein-chart-padding);
     }
 
-    & h3 {
+    & h4 {
         margin-top: var(--pobo-amix-protein-chart-heading-margin-top) !important;
     }
 
@@ -710,7 +710,7 @@
         color: var(--pobo-amix-nutrition-stats-label-color);
     }
 
-    & h2 {
+    & h3 {
         color: var(--pobo-amix-nutrition-stats-heading-color) !important;
     }
 
@@ -817,7 +817,7 @@
         transform: rotate(45deg);
     }
 
-    & h2 {
+    & h3 {
         color: var(--pobo-amix-labs-heading-color) !important;
     }
 
