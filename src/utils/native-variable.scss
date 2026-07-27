@@ -3454,6 +3454,135 @@
   --pobo-amix-faq-transition: 0.35s ease;
 
   --pobo-amix-editor-empty-bg: rgba(255, 212, 137, 0.15);
+
+  --pobo-zkeshop-widget-margin: 0 0 24px 0;
+
+  --pobo-zkeshop-hero-bg: linear-gradient(135deg, #5c8a61 0%, #4a7350 100%);
+  --pobo-zkeshop-hero-border-radius: 24px;
+  --pobo-zkeshop-hero-padding-mobile: 32px 24px;
+  --pobo-zkeshop-hero-padding: 48px 40px;
+  --pobo-zkeshop-hero-gap: 36px;
+  --pobo-zkeshop-hero-circle-bg: rgba(255, 255, 255, 0.06);
+  --pobo-zkeshop-hero-badge-bg: rgba(255, 255, 255, 0.18);
+  --pobo-zkeshop-hero-badge-border: 1px solid rgba(255, 255, 255, 0.35);
+  --pobo-zkeshop-hero-badge-padding: 7px 18px;
+  --pobo-zkeshop-hero-badge-margin: 0 0 18px 0;
+  --pobo-zkeshop-hero-badge-font-size: 13px;
+  --pobo-zkeshop-hero-badge-font-weight: 600;
+  --pobo-zkeshop-hero-badge-color: #ffffff;
+  --pobo-zkeshop-hero-title-font-size-mobile: 25px;
+  --pobo-zkeshop-hero-title-font-size: 32px;
+  --pobo-zkeshop-hero-title-font-weight: 800;
+  --pobo-zkeshop-hero-title-color: #ffffff;
+  --pobo-zkeshop-hero-title-margin: 0 0 16px 0;
+  --pobo-zkeshop-hero-text-color: #ffffff;
+  --pobo-zkeshop-hero-text-font-size: 16px;
+  --pobo-zkeshop-hero-img-border-radius: 16px;
+
+  --pobo-zkeshop-split-bg: #f4f8f4;
+  --pobo-zkeshop-split-border-radius: 20px;
+  --pobo-zkeshop-split-padding-mobile: 26px 20px;
+  --pobo-zkeshop-split-padding: 36px;
+  --pobo-zkeshop-split-gap: 36px;
+  --pobo-zkeshop-split-title-color: #3d5e41;
+  --pobo-zkeshop-split-title-font-size: 21px;
+  --pobo-zkeshop-split-title-font-weight: 700;
+  --pobo-zkeshop-split-title-margin: 0 0 14px 0;
+  --pobo-zkeshop-split-text-color: #444444;
+  --pobo-zkeshop-split-text-font-size: 16px;
+  --pobo-zkeshop-split-img-border-radius: 14px;
+
+  --pobo-zkeshop-benefits-title-margin: 0 auto 12px auto;
+  --pobo-zkeshop-benefits-title-font-size-mobile: 22px;
+  --pobo-zkeshop-benefits-title-font-size: 27px;
+  --pobo-zkeshop-benefits-title-font-weight: 800;
+  --pobo-zkeshop-benefits-title-color: #3d5e41;
+  --pobo-zkeshop-benefits-subline-margin: 0 auto 32px auto;
+  --pobo-zkeshop-benefits-subline-font-size: 16px;
+  --pobo-zkeshop-benefits-subline-color: #6b6b6b;
+  --pobo-zkeshop-benefits-gap: 18px;
+  --pobo-zkeshop-benefits-item-bg: #ffffff;
+  --pobo-zkeshop-benefits-item-border: 1px solid #e3ece4;
+  --pobo-zkeshop-benefits-item-border-radius: 16px;
+  --pobo-zkeshop-benefits-item-padding: 26px 24px;
+  --pobo-zkeshop-benefits-ico-size: 52px;
+  --pobo-zkeshop-benefits-ico-bg: #eaf3eb;
+  --pobo-zkeshop-benefits-ico-border-radius: 12px;
+  --pobo-zkeshop-benefits-ico-margin: 0 0 16px 0;
+  --pobo-zkeshop-benefits-ico-font-size: 26px;
+  --pobo-zkeshop-benefits-card-title-font-size: 17px;
+  --pobo-zkeshop-benefits-card-title-font-weight: 700;
+  --pobo-zkeshop-benefits-card-title-color: #3d5e41;
+  --pobo-zkeshop-benefits-card-title-margin: 0 0 8px 0;
+  --pobo-zkeshop-benefits-card-text-font-size: 15px;
+  --pobo-zkeshop-benefits-card-text-color: #555555;
+
+  --pobo-zkeshop-info-bg: #f4f8f4;
+  --pobo-zkeshop-info-border-radius: 20px;
+  --pobo-zkeshop-info-padding-mobile: 26px 20px;
+  --pobo-zkeshop-info-padding: 40px;
+  --pobo-zkeshop-info-title-font-size: 23px;
+  --pobo-zkeshop-info-title-font-weight: 800;
+  --pobo-zkeshop-info-title-color: #3d5e41;
+  --pobo-zkeshop-info-title-margin: 0 0 12px 0;
+  --pobo-zkeshop-info-row-font-size: 15px;
+  --pobo-zkeshop-info-row-color: #444444;
+  --pobo-zkeshop-info-row-padding: 14px 0;
+  --pobo-zkeshop-info-row-border: 1px solid #dde7de;
+  --pobo-zkeshop-info-label-color: #3d5e41;
+  --pobo-zkeshop-info-label-font-weight: 700;
+
+  --pobo-zkeshop-notice-gap: 14px;
+  --pobo-zkeshop-notice-bg: #fff7e6;
+  --pobo-zkeshop-notice-border-left: 4px solid #e0a800;
+  --pobo-zkeshop-notice-border-radius: 10px;
+  --pobo-zkeshop-notice-padding: 18px 20px;
+  --pobo-zkeshop-notice-ico-font-size: 20px;
+  --pobo-zkeshop-notice-font-size: 15px;
+  --pobo-zkeshop-notice-color: #6b5a14;
+
+  --pobo-zkeshop-trust-gap: 16px;
+  --pobo-zkeshop-trust-item-bg: #ffffff;
+  --pobo-zkeshop-trust-item-border: 1px solid #e3ece4;
+  --pobo-zkeshop-trust-item-border-radius: 16px;
+  --pobo-zkeshop-trust-item-padding: 24px 18px;
+  --pobo-zkeshop-trust-ico-font-size: 34px;
+  --pobo-zkeshop-trust-ico-margin: 0 0 10px 0;
+  --pobo-zkeshop-trust-item-title-font-size: 16px;
+  --pobo-zkeshop-trust-item-title-font-weight: 700;
+  --pobo-zkeshop-trust-item-title-color: #3d5e41;
+  --pobo-zkeshop-trust-item-text-font-size: 13px;
+  --pobo-zkeshop-trust-item-text-color: #777777;
+
+  --pobo-zkeshop-faq-title-margin: 0 auto 28px auto;
+  --pobo-zkeshop-faq-title-font-size-mobile: 22px;
+  --pobo-zkeshop-faq-title-font-size: 27px;
+  --pobo-zkeshop-faq-title-font-weight: 800;
+  --pobo-zkeshop-faq-title-color: #3d5e41;
+  --pobo-zkeshop-faq-gap: 14px;
+  --pobo-zkeshop-faq-item-bg: #ffffff;
+  --pobo-zkeshop-faq-item-border: 1px solid #e3ece4;
+  --pobo-zkeshop-faq-item-border-radius: 14px;
+  --pobo-zkeshop-faq-item-padding: 22px 26px;
+  --pobo-zkeshop-faq-question-font-size: 17px;
+  --pobo-zkeshop-faq-question-font-weight: 700;
+  --pobo-zkeshop-faq-question-color: #3d5e41;
+  --pobo-zkeshop-faq-question-margin: 0 0 10px 0;
+  --pobo-zkeshop-faq-answer-color: #555555;
+  --pobo-zkeshop-faq-answer-font-size: 15px;
+
+  --pobo-zkeshop-cta-bg: linear-gradient(135deg, #5c8a61 0%, #4a7350 100%);
+  --pobo-zkeshop-cta-border-radius: 20px;
+  --pobo-zkeshop-cta-padding-mobile: 26px 20px;
+  --pobo-zkeshop-cta-padding: 40px;
+  --pobo-zkeshop-cta-title-font-size-mobile: 20px;
+  --pobo-zkeshop-cta-title-font-size: 24px;
+  --pobo-zkeshop-cta-title-font-weight: 800;
+  --pobo-zkeshop-cta-title-color: #ffffff;
+  --pobo-zkeshop-cta-title-margin: 0 0 12px 0;
+  --pobo-zkeshop-cta-text-font-size: 16px;
+  --pobo-zkeshop-cta-text-color: #ffffff;
+  --pobo-zkeshop-cta-text-margin: 0 0 6px 0;
 }
 
 
