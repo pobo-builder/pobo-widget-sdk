@@ -79,3 +79,11 @@ $breakpoints: (
     }
   }
 }
+
+#pobo-all-content {
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+}

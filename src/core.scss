@@ -100,4 +100,10 @@
   padding: var(--pobo-all-content-padding);
   margin: var(--pobo-all-content-margin);
   background: var(--pobo-all-content-background);
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
 }
