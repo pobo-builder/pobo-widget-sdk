@@ -1,0 +1,118 @@
+.pb-custom-vitalcountry-delivery-payment {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--pobo-vitalcountry-delivery-column-gap);
+    row-gap: var(--pobo-vitalcountry-delivery-row-gap);
+    margin: var(--pobo-vitalcountry-delivery-margin);
+    font-family: var(--pobo-vitalcountry-delivery-font-family);
+
+    &__column {
+        position: relative;
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+            width: calc((100% - var(--pobo-vitalcountry-delivery-column-gap)) / 2);
+        }
+    }
+
+    &__title {
+        display: block;
+        font-family: var(--pobo-vitalcountry-delivery-font-family);
+        font-size: var(--pobo-vitalcountry-delivery-title-font-size-mobile);
+        line-height: var(--pobo-vitalcountry-delivery-title-line-height);
+        font-weight: var(--pobo-vitalcountry-delivery-title-font-weight);
+        color: var(--pobo-vitalcountry-delivery-title-color);
+        margin: var(--pobo-vitalcountry-delivery-title-margin);
+        padding: var(--pobo-vitalcountry-delivery-title-padding);
+        letter-spacing: var(--pobo-vitalcountry-delivery-title-letter-spacing);
+
+        @include media-breakpoint-up(md) {
+            font-size: var(--pobo-vitalcountry-delivery-title-font-size);
+        }
+    }
+
+    &__items {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: var(--pobo-vitalcountry-delivery-item-gap);
+        padding: var(--pobo-vitalcountry-delivery-item-padding);
+        border-top: var(--pobo-vitalcountry-delivery-border);
+
+        &:last-child {
+            border-bottom: var(--pobo-vitalcountry-delivery-border);
+        }
+    }
+
+    &__logo {
+        position: relative;
+        flex-shrink: 0;
+        width: var(--pobo-vitalcountry-delivery-logo-width);
+        height: var(--pobo-vitalcountry-delivery-logo-height);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo-img {
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+
+    &__content {
+        position: relative;
+        flex: 1 1 auto;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        display: block;
+        font-family: var(--pobo-vitalcountry-delivery-font-family);
+        font-size: var(--pobo-vitalcountry-delivery-name-font-size);
+        line-height: var(--pobo-vitalcountry-delivery-name-line-height);
+        font-weight: var(--pobo-vitalcountry-delivery-name-font-weight);
+        color: var(--pobo-vitalcountry-delivery-name-color);
+        margin: var(--pobo-vitalcountry-delivery-name-margin);
+        letter-spacing: var(--pobo-vitalcountry-delivery-name-letter-spacing);
+    }
+
+    &__note {
+        display: block;
+        font-family: var(--pobo-vitalcountry-delivery-font-family);
+        font-size: var(--pobo-vitalcountry-delivery-note-font-size);
+        line-height: var(--pobo-vitalcountry-delivery-note-line-height);
+        font-weight: var(--pobo-vitalcountry-delivery-note-font-weight);
+        color: var(--pobo-vitalcountry-delivery-note-color);
+        margin: var(--pobo-vitalcountry-delivery-note-margin);
+        letter-spacing: var(--pobo-vitalcountry-delivery-note-letter-spacing);
+    }
+
+    &__price {
+        display: block;
+        flex-shrink: 0;
+        text-align: right;
+        white-space: nowrap;
+        font-family: var(--pobo-vitalcountry-delivery-font-family);
+        font-size: var(--pobo-vitalcountry-delivery-price-font-size);
+        line-height: var(--pobo-vitalcountry-delivery-price-line-height);
+        font-weight: var(--pobo-vitalcountry-delivery-price-font-weight);
+        color: var(--pobo-vitalcountry-delivery-price-color);
+        margin: var(--pobo-vitalcountry-delivery-price-margin);
+        padding: var(--pobo-vitalcountry-delivery-price-padding);
+    }
+}
