@@ -1296,6 +1296,42 @@
   --pobo-bento-left-box-text-line-height: 1.5;
   --pobo-bento-left-box-text-opacity: .85;
 
+  // RC Photo Card Right
+  --pobo-photo-card-right-margin-top: 32px;
+  --pobo-photo-card-right-margin-bottom: 32px;
+  --pobo-photo-card-right-margin-top-mobile: 20px;
+  --pobo-photo-card-right-margin-bottom-mobile: 20px;
+  --pobo-photo-card-right-aspect-ratio: 16 / 10;
+  --pobo-photo-card-right-aspect-ratio-mobile: 4 / 3;
+  --pobo-photo-card-right-img-object-fit: cover;
+  --pobo-photo-card-right-img-object-position: center center;
+  --pobo-photo-card-right-img-border-radius: 16px;
+  --pobo-photo-card-right-card-width: 48%;
+  --pobo-photo-card-right-card-max-width: 460px;
+  --pobo-photo-card-right-card-margin: -80px 40px 0 auto;
+  --pobo-photo-card-right-card-width-mobile: 100%;
+  --pobo-photo-card-right-card-margin-mobile: -40px 16px 0;
+  --pobo-photo-card-right-card-gap: 8px;
+  --pobo-photo-card-right-card-padding: 32px;
+  --pobo-photo-card-right-card-padding-mobile: 22px 24px;
+  --pobo-photo-card-right-card-bg: #fff;
+  --pobo-photo-card-right-card-border: none;
+  --pobo-photo-card-right-card-border-radius: 16px;
+  --pobo-photo-card-right-card-box-shadow: 0 20px 40px rgb(0 0 0 / 8%);
+  --pobo-photo-card-right-label-color: #1f5636;
+  --pobo-photo-card-right-label-font-size: 12px;
+  --pobo-photo-card-right-label-font-weight: 600;
+  --pobo-photo-card-right-label-letter-spacing: .08em;
+  --pobo-photo-card-right-label-text-transform: uppercase;
+  --pobo-photo-card-right-heading-color: #1a1a1a;
+  --pobo-photo-card-right-heading-font-size: 24px;
+  --pobo-photo-card-right-heading-font-size-mobile: 19px;
+  --pobo-photo-card-right-heading-line-height: 1.3;
+  --pobo-photo-card-right-heading-font-weight: 700;
+  --pobo-photo-card-right-text-color: #555;
+  --pobo-photo-card-right-text-font-size: 15px;
+  --pobo-photo-card-right-text-line-height: 1.5;
+
   --pobo-header-text-font-size: 30px;
   --pobo-header-text-padding: 0;
   --pobo-header-text-margin: 0;
