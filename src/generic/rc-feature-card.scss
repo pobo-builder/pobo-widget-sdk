@@ -28,12 +28,16 @@
   &__heading {
     margin: var(--pobo-feature-card-heading-margin);
     padding: var(--pobo-feature-card-heading-padding);
+    max-width: var(--pobo-feature-card-heading-max-width);
+    margin-left: auto;
+    margin-right: auto;
     font-size: var(--pobo-feature-card-heading-font-size);
     line-height: var(--pobo-feature-card-heading-line-height);
     font-weight: var(--pobo-feature-card-heading-font-weight);
     color: var(--pobo-feature-card-heading-color);
 
     @include media-breakpoint-down(sm) {
+      max-width: var(--pobo-feature-card-heading-max-width-mobile);
       font-size: var(--pobo-feature-card-heading-font-size-mobile);
       line-height: var(--pobo-feature-card-heading-line-height-mobile);
     }
@@ -71,11 +75,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: var(--pobo-feature-card-icon-width);
+    flex: 1 1 var(--pobo-feature-card-icon-width);
+    max-width: var(--pobo-feature-card-icon-max-width);
     text-align: center;
 
     @include media-breakpoint-down(sm) {
+      flex: 0 0 auto;
       width: var(--pobo-feature-card-icon-width-mobile);
+      max-width: var(--pobo-feature-card-icon-width-mobile);
     }
   }
 

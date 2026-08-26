@@ -1775,7 +1775,9 @@
   --pobo-feature-card-heading-font-weight: 700;
   --pobo-feature-card-heading-color: #181815;
   --pobo-feature-card-heading-margin: 0 0 10px;
-  --pobo-feature-card-heading-padding: 8px 0 0;
+  --pobo-feature-card-heading-padding: 8px 40px 0;
+  --pobo-feature-card-heading-max-width: 640px;
+  --pobo-feature-card-heading-max-width-mobile: 100%;
 
   --pobo-feature-card-subtitle-font-size: 18px;
   --pobo-feature-card-subtitle-line-height: 26px;
@@ -1783,7 +1785,7 @@
   --pobo-feature-card-subtitle-color: #3a453c;
   --pobo-feature-card-subtitle-margin: 0 0 32px;
   --pobo-feature-card-subtitle-padding: 4px 0 8px;
-  --pobo-feature-card-subtitle-max-width: 46ch;
+  --pobo-feature-card-subtitle-max-width: 520px;
 
   --pobo-feature-card-icons-gap: 28px;
   --pobo-feature-card-icons-gap-mobile: 36px;
@@ -1791,6 +1793,7 @@
   --pobo-feature-card-icons-padding-bottom-mobile: 28px;
 
   --pobo-feature-card-icon-width: 150px;
+  --pobo-feature-card-icon-max-width: 220px;
   --pobo-feature-card-icon-width-mobile: 220px;
   --pobo-feature-card-icon-img-size: 56px;
   --pobo-feature-card-icon-img-size-mobile: 68px;
