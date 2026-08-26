@@ -8,6 +8,8 @@
   box-shadow: var(--pobo-feature-card-box-shadow);
 
   @include media-breakpoint-down(sm) {
+    width: auto;
+    margin: var(--pobo-feature-card-margin-mobile);
     border-radius: var(--pobo-feature-card-border-radius-mobile);
   }
 
@@ -81,6 +83,7 @@
     display: block;
     width: var(--pobo-feature-card-icon-img-size);
     height: var(--pobo-feature-card-icon-img-size);
+    color: var(--pobo-feature-card-icon-color);
     object-fit: contain;
 
     @include media-breakpoint-down(sm) {
@@ -109,6 +112,10 @@
     position: relative;
     width: 100%;
     line-height: 0;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: var(--pobo-feature-card-image-margin-top-mobile);
+    }
   }
 
   &__img {
