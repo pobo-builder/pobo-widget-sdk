@@ -1,11 +1,14 @@
 .rc-photo-card-right {
+  box-sizing: border-box;
   width: 100%;
   margin-top: var(--pobo-photo-card-right-margin-top);
   margin-bottom: var(--pobo-photo-card-right-margin-bottom);
+  padding: var(--pobo-photo-card-right-padding);
 
   @include media-breakpoint-down(sm) {
     margin-top: var(--pobo-photo-card-right-margin-top-mobile);
     margin-bottom: var(--pobo-photo-card-right-margin-bottom-mobile);
+    padding: var(--pobo-photo-card-right-padding-mobile);
   }
 
   &__stage {
@@ -31,6 +34,7 @@
   }
 
   &__card {
+    box-sizing: border-box;
     position: relative;
     z-index: 1;
     width: var(--pobo-photo-card-right-card-width);

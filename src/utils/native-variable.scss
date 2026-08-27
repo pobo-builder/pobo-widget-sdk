@@ -1301,6 +1301,8 @@
   --pobo-photo-card-right-margin-bottom: 32px;
   --pobo-photo-card-right-margin-top-mobile: 20px;
   --pobo-photo-card-right-margin-bottom-mobile: 20px;
+  --pobo-photo-card-right-padding: 0;
+  --pobo-photo-card-right-padding-mobile: 0 16px;
   --pobo-photo-card-right-aspect-ratio: 16 / 10;
   --pobo-photo-card-right-aspect-ratio-mobile: 4 / 3;
   --pobo-photo-card-right-img-object-fit: cover;
@@ -1310,10 +1312,10 @@
   --pobo-photo-card-right-card-max-width: 460px;
   --pobo-photo-card-right-card-margin: -80px 40px 0 auto;
   --pobo-photo-card-right-card-width-mobile: 100%;
-  --pobo-photo-card-right-card-margin-mobile: -40px 16px 0;
+  --pobo-photo-card-right-card-margin-mobile: -32px 0 0;
   --pobo-photo-card-right-card-gap: 8px;
   --pobo-photo-card-right-card-padding: 32px;
-  --pobo-photo-card-right-card-padding-mobile: 22px 24px;
+  --pobo-photo-card-right-card-padding-mobile: 20px;
   --pobo-photo-card-right-card-bg: #fff;
   --pobo-photo-card-right-card-border: none;
   --pobo-photo-card-right-card-border-radius: 16px;
