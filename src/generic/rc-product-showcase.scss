@@ -13,6 +13,9 @@
   --pobo-product-item-meta-gap: 14px;
   --pobo-product-item-meta-margin: 0 0 26px 0;
   --pobo-product-item-price-font-size: 28px;
+  --pobo-product-item-price-before-font-size: 18px;
+  --pobo-product-item-price-before-font-weight: 400;
+  --pobo-product-item-price-before-color: rgba(17, 24, 39, 0.45);
   --pobo-product-item-availability-font-size: 14px;
   --pobo-product-item-availability-padding: 8px 14px;
   --pobo-product-item-cart-padding: 16px 34px;
@@ -32,6 +35,7 @@
     --pobo-product-item-img-height: 280px;
     --pobo-product-item-name-font-size: 23px;
     --pobo-product-item-price-font-size: 24px;
+    --pobo-product-item-price-before-font-size: 16px;
     --pobo-product-item-body-padding: 4px;
   }
 
