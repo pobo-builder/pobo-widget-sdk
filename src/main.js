@@ -40,6 +40,7 @@ const elementsToAnimate = [
         .rc-advantages-two__ico-img,
         .rc-advantages-three__ico-img,
         .rc-advantages-four__ico-img,
+        .rc-advantages-five__ico-img,
         .rc-team-three__single,
         .rc-counter__box`,
         '^',

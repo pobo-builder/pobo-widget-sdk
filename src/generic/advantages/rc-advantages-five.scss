@@ -1,0 +1,89 @@
+.rc-advantages-five {
+  background: var(--pobo-advantages-bg);
+  box-shadow: var(--pobo-advantages-box-shadow);
+  border: var(--pobo-advantages-border-radius);
+  padding: var(--pobo-advantages-padding);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--pobo-advantages-five-gap);
+
+  &__item {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    padding: var(--pobo-advantages-item-padding);
+    border: var(--pobo-advantages-item-border);
+    background: var(--pobo-advantages-item-bg);
+    box-shadow: var(--pobo-advantages-item-box-shadow);
+    border-radius: var(--pobo-advantages-item-border-radius);
+    margin: var(--pobo-advantages-item-margin);
+
+    @include media-breakpoint-up(sm) {
+      width: calc(100% / 2 - var(--pobo-advantages-five-gap) / 2);
+    }
+
+    @include media-breakpoint-up(md) {
+      width: calc(100% / 3 - var(--pobo-advantages-five-gap) * 2 / 3);
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: calc(100% / 5 - var(--pobo-advantages-five-gap) * 4 / 5);
+    }
+  }
+
+  &__ico-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: var(--pobo-advantages-ico-container-border-radius);
+    margin: var(--pobo-advantages-five-ico-container-margin);
+    box-shadow: var(--pobo-advantages-ico-container-box-shadow);
+    background: var(--pobo-advantages-ico-container-bg);
+    padding: var(--pobo-advantages-ico-container-padding);
+    width: var(--pobo-advantages-ico-container-width);
+    height: var(--pobo-advantages-five-ico-container-height);
+  }
+
+  &__ico-img {
+    position: relative;
+    margin: 0 auto;
+    width: auto;
+    max-height: var(--pobo-advantages-five-ico-img-max-height);
+    max-width: var(--pobo-advantages-ico-container-img-max-width);
+    box-shadow: var(--pobo-advantages-ico-container-img-box-shadow);
+    background: var(--pobo-advantages-ico-container-img-bg);
+    border-radius: var(--pobo-advantages-ico-container-img-border-radius);
+    border: var(--pobo-advantages-ico-container-img-border-color);
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__info-header {
+    display: block;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    padding: var(--pobo-advantages-title-padding);
+    margin: var(--pobo-advantages-title-margin);
+    color: var(--pobo-advantages-title-font-color);
+    font-size: var(--pobo-advantages-five-title-font-size);
+    line-height: var(--pobo-advantages-five-title-line-height);
+    font-weight: var(--pobo-advantages-five-title-font-weight);
+  }
+
+  &__info-text {
+    display: block;
+    text-align: center;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    padding: var(--pobo-advantages-info-padding);
+    margin: var(--pobo-advantages-info-margin);
+    color: var(--pobo-advantages-info-font-color);
+    font-size: var(--pobo-advantages-five-info-font-size);
+    line-height: var(--pobo-advantages-five-info-line-height);
+    font-weight: var(--pobo-advantages-five-info-font-weight);
+  }
+}
