@@ -1583,6 +1583,9 @@
   --pobo-widget-advantages-four-margin: 0;
   --pobo-widget-advantages-four-padding: 20px 0;
 
+  --pobo-widget-advantages-five-margin: 0;
+  --pobo-widget-advantages-five-padding: 20px 0;
+
   --pobo-widget-gallery-four-padding: 0;
   --pobo-widget-gallery-four-margin: 20px 0;
 
@@ -3643,8 +3646,17 @@
   --pobo-sijemesrdcem-styling-video-border-radius: 0;
   --pobo-sijemesrdcem-styling-products-padding: 0 0 30px 0;
   --pobo-sijemesrdcem-styling-products-gap: 20px;
+
+  --pobo-advantages-five-gap: 20px;
+  --pobo-advantages-five-ico-container-height: 150px;
+  --pobo-advantages-five-ico-container-margin: 0 0 20px 0;
+  --pobo-advantages-five-ico-img-max-height: 150px;
+  --pobo-advantages-five-title-font-size: 16px;
+  --pobo-advantages-five-title-line-height: 1.3;
+  --pobo-advantages-five-title-font-weight: 600;
+  --pobo-advantages-five-info-font-size: 13px;
+  --pobo-advantages-five-info-line-height: 1.4;
+  --pobo-advantages-five-info-font-weight: 400;
 }
-
-
 
 @import "mobile-variable";
