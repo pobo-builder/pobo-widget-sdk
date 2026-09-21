@@ -29,8 +29,6 @@
     margin: var(--pobo-feature-card-heading-margin);
     padding: var(--pobo-feature-card-heading-padding);
     max-width: var(--pobo-feature-card-heading-max-width);
-    margin-left: auto;
-    margin-right: auto;
     font-size: var(--pobo-feature-card-heading-font-size);
     line-height: var(--pobo-feature-card-heading-line-height);
     font-weight: var(--pobo-feature-card-heading-font-weight);
@@ -48,8 +46,6 @@
     margin: var(--pobo-feature-card-subtitle-margin);
     padding: var(--pobo-feature-card-subtitle-padding);
     max-width: var(--pobo-feature-card-subtitle-max-width);
-    margin-left: auto;
-    margin-right: auto;
     font-size: var(--pobo-feature-card-subtitle-font-size);
     line-height: var(--pobo-feature-card-subtitle-line-height);
     font-weight: var(--pobo-feature-card-subtitle-font-weight);
@@ -61,13 +57,13 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--pobo-feature-card-icons-gap);
-    padding-bottom: var(--pobo-feature-card-icons-padding-bottom);
+    padding: var(--pobo-feature-card-icons-padding);
 
     @include media-breakpoint-down(sm) {
       flex-direction: column;
       align-items: center;
       gap: var(--pobo-feature-card-icons-gap-mobile);
-      padding-bottom: var(--pobo-feature-card-icons-padding-bottom-mobile);
+      padding: var(--pobo-feature-card-icons-padding-mobile);
     }
   }
 
@@ -121,7 +117,7 @@
     line-height: 0;
 
     @include media-breakpoint-down(sm) {
-      margin-top: var(--pobo-feature-card-image-margin-top-mobile);
+      margin: var(--pobo-feature-card-image-margin-mobile);
     }
   }
 

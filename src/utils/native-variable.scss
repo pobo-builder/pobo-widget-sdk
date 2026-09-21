@@ -1260,14 +1260,14 @@
   --pobo-bento-left-eyebrow-font-size: 12px;
   --pobo-bento-left-eyebrow-letter-spacing: .08em;
   --pobo-bento-left-eyebrow-text-transform: uppercase;
-  --pobo-bento-left-eyebrow-margin-bottom: 8px;
+  --pobo-bento-left-eyebrow-margin: 0 0 8px;
   --pobo-bento-left-eyebrow-text-shadow: 0 1px 3px rgb(0 0 0 / 35%);
   --pobo-bento-left-heading-color: #fff;
   --pobo-bento-left-heading-font-size: 34px;
   --pobo-bento-left-heading-font-size-mobile: 26px;
   --pobo-bento-left-heading-line-height: 1.25;
   --pobo-bento-left-heading-font-weight: 700;
-  --pobo-bento-left-heading-margin-bottom: 8px;
+  --pobo-bento-left-heading-margin: 0 0 8px;
   --pobo-bento-left-heading-text-shadow: 0 1px 3px rgb(0 0 0 / 35%);
   --pobo-bento-left-text-color: #fff;
   --pobo-bento-left-text-font-size: 15px;
@@ -1286,21 +1286,19 @@
   --pobo-bento-left-box-label-letter-spacing: .08em;
   --pobo-bento-left-box-label-text-transform: uppercase;
   --pobo-bento-left-box-label-opacity: .7;
-  --pobo-bento-left-box-label-margin-bottom: 8px;
+  --pobo-bento-left-box-label-margin: 0 0 8px;
   --pobo-bento-left-box-stat-font-size: 46px;
   --pobo-bento-left-box-stat-font-size-mobile: 38px;
   --pobo-bento-left-box-stat-line-height: 1;
   --pobo-bento-left-box-stat-font-weight: 800;
-  --pobo-bento-left-box-stat-margin-bottom: 6px;
+  --pobo-bento-left-box-stat-margin: 0 0 6px;
   --pobo-bento-left-box-text-font-size: 15px;
   --pobo-bento-left-box-text-line-height: 1.5;
   --pobo-bento-left-box-text-opacity: .85;
 
   // RC Photo Card Right
-  --pobo-photo-card-right-margin-top: 32px;
-  --pobo-photo-card-right-margin-bottom: 32px;
-  --pobo-photo-card-right-margin-top-mobile: 20px;
-  --pobo-photo-card-right-margin-bottom-mobile: 20px;
+  --pobo-photo-card-right-margin: 32px 0;
+  --pobo-photo-card-right-margin-mobile: 20px 0;
   --pobo-photo-card-right-padding: 0;
   --pobo-photo-card-right-padding-mobile: 0 16px;
   --pobo-photo-card-right-aspect-ratio: 16 / 10;
@@ -1764,7 +1762,7 @@
   --pobo-feature-card-border-radius-mobile: 20px;
   --pobo-feature-card-box-shadow: none;
   --pobo-feature-card-margin-mobile: 0 16px;
-  --pobo-feature-card-image-margin-top-mobile: 28px;
+  --pobo-feature-card-image-margin-mobile: 28px 0 0;
   --pobo-feature-card-content-padding: 48px 40px 0;
   --pobo-feature-card-content-padding-mobile: 32px 12px 0;
 
@@ -1774,7 +1772,7 @@
   --pobo-feature-card-heading-line-height-mobile: 34px;
   --pobo-feature-card-heading-font-weight: 700;
   --pobo-feature-card-heading-color: #181815;
-  --pobo-feature-card-heading-margin: 0 0 10px;
+  --pobo-feature-card-heading-margin: 0 auto 10px;
   --pobo-feature-card-heading-padding: 8px 40px 0;
   --pobo-feature-card-heading-max-width: 640px;
   --pobo-feature-card-heading-max-width-mobile: 100%;
@@ -1783,14 +1781,14 @@
   --pobo-feature-card-subtitle-line-height: 26px;
   --pobo-feature-card-subtitle-font-weight: 400;
   --pobo-feature-card-subtitle-color: #3a453c;
-  --pobo-feature-card-subtitle-margin: 0 0 32px;
+  --pobo-feature-card-subtitle-margin: 0 auto 32px;
   --pobo-feature-card-subtitle-padding: 4px 0 8px;
   --pobo-feature-card-subtitle-max-width: 520px;
 
   --pobo-feature-card-icons-gap: 28px;
   --pobo-feature-card-icons-gap-mobile: 36px;
-  --pobo-feature-card-icons-padding-bottom: 40px;
-  --pobo-feature-card-icons-padding-bottom-mobile: 28px;
+  --pobo-feature-card-icons-padding: 0 0 40px;
+  --pobo-feature-card-icons-padding-mobile: 0 0 28px;
 
   --pobo-feature-card-icon-width: 150px;
   --pobo-feature-card-icon-max-width: 220px;

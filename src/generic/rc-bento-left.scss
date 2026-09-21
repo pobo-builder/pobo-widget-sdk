@@ -62,7 +62,7 @@
 
   &__eyebrow {
     display: block;
-    margin: 0 0 var(--pobo-bento-left-eyebrow-margin-bottom);
+    margin: var(--pobo-bento-left-eyebrow-margin);
     color: var(--pobo-bento-left-eyebrow-color);
     font-size: var(--pobo-bento-left-eyebrow-font-size);
     letter-spacing: var(--pobo-bento-left-eyebrow-letter-spacing);
@@ -71,7 +71,7 @@
   }
 
   &__heading {
-    margin: 0 0 var(--pobo-bento-left-heading-margin-bottom);
+    margin: var(--pobo-bento-left-heading-margin);
     color: var(--pobo-bento-left-heading-color);
     font-size: var(--pobo-bento-left-heading-font-size);
     line-height: var(--pobo-bento-left-heading-line-height);
@@ -133,7 +133,7 @@
 
   &__box-label {
     display: block;
-    margin: 0 0 var(--pobo-bento-left-box-label-margin-bottom);
+    margin: var(--pobo-bento-left-box-label-margin);
     color: inherit;
     font-size: var(--pobo-bento-left-box-label-font-size);
     letter-spacing: var(--pobo-bento-left-box-label-letter-spacing);
@@ -142,7 +142,7 @@
   }
 
   &__box-stat {
-    margin: 0 0 var(--pobo-bento-left-box-stat-margin-bottom);
+    margin: var(--pobo-bento-left-box-stat-margin);
     color: inherit;
     font-size: var(--pobo-bento-left-box-stat-font-size);
     line-height: var(--pobo-bento-left-box-stat-line-height);
