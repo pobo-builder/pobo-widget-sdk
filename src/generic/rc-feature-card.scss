@@ -82,6 +82,11 @@
     }
   }
 
+  &__icon-image {
+    position: relative;
+    line-height: 0;
+  }
+
   &__icon-img {
     display: block;
     width: var(--pobo-feature-card-icon-img-size);

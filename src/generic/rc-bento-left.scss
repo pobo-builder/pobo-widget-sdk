@@ -35,10 +35,16 @@
     }
   }
 
+  &__photo-image {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   &__photo-img {
     position: absolute;
     inset: 0;
-    z-index: 0;
     width: 100%;
     height: 100%;
     object-fit: var(--pobo-bento-left-photo-img-object-fit);
@@ -47,12 +53,12 @@
   }
 
   &__photo-content {
-    position: relative;
+    position: absolute;
+    inset: 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 100%;
     padding: var(--pobo-bento-left-content-padding);
 
     @include media-breakpoint-down(sm) {
