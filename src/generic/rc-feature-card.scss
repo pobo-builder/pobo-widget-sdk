@@ -18,10 +18,10 @@
     z-index: 2;
     width: 100%;
     text-align: center;
-    padding: var(--pobo-feature-card-padding-top) var(--pobo-feature-card-padding-x) 0;
+    padding: var(--pobo-feature-card-content-padding);
 
     @include media-breakpoint-down(sm) {
-      padding: var(--pobo-feature-card-padding-top-mobile) var(--pobo-feature-card-padding-x-mobile) 0;
+      padding: var(--pobo-feature-card-content-padding-mobile);
     }
   }
 
