@@ -1240,6 +1240,101 @@
   --pobo-gallery-featured-right-img-object-fit: cover;
   --pobo-gallery-featured-right-img-object-position: center center;
 
+  // RC Bento Left
+  --pobo-bento-left-gap: 16px;
+  --pobo-bento-left-padding: 0;
+  --pobo-bento-left-padding-mobile: 16px;
+  --pobo-bento-left-bg: transparent;
+  --pobo-bento-left-border: none;
+  --pobo-bento-left-border-radius: 0;
+  --pobo-bento-left-box-shadow: none;
+  --pobo-bento-left-photo-aspect-ratio: 7 / 4;
+  --pobo-bento-left-photo-aspect-ratio-mobile: 5 / 4;
+  --pobo-bento-left-photo-border-radius: 20px;
+  --pobo-bento-left-photo-img-object-fit: cover;
+  --pobo-bento-left-photo-img-object-position: center center;
+  --pobo-bento-left-photo-overlay: linear-gradient(to top, rgb(0 0 0 / 70%) 0%, rgb(0 0 0 / 10%) 55%, rgb(0 0 0 / 0%) 100%);
+  --pobo-bento-left-content-padding: 28px;
+  --pobo-bento-left-content-padding-mobile: 24px;
+  --pobo-bento-left-eyebrow-color: #fff;
+  --pobo-bento-left-eyebrow-font-size: 12px;
+  --pobo-bento-left-eyebrow-font-weight: 400;
+  --pobo-bento-left-eyebrow-line-height: 1.5;
+  --pobo-bento-left-eyebrow-letter-spacing: .08em;
+  --pobo-bento-left-eyebrow-text-transform: uppercase;
+  --pobo-bento-left-eyebrow-margin: 0 0 8px;
+  --pobo-bento-left-eyebrow-text-shadow: 0 1px 3px rgb(0 0 0 / 35%);
+  --pobo-bento-left-heading-color: #fff;
+  --pobo-bento-left-heading-font-size: 34px;
+  --pobo-bento-left-heading-font-size-mobile: 26px;
+  --pobo-bento-left-heading-line-height: 1.25;
+  --pobo-bento-left-heading-font-weight: 700;
+  --pobo-bento-left-heading-margin: 0 0 8px;
+  --pobo-bento-left-heading-text-shadow: 0 1px 3px rgb(0 0 0 / 35%);
+  --pobo-bento-left-text-color: #fff;
+  --pobo-bento-left-text-font-size: 15px;
+  --pobo-bento-left-text-line-height: 1.5;
+  --pobo-bento-left-text-text-shadow: 0 1px 3px rgb(0 0 0 / 35%);
+  --pobo-bento-left-box-border-radius: 20px;
+  --pobo-bento-left-box-top-padding: 28px;
+  --pobo-bento-left-box-top-padding-mobile: 24px;
+  --pobo-bento-left-box-top-bg: #e6efe9;
+  --pobo-bento-left-box-top-color: #1a1a1a;
+  --pobo-bento-left-box-bottom-padding: 28px;
+  --pobo-bento-left-box-bottom-padding-mobile: 24px;
+  --pobo-bento-left-box-bottom-bg: #1f5636;
+  --pobo-bento-left-box-bottom-color: #fff;
+  --pobo-bento-left-box-label-font-size: 12px;
+  --pobo-bento-left-box-label-letter-spacing: .08em;
+  --pobo-bento-left-box-label-text-transform: uppercase;
+  --pobo-bento-left-box-label-opacity: .7;
+  --pobo-bento-left-box-label-margin: 0 0 8px;
+  --pobo-bento-left-box-stat-font-size: 46px;
+  --pobo-bento-left-box-stat-font-size-mobile: 38px;
+  --pobo-bento-left-box-stat-line-height: 1;
+  --pobo-bento-left-box-stat-font-weight: 800;
+  --pobo-bento-left-box-stat-margin: 0 0 6px;
+  --pobo-bento-left-box-text-font-size: 15px;
+  --pobo-bento-left-box-text-line-height: 1.5;
+  --pobo-bento-left-box-text-opacity: .85;
+
+  // RC Photo Card Right
+  --pobo-photo-card-right-margin: 32px 0;
+  --pobo-photo-card-right-margin-mobile: 20px 0;
+  --pobo-photo-card-right-padding: 0;
+  --pobo-photo-card-right-padding-mobile: 0 16px;
+  --pobo-photo-card-right-aspect-ratio: 16 / 10;
+  --pobo-photo-card-right-aspect-ratio-mobile: 4 / 3;
+  --pobo-photo-card-right-img-object-fit: cover;
+  --pobo-photo-card-right-img-object-position: center center;
+  --pobo-photo-card-right-img-border-radius: 16px;
+  --pobo-photo-card-right-card-width: 48%;
+  --pobo-photo-card-right-card-max-width: 460px;
+  --pobo-photo-card-right-card-margin: -80px 40px 0 auto;
+  --pobo-photo-card-right-card-width-mobile: 100%;
+  --pobo-photo-card-right-card-margin-mobile: -32px 0 0;
+  --pobo-photo-card-right-card-gap: 8px;
+  --pobo-photo-card-right-card-padding: 32px;
+  --pobo-photo-card-right-card-padding-mobile: 20px;
+  --pobo-photo-card-right-card-bg: #fff;
+  --pobo-photo-card-right-card-border: none;
+  --pobo-photo-card-right-card-border-radius: 16px;
+  --pobo-photo-card-right-card-box-shadow: 0 20px 40px rgb(0 0 0 / 8%);
+  --pobo-photo-card-right-label-color: #1f5636;
+  --pobo-photo-card-right-label-font-size: 12px;
+  --pobo-photo-card-right-label-line-height: 1.5;
+  --pobo-photo-card-right-label-font-weight: 600;
+  --pobo-photo-card-right-label-letter-spacing: .08em;
+  --pobo-photo-card-right-label-text-transform: uppercase;
+  --pobo-photo-card-right-heading-color: #1a1a1a;
+  --pobo-photo-card-right-heading-font-size: 24px;
+  --pobo-photo-card-right-heading-font-size-mobile: 19px;
+  --pobo-photo-card-right-heading-line-height: 1.3;
+  --pobo-photo-card-right-heading-font-weight: 700;
+  --pobo-photo-card-right-text-color: #555;
+  --pobo-photo-card-right-text-font-size: 15px;
+  --pobo-photo-card-right-text-line-height: 1.5;
+
   --pobo-header-text-font-size: 30px;
   --pobo-header-text-padding: 0;
   --pobo-header-text-margin: 0;
@@ -1667,6 +1762,57 @@
   --pobo-video-half-right-text-border-radius: 0;
   --pobo-video-half-right-text-box-shadow: none;
   --pobo-video-half-right-text-border: 0;
+
+  --pobo-feature-card-bg: #f1f3ec;
+  --pobo-feature-card-border-radius: 28px;
+  --pobo-feature-card-border-radius-mobile: 20px;
+  --pobo-feature-card-box-shadow: none;
+  --pobo-feature-card-margin-mobile: 0 16px;
+  --pobo-feature-card-image-margin-mobile: 28px 0 0;
+  --pobo-feature-card-content-padding: 48px 40px 0;
+  --pobo-feature-card-content-padding-mobile: 32px 12px 0;
+
+  --pobo-feature-card-heading-font-size: 36px;
+  --pobo-feature-card-heading-font-size-mobile: 28px;
+  --pobo-feature-card-heading-line-height: 42px;
+  --pobo-feature-card-heading-line-height-mobile: 34px;
+  --pobo-feature-card-heading-font-weight: 700;
+  --pobo-feature-card-heading-color: #181815;
+  --pobo-feature-card-heading-margin: 0 auto 10px;
+  --pobo-feature-card-heading-padding: 8px 40px 0;
+  --pobo-feature-card-heading-max-width: 640px;
+  --pobo-feature-card-heading-max-width-mobile: 100%;
+
+  --pobo-feature-card-subtitle-font-size: 18px;
+  --pobo-feature-card-subtitle-line-height: 26px;
+  --pobo-feature-card-subtitle-font-weight: 400;
+  --pobo-feature-card-subtitle-color: #3a453c;
+  --pobo-feature-card-subtitle-margin: 0 auto 32px;
+  --pobo-feature-card-subtitle-padding: 4px 0 8px;
+  --pobo-feature-card-subtitle-max-width: 520px;
+
+  --pobo-feature-card-icons-gap: 28px;
+  --pobo-feature-card-icons-gap-mobile: 36px;
+  --pobo-feature-card-icons-padding: 0 0 40px;
+  --pobo-feature-card-icons-padding-mobile: 0 0 28px;
+
+  --pobo-feature-card-icon-width: 150px;
+  --pobo-feature-card-icon-max-width: 220px;
+  --pobo-feature-card-icon-width-mobile: 220px;
+  --pobo-feature-card-icon-img-size: 56px;
+  --pobo-feature-card-icon-img-size-mobile: 68px;
+  --pobo-feature-card-icon-color: #1f5636;
+
+  --pobo-feature-card-icon-text-font-size: 14px;
+  --pobo-feature-card-icon-text-font-size-mobile: 17px;
+  --pobo-feature-card-icon-text-line-height: 19px;
+  --pobo-feature-card-icon-text-line-height-mobile: 23px;
+  --pobo-feature-card-icon-text-font-weight: 400;
+  --pobo-feature-card-icon-text-color: #3a453c;
+  --pobo-feature-card-icon-text-margin: 10px 0 0;
+  --pobo-feature-card-icon-text-max-width: 150px;
+
+  --pobo-feature-card-image-mask: linear-gradient(to bottom, transparent 0%, black 22%);
 
   /***
    Oh my bean custom

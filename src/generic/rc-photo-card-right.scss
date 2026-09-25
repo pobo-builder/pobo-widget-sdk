@@ -1,0 +1,89 @@
+.rc-photo-card-right {
+  width: 100%;
+  margin: var(--pobo-photo-card-right-margin);
+  padding: var(--pobo-photo-card-right-padding);
+
+  @include media-breakpoint-down(sm) {
+    margin: var(--pobo-photo-card-right-margin-mobile);
+    padding: var(--pobo-photo-card-right-padding-mobile);
+  }
+
+  &__stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: var(--pobo-photo-card-right-aspect-ratio);
+    overflow: hidden;
+    border-radius: var(--pobo-photo-card-right-img-border-radius);
+
+    @include media-breakpoint-down(sm) {
+      aspect-ratio: var(--pobo-photo-card-right-aspect-ratio-mobile);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: var(--pobo-photo-card-right-img-object-fit);
+    object-position: var(--pobo-photo-card-right-img-object-position);
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    width: var(--pobo-photo-card-right-card-width);
+    max-width: var(--pobo-photo-card-right-card-max-width);
+    margin: var(--pobo-photo-card-right-card-margin);
+    display: flex;
+    flex-direction: column;
+    gap: var(--pobo-photo-card-right-card-gap);
+    padding: var(--pobo-photo-card-right-card-padding);
+    background: var(--pobo-photo-card-right-card-bg);
+    border: var(--pobo-photo-card-right-card-border);
+    border-radius: var(--pobo-photo-card-right-card-border-radius);
+    box-shadow: var(--pobo-photo-card-right-card-box-shadow);
+
+    @include media-breakpoint-down(sm) {
+      width: var(--pobo-photo-card-right-card-width-mobile);
+      max-width: none;
+      margin: var(--pobo-photo-card-right-card-margin-mobile);
+      padding: var(--pobo-photo-card-right-card-padding-mobile);
+    }
+  }
+
+  &__label {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: var(--pobo-photo-card-right-label-line-height);
+    color: var(--pobo-photo-card-right-label-color);
+    font-size: var(--pobo-photo-card-right-label-font-size);
+    font-weight: var(--pobo-photo-card-right-label-font-weight);
+    letter-spacing: var(--pobo-photo-card-right-label-letter-spacing);
+    text-transform: var(--pobo-photo-card-right-label-text-transform);
+  }
+
+  &__heading {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: var(--pobo-photo-card-right-heading-color);
+    font-size: var(--pobo-photo-card-right-heading-font-size);
+    line-height: var(--pobo-photo-card-right-heading-line-height);
+    font-weight: var(--pobo-photo-card-right-heading-font-weight);
+
+    @include media-breakpoint-down(sm) {
+      font-size: var(--pobo-photo-card-right-heading-font-size-mobile);
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 0;
+    color: var(--pobo-photo-card-right-text-color);
+    font-size: var(--pobo-photo-card-right-text-font-size);
+    line-height: var(--pobo-photo-card-right-text-line-height);
+  }
+}

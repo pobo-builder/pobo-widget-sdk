@@ -1,0 +1,137 @@
+.rc-feature-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--pobo-feature-card-border-radius);
+  background: var(--pobo-feature-card-bg);
+  box-shadow: var(--pobo-feature-card-box-shadow);
+
+  @include media-breakpoint-down(sm) {
+    width: auto;
+    margin: var(--pobo-feature-card-margin-mobile);
+    border-radius: var(--pobo-feature-card-border-radius-mobile);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: var(--pobo-feature-card-content-padding);
+
+    @include media-breakpoint-down(sm) {
+      padding: var(--pobo-feature-card-content-padding-mobile);
+    }
+  }
+
+  &__heading {
+    margin: var(--pobo-feature-card-heading-margin);
+    padding: var(--pobo-feature-card-heading-padding);
+    max-width: var(--pobo-feature-card-heading-max-width);
+    font-size: var(--pobo-feature-card-heading-font-size);
+    line-height: var(--pobo-feature-card-heading-line-height);
+    font-weight: var(--pobo-feature-card-heading-font-weight);
+    color: var(--pobo-feature-card-heading-color);
+
+    @include media-breakpoint-down(sm) {
+      max-width: var(--pobo-feature-card-heading-max-width-mobile);
+      font-size: var(--pobo-feature-card-heading-font-size-mobile);
+      line-height: var(--pobo-feature-card-heading-line-height-mobile);
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin: var(--pobo-feature-card-subtitle-margin);
+    padding: var(--pobo-feature-card-subtitle-padding);
+    max-width: var(--pobo-feature-card-subtitle-max-width);
+    font-size: var(--pobo-feature-card-subtitle-font-size);
+    line-height: var(--pobo-feature-card-subtitle-line-height);
+    font-weight: var(--pobo-feature-card-subtitle-font-weight);
+    color: var(--pobo-feature-card-subtitle-color);
+  }
+
+  &__icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--pobo-feature-card-icons-gap);
+    padding: var(--pobo-feature-card-icons-padding);
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
+      gap: var(--pobo-feature-card-icons-gap-mobile);
+      padding: var(--pobo-feature-card-icons-padding-mobile);
+    }
+  }
+
+  &__icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 var(--pobo-feature-card-icon-width);
+    max-width: var(--pobo-feature-card-icon-max-width);
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 auto;
+      width: var(--pobo-feature-card-icon-width-mobile);
+      max-width: var(--pobo-feature-card-icon-width-mobile);
+    }
+  }
+
+  &__icon-image {
+    position: relative;
+    line-height: 0;
+  }
+
+  &__icon-img {
+    display: block;
+    width: var(--pobo-feature-card-icon-img-size);
+    height: var(--pobo-feature-card-icon-img-size);
+    color: var(--pobo-feature-card-icon-color);
+    object-fit: contain;
+
+    @include media-breakpoint-down(sm) {
+      width: var(--pobo-feature-card-icon-img-size-mobile);
+      height: var(--pobo-feature-card-icon-img-size-mobile);
+    }
+  }
+
+  &__icon-text {
+    display: block;
+    margin: var(--pobo-feature-card-icon-text-margin);
+    max-width: var(--pobo-feature-card-icon-text-max-width);
+    font-size: var(--pobo-feature-card-icon-text-font-size);
+    line-height: var(--pobo-feature-card-icon-text-line-height);
+    font-weight: var(--pobo-feature-card-icon-text-font-weight);
+    color: var(--pobo-feature-card-icon-text-color);
+
+    @include media-breakpoint-down(sm) {
+      max-width: var(--pobo-feature-card-icon-width-mobile);
+      font-size: var(--pobo-feature-card-icon-text-font-size-mobile);
+      line-height: var(--pobo-feature-card-icon-text-line-height-mobile);
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    line-height: 0;
+
+    @include media-breakpoint-down(sm) {
+      margin: var(--pobo-feature-card-image-margin-mobile);
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    mask-image: var(--pobo-feature-card-image-mask);
+  }
+}

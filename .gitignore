@@ -9,3 +9,4 @@ magic
 generative/*
 !generative/.gitkeep
 preview/
+.playwright-mcp
