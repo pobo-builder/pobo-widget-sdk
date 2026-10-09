@@ -283,6 +283,16 @@
     }
   }
 
+  &--funky {
+    background: var(--pobo-custom-bean-info-funky-bg);
+
+    &:before {
+      background-size: contain;
+      background-repeat: no-repeat !important;
+      background: var(--pobo-custom-bean-info-funky-bg-image);
+    }
+  }
+
   p, h2, h3, h4 {
     color: var(--pobo-custom-bean-color);
     margin: var(--pobo-custom-bean-info-text-margin);
