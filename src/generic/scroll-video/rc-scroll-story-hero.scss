@@ -1,29 +1,22 @@
 .rc-scroll-story-hero {
   &__pin {
-    position: relative;
-
-    .pb-scroll-track--pinned & {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-      align-content: center;
-      align-items: center;
-      width: 100%;
-    }
+    width: 100%;
   }
 
   &__video {
     position: relative;
+    width: 100%;
     padding: var(--pobo-scroll-story-hero-video-padding);
     margin: var(--pobo-scroll-story-hero-video-margin);
     border-radius: var(--pobo-scroll-story-hero-video-border-radius);
     box-shadow: var(--pobo-scroll-story-hero-video-box-shadow);
     border: var(--pobo-scroll-story-hero-video-border);
 
-    .pb-scroll-track--pinned & {
-      grid-area: 1 / 1;
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
+      flex: 0 0 auto;
       width: 100%;
-      height: auto;
+      overflow: hidden;
 
       &:after {
         position: absolute;
@@ -37,25 +30,40 @@
       }
 
       .pb-scroll-video__poster {
+        display: block;
         width: 100%;
         height: auto;
-        max-height: var(--pobo-scroll-story-hero-video-max-height);
+      }
+    }
+
+    .pb-scroll-track--pinned & {
+      height: 100%;
+
+      .pb-scroll-video__poster {
+        height: 100%;
         object-fit: cover;
       }
     }
   }
 
   &__steps {
+    width: 100%;
     padding: var(--pobo-scroll-story-hero-steps-padding);
 
-    .pb-scroll-track--pinned & {
-      grid-area: 1 / 1;
-      align-self: stretch;
-      justify-self: center;
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 0 auto;
+      align-items: stretch;
+      justify-items: center;
       width: 100%;
       max-width: var(--pobo-scroll-story-hero-content-max-width);
+      height: 100%;
+      min-width: 0;
       padding: var(--pobo-scroll-story-hero-content-padding);
-      position: relative;
       z-index: 3;
     }
   }
@@ -67,11 +75,14 @@
     justify-content: center;
     margin: var(--pobo-scroll-story-hero-step-margin);
 
-    .pb-scroll-track--pinned & {
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
+      width: 100%;
       margin: 0;
     }
 
-    .pb-scroll-track--pinned &:not(:first-child) {
+    .pb-scroll-track--pinned &:not(:first-child),
+    .pb-scroll-track--static &:not(:first-child) {
       justify-content: flex-end;
     }
   }
@@ -85,7 +96,8 @@
     margin: var(--pobo-scroll-story-hero-box-margin);
     border-radius: var(--pobo-scroll-story-hero-box-border-radius);
 
-    .pb-scroll-track--pinned & {
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
       --pobo-typo-h2-font-color: var(--pobo-scroll-story-hero-text-color);
       --pobo-typo-h3-font-color: var(--pobo-scroll-story-hero-text-color);
       --pobo-typo-h4-font-color: var(--pobo-scroll-story-hero-text-color);

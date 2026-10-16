@@ -3,10 +3,7 @@
 
   &--pinned {
     position: relative;
-    width: var(--pobo-scroll-viewport-width, 100vw);
-    max-width: var(--pobo-scroll-viewport-width, 100vw);
-    margin-left: calc(50% - var(--pobo-scroll-viewport-width, 100vw) / 2);
-    margin-right: calc(50% - var(--pobo-scroll-viewport-width, 100vw) / 2);
+    width: 100%;
     height: calc(100vh + var(--pobo-scroll-step-count, 3) * var(--pobo-scroll-track-step-length, 100vh));
 
     .pb-scroll-track__pin {
@@ -14,8 +11,24 @@
       top: var(--pobo-scroll-track-top, 0px);
       height: calc(100vh - var(--pobo-scroll-track-top, 0px));
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
+  }
+
+  &--static {
+    height: auto;
+
+    .pb-scroll-track__pin {
+      position: relative;
+      height: auto;
+    }
+  }
+
+  &--pinned,
+  &--static {
     .pb-scroll-track__steps {
       display: grid;
     }
@@ -37,22 +50,6 @@
         opacity: 0;
         transform: translateY(calc(-1 * var(--pobo-scroll-track-step-offset, 28px)));
       }
-    }
-  }
-
-  &--static {
-    height: auto;
-
-    .pb-scroll-track__pin {
-      position: static;
-      height: auto;
-    }
-
-    .pb-scroll-track__step {
-      opacity: 1;
-      transform: none;
-      transition: none;
-      pointer-events: auto;
     }
   }
 }
@@ -111,8 +108,13 @@
       position: static;
       height: auto;
       overflow: visible;
+      display: block;
     }
 
+  }
+
+  .pb-scroll-track--pinned,
+  .pb-scroll-track--static {
     .pb-scroll-track__steps {
       display: block;
     }

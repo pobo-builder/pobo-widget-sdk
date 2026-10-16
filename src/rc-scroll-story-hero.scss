@@ -2,30 +2,23 @@
   padding: 20px 0;
 
   &__pin {
-    position: relative;
-
-    .pb-scroll-track--pinned & {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-      align-content: center;
-      align-items: center;
-      width: 100%;
-    }
+    width: 100%;
   }
 
   &__video {
     position: relative;
+    width: 100%;
     padding: 0;
     margin: 0;
     border-radius: 0;
     box-shadow: none;
     border: none;
 
-    .pb-scroll-track--pinned & {
-      grid-area: 1 / 1;
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
+      flex: 0 0 auto;
       width: 100%;
-      height: auto;
+      overflow: hidden;
 
       &:after {
         position: absolute;
@@ -39,32 +32,47 @@
       }
 
       .pb-scroll-video__poster {
+        display: block;
         width: 100%;
         height: auto;
-        max-height: calc(100vh - var(--pobo-scroll-track-top, 0px));
+      }
+    }
+
+    .pb-scroll-track--pinned & {
+      height: 100%;
+
+      .pb-scroll-video__poster {
+        height: 100%;
         object-fit: cover;
       }
     }
   }
 
   &__steps {
-    padding: 48px;
+    width: 100%;
+    padding: 32px 0 0 0;
 
-    @include media-breakpoint-down(sm) {
-      padding: 20px;
+    @include media-breakpoint-down(md) {
+      padding: 20px 0 0 0;
     }
 
-    .pb-scroll-track--pinned & {
-      grid-area: 1 / 1;
-      align-self: stretch;
-      justify-self: center;
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 0 auto;
+      align-items: stretch;
+      justify-items: center;
       width: 100%;
       max-width: 1200px;
+      height: 100%;
+      min-width: 0;
       padding: 40px;
-      position: relative;
       z-index: 3;
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         padding: 20px;
       }
     }
@@ -77,11 +85,14 @@
     justify-content: center;
     margin: 0 0 24px 0;
 
-    .pb-scroll-track--pinned & {
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
+      width: 100%;
       margin: 0;
     }
 
-    .pb-scroll-track--pinned &:not(:first-child) {
+    .pb-scroll-track--pinned &:not(:first-child),
+    .pb-scroll-track--static &:not(:first-child) {
       justify-content: flex-end;
     }
   }
@@ -95,7 +106,8 @@
     margin: 0;
     border-radius: 0;
 
-    .pb-scroll-track--pinned & {
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
       --pobo-typo-h2-font-color: #ffffff;
       --pobo-typo-h3-font-color: #ffffff;
       --pobo-typo-h4-font-color: #ffffff;
