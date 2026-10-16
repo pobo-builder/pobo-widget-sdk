@@ -1,28 +1,27 @@
 .rc-scroll-story-side {
   &__pin {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: var(--pobo-scroll-story-side-pin-padding);
+    width: 100%;
+
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+    }
 
     .pb-scroll-track--pinned & {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      width: 100%;
-      max-width: var(--pobo-scroll-story-side-content-max-width);
-      margin: 0 auto;
-      padding: var(--pobo-scroll-story-side-content-padding);
-
-      @include media-breakpoint-up(lg) {
-        flex-direction: row;
-        align-items: center;
-      }
+      padding: var(--pobo-scroll-story-side-content-padding) max(var(--pobo-scroll-story-side-content-padding), calc((100% - var(--pobo-scroll-story-side-content-max-width)) / 2));
     }
   }
 
   &__video {
-    width: var(--pobo-scroll-story-side-video-width);
+    width: 100%;
     position: relative;
     padding: var(--pobo-scroll-story-side-video-padding);
     margin: var(--pobo-scroll-story-side-video-margin);
@@ -30,74 +29,58 @@
     box-shadow: var(--pobo-scroll-story-side-video-box-shadow);
     border: var(--pobo-scroll-story-side-video-border);
 
-    @include media-breakpoint-down(md) {
-      flex: 0 0 100%;
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
+      flex: 0 0 auto;
+      width: var(--pobo-scroll-story-side-video-width);
       max-width: 100%;
-      order: 1;
+      height: auto;
+
+      .pb-scroll-video__poster {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
     }
 
     .pb-scroll-track--pinned & {
-      flex: 0 0 auto;
-      width: auto;
-      max-width: 100%;
-      order: 1;
-
       .pb-scroll-video__poster {
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        max-height: var(--pobo-scroll-story-side-video-max-height);
+        max-height: calc(100vh - var(--pobo-scroll-track-top, 0px) - 2 * var(--pobo-scroll-story-side-content-padding));
       }
 
-      @include media-breakpoint-up(lg) {
-        flex: 0 0 var(--pobo-scroll-story-side-video-width);
-        width: var(--pobo-scroll-story-side-video-width);
-        max-width: var(--pobo-scroll-story-side-video-width);
-
+      @include media-breakpoint-down(md) {
         .pb-scroll-video__poster {
-          width: 100%;
-          max-height: var(--pobo-scroll-story-side-pinned-video-max-height);
-          object-fit: cover;
+          max-height: 50vh;
         }
       }
     }
   }
 
   &__steps {
-    width: calc(100% - var(--pobo-scroll-story-side-video-width));
-    padding: var(--pobo-scroll-story-side-steps-padding);
+    width: 100%;
     position: relative;
     z-index: 1;
 
-    @include media-breakpoint-down(md) {
-      flex: 0 0 100%;
-      max-width: 100%;
-      order: 2;
-    }
-
-    .pb-scroll-track--pinned & {
+    .pb-scroll-track--pinned &,
+    .pb-scroll-track--static & {
       flex: 0 0 auto;
-      width: 100%;
+      align-content: center;
+      width: calc(100% - var(--pobo-scroll-story-side-video-width));
       max-width: 100%;
-      padding: var(--pobo-scroll-story-side-pinned-steps-padding);
-      order: 2;
+      padding: var(--pobo-scroll-story-side-steps-padding);
 
-      @include media-breakpoint-up(lg) {
-        flex: 0 0 calc(100% - var(--pobo-scroll-story-side-video-width));
-        width: calc(100% - var(--pobo-scroll-story-side-video-width));
-        max-width: calc(100% - var(--pobo-scroll-story-side-video-width));
-        padding: var(--pobo-scroll-story-side-steps-padding);
-        align-self: center;
+      @include media-breakpoint-down(md) {
+        width: 100%;
       }
     }
   }
 
   &__step {
-    margin: var(--pobo-scroll-story-side-step-margin);
-
-    .pb-scroll-track--pinned & {
-      margin: 0;
-    }
+    width: 100%;
   }
 
   &__number {
