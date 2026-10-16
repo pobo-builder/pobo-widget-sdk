@@ -1,0 +1,27 @@
+.rc-scroll-video-intro {
+  &__head {
+    max-width: var(--pobo-scroll-video-intro-head-max-width);
+    background: var(--pobo-scroll-video-intro-head-bg);
+    text-align: var(--pobo-scroll-video-intro-head-text-align);
+    padding: var(--pobo-scroll-video-intro-head-padding);
+    margin: var(--pobo-scroll-video-intro-head-margin);
+    border-radius: var(--pobo-scroll-video-intro-head-border-radius);
+  }
+
+  &__video {
+    position: relative;
+    padding: var(--pobo-scroll-video-intro-video-padding);
+    margin: var(--pobo-scroll-video-intro-video-margin);
+    border-radius: var(--pobo-scroll-video-intro-video-border-radius);
+    box-shadow: var(--pobo-scroll-video-intro-video-box-shadow);
+    border: var(--pobo-scroll-video-intro-video-border);
+  }
+
+  &__caption {
+    background: var(--pobo-scroll-video-intro-caption-bg);
+    text-align: var(--pobo-scroll-video-intro-caption-text-align);
+    padding: var(--pobo-scroll-video-intro-caption-padding);
+    margin: var(--pobo-scroll-video-intro-caption-margin);
+    border-radius: var(--pobo-scroll-video-intro-caption-border-radius);
+  }
+}

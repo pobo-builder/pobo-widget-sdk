@@ -40,6 +40,24 @@
 @import "generic/video/rc-one-video";
 @import "generic/video/rc-two-videos";
 
+@import "generic/scroll-video/rc-scroll-video-full";
+@import "generic/scroll-video/rc-scroll-video-text-right";
+@import "generic/scroll-video/rc-scroll-video-text-left";
+@import "generic/scroll-video/rc-scroll-video-intro";
+@import "generic/scroll-video/rc-scroll-video-cta";
+@import "generic/scroll-video/rc-scroll-video-benefits";
+@import "generic/scroll-video/rc-scroll-video-pair";
+@import "generic/scroll-video/rc-scroll-video-portrait";
+@import "generic/scroll-video/rc-scroll-video-overlay";
+@import "generic/scroll-video/rc-scroll-video-parameter";
+@import "generic/scroll-video/rc-scroll-video-steps";
+@import "generic/scroll-video/rc-scroll-video-product";
+@import "generic/scroll-video/rc-scroll-video-grid";
+@import "generic/scroll-video/rc-scroll-video-hero";
+@import "generic/scroll-video/rc-scroll-story-side";
+@import "generic/scroll-video/rc-scroll-story-overlay";
+@import "generic/scroll-video/rc-scroll-story-hero";
+
 @import "generic/gallery/rc-gallery-one";
 @import "generic/gallery/rc-gallery-two";
 @import "generic/gallery/rc-gallery-three";
@@ -145,6 +163,8 @@
 @import "generic/plugin/carousel";
 @import "generic/rc-carousel-text";
 @import "generic/plugin/gallery";
+@import "generic/plugin/scroll-video";
+@import "generic/plugin/scroll-track";
 @import "generic/product-preview";
 
 /**

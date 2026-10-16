@@ -1,0 +1,73 @@
+.rc-scroll-story-overlay {
+  padding: 20px 0;
+
+  &__pin {
+    position: relative;
+  }
+
+  &__video {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+
+    .pb-scroll-track--pinned & {
+      height: calc(100vh - var(--pobo-scroll-track-top, 0px));
+
+      &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.75) 100%);
+      }
+
+      .pb-scroll-video__poster {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__steps {
+    max-width: 560px;
+    padding: 48px;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      padding: 20px;
+    }
+
+    .pb-scroll-track--pinned & {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 3;
+    }
+  }
+
+  &__step {
+    margin: 0 0 32px 0;
+
+    .pb-scroll-track--pinned & {
+      margin: 0;
+    }
+  }
+
+  &__text {
+    background: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+
+    .pb-scroll-track--pinned & {
+      color: #ffffff;
+    }
+  }
+}

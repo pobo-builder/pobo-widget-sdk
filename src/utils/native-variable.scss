@@ -3805,6 +3805,305 @@
   --pobo-advantages-five-info-font-size: 13px;
   --pobo-advantages-five-info-line-height: 1.4;
   --pobo-advantages-five-info-font-weight: 400;
+
+  // Scroll video full
+  --pobo-scroll-video-full-video-padding: 0;
+  --pobo-scroll-video-full-video-margin: 0;
+  --pobo-scroll-video-full-video-border-radius: 8px;
+  --pobo-scroll-video-full-video-box-shadow: none;
+  --pobo-scroll-video-full-video-border: none;
+
+  // Scroll video text right
+  --pobo-scroll-video-text-right-video-width: 58%;
+  --pobo-scroll-video-text-right-video-padding: 0;
+  --pobo-scroll-video-text-right-video-margin: 0;
+  --pobo-scroll-video-text-right-video-border-radius: 8px;
+  --pobo-scroll-video-text-right-video-box-shadow: none;
+  --pobo-scroll-video-text-right-video-border: none;
+
+  --pobo-scroll-video-text-right-box-bg: none;
+  --pobo-scroll-video-text-right-box-padding: 0 0 0 40px;
+  --pobo-scroll-video-text-right-box-margin: 0;
+  --pobo-scroll-video-text-right-box-border-radius: 0;
+  --pobo-scroll-video-text-right-text-align: left;
+
+  // Scroll video text left
+  --pobo-scroll-video-text-left-video-width: 58%;
+  --pobo-scroll-video-text-left-video-padding: 0;
+  --pobo-scroll-video-text-left-video-margin: 0;
+  --pobo-scroll-video-text-left-video-border-radius: 8px;
+  --pobo-scroll-video-text-left-video-box-shadow: none;
+  --pobo-scroll-video-text-left-video-border: none;
+
+  --pobo-scroll-video-text-left-box-bg: none;
+  --pobo-scroll-video-text-left-box-padding: 0 40px 0 0;
+  --pobo-scroll-video-text-left-box-margin: 0;
+  --pobo-scroll-video-text-left-box-border-radius: 0;
+  --pobo-scroll-video-text-left-text-align: left;
+
+  // Scroll video intro
+  --pobo-scroll-video-intro-head-max-width: 720px;
+  --pobo-scroll-video-intro-head-bg: none;
+  --pobo-scroll-video-intro-head-padding: 0;
+  --pobo-scroll-video-intro-head-margin: 0 auto 40px auto;
+  --pobo-scroll-video-intro-head-border-radius: 0;
+  --pobo-scroll-video-intro-head-text-align: center;
+
+  --pobo-scroll-video-intro-video-padding: 0;
+  --pobo-scroll-video-intro-video-margin: 0;
+  --pobo-scroll-video-intro-video-border-radius: 8px;
+  --pobo-scroll-video-intro-video-box-shadow: none;
+  --pobo-scroll-video-intro-video-border: none;
+
+  --pobo-scroll-video-intro-caption-bg: none;
+  --pobo-scroll-video-intro-caption-padding: 0;
+  --pobo-scroll-video-intro-caption-margin: 12px 0 0 0;
+  --pobo-scroll-video-intro-caption-border-radius: 0;
+  --pobo-scroll-video-intro-caption-text-align: center;
+
+  // Scroll video cta
+  --pobo-scroll-video-cta-bg: #fdfdfd;
+  --pobo-scroll-video-cta-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  --pobo-scroll-video-cta-border: none;
+  --pobo-scroll-video-cta-border-radius: 12px;
+  --pobo-scroll-video-cta-padding: 24px;
+
+  --pobo-scroll-video-cta-video-width: 58%;
+  --pobo-scroll-video-cta-video-padding: 0;
+  --pobo-scroll-video-cta-video-margin: 0;
+  --pobo-scroll-video-cta-video-border-radius: 8px;
+  --pobo-scroll-video-cta-video-box-shadow: none;
+  --pobo-scroll-video-cta-video-border: none;
+
+  --pobo-scroll-video-cta-box-bg: none;
+  --pobo-scroll-video-cta-box-padding: 0 0 0 40px;
+  --pobo-scroll-video-cta-box-margin: 0;
+  --pobo-scroll-video-cta-box-border-radius: 0;
+  --pobo-scroll-video-cta-text-align: left;
+  --pobo-scroll-video-cta-button-padding: 8px 0 0 40px;
+
+  // Scroll video benefits
+  --pobo-scroll-video-benefits-video-width: 58%;
+  --pobo-scroll-video-benefits-video-padding: 0;
+  --pobo-scroll-video-benefits-video-margin: 0;
+  --pobo-scroll-video-benefits-video-border-radius: 8px;
+  --pobo-scroll-video-benefits-video-box-shadow: none;
+  --pobo-scroll-video-benefits-video-border: none;
+
+  --pobo-scroll-video-benefits-list-padding: 0 0 0 40px;
+  --pobo-scroll-video-benefits-list-gap: 20px;
+  --pobo-scroll-video-benefits-item-bg: none;
+  --pobo-scroll-video-benefits-item-padding: 4px 0 4px 16px;
+  --pobo-scroll-video-benefits-item-margin: 0;
+  --pobo-scroll-video-benefits-item-border-radius: 0;
+  --pobo-scroll-video-benefits-item-border: 3px solid #74e18b;
+  --pobo-scroll-video-benefits-text-align: left;
+
+  // Scroll video pair
+  --pobo-scroll-video-pair-gap: 40px;
+  --pobo-scroll-video-pair-video-padding: 0;
+  --pobo-scroll-video-pair-video-margin: 0;
+  --pobo-scroll-video-pair-video-border-radius: 8px;
+  --pobo-scroll-video-pair-video-box-shadow: none;
+  --pobo-scroll-video-pair-video-border: none;
+
+  --pobo-scroll-video-pair-caption-bg: none;
+  --pobo-scroll-video-pair-caption-padding: 0;
+  --pobo-scroll-video-pair-caption-margin: 12px 0 0 0;
+  --pobo-scroll-video-pair-caption-border-radius: 0;
+  --pobo-scroll-video-pair-caption-text-align: center;
+
+  // Scroll video portrait
+  --pobo-scroll-video-portrait-video-width: 50%;
+  --pobo-scroll-video-portrait-video-max-width: 420px;
+  --pobo-scroll-video-portrait-video-padding: 0;
+  --pobo-scroll-video-portrait-video-margin: 0;
+  --pobo-scroll-video-portrait-video-border-radius: 8px;
+  --pobo-scroll-video-portrait-video-box-shadow: none;
+  --pobo-scroll-video-portrait-video-border: none;
+
+  --pobo-scroll-video-portrait-box-bg: none;
+  --pobo-scroll-video-portrait-box-padding: 0 0 0 40px;
+  --pobo-scroll-video-portrait-box-margin: 0;
+  --pobo-scroll-video-portrait-box-border-radius: 0;
+  --pobo-scroll-video-portrait-text-align: left;
+
+  // Scroll video overlay
+  --pobo-scroll-video-overlay-video-padding: 0;
+  --pobo-scroll-video-overlay-video-margin: 0;
+  --pobo-scroll-video-overlay-video-border-radius: 8px;
+  --pobo-scroll-video-overlay-video-box-shadow: none;
+  --pobo-scroll-video-overlay-video-border: none;
+
+  --pobo-scroll-video-overlay-text-color: #ffffff;
+  --pobo-scroll-video-overlay-box-bg: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+  --pobo-scroll-video-overlay-box-padding: 32px;
+  --pobo-scroll-video-overlay-box-margin: 0;
+  --pobo-scroll-video-overlay-box-border-radius: 8px;
+  --pobo-scroll-video-overlay-text-align: left;
+
+  // Scroll video parameter
+  --pobo-scroll-video-parameter-video-width: 58%;
+  --pobo-scroll-video-parameter-video-padding: 0;
+  --pobo-scroll-video-parameter-video-margin: 0;
+  --pobo-scroll-video-parameter-video-border-radius: 8px;
+  --pobo-scroll-video-parameter-video-box-shadow: none;
+  --pobo-scroll-video-parameter-video-border: none;
+
+  --pobo-scroll-video-parameter-list-padding: 0 0 0 40px;
+  --pobo-scroll-video-parameter-row-gap: 16px;
+  --pobo-scroll-video-parameter-row-padding: 12px 0;
+  --pobo-scroll-video-parameter-row-border: 1px solid #e5e5e5;
+  --pobo-scroll-video-parameter-label-font-size: 15px;
+  --pobo-scroll-video-parameter-label-line-height: 1.4;
+  --pobo-scroll-video-parameter-label-font-weight: 400;
+  --pobo-scroll-video-parameter-label-color: #777777;
+  --pobo-scroll-video-parameter-value-font-size: 15px;
+  --pobo-scroll-video-parameter-value-line-height: 1.4;
+  --pobo-scroll-video-parameter-value-font-weight: 700;
+  --pobo-scroll-video-parameter-value-color: #0c0c0c;
+
+  // Scroll video steps
+  --pobo-scroll-video-steps-video-padding: 0;
+  --pobo-scroll-video-steps-video-margin: 0;
+  --pobo-scroll-video-steps-video-border-radius: 8px;
+  --pobo-scroll-video-steps-video-box-shadow: none;
+  --pobo-scroll-video-steps-video-border: none;
+
+  --pobo-scroll-video-steps-steps-padding: 40px 0 0 0;
+  --pobo-scroll-video-steps-steps-gap: 24px;
+  --pobo-scroll-video-steps-number-size: 40px;
+  --pobo-scroll-video-steps-number-margin: 0 0 16px 0;
+  --pobo-scroll-video-steps-number-bg: #74e18b;
+  --pobo-scroll-video-steps-number-color: #0c0c0c;
+  --pobo-scroll-video-steps-number-font-size: 16px;
+  --pobo-scroll-video-steps-number-font-weight: 700;
+
+  --pobo-scroll-video-steps-box-bg: none;
+  --pobo-scroll-video-steps-box-padding: 0;
+  --pobo-scroll-video-steps-box-margin: 0;
+  --pobo-scroll-video-steps-box-border-radius: 0;
+  --pobo-scroll-video-steps-text-align: left;
+
+  // Scroll video product
+  --pobo-scroll-video-product-video-padding: 0;
+  --pobo-scroll-video-product-video-margin: 0;
+  --pobo-scroll-video-product-video-border-radius: 8px;
+  --pobo-scroll-video-product-video-box-shadow: none;
+  --pobo-scroll-video-product-video-border: none;
+
+  --pobo-scroll-video-product-header-bg: none;
+  --pobo-scroll-video-product-header-padding: 0;
+  --pobo-scroll-video-product-header-margin: 32px 0 16px 0;
+  --pobo-scroll-video-product-header-border-radius: 0;
+  --pobo-scroll-video-product-header-text-align: left;
+
+  --pobo-scroll-video-product-products-gap: 20px;
+  --pobo-scroll-video-product-products-margin: 0;
+  --pobo-scroll-video-product-products-item-basis: 240px;
+  --pobo-scroll-video-product-products-item-basis-md: calc(50% - 10px);
+  --pobo-scroll-video-product-products-item-basis-sm: 100%;
+
+  // Scroll video grid
+  --pobo-scroll-video-grid-gap: 24px;
+  --pobo-scroll-video-grid-video-padding: 0;
+  --pobo-scroll-video-grid-video-margin: 0;
+  --pobo-scroll-video-grid-video-border-radius: 8px;
+  --pobo-scroll-video-grid-video-box-shadow: none;
+  --pobo-scroll-video-grid-video-border: none;
+
+  --pobo-scroll-video-grid-box-bg: none;
+  --pobo-scroll-video-grid-box-padding: 0;
+  --pobo-scroll-video-grid-box-margin: 16px 0 0 0;
+  --pobo-scroll-video-grid-box-border-radius: 0;
+  --pobo-scroll-video-grid-text-align: center;
+
+  // Scroll video hero
+  --pobo-scroll-video-hero-video-padding: 0;
+  --pobo-scroll-video-hero-video-margin: 0;
+  --pobo-scroll-video-hero-video-border-radius: 8px;
+  --pobo-scroll-video-hero-video-box-shadow: none;
+  --pobo-scroll-video-hero-video-border: none;
+  --pobo-scroll-video-hero-video-overlay-bg: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.35) 50%, transparent 100%);
+
+  --pobo-scroll-video-hero-text-color: #ffffff;
+  --pobo-scroll-video-hero-text-max-width: 560px;
+  --pobo-scroll-video-hero-box-bg: none;
+  --pobo-scroll-video-hero-box-padding: 0 48px;
+  --pobo-scroll-video-hero-box-margin: 0;
+  --pobo-scroll-video-hero-box-border-radius: 0;
+  --pobo-scroll-video-hero-text-align: left;
+  --pobo-scroll-video-hero-button-padding: 16px 48px 0 48px;
+
+  // Scroll track
+  --pobo-scroll-track-top: 0px;
+  --pobo-scroll-track-step-length: 100vh;
+  --pobo-scroll-track-step-offset: 28px;
+  --pobo-scroll-track-step-duration: 0.55s;
+  --pobo-scroll-reveal-offset: 24px;
+  --pobo-scroll-reveal-duration: 0.6s;
+  --pobo-scroll-reveal-stagger: 80ms;
+
+  // Scroll story side
+  --pobo-scroll-story-side-pin-padding: 24px;
+  --pobo-scroll-story-side-video-width: 58%;
+  --pobo-scroll-story-side-video-max-height: calc(100vh - var(--pobo-scroll-track-top, 0px) - 48px);
+  --pobo-scroll-story-side-video-padding: 0;
+  --pobo-scroll-story-side-video-margin: 0;
+  --pobo-scroll-story-side-video-border-radius: 12px;
+  --pobo-scroll-story-side-video-box-shadow: none;
+  --pobo-scroll-story-side-video-border: none;
+
+  --pobo-scroll-story-side-steps-padding: 0 0 0 48px;
+  --pobo-scroll-story-side-step-margin: 0 0 40px 0;
+  --pobo-scroll-story-side-number-margin: 0 0 12px 0;
+  --pobo-scroll-story-side-number-font-size: 14px;
+  --pobo-scroll-story-side-number-font-weight: 600;
+  --pobo-scroll-story-side-number-letter-spacing: 2px;
+  --pobo-scroll-story-side-number-color: #74e18b;
+
+  --pobo-scroll-story-side-box-bg: none;
+  --pobo-scroll-story-side-box-padding: 0;
+  --pobo-scroll-story-side-box-margin: 0;
+  --pobo-scroll-story-side-box-border-radius: 0;
+  --pobo-scroll-story-side-text-align: left;
+
+  // Scroll story overlay
+  --pobo-scroll-story-overlay-video-padding: 0;
+  --pobo-scroll-story-overlay-video-margin: 0;
+  --pobo-scroll-story-overlay-video-border-radius: 0;
+  --pobo-scroll-story-overlay-video-box-shadow: none;
+  --pobo-scroll-story-overlay-video-border: none;
+  --pobo-scroll-story-overlay-video-overlay-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.75) 100%);
+
+  --pobo-scroll-story-overlay-steps-max-width: 560px;
+  --pobo-scroll-story-overlay-steps-padding: 48px;
+  --pobo-scroll-story-overlay-step-margin: 0 0 32px 0;
+  --pobo-scroll-story-overlay-text-color: #ffffff;
+  --pobo-scroll-story-overlay-box-bg: none;
+  --pobo-scroll-story-overlay-box-padding: 0;
+  --pobo-scroll-story-overlay-box-margin: 0;
+  --pobo-scroll-story-overlay-box-border-radius: 0;
+  --pobo-scroll-story-overlay-text-align: left;
+
+  // Scroll story hero
+  --pobo-scroll-story-hero-video-padding: 0;
+  --pobo-scroll-story-hero-video-margin: 0;
+  --pobo-scroll-story-hero-video-border-radius: 0;
+  --pobo-scroll-story-hero-video-box-shadow: none;
+  --pobo-scroll-story-hero-video-border: none;
+  --pobo-scroll-story-hero-video-overlay-bg: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.65) 100%);
+
+  --pobo-scroll-story-hero-steps-padding: 48px;
+  --pobo-scroll-story-hero-step-margin: 0 0 24px 0;
+  --pobo-scroll-story-hero-text-color: #ffffff;
+  --pobo-scroll-story-hero-text-max-width: 720px;
+  --pobo-scroll-story-hero-box-bg: none;
+  --pobo-scroll-story-hero-box-padding: 0;
+  --pobo-scroll-story-hero-box-margin: 0;
+  --pobo-scroll-story-hero-box-border-radius: 0;
+  --pobo-scroll-story-hero-text-align: center;
+  --pobo-scroll-story-hero-button-padding: 20px 0 0 0;
 }
 
 @import "mobile-variable";

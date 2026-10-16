@@ -1,0 +1,10 @@
+.rc-scroll-video-full {
+  &__video {
+    position: relative;
+    padding: var(--pobo-scroll-video-full-video-padding);
+    margin: var(--pobo-scroll-video-full-video-margin);
+    border-radius: var(--pobo-scroll-video-full-video-border-radius);
+    box-shadow: var(--pobo-scroll-video-full-video-box-shadow);
+    border: var(--pobo-scroll-video-full-video-border);
+  }
+}

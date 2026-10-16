@@ -1,0 +1,60 @@
+.rc-scroll-video-parameter {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__video {
+    width: 58%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+    }
+  }
+
+  &__list {
+    width: calc(100% - 58%);
+    padding: 0 0 0 40px;
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 2;
+      padding: 20px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__label {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #777777;
+  }
+
+  &__value {
+    text-align: right;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #0c0c0c;
+  }
+}

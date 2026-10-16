@@ -1,0 +1,74 @@
+.rc-scroll-story-side {
+  &__pin {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: var(--pobo-scroll-story-side-pin-padding);
+  }
+
+  &__video {
+    width: var(--pobo-scroll-story-side-video-width);
+    position: relative;
+    padding: var(--pobo-scroll-story-side-video-padding);
+    margin: var(--pobo-scroll-story-side-video-margin);
+    border-radius: var(--pobo-scroll-story-side-video-border-radius);
+    box-shadow: var(--pobo-scroll-story-side-video-box-shadow);
+    border: var(--pobo-scroll-story-side-video-border);
+
+    @include media-breakpoint-down(md) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+    }
+
+    .pb-scroll-track--pinned & {
+      width: auto;
+      max-width: var(--pobo-scroll-story-side-video-width);
+
+      .pb-scroll-video__poster {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: var(--pobo-scroll-story-side-video-max-height);
+      }
+    }
+  }
+
+  &__steps {
+    width: calc(100% - var(--pobo-scroll-story-side-video-width));
+    padding: var(--pobo-scroll-story-side-steps-padding);
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-down(md) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 2;
+    }
+  }
+
+  &__step {
+    margin: var(--pobo-scroll-story-side-step-margin);
+
+    .pb-scroll-track--pinned & {
+      margin: 0;
+    }
+  }
+
+  &__number {
+    display: block;
+    margin: var(--pobo-scroll-story-side-number-margin);
+    font-size: var(--pobo-scroll-story-side-number-font-size);
+    font-weight: var(--pobo-scroll-story-side-number-font-weight);
+    letter-spacing: var(--pobo-scroll-story-side-number-letter-spacing);
+    color: var(--pobo-scroll-story-side-number-color);
+  }
+
+  &__text {
+    background: var(--pobo-scroll-story-side-box-bg);
+    text-align: var(--pobo-scroll-story-side-text-align);
+    padding: var(--pobo-scroll-story-side-box-padding);
+    margin: var(--pobo-scroll-story-side-box-margin);
+    border-radius: var(--pobo-scroll-story-side-box-border-radius);
+  }
+}

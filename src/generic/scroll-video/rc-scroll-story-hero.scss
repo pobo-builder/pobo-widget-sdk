@@ -1,0 +1,107 @@
+.rc-scroll-story-hero {
+  &__pin {
+    position: relative;
+  }
+
+  &__video {
+    position: relative;
+    padding: var(--pobo-scroll-story-hero-video-padding);
+    margin: var(--pobo-scroll-story-hero-video-margin);
+    border-radius: var(--pobo-scroll-story-hero-video-border-radius);
+    box-shadow: var(--pobo-scroll-story-hero-video-box-shadow);
+    border: var(--pobo-scroll-story-hero-video-border);
+
+    .pb-scroll-track--pinned & {
+      height: calc(100vh - var(--pobo-scroll-track-top, 0px));
+
+      &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: var(--pobo-scroll-story-hero-video-overlay-bg);
+      }
+
+      .pb-scroll-video__poster {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__steps {
+    padding: var(--pobo-scroll-story-hero-steps-padding);
+
+    .pb-scroll-track--pinned & {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+    }
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: var(--pobo-scroll-story-hero-step-margin);
+
+    .pb-scroll-track--pinned & {
+      margin: 0;
+    }
+
+    .pb-scroll-track--pinned &:not(:first-child) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: var(--pobo-scroll-story-hero-text-max-width);
+    background: var(--pobo-scroll-story-hero-box-bg);
+    text-align: var(--pobo-scroll-story-hero-text-align);
+    padding: var(--pobo-scroll-story-hero-box-padding);
+    margin: var(--pobo-scroll-story-hero-box-margin);
+    border-radius: var(--pobo-scroll-story-hero-box-border-radius);
+
+    .pb-scroll-track--pinned & {
+      color: var(--pobo-scroll-story-hero-text-color);
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--pobo-scroll-story-hero-button-padding);
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--pobo-btn-color);
+    background: var(--pobo-btn-bg);
+    box-shadow: var(--pobo-btn-box-shadow);
+    border: var(--pobo-btn-border);
+    cursor: pointer;
+    padding: var(--pobo-btn-padding);
+    margin: var(--pobo-btn-margin);
+    font-size: var(--pobo-btn-font-size);
+    line-height: var(--pobo-btn-line-height);
+    font-weight: var(--pobo-btn-font-weight);
+    border-radius: var(--pobo-btn-border-radius);
+    transition: var(--pobo-btn-transition);
+
+    &:hover {
+      background: var(--pobo-btn-hover-bg);
+      text-decoration: none;
+      color: var(--pobo-btn-hover-text-color);
+    }
+  }
+}
