@@ -1,0 +1,31 @@
+.rc-scroll-video-grid {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--pobo-scroll-video-grid-gap);
+
+  &__col {
+    width: calc(100% / 3 - var(--pobo-scroll-video-grid-gap) * 2 / 3);
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+
+  &__video {
+    position: relative;
+    padding: var(--pobo-scroll-video-grid-video-padding);
+    margin: var(--pobo-scroll-video-grid-video-margin);
+    border-radius: var(--pobo-scroll-video-grid-video-border-radius);
+    box-shadow: var(--pobo-scroll-video-grid-video-box-shadow);
+    border: var(--pobo-scroll-video-grid-video-border);
+  }
+
+  &__text {
+    background: var(--pobo-scroll-video-grid-box-bg);
+    text-align: var(--pobo-scroll-video-grid-text-align);
+    padding: var(--pobo-scroll-video-grid-box-padding);
+    margin: var(--pobo-scroll-video-grid-box-margin);
+    border-radius: var(--pobo-scroll-video-grid-box-border-radius);
+  }
+}

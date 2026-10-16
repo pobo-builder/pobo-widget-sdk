@@ -1,0 +1,40 @@
+.rc-scroll-video-portrait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__video {
+    width: var(--pobo-scroll-video-portrait-video-width);
+    max-width: var(--pobo-scroll-video-portrait-video-max-width);
+    position: relative;
+    padding: var(--pobo-scroll-video-portrait-video-padding);
+    margin: var(--pobo-scroll-video-portrait-video-margin);
+    border-radius: var(--pobo-scroll-video-portrait-video-border-radius);
+    box-shadow: var(--pobo-scroll-video-portrait-video-box-shadow);
+    border: var(--pobo-scroll-video-portrait-video-border);
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 1;
+    }
+  }
+
+  &__text {
+    width: calc(100% - var(--pobo-scroll-video-portrait-video-width));
+    background: var(--pobo-scroll-video-portrait-box-bg);
+    text-align: var(--pobo-scroll-video-portrait-text-align);
+    padding: var(--pobo-scroll-video-portrait-box-padding);
+    margin: var(--pobo-scroll-video-portrait-box-margin);
+    border-radius: var(--pobo-scroll-video-portrait-box-border-radius);
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: 2;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.rc-scroll-video-cta {
+  display: grid;
+  grid-template-columns: var(--pobo-scroll-video-cta-video-width) auto;
+  align-items: center;
+  background: var(--pobo-scroll-video-cta-bg);
+  box-shadow: var(--pobo-scroll-video-cta-box-shadow);
+  border: var(--pobo-scroll-video-cta-border);
+  border-radius: var(--pobo-scroll-video-cta-border-radius);
+  padding: var(--pobo-scroll-video-cta-padding);
+
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
+
+  &__video {
+    grid-row: 1 / 3;
+    position: relative;
+    padding: var(--pobo-scroll-video-cta-video-padding);
+    margin: var(--pobo-scroll-video-cta-video-margin);
+    border-radius: var(--pobo-scroll-video-cta-video-border-radius);
+    box-shadow: var(--pobo-scroll-video-cta-video-box-shadow);
+    border: var(--pobo-scroll-video-cta-video-border);
+
+    @include media-breakpoint-down(sm) {
+      grid-row: auto;
+    }
+  }
+
+  &__text {
+    align-self: end;
+    background: var(--pobo-scroll-video-cta-box-bg);
+    text-align: var(--pobo-scroll-video-cta-text-align);
+    padding: var(--pobo-scroll-video-cta-box-padding);
+    margin: var(--pobo-scroll-video-cta-box-margin);
+    border-radius: var(--pobo-scroll-video-cta-box-border-radius);
+    position: relative;
+    z-index: 1;
+  }
+
+  &__button {
+    align-self: start;
+    display: flex;
+    align-items: center;
+    padding: var(--pobo-scroll-video-cta-button-padding);
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--pobo-btn-color);
+    background: var(--pobo-btn-bg);
+    box-shadow: var(--pobo-btn-box-shadow);
+    border: var(--pobo-btn-border);
+    cursor: pointer;
+    padding: var(--pobo-btn-padding);
+    margin: var(--pobo-btn-margin);
+    font-size: var(--pobo-btn-font-size);
+    line-height: var(--pobo-btn-line-height);
+    font-weight: var(--pobo-btn-font-weight);
+    border-radius: var(--pobo-btn-border-radius);
+    transition: var(--pobo-btn-transition);
+
+    &:hover {
+      background: var(--pobo-btn-hover-bg);
+      text-decoration: none;
+      color: var(--pobo-btn-hover-text-color);
+    }
+  }
+}
