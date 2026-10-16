@@ -3,6 +3,10 @@
 
   &--pinned {
     position: relative;
+    width: var(--pobo-scroll-viewport-width, var(--pobo-scroll-track-bleed-width));
+    max-width: var(--pobo-scroll-viewport-width, var(--pobo-scroll-track-bleed-width));
+    margin-left: calc(50% - var(--pobo-scroll-viewport-width, var(--pobo-scroll-track-bleed-width)) / 2);
+    margin-right: calc(50% - var(--pobo-scroll-viewport-width, var(--pobo-scroll-track-bleed-width)) / 2);
     height: calc(100vh + var(--pobo-scroll-step-count, 3) * var(--pobo-scroll-track-step-length, 100vh));
 
     .pb-scroll-track__pin {

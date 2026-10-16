@@ -4,6 +4,21 @@
     align-items: center;
     flex-wrap: wrap;
     padding: var(--pobo-scroll-story-side-pin-padding);
+
+    .pb-scroll-track--pinned & {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      width: 100%;
+      max-width: var(--pobo-scroll-story-side-content-max-width);
+      margin: 0 auto;
+      padding: var(--pobo-scroll-story-side-content-padding);
+
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
   }
 
   &__video {
@@ -22,14 +37,28 @@
     }
 
     .pb-scroll-track--pinned & {
+      flex: 0 0 auto;
       width: auto;
-      max-width: var(--pobo-scroll-story-side-video-width);
+      max-width: 100%;
+      order: 1;
 
       .pb-scroll-video__poster {
         width: auto;
         max-width: 100%;
         height: auto;
         max-height: var(--pobo-scroll-story-side-video-max-height);
+      }
+
+      @include media-breakpoint-up(lg) {
+        flex: 0 0 var(--pobo-scroll-story-side-video-width);
+        width: var(--pobo-scroll-story-side-video-width);
+        max-width: var(--pobo-scroll-story-side-video-width);
+
+        .pb-scroll-video__poster {
+          width: 100%;
+          max-height: var(--pobo-scroll-story-side-pinned-video-max-height);
+          object-fit: cover;
+        }
       }
     }
   }
@@ -44,6 +73,22 @@
       flex: 0 0 100%;
       max-width: 100%;
       order: 2;
+    }
+
+    .pb-scroll-track--pinned & {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 100%;
+      padding: var(--pobo-scroll-story-side-pinned-steps-padding);
+      order: 2;
+
+      @include media-breakpoint-up(lg) {
+        flex: 0 0 calc(100% - var(--pobo-scroll-story-side-video-width));
+        width: calc(100% - var(--pobo-scroll-story-side-video-width));
+        max-width: calc(100% - var(--pobo-scroll-story-side-video-width));
+        padding: var(--pobo-scroll-story-side-steps-padding);
+        align-self: center;
+      }
     }
   }
 
