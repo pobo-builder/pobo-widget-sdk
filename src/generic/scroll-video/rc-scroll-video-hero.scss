@@ -26,6 +26,11 @@
   &__text {
     grid-area: 2 / 1;
     max-width: var(--pobo-scroll-video-hero-text-max-width);
+    --pobo-typo-h2-font-color: var(--pobo-scroll-video-hero-text-color);
+    --pobo-typo-h3-font-color: var(--pobo-scroll-video-hero-text-color);
+    --pobo-typo-h4-font-color: var(--pobo-scroll-video-hero-text-color);
+    --pobo-typo-p-font-color: var(--pobo-scroll-video-hero-text-color);
+    --pobo-typo-list-item-font-color: var(--pobo-scroll-video-hero-text-color);
     color: var(--pobo-scroll-video-hero-text-color);
     background: var(--pobo-scroll-video-hero-box-bg);
     text-align: var(--pobo-scroll-video-hero-text-align);

@@ -4043,11 +4043,15 @@
   --pobo-scroll-reveal-offset: 24px;
   --pobo-scroll-reveal-duration: 0.6s;
   --pobo-scroll-reveal-stagger: 80ms;
+  --pobo-scroll-track-bleed-width: 100vw;
 
   // Scroll story side
   --pobo-scroll-story-side-pin-padding: 24px;
+  --pobo-scroll-story-side-content-max-width: 1200px;
+  --pobo-scroll-story-side-content-padding: 40px;
   --pobo-scroll-story-side-video-width: 58%;
-  --pobo-scroll-story-side-video-max-height: calc(100vh - var(--pobo-scroll-track-top, 0px) - 48px);
+  --pobo-scroll-story-side-video-max-height: calc(100vh - var(--pobo-scroll-track-top, 0px) - var(--pobo-scroll-story-side-content-padding) * 2 - 200px);
+  --pobo-scroll-story-side-pinned-video-max-height: calc(100vh - var(--pobo-scroll-track-top, 0px) - var(--pobo-scroll-story-side-content-padding) * 2);
   --pobo-scroll-story-side-video-padding: 0;
   --pobo-scroll-story-side-video-margin: 0;
   --pobo-scroll-story-side-video-border-radius: 12px;
@@ -4055,6 +4059,7 @@
   --pobo-scroll-story-side-video-border: none;
 
   --pobo-scroll-story-side-steps-padding: 0 0 0 48px;
+  --pobo-scroll-story-side-pinned-steps-padding: 32px 0 0 0;
   --pobo-scroll-story-side-step-margin: 0 0 40px 0;
   --pobo-scroll-story-side-number-margin: 0 0 12px 0;
   --pobo-scroll-story-side-number-font-size: 14px;
@@ -4074,8 +4079,11 @@
   --pobo-scroll-story-overlay-video-border-radius: 0;
   --pobo-scroll-story-overlay-video-box-shadow: none;
   --pobo-scroll-story-overlay-video-border: none;
+  --pobo-scroll-story-overlay-video-max-height: calc(100vh - var(--pobo-scroll-track-top, 0px));
   --pobo-scroll-story-overlay-video-overlay-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.75) 100%);
 
+  --pobo-scroll-story-overlay-content-max-width: 1200px;
+  --pobo-scroll-story-overlay-content-padding: 40px;
   --pobo-scroll-story-overlay-steps-max-width: 560px;
   --pobo-scroll-story-overlay-steps-padding: 48px;
   --pobo-scroll-story-overlay-step-margin: 0 0 32px 0;
@@ -4092,8 +4100,11 @@
   --pobo-scroll-story-hero-video-border-radius: 0;
   --pobo-scroll-story-hero-video-box-shadow: none;
   --pobo-scroll-story-hero-video-border: none;
+  --pobo-scroll-story-hero-video-max-height: calc(100vh - var(--pobo-scroll-track-top, 0px));
   --pobo-scroll-story-hero-video-overlay-bg: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.65) 100%);
 
+  --pobo-scroll-story-hero-content-max-width: 1200px;
+  --pobo-scroll-story-hero-content-padding: 40px;
   --pobo-scroll-story-hero-steps-padding: 48px;
   --pobo-scroll-story-hero-step-margin: 0 0 24px 0;
   --pobo-scroll-story-hero-text-color: #ffffff;

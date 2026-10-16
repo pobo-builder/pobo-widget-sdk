@@ -27,6 +27,11 @@
   &__text {
     grid-area: 2 / 1;
     max-width: 560px;
+    --pobo-typo-h2-font-color: #ffffff;
+    --pobo-typo-h3-font-color: #ffffff;
+    --pobo-typo-h4-font-color: #ffffff;
+    --pobo-typo-p-font-color: #ffffff;
+    --pobo-typo-list-item-font-color: #ffffff;
     color: #ffffff;
     background: none;
     text-align: left;

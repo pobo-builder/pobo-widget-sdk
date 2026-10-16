@@ -3,6 +3,15 @@
 
   &__pin {
     position: relative;
+
+    .pb-scroll-track--pinned & {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      align-content: center;
+      align-items: center;
+      width: 100%;
+    }
   }
 
   &__video {
@@ -14,7 +23,9 @@
     border: none;
 
     .pb-scroll-track--pinned & {
-      height: calc(100vh - var(--pobo-scroll-track-top, 0px));
+      grid-area: 1 / 1;
+      width: 100%;
+      height: auto;
 
       &:after {
         position: absolute;
@@ -28,7 +39,9 @@
       }
 
       .pb-scroll-video__poster {
-        height: 100%;
+        width: 100%;
+        height: auto;
+        max-height: calc(100vh - var(--pobo-scroll-track-top, 0px));
         object-fit: cover;
       }
     }
@@ -44,10 +57,19 @@
     }
 
     .pb-scroll-track--pinned & {
-      position: absolute;
-      left: 0;
-      bottom: 0;
+      grid-area: 1 / 1;
+      align-self: stretch;
+      justify-self: center;
+      align-items: end;
+      width: 100%;
+      max-width: 1200px;
+      padding: 40px;
+      position: relative;
       z-index: 3;
+
+      @include media-breakpoint-down(sm) {
+        padding: 20px;
+      }
     }
   }
 
@@ -55,7 +77,12 @@
     margin: 0 0 32px 0;
 
     .pb-scroll-track--pinned & {
+      max-width: 560px;
       margin: 0;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -67,6 +94,11 @@
     border-radius: 0;
 
     .pb-scroll-track--pinned & {
+      --pobo-typo-h2-font-color: #ffffff;
+      --pobo-typo-h3-font-color: #ffffff;
+      --pobo-typo-h4-font-color: #ffffff;
+      --pobo-typo-p-font-color: #ffffff;
+      --pobo-typo-list-item-font-color: #ffffff;
       color: #ffffff;
     }
   }
