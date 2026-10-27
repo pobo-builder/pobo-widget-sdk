@@ -31,6 +31,14 @@
   }
 
   &__card {
+    --pobo-typo-h2-font-size: var(--pobo-photo-card-right-label-font-size);
+    --pobo-typo-h2-line-height: var(--pobo-photo-card-right-label-line-height);
+    --pobo-typo-h2-font-weight: var(--pobo-photo-card-right-label-font-weight);
+    --pobo-typo-h2-font-color: var(--pobo-photo-card-right-label-color);
+    --pobo-typo-h2-margin: 0;
+    --pobo-typo-h2-padding: 0;
+    --pobo-typo-h2-before-content: none;
+
     position: relative;
     z-index: 1;
     width: var(--pobo-photo-card-right-card-width);
@@ -55,28 +63,12 @@
 
   &__label {
     display: block;
-    margin: 0;
-    padding: 0;
-    line-height: var(--pobo-photo-card-right-label-line-height);
-    color: var(--pobo-photo-card-right-label-color);
-    font-size: var(--pobo-photo-card-right-label-font-size);
-    font-weight: var(--pobo-photo-card-right-label-font-weight);
     letter-spacing: var(--pobo-photo-card-right-label-letter-spacing);
     text-transform: var(--pobo-photo-card-right-label-text-transform);
   }
 
   &__heading {
     display: block;
-    margin: 0;
-    padding: 0;
-    color: var(--pobo-photo-card-right-heading-color);
-    font-size: var(--pobo-photo-card-right-heading-font-size);
-    line-height: var(--pobo-photo-card-right-heading-line-height);
-    font-weight: var(--pobo-photo-card-right-heading-font-weight);
-
-    @include media-breakpoint-down(sm) {
-      font-size: var(--pobo-photo-card-right-heading-font-size-mobile);
-    }
   }
 
   &__text {
