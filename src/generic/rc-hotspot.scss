@@ -83,13 +83,18 @@
   }
 
   &__bubble {
+    --pobo-hotspot-arrow-position: clamp(
+        calc(var(--pobo-hotspot-bubble-border-radius) + var(--pobo-hotspot-arrow-size)),
+        var(--pobo-hotspot-x, 50%),
+        calc(100% - var(--pobo-hotspot-bubble-border-radius) - var(--pobo-hotspot-arrow-size))
+    );
     position: absolute;
     left: var(--pobo-hotspot-x, 50%);
     top: var(--pobo-hotspot-y, 50%);
     width: max-content;
     max-width: min(var(--pobo-hotspot-bubble-max-width), 100%);
     transform: translate(
-        calc(var(--pobo-hotspot-x, 50%) * -1),
+        calc(var(--pobo-hotspot-arrow-position) * -1),
         calc(-100% - var(--pobo-hotspot-bubble-offset))
     );
     padding: var(--pobo-hotspot-bubble-padding);
@@ -103,7 +108,7 @@
     &::after {
       content: "";
       position: absolute;
-      left: var(--pobo-hotspot-x, 50%);
+      left: var(--pobo-hotspot-arrow-position);
       top: 100%;
       transform: translateX(-50%);
       border: var(--pobo-hotspot-arrow-size) solid transparent;
@@ -151,7 +156,7 @@
 
   &__point--below &__bubble {
     transform: translate(
-        calc(var(--pobo-hotspot-x, 50%) * -1),
+        calc(var(--pobo-hotspot-arrow-position) * -1),
         var(--pobo-hotspot-bubble-offset)
     );
 
