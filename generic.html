@@ -130,39 +130,65 @@
 </head>
 <body>
 
+<!-- Before / after -->
+<div data-pobo-widget-id='0' class='widget-container widget-typography widget-before-after'>
+  <div class="widget-projector">
+    <div class="rc-before-after">
+      <div class="rc-before-after__stage">
+        <img class="rc-before-after__before" src="https://image.pobo.space/widget/before-after-sample-real-before.jpg" alt="Před" width="1024" height="576">
+        <img class="rc-before-after__after" src="https://image.pobo.space/widget/before-after-sample-real-after.jpg" alt="Po" width="1024" height="576">
+        <span class="rc-before-after__label rc-before-after__label--before">Před</span>
+        <span class="rc-before-after__label rc-before-after__label--after">Po 28 dnech</span>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.rc-before-after__stage:not([data-pobo-init])').forEach(function (stage) {
+    stage.setAttribute('data-pobo-init', 'true');
+    stage.classList.add('rc-before-after--ready');
+    var input = document.createElement('input');
+    input.type = 'range'; input.min = '0'; input.max = '100'; input.value = '50';
+    input.className = 'rc-before-after__range';
+    input.setAttribute('aria-label', 'Před / Po');
+    input.addEventListener('input', function () { stage.style.setProperty('--pobo-before-after-position', input.value + '%'); });
+    stage.appendChild(input);
+  });
+</script>
+
 <!-- Hotspot -->
 <div data-pobo-widget-id='0' class='widget-container widget-typography widget-hotspot'>
   <div class="widget-projector">
     <div class="rc-hotspot">
       <div class="rc-hotspot__stage">
-        <img src="https://image.pobo.space/images/mz4c8w7p1f3k/cfrylxfN94PrydXKPXik-original.jpeg"
-             class="rc-hotspot__img" alt="Zlaté sluneční brýle Polaroid 2074" width="1024" height="682">
-        <div class="rc-hotspot__point" style="--pobo-hotspot-x: 26.4%; --pobo-hotspot-y: 51.3%">
+        <img src="https://image.pobo.space/widget/hotspot.jpg"
+             class="rc-hotspot__img" alt="Postel s dekorem dubu" width="1351" height="732">
+        <div class="rc-hotspot__point rc-hotspot__point--below" style="--pobo-hotspot-x: 31%; --pobo-hotspot-y: 13%">
           <div class="rc-hotspot__marker"></div>
           <div class="rc-hotspot__bubble">
-            <span class="rc-hotspot__title">Antireflexní vrstva</span>
-            <span class="rc-hotspot__text">Žádné odlesky ani při ostrém slunci.</span>
+            <span class="rc-hotspot__title">Čelo s průhledem</span>
+            <span class="rc-hotspot__text">Vysoké čelo, o které se pohodlně opřete.</span>
           </div>
         </div>
-        <div class="rc-hotspot__point rc-hotspot__point--below" style="--pobo-hotspot-x: 43.5%; --pobo-hotspot-y: 52.8%">
+        <div class="rc-hotspot__point rc-hotspot__point--below" style="--pobo-hotspot-x: 7%; --pobo-hotspot-y: 37%">
           <div class="rc-hotspot__marker"></div>
           <div class="rc-hotspot__bubble">
-            <span class="rc-hotspot__title">Silikonové nosníky</span>
-            <span class="rc-hotspot__text">Netlačí ani po celém dni.</span>
+            <span class="rc-hotspot__title">Odkládací deska</span>
+            <span class="rc-hotspot__text">Telefon i knížka po ruce bez nočního stolku.</span>
           </div>
         </div>
-        <div class="rc-hotspot__point rc-hotspot__point--below" style="--pobo-hotspot-x: 14.6%; --pobo-hotspot-y: 72.6%">
+        <div class="rc-hotspot__point" style="--pobo-hotspot-x: 80%; --pobo-hotspot-y: 52%">
           <div class="rc-hotspot__marker"></div>
           <div class="rc-hotspot__bubble">
-            <span class="rc-hotspot__title">Kovové obroučky</span>
-            <span class="rc-hotspot__text">Lehký a pevný rám z nerezové oceli.</span>
+            <span class="rc-hotspot__title">Dekor dub</span>
+            <span class="rc-hotspot__text">Odolná deska s věrnou strukturou dřeva.</span>
           </div>
         </div>
-        <div class="rc-hotspot__point" style="--pobo-hotspot-x: 95.2%; --pobo-hotspot-y: 44%">
+        <div class="rc-hotspot__point" style="--pobo-hotspot-x: 62%; --pobo-hotspot-y: 82%">
           <div class="rc-hotspot__marker"></div>
           <div class="rc-hotspot__bubble">
-            <span class="rc-hotspot__title">Flexibilní panty</span>
-            <span class="rc-hotspot__text">Brýle sedí pevně a nepovolí.</span>
+            <span class="rc-hotspot__title">Efekt levitace</span>
+            <span class="rc-hotspot__text">Ustoupená podnož, postel jako by se vznášela.</span>
           </div>
         </div>
       </div>

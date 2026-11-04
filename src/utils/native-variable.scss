@@ -1293,6 +1293,28 @@
   --pobo-bento-left-box-text-line-height: 1.5;
   --pobo-bento-left-box-text-opacity: .85;
 
+  --pobo-before-after-max-width: 100%;
+  --pobo-before-after-margin: 0 auto;
+  --pobo-before-after-border-radius: 12px;
+  --pobo-before-after-line-width: 3px;
+  --pobo-before-after-line-color: #ffffff;
+  --pobo-before-after-line-shadow: 0 0 8px rgba(0, 0, 0, .35);
+  --pobo-before-after-handle-size: 44px;
+  --pobo-before-after-handle-bg: #ffffff;
+  --pobo-before-after-handle-color: #1b1f24;
+  --pobo-before-after-handle-font-size: 18px;
+  --pobo-before-after-handle-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+  --pobo-before-after-handle-focus-outline: 3px solid #1f6feb;
+  --pobo-before-after-label-offset: 12px;
+  --pobo-before-after-label-padding: 4px 12px;
+  --pobo-before-after-label-border-radius: 999px;
+  --pobo-before-after-label-bg: rgba(0, 0, 0, .55);
+  --pobo-before-after-label-color: #ffffff;
+  --pobo-before-after-label-font-family: var(--pobo-font-family);
+  --pobo-before-after-label-font-size: 13px;
+  --pobo-before-after-label-font-weight: 600;
+  --pobo-before-after-label-line-height: 20px;
+
   --pobo-hotspot-max-width: 100%;
   --pobo-hotspot-margin: 0 auto;
   --pobo-hotspot-padding: 0;
