@@ -122,12 +122,111 @@
     }
 
     body {
+      max-width: 1200px;
       padding: 0;
-      margin: 0;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
+
+<!-- Before / after -->
+<div data-pobo-widget-id='0' class='widget-container widget-typography widget-before-after'>
+  <div class="widget-projector">
+    <div class="rc-before-after">
+      <div class="rc-before-after__stage">
+        <img class="rc-before-after__before" src="https://image.pobo.space/widget/before-after-sample-real-before.jpg" alt="Před" width="1024" height="576">
+        <img class="rc-before-after__after" src="https://image.pobo.space/widget/before-after-sample-real-after.jpg" alt="Po" width="1024" height="576">
+        <span class="rc-before-after__label rc-before-after__label--before">Před</span>
+        <span class="rc-before-after__label rc-before-after__label--after">Po 28 dnech</span>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.rc-before-after__stage:not([data-pobo-init])').forEach(function (stage) {
+    stage.setAttribute('data-pobo-init', 'true');
+    stage.classList.add('rc-before-after--ready');
+    var input = document.createElement('input');
+    input.type = 'range'; input.min = '0'; input.max = '100'; input.value = '50';
+    input.className = 'rc-before-after__range';
+    input.setAttribute('aria-label', 'Před / Po');
+    input.addEventListener('input', function () { stage.style.setProperty('--pobo-before-after-position', input.value + '%'); });
+    stage.appendChild(input);
+  });
+</script>
+
+<!-- Hotspot -->
+<div data-pobo-widget-id='0' class='widget-container widget-typography widget-hotspot'>
+  <div class="widget-projector">
+    <div class="rc-hotspot">
+      <div class="rc-hotspot__stage">
+        <img src="https://image.pobo.space/widget/hotspot.jpg"
+             class="rc-hotspot__img" alt="Postel s dekorem dubu" width="1351" height="732">
+        <div class="rc-hotspot__point rc-hotspot__point--below" style="--pobo-hotspot-x: 31%; --pobo-hotspot-y: 13%">
+          <div class="rc-hotspot__marker"></div>
+          <div class="rc-hotspot__bubble">
+            <span class="rc-hotspot__title">Čelo s průhledem</span>
+            <span class="rc-hotspot__text">Vysoké čelo, o které se pohodlně opřete.</span>
+          </div>
+        </div>
+        <div class="rc-hotspot__point rc-hotspot__point--below" style="--pobo-hotspot-x: 7%; --pobo-hotspot-y: 37%">
+          <div class="rc-hotspot__marker"></div>
+          <div class="rc-hotspot__bubble">
+            <span class="rc-hotspot__title">Odkládací deska</span>
+            <span class="rc-hotspot__text">Telefon i knížka po ruce bez nočního stolku.</span>
+          </div>
+        </div>
+        <div class="rc-hotspot__point" style="--pobo-hotspot-x: 80%; --pobo-hotspot-y: 52%">
+          <div class="rc-hotspot__marker"></div>
+          <div class="rc-hotspot__bubble">
+            <span class="rc-hotspot__title">Dekor dub</span>
+            <span class="rc-hotspot__text">Odolná deska s věrnou strukturou dřeva.</span>
+          </div>
+        </div>
+        <div class="rc-hotspot__point" style="--pobo-hotspot-x: 62%; --pobo-hotspot-y: 82%">
+          <div class="rc-hotspot__marker"></div>
+          <div class="rc-hotspot__bubble">
+            <span class="rc-hotspot__title">Efekt levitace</span>
+            <span class="rc-hotspot__text">Ustoupená podnož, postel jako by se vznášela.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div data-pobo-widget-id='0' class='widget-container widget-typography widget-hotspot'>
+  <div class="widget-projector">
+    <div class="rc-hotspot">
+      <div class="rc-hotspot__stage">
+        <img src="https://image.pobo.space/images/nz6whvh7qleu/3hccM7afnidFOMro2LiY-original.jpeg"
+             class="rc-hotspot__img" alt="Batoh Take2Cabin Casual Backpack">
+        <div class="rc-hotspot__point rc-hotspot__point--below" style="--pobo-hotspot-x: 80%; --pobo-hotspot-y: 16%">
+          <div class="rc-hotspot__marker"></div>
+          <div class="rc-hotspot__bubble">
+            <span class="rc-hotspot__title">Polstrované popruhy</span>
+            <span class="rc-hotspot__text">Váhu rozloží po celých ramenou.</span>
+          </div>
+        </div>
+        <div class="rc-hotspot__point" style="--pobo-hotspot-x: 33%; --pobo-hotspot-y: 53%">
+          <div class="rc-hotspot__marker"></div>
+          <div class="rc-hotspot__bubble">
+            <span class="rc-hotspot__title">Přední kapsa</span>
+            <span class="rc-hotspot__text">Na doklady a nabíječku po ruce.</span>
+          </div>
+        </div>
+        <div class="rc-hotspot__point rc-hotspot__point--below" style="--pobo-hotspot-x: 77%; --pobo-hotspot-y: 41%">
+          <div class="rc-hotspot__marker"></div>
+          <div class="rc-hotspot__bubble">
+            <span class="rc-hotspot__title">Kompresní popruhy</span>
+            <span class="rc-hotspot__text">Stáhnou batoh na rozměr kabinového zavazadla.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="pbc-oh-my-bean-info-color pbc-oh-my-bean-info-color--funky">
   <div class="pbc-oh-my-bean-info-color__wrap">
@@ -2729,6 +2828,11 @@
                     <div class="rc-bento-left__box-bottom">
                       <h3 class="rc-bento-left__box-stat">5 let</h3>
                       <span class="rc-bento-left__box-text">Na membránu i zipy.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Scroll video -->
             <div data-pobo-widget-id='160' class='widget-container widget-scroll-video-full'>
               <div class="widget-projector">
