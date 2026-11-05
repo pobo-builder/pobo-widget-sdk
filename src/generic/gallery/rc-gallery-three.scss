@@ -7,14 +7,14 @@
   background: var(--pobo-gallery-three-bg);
   border: var(--pobo-gallery-three-border);
   border-radius: var(--pobo-gallery-three-border-radius);
-  box-shadow: var(--pobo-gallery-three-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-gallery-three-box-shadow));
 
   &__image {
     position: relative;
     width: calc(100% / 3 - var(--pobo-gallery-three-gap) * 2 / 3);
     overflow: hidden;
     border-radius: var(--pobo-gallery-three-image-border-radius);
-    box-shadow: var(--pobo-gallery-three-image-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-gallery-three-image-box-shadow));
     border: var(--pobo-gallery-three-image-border);
     background: var(--pobo-gallery-three-image-bg);
 

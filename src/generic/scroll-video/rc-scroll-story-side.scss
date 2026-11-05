@@ -26,7 +26,7 @@
     padding: var(--pobo-scroll-story-side-video-padding);
     margin: var(--pobo-scroll-story-side-video-margin);
     border-radius: var(--pobo-scroll-story-side-video-border-radius);
-    box-shadow: var(--pobo-scroll-story-side-video-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-scroll-story-side-video-box-shadow));
     border: var(--pobo-scroll-story-side-video-border);
 
     .pb-scroll-track--pinned &,

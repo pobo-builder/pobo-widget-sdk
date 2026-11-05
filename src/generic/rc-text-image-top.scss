@@ -1,7 +1,7 @@
 .rc-text-image-top {
   position: relative;
   border: var(--pobo-text-in-image-border);
-  box-shadow: var(--pobo-text-in-image-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-text-in-image-box-shadow));
   background: var(--pobo-text-in-image-bg);
 
   &__info {
@@ -16,12 +16,12 @@
     margin: var(--pobo-text-in-image-single-top-content-margin);
     background: var(--pobo-text-in-image-single-top-content-bg);
     backdrop-filter: var(--pobo-text-in-image-top-single-content-backdrop);
-    box-shadow: var(--pobo-text-in-image-single-content-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-text-in-image-single-content-box-shadow));
     max-width: var(--pobo-text-in-image-single-content-max-width);
   }
 
   &__header {
-    font-family: var(--pobo-text-in-image-single-top-header-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-text-in-image-single-top-header-font-family));
     color: var(--pobo-text-in-image-single-top-header-font-color);
     line-height: var(--pobo-text-in-image-single-top-header-line-height);
     font-weight: var(--pobo-text-in-image-single-top-header-font-weight);
@@ -32,7 +32,7 @@
   }
 
   &__text {
-    font-family: var(--pobo-text-in-image-single-top-text-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-text-in-image-single-top-text-font-family));
     font-size: var(--pobo-text-in-image-single-top-text-font-size);
     line-height: var(--pobo-text-in-image-single-top-text-line-height);
     font-weight: var(--pobo-text-in-image-single-top-text-font-weight);

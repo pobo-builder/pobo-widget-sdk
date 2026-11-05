@@ -15,9 +15,9 @@
     background: var(--pobo-simple-content-box-item-bg);
     border: var(--pobo-simple-content-box-item-border);
     border-radius: var(--pobo-simple-content-box-item-border-radius);
-    box-shadow: var(--pobo-simple-content-box-item-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-simple-content-box-item-box-shadow));
     color: var(--pobo-simple-content-box-content-color);
-    font-family: var(--pobo-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-font-family));
     font-size: var(--pobo-simple-content-box-content-font-size);
     line-height: var(--pobo-simple-content-box-content-line-height);
     font-weight: var(--pobo-simple-content-box-content-font-weight);

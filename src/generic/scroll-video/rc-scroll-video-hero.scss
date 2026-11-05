@@ -8,7 +8,7 @@
     padding: var(--pobo-scroll-video-hero-video-padding);
     margin: var(--pobo-scroll-video-hero-video-margin);
     border-radius: var(--pobo-scroll-video-hero-video-border-radius);
-    box-shadow: var(--pobo-scroll-video-hero-video-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-scroll-video-hero-video-box-shadow));
     border: var(--pobo-scroll-video-hero-video-border);
 
     &:after {
@@ -55,7 +55,7 @@
     text-decoration: none;
     color: var(--pobo-btn-color);
     background: var(--pobo-btn-bg);
-    box-shadow: var(--pobo-btn-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-btn-box-shadow));
     border: var(--pobo-btn-border);
     cursor: pointer;
     padding: var(--pobo-btn-padding);

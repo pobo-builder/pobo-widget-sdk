@@ -1,7 +1,7 @@
 .rc-author-left {
   width: 100%;
   background: var(--pobo-author-left-bg);
-  box-shadow: var(--pobo-author-left-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-author-left-box-shadow));
   border-radius: var(--pobo-author-left-border-radius);
   border: var(--pobo-author-left-border);
   margin: var(--pobo-author-left-margin);
@@ -25,7 +25,7 @@
     height: var(--pobo-author-left-img-wrap-size);
     border-radius: var(--pobo-author-left-img-wrap-border-radius);
     border: var(--pobo-author-left-img-wrap-border);
-    box-shadow: var(--pobo-author-left-img-wrap-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-author-left-img-wrap-box-shadow));
     overflow: hidden;
 
     @include media-breakpoint-down(sm) {

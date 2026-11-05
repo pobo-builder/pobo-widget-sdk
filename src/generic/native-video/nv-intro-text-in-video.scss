@@ -60,7 +60,7 @@
     font-size: var(--pobo-nv-intro-text-in-video-title-font-size);
     font-weight: var(--pobo-nv-intro-text-in-video-title-font-weight);
     line-height: var(--pobo-nv-intro-text-in-video-title-line-height);
-    font-family: var(--pobo-nv-intro-text-in-video-title-font-family), serif;
+    font-family: var(--pobo-global-font-family, var(--pobo-nv-intro-text-in-video-title-font-family), serif);
     text-align: var(--pobo-nv-intro-text-in-video-title-text-align);
     color: var(--pobo-nv-intro-text-in-video-title-color);
     margin: var(--pobo-nv-intro-text-in-video-title-margin);
@@ -72,7 +72,7 @@
     font-size: var(--pobo-nv-intro-text-in-video-subtitle-font-size);
     font-weight: var(--pobo-nv-intro-text-in-video-subtitle-font-weight);
     line-height: var(--pobo-nv-intro-text-in-video-subtitle-line-height);
-    font-family: var(--pobo-nv-intro-text-in-video-subtitle-font-family), serif;
+    font-family: var(--pobo-global-font-family, var(--pobo-nv-intro-text-in-video-subtitle-font-family), serif);
     text-align: var(--pobo-nv-intro-text-in-video-subtitle-text-align);
     color: var(--pobo-nv-intro-text-in-video-subtitle-color);
     margin: var(--pobo-nv-intro-text-in-video-subtitle-margin);

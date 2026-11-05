@@ -1,7 +1,7 @@
 .rc-image-one {
   width: 100%;
   border: var(--pobo-text-in-image-border);
-  box-shadow: var(--pobo-text-in-image-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-text-in-image-box-shadow));
   background: var(--pobo-text-in-image-bg);
 
   &__single {

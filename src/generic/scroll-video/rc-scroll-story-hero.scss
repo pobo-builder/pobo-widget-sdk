@@ -9,7 +9,7 @@
     padding: var(--pobo-scroll-story-hero-video-padding);
     margin: var(--pobo-scroll-story-hero-video-margin);
     border-radius: var(--pobo-scroll-story-hero-video-border-radius);
-    box-shadow: var(--pobo-scroll-story-hero-video-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-scroll-story-hero-video-box-shadow));
     border: var(--pobo-scroll-story-hero-video-border);
 
     .pb-scroll-track--pinned &,
@@ -119,7 +119,7 @@
     text-decoration: none;
     color: var(--pobo-btn-color);
     background: var(--pobo-btn-bg);
-    box-shadow: var(--pobo-btn-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-btn-box-shadow));
     border: var(--pobo-btn-border);
     cursor: pointer;
     padding: var(--pobo-btn-padding);

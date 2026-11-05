@@ -10,7 +10,7 @@
   box-sizing: border-box;
   gap: var(--pobo-product-grid-gap);
   margin: var(--pobo-product-grid-margin);
-  font-family: var(--pobo-font-family);
+  font-family: var(--pobo-global-font-family, var(--pobo-font-family));
 
   .pb-product-item {
     flex: 1 1 var(--pobo-product-grid-item-basis);

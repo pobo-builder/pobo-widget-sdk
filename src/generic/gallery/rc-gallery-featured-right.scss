@@ -7,7 +7,7 @@
   background: var(--pobo-gallery-featured-right-bg);
   border: var(--pobo-gallery-featured-right-border);
   border-radius: var(--pobo-gallery-featured-right-border-radius);
-  box-shadow: var(--pobo-gallery-featured-right-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-gallery-featured-right-box-shadow));
 
   &__left {
     width: calc(50% - var(--pobo-gallery-featured-right-gap) / 2);
@@ -25,7 +25,7 @@
     overflow: hidden;
     position: relative;
     border-radius: var(--pobo-gallery-featured-right-image-border-radius);
-    box-shadow: var(--pobo-gallery-featured-right-image-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-gallery-featured-right-image-box-shadow));
     border: var(--pobo-gallery-featured-right-image-border);
     background: var(--pobo-gallery-featured-right-image-bg);
   }
@@ -43,7 +43,7 @@
     overflow: hidden;
     position: relative;
     border-radius: var(--pobo-gallery-featured-right-right-border-radius);
-    box-shadow: var(--pobo-gallery-featured-right-right-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-gallery-featured-right-right-box-shadow));
     border: var(--pobo-gallery-featured-right-right-border);
     background: var(--pobo-gallery-featured-right-right-bg);
 
