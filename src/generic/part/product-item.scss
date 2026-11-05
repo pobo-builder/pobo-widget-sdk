@@ -4,12 +4,12 @@
   flex-direction: column;
   box-sizing: border-box;
   overflow: hidden;
-  font-family: var(--pobo-font-family);
+  font-family: var(--pobo-global-font-family, var(--pobo-font-family));
   padding: var(--pobo-product-item-padding);
   background: var(--pobo-product-item-bg);
   border: var(--pobo-product-item-border);
   border-radius: var(--pobo-product-item-border-radius);
-  box-shadow: var(--pobo-product-item-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-product-item-box-shadow));
 
   .pb-product-link {
     text-decoration: none;
@@ -49,7 +49,7 @@
 
   .pb-product-name {
     display: block;
-    font-family: var(--pobo-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-font-family));
     font-size: var(--pobo-product-item-name-font-size);
     line-height: var(--pobo-product-item-name-line-height);
     font-weight: var(--pobo-product-item-name-font-weight);
@@ -67,7 +67,7 @@
 
   .pb-product-price {
     display: inline-block;
-    font-family: var(--pobo-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-font-family));
     font-size: var(--pobo-product-item-price-font-size);
     line-height: var(--pobo-product-item-price-line-height);
     font-weight: var(--pobo-product-item-price-font-weight);
@@ -76,7 +76,7 @@
 
   .pb-product-price-before {
     display: inline-block;
-    font-family: var(--pobo-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-font-family));
     font-size: var(--pobo-product-item-price-before-font-size);
     line-height: var(--pobo-product-item-price-line-height);
     font-weight: var(--pobo-product-item-price-before-font-weight);
@@ -90,7 +90,7 @@
 
   .pb-product-availability {
     display: inline-block;
-    font-family: var(--pobo-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-font-family));
     font-size: var(--pobo-product-item-availability-font-size);
     line-height: var(--pobo-product-item-availability-line-height);
     font-weight: var(--pobo-product-item-availability-font-weight);
@@ -114,10 +114,10 @@
     color: var(--pobo-product-item-cart-color);
     background: var(--pobo-product-item-cart-bg);
     border: var(--pobo-product-item-cart-border);
-    box-shadow: var(--pobo-product-item-cart-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-product-item-cart-box-shadow));
     padding: var(--pobo-product-item-cart-padding);
     margin: var(--pobo-product-item-cart-margin);
-    font-family: var(--pobo-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-font-family));
     font-size: var(--pobo-product-item-cart-font-size);
     line-height: var(--pobo-product-item-cart-line-height);
     font-weight: var(--pobo-product-item-cart-font-weight);

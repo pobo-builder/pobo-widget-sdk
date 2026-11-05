@@ -5,7 +5,7 @@
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   background: var(--pobo-reviews-two-bg);
-  box-shadow: var(--pobo-reviews-two-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-reviews-two-box-shadow));
   border-radius: var(--pobo-reviews-two-border-radius);
   border: var(--pobo-reviews-two-border-color);
   gap: var(--pobo-reviews-two-gap);
@@ -15,7 +15,7 @@
   }
 
   &__box {
-    box-shadow: var(--pobo-reviews-two-inner-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-reviews-two-inner-box-shadow));
     border-radius: var(--pobo-reviews-two-inner-border-radius);
     background: var(--pobo-reviews-two-inner-bg);
     border: var(--pobo-reviews-two-inner-border-color);
@@ -25,7 +25,7 @@
   }
 
   &__client-text {
-    font-family: var(--pobo-review-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-review-font-family));
     display: block;
     font-size: var(--pobo-reviews-two-client-text-font-size);
     font-weight: var(--pobo-reviews-two-client-text-font-weight);

@@ -1,7 +1,7 @@
 .pb-review-one {
   width: 100%;
   background: var(--pobo-review-one-bg);
-  box-shadow: var(--pobo-review-one-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-review-one-box-shadow));
   border: var(--pobo-review-one-border-color);
   display: flex;
   
@@ -51,7 +51,7 @@
   }
 
   &__text {
-    font-family: var(--pobo-review-one-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-review-one-font-family));
     font-size: var(--pobo-review-one-text-font-size);
     line-height: var(--pobo-review-one-text-line-height);
     font-style: italic;

@@ -29,7 +29,7 @@
   box-sizing: border-box;
   gap: var(--pobo-product-showcase-gap);
   margin: var(--pobo-product-showcase-margin);
-  font-family: var(--pobo-font-family);
+  font-family: var(--pobo-global-font-family, var(--pobo-font-family));
 
   @include media-breakpoint-down(md) {
     --pobo-product-item-img-height: 280px;

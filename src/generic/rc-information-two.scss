@@ -1,7 +1,7 @@
 .rc-information-two {
   &__wrap {
     display: flex;
-    box-shadow: var(--pobo-information-two-wrap-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-information-two-wrap-box-shadow));
     border-radius: var(--pobo-information-two-wrap-border-radius);
     overflow: hidden;
   }
