@@ -13,7 +13,7 @@
     height: var(--pobo-parameter-big-right-icon-size);
     border: var(--pobo-parameter-big-right-icon-border);
     border-radius: var(--pobo-parameter-big-right-icon-border-radius);
-    box-shadow: var(--pobo-parameter-big-right-icon-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-parameter-big-right-icon-box-shadow));
     background: var(--pobo-parameter-big-right-icon-bg);
   }
 

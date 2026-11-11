@@ -43,7 +43,7 @@
     padding: var(--pobo-evaluation-two-single-padding);
     margin: var(--pobo-evaluation-two-single-margin);
     border-radius: var(--pobo-evaluation-two-single-border-radius);
-    box-shadow: var(--pobo-evaluation-two-single-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-evaluation-two-single-box-shadow));
     background: var(--pobo-evaluation-two-single-bg);
     border: var(--pobo-evaluation-two-single-border);
 
@@ -68,7 +68,7 @@
     font-size: var(--pobo-evaluation-two-text-in-font-size);
     line-height: var(--pobo-evaluation-two-text-in-line-height);
     font-weight: var(--pobo-evaluation-two-text-in-font-weight);
-    font-family: var(--pobo-review-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-review-font-family));
   }
 
   &__header {

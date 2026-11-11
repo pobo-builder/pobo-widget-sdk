@@ -17,7 +17,7 @@
     padding: var(--pobo-scroll-video-pair-video-padding);
     margin: var(--pobo-scroll-video-pair-video-margin);
     border-radius: var(--pobo-scroll-video-pair-video-border-radius);
-    box-shadow: var(--pobo-scroll-video-pair-video-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-scroll-video-pair-video-box-shadow));
     border: var(--pobo-scroll-video-pair-video-border);
   }
 

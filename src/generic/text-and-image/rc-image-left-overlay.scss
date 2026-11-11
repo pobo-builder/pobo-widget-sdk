@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   background: var(--pobo-image-overlay-bg);
-  font-family: var(--pobo-image-overlay-font-family);
+  font-family: var(--pobo-global-font-family, var(--pobo-image-overlay-font-family));
 
   @include media-breakpoint-down(md) {
     flex-direction: column;
@@ -59,7 +59,7 @@
     text-decoration: none;
     color: var(--pobo-btn-color);
     background: var(--pobo-btn-bg);
-    box-shadow: var(--pobo-btn-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-btn-box-shadow));
     border: var(--pobo-btn-border);
     cursor: pointer;
     padding: var(--pobo-btn-padding);

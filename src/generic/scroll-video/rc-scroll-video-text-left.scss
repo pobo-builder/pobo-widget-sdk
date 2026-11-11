@@ -9,7 +9,7 @@
     padding: var(--pobo-scroll-video-text-left-video-padding);
     margin: var(--pobo-scroll-video-text-left-video-margin);
     border-radius: var(--pobo-scroll-video-text-left-video-border-radius);
-    box-shadow: var(--pobo-scroll-video-text-left-video-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-scroll-video-text-left-video-box-shadow));
     border: var(--pobo-scroll-video-text-left-video-border);
 
     @include media-breakpoint-down(sm) {

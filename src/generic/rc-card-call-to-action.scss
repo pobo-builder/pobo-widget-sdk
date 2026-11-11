@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background: var(--pobo-card-call-to-action-bg);
-  box-shadow: var(--pobo-card-call-to-action-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-card-call-to-action-shadow));
   border-radius: var(--pobo-card-call-to-action-radius);
   background: var(--pobo-card-call-to-action-bg);
   border: var(--pobo-card-call-to-action-border-color);
@@ -66,7 +66,7 @@
     text-decoration: none;
     color: var(--pobo-btn-color);
     background: var(--pobo-btn-bg);
-    box-shadow: var(--pobo-btn-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-btn-box-shadow));
     border: var(--pobo-btn-border);
     cursor: pointer;
     padding: var(--pobo-btn-padding);
@@ -92,7 +92,7 @@
   &__single {
     background: var(--pobo-card-call-to-action-single-bg);
     border-radius: var(--pobo-card-call-to-action-single-border-radius);
-    box-shadow: var(--pobo-card-call-to-action-single-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-card-call-to-action-single-shadow));
     padding: var(--pobo-card-call-to-action-single-padding);
     margin: var(--pobo-card-call-to-action-single-margin);
   }

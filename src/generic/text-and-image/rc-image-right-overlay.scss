@@ -50,7 +50,7 @@
     text-decoration: none;
     color: var(--pobo-btn-color);
     background: var(--pobo-btn-bg);
-    box-shadow: var(--pobo-btn-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-btn-box-shadow));
     border: var(--pobo-btn-border);
     cursor: pointer;
     padding: var(--pobo-btn-padding);
