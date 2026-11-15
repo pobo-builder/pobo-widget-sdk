@@ -3,7 +3,7 @@
     padding: var(--pobo-infobox-info-padding);
     background: var(--pobo-infobox-info-background);
     border: var(--pobo-infobox-info-border);
-    box-shadow: var(--pobo-infobox-info-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-infobox-info-box-shadow));
     border-radius: var(--pobo-infobox-info-border-radius);
     @include typo();
 
@@ -20,7 +20,7 @@
     padding: var(--pobo-infobox-warning-padding);
     background: var(--pobo-infobox-warning-background);
     border: var(--pobo-infobox-warning-border);
-    box-shadow: var(--pobo-infobox-warning-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-infobox-warning-box-shadow));
     border-radius: var(--pobo-infobox-warning-border-radius);
     @include typo();
 

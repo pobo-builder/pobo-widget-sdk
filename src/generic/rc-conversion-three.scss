@@ -1,7 +1,7 @@
 .rc-conversion-three {
   background: var(--pobo-conversion-three-bg);
   border: var(--pobo-conversion-three-border);
-  box-shadow: var(--pobo-conversion-three-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-conversion-three-box-shadow));
   border-radius: var(--pobo-conversion-three-border-radius);
 
   @include media-breakpoint-up(sm) {
@@ -28,11 +28,11 @@
     width: var(--pobo-conversion-three-count-width);
     height: var(--pobo-conversion-three-count-height);
     border-radius: var(--pobo-conversion-three-count-border-radius);
-    box-shadow: var(--pobo-conversion-three-count-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-conversion-three-count-box-shadow));
     border: var(--pobo-conversion-three-count-border);
     font-size: var(--pobo-conversion-three-count-font-size);
     font-weight: var(--pobo-conversion-three-count-font-weight);
-    font-family: var(--pobo-review-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-review-font-family));
     color: var(--pobo-conversion-three-count-font-color);
     background: var(--pobo-conversion-three-count-bg);
   }

@@ -6,7 +6,7 @@
   background-size: var(--pobo-custom-bean-bg-size);
   min-height: var(--pobo-custom-bean-min-height);
   align-items: center;
-  font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
   @media screen and (max-width: 1199px) {
     background-image: var(--pobo-custom-bean-bg-image-small);
   }
@@ -32,7 +32,7 @@
     h2 {
       font-size: var(--pobo-custom-bean-heading-font-size);
       text-align: var(--pobo-custom-bean-heading-text-align);
-      font-family: var(--pobo-custom-bean-heading-font-family), serif;
+      font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-heading-font-family), serif);
       line-height: var(--pobo-custom-bean-heading-line-height);
       color: var(--pobo-custom-bean-heading-color);
 
@@ -52,7 +52,7 @@
   background: var(--pobo-custom-bean-notes-bg);
   position: var(--pobo-custom-bean-notes-position);
   margin: var(--pobo-custom-bean-margin);
-  font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
 
   &__content {
     width: var(--pobo-custom-bean-notes-content-width);
@@ -64,7 +64,7 @@
 
     h2 {
       font-size: var(--pobo-custom-bean-heading-font-size);
-      font-family: var(--pobo-custom-bean-heading-font-family), serif;
+      font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-heading-font-family), serif);
       line-height: var(--pobo-custom-bean-heading-line-height);
       color: var(--pobo-custom-bean-heading-color);
       margin: var(--pobo-custom-bean-heading-margin);
@@ -74,7 +74,7 @@
       font-size: var(--pobo-custom-bean-paragraph-font-size);
       line-height: var(--pobo-custom-bean-heading-line-height);
       color: var(--pobo-custom-bean-paragraph-color);
-      font-family: var(--pobo-custom-bean-paragraph-font-family), serif;
+      font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-paragraph-font-family), serif);
       margin: var(--pobo-custom-bean-paragraph-margin) !important;
       font-weight: 400;
     }
@@ -119,7 +119,7 @@
 
     h2 {
       font-size: var(--pobo-custom-bean-heading-font-size);
-      font-family: var(--pobo-custom-bean-heading-font-family), serif;
+      font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-heading-font-family), serif);
       line-height: var(--pobo-custom-bean-heading-line-height);
       color: var(--pobo-custom-bean-heading-color);
       margin: var(--pobo-custom-bean-heading-margin);
@@ -129,7 +129,7 @@
       font-size: var(--pobo-custom-bean-paragraph-font-size);
       line-height: var(--pobo-custom-bean-heading-line-height);
       color: var(--pobo-custom-bean-paragraph-color);
-      font-family: var(--pobo-custom-bean-paragraph-font-family), serif;
+      font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-paragraph-font-family), serif);
       margin: var(--pobo-custom-bean-paragraph-margin) !important;
       font-weight: 400;
     }
@@ -154,7 +154,7 @@
   max-width: var(--pobo-custom-bean-boxes-max-width);
   box-sizing: var(--pobo-custom-bean-boxes-box-sizing);
   background: var(--pobo-custom-bean-boxes-bg);
-  font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
 
   &__wrap {
     width: var(--pobo-custom-bean-boxes-wrap-width);
@@ -176,7 +176,7 @@
     justify-content: var(--pobo-custom-bean-boxes-item-justify-content);
     align-items: var(--pobo-custom-bean-boxes-item-align-items);
     border-bottom: var(--pobo-custom-bean-boxes-item-border-bottom);
-    font-family: var(--pobo-custom-bean-font-family), sans-serif;
+    font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
 
     &:nth-child(odd) {
       @media screen and (min-width: 481px) {
@@ -224,7 +224,7 @@
   padding: var(--pobo-custom-bean-global-padding);
   box-sizing: var(--pobo-custom-bean-info-box-sizing);
   position: var(--pobo-custom-bean-info-position);
-  font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
 
   &:before {
     content: '';
@@ -315,7 +315,7 @@
   padding: 0 20px 20px;
   box-sizing: border-box;
   background: white;
-  font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
 
   p, h2, h3, h4 {
     color: var(--pobo-custom-bean-color);
@@ -405,7 +405,7 @@
   padding: var(--pobo-custom-bean-global-padding);
   background: #A6C7ED;
   box-sizing: border-box;
-  font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
 
   p, h2, h3, h4 {
     color: var(--pobo-custom-bean-color);
@@ -495,7 +495,7 @@
   padding: var(--pobo-custom-bean-global-padding);
   background: #ffffff;
   box-sizing: border-box;
-  font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
 
   p, h2, h3, h4 {
     color: var(--pobo-custom-bean-color);
@@ -531,7 +531,7 @@
       box-shadow: unset;
       border: none;
       padding: 19px 0 0;
-      font-family: var(--pobo-custom-bean-font-family), sans-serif;
+      font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
       p{
         font-weight: 500;
         font-size: var(--pobo-custom-bean-p-font-size);
@@ -550,7 +550,7 @@
   padding: var(--pobo-custom-bean-global-padding);
   background: #A6C7ED;
   box-sizing: border-box;
-  font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
 
   h2{
     font-size: var(--pobo-custom-bean-h2-font-size);
@@ -565,7 +565,7 @@
   margin: var(--pobo-custom-bean-margin);
   padding: var(--pobo-custom-bean-global-padding);
   box-sizing: border-box;
-  font-family: var(--pobo-custom-bean-font-family), sans-serif;
+  font-family: var(--pobo-global-font-family, var(--pobo-custom-bean-font-family), sans-serif);
   position: relative;
   p, h2, h3, h4 {
     color: var(--pobo-custom-bean-color);

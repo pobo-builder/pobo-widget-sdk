@@ -2,7 +2,7 @@
   display: flex;
   align-items: var(--pobo-video-half-right-align-items);
   background: var(--pobo-video-half-right-bg);
-  box-shadow: var(--pobo-video-half-right-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-video-half-right-box-shadow));
   border: var(--pobo-video-half-right-border-color);
   padding: var(--pobo-video-half-right-padding);
   margin: var(--pobo-video-half-right-margin);
@@ -17,7 +17,7 @@
     order: var(--pobo-video-half-right-video-order);
     border-radius: var(--pobo-video-half-right-video-border-radius);
     background: var(--pobo-video-half-right-video-bg);
-    box-shadow: var(--pobo-video-half-right-video-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-video-half-right-video-box-shadow));
     border: var(--pobo-video-half-right-video-border);
     padding: var(--pobo-video-half-right-video-padding);
     margin: var(--pobo-video-half-right-video-margin);
@@ -44,7 +44,7 @@
     margin: var(--pobo-video-half-right-text-margin);
     background: var(--pobo-video-half-right-text-bg);
     border-radius: var(--pobo-video-half-right-text-border-radius);
-    box-shadow: var(--pobo-video-half-right-text-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-video-half-right-text-box-shadow));
     border: var(--pobo-video-half-right-text-border);
 
     @include media-breakpoint-down(md) {

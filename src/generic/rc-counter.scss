@@ -4,7 +4,7 @@
   overflow: hidden;
   border-radius: var(--pobo-counter-border-radius);
   border: var(--pobo-counter-border);
-  box-shadow: var(--pobo-counter-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-counter-box-shadow));
   background: var(--pobo-counter-bg);
   padding: var(--pobo-counter-padding);
 
@@ -43,7 +43,7 @@
     padding: var(--pobo-counter-inner-padding);
     border-radius: var(--pobo-counter-inner-border-radius);
     text-align: center;
-    font-family: var(--pobo-counter-inner-font);
+    font-family: var(--pobo-global-font-family, var(--pobo-counter-inner-font));
 
     @include media-breakpoint-down(sm) {
       padding: var(--pobo-counter-inner-paading);

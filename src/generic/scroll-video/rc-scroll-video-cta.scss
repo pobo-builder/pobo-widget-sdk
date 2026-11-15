@@ -3,7 +3,7 @@
   grid-template-columns: var(--pobo-scroll-video-cta-video-width) auto;
   align-items: center;
   background: var(--pobo-scroll-video-cta-bg);
-  box-shadow: var(--pobo-scroll-video-cta-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-scroll-video-cta-box-shadow));
   border: var(--pobo-scroll-video-cta-border);
   border-radius: var(--pobo-scroll-video-cta-border-radius);
   padding: var(--pobo-scroll-video-cta-padding);
@@ -18,7 +18,7 @@
     padding: var(--pobo-scroll-video-cta-video-padding);
     margin: var(--pobo-scroll-video-cta-video-margin);
     border-radius: var(--pobo-scroll-video-cta-video-border-radius);
-    box-shadow: var(--pobo-scroll-video-cta-video-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-scroll-video-cta-video-box-shadow));
     border: var(--pobo-scroll-video-cta-video-border);
 
     @include media-breakpoint-down(sm) {
@@ -49,7 +49,7 @@
     text-decoration: none;
     color: var(--pobo-btn-color);
     background: var(--pobo-btn-bg);
-    box-shadow: var(--pobo-btn-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-btn-box-shadow));
     border: var(--pobo-btn-border);
     cursor: pointer;
     padding: var(--pobo-btn-padding);

@@ -8,7 +8,7 @@
   overflow: auto;
   white-space: nowrap;
   border: var(--pobo-carousel-inner-border);
-  box-shadow: var(--pobo-carousel-inner-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-carousel-inner-box-shadow));
   position: relative;
   scroll-behavior: smooth;
   border-radius: var(--pobo-carousel-inner-border-radius);
@@ -22,7 +22,7 @@
     font-size: var(--pobo-carousel-trigger-font-size);
     color: black;
     z-index: 10;
-    box-shadow: var(--pobo-carousel-trigger-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-carousel-trigger-box-shadow));
     border: var(--pobo-carousel-inner-trigger-border);
     border-radius: var(--pobo-carousel-trigger-border-radius);
     background: var(--pobo-carousel-inner-trigger-bg-image);

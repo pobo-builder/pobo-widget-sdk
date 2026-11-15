@@ -62,6 +62,6 @@
     max-height: var(--pobo-gallery-modal-img-max-height);
     width: var(--pobo-gallery-modal-img-width);
     height: var(--pobo-gallery-modal-img-height);
-    box-shadow: var(--pobo-gallery-modal-img-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-gallery-modal-img-box-shadow));
   }
 }

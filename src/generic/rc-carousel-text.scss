@@ -5,7 +5,7 @@
   background: var(--pobo-carousel-text-bg);
   border: var(--pobo-carousel-text-border);
   border-radius: var(--pobo-carousel-text-border-radius);
-  box-shadow: var(--pobo-carousel-text-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-carousel-text-box-shadow));
 
   &.pb-carousel-inner {
     border: none;
@@ -37,13 +37,13 @@
     white-space: var(--pobo-carousel-text-item-white-space);
     background: var(--pobo-carousel-text-item-bg);
     border: var(--pobo-carousel-text-item-border);
-    box-shadow: var(--pobo-carousel-text-item-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-carousel-text-item-box-shadow));
     transition: var(--pobo-carousel-text-item-transition);
     position: relative;
 
     &:hover {
       transform: var(--pobo-carousel-text-item-hover-transform);
-      box-shadow: var(--pobo-carousel-text-item-hover-box-shadow);
+      box-shadow: var(--pobo-global-box-shadow, var(--pobo-carousel-text-item-hover-box-shadow));
     }
 
     @include media-breakpoint-down(md) {

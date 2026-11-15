@@ -5,7 +5,7 @@
   flex-direction: column;
   border-radius: var(--pobo-feature-card-border-radius);
   background: var(--pobo-feature-card-bg);
-  box-shadow: var(--pobo-feature-card-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-feature-card-box-shadow));
 
   @include media-breakpoint-down(sm) {
     width: auto;

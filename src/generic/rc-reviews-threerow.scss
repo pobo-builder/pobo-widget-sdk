@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background: var(--pobo-reviews-three-bg);
-  box-shadow: var(--pobo-reviews-three-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-reviews-three-box-shadow));
   border-radius: var(--pobo-reviews-three-border-radius);
   background: var(--pobo-reviews-three-bg);
   border: var(--pobo-reviews-three-border);
@@ -33,7 +33,7 @@
     padding: var(--pobo-reviews-three-single-image-padding);
     margin: var(--pobo-reviews-three-single-image-margin);
     border: var(--pobo-reviews-three-single-image-border);
-    box-shadow: var(--pobo-reviews-three-single-image-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-reviews-three-single-image-box-shadow));
     border-radius: var(--pobo-reviews-three-single-image-border-radius);
     background: var(--pobo-reviews-three-single-image-bg);
   }
@@ -44,7 +44,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    box-shadow: var(--pobo-reviews-three-single-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-reviews-three-single-box-shadow));
     padding: var(--pobo-reviews-three-single-padding);
     margin: var(--pobo-reviews-three-single-margin);
     border-radius: var(--pobo-reviews-three-single-border-radius);
@@ -68,7 +68,7 @@
     line-height: var(--pobo-reviews-three-reviews-line-height);
     color: var(--pobo-reviews-three-reviews-font-color);
     font-weight: var(--pobo-reviews-three-reviews-font-weight);
-    font-family: var(--pobo-review-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-review-font-family));
 
     @include media-breakpoint-down(lg) {
       padding: 0;

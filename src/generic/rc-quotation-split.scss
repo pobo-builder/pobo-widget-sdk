@@ -2,7 +2,7 @@
 
   &__wrap {
     position: relative;
-    box-shadow: var(--pobo-quotation-split-wrap-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-quotation-split-wrap-shadow));
     padding: var(--pobo-quotation-split-wrap-padding);
     margin: var(--pobo-quotation-split-wrap-margin);
     border-radius: var(--pobo-quotation-split-wrap-border-radius);
@@ -20,7 +20,7 @@
     margin: var(--pobo-quotation-split-text-margin);
     color: var(--pobo-quotation-split-text-color);
     font-weight: var(--pobo-quotation-split-text-font-weight);
-    font-family: var(--pobo-review-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-review-font-family));
     z-index: 1;
 
     &::before {
@@ -59,7 +59,7 @@
     padding: var(--pobo-quotation-split-author-split-padding);
     margin: var(--pobo-quotation-split-author-margin);
     font-weight: var(--pobo-quotation-split-author-font-weight);
-    font-family: var(--pobo-review-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-review-font-family));
   }
 
   &__line {

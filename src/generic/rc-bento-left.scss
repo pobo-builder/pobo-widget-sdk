@@ -8,7 +8,7 @@
   background: var(--pobo-bento-left-bg);
   border: var(--pobo-bento-left-border);
   border-radius: var(--pobo-bento-left-border-radius);
-  box-shadow: var(--pobo-bento-left-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-bento-left-box-shadow));
 
   @include media-breakpoint-down(sm) {
     padding: var(--pobo-bento-left-padding-mobile);

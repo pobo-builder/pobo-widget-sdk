@@ -10,7 +10,7 @@
     color: var(--pobo-gallery-image-title-font-color);
     padding: var(--pobo-gallery-image-title-padding);
     background: var(--pobo-gallery-image-title-bg);
-    box-shadow: var(--pobo-gallery-image-title-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-gallery-image-title-box-shadow));
     border-radius: var(--pobo-gallery-image-title-border-radius);
     border: var(--pobo-gallery-image-title-border);
   }

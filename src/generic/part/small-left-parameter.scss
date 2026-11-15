@@ -7,7 +7,7 @@
     padding: var(--pobo-parameter-small-left-padding);
     margin: var(--pobo-parameter-small-left-margin);
     background: var(--pobo-parameter-small-left-bg);
-    box-shadow: var(--pobo-parameter-small-left-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-parameter-small-left-box-shadow));
     border-radius: var(--pobo-parameter-small-left-border-radius);
   }
 
@@ -16,7 +16,7 @@
     height: var(--pobo-parameter-small-left-icon-size);
     border: var(--pobo-parameter-small-left-icon-border);
     border-radius: var(--pobo-parameter-small-left-icon-border-radius);
-    box-shadow: var(--pobo-parameter-small-left-icon-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-parameter-small-left-icon-box-shadow));
     background: var(--pobo-parameter-small-left-icon-bg);
 
     @include media-breakpoint-down(md) {

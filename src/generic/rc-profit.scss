@@ -1,6 +1,6 @@
 .rc-profit {
   background: var(--pobo-profit-bg);
-  box-shadow: var(--pobo-profit-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-profit-box-shadow));
   border-radius: var(--pobo-inline-border-radius);
   border: var(--pobo-inline-border);
   padding: var(--pobo-profit-padding);
@@ -15,7 +15,7 @@
     padding: var(--pobo-profit-list-container-padding);
     margin: var(--pobo-profit-list-container-margin);
     background: var(--pobo-profit-list-container-bg);
-    box-shadow: var(--pobo-profit-list-container-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-profit-list-container-box-shadow));
     border-radius: var(--pobo-profit-list-container-border-radius);
     border: var(--pobo-profit-list-container-border-color);
   }
@@ -24,7 +24,7 @@
     padding: var(--pobo-profit-list-padding);
     margin: var(--pobo-profit-list-margin);
     background: var(--pobo-profit-list-bg);
-    box-shadow: var(--pobo-profit-list-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-profit-list-box-shadow));
     border-radius: var(--pobo-profit-list-border-radius);
     border: var(--pobo-profit-list-border);
 
@@ -41,7 +41,7 @@
     padding: var(--pobo-profit-list-item-padding);
     margin: var(--pobo-profit-list-item-margin);
     background: var(--pobo-profit-list-item-bg);
-    box-shadow: var(--pobo-profit-list-item-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-profit-list-item-box-shadow));
     border-radius: var(--pobo-profit-list-item-border-radius);
     border: var(--pobo-profit-list-item-border);
   }

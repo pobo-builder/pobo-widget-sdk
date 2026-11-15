@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   background: var(--pobo-interview-photo-bg);
-  box-shadow: var(--pobo-interview-photo-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-interview-photo-box-shadow));
   border-radius: var(--pobo-interview-photo-border-radius);
   border: var(--pobo-interview-photo-border);
   margin: var(--pobo-interview-photo-margin);

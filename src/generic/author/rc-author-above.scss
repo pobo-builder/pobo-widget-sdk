@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     border-radius: var(--pobo-author-above-wrap-border-radius);
-    box-shadow: var(--pobo-author-above-wrap-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-author-above-wrap-box-shadow));
     background: var(--pobo-author-above-wrap-bg);
     margin: var(--pobo-author-above-wrap-margin);
   }
@@ -58,7 +58,7 @@
     font-size: var(--pobo-author-above-content-text-font-size);
     line-height: var(--pobo-author-above-content-text-line-height);
     font-weight: var(--pobo-author-above-content-text-font-weight);
-    font-family: var(--pobo-citation-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-citation-font-family));
     padding: var(--pobo-author-above-content-text-padding);
     margin: var(--pobo-author-above-content-text-margin);
   }

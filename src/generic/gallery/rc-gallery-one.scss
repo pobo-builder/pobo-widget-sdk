@@ -6,14 +6,14 @@
   background: var(--pobo-gallery-one-bg);
   border: var(--pobo-gallery-one-border);
   border-radius: var(--pobo-gallery-one-border-radius);
-  box-shadow: var(--pobo-gallery-one-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-gallery-one-box-shadow));
 
   &__image {
     width: 100%;
     overflow: hidden;
     position: relative;
     border-radius: var(--pobo-gallery-one-image-border-radius);
-    box-shadow: var(--pobo-gallery-one-image-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-gallery-one-image-box-shadow));
     border: var(--pobo-gallery-one-image-border);
     background: var(--pobo-gallery-one-image-bg);
   }

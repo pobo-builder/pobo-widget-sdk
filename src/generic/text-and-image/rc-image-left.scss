@@ -3,7 +3,7 @@
   align-items: center;
   flex-wrap: wrap;
   background: var(--pobo-image-bg);
-  box-shadow: var(--pobo-image-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-image-box-shadow));
   border: var(--pobo-image-border-color);
 
   &__image {
@@ -24,7 +24,7 @@
     padding: var(--pobo-image-img-padding);
     margin: var(--pobo-image-img-margin);
     border-radius: var(--pobo-image-img-border-radius);
-    box-shadow: var(--pobo-image-img-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-image-img-box-shadow));
     border: var(--pobo-image-img-border-color);
   }
 

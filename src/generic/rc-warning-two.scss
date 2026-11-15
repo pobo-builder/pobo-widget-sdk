@@ -1,7 +1,7 @@
 .rc-warning-two {
   &__wrap {
     display: flex;
-    box-shadow: var(--pobo-warning-one-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-warning-one-box-shadow));
     border-radius: var(--pobo-warning-one-border-radius);
     overflow: hidden;
   }

@@ -1,7 +1,7 @@
 body {
   #pobo-standard-widget,
   #pobo-share-widget {
-    font-family: var(--pobo-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-font-family));
 
     .widget-container:not(
     .widget-counter,

@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   background: var(--pobo-text-code-bg);
-  box-shadow: var(--pobo-text-code-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-text-code-box-shadow));
   border: var(--pobo-text-code-border);
 
   @include media-breakpoint-down(sm) {

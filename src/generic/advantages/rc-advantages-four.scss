@@ -1,6 +1,6 @@
 .rc-advantages-four {
   background: var(--pobo-advantages-bg);
-  box-shadow: var(--pobo-advantages-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-advantages-box-shadow));
   border: var(--pobo-advantages-border-radius);
   padding: var(--pobo-advantages-padding);
 
@@ -14,7 +14,7 @@
     padding: var(--pobo-advantages-item-padding);
     border: var(--pobo-advantages-item-border);
     background: var(--pobo-advantages-item-bg);
-    box-shadow: var(--pobo-advantages-item-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-advantages-item-box-shadow));
     border-radius: var(--pobo-advantages-item-border-radius);
     margin: var(--pobo-advantages-item-margin);
 
@@ -34,7 +34,7 @@
     position: relative;
     border-radius: var(--pobo-advantages-ico-container-border-radius);
     margin: var(--pobo-advantages-ico-container-margin);
-    box-shadow: var(--pobo-advantages-ico-container-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-advantages-ico-container-box-shadow));
     background: var(--pobo-advantages-ico-container-bg);
     padding: var(--pobo-advantages-ico-container-padding);
     width: var(--pobo-advantages-ico-container-width);
@@ -45,7 +45,7 @@
     margin: 0 auto;
     max-height: var(--pobo-advantages-ico-container-img-max-height);
     max-width: var(--pobo-advantages-ico-container-img-max-width);
-    box-shadow: var(--pobo-advantages-ico-container-img-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-advantages-ico-container-img-box-shadow));
     background: var(--pobo-advantages-ico-container-img-bg);
     border-radius: var(--pobo-advantages-ico-container-img-border-radius);
     border: var(--pobo-advantages-ico-container-img-border-color)

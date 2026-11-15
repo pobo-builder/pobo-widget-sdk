@@ -4,7 +4,7 @@
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   background: var(--pobo-team-three-bg);
-  box-shadow: var(--pobo-team-three-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-team-three-box-shadow));
   border-radius: var(--pobo-team-three-border-radius);
   border: var(--pobo-team-three-border);
   gap: var(--pobo-team-three-gap);
@@ -26,7 +26,7 @@
 
   &__single-content {
     background: var(--pobo-team-three-single-content-bg);
-    box-shadow: var(--pobo-team-three-single-content-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-team-three-single-content-box-shadow));
     padding: var(--pobo-team-three-single-content-padding);
     margin-top: var(--pobo-team-three-single-content-margin-top);
     border-radius: var(--pobo-team-three-single-content-border-radius);

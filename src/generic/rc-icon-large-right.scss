@@ -3,7 +3,7 @@
   align-items: flex-start;
   gap: var(--pobo-icon-large-gap);
   background: var(--pobo-icon-large-bg);
-  box-shadow: var(--pobo-icon-large-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-icon-large-box-shadow));
   border-radius: var(--pobo-icon-large-border-radius);
   border: var(--pobo-icon-large-border);
   padding: var(--pobo-icon-large-padding);

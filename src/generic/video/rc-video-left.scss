@@ -20,7 +20,7 @@
     padding: var(--pobo-video-left-video-padding);
     margin: var(--pobo-video-left-video-margin);
     border-radius: var(--pobo-video-left-video-border-radius);
-    box-shadow: var(--pobo-video-left-video-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-video-left-video-box-shadow));
     border: var(--pobo-video-left-video-border);
     position: relative;
 

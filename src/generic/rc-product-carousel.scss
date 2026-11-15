@@ -17,7 +17,7 @@
   box-sizing: border-box;
   padding: var(--pobo-product-carousel-padding);
   margin: var(--pobo-product-carousel-margin);
-  font-family: var(--pobo-font-family);
+  font-family: var(--pobo-global-font-family, var(--pobo-font-family));
 
   &__inner {
     display: flex;
@@ -34,7 +34,7 @@
     background: var(--pobo-product-carousel-inner-bg);
     border: var(--pobo-product-carousel-inner-border);
     border-radius: var(--pobo-product-carousel-inner-border-radius);
-    box-shadow: var(--pobo-product-carousel-inner-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-product-carousel-inner-box-shadow));
 
     &::-webkit-scrollbar {
       display: none;
@@ -43,7 +43,7 @@
     &.pb-carousel-inner {
       background: var(--pobo-product-carousel-inner-bg);
       border: var(--pobo-product-carousel-inner-border);
-      box-shadow: var(--pobo-product-carousel-inner-box-shadow);
+      box-shadow: var(--pobo-global-box-shadow, var(--pobo-product-carousel-inner-box-shadow));
     }
   }
 

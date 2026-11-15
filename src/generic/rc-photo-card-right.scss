@@ -51,7 +51,7 @@
     background: var(--pobo-photo-card-right-card-bg);
     border: var(--pobo-photo-card-right-card-border);
     border-radius: var(--pobo-photo-card-right-card-border-radius);
-    box-shadow: var(--pobo-photo-card-right-card-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-photo-card-right-card-box-shadow));
 
     @include media-breakpoint-down(sm) {
       width: var(--pobo-photo-card-right-card-width-mobile);

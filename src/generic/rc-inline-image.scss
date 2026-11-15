@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   background: var(--pobo-inline-image-bg);
-  box-shadow: var(--pobo-inline-image-box-shadow);
+  box-shadow: var(--pobo-global-box-shadow, var(--pobo-inline-image-box-shadow));
   border-radius: var(--pobo-inline-image-border-radius);
   border: var(--pobo-inline-image-border);
 
@@ -41,7 +41,7 @@
     border-radius: var(--pobo-inline-image-content-border-radius);
     padding: var(--pobo-inline-image-content-padding);
     margin: var(--pobo-inline-image-content-margin);
-    box-shadow: var(--pobo-inline-image-content-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-inline-image-content-box-shadow));
     border: var(--pobo-inline-image-content-border);
 
     @include media-breakpoint-down(md) {
@@ -82,7 +82,7 @@
     margin: var(--pobo-inline-image-title-margin);
     background: var(--pobo-inline-image-title-bg);
     border: var(--pobo-inline-image-title-border);
-    box-shadow: var(--pobo-inline-image-title-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-inline-image-title-box-shadow));
     border-radius: var(--pobo-inline-image-title-border-radius);
 
 
@@ -99,7 +99,7 @@
     margin: var(--pobo-inline-image-sub-title-margin);
     background: var(--pobo-inline-image-sub-title-bg);
     border: var(--pobo-inline-image-sub-title-border);
-    box-shadow: var(--pobo-inline-image-sub-title-box-shadow);
+    box-shadow: var(--pobo-global-box-shadow, var(--pobo-inline-image-sub-title-box-shadow));
     border-radius: var(--pobo-inline-image-sub-title-border-radius);
 
     @include media-breakpoint-down(sm) {

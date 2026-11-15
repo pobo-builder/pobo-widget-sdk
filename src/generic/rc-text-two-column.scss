@@ -10,7 +10,7 @@
     min-width: 0;
     box-sizing: border-box;
     color: var(--pobo-text-two-column-content-color);
-    font-family: var(--pobo-font-family);
+    font-family: var(--pobo-global-font-family, var(--pobo-font-family));
     font-size: var(--pobo-text-two-column-content-font-size);
     line-height: var(--pobo-text-two-column-content-line-height);
     font-weight: var(--pobo-text-two-column-content-font-weight);
