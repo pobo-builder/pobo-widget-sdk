@@ -35,4 +35,13 @@
       padding: var(--pobo-product-right-text-padding-mobile);
     }
   }
+
+  &.pb-product-empty &__product {
+    display: none;
+  }
+
+  &.pb-product-empty &__text {
+    flex: 1 1 auto;
+    width: auto;
+  }
 }

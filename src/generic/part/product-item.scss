@@ -148,3 +148,12 @@
     }
   }
 }
+
+.pb-product-item--pending {
+  min-height: var(--pobo-product-item-pending-min-height);
+  background: var(--pobo-product-item-pending-bg);
+}
+
+.widget-container.pb-product-empty {
+  display: none;
+}
