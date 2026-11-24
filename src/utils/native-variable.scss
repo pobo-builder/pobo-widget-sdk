@@ -3390,6 +3390,34 @@
   --pobo-product-showcase-media-basis: 46%;
   --pobo-product-showcase-body-basis: 46%;
 
+  --pobo-product-compare-max-width: 100%;
+  --pobo-product-compare-margin: 0 auto;
+  --pobo-product-compare-bg: #ffffff;
+  --pobo-product-compare-border: 1px solid #ececec;
+  --pobo-product-compare-border-radius: 12px;
+  --pobo-product-compare-table-min-width: 560px;
+  --pobo-product-compare-label-width: 180px;
+  --pobo-product-compare-label-width-sm: 120px;
+  --pobo-product-compare-label-shadow-sm: 6px 0 8px -6px rgba(0, 0, 0, 0.12);
+  --pobo-product-compare-product-padding: 16px 12px;
+  --pobo-product-compare-cell-padding: 12px;
+  --pobo-product-compare-cell-font-size: 14px;
+  --pobo-product-compare-cell-line-height: 1.45;
+  --pobo-product-compare-row-border: 1px solid #ececec;
+  --pobo-product-compare-row-hover-bg: #fafaf8;
+  --pobo-product-compare-label-font-weight: 600;
+  --pobo-product-compare-label-color: #16130f;
+  --pobo-product-compare-value-color: #3f3a34;
+  --pobo-product-compare-same-color: #8a857e;
+  --pobo-product-compare-empty-color: #b5b0a8;
+  --pobo-product-compare-toolbar-margin: 0 0 12px 0;
+  --pobo-product-compare-toggle-font-size: 14px;
+  --pobo-product-compare-toggle-font-weight: 500;
+  --pobo-product-compare-toggle-color: #3f3a34;
+  --pobo-product-compare-toggle-accent: var(--color-primary, var(--pr, #333333));
+  --pobo-product-compare-pending-min-height: 420px;
+  --pobo-product-compare-pending-bg: #f5f5f2;
+
   --pobo-product-grid-gap: 20px;
   --pobo-product-grid-margin: 0;
   --pobo-product-grid-item-basis: 240px;
