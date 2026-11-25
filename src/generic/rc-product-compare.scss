@@ -1,0 +1,35 @@
+.rc-product-compare {
+  --pobo-product-item-border: var(--pobo-product-compare-card-border);
+  --pobo-product-item-border-radius: var(--pobo-product-compare-card-border-radius);
+  --pobo-product-item-box-shadow: var(--pobo-product-compare-card-box-shadow);
+  --pobo-product-item-bg: var(--pobo-product-compare-card-bg);
+  --pobo-product-item-media-padding: var(--pobo-product-compare-card-media-padding);
+  --pobo-product-item-media-border-radius: var(--pobo-product-compare-card-media-border-radius);
+  --pobo-product-item-img-height: auto;
+  --pobo-product-item-body-padding: var(--pobo-product-compare-card-body-padding);
+  --pobo-product-item-name-font-size: var(--pobo-product-compare-card-name-font-size);
+  --pobo-product-item-name-margin: var(--pobo-product-compare-card-name-margin);
+  --pobo-product-item-meta-gap: var(--pobo-product-compare-card-meta-gap);
+  --pobo-product-item-meta-margin: var(--pobo-product-compare-card-meta-margin);
+  --pobo-product-item-price-font-size: var(--pobo-product-compare-card-price-font-size);
+  --pobo-product-item-availability-font-size: var(--pobo-product-compare-card-availability-font-size);
+  --pobo-product-item-availability-padding: var(--pobo-product-compare-card-availability-padding);
+  --pobo-product-item-cart-padding: var(--pobo-product-compare-card-cart-padding);
+  --pobo-product-item-cart-font-size: var(--pobo-product-compare-card-cart-font-size);
+
+  width: 100%;
+  max-width: var(--pobo-product-compare-max-width);
+  margin: var(--pobo-product-compare-margin);
+  box-sizing: border-box;
+
+  .pb-product-image {
+    aspect-ratio: var(--pobo-product-compare-card-image-aspect-ratio);
+    max-height: var(--pobo-product-compare-card-image-max-height);
+  }
+
+  @include media-breakpoint-down(sm) {
+    --pobo-product-item-media-padding: var(--pobo-product-compare-card-media-padding-sm);
+    --pobo-product-item-name-font-size: var(--pobo-product-compare-card-name-font-size-sm);
+    --pobo-product-item-price-font-size: var(--pobo-product-compare-card-price-font-size-sm);
+  }
+}

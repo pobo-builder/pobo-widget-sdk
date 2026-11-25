@@ -130,6 +130,112 @@
 </head>
 <body>
 
+<!-- Product compare -->
+<div data-pobo-widget-id='0' class='widget-container widget-typography widget-product-compare'>
+  <div class="widget-projector">
+    <div class="rc-product-compare">
+      <div class="pb-product-compare">
+        <div class="pb-product-compare__toolbar">
+          <label class="pb-product-compare__toggle"><input type="checkbox" class="pb-product-compare__toggle-input"> Jen rozdíly</label>
+        </div>
+        <div class="pb-product-compare__scroll">
+          <table class="pb-product-compare__table">
+            <thead>
+            <tr>
+              <td class="pb-product-compare__corner"></td>
+              <th class="pb-product-compare__product" scope="col">
+                <div class="pb-product-item">
+                  <a class="pb-product-link pb-product-media" href="#">
+                    <img class="pb-product-image" src="https://image.pobo.space/widget/white-shoes.png" alt="Běžecké boty Aero" loading="lazy">
+                  </a>
+                  <div class="pb-product-body">
+                    <a class="pb-product-link" href="#"><span class="pb-product-name">Běžecké boty Aero</span></a>
+                    <div class="pb-product-meta">
+                      <span class="pb-product-price">2 490 Kč</span>
+                      <span class="pb-product-price-before">2 990 Kč</span>
+                      <span class="pb-product-availability">Skladem</span>
+                    </div>
+                    <a class="pb-product-cart" href="#">Do košíku</a>
+                  </div>
+                </div>
+              </th>
+              <th class="pb-product-compare__product" scope="col">
+                <div class="pb-product-item">
+                  <a class="pb-product-link pb-product-media" href="#">
+                    <img class="pb-product-image" src="https://image.pobo.space/widget/black-watch.png" alt="Hodinky Black Steel" loading="lazy">
+                  </a>
+                  <div class="pb-product-body">
+                    <a class="pb-product-link" href="#"><span class="pb-product-name">Hodinky Black Steel</span></a>
+                    <div class="pb-product-meta">
+                      <span class="pb-product-price">3 290 Kč</span>
+                      <span class="pb-product-price-before"></span>
+                      <span class="pb-product-availability pb-product-availability--out">Vyprodáno</span>
+                    </div>
+                    <a class="pb-product-cart pb-product-cart--disabled" href="#">Do košíku</a>
+                  </div>
+                </div>
+              </th>
+              <th class="pb-product-compare__product" scope="col">
+                <div class="pb-product-item">
+                  <a class="pb-product-link pb-product-media" href="#">
+                    <img class="pb-product-image" src="https://image.pobo.space/widget/white-shoes.png" alt="Běžecké boty Aero Light" loading="lazy">
+                  </a>
+                  <div class="pb-product-body">
+                    <a class="pb-product-link" href="#"><span class="pb-product-name">Běžecké boty Aero Light</span></a>
+                    <div class="pb-product-meta">
+                      <span class="pb-product-price">2 190 Kč</span>
+                      <span class="pb-product-price-before"></span>
+                      <span class="pb-product-availability">Skladem</span>
+                    </div>
+                    <a class="pb-product-cart" href="#">Do košíku</a>
+                  </div>
+                </div>
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="pb-product-compare__row">
+              <th class="pb-product-compare__label" scope="row">Materiál</th><td class="pb-product-compare__value">textilní mesh</td><td class="pb-product-compare__value">nerezová ocel</td><td class="pb-product-compare__value">recyklovaný polyester</td>
+            </tr>
+            <tr class="pb-product-compare__row">
+              <th class="pb-product-compare__label" scope="row">Hmotnost</th><td class="pb-product-compare__value">260 g</td><td class="pb-product-compare__value">145 g</td><td class="pb-product-compare__value">210 g</td>
+            </tr>
+            <tr class="pb-product-compare__row">
+              <th class="pb-product-compare__label" scope="row">Barva</th><td class="pb-product-compare__value">bílá, šedá</td><td class="pb-product-compare__value">černá</td><td class="pb-product-compare__value pb-product-compare__value--empty">—</td>
+            </tr>
+            <tr class="pb-product-compare__row">
+              <th class="pb-product-compare__label" scope="row">Voděodolnost</th><td class="pb-product-compare__value">ne</td><td class="pb-product-compare__value">5 ATM</td><td class="pb-product-compare__value">ne</td>
+            </tr>
+            <tr class="pb-product-compare__row pb-product-compare__row--same">
+              <th class="pb-product-compare__label" scope="row">Záruka</th><td class="pb-product-compare__value">2 roky</td><td class="pb-product-compare__value">2 roky</td><td class="pb-product-compare__value">2 roky</td>
+            </tr>
+            <tr class="pb-product-compare__row">
+              <th class="pb-product-compare__label" scope="row">Země původu</th><td class="pb-product-compare__value">Vietnam</td><td class="pb-product-compare__value">Švýcarsko</td><td class="pb-product-compare__value">Vietnam</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.pb-product-compare__toggle-input').forEach(function (input) {
+    input.addEventListener('change', function () {
+      input.closest('.pb-product-compare').classList.toggle('pb-product-compare--only-difference', input.checked);
+    });
+  });
+</script>
+
+<!-- Product compare — waiting for data -->
+<div data-pobo-widget-id='0' class='widget-container widget-typography widget-product-compare'>
+  <div class="widget-projector">
+    <div class="rc-product-compare">
+      <div class="pb-product-compare" data-pobo-compare="11,22,33"></div>
+    </div>
+  </div>
+</div>
+
 <!-- Product card left, text right -->
 <div data-pobo-widget-id='213' class='widget-container widget-typography widget-product-left'>
   <div class="widget-projector">
