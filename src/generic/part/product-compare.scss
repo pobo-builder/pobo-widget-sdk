@@ -1,7 +1,8 @@
 .pb-product-compare {
   width: 100%;
 
-  &[data-pobo-compare]:empty {
+  &[data-pobo-compare]:empty,
+  &[data-pobo-external-compare]:empty {
     min-height: var(--pobo-product-compare-pending-min-height);
     border-radius: var(--pobo-product-compare-border-radius);
     background: var(--pobo-product-compare-pending-bg);
@@ -16,7 +17,7 @@
   &__toggle {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--pobo-product-compare-toggle-gap);
     cursor: pointer;
     user-select: none;
     font-size: var(--pobo-product-compare-toggle-font-size);
@@ -25,8 +26,8 @@
   }
 
   &__toggle-input {
-    width: 18px;
-    height: 18px;
+    width: var(--pobo-product-compare-toggle-size);
+    height: var(--pobo-product-compare-toggle-size);
     margin: 0;
     accent-color: var(--pobo-product-compare-toggle-accent);
     cursor: pointer;
